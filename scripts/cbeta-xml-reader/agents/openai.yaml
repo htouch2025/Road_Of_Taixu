@@ -1,0 +1,3 @@
+display_name: CBETA XML Reader
+short_description: Read CBETA TEI P5 XML files for the Taixu Quanshu
+default_prompt: Use this skill to read and navigate CBETA XML structured texts for the 太虚大师全书
