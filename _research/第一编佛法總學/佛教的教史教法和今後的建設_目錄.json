@@ -1,0 +1,273 @@
+{
+  "article": "佛教的教史教法和今後的建設",
+  "cbeta_id": "TX01n0001",
+  "head_query": "佛教的教史教法和今後的建設",
+  "编": "第一编 佛法總學",
+  "子目": "判攝",
+  "処理": "移除「綱要」（原文開頭的結構預覽）；提取題下講授信息",
+  "tree": [
+    {
+      "label": "一　全部教史的綱要",
+      "level": 3,
+      "semantic": "章",
+      "n": "",
+      "children": [
+        {
+          "label": "甲　佛法流變的原則",
+          "level": 4,
+          "semantic": "節",
+          "n": "",
+          "children": []
+        },
+        {
+          "label": "乙　印度佛教的三期",
+          "level": 4,
+          "semantic": "節",
+          "n": "",
+          "children": [
+            {
+              "label": "１　小乘興盛時期",
+              "level": 5,
+              "semantic": "小節",
+              "n": "",
+              "children": []
+            },
+            {
+              "label": "２　大乘興盛時期",
+              "level": 5,
+              "semantic": "小節",
+              "n": "",
+              "children": []
+            },
+            {
+              "label": "３　密咒興盛的時期",
+              "level": 5,
+              "semantic": "小節",
+              "n": "",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "丙　世界佛教的三系",
+          "level": 4,
+          "semantic": "節",
+          "n": "",
+          "children": []
+        }
+      ]
+    },
+    {
+      "label": "二　全部教法的綱要",
+      "level": 3,
+      "semantic": "章",
+      "n": "",
+      "children": [
+        {
+          "label": "甲　四藏",
+          "level": 4,
+          "semantic": "節",
+          "n": "",
+          "children": []
+        },
+        {
+          "label": "乙　三法",
+          "level": 4,
+          "semantic": "節",
+          "n": "",
+          "children": [
+            {
+              "label": "１　五乘共法",
+              "level": 5,
+              "semantic": "小節",
+              "n": "",
+              "children": []
+            },
+            {
+              "label": "２　三乘共法",
+              "level": 5,
+              "semantic": "小節",
+              "n": "",
+              "children": []
+            },
+            {
+              "label": "３　大乘不共法",
+              "level": 5,
+              "semantic": "小節",
+              "n": "",
+              "children": [
+                {
+                  "label": "大乘性相",
+                  "level": 6,
+                  "semantic": "小小節",
+                  "n": "",
+                  "children": []
+                },
+                {
+                  "label": "大乘行果",
+                  "level": 6,
+                  "semantic": "小小節",
+                  "n": "",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "三　今後佛學的建立",
+      "level": 3,
+      "semantic": "章",
+      "n": "",
+      "children": [
+        {
+          "label": "甲　研教",
+          "level": 4,
+          "semantic": "節",
+          "n": "",
+          "children": [
+            {
+              "label": "１　法物",
+              "level": 5,
+              "semantic": "小節",
+              "n": "",
+              "children": []
+            },
+            {
+              "label": "２　經書",
+              "level": 5,
+              "semantic": "小節",
+              "n": "",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "乙　究理",
+          "level": 4,
+          "semantic": "節",
+          "n": "",
+          "children": []
+        },
+        {
+          "label": "丙　修行",
+          "level": 4,
+          "semantic": "節",
+          "n": "",
+          "children": [
+            {
+              "label": "１　律儀行",
+              "level": 5,
+              "semantic": "小節",
+              "n": "",
+              "children": []
+            },
+            {
+              "label": "２　禪觀行",
+              "level": 5,
+              "semantic": "小節",
+              "n": "",
+              "children": []
+            },
+            {
+              "label": "３　真言行",
+              "level": 5,
+              "semantic": "小節",
+              "n": "",
+              "children": []
+            },
+            {
+              "label": "４　淨土行",
+              "level": 5,
+              "semantic": "小節",
+              "n": "",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "丁　證果",
+          "level": 4,
+          "semantic": "節",
+          "n": "",
+          "children": [
+            {
+              "label": "１　信果",
+              "level": 5,
+              "semantic": "小節",
+              "n": "",
+              "children": []
+            },
+            {
+              "label": "２　戒果",
+              "level": 5,
+              "semantic": "小節",
+              "n": "",
+              "children": []
+            },
+            {
+              "label": "３　定果",
+              "level": 5,
+              "semantic": "小節",
+              "n": "",
+              "children": []
+            },
+            {
+              "label": "４　慧果",
+              "level": 5,
+              "semantic": "小節",
+              "n": "",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "四　今後僧教育的建立",
+      "level": 3,
+      "semantic": "章",
+      "n": "",
+      "children": [
+        {
+          "label": "甲　律儀院",
+          "level": 4,
+          "semantic": "節",
+          "n": "",
+          "children": []
+        },
+        {
+          "label": "乙　普通教理院",
+          "level": 4,
+          "semantic": "節",
+          "n": "",
+          "children": []
+        },
+        {
+          "label": "丙　高等教理院",
+          "level": 4,
+          "semantic": "節",
+          "n": "",
+          "children": []
+        },
+        {
+          "label": "丁　參學處",
+          "level": 4,
+          "semantic": "節",
+          "n": "",
+          "children": []
+        }
+      ]
+    },
+    {
+      "label": "五　今後教制的施設",
+      "level": 3,
+      "semantic": "章",
+      "n": "",
+      "children": []
+    }
+  ],
+  "byline": "1932 年 12 月，在閩南佛學院講"
+}

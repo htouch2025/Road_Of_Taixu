@@ -1,0 +1,148 @@
+{
+  "article": "佛理要略",
+  "cbeta_id": "TX01n0001",
+  "head_query": "佛理要略",
+  "编": "01",
+  "子目": "概論",
+  "n_start": "0071a01",
+  "処理": {
+    "纲要去掉": true,
+    "前言": {
+      "retained": true,
+      "note": "纲要之后的前言为有用内容，保留"
+    }
+  },
+  "tree": [
+    {
+      "label": "佛理要略",
+      "level": 2,
+      "semantic": "篇",
+      "n": "",
+      "children": [
+        {
+          "label": "前言",
+          "level": 3,
+          "semantic": "章",
+          "n": "",
+          "children": []
+        },
+        {
+          "label": "一　因緣生法——五乘共法——向上增進心",
+          "level": 3,
+          "semantic": "章",
+          "n": "",
+          "children": [
+            {
+              "label": "甲　破無因及邪因",
+              "level": 4,
+              "semantic": "节",
+              "n": "",
+              "children": []
+            },
+            {
+              "label": "乙　正因緣法",
+              "level": 4,
+              "semantic": "节",
+              "n": "",
+              "children": [
+                {
+                  "label": "１　十二緣起法",
+                  "level": 5,
+                  "semantic": "小节",
+                  "n": "",
+                  "children": []
+                },
+                {
+                  "label": "２　四緣生法",
+                  "level": 5,
+                  "semantic": "小节",
+                  "n": "",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "label": "丙　近明六道業果——惡止善行",
+              "level": 4,
+              "semantic": "节",
+              "n": "",
+              "children": []
+            },
+            {
+              "label": "丁　推進三乘行果——捨染趣淨",
+              "level": 4,
+              "semantic": "节",
+              "n": "",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "二　三法印——三乘共法——出離流轉心",
+          "level": 3,
+          "semantic": "章",
+          "n": "",
+          "children": [
+            {
+              "label": "甲　諸行無常",
+              "level": 4,
+              "semantic": "节",
+              "n": "",
+              "children": []
+            },
+            {
+              "label": "乙　諸法無我",
+              "level": 4,
+              "semantic": "节",
+              "n": "",
+              "children": []
+            },
+            {
+              "label": "丙　涅槃寂靜",
+              "level": 4,
+              "semantic": "节",
+              "n": "",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "三　大乘法——普度成佛心",
+          "level": 3,
+          "semantic": "章",
+          "n": "",
+          "children": [
+            {
+              "label": "甲　一切法自性空義",
+              "level": 4,
+              "semantic": "节",
+              "n": "",
+              "children": []
+            },
+            {
+              "label": "乙　一切法唯識現義",
+              "level": 4,
+              "semantic": "节",
+              "n": "",
+              "children": []
+            },
+            {
+              "label": "丙　一切法大總持義",
+              "level": 4,
+              "semantic": "节",
+              "n": "",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "四　結論",
+          "level": 3,
+          "semantic": "章",
+          "n": "",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
