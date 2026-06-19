@@ -283,17 +283,7 @@ def build_md(entries, bian_name):
         by_section.setdefault(e['子目'], []).append(e)
 
     lines = [f'# {bian_name} 篇名目錄', '',
-             '## 篇數統計', '',
-             '| 子目 | 篇數 |',
-             '|------|------|']
-    total = 0
-    for i, (sec, arts) in enumerate(by_section.items(), 1):
-        lines.append(f'| {sec} | {len(arts)} |')
-        total += len(arts)
-    lines.append(f'| **合計** | **{total}** |')
-    lines.append('')
-
-    lines.append('## 篇目樹')
+             '## 篇目']
     lines.append('')
     lines.append(f'- {bian_name}')
     for i, (sec, arts) in enumerate(by_section.items(), 1):
@@ -301,6 +291,14 @@ def build_md(entries, bian_name):
         for art in arts:
             suffix = f' {art["題注"]}' if art['題注'] else ''
             lines.append(f'        - {art["_sub_num"]}. {art["篇名"]}{suffix}')
+    lines.extend(['', '## 篇數統計', '',
+             '| 子目 | 篇數 |',
+             '|------|------|'])
+    total = 0
+    for i, (sec, arts) in enumerate(by_section.items(), 1):
+        lines.append(f'| {sec} | {len(arts)} |')
+        total += len(arts)
+    lines.append(f'| **合計** | **{total}** |')
     lines.append('')
     return '\n'.join(lines)
 
