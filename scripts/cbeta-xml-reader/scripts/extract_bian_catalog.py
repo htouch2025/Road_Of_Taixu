@@ -287,7 +287,7 @@ def build_md(entries, bian_name):
              '| 子目 | 篇數 |',
              '|------|------|']
     total = 0
-    for sec, arts in by_section.items():
+    for i, (sec, arts) in enumerate(by_section.items(), 1):
         lines.append(f'| {sec} | {len(arts)} |')
         total += len(arts)
     lines.append(f'| **合計** | **{total}** |')
@@ -296,8 +296,8 @@ def build_md(entries, bian_name):
     lines.append('## 篇目樹')
     lines.append('')
     lines.append(f'- {bian_name}')
-    for sec, arts in by_section.items():
-        lines.append(f'    - {sec}')
+    for i, (sec, arts) in enumerate(by_section.items(), 1):
+        lines.append(f'    - {i}. {sec}')
         for art in arts:
             suffix = f' {art["題注"]}' if art['題注'] else ''
             lines.append(f'        - {art["_sub_num"]}. {art["篇名"]}{suffix}')
@@ -359,9 +359,14 @@ def main():
     parser.add_argument('xml_files', nargs='+', help='TX XML file paths')
     parser.add_argument('--bian', required=True, help='编名')
     parser.add_argument('--bian-num', type=int, default=1, help='编序号')
-    parser.add_argument('--out-dir', required=True, help='Output directory')
-    parser.add_argument('--prefix', default='_篇名目錄', help='Output filename prefix')
+    parser.add_argument('--out-dir', default=None, help='Output directory (auto: _research/{bian-num:02d}_{bian-suffix})')
+    parser.add_argument('--prefix', default=None, help='Output filename prefix (auto: _{out_dir_basename}_編目錄)')
     args = parser.parse_args()
+
+    if args.out_dir is None:
+        bian_parts = args.bian.split(None, 1)
+        bian_suffix = bian_parts[1] if len(bian_parts) > 1 else args.bian
+        args.out_dir = f'_research/{args.bian_num:02d}_{bian_suffix}'
 
     entries, file_map = extract_catalog(args.xml_files)
 
@@ -370,6 +375,10 @@ def main():
 
     out_dir = Path(args.out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
+
+    if args.prefix is None:
+        basename = out_dir.name
+        args.prefix = f'_{basename}_編目錄'
 
     md_path = out_dir / f'{args.prefix}.md'
     json_path = out_dir / f'{args.prefix}.json'
