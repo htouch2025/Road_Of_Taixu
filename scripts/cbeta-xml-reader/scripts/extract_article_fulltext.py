@@ -142,6 +142,7 @@ def normalize_heading(heading):
     """
     NUM = '一二三四五六七八九十百千万'
     SEC = '章節节篇部'
+    GAN = '甲乙丙丁戊己庚辛壬癸'
     # Pattern 1: 第 + numerals + section word → insert space before rest
     heading = re.sub(
         rf'^(第[{NUM}]+[{SEC}])(?=[一-鿿])',
@@ -149,6 +150,18 @@ def normalize_heading(heading):
         heading
     )
     # Pattern 2: bare numerals at start → insert space before rest
+    # Pattern 1a: 天干 + numerals → insert space before rest (e.g. 甲一序分)
+    heading = re.sub(
+        rf'^([{GAN}][{NUM}]+)(?=[一-鿿])',
+        r'\1' + '\u3000',
+        heading
+    )
+    # Pattern 1b: 天干 alone → insert space before rest (e.g. 甲色蘊)
+    heading = re.sub(
+        rf'^([{GAN}])(?=(?![{NUM}])[一-鿿])',
+        r'\1' + '\u3000',
+        heading
+    )
     heading = re.sub(
         rf'^([{NUM}]+)(?=[一-鿿])',
         r'\1' + '\u3000',
@@ -221,7 +234,7 @@ def get_byline_text(div):
     return ''
 
 def should_skip_div(mulu_text):
-    for kw in ['目次', '綱要', '目錄', '目録']:
+    for kw in ['目次', '綱要', '目錄', '目録', '科分']:
         if kw in mulu_text:
             return True
     return False
@@ -319,14 +332,113 @@ def extract_article_notes(full_xml_path, article_byte_start, article_byte_end):
 
     return notes, anchor_ids
 
+
+def find_appendix_info(article_div):
+    """Find appendix (附) divs within the article.
+
+    Scans direct child divs of the article div for any whose <cb:mulu>
+    text starts with '附', treating those as attached articles.
+
+    Returns list of dicts: {title, date_location}
+    """
+    appendixes = []
+    for child in article_div:
+        if child.tag != f'{{{CBETA_NS}}}div':
+            continue
+        mulu = child.find(f'{{{CBETA_NS}}}mulu')
+        if mulu is None:
+            continue
+        mulu_text = ''.join(mulu.itertext()).strip()
+        if not mulu_text.startswith('附'):
+            continue
+        # Found an appendix div — prefer <head> text, fall back to mulu
+        head = child.find(f'{{{TEI_NS}}}head') or child.find('head')
+        title = ''.join(head.itertext()).strip() if head is not None else mulu_text
+        # Replace full-width space (U+3000) between 附 and title with ：
+        title = re.sub(r"^附[：\u3000]*(?=[一-鿿])", "附：", title)
+        dl = _extract_appendix_date_location(child)
+        appendixes.append({'title': title, 'date_location': dl})
+    return appendixes
+
+
+def _extract_appendix_date_location(appendix_div):
+    """Try to extract date/location from an appendix div.
+
+    Looks for:
+    1. （附註） paragraph with date/location info
+    2. A <byline> (skipping publication-only notes starting with 見)
+    """
+    for elem in appendix_div.iter():
+        local_tag = elem.tag.split('}')[-1] if '}' in elem.tag else elem.tag
+        text = ''.join(elem.itertext()).strip()
+        if local_tag == 'p':
+            # Look for （附註） … ，DATE；今附於此 pattern
+            m = re.match(
+                r'[（(]附[註注][）)]\s*[「](.+?)[」]\s*[，,]\s*(.+?)[；;]\s*今附[於于]此',
+                text
+            )
+            if m:
+                raw_dl = m.group(2).strip()
+                return _normalize_appendix_date_location(raw_dl)
+        elif local_tag == 'byline':
+            if text and not text.startswith('見'):
+                return normalize_byline(text)
+    return ''
+
+
+def _normalize_appendix_date_location(raw):
+    """Normalize appendix date/location text.
+
+    Input:  '二十四年七月講於莫干山'
+    Output: '（1935 年 7 月，在莫干山講）'
+    """
+    raw = raw.strip()
+    if not raw:
+        return ''
+    # Split into date part (year + optional month/season) and location part
+    m = re.match(r'(.+?年(?:[一二三四五六七八九十]+月|[春夏秋冬])?)\s*(.*)', raw)
+    if not m:
+        return normalize_byline(raw)
+    date_part = m.group(1).strip()
+    loc_part = m.group(2).strip().lstrip('，,。.')
+    normalized = normalize_byline(date_part)
+    if not normalized:
+        return ''
+    if not loc_part:
+        return normalized
+    # Process location: 講於X → 在X講  /  X講 → 在X講
+    if '講於' in loc_part:
+        loc_part = '在' + loc_part[2:] + '講'
+    elif loc_part.endswith('講') and not loc_part.startswith('在'):
+        loc_part = '在' + loc_part
+    elif not loc_part.startswith('在'):
+        loc_part = '在' + loc_part
+    date_inner = normalized.strip('（）')
+    return f'（{date_inner}，{loc_part}）'
+
+
 # ── Tree walker ───────────────────────────────────────────────────────
 
-def walk_div_tree(div, toc_entries, body_lines, notes_map=None, note_backrefs=None):
+def walk_div_tree(div, toc_entries, body_lines, notes_map=None, note_backrefs=None, level_offset=0):
     mulu_text = get_mulu_text(div)
     mulu_lv = get_mulu_level(div)
     heading, note_anchor = get_heading_text(div)
 
     heading = normalize_heading(heading)
+
+
+    if not heading:
+        div_type = div.get('type', '')
+        for para in extract_paragraphs(div, notes_map, None, note_backrefs):
+            if div_type == 'orig':
+                body_lines.append(f'> **{para}**')
+            else:
+                body_lines.append(para)
+            body_lines.append('')
+        for child in div:
+            if child.tag == f'{{{CBETA_NS}}}div':
+                walk_div_tree(child, toc_entries, body_lines, notes_map, note_backrefs, level_offset)
+        return
 
     if should_skip_div(mulu_text):
         return
@@ -334,45 +446,55 @@ def walk_div_tree(div, toc_entries, body_lines, notes_map=None, note_backrefs=No
     if mulu_lv == 1:
         for child in div:
             if child.tag == f'{{{CBETA_NS}}}div':
-                walk_div_tree(child, toc_entries, body_lines, notes_map, note_backrefs)
+                walk_div_tree(child, toc_entries, body_lines, notes_map, note_backrefs, level_offset)
         return
 
-    # Stable hash-based anchor via {#custom-id} syntax (Obsidian natively supported)
-    anchor_id = make_anchor_id(heading)
+    # No anchors — pure plain text output
 
-    if mulu_lv < 3:
-        heading_level = '###'
-    else:
-        heading_level = '#' * mulu_lv
+    effective_lv = mulu_lv + level_offset
+    floor = 2 if level_offset < 0 else 3
+    heading_level = '#' * max(floor, effective_lv)
+
+    # Split appendix heading: "附：标题" → heading="附：" + subtitle line
+    appendix_subtitle = None
+    if (heading.startswith('附：') or heading.startswith('附\u3000')) and len(heading) > 2:
+        appendix_subtitle = heading[2:]
+        heading = '附：'
+    elif heading.startswith('附') and len(heading) > 1 and _is_cjk(heading[1]):
+        appendix_subtitle = heading[1:]
+        heading = '附：'
 
     # TOC — link via Obsidian block reference [[#^anchor-id|heading]]
     toc_indent = '    ' * max(0, mulu_lv - 3)
-    if anchor_id:
-        toc_entries.append(f'{toc_indent}- [[#^{anchor_id}|{heading}]]')
-    else:
-        toc_entries.append(f'{toc_indent}- {heading}')
+    toc_heading = f'{heading}{appendix_subtitle}' if appendix_subtitle else heading
+    toc_entries.append(f'{toc_indent}- {toc_heading}')
 
     # Body heading — Obsidian block reference ^anchor (hidden in reading view)
     body_lines.append('')
-    indent = '\u3000\u3000' * max(0, mulu_lv - 3)
+    indent = '\u3000\u3000' * max(0, effective_lv - floor)
     note_marker = ''
     if note_anchor and notes_map and note_anchor in notes_map:
         n = notes_map[note_anchor]
-        note_marker = f' [[#^n-{n}|〔{n}〕]]'
-    body_lines.append(f'{heading_level} {indent}{heading} [[#目錄|⤴]] {note_marker} ^{anchor_id}')
-    if note_marker:
-        body_lines.append(f'^fn-body-{n}')
+        note_marker = f' {n}'
+    body_lines.append(f'{heading_level} {indent}{heading}{note_marker}')
+    if appendix_subtitle:
+        subtitle_level = "#"
+        body_lines.append(f"{subtitle_level} {appendix_subtitle}")
     body_lines.append('')
 
     # Body paragraphs — flush-left, no indent (Obsidian-compatible)
-    for para in extract_paragraphs(div, notes_map, anchor_id, note_backrefs):
+    for para in extract_paragraphs(div, notes_map, None, note_backrefs):
         body_lines.append(para)
         body_lines.append('')
+
+    recurse_offset = level_offset
+    if appendix_subtitle:
+        recurse_offset = -(mulu_lv - 1)
 
     # Recurse
     for child in div:
         if child.tag == f'{{{CBETA_NS}}}div':
-            walk_div_tree(child, toc_entries, body_lines, notes_map, note_backrefs)
+            walk_div_tree(child, toc_entries, body_lines, notes_map, note_backrefs, recurse_offset)
 
 # ── Main extract ──────────────────────────────────────────────────────
 
@@ -417,11 +539,27 @@ def extract_article(xml_path, byte_start, byte_end):
     title_note = ''
     if title_note_anchor and title_note_anchor in notes_map:
         n = notes_map[title_note_anchor]
-        title_note = f' [[#^n-{n}|〔{n}〕]]'
-        title_note += f' ^fn-body-{n}'
+        title_note = f' {n}'
+        
     md_lines = [f'# {article_name}{title_note}']
     if byline:
         md_lines.append(byline)
+
+    # Appendix headers — shown right after the main title / byline
+    appendixes = find_appendix_info(article_div)
+    if appendixes:
+        for app in appendixes:
+            md_lines.append('')
+            # Split "附：Title" → "### 附：" + "# Title"
+            app_title = app["title"]
+            if app_title.startswith('附：'):
+                md_lines.append('### 附：')
+                md_lines.append(f"# {app_title[2:]}")
+            else:
+                md_lines.append(f"### {app_title}")
+            if app['date_location']:
+                md_lines.append(app['date_location'])
+
     md_lines.extend(['', '## 目錄', ''])
     md_lines.extend(toc_entries)
     md_lines.extend(['', '## 正文'])
@@ -432,7 +570,7 @@ def extract_article(xml_path, byte_start, byte_end):
         md_lines.extend(['', '## 註釋', ''])
         for idx, (num_label, note_text) in enumerate(back_notes):
             n = idx + 1
-            md_lines.append(f'- **[[#^fn-body-{n}|{n}]]**：{note_text} ^n-{n}')
+            md_lines.append(f'- **{n}**：{note_text}')
 
     if is_chart:
         md_lines.extend(['', '---', '',
@@ -443,7 +581,108 @@ def extract_article(xml_path, byte_start, byte_end):
         'article_name': article_name,
         'byline': byline,
         'markdown': '\n'.join(md_lines) + '\n',
+        'appendixes': appendixes,
     }
+
+
+# ── Catalog update ────────────────────────────────────────────────────
+
+def regenerate_catalog_md(json_path):
+    """Regenerate the MD catalog from the JSON catalog data."""
+    NL = chr(10)
+    with open(json_path, encoding='utf-8') as f:
+        data = json.load(f)
+
+    articles = sorted(data.get('篇目鏈表', []),
+                      key=lambda a: (a.get('子目', ''), a.get('子目內編號', 0)))
+    zi_mu_order = []
+    zi_mu_map = {}
+    for art in articles:
+        zm = art.get('子目', '')
+        if zm not in zi_mu_map:
+            zi_mu_map[zm] = []
+            zi_mu_order.append(zm)
+        zi_mu_map[zm].append(art)
+
+    bian_name = data.get(chr(0x7f16), '')  # 编
+
+    md_lines = [
+        f"# {bian_name} 篇名目錄",
+        '',
+        '## 篇目',
+        '',
+        f"- {bian_name}",
+    ]
+
+    idx = 1
+    for zm in zi_mu_order:
+        arts = zi_mu_map[zm]
+        md_lines.append(f'    - {idx}. {zm}')
+        idx += 1
+        for art in arts:
+            article_line = f"        - {art['子目內編號']}. {art['篇名']}"
+            if art.get('題注'):
+                article_line += f' {art["題注"]}'
+            md_lines.append(article_line)
+
+            for app in art.get('附文', []):
+                app_line = f"            - 附：{app['標題']}"
+                if app.get('時間地點'):
+                    app_line += f' {app["時間地點"]}'
+                md_lines.append(app_line)
+
+    md_lines.extend([
+        '',
+        '## 篇數統計',
+        '',
+        '| 子目 | 篇數 |',
+        '|------|------|',
+    ])
+    total = 0
+    for zm in zi_mu_order:
+        count = len(zi_mu_map[zm])
+        total += count
+        md_lines.append(f'| {zm} | {count} |')
+    md_lines.append(f'| **合計** | **{total}** |')
+
+    md_path = json_path.replace('.json', '.md')
+    with open(md_path, 'w', encoding='utf-8') as f:
+        f.write(NL.join(md_lines) + NL)
+    print(f'   📋 編目錄 MD 已更新 → {md_path}')
+
+def update_catalog_with_appendixes(json_path, article_name, appendixes):
+    """Update catalog JSON and MD with appendix (附文) info for an article."""
+    if not appendixes:
+        return
+
+    with open(json_path, encoding='utf-8') as f:
+        data = json.load(f)
+
+    found = False
+    for art in data.get('篇目鏈表', []):
+        if art['篇名'] == article_name:
+            # Build 附文 entries
+            fu_wen = []
+            for app in appendixes:
+                entry = {'標題': re.sub(r'^附[：\u3000]*', '', app['title'])}
+                if app.get('date_location'):
+                    entry['時間地點'] = app['date_location']
+                fu_wen.append(entry)
+            art['附文'] = fu_wen
+            found = True
+            break
+
+    if not found:
+        print(f'   ⚠️  在編目錄中找不到文章「{article_name}」')
+        return
+
+    with open(json_path, 'w', encoding='utf-8') as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+        f.write(chr(10))
+    print(f'   📋 編目錄 JSON 已更新 → {json_path}')
+
+    regenerate_catalog_md(json_path)
+
 
 # ── CLI ───────────────────────────────────────────────────────────────
 
@@ -510,6 +749,12 @@ def main():
     out_dir.mkdir(parents=True, exist_ok=True)
     out_path = out_dir / f'{zi_mu_num:02d}_{result["article_name"]}.md'
     out_path.write_text(result['markdown'], encoding='utf-8')
+
+    # Update catalog with appendix info if found
+    if args.catalog and result.get("appendixes"):
+        update_catalog_with_appendixes(
+            args.catalog, result["article_name"], result["appendixes"]
+        )
 
     print(f'✅ 全文 → {out_path}')
     print(f'   {result["article_name"]}')
