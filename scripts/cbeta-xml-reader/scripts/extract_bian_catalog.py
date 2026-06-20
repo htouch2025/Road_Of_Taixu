@@ -68,13 +68,28 @@ def scan_byte_offsets(xml_path):
         div_start = search_start + last_div if last_div != -1 else pos
         div_starts.append(div_start)
 
-    # Build byte ranges: [div_start[i], div_start[i+1]) or EOF for last
-    file_size = len(raw)
+    # Build byte ranges: depth-track each <cb:div> to its matching </cb:div>
+    def find_div_end(raw_bytes, div_start):
+        """Scan forward from div_start to find the matching </cb:div>."""
+        depth = 1
+        pos = raw_bytes.index(b'>', div_start) + 1
+        while depth > 0 and pos < len(raw_bytes):
+            nxt_open = raw_bytes.find(b'<cb:div', pos)
+            nxt_close = raw_bytes.find(b'</cb:div>', pos)
+            if nxt_close == -1:
+                return len(raw_bytes)
+            if nxt_open != -1 and nxt_open < nxt_close:
+                depth += 1
+                pos = raw_bytes.index(b'>', nxt_open) + 1
+            else:
+                depth -= 1
+                pos = nxt_close + len(b'</cb:div>')
+        return pos
+
     byte_ranges = []
     for i, start in enumerate(div_starts):
-        end = div_starts[i + 1] if i + 1 < len(div_starts) else file_size
+        end = find_div_end(raw, start)
         byte_ranges.append({'byte_start': start, 'byte_end': end})
-
     return byte_ranges
 
 

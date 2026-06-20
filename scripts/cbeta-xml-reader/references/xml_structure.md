@@ -63,6 +63,24 @@ Used in both `<front>` (in titlePage/mulu) and `<body>` (for inline headings).
 - `n`: Line number (4-digit page + column + 2-digit line)
 - Used for precise citation and cross-reference
 
+### `p cb:type="pre"` — Preformatted Text Block
+
+CBETA 使用 `<p cb:type="pre">` 标记由文本字符构成的图表（如印度部派分裂谱系图「佛學概論」第二節）。
+
+```xml
+<p cb:type="pre" xml:id="pTX01p0016a0101">　　　　　　　　　　　　　　　┌一說部──┐
+<lb ed="TX" n="0016a02"/>　　　　　　　　　　　　　　　│說出世部─┼──第一破………第二百年
+<lb ed="TX" n="0016a03"/>　　　　　　　　┌大眾部───┤雞胤部──┘
+...
+<lb ed="TX" n="0016a21"/>　　　　　　　　　　　　　　　　└經量部──────第七破……四百年初</p>
+```
+
+特征：
+- 使用全角空格（`\u3000`）做前导缩进以保证水平对齐
+- 每行之间由 `<lb/>` 分隔
+- 使用 Unicode 方框字符（┌─┐├┼┤└）绘制树形线条
+- 提取时必须保留换行和前导空格，不得折叠空白；输出时以 Markdown 代码围栏包裹
+
 ### `pb` — Page Break
 
 ```xml
