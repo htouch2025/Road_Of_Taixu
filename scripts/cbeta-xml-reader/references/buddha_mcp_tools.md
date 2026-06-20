@@ -1,5 +1,7 @@
 # Buddha MCP Tool Reference
 
+> **注意**：此文件仅供历史参考。本项目已硬性规定不使用 buddha MCP，全部 CBETA 数据通过本地 `_data/cbeta/TX/` XML 文件和 Python + ElementTree 解析。保留此文件仅为记录早期探索时使用的 MCP 工具接口。
+
 Complete reference for using the buddha MCP tools to access CBETA data.
 
 ## Tool Overview

@@ -5,7 +5,7 @@ Two modes:
   1. --catalog + --article  → look up byte offsets from 编级 JSON
   2. --file + --byte-start + --byte-end  → direct byte-range extraction
 
-Output: {篇名}.md with TOC ↔ body anchor links.
+Output: {篇名}.md — pure plain-text Markdown (no Obsidian syntax, no anchor links).
 
 Usage:
   python extract_article_fulltext.py \

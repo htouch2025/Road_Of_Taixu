@@ -85,7 +85,8 @@
       "prev": null,
       "next": "佛理要略",
       "prev_index": null,
-      "next_index": 55
+      "next_index": 55,
+      "字数": 21438
     },
     {
       "編號": 2,
@@ -165,8 +166,7 @@
       "prev": "佛陀學綱",
       "next": "佛學講要",
       "prev_index": 241,
-      "next_index": 267,
-      "字数": 2553
+      "next_index": 267
     },
     {
       "編號": 7,

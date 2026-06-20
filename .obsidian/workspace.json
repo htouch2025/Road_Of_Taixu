@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_research/01_佛法總學/02_判攝/01_佛藏擇法眼圖.md",
+                "file": "_research/01_佛法總學/01_概論/01_佛學概論.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01_佛藏擇法眼圖"
+              "title": "01_佛學概論"
             }
           }
         ]
@@ -198,17 +198,22 @@
   "active": "e115f631d7d018ce",
   "lastOpenFiles": [
     "_research/01_佛法總學/_01_佛法總學_編目錄.md",
+    "_research/01_佛法總學/01_概論/01_佛學概論.md",
+    "_research/01_佛法總學/01_概論/08_佛法僧義廣論.md",
+    "scripts/cbeta-xml-reader/scripts/__pycache__/extract_bian_catalog.cpython-314.pyc",
     "_research/01_佛法總學/02_判攝/01_佛藏擇法眼圖.md",
+    "_research/海潮音卷期对照表.md",
+    "_research/海潮音卷期对照表.json",
+    "_research/01_佛法總學/02_判攝",
+    "_research/01_佛法總學/01_概論",
+    "_research/01_佛法總學/_01_佛法總學_編目錄.json",
     "scripts/extract_article_fulltext.py",
     "_research/01_佛法總學/02_判攝/03_佛法之分宗判教.md",
     "_research/01_佛法總學/01_概論/05_佛陀學綱.md",
-    "_research/01_佛法總學/01_概論/01_佛學概論.md",
     "_research/01_佛法總學/01_概論/06_甚麼是佛學.md",
-    "_research/01_佛法總學/01_概論/08_佛法僧義廣論.md",
     "_research/01_佛法總學/01_概論/00_佛法僧義廣論.md",
     "_research/01_佛法總學/01_概論/08_佛法僧義廣論_正文.md",
     "_research/01_佛法總學/01_概論/08_佛法僧義廣論_目錄樹.md",
-    "_research/01_佛法總學/02_判攝",
     "_research/01_佛法總學/01_概論/00_佛法僧義廣論_目錄樹.md",
     "_research/01_佛法總學/01_概論/07_佛學講要.md",
     "_data/figures/TX/TX08p0758_01.gif",
@@ -225,10 +230,6 @@
     "_data/figures",
     "_data/cbeta/figures/TX",
     "_data/cbeta/figures",
-    "_research/figures/TX",
-    "_research/figures",
-    "figures/TX",
-    "figures",
     "_research/01_佛法總學/01_概論/02_佛理要略.md",
     "_research/01_佛法總學/01_概論/03_佛法導言.md",
     "_research/01_佛法總學/01_概論/04_佛乘宗要論.md",
@@ -240,7 +241,6 @@
     "scripts/cbeta-xml-reader/references/references/taixu_catalog.md",
     "scripts/cbeta-xml-reader/references/references/level_guide.md",
     "scripts/cbeta-xml-reader/references/references/buddha_mcp_tools.md",
-    "scripts/cbeta-xml-reader/requirements.md",
-    "_tmp_skill.md"
+    "scripts/cbeta-xml-reader/requirements.md"
   ]
 }

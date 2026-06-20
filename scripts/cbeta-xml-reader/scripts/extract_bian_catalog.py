@@ -90,6 +90,19 @@ def scan_byte_offsets(xml_path):
     for i, start in enumerate(div_starts):
         end = find_div_end(raw, start)
         byte_ranges.append({'byte_start': start, 'byte_end': end})
+
+    # ── Consistency validation: adjacent-article boundary check ──
+    for i in range(len(byte_ranges) - 1):
+        gap = byte_ranges[i + 1]['byte_start'] - byte_ranges[i]['byte_end']
+        if gap < 0:
+            print(f'   ⚠️  第{i+1}篇 byte_end ({byte_ranges[i]["byte_end"]}) '
+                  f'超出第{i+2}篇 byte_start ({byte_ranges[i+1]["byte_start"]}) '
+                  f'— 深度追蹤可能 overshoot（多了 {-gap} bytes）')
+        elif gap > 500:
+            print(f'   ⚠️  第{i+1}篇 byte_end={byte_ranges[i]["byte_end"]} '
+                  f'第{i+2}篇 byte_start={byte_ranges[i+1]["byte_start"]} '
+                  f'— 間距 {gap} bytes，超出同文件正常範圍（~106 bytes）')
+
     return byte_ranges
 
 
