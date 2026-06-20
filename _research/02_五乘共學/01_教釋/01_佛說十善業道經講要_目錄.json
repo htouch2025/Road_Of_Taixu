@@ -1,9 +1,9 @@
 {
   "article": "佛說十善業道經講要",
-  "cbeta_id": "TX03n0002",
+  "cbeta_id": "TX03n0002.xml",
   "编": "第二编 五乘共學",
   "子目": "教釋",
-  "題注": "",
+  "題注": "（1932 年 7 月，在漢口佛教正信會講）",
   "処理": {
     "綱要去掉": [
       "科分"
@@ -30,21 +30,21 @@
               "n": "",
               "children": [
                 {
-                  "label": "１　十善業為世出世善行之大宗",
+                  "label": "１十善業為世出世善行之大宗",
                   "level": 6,
                   "semantic": "小節",
                   "n": "",
                   "children": []
                 },
                 {
-                  "label": "２　十善業為造成人間天國之正因",
+                  "label": "２十善業為造成人間天國之正因",
                   "level": 6,
                   "semantic": "小節",
                   "n": "",
                   "children": []
                 },
                 {
-                  "label": "３　十善業為涅槃菩提根本",
+                  "label": "３十善業為涅槃菩提根本",
                   "level": 6,
                   "semantic": "小節",
                   "n": "",
@@ -59,21 +59,21 @@
               "n": "",
               "children": [
                 {
-                  "label": "１　對治鶩外忘己而修已",
+                  "label": "１對治鶩外忘己而修已",
                   "level": 6,
                   "semantic": "小節",
                   "n": "",
                   "children": []
                 },
                 {
-                  "label": "２　對治意誇行劣而重行",
+                  "label": "２對治意誇行劣而重行",
                   "level": 6,
                   "semantic": "小節",
                   "n": "",
                   "children": []
                 },
                 {
-                  "label": "３　對治欲高福薄而培福",
+                  "label": "３對治欲高福薄而培福",
                   "level": 6,
                   "semantic": "小節",
                   "n": "",
@@ -116,14 +116,14 @@
         {
           "label": "甲一　證信",
           "level": 4,
-          "semantic": "章",
+          "semantic": "節",
           "n": "",
           "children": []
         },
         {
           "label": "甲二　正說",
           "level": 4,
-          "semantic": "章",
+          "semantic": "節",
           "n": "",
           "children": [
             {
@@ -135,41 +135,41 @@
                 {
                   "label": "丙一　就因明果",
                   "level": 6,
-                  "semantic": "小節",
+                  "semantic": "節",
                   "n": "",
                   "children": []
                 },
                 {
                   "label": "丙二　即果明因",
                   "level": 6,
-                  "semantic": "小節",
+                  "semantic": "節",
                   "n": "",
                   "children": []
                 },
                 {
                   "label": "丙三　舉因相明",
                   "level": 6,
-                  "semantic": "小節",
+                  "semantic": "節",
                   "n": "",
                   "children": [
                     {
                       "label": "丁一　觀心無主",
                       "level": 7,
-                      "semantic": "小小節",
+                      "semantic": "節",
                       "n": "",
                       "children": []
                     },
                     {
                       "label": "丁二　觀法如幻",
                       "level": 7,
-                      "semantic": "小小節",
+                      "semantic": "節",
                       "n": "",
                       "children": []
                     },
                     {
                       "label": "丁三　勸應修善",
                       "level": 7,
-                      "semantic": "小小節",
+                      "semantic": "節",
                       "n": "",
                       "children": []
                     }
@@ -178,34 +178,34 @@
                 {
                   "label": "丙四　舉果相證",
                   "level": 6,
-                  "semantic": "小節",
+                  "semantic": "節",
                   "n": "",
                   "children": [
                     {
                       "label": "丁一　以佛果證",
                       "level": 7,
-                      "semantic": "小小節",
+                      "semantic": "節",
                       "n": "",
                       "children": []
                     },
                     {
                       "label": "丁二　以菩薩證",
                       "level": 7,
-                      "semantic": "小小節",
+                      "semantic": "節",
                       "n": "",
                       "children": []
                     },
                     {
                       "label": "丁三　以天龍證",
                       "level": 7,
-                      "semantic": "小小節",
+                      "semantic": "節",
                       "n": "",
                       "children": []
                     },
                     {
                       "label": "丁四　以海眾證",
                       "level": 7,
-                      "semantic": "小小節",
+                      "semantic": "節",
                       "n": "",
                       "children": []
                     }
@@ -214,7 +214,7 @@
                 {
                   "label": "丙五　結勸修學",
                   "level": 6,
-                  "semantic": "小節",
+                  "semantic": "節",
                   "n": "",
                   "children": []
                 }
@@ -229,21 +229,21 @@
                 {
                   "label": "丙一　顯善法用",
                   "level": 6,
-                  "semantic": "小節",
+                  "semantic": "節",
                   "n": "",
                   "children": []
                 },
                 {
                   "label": "丙二　釋善法名",
                   "level": 6,
-                  "semantic": "小節",
+                  "semantic": "節",
                   "n": "",
                   "children": []
                 },
                 {
                   "label": "丙三　出善法相",
                   "level": 6,
-                  "semantic": "小節",
+                  "semantic": "節",
                   "n": "",
                   "children": []
                 }
@@ -258,70 +258,70 @@
                 {
                   "label": "丙一　明離殺生功德",
                   "level": 6,
-                  "semantic": "小節",
+                  "semantic": "節",
                   "n": "",
                   "children": []
                 },
                 {
                   "label": "丙二　明離偷盜功德",
                   "level": 6,
-                  "semantic": "小節",
+                  "semantic": "節",
                   "n": "",
                   "children": []
                 },
                 {
                   "label": "丙三　明離邪行功德",
                   "level": 6,
-                  "semantic": "小節",
+                  "semantic": "節",
                   "n": "",
                   "children": []
                 },
                 {
                   "label": "丙四　明離妄語功德",
                   "level": 6,
-                  "semantic": "小節",
+                  "semantic": "節",
                   "n": "",
                   "children": []
                 },
                 {
                   "label": "丙五　明離兩舌功德",
                   "level": 6,
-                  "semantic": "小節",
+                  "semantic": "節",
                   "n": "",
                   "children": []
                 },
                 {
                   "label": "丙六　明離惡口功德",
                   "level": 6,
-                  "semantic": "小節",
+                  "semantic": "節",
                   "n": "",
                   "children": []
                 },
                 {
                   "label": "丙七　明離綺語功德",
                   "level": 6,
-                  "semantic": "小節",
+                  "semantic": "節",
                   "n": "",
                   "children": []
                 },
                 {
                   "label": "丙八　明離貪欲功德",
                   "level": 6,
-                  "semantic": "小節",
+                  "semantic": "節",
                   "n": "",
                   "children": []
                 },
                 {
                   "label": "丙九　明離瞋恚功德",
                   "level": 6,
-                  "semantic": "小節",
+                  "semantic": "節",
                   "n": "",
                   "children": []
                 },
                 {
                   "label": "丙十　明離邪見功德",
                   "level": 6,
-                  "semantic": "小節",
+                  "semantic": "節",
                   "n": "",
                   "children": []
                 }
@@ -336,20 +336,20 @@
                 {
                   "label": "丙一　明六度",
                   "level": 6,
-                  "semantic": "小節",
+                  "semantic": "節",
                   "n": "",
                   "children": [
                     {
                       "label": "丁一　廣明布施度",
                       "level": 7,
-                      "semantic": "小小節",
+                      "semantic": "節",
                       "n": "",
                       "children": []
                     },
                     {
                       "label": "丁二　略明餘五度",
                       "level": 7,
-                      "semantic": "小小節",
+                      "semantic": "節",
                       "n": "",
                       "children": []
                     }
@@ -358,27 +358,27 @@
                 {
                   "label": "丙二　明眾行",
                   "level": 6,
-                  "semantic": "小節",
+                  "semantic": "節",
                   "n": "",
                   "children": [
                     {
-                      "label": "丁一　四無量心",
+                      "label": "丁一四　無量心",
                       "level": 7,
-                      "semantic": "小小節",
+                      "semantic": "節",
                       "n": "",
                       "children": []
                     },
                     {
-                      "label": "丁二　四攝",
+                      "label": "丁二四　攝",
                       "level": 7,
-                      "semantic": "小小節",
+                      "semantic": "節",
                       "n": "",
                       "children": []
                     },
                     {
-                      "label": "丁三　三十七菩提分等",
+                      "label": "丁三三十七　菩提分等",
                       "level": 7,
-                      "semantic": "小小節",
+                      "semantic": "節",
                       "n": "",
                       "children": []
                     }
@@ -387,7 +387,7 @@
                 {
                   "label": "丙三　結廣",
                   "level": 6,
-                  "semantic": "小節",
+                  "semantic": "節",
                   "n": "",
                   "children": []
                 }
@@ -405,7 +405,7 @@
         {
           "label": "甲三　流通",
           "level": 4,
-          "semantic": "章",
+          "semantic": "節",
           "n": "",
           "children": []
         }

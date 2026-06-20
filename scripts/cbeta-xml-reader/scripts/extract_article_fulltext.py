@@ -27,98 +27,7 @@ from pathlib import Path
 CBETA_NS = 'http://www.cbeta.org/ns/1.0'
 TEI_NS = 'http://www.tei-c.org/ns/1.0'
 
-# ── Chinese numeral utilities ─────────────────────────────────────────
-
-CHINESE_NUM = {
-    '一': 1, '二': 2, '三': 3, '四': 4, '五': 5,
-    '六': 6, '七': 7, '八': 8, '九': 9, '十': 10,
-}
-
-def chinese_to_int(s):
-    s = s.strip()
-    if not s:
-        return None
-    if s.isdigit():
-        return int(s)
-    total = 0
-    section = 0
-    for c in s:
-        if c == '十':
-            total += (section or 1) * 10
-            section = 0
-        elif c in CHINESE_NUM:
-            section = CHINESE_NUM[c]
-        else:
-            return None
-    total += section
-    return total if total > 0 else None
-
-MONTH_MAP = {
-    '正': 1, '一': 1, '二': 2, '三': 3, '四': 4, '五': 5,
-    '六': 6, '七': 7, '八': 8, '九': 9, '十': 10,
-    '十一': 11, '十二': 12,
-}
-SEASONS = {'春', '夏', '秋', '冬'}
-
-def split_month_season(rest):
-    rest = rest.strip()
-    if not rest:
-        return '', ''
-    m = re.match(r'(正|一|二|三|四|五|六|七|八|九|十[一二]?|[一二]?十[一二]?)月', rest)
-    if m:
-        mm = MONTH_MAP.get(m.group(1))
-        if mm:
-            return f'{mm} 月', rest[m.end():].strip()
-    if rest[0] in SEASONS:
-        return rest[0], rest[1:].strip()
-    return '', rest
-
-def build_suffix(month, rest):
-    if month and rest:
-        sep = '' if len(month) == 1 else ' '
-        return f'{sep}{month}，{rest}'
-    elif month:
-        sep = '' if len(month) == 1 else ' '
-        return f'{sep}{month}'
-    elif rest:
-        return f'，{rest}'
-    return ''
-
-def normalize_byline(raw):
-    raw = raw.strip()
-    if not raw:
-        return ''
-    raw = re.sub(r'^——+|——+$', '', raw).strip()
-    if re.match(r'見海刊', raw):
-        return ''
-    m_rec = re.match(r'^（(.+記)）$', raw)
-    if m_rec:
-        return f'（{m_rec.group(1)}）'
-    m = re.match(r'宣統(.+?)年(.*)', raw)
-    if m:
-        yr = chinese_to_int(m.group(1))
-        if yr is not None:
-            rest = m.group(2).strip()
-            month, rest = split_month_season(rest)
-            suffix = build_suffix(month, rest)
-            return f'（{1908 + yr} 年{suffix}）'
-    m = re.match(r'民國(.+?)年(.*)', raw)
-    if m:
-        yr = chinese_to_int(m.group(1))
-        if yr is not None:
-            rest = m.group(2).strip()
-            month, rest = split_month_season(rest)
-            suffix = build_suffix(month, rest)
-            return f'（{1911 + yr} 年{suffix}）'
-    m = re.match(r'(.+?)年(.*)', raw)
-    if m:
-        yr = chinese_to_int(m.group(1))
-        if yr is not None and 1 <= yr <= 99:
-            rest = m.group(2).strip()
-            month, rest = split_month_season(rest)
-            suffix = build_suffix(month, rest)
-            return f'（{1911 + yr} 年{suffix}）'
-    return f'（{raw}）'
+from _utils import chinese_to_int, normalize_byline, split_month_season, build_suffix
 
 # ── Anchor ID ─────────────────────────────────────────────────────────
 
@@ -163,7 +72,7 @@ def normalize_heading(heading):
         heading
     )
     heading = re.sub(
-        rf'^([{NUM}]+)(?=[一-鿿])',
+        rf'^([{NUM}])(?=[一-鿿])',
         r'\1' + '\u3000',
         heading
     )
@@ -256,10 +165,7 @@ def render_paragraph(p_elem, notes_map=None, heading_anchor=None, note_backrefs=
                 aid = child.get("{http://www.w3.org/XML/1998/namespace}id") or child.get("xml:id", "")
                 if notes_map and aid in notes_map:
                     n = notes_map[aid]
-                    if note_backrefs is not None and heading_anchor:
-                        note_backrefs[n] = heading_anchor
-                    parts.append(f' [[#^n-{n}|〔{n}〕]]')
-                parts.append(f' ^fn-body-{n}')
+                    parts.append(f'〔{n}〕')
             elif tag in ('lb', 'pb'):
                 pass
             elif tag in ('byline', 'head'):
@@ -279,11 +185,36 @@ def _is_tei_tag(tag, name):
 def extract_paragraphs(div, notes_map=None, heading_anchor=None, note_backrefs=None):
     out = []
     for child in div:
-        if _is_tei_tag(child.tag, 'p'):
+        local_tag = child.tag.split('}')[-1] if '}' in child.tag else child.tag
+        if local_tag in ('byline', 'note'):
+            # byline/note as direct children of a div (sibling of <p>)
+            # Extract inline note text, wrap in （）
+            inline_note = child.find(f'{{{TEI_NS}}}note') or child.find('note')
+            if inline_note is not None and inline_note.get('place') == 'inline':
+                nt = ''.join(inline_note.itertext()).strip()
+                if nt:
+                    out.append(f'（{nt}）')
+        elif _is_tei_tag(child.tag, 'p'):
             text = render_paragraph(child, notes_map, heading_anchor, note_backrefs)
             if text.strip():
                 out.append(text)
     return out
+
+
+def normalize_blank_lines(lines):
+    """Collapse consecutive blank lines into a single blank line."""
+    result = []
+    prev_blank = False
+    for line in lines:
+        is_blank = (line.strip() == '')
+        if is_blank:
+            if not prev_blank:
+                result.append(line)
+            prev_blank = True
+        else:
+            result.append(line)
+            prev_blank = False
+    return result
 
 
 # ── Back-note extraction ─────────────────────────────────────────────
@@ -464,12 +395,12 @@ def walk_div_tree(div, toc_entries, body_lines, notes_map=None, note_backrefs=No
         appendix_subtitle = heading[1:]
         heading = '附：'
 
-    # TOC — link via Obsidian block reference [[#^anchor-id|heading]]
+   # TOC — plain Markdown nested list
     toc_indent = '    ' * max(0, mulu_lv - 3)
     toc_heading = f'{heading}{appendix_subtitle}' if appendix_subtitle else heading
     toc_entries.append(f'{toc_indent}- {toc_heading}')
 
-    # Body heading — Obsidian block reference ^anchor (hidden in reading view)
+   # Body heading — plain Markdown heading
     body_lines.append('')
     indent = '\u3000\u3000' * max(0, effective_lv - floor)
     note_marker = ''
@@ -482,7 +413,7 @@ def walk_div_tree(div, toc_entries, body_lines, notes_map=None, note_backrefs=No
         body_lines.append(f"{subtitle_level} {appendix_subtitle}")
     body_lines.append('')
 
-    # Body paragraphs — flush-left, no indent (Obsidian-compatible)
+   # Body paragraphs — flush-left, no indent
     for para in extract_paragraphs(div, notes_map, None, note_backrefs):
         body_lines.append(para)
         body_lines.append('')
@@ -498,7 +429,168 @@ def walk_div_tree(div, toc_entries, body_lines, notes_map=None, note_backrefs=No
 
 # ── Main extract ──────────────────────────────────────────────────────
 
-def extract_article(xml_path, byte_start, byte_end):
+# ── TOC-only: shift-rule semantic labeling + JSON tree ───────────────
+
+NUM_CJK = '一二三四五六七八九十百千'
+GAN = '甲乙丙丁戊己庚辛壬癸'
+ZHI = '子丑寅卯辰巳午未申酉戌亥'
+
+
+def assign_semantic(heading, mulu_text, parent_semantic):
+    """Assign semantic label (部/章/節/小節/小小節) via shift rule.
+
+    Uses the detection algorithm from level_guide.md:
+    1. Explicit patterns first (第X章 → 章, 第一節 → 節)
+    2. Bare-numeral / stem patterns → context-dependent
+    3. Unnumbered entries → parent context
+    """
+    # Explicit 第X章
+    if re.match(rf'^第[{NUM_CJK}]+章', heading):
+        return '章'
+    # Explicit 第一節
+    if re.match(rf'^第[{NUM_CJK}]+[節节]', heading):
+        return '節'
+    # Full-width digits (１、２…)
+    if re.match(r'^[０１２３４５６７８９]+[　、．]', heading):
+        return '小節'
+    # Stem+numeral compound (甲一、乙二…)
+    if re.match(rf'^[{GAN}][{NUM_CJK}]+', heading):
+        if parent_semantic == '部':
+            return '章'
+        if parent_semantic == '章':
+            return '節'
+        if parent_semantic == '節':
+            return '小節'
+        if parent_semantic == '小節':
+            return '小小節'
+        return '節'
+    # Bare heavenly stem (甲、乙…)
+    if re.match(rf'^[{GAN}][　、]', heading):
+        if parent_semantic == '章':
+            return '節'
+        if parent_semantic == '節':
+            return '小節'
+        if parent_semantic == '小節':
+            return '小小節'
+        return '節'
+    # Bare earthly branch (子、丑…)
+    if re.match(rf'^[{ZHI}][　、]', heading):
+        if parent_semantic == '節':
+            return '小節'
+        return '小小節'
+    # Bare CJK numeral (一、二、三…)
+    if re.match(rf'^[{NUM_CJK}]+[　、]', heading):
+        if parent_semantic == '部':
+            return '章'
+        if parent_semantic == '章':
+            return '節'
+        if parent_semantic == '節':
+            return '小節'
+        return '小節'
+
+    # Unnumbered — fall back to parent context
+    if parent_semantic == '篇':
+        return '部'
+    if parent_semantic == '部':
+        return '章'
+    if parent_semantic == '章':
+        return '節'
+    if parent_semantic == '節':
+        return '小節'
+    return '?'
+
+
+def build_toc_json_tree(div, parent_semantic='篇', level_offset=0):
+    """Walk a cb:div subtree and return a TOC tree as list of dict nodes.
+
+    Mirrors walk_div_tree() logic (纲要 skip, level-1 pass-through,
+    appendix offset) but produces nested JSON-ready structures.
+    """
+    nodes = []
+    for child in div:
+        if child.tag != f'{{{CBETA_NS}}}div':
+            continue
+
+        mulu_text = get_mulu_text(child)
+        mulu_lv = get_mulu_level(child)
+        heading, _note_anchor = get_heading_text(child)
+        heading = normalize_heading(heading)
+
+        # Empty heading — recurse for orig/commentary divs
+        if not heading:
+            children = build_toc_json_tree(child, parent_semantic, level_offset)
+            nodes.extend(children)
+            continue
+
+        # Skip structural-only entries (纲要, 目次, 科分, etc.)
+        if should_skip_div(mulu_text):
+            continue
+
+        # Level-1 (子目类别) — pass through, don't create a node
+        if mulu_lv == 1:
+            children = build_toc_json_tree(child, parent_semantic, level_offset)
+            nodes.extend(children)
+            continue
+
+        # Appendix heading split
+        appendix_subtitle = None
+        node_label = heading
+        if (heading.startswith('附：') or heading.startswith('附\u3000')) and len(heading) > 2:
+            appendix_subtitle = heading[2:]
+            node_label = '附：' + appendix_subtitle
+
+        effective_lv = mulu_lv + level_offset
+        semantic = assign_semantic(heading, mulu_text, parent_semantic)
+
+        # Build child recursion with correct offset and parent context
+        child_offset = level_offset
+        if appendix_subtitle:
+            child_offset = -(mulu_lv - 1)
+
+        children = build_toc_json_tree(child, semantic, child_offset)
+
+        n_attr = ''
+        mulu_elem = child.find(f'{{{CBETA_NS}}}mulu')
+        if mulu_elem is not None:
+            n_attr = mulu_elem.get('n', '')
+
+        nodes.append({
+            'label': node_label,
+            'level': effective_lv,
+            'semantic': semantic,
+            'n': n_attr,
+            'children': children,
+        })
+
+    return nodes
+
+
+def _flatten_toc_tree(nodes, depth=0):
+    """Convert nested TOC tree nodes to flat '- ' Markdown lines."""
+    lines = []
+    indent = '    ' * depth
+    for node in nodes:
+        lines.append(f'{indent}- {node["label"]}')
+        if node['children']:
+            lines.extend(_flatten_toc_tree(node['children'], depth + 1))
+    return lines
+
+
+def _collect_skipped(article_div):
+    """Collect names of 纲要-type divs that were skipped."""
+    skipped = []
+    for child in article_div:
+        if child.tag != f'{{{CBETA_NS}}}div':
+            continue
+        mulu_text = get_mulu_text(child)
+        if should_skip_div(mulu_text):
+            skipped.append(mulu_text)
+    return skipped
+
+
+# ── Main extract ──────────────────────────────────────────────────────
+
+def extract_article(xml_path, byte_start, byte_end, toc_only=False):
     root = parse_article_chunk(str(xml_path), byte_start, byte_end)
 
     article_div = None
@@ -513,9 +605,23 @@ def extract_article(xml_path, byte_start, byte_end):
 
     article_name = get_mulu_text(article_div)
     byline = get_byline_text(article_div)
-
-    # Get article title heading and its note anchor
     title_heading, title_note_anchor = get_heading_text(article_div)
+
+    if toc_only:
+        toc_tree = build_toc_json_tree(article_div, parent_semantic='篇')
+        # Detect chart articles (no tree nodes)
+        is_chart = len(toc_tree) == 0
+        # Build flat toc entries from tree
+        toc_entries = _flatten_toc_tree(toc_tree)
+        skipped = _collect_skipped(article_div)
+        return {
+            'article_name': article_name,
+            'byline': byline,
+            'toc_tree': toc_tree,
+            'toc_entries': toc_entries,
+            'is_chart': is_chart,
+            'skipped': skipped,
+        }
 
     # Extract back-notes (篇末注) and build notes_map for in-text markers
     back_notes, note_anchor_order = extract_article_notes(
@@ -577,6 +683,7 @@ def extract_article(xml_path, byte_start, byte_end):
             '**備註**：本文為圖表型文章，CBETA 原文為圖表/標記格式，'
             '建議查閱紙質版。'])
 
+    md_lines = normalize_blank_lines(md_lines)
     return {
         'article_name': article_name,
         'byline': byline,
@@ -696,6 +803,7 @@ def main():
     parser.add_argument('--byte-end', type=int)
     parser.add_argument('--data-dir', default='_data/cbeta/TX')
     parser.add_argument('--out-dir', help='Output directory')
+    parser.add_argument('--toc-only', action='store_true', help='Output _目錄樹.md + _目錄.json only (no body text)')
     args = parser.parse_args()
 
     if args.catalog and args.article:
@@ -745,22 +853,67 @@ def main():
         print(f'❌ XML file "{xml_file}" not found under {data_dir}')
         return 1
 
-    result = extract_article(str(xml_path), byte_start, byte_end)
-    out_dir.mkdir(parents=True, exist_ok=True)
-    out_path = out_dir / f'{zi_mu_num:02d}_{result["article_name"]}.md'
-    out_path.write_text(result['markdown'], encoding='utf-8')
-
-    # Update catalog with appendix info if found
-    if args.catalog and result.get("appendixes"):
-        update_catalog_with_appendixes(
-            args.catalog, result["article_name"], result["appendixes"]
+    result = extract_article(str(xml_path), byte_start, byte_end, toc_only=args.toc_only)
+    if args.toc_only:
+        out_dir.mkdir(parents=True, exist_ok=True)
+        article_slug = result["article_name"]
+        # _目錄樹.md
+        md_lines = [f'{article_slug}']
+        if result['byline']:
+            md_lines.append(result['byline'])
+        md_lines.extend(['', '## 目錄', ''])
+        md_lines.extend(result['toc_entries'])
+        # 備註
+        notes = []
+        if result.get('skipped'):
+            notes.append(f'「{"」「".join(result["skipped"])}」為全文結構綱要，已移除。')
+        if result.get('is_chart'):
+            notes.append('本文為圖表型文章，CBETA 原文為圖表/標記格式，建議查閱紙質版。')
+        if notes:
+            md_lines.extend(['', '**備註**：', ''])
+            for n in notes:
+                md_lines.append(f'- {n}')
+        md_path = out_dir / f'{zi_mu_num:02d}_{article_slug}_目錄樹.md'
+        md_path.write_text('\n'.join(md_lines) + '\n', encoding='utf-8')
+        print(f'✅ 目錄樹 → {md_path}')
+        # _目錄.json
+        json_data = {
+            'article': article_slug,
+            'cbeta_id': xml_file,
+            '编': catalog.get('编', '') if args.catalog else '',
+            '子目': zi_mu,
+            '題注': result.get('byline', ''),
+            '処理': {
+                '綱要去掉': result.get('skipped', []),
+                '前言保留': False,
+            },
+            'tree': result['toc_tree'],
+        }
+        json_path = out_dir / f'{zi_mu_num:02d}_{article_slug}_目錄.json'
+        json_path.write_text(
+            json.dumps(json_data, ensure_ascii=False, indent=2),
+            encoding='utf-8'
         )
+        print(f'✅ 目錄JSON → {json_path}')
+        print(f'   {article_slug}')
+        if result['byline']:
+            print(f'   {result["byline"]}')
+    else:
+        out_dir.mkdir(parents=True, exist_ok=True)
+        out_path = out_dir / f'{zi_mu_num:02d}_{result["article_name"]}.md'
+        out_path.write_text(result['markdown'], encoding='utf-8')
 
-    print(f'✅ 全文 → {out_path}')
-    print(f'   {result["article_name"]}')
-    if result['byline']:
-        print(f'   {result["byline"]}')
-    print(f'   {len(result["markdown"])} 字符')
+        # Update catalog with appendix info if found
+        if args.catalog and result.get("appendixes"):
+            update_catalog_with_appendixes(
+                args.catalog, result["article_name"], result["appendixes"]
+            )
+
+        print(f'✅ 全文 → {out_path}')
+        print(f'   {result["article_name"]}')
+        if result['byline']:
+            print(f'   {result["byline"]}')
+        print(f'   {len(result["markdown"])} 字符')
 
 if __name__ == '__main__':
     main()
