@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "6498726bebd0b8ca",
+        "id": "1a105a422a186e90",
         "type": "tabs",
         "children": [
           {
@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_research/01_佛法總學/01_概論/01_佛學概論.md",
-                "mode": "source",
-                "source": false
+                "file": "scripts/cbeta-xml-reader/templates/bian_dashboard.md",
+                "mode": "preview",
+                "source": true
               },
               "icon": "lucide-file",
-              "title": "01_佛學概論"
+              "title": "bian_dashboard"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "[\"bian\"]",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_research/02_五乘共學/_篇名目錄.md",
+                "file": "scripts/cbeta-xml-reader/templates/bian_dashboard.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "_篇名目錄 的反向链接列表"
+              "title": "bian_dashboard 的反向链接列表"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_research/02_五乘共學/_篇名目錄.md",
+                "file": "scripts/cbeta-xml-reader/templates/bian_dashboard.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "_篇名目錄 的出链列表"
+              "title": "bian_dashboard 的出链列表"
             }
           },
           {
@@ -176,7 +176,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -197,25 +197,43 @@
   },
   "active": "e115f631d7d018ce",
   "lastOpenFiles": [
-    "_research/01_佛法總學/_01_佛法總學_編目錄.md",
-    "_research/01_佛法總學/01_概論/01_佛學概論.md",
-    "_research/01_佛法總學/01_概論/08_佛法僧義廣論.md",
-    "scripts/cbeta-xml-reader/scripts/__pycache__/extract_bian_catalog.cpython-314.pyc",
-    "_research/01_佛法總學/02_判攝/01_佛藏擇法眼圖.md",
+    "_research/01_佛法總學/_01_佛法總學_仪表盘.md",
     "_research/海潮音卷期对照表.md",
-    "_research/海潮音卷期对照表.json",
-    "_research/01_佛法總學/02_判攝",
-    "_research/01_佛法總學/01_概論",
-    "_research/01_佛法總學/_01_佛法總學_編目錄.json",
-    "scripts/extract_article_fulltext.py",
-    "_research/01_佛法總學/02_判攝/03_佛法之分宗判教.md",
-    "_research/01_佛法總學/01_概論/05_佛陀學綱.md",
-    "_research/01_佛法總學/01_概論/06_甚麼是佛學.md",
-    "_research/01_佛法總學/01_概論/00_佛法僧義廣論.md",
-    "_research/01_佛法總學/01_概論/08_佛法僧義廣論_正文.md",
-    "_research/01_佛法總學/01_概論/08_佛法僧義廣論_目錄樹.md",
-    "_research/01_佛法總學/01_概論/00_佛法僧義廣論_目錄樹.md",
-    "_research/01_佛法總學/01_概論/07_佛學講要.md",
+    "_research/01_佛法總學/02_判攝/18_萬有皆因緣所生.md",
+    "_research/01_佛法總學/02_判攝/17_諸法眾緣生唯識現.md",
+    "_research/01_佛法總學/02_判攝/16_性釋.md",
+    "_research/01_佛法總學/02_判攝/15_律禪密淨四行論.md",
+    "_research/01_佛法總學/01_概論/02_佛理要略.md",
+    "scripts/cbeta-xml-reader/scripts/__pycache__/extract_mulu.cpython-314.pyc",
+    "scripts/cbeta-xml-reader/templates/bian_dashboard.md",
+    "_research/01_佛法總學/02_判攝/22_新與融貫.md",
+    "scripts/cbeta-xml-reader/templates",
+    "scripts/cbeta-xml-reader/scripts/__pycache__/extract_bian_catalog.cpython-314.pyc",
+    "_research/01_佛法總學/01_概論/01_佛學概論.md",
+    "scripts/cbeta-xml-reader/scripts/__pycache__/add_frontmatter_to_existing.cpython-314.pyc",
+    "_research/01_佛法總學/_01_佛法總學_編目錄.md",
+    "_research/01_佛法總學/01_概論/03_佛法導言.md",
+    "_research/01_佛法總學/02_判攝/01_佛藏擇法眼圖.md",
+    "temp/方案A_Dataview/编目录.md",
+    "_research/05_法性空慧學/_05_法性空慧學_仪表盘.md",
+    "_research/04_大乘通學/_04_大乘通學_仪表盘.md",
+    "scripts/cbeta-xml-reader/scripts/add_frontmatter_to_existing.py",
+    "temp/方案A_Dataview/文章笔记/佛學概論.md",
+    "temp/方案A_Dataview/文章笔记/中國佛學.md",
+    "temp/方案A_Dataview/文章笔记/漢藏教理融會談.md",
+    "temp/方案A_Dataview/文章笔记/佛理要略.md",
+    "temp/方案A_Dataview/文章笔记/佛乘宗要論.md",
+    "temp/方案C_Callout折叠.md",
+    "temp/方案B_紧凑表格.md",
+    "_research/04_大乘通學/01_教釋/01_大乘理趣六波羅密多經皈依三寶品講錄_目錄樹.md",
+    "temp/方案A_Dataview/文章笔记",
+    "temp/方案A_Dataview",
+    "temp",
+    "未命名.base",
+    "2026-06-21.md",
+    "未命名.canvas",
+    "_research/01_佛法總學/02_判攝/18_我怎樣判攝一切佛法.md",
+    "_research/04_大乘通學/01_教釋/02_大乘理趣六波羅密多經發菩提心品講錄_目錄.json",
     "_data/figures/TX/TX08p0758_01.gif",
     "_data/figures/TX/TX05p0923_01.gif",
     "_data/figures/TX/TX09p1028_01.gif",
@@ -225,22 +243,6 @@
     "_data/figures/TX/TX22p1157_01.gif",
     "_data/figures/TX/TX01p0330_01.gif",
     "_data/figures/TX/TX09p1393_01.gif",
-    "_data/figures/TX/TX22p1034_01.gif",
-    "_data/figures/TX",
-    "_data/figures",
-    "_data/cbeta/figures/TX",
-    "_data/cbeta/figures",
-    "_research/01_佛法總學/01_概論/02_佛理要略.md",
-    "_research/01_佛法總學/01_概論/03_佛法導言.md",
-    "_research/01_佛法總學/01_概論/04_佛乘宗要論.md",
-    "_research/05_法性空慧學/_05_法性空慧學_編目錄.md",
-    "_research/05_法性空慧學/01_教釋/07_般若波羅密多心經講義.md",
-    "scripts/cbeta-xml-reader/SKILL.md",
-    "docs/cbeta-tei-reference.md",
-    "scripts/cbeta-xml-reader/references/references/xml_structure.md",
-    "scripts/cbeta-xml-reader/references/references/taixu_catalog.md",
-    "scripts/cbeta-xml-reader/references/references/level_guide.md",
-    "scripts/cbeta-xml-reader/references/references/buddha_mcp_tools.md",
-    "scripts/cbeta-xml-reader/requirements.md"
+    "_data/figures/TX/TX22p1034_01.gif"
   ]
 }

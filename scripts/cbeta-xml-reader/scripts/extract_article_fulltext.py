@@ -149,7 +149,22 @@ def get_mulu_level(div):
     return 0
 
 def get_byline_text(div):
-    byline = div.find(f'{{{TEI_NS}}}byline') or div.find('byline')
+    # Only search direct children — walk_div_tree handles nested bylines in body
+    # Also: only return byline if BEFORE any <p>; after <p> it's 篇末附注, not 題注
+    byline = None
+    for child in div:
+        local_tag = child.tag.split('}')[-1] if '}' in child.tag else child.tag
+        if local_tag == 'p':
+            return ''  # <p> before any <byline> → subsequent byline is end-of-article
+        if local_tag == 'byline':
+            byline = child
+            break
+    # Fallback: also try namespace-aware search on direct children
+    if byline is None:
+        for child in div:
+            if child.tag == f'{{{TEI_NS}}}byline':
+                byline = child
+                break
     if byline is not None:
         raw = ''.join(byline.itertext()).strip()
         return normalize_byline(raw)
@@ -231,6 +246,14 @@ def extract_paragraphs(div, notes_map=None, heading_anchor=None, note_backrefs=N
     out = []
     for child in div:
         local_tag = child.tag.split('}')[-1] if '}' in child.tag else child.tag
+        # Skip bylines that are 题下注释 (——...—— format, date/location)
+        # already extracted by get_byline_text() and placed after the article title.
+        # Do NOT use cb:type="other" for this — CBETA uses it on both
+        # 题下注释 AND 记录者 bylines (pitfall #22).
+        if local_tag == 'byline':
+            raw = ''.join(child.itertext()).strip()
+            if raw.startswith('——') and raw.endswith('——'):
+                continue
         if local_tag in ('byline', 'note'):
             # byline/note as direct children of a div (sibling of <p>)
             # Use itertext() to capture text across <lb/> breaks (pitfall #16)
@@ -238,7 +261,8 @@ def extract_paragraphs(div, notes_map=None, heading_anchor=None, note_backrefs=N
             own_text = ''.join(own_text.split())  # compress whitespace
             inline_note = child.find(f'{{{TEI_NS}}}note') or child.find('note')
             if inline_note is not None and inline_note.get('place') == 'inline':
-                nt = ''.join(inline_note.itertext()).strip()
+                nt = ''.join(inline_note.itertext())
+                nt = ''.join(nt.split())  # compress same as own_text
                 # Remove note text from own_text (it's caught by itertext above)
                 if nt:
                     own_text = own_text.replace(nt, '').rstrip()
@@ -737,9 +761,23 @@ def extract_article(xml_path, byte_start, byte_end, toc_only=False):
             if app['date_location']:
                 md_lines.append(app['date_location'])
 
-    md_lines.extend(['', '## 目錄', ''])
-    md_lines.extend(toc_entries)
+    if toc_entries:
+        md_lines.extend(['', '## 目錄', ''])
+        md_lines.extend(toc_entries)
     md_lines.extend(body_lines)
+
+    # Split trailing publication note （見...） from last paragraph
+    for _i in range(len(md_lines) - 1, -1, -1):
+        if md_lines[_i].strip():
+            _line = md_lines[_i]
+            _m = re.search(r'。（見[^）]+）$', _line)
+            if _m:
+                _body = _line[:_m.start() + 1]
+                _note = _line[_m.start() + 1:]
+                md_lines[_i] = _body
+                md_lines.insert(_i + 1, '')
+                md_lines.insert(_i + 2, _note)
+            break
 
     # Append back-notes section
     if back_notes:
@@ -770,9 +808,9 @@ def extract_article(xml_path, byte_start, byte_end, toc_only=False):
             continue
         cjk_count += count_chinese_chars(line)
 
-    # Insert word count line after byline/appendix, before ## 目錄
-    wc_wan = cjk_count / 10000
-    wc_line = f'**{wc_wan:.1f} 万字**'
+    # Insert word count line after byline/appendix, before ## 目錄 or body
+    wc_qian = cjk_count // 1000
+    wc_line = f'**{wc_qian} 千字**'
     # Find ## 目錄 index to insert before it
     toc_idx = None
     for i, line in enumerate(md_lines):
@@ -782,21 +820,54 @@ def extract_article(xml_path, byte_start, byte_end, toc_only=False):
     if toc_idx is not None:
         md_lines.insert(toc_idx, '')
         md_lines.insert(toc_idx, wc_line)
+    else:
+        # No 目錄 — find first body line and insert before it
+        insert_at = 1  # skip # Title
+        while insert_at < len(md_lines):
+            stripped = md_lines[insert_at].strip()
+            if stripped == '' or stripped.startswith('#') or stripped.startswith('（'):
+                insert_at += 1
+                continue
+            break
+        md_lines.insert(insert_at, '')
+        md_lines.insert(insert_at, '')
+        md_lines.insert(insert_at, '')
+        md_lines.insert(insert_at, wc_line)
 
-    # Insert two extra blank lines between TOC and body (total: 3 blank lines)
-    # Find the last top-level TOC entry (starts with "- ")
-    last_toc_idx = -1
+    # Ensure exactly 3 blank lines between TOC and body.
+    # Find ## 目錄, then locate the last TOC entry and first body line structurally.
+    toc_heading_idx = None
     for j, line in enumerate(md_lines):
-        if line.startswith('- '):
-            last_toc_idx = j
-    if last_toc_idx >= 0:
-        first_body_idx = last_toc_idx + 1
-        while first_body_idx < len(md_lines) and md_lines[first_body_idx].strip() == '':
-            first_body_idx += 1
-        if first_body_idx < len(md_lines) and first_body_idx > last_toc_idx + 1:
-            # There's already one blank line; add two more to make three
-            md_lines.insert(first_body_idx, '')
-            md_lines.insert(first_body_idx, '')
+        if line.startswith('## 目錄'):
+            toc_heading_idx = j
+            break
+    if toc_heading_idx is not None:
+        # Find the actual last TOC entry: lstrip starts with '- ' but not '- **'
+        last_toc_idx = None
+        for j in range(toc_heading_idx, len(md_lines)):
+            s = md_lines[j].lstrip()
+            if s.startswith('- ') and not s.startswith('- **'):
+                last_toc_idx = j
+            elif last_toc_idx is not None:
+                stripped = md_lines[j].strip()
+                if stripped.startswith('## ') or stripped.startswith('### '):
+                    body_start_idx = j
+                    break
+                elif stripped and not s.startswith('- '):
+                    body_start_idx = j
+                    break
+        else:
+            body_start_idx = None
+        if last_toc_idx is not None and body_start_idx is not None:
+            blank_count = 0
+            for j in range(last_toc_idx + 1, body_start_idx):
+                if md_lines[j].strip() == '':
+                    blank_count += 1
+                else:
+                    break
+            if blank_count < 3:
+                for _ in range(3 - blank_count):
+                    md_lines.insert(body_start_idx, '')
     return {
         'article_name': article_name,
         'byline': byline,
@@ -819,18 +890,18 @@ def regenerate_catalog_md(json_path):
     for art in data.get('篇目鏈表', []):
         zm = art.get('子目', '')
         zi_mu_map.setdefault(zm, []).append(art)
-    # Sort articles within each 子目 by 子目內編號
+    # Sort articles within each 子目 by 編號
     for arts in zi_mu_map.values():
-        arts.sort(key=lambda a: a.get('子目內編號', 0))
+        arts.sort(key=lambda a: a.get('編號', 0))
 
-    bian_name = data.get(chr(0x7f16), '')  # 编
+    book_name = data.get(chr(0x7f16), '')  # 编
 
     md_lines = [
-        f"# {bian_name} 篇名目錄",
+        f"# {book_name} 篇名目錄",
         '',
         '## 篇目',
         '',
-        f"- {bian_name}",
+        f"- {book_name}",
     ]
 
     idx = 1
@@ -839,12 +910,7 @@ def regenerate_catalog_md(json_path):
         md_lines.append(f'    - {idx}. {zm}')
         idx += 1
         for art in arts:
-            article_line = f"        - {art['子目內編號']}. {art['篇名']}"
-            if art.get('字数'):
-                wc_wan = art['字数'] / 10000
-                article_line += f'（{wc_wan:.1f} 万字）'
-            if art.get('題注'):
-                article_line += f' {art["題注"]}'
+            article_line = f"        - {art['編號']}. {art['篇名']}"
             md_lines.append(article_line)
 
             for app in art.get('附文', []):
@@ -872,7 +938,7 @@ def regenerate_catalog_md(json_path):
         f.write(NL.join(md_lines) + NL)
     print(f'   📋 編目錄 MD 已更新 → {md_path}')
 
-def update_catalog_with_appendixes(json_path, article_name, appendixes):
+def update_catalog_with_appendixes(json_path, article_name, appendixes, skip_md=False):
     """Update catalog JSON and MD with appendix (附文) info for an article."""
     if not appendixes:
         return
@@ -903,9 +969,10 @@ def update_catalog_with_appendixes(json_path, article_name, appendixes):
         f.write(chr(10))
     print(f'   📋 編目錄 JSON 已更新 → {json_path}')
 
-    regenerate_catalog_md(json_path)
+    if not skip_md:
+        regenerate_catalog_md(json_path)
 
-def update_catalog_with_word_count(json_path, article_name, word_count):
+def update_catalog_with_word_count(json_path, article_name, word_count, skip_md=False):
     """Update catalog JSON with word count for an article, then regenerate MD."""
     with open(json_path, encoding='utf-8') as f:
         data = json.load(f)
@@ -926,12 +993,117 @@ def update_catalog_with_word_count(json_path, article_name, word_count):
         f.write(chr(10))
     print(f'   📋 編目錄字數已更新 → {json_path}')
 
-    regenerate_catalog_md(json_path)
+    if not skip_md:
+        regenerate_catalog_md(json_path)
+
+
+
+def parse_byline_fields(byline):
+    """Parse 題注 into structured fields: date (YYYY-MM), location, context.
+
+    Input: 題注 like '（1930 年 1 月，在閩南佛學院編述）' or '（1935 年 11 月，在中國佛學會鎮江分會講）'
+    Returns: dict with date, location, context
+    """
+    result = {'date': '', 'location': '', 'context': ''}
+    if not byline:
+        return result
+
+    # Strip outer （）
+    inner = byline.strip('（ ）()')
+
+    # Extract year: YYYY 年
+    m_yr = re.match(r'(\d+)\s*年', inner)
+    if m_yr:
+        year = m_yr.group(1)
+        rest = inner[m_yr.end():].strip()
+        # Extract month
+        m_mon = re.match(r'(\d+)\s*月', rest)
+        if m_mon:
+            result['date'] = f"{year}-{int(m_mon.group(1)):02d}"
+            rest = rest[m_mon.end():].strip()
+        else:
+            # Check for season
+            season_map = {'春': '03', '夏': '06', '秋': '09', '冬': '12'}
+            if rest and rest[0] in season_map:
+                result['date'] = f"{year}-{season_map[rest[0]]}"
+                rest = rest[1:].strip()
+            else:
+                result['date'] = year
+
+        # Strip leading ，or comma
+        rest = re.sub(r'^[，,]\s*', '', rest)
+    else:
+        rest = inner
+
+    # Extract location: 在… / 於… / 作於…
+    m_loc = re.match(r'在(.+?)([編講作記述說]+)$', rest)
+    if m_loc:
+        result['location'] = m_loc.group(1).strip()
+        result['context'] = m_loc.group(2).strip()
+    elif rest:
+        m_loc2 = re.match(r'作於(.+)', rest)
+        if m_loc2:
+            result['location'] = m_loc2.group(1).strip()
+            result['context'] = '作'
+        elif rest.endswith('講'):
+            result['context'] = '講'
+            result['location'] = rest[:-1].strip()
+        elif rest.endswith('作'):
+            result['context'] = '作'
+            result['location'] = rest[:-1].strip()
+        elif rest.endswith('編述'):
+            result['context'] = '編述'
+            result['location'] = rest[:-2].strip()
+        elif rest.endswith('編'):
+            result['context'] = '編'
+            result['location'] = rest[:-1].strip()
+        elif rest.endswith('記'):
+            result['context'] = '記'
+            result['location'] = rest[:-1].strip()
+        elif rest.endswith('說'):
+            result['context'] = '說'
+            result['location'] = rest[:-1].strip()
+        else:
+            result['location'] = rest
+
+    return result
+
+
+def build_frontmatter(entry, book_name, book_number):
+    """Build YAML frontmatter string from catalog entry.
+
+    Args:
+        entry: dict from catalog JSON 篇目鏈表 (must have 編號, 篇名, 子目, 題注, 字数)
+        book_name: str like '第一编 佛法總學'
+        book_number: int like 1
+
+    Returns: YAML frontmatter string including --- delimiters and trailing newline.
+    """
+    byline = entry.get('題注', '')
+    fields = parse_byline_fields(byline)
+
+    # Build YAML lines
+    yaml_lines = ['---']
+    yaml_lines.append(f"book: {book_name}")
+    yaml_lines.append(f"book_number: {book_number}")
+    yaml_lines.append(f"category: {entry.get('子目', '')}")
+    yaml_lines.append(f"sequence: {entry.get('編號', 0)}")
+    wc = entry.get('字数') or 0
+    yaml_lines.append(f"word_count: {wc // 1000}")
+    yaml_lines.append(f"date: {fields['date']}")
+    yaml_lines.append(f"location: {fields['location']}")
+    yaml_lines.append('keywords:')
+    yaml_lines.append('themes:')
+    yaml_lines.append('---')
+    yaml_lines.append('')  # blank line between frontmatter and body
+    return '\n'.join(yaml_lines)
+
 
 
 # ── CLI ───────────────────────────────────────────────────────────────
 
 def main():
+    global FIGURES_REL_PATH
     parser = argparse.ArgumentParser(
         description='Extract full article Markdown from CBETA TX XML')
     parser.add_argument('--catalog', help='Path to 编级 JSON catalog')
@@ -944,7 +1116,149 @@ def main():
     parser.add_argument('--toc-only', action='store_true', help='Output _目錄樹.md + _目錄.json only (no body text)')
     parser.add_argument('--figures-dir', default='_research/figures/TX',
                         help='Workspace-relative path to figures directory')
+    parser.add_argument('--batch', action='store_true',
+                        help='Batch mode: extract multiple consecutive articles')
+    parser.add_argument('--子目', help='Sub-category name (for --batch)')
+    parser.add_argument('--from', type=int, dest='from_article',
+                        help='Starting 編號 (1-based, inclusive, for --batch)')
+    parser.add_argument('--to', type=int, dest='to_article',
+                        help='Ending 編號 (1-based, inclusive, for --batch)')
     args = parser.parse_args()
+
+    if args.batch:
+        if not args.catalog:
+            parser.error('--batch requires --catalog')
+        if not args.子目:
+            parser.error('--batch requires --子目')
+        if args.from_article is None or args.to_article is None:
+            parser.error('--batch requires --from and --to')
+        if args.from_article > args.to_article:
+            parser.error('--from must be <= --to')
+
+        with open(args.catalog, encoding='utf-8') as f:
+            catalog = json.load(f)
+
+        articles = [
+            e for e in catalog['篇目鏈表']
+            if e.get('子目') == args.子目
+            and args.from_article <= e.get('編號', 0) <= args.to_article
+        ]
+        if not articles:
+            print(f'❌ 在 子目="{args.子目}" 中找不到 編號 [{args.from_article}, {args.to_article}] 的文章')
+            return 1
+        articles.sort(key=lambda a: a.get('編號', 0))
+
+        zi_mu_index = 0
+        for i, zm in enumerate(catalog.get("子目", [])):
+            if zm.get("名稱") == args.子目:
+                zi_mu_index = i
+                break
+        sub_dir = f"{zi_mu_index+1:02d}_{args.子目}"
+        out_dir = Path(args.catalog).parent / sub_dir
+
+        figures_abs = Path(args.figures_dir).resolve()
+        FIGURES_REL_PATH = os.path.relpath(str(figures_abs), str(out_dir.resolve()))
+
+        # Build XML path cache (walk once)
+        data_dir = Path(args.data_dir)
+        xml_path_cache = {}
+        for root_dir, _, files in Path(data_dir).walk():
+            for f in files:
+                if f.endswith('.xml'):
+                    xml_path_cache[f] = root_dir / f
+
+        total = len(articles)
+        success = 0
+        first_error = True
+        for i, entry in enumerate(articles):
+            xml_file = entry['file']
+            xml_path = xml_path_cache.get(xml_file)
+            if xml_path is None:
+                if first_error:
+                    print()
+                print(f'❌ [{i+1}/{total}] XML 文件 "{xml_file}" 找不到，跳過「{entry["篇名"]}」')
+                first_error = False
+                continue
+
+            try:
+                result = extract_article(str(xml_path), entry['byte_start'], entry['byte_end'], toc_only=args.toc_only)
+            except Exception as e:
+                if first_error:
+                    print()
+                print(f'❌ [{i+1}/{total}] 「{entry["篇名"]}」提取失敗: {e}')
+                first_error = False
+                continue
+
+            zi_mu_num = entry['編號']
+            zi_mu = entry.get('子目', '')
+
+            if args.toc_only:
+                out_dir.mkdir(parents=True, exist_ok=True)
+                article_slug = result["article_name"]
+                md_lines = [f'{article_slug}']
+                if result['byline']:
+                    md_lines.append(result['byline'])
+                md_lines.extend(['', '## 目錄', ''])
+                md_lines.extend(result['toc_entries'])
+                notes = []
+                if result.get('skipped'):
+                    notes.append(f'「{"」「".join(result["skipped"])}」為全文結構綱要，已移除。')
+                if result.get('is_chart'):
+                    notes.append('本文為圖表型文章，CBETA 原文為圖表/標記格式，建議查閱紙質版。')
+                if notes:
+                    md_lines.extend(['', '**備註**：', ''])
+                    for n in notes:
+                        md_lines.append(f'- {n}')
+                md_path = out_dir / f'{zi_mu_num:02d}_{article_slug}_目錄樹.md'
+                md_path.write_text(chr(10).join(md_lines) + chr(10), encoding='utf-8')
+                json_data = {
+                    'article': article_slug,
+                    'cbeta_id': xml_file,
+                    '编': catalog.get('编', ''),
+                    '子目': zi_mu,
+                    '題注': result.get('byline', ''),
+                    '処理': {
+                        '綱要去掉': result.get('skipped', []),
+                        '前言保留': False,
+                    },
+                    'tree': result['toc_tree'],
+                }
+                json_path = out_dir / f'{zi_mu_num:02d}_{article_slug}_目錄.json'
+                json_path.write_text(
+                    json.dumps(json_data, ensure_ascii=False, indent=2),
+                    encoding='utf-8'
+                )
+                print(f'✅ [{i+1}/{total}] {article_slug} (目錄樹)')
+            else:
+                out_dir.mkdir(parents=True, exist_ok=True)
+                out_path = out_dir / f'{zi_mu_num:02d}_{result["article_name"]}.md'
+                fm = build_frontmatter(entry, catalog.get('编', ''), catalog.get('编序号', 0))
+                out_path.write_text(fm + result['markdown'], encoding='utf-8')
+
+                if result.get("appendixes"):
+                    update_catalog_with_appendixes(
+                        args.catalog, result["article_name"], result["appendixes"], skip_md=True
+                    )
+                update_catalog_with_word_count(
+                    args.catalog, result["article_name"], result["word_count"], skip_md=True
+                )
+
+                wc_qian = result['word_count'] // 1000
+                print(f'✅ [{i+1}/{total}] {result["article_name"]}（{wc_qian} 千字）')
+
+            success += 1
+            first_error = True  # reset for next article
+
+        if success > 0:
+            regenerate_catalog_md(args.catalog)
+
+        if success == total:
+            print(f'\n🎉 全部完成：{success}/{total} 篇')
+            return 0
+        else:
+            print(f'\n⚠️  部分完成：{success}/{total} 篇')
+            return 1
+
 
     if args.catalog and args.article:
         with open(args.catalog, encoding='utf-8') as f:
@@ -961,7 +1275,7 @@ def main():
         byte_start = entry['byte_start']
         byte_end = entry['byte_end']
         zi_mu = entry.get("子目", "")
-        zi_mu_num = entry.get("子目內編號", 0)
+        zi_mu_num = entry.get("編號", 0)
         # Find subdirectory index from 子目 array
         zi_mu_index = 0
         for i, zm in enumerate(catalog.get("子目", [])):
@@ -979,7 +1293,6 @@ def main():
     else:
         parser.error('Need --catalog+--article or --file+--byte-start+--byte-end')
 
-    global FIGURES_REL_PATH
     figures_abs = Path(args.figures_dir).resolve()
     FIGURES_REL_PATH = os.path.relpath(str(figures_abs), str(out_dir.resolve()))
 
@@ -1045,7 +1358,8 @@ def main():
     else:
         out_dir.mkdir(parents=True, exist_ok=True)
         out_path = out_dir / f'{zi_mu_num:02d}_{result["article_name"]}.md'
-        out_path.write_text(result['markdown'], encoding='utf-8')
+        fm = build_frontmatter(entry, catalog.get('编', ''), catalog.get('编序号', 0)) if args.catalog else ''
+        out_path.write_text(fm + result['markdown'], encoding='utf-8')
 
         # Update catalog with appendix info if found
         if args.catalog and result.get("appendixes"):
@@ -1061,8 +1375,8 @@ def main():
 
         print(f'✅ 全文 → {out_path}')
         print(f'   {result["article_name"]}')
-        wc_wan = result['word_count'] / 10000
-        print(f'   {wc_wan:.1f} 万字')
+        wc_qian = result['word_count'] // 1000
+        print(f'   {wc_qian} 千字')
         if result['byline']:
             print(f'   {result["byline"]}')
 

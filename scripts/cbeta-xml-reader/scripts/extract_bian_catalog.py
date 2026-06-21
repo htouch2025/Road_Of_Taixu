@@ -176,15 +176,7 @@ def extract_catalog(xml_paths):
 
 
 def build_md(entries, bian_name):
-    """Build Markdown catalog in - nested-list format with 子目内编号."""
-    # Compute 子目内编号, preserving original order
-    sub_counter = {}
-    for e in entries:
-        sec = e['子目']
-        sub_counter.setdefault(sec, 0)
-        sub_counter[sec] += 1
-        e['_sub_num'] = sub_counter[sec]
-
+    """Build Markdown catalog in - nested-list format with 编内连续编号."""
     # Build section → article list (preserve order)
     by_section = {}
     for e in entries:
@@ -194,11 +186,12 @@ def build_md(entries, bian_name):
              '## 篇目']
     lines.append('')
     lines.append(f'- {bian_name}')
+    global_idx = 1
     for i, (sec, arts) in enumerate(by_section.items(), 1):
         lines.append(f'    - {i}. {sec}')
         for art in arts:
-            suffix = f' {art["題注"]}' if art['題注'] else ''
-            lines.append(f'        - {art["_sub_num"]}. {art["篇名"]}{suffix}')
+            lines.append(f'        - {global_idx}. {art["篇名"]}')
+            global_idx += 1
     lines.extend(['', '## 篇數統計', '',
              '| 子目 | 篇數 |',
              '|------|------|'])
@@ -259,6 +252,12 @@ def build_json(entries, bian_name, bian_num, file_map):
     }
 
 
+def build_dashboard(bian_name, out_dir):
+    """Generate 仪表盘 Dataview dashboard Markdown for the 编."""
+    template_path = Path(__file__).parent.parent / 'templates' / 'bian_dashboard.md'
+    template = template_path.read_text(encoding='utf-8')
+    return template.format(bian_name=bian_name, out_dir=out_dir)
+
 def main():
     parser = argparse.ArgumentParser(
         description='Extract 编级篇名目录 with byte offsets from CBETA TX XML')
@@ -295,6 +294,12 @@ def main():
         encoding='utf-8'
     )
 
+    # Generate dashboard
+    dashboard_text = build_dashboard(args.bian, args.out_dir)
+    dashboard_path = out_dir / f'_{basename}_仪表盘.md'
+    dashboard_path.write_text(dashboard_text, encoding='utf-8')
+
+    print(f'✅ 仪表盘 → {dashboard_path}')
     print(f'✅ MD   → {md_path}')
     print(f'✅ JSON → {json_path}')
     print(f'   {len(entries)} 篇文章, {len(set(e["子目"] for e in entries))} 個子目')

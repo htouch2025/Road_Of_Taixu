@@ -1,13 +1,14 @@
 {
   "article": "大乘理趣六波羅密多經皈依三寶品講錄",
-  "題注": "（1933 年 6 月，在漢口佛教正信會講）",
   "cbeta_id": "TX04n0004.xml",
   "编": "第四编 大乘通學",
   "子目": "教釋",
-  "處理": {
+  "題注": "（1933 年 6 月，在漢口佛教正信會講）",
+  "処理": {
     "綱要去掉": [
       "科分"
-    ]
+    ],
+    "前言保留": false
   },
   "tree": [
     {
@@ -26,13 +27,15 @@
               "label": "甲　皈德依本以定志",
               "level": 5,
               "semantic": "節",
-              "n": ""
+              "n": "",
+              "children": []
             },
             {
               "label": "乙　悔過行善以息災",
               "level": 5,
               "semantic": "節",
-              "n": ""
+              "n": "",
+              "children": []
             }
           ]
         },
@@ -40,13 +43,15 @@
           "label": "二　解經題",
           "level": 4,
           "semantic": "章",
-          "n": ""
+          "n": "",
+          "children": []
         },
         {
           "label": "三　明品系",
           "level": 4,
           "semantic": "章",
-          "n": ""
+          "n": "",
+          "children": []
         },
         {
           "label": "四　考譯史",
@@ -58,19 +63,22 @@
               "label": "甲　譯人史",
               "level": 5,
               "semantic": "節",
-              "n": ""
+              "n": "",
+              "children": []
             },
             {
               "label": "乙　本經譯史",
               "level": 5,
               "semantic": "節",
-              "n": ""
+              "n": "",
+              "children": []
             },
             {
               "label": "丙　異譯",
               "level": 5,
               "semantic": "節",
-              "n": ""
+              "n": "",
+              "children": []
             }
           ]
         }
@@ -92,7 +100,8 @@
               "label": "乙一　證信敘",
               "level": 5,
               "semantic": "節",
-              "n": ""
+              "n": "",
+              "children": []
             },
             {
               "label": "乙二　發起敘",
@@ -110,25 +119,29 @@
                       "label": "丁一　觀眾運悲",
                       "level": 7,
                       "semantic": "小小節",
-                      "n": ""
+                      "n": "",
+                      "children": []
                     },
                     {
                       "label": "丁二　仰佛求覺",
                       "level": 7,
                       "semantic": "小小節",
-                      "n": ""
+                      "n": "",
+                      "children": []
                     },
                     {
                       "label": "丁三　敬儀",
                       "level": 7,
                       "semantic": "小小節",
-                      "n": ""
+                      "n": "",
+                      "children": []
                     },
                     {
                       "label": "丁四　請詞",
                       "level": 7,
                       "semantic": "小小節",
-                      "n": ""
+                      "n": "",
+                      "children": []
                     }
                   ]
                 },
@@ -136,7 +149,8 @@
                   "label": "丙二　釋尊讚發斯品",
                   "level": 6,
                   "semantic": "小節",
-                  "n": ""
+                  "n": "",
+                  "children": []
                 }
               ]
             }
@@ -152,7 +166,8 @@
               "label": "乙一　慈氏總問三寶皈依",
               "level": 5,
               "semantic": "節",
-              "n": ""
+              "n": "",
+              "children": []
             },
             {
               "label": "乙二　釋尊別說三寶皈依",
@@ -175,72 +190,80 @@
                         {
                           "label": "戊一　總標",
                           "level": 8,
-                          "semantic": "細目",
-                          "n": ""
+                          "semantic": "節",
+                          "n": "",
+                          "children": []
                         },
                         {
                           "label": "戊二　別釋",
                           "level": 8,
-                          "semantic": "細目",
+                          "semantic": "節",
                           "n": "",
                           "children": [
                             {
                               "label": "己一　明佛身",
                               "level": 9,
-                              "semantic": "細目",
-                              "n": ""
+                              "semantic": "小節",
+                              "n": "",
+                              "children": []
                             },
                             {
                               "label": "己二　顯佛德",
                               "level": 9,
-                              "semantic": "細目",
-                              "n": ""
+                              "semantic": "小節",
+                              "n": "",
+                              "children": []
                             }
                           ]
                         },
                         {
                           "label": "戊三　抉擇",
                           "level": 8,
-                          "semantic": "細目",
+                          "semantic": "節",
                           "n": "",
                           "children": [
                             {
                               "label": "己一　辨一異",
                               "level": 9,
-                              "semantic": "細目",
-                              "n": ""
+                              "semantic": "小節",
+                              "n": "",
+                              "children": []
                             },
                             {
                               "label": "己二　顯三身",
                               "level": 9,
-                              "semantic": "細目",
+                              "semantic": "小節",
                               "n": "",
                               "children": [
                                 {
                                   "label": "庚一　法身",
                                   "level": 10,
-                                  "semantic": "細目",
-                                  "n": ""
+                                  "semantic": "小小節",
+                                  "n": "",
+                                  "children": []
                                 },
                                 {
                                   "label": "庚二　報身",
                                   "level": 10,
-                                  "semantic": "細目",
-                                  "n": ""
+                                  "semantic": "小小節",
+                                  "n": "",
+                                  "children": []
                                 },
                                 {
                                   "label": "庚三　化身",
                                   "level": 10,
-                                  "semantic": "細目",
-                                  "n": ""
+                                  "semantic": "小小節",
+                                  "n": "",
+                                  "children": []
                                 }
                               ]
                             },
                             {
                               "label": "己三　歸法身",
                               "level": 9,
-                              "semantic": "細目",
-                              "n": ""
+                              "semantic": "小節",
+                              "n": "",
+                              "children": []
                             }
                           ]
                         }
@@ -255,68 +278,74 @@
                         {
                           "label": "戊一　總標",
                           "level": 8,
-                          "semantic": "細目",
-                          "n": ""
+                          "semantic": "節",
+                          "n": "",
+                          "children": []
                         },
                         {
                           "label": "戊二　別釋",
                           "level": 8,
-                          "semantic": "細目",
+                          "semantic": "節",
                           "n": "",
                           "children": [
                             {
                               "label": "己一　第一法寶",
                               "level": 9,
-                              "semantic": "細目",
+                              "semantic": "小節",
                               "n": "",
                               "children": [
                                 {
                                   "label": "庚一　正明涅槃",
                                   "level": 10,
-                                  "semantic": "細目",
+                                  "semantic": "小小節",
                                   "n": "",
                                   "children": [
                                     {
                                       "label": "辛一　長行",
                                       "level": 11,
-                                      "semantic": "細目",
+                                      "semantic": "節",
                                       "n": "",
                                       "children": [
                                         {
                                           "label": "壬一　先徵",
                                           "level": 12,
-                                          "semantic": "細目",
-                                          "n": ""
+                                          "semantic": "小節",
+                                          "n": "",
+                                          "children": []
                                         },
                                         {
                                           "label": "壬二　後釋",
                                           "level": 12,
-                                          "semantic": "細目",
-                                          "n": ""
+                                          "semantic": "小節",
+                                          "n": "",
+                                          "children": []
                                         }
                                       ]
                                     },
                                     {
                                       "label": "辛二　偈頌",
                                       "level": 11,
-                                      "semantic": "細目",
-                                      "n": ""
+                                      "semantic": "節",
+                                      "n": "",
+                                      "children": []
                                     }
                                   ]
                                 },
                                 {
                                   "label": "庚二　結成三德",
                                   "level": 10,
-                                  "semantic": "細目",
-                                  "n": ""
+                                  "semantic": "小小節",
+                                  "n": "",
+                                  "children": []
                                 }
                               ]
                             },
                             {
                               "label": "己二　第二法寶",
                               "level": 9,
-                              "semantic": "細目",
-                              "n": ""
+                              "semantic": "小節",
+                              "n": "",
+                              "children": []
                             }
                           ]
                         }
