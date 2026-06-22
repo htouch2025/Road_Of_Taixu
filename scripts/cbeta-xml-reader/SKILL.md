@@ -239,11 +239,11 @@ Full catalog with 四藏分类 in `references/taixu_catalog.md`.
 **⚠️ 提取後須做兩項人工複核：**（1）檢查是否有帶「（附）」前綴的 level-2 條目需合併入前一篇；（2）確認編內連續編號正確（跨子目不重置，从 1 递增至编末）。
 詳見 Known Pitfalls 第 12、13 條。
 
-使用 `scripts/extract_bian_catalog.py`（路径相对于 skill 目录，即 `~/.codex/skills/cbeta-xml-reader/scripts/`），仅提取 level 1（子目类别）和 level 2（篇名）。
+使用 `scripts/extract_book_catalog.py`（路径相对于 skill 目录，即 `~/.codex/skills/cbeta-xml-reader/scripts/`），仅提取 level 1（子目类别）和 level 2（篇名）。
 脚本自动为每篇文章扫描原始文件字节偏移量，构建增强 JSON（含链表 + byte_start/byte_end）。
 
 ```
-python scripts/extract_bian_catalog.py \
+python scripts/extract_book_catalog.py \
   _data/cbeta/TX/TX01/TX01n0001.xml _data/cbeta/TX/TX02/TX02n0001.xml \
   --book "第一编 佛法總學" --book-num 1
 ```
@@ -367,7 +367,7 @@ python scripts/extract_bian_catalog.py \
 
 1. **注释发现**：扫描文章范围内的 `nkr_note_orig_*` 锚点 ID，按出现顺序编号
 1. **正文标记**：在对应锚点位置插入纯数字 `N`（如 `1`、`2`），标题后注释号与标题正文间空一格（如 `# 佛學概論 1`、`### 學史 2`）
-1. **文末注释**：每行格式为 `- **N**：注释正文`（如 `- **1**：本論略本...`）
+1. **文末注释**：每行格式为 `- N：注释正文`（如 `- 1：本論略本...`）
 1. **篇末附注**：自动提取文章末尾的 `<byline>` 记录者信息和 `<note place="inline">` 刊载来源，如 `（碧松記）（原見海潮音月刊十八卷十一期）`
 
 **处理嵌套 `<note>` 在 `<byline>` 内的情形：** 部分 CBETA 文件中，篇末刊载来源 `<note place="inline">` 嵌套在 `<byline>` 元素内部（而非平级），如 `<byline>（碧松記）<note place="inline">原見海潮音月刊十八卷十一期</note></byline>`。`extract_paragraphs()` 函数用 `child.itertext()`（而非 `child.text`）获取 byline 的完整文本（跨 `<lb/>` 断点），再从子 `<note>` 提取刊载文本，将 note 文本从 itertext 结果中剥离后组合为 `{own_text}（{nt}）`，两段文本均不丢失。
@@ -395,6 +395,7 @@ book: 第一编 佛法總學
 book_number: 1
 category: 判攝
 sequence: 22
+publication: 原見海潮音月刊十八卷十一期
 word_count: 4
 date: 1937-08
 location: 世界佛學苑研究部
@@ -412,6 +413,7 @@ themes:
 | `category` | 编目录 JSON 条目 `子目` | 所属子目类别 |
 | `sequence` | 编目录 JSON 条目 `編號` | 编内全局序号（跨子目连续） |
 | `word_count` | 编目录 JSON 条目 `字数` | 千字整数（CJK 字符数 // 1000） |
+| `publication` | XML `<byline><note place="inline">` | 刊载/印行信息，单值字符串；多条时用「；」连接（可选，无刊载信息时不出现） |
 | `date` | 编目录 JSON 条目 `題注` 解析 | YYYY-MM 格式，无月份则为 YYYY |
 | `location` | 编目录 JSON 条目 `題注` 解析 | 讲说/编述地点 |
 | `keywords` | 手工填写 | 关键字，预留空值 |
@@ -420,6 +422,7 @@ themes:
 **生成规则：**
 - `build_frontmatter()` 函数从 catalog JSON 条目读取 `編號`、`子目`、`題注`、`字数`，调用 `parse_byline_fields()` 解析題注中的年代/地点/场合
 - 年代格式化为 YYYY-MM（有月份）或 YYYY（无月份）
+- `publication` 字段为单值字符串，来自 CBETA XML 原文中 `<byline>` 元素内的 `<note place="inline">` 文本，保持原貌不分类；多条刊载来源时以「；」连接；正文尾注中亦保留同样信息
 - `word_count` 为字数 // 1000 的整数值
 - frontmatter 与正文之间保留一个空行
 
@@ -615,7 +618,7 @@ article_entries = all_mulu[art_start:art_end]
 ### 8. Dataview 仪表盘（编级概览页面）
 
 
-**自动生成：** `extract_bian_catalog.py` 在生成编目录时同时输出仪表盘，无需手工创建。
+**自动生成：** `extract_book_catalog.py` 在生成编目录时同时输出仪表盘，无需手工创建。
 每编在 `_research/{NN}_{编名}/` 下配有 `_{NN}_{编名}_仪表盘.md`，使用 Obsidian Dataview 插件动态汇总该编所有文章的元数据。
 
 **仪表盘查询（Dataview TABLE）：**
@@ -665,7 +668,7 @@ python3 scripts/cbeta-xml-reader/scripts/add_frontmatter_to_existing.py \
 
 1. **`extract_article_notes()`**：扫描文章范围的 `<anchor xml:id="nkr_note_orig_N"/>` ID，与 `<back>` 区域的 `<note n="N" target="#nkr_note_orig_N">` 交叉匹配，返回 `[(num_label, note_text), ...]` 和 `anchor_ids` 有序列表
 1. **正文标记**：在对应锚点位置插入纯数字 `N`，无链接。标题后注释号与标题正文间有一个空格（如 `# 佛學概論 1`）
-1. **文末注释**：每行格式为 `- **N**：注释正文`（如 `- **1**：本論略本...`），无回链
+1. **文末注释**：每行格式为 `- N：注释正文`（如 `- 1：本論略本...`），无回链
 1. **篇末附注**：`extract_paragraphs()` 额外处理 `<byline>` 和 `<note place="inline">`，自动提取记录者（如「碧松記」）和刊载来源（如「原見海潮音月刊十八卷十一期」）
 1. **无锚点**：不生成 `^h-xxxxxx` 块锚点、不生成 `^fn-body-N` 回链锚点、不生成 `{#h-xxxxxx}` 自定义锚点
 
@@ -723,7 +726,7 @@ elif own_text:
 
 ## Scripts
 
-- `scripts/extract_bian_catalog.py` — 提取编级篇名目录 (level 1-2)，含字节偏移扫描与增强 JSON 输出
+- `scripts/extract_book_catalog.py` — 提取编级篇名目录 (level 1-2)，含字节偏移扫描与增强 JSON 输出
 - `scripts/extract_mulu.py` — 提取单篇文章的完整 `<cb:mulu>` 层级结构
 - `scripts/extract_article_fulltext.py` — 提取单篇文章完整全文 Markdown（纯文本，无 Obsidian 特有语法），含目录树、正文、字数统计、篇末注释及篇末附注
 - `scripts/_utils.py` — 共享工具函数：`chinese_to_int`、`normalize_byline`、`split_month_season`、`build_suffix`

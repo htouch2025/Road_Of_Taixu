@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Shared utilities for CBETA TX XML processing scripts.
 
-Used by extract_bian_catalog.py and extract_article_fulltext.py.
+Used by extract_book_catalog.py and extract_article_fulltext.py.
 """
 
 import re

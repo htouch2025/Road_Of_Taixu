@@ -213,7 +213,7 @@ def render_paragraph(p_elem, notes_map=None, heading_anchor=None, note_backrefs=
                 aid = child.get("{http://www.w3.org/XML/1998/namespace}id") or child.get("xml:id", "")
                 if notes_map and aid in notes_map:
                     n = notes_map[aid]
-                    parts.append(str(n))
+                    parts.append(f'[{n}]')
             elif tag in ('lb', 'pb'):
                 if is_pre and tag == 'lb':
                     parts.append('\n')
@@ -259,6 +259,18 @@ def extract_paragraphs(div, notes_map=None, heading_anchor=None, note_backrefs=N
             # Use itertext() to capture text across <lb/> breaks (pitfall #16)
             own_text = ''.join(child.itertext())
             own_text = ''.join(own_text.split())  # compress whitespace
+            # Check for nkr_note_orig_* anchors inside byline/note elements.
+            # itertext() skips anchor elements (they have no text), so we
+            # must explicitly collect footnote number(s) and append them.
+            if notes_map:
+                for anchor_elem in child.iter(f'{{{TEI_NS}}}anchor'):
+                    aid = anchor_elem.get("{http://www.w3.org/XML/1998/namespace}id") or anchor_elem.get("xml:id", "")
+                    if aid and aid in notes_map:
+                        own_text += f'[{notes_map[aid]}]'
+                for anchor_elem in child.findall('.//anchor'):
+                    aid = anchor_elem.get("{http://www.w3.org/XML/1998/namespace}id") or anchor_elem.get("xml:id", "")
+                    if aid and aid in notes_map:
+                        own_text += f'[{notes_map[aid]}]'
             inline_note = child.find(f'{{{TEI_NS}}}note') or child.find('note')
             if inline_note is not None and inline_note.get('place') == 'inline':
                 nt = ''.join(inline_note.itertext())
@@ -465,7 +477,7 @@ def walk_div_tree(div, toc_entries, body_lines, notes_map=None, note_backrefs=No
 
     effective_lv = mulu_lv + level_offset
     floor = 2 if level_offset < 0 else 3
-    heading_level = '#' * max(floor, effective_lv)
+    heading_level = '#' * min(6, max(floor, effective_lv))
 
     # Split appendix heading: "附：标题" → heading="附：" + subtitle line
     appendix_subtitle = None
@@ -490,7 +502,7 @@ def walk_div_tree(div, toc_entries, body_lines, notes_map=None, note_backrefs=No
         note_marker = ''
         if note_anchor and notes_map and note_anchor in notes_map:
             n = notes_map[note_anchor]
-            note_marker = f' {n}'
+            note_marker = f' [{n}]'
         body_lines.append(f'{heading_level} {indent}{heading}{note_marker}')
         if appendix_subtitle:
             subtitle_level = "#"
@@ -511,6 +523,52 @@ def walk_div_tree(div, toc_entries, body_lines, notes_map=None, note_backrefs=No
     for child in div:
         if child.tag == f'{{{CBETA_NS}}}div':
             walk_div_tree(child, toc_entries, body_lines, notes_map, note_backrefs, recurse_offset)
+
+
+def extract_publication_notes(div):
+    """Recursively extract publication notes from <byline><note place="inline"> elements.
+
+    Walks the div tree, finds all byline elements that contain inline notes,
+    and returns a list of unique, order-preserved note texts.
+    """
+    notes = []
+    for child in div:
+        local_tag = child.tag.split('}')[-1] if '}' in child.tag else child.tag
+        if local_tag == 'byline':
+            inline_note = child.find(f'{{{TEI_NS}}}note') or child.find('note')
+            if inline_note is not None and inline_note.get('place') == 'inline':
+                nt = ''.join(inline_note.itertext()).strip()
+                nt = ''.join(nt.split())  # compress whitespace
+                if nt and nt not in notes:
+                    notes.append(nt)
+        elif local_tag == 'div' or child.tag == f'{{{CBETA_NS}}}div':
+            notes.extend(extract_publication_notes(child))
+    # Deduplicate while preserving order
+    seen = set()
+    result = []
+    for n in notes:
+        if n not in seen:
+            seen.add(n)
+            result.append(n)
+    return result
+
+
+def render_frontmatter(title, publication_notes):
+    """Render YAML frontmatter block for the output Markdown file.
+
+    Always includes a 'title' field. The 'publication' field is a single string
+    of original publication note texts and is omitted when empty.
+    """
+    def yaml_quote(s):
+        return '"' + s.replace('\\', '\\\\').replace('"', '\\"') + '"'
+
+    lines = ['---', f'title: {yaml_quote(title)}']
+    if publication_notes:
+        pub_str = '；'.join(publication_notes)
+        lines.append(f'publication: {yaml_quote(pub_str)}')
+    lines.append('---')
+    return '\n'.join(lines)
+
 
 # ── Main extract ──────────────────────────────────────────────────────
 
@@ -671,8 +729,6 @@ def _collect_skipped(article_div):
         if should_skip_div(mulu_text):
             skipped.append(mulu_text)
     return skipped
-
-
 # ── Main extract ──────────────────────────────────────────────────────
 
 def extract_article(xml_path, byte_start, byte_end, toc_only=False):
@@ -737,6 +793,9 @@ def extract_article(xml_path, byte_start, byte_end, toc_only=False):
     # Detect chart articles (no toc entries, no body paragraphs)
     is_chart = len(toc_entries) == 0 and len(body_lines) == 0
 
+    # Collect publication notes from <byline><note place="inline">
+    pub_notes = extract_publication_notes(article_div)
+
     title_note = ''
     if title_note_anchor and title_note_anchor in notes_map:
         n = notes_map[title_note_anchor]
@@ -767,6 +826,8 @@ def extract_article(xml_path, byte_start, byte_end, toc_only=False):
     md_lines.extend(body_lines)
 
     # Split trailing publication note （見...） from last paragraph
+    # Also collect for frontmatter
+    trailing_notes = []
     for _i in range(len(md_lines) - 1, -1, -1):
         if md_lines[_i].strip():
             _line = md_lines[_i]
@@ -777,14 +838,21 @@ def extract_article(xml_path, byte_start, byte_end, toc_only=False):
                 md_lines[_i] = _body
                 md_lines.insert(_i + 1, '')
                 md_lines.insert(_i + 2, _note)
+                trailing_notes.append(_note.strip('（）'))
             break
+
+    # Merge byline publication notes with trailing notes, deduplicate
+    publication_notes = []
+    for n in pub_notes + trailing_notes:
+        if n not in publication_notes:
+            publication_notes.append(n)
 
     # Append back-notes section
     if back_notes:
         md_lines.extend(['', '## 註釋', ''])
         for idx, (num_label, note_text) in enumerate(back_notes):
             n = idx + 1
-            md_lines.append(f'- **{n}**：{note_text}')
+            md_lines.append(f'- [{n}]：{note_text}')
 
     if is_chart:
         md_lines.extend(['', '---', '',
@@ -808,33 +876,8 @@ def extract_article(xml_path, byte_start, byte_end, toc_only=False):
             continue
         cjk_count += count_chinese_chars(line)
 
-    # Insert word count line after byline/appendix, before ## 目錄 or body
-    wc_qian = cjk_count // 1000
-    wc_line = f'**{wc_qian} 千字**'
-    # Find ## 目錄 index to insert before it
-    toc_idx = None
-    for i, line in enumerate(md_lines):
-        if line.startswith('## 目錄'):
-            toc_idx = i
-            break
-    if toc_idx is not None:
-        md_lines.insert(toc_idx, '')
-        md_lines.insert(toc_idx, wc_line)
-    else:
-        # No 目錄 — find first body line and insert before it
-        insert_at = 1  # skip # Title
-        while insert_at < len(md_lines):
-            stripped = md_lines[insert_at].strip()
-            if stripped == '' or stripped.startswith('#') or stripped.startswith('（'):
-                insert_at += 1
-                continue
-            break
-        md_lines.insert(insert_at, '')
-        md_lines.insert(insert_at, '')
-        md_lines.insert(insert_at, '')
-        md_lines.insert(insert_at, wc_line)
 
-    # Ensure exactly 3 blank lines between TOC and body.
+   # Ensure exactly 3 blank lines between TOC and body.
     # Find ## 目錄, then locate the last TOC entry and first body line structurally.
     toc_heading_idx = None
     for j, line in enumerate(md_lines):
@@ -874,6 +917,7 @@ def extract_article(xml_path, byte_start, byte_end, toc_only=False):
         'markdown': '\n'.join(md_lines) + '\n',
         'appendixes': appendixes,
         'word_count': cjk_count,
+        'publication_notes': publication_notes,
     }
 
 
@@ -1028,7 +1072,7 @@ def parse_byline_fields(byline):
                 result['date'] = f"{year}-{season_map[rest[0]]}"
                 rest = rest[1:].strip()
             else:
-                result['date'] = year
+                result['date'] = f"{year}-01"
 
         # Strip leading ，or comma
         rest = re.sub(r'^[，,]\s*', '', rest)
@@ -1069,13 +1113,14 @@ def parse_byline_fields(byline):
     return result
 
 
-def build_frontmatter(entry, book_name, book_number):
+def build_frontmatter(entry, book_name, book_number, publication_notes=None):
     """Build YAML frontmatter string from catalog entry.
 
     Args:
         entry: dict from catalog JSON 篇目鏈表 (must have 編號, 篇名, 子目, 題注, 字数)
         book_name: str like '第一编 佛法總學'
         book_number: int like 1
+        publication_notes: list of str or None, publication/source notes from byline
 
     Returns: YAML frontmatter string including --- delimiters and trailing newline.
     """
@@ -1090,7 +1135,17 @@ def build_frontmatter(entry, book_name, book_number):
     yaml_lines.append(f"sequence: {entry.get('編號', 0)}")
     wc = entry.get('字数') or 0
     yaml_lines.append(f"word_count: {wc // 1000}")
-    yaml_lines.append(f"date: {fields['date']}")
+    if fields['date'] and '-' not in fields['date']:
+        yaml_lines.append(f'date: "{fields["date"]}"')
+    else:
+        yaml_lines.append(f"date: {fields['date']}")
+    if publication_notes:
+        def _yq(s):
+            if '\n' in s or '"' in s or ':' in s and s[0] != ' ':
+                return '"' + s.replace('\\', '\\\\').replace('"', '\\"') + '"'
+            return s
+        pub_str = '；'.join(publication_notes)
+        yaml_lines.append(f'publication: {_yq(pub_str)}')
     yaml_lines.append(f"location: {fields['location']}")
     yaml_lines.append('keywords:')
     yaml_lines.append('themes:')
@@ -1232,7 +1287,8 @@ def main():
             else:
                 out_dir.mkdir(parents=True, exist_ok=True)
                 out_path = out_dir / f'{zi_mu_num:02d}_{result["article_name"]}.md'
-                fm = build_frontmatter(entry, catalog.get('编', ''), catalog.get('编序号', 0))
+                entry['字数'] = result['word_count']
+                fm = build_frontmatter(entry, catalog.get('编', ''), catalog.get('编序号', 0), result.get('publication_notes'))
                 out_path.write_text(fm + result['markdown'], encoding='utf-8')
 
                 if result.get("appendixes"):
@@ -1358,7 +1414,12 @@ def main():
     else:
         out_dir.mkdir(parents=True, exist_ok=True)
         out_path = out_dir / f'{zi_mu_num:02d}_{result["article_name"]}.md'
-        fm = build_frontmatter(entry, catalog.get('编', ''), catalog.get('编序号', 0)) if args.catalog else ''
+        if args.catalog:
+            entry['字数'] = result['word_count']
+        publication_notes = result.get('publication_notes', [])
+        fm = build_frontmatter(entry, catalog.get('编', ''), catalog.get('编序号', 0), publication_notes) if args.catalog else ''
+        if not args.catalog and publication_notes:
+            fm = render_frontmatter(result['article_name'], publication_notes) + '\n'
         out_path.write_text(fm + result['markdown'], encoding='utf-8')
 
         # Update catalog with appendix info if found

@@ -1,11 +1,11 @@
 ---
-book: {bian_name}
+book: {book_name}
 ---
 
-# {bian_name} · 概览仪表盘
+# {book_name} · 概览仪表盘
 
 ```dataview
-TABLE word_count AS "千字", date AS "年代", location AS "地点"
+TABLE word_count AS "千字", dateformat(date, "yyyy.MM") AS "年代", location AS "地点"
 FROM "{out_dir}"
 WHERE book AND sequence
 SORT sequence ASC

@@ -4,9 +4,9 @@ with enriched JSON including mulu indices, prev/next linked list,
 byte-level file offsets, byline extraction, and 子目内编号.
 
 Usage:
-  python extract_bian_catalog.py _data/cbeta/TX/TX01/TX01n0001.xml \
+  python extract_book_catalog.py _data/cbeta/TX/TX01/TX01n0001.xml \
       _data/cbeta/TX/TX02/TX02n0001.xml \
-      --bian "第一编 佛法總學" --out-dir _research/01_佛法總學
+      --book "第一编 佛法總學" --out-dir _research/01_佛法總學
 """
 
 import argparse
@@ -175,17 +175,17 @@ def extract_catalog(xml_paths):
     return entries, file_map
 
 
-def build_md(entries, bian_name):
+def build_md(entries, book_name):
     """Build Markdown catalog in - nested-list format with 编内连续编号."""
     # Build section → article list (preserve order)
     by_section = {}
     for e in entries:
         by_section.setdefault(e['子目'], []).append(e)
 
-    lines = [f'# {bian_name} 篇名目錄', '',
+    lines = [f'# {book_name} 篇名目錄', '',
              '## 篇目']
     lines.append('')
-    lines.append(f'- {bian_name}')
+    lines.append(f'- {book_name}')
     global_idx = 1
     for i, (sec, arts) in enumerate(by_section.items(), 1):
         lines.append(f'    - {i}. {sec}')
@@ -204,7 +204,7 @@ def build_md(entries, bian_name):
     return '\n'.join(lines)
 
 
-def build_json(entries, bian_name, bian_num, file_map):
+def build_json(entries, book_name, book_num, file_map):
     """Build enriched JSON catalog with byte offsets, linked list, and 子目内编号."""
     # Compute 子目内编号
     sub_counter = {}
@@ -239,8 +239,8 @@ def build_json(entries, bian_name, bian_num, file_map):
         })
 
     return {
-        '编': bian_name,
-        '编序号': bian_num,
+        '编': book_name,
+        '编序号': book_num,
         '來源文件': file_map,
         '子目': [
             {'名稱': sec, '篇數': len(arts),
@@ -252,31 +252,31 @@ def build_json(entries, bian_name, bian_num, file_map):
     }
 
 
-def build_dashboard(bian_name, out_dir):
+def build_dashboard(book_name, out_dir):
     """Generate 仪表盘 Dataview dashboard Markdown for the 编."""
-    template_path = Path(__file__).parent.parent / 'templates' / 'bian_dashboard.md'
+    template_path = Path(__file__).parent.parent / 'templates' / 'book_dashboard.md'
     template = template_path.read_text(encoding='utf-8')
-    return template.format(bian_name=bian_name, out_dir=out_dir)
+    return template.format(book_name=book_name, out_dir=out_dir)
 
 def main():
     parser = argparse.ArgumentParser(
         description='Extract 编级篇名目录 with byte offsets from CBETA TX XML')
     parser.add_argument('xml_files', nargs='+', help='TX XML file paths')
-    parser.add_argument('--bian', required=True, help='编名')
-    parser.add_argument('--bian-num', type=int, default=1, help='编序号')
-    parser.add_argument('--out-dir', default=None, help='Output directory (auto: _research/{bian-num:02d}_{bian-suffix})')
+    parser.add_argument('--book', required=True, help='编名')
+    parser.add_argument('--book-num', type=int, default=1, help='编序号')
+    parser.add_argument('--out-dir', default=None, help='Output directory (auto: _research/{book-num:02d}_{book-suffix})')
     parser.add_argument('--prefix', default=None, help='Output filename prefix (auto: _{out_dir_basename}_編目錄)')
     args = parser.parse_args()
 
     if args.out_dir is None:
-        bian_parts = args.bian.split(None, 1)
-        bian_suffix = bian_parts[1] if len(bian_parts) > 1 else args.bian
-        args.out_dir = f'_research/{args.bian_num:02d}_{bian_suffix}'
+        book_parts = args.book.split(None, 1)
+        bian_suffix = bian_parts[1] if len(bian_parts) > 1 else args.book
+        args.out_dir = f'_research/{args.book_num:02d}_{bian_suffix}'
 
     entries, file_map = extract_catalog(args.xml_files)
 
-    md_text = build_md(entries, args.bian)
-    json_data = build_json(entries, args.bian, args.bian_num, file_map)
+    md_text = build_md(entries, args.book)
+    json_data = build_json(entries, args.book, args.book_num, file_map)
 
     out_dir = Path(args.out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -295,7 +295,7 @@ def main():
     )
 
     # Generate dashboard
-    dashboard_text = build_dashboard(args.bian, args.out_dir)
+    dashboard_text = build_dashboard(args.book, args.out_dir)
     dashboard_path = out_dir / f'_{basename}_仪表盘.md'
     dashboard_path.write_text(dashboard_text, encoding='utf-8')
 

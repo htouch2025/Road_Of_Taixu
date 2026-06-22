@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "1a105a422a186e90",
+        "id": "6e561b24fb22c5e7",
         "type": "tabs",
         "children": [
           {
-            "id": "e115f631d7d018ce",
+            "id": "686fd5db4d6c987d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "scripts/cbeta-xml-reader/templates/bian_dashboard.md",
+                "file": "_research/01_佛法總學/01_概論/08_佛法僧義廣論.md",
                 "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "bian_dashboard"
+              "title": "08_佛法僧義廣論"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "[\"bian\"]",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 276.50390243530273
+    "width": 308.5
   },
   "right": {
     "id": "d352ea0e3c0d70cb",
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "scripts/cbeta-xml-reader/templates/bian_dashboard.md",
+                "file": "_research/01_佛法總學/_01_佛法總學_仪表盘.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "bian_dashboard 的反向链接列表"
+              "title": "_01_佛法總學_仪表盘 的反向链接列表"
             }
           },
           {
@@ -175,8 +175,7 @@
               "title": "Claudian"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -195,45 +194,45 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "e115f631d7d018ce",
+  "active": "686fd5db4d6c987d",
   "lastOpenFiles": [
-    "_research/01_佛法總學/_01_佛法總學_仪表盘.md",
-    "_research/海潮音卷期对照表.md",
-    "_research/01_佛法總學/02_判攝/18_萬有皆因緣所生.md",
-    "_research/01_佛法總學/02_判攝/17_諸法眾緣生唯識現.md",
-    "_research/01_佛法總學/02_判攝/16_性釋.md",
-    "_research/01_佛法總學/02_判攝/15_律禪密淨四行論.md",
-    "_research/01_佛法總學/01_概論/02_佛理要略.md",
-    "scripts/cbeta-xml-reader/scripts/__pycache__/extract_mulu.cpython-314.pyc",
-    "scripts/cbeta-xml-reader/templates/bian_dashboard.md",
-    "_research/01_佛法總學/02_判攝/22_新與融貫.md",
-    "scripts/cbeta-xml-reader/templates",
-    "scripts/cbeta-xml-reader/scripts/__pycache__/extract_bian_catalog.cpython-314.pyc",
-    "_research/01_佛法總學/01_概論/01_佛學概論.md",
+    "scripts/cbeta-xml-reader/scripts/__pycache__/extract_article_fulltext.cpython-314.pyc",
+    "scripts/cbeta-xml-reader/scripts/__pycache__/extract_book_catalog.cpython-314.pyc",
     "scripts/cbeta-xml-reader/scripts/__pycache__/add_frontmatter_to_existing.cpython-314.pyc",
-    "_research/01_佛法總學/_01_佛法總學_編目錄.md",
+    "scripts/cbeta-xml-reader/scripts/__pycache__/extract_mulu.cpython-314.pyc",
+    "_research/01_佛法總學/01_概論/04_佛乘宗要論.md",
+    "_research/01_佛法總學/01_概論/05_佛陀學綱.md",
+    "_research/01_佛法總學/01_概論/06_甚麼是佛學.md",
+    "_research/01_佛法總學/01_概論/07_佛學講要.md",
+    "_research/01_佛法總學/01_概論/08_佛法僧義廣論.md",
+    "_research/01_佛法總學/01_概論/01_佛學概論.md",
+    "_research/01_佛法總學/_01_佛法總學_仪表盘.md",
     "_research/01_佛法總學/01_概論/03_佛法導言.md",
-    "_research/01_佛法總學/02_判攝/01_佛藏擇法眼圖.md",
-    "temp/方案A_Dataview/编目录.md",
+    "_research/01_佛法總學/01_概論/02_佛理要略.md",
+    "_research/01_佛法總學/01_概論",
+    "_research/01_佛法總學/02_判攝/26_我怎樣判攝一切佛法.md",
+    "_research/海潮音卷期对照表.md",
+    "_research/太虚大师全书刊载信息全录.md",
+    "_research/01_佛法總學/03_源流/34_佛學源流及其新運動.md",
+    "_research/01_佛法總學/03_源流/33_亞歐美佛教之鳥瞰.md",
+    "_research/01_佛法總學/03_源流/32_佛教史略.md",
+    "_research/01_佛法總學/03_源流/31_中國之佛教.md",
+    "_research/01_佛法總學/03_源流/30_論中國佛教史.md",
+    "_research/01_佛法總學/03_源流/29_會昌以前中華佛教之三大系.md",
+    "_research/01_佛法總學/03_源流/28_佛教各宗派源流.md",
+    "_research/01_佛法總學/_01_佛法總學_編目錄.md",
+    "_research/01_佛法總學/03_源流/27_中國佛學.md",
     "_research/05_法性空慧學/_05_法性空慧學_仪表盘.md",
-    "_research/04_大乘通學/_04_大乘通學_仪表盘.md",
-    "scripts/cbeta-xml-reader/scripts/add_frontmatter_to_existing.py",
-    "temp/方案A_Dataview/文章笔记/佛學概論.md",
-    "temp/方案A_Dataview/文章笔记/中國佛學.md",
-    "temp/方案A_Dataview/文章笔记/漢藏教理融會談.md",
-    "temp/方案A_Dataview/文章笔记/佛理要略.md",
-    "temp/方案A_Dataview/文章笔记/佛乘宗要論.md",
-    "temp/方案C_Callout折叠.md",
-    "temp/方案B_紧凑表格.md",
-    "_research/04_大乘通學/01_教釋/01_大乘理趣六波羅密多經皈依三寶品講錄_目錄樹.md",
-    "temp/方案A_Dataview/文章笔记",
-    "temp/方案A_Dataview",
-    "temp",
-    "未命名.base",
-    "2026-06-21.md",
+    "_research/01_佛法總學/02_判攝/25_世苑圖書館館員之修學方針.md",
+    "_research/01_佛法總學/02_判攝/24_世界佛學苑之佛法系統觀.md",
+    "_research/01_佛法總學/02_判攝/23_佛教的教史教法和今後的建設.md",
+    "_research/01_佛法總學/03_源流",
+    "_research/01_佛法總學/02_判攝",
+    "_research/01_佛法總學/_01_佛法總學_編目錄.json",
+    "scripts/cbeta-xml-reader/scripts/extract_book_catalog.py",
+    "scripts/cbeta-xml-reader/scripts/__pycache__/_utils.cpython-314.pyc",
+    "scripts/cbeta-xml-reader/scripts/__pycache__",
     "未命名.canvas",
-    "_research/01_佛法總學/02_判攝/18_我怎樣判攝一切佛法.md",
-    "_research/04_大乘通學/01_教釋/02_大乘理趣六波羅密多經發菩提心品講錄_目錄.json",
     "_data/figures/TX/TX08p0758_01.gif",
     "_data/figures/TX/TX05p0923_01.gif",
     "_data/figures/TX/TX09p1028_01.gif",
