@@ -1,0 +1,2617 @@
+{
+  "summary": {
+    "total_candidates": 146,
+    "unique_standards": 146,
+    "single_occurrence_ratio": "68/146",
+    "high_frequency_terms": [
+      "眾生",
+      "成佛",
+      "大乘",
+      "發心",
+      "大慈悲",
+      "佛學",
+      "智慧",
+      "小乘",
+      "無始"
+    ],
+    "heading_weighted": true,
+    "heading_weight": 3
+  },
+  "article": {
+    "path": "/Users/xin/Documents/Road_Of_Taixu/_research/01_佛法總學/01_概論/05_佛陀學綱.md",
+    "title": "佛陀學綱",
+    "cjk_chars": 9419,
+    "recommended_count": "8-12",
+    "编": "第一编 佛法總學",
+    "编_number": "1",
+    "category": "概論"
+  },
+  "vocab_source": "/Users/xin/Documents/Road_Of_Taixu/scripts/keyword-extractor/vocabulary/keyword_vocabulary_v4.json",
+  "match_stats": {
+    "raw_hits": 155,
+    "after_dedup": 146
+  },
+  "candidates": [
+    {
+      "matched": "眾生",
+      "standard": "眾生",
+      "occurrences": 49,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "眾生"
+      ],
+      "sample_context": "…，世界的成功，也是由於因緣——因是四大（色法）種子（化學上的原子電子），緣是一切眾生的業力——。由此推論，萬事萬物都是眾多因緣所成，無固定性，無獨立性。  像以上所…"
+    },
+    {
+      "matched": "成佛",
+      "standard": "成佛",
+      "occurrences": 32,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "成佛"
+      ],
+      "sample_context": "…行為又發生將來的結果，因果重重相續無盡，所以人生有不朽的價值！這種道理，不但學佛成佛要知道，就是要做有人格的人，有道德的人，也都應當明白，否則會生出許多煩惱來。照大…"
+    },
+    {
+      "matched": "大乘",
+      "standard": "大乘",
+      "occurrences": 20,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "大乘不共法",
+        "大乘法",
+        "大乘特法"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "大乘"
+      ],
+      "sample_context": "…佛要知道，就是要做有人格的人，有道德的人，也都應當明白，否則會生出許多煩惱來。照大乘道理說，先要做一個完善人，然後再進到超人的菩薩，再進到超超人的佛。想做一個完善人…"
+    },
+    {
+      "matched": "發心",
+      "standard": "發心",
+      "occurrences": 16,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "發心"
+      ],
+      "sample_context": "…，真正的人生態度是互相調和的。明白現實的真實性是社會性、宇宙性，是大公無我，由此發心做事，自然一切都是和平安樂。這個並非勉強造成，是宇宙萬有的真實性本來如此。佛陀學…"
+    },
+    {
+      "matched": "大慈悲",
+      "standard": "大慈悲",
+      "occurrences": 10,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "大悲心",
+        "平等主義"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": true,
+      "_heading_hits": 2,
+      "matched_via": [
+        "大悲心",
+        "大慈悲",
+        "平等主義"
+      ],
+      "sample_context": "…行為結果必定圓滿；假如動機偏頗或者誤謬，結果也就必定不完善。成佛學佛的動機，就是平等主義，所謂「一切眾生悉皆平等」。就是近從人類，廣到宇宙間一切形形色色，體性悉皆平…"
+    },
+    {
+      "matched": "佛學",
+      "standard": "佛學",
+      "occurrences": 13,
+      "domain": "教理",
+      "subdomain": "佛法體系",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "全書根本概念，太虚自稱「佛學」而非「佛教學」",
+      "source": "manual_gap",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "佛學"
+      ],
+      "sample_context": "…電子等類，電子有陰陽性，是時刻有變化的；由此可見萬物流行不息——科學的昌達，對於佛學雖有證明的地方，但科學是根據五官感覺而佛學是直接覺知的——，這才是見到宇宙的真相…"
+    },
+    {
+      "matched": "智慧",
+      "standard": "智慧",
+      "occurrences": 12,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "智慧"
+      ],
+      "sample_context": "…此。佛陀學的原理，就在眾緣所成，本空無我。既明白人生宇宙的真相如此，知識方面就有智慧，行為方面也就把握到妥當做人的方法。  ### 　　丙　現量實相  量是測量，能…"
+    },
+    {
+      "matched": "小乘",
+      "standard": "小乘",
+      "occurrences": 12,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "二乘",
+        "小乘法"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "小乘",
+        "小乘法"
+      ],
+      "sample_context": "…  世人對於學佛每誤以為是自私自利；古代讀書人，也以為學佛的死後可以安樂。其實在小乘部分固有求個人解脫之意，但並非佛法根本。佛法根本，在普為一切眾生發心，所謂「眾生…"
+    },
+    {
+      "matched": "佛陀",
+      "standard": "佛陀",
+      "occurrences": 8,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "佛陀"
+      ],
+      "sample_context": "…8 年 8 月，在首都毗盧寺講）  ## 一　原理——現實主義（即法爾如是）  佛陀學的原理，用一種名詞把他表示出來，就是現實主義。宇宙間一切存在的事事物物，都可以…"
+    },
+    {
+      "matched": "現量",
+      "standard": "現量",
+      "occurrences": 8,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "現量"
+      ],
+      "sample_context": "… 量是測量，能量的即是知識。用知識量度宇宙萬物，所以宇宙都是被量的。量有兩種：一現量，二比量。現量是直接知識到的，譬如看見顏色聽見聲音，是現在顯現的。比量是依據直接…"
+    },
+    {
+      "matched": "現行",
+      "standard": "現行",
+      "occurrences": 7,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "現行"
+      ],
+      "sample_context": "…不是一種固定的。宇宙間一切事事物物，大至世界小至一微塵，都在流行變化，所以叫他做現行實事。譬如人的一生，何年何月何日生，何年何月何日死；物件的何時成何時壞；推而廣之…"
+    },
+    {
+      "matched": "無始",
+      "standard": "無始",
+      "occurrences": 10,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無始"
+      ],
+      "sample_context": "…覺知的——，這才是見到宇宙的真相，即是宇宙現行的實事。  其次、人類的生命，其來無始，不是那年生後才有的；一生不過是生命流所現出來的一節，不是他的全體，如長江的一段…"
+    },
+    {
+      "matched": "實相",
+      "standard": "實相",
+      "occurrences": 6,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "實相"
+      ],
+      "sample_context": "…著「即法爾如是」呢？佛對於全宇宙完全覺悟，把全宇宙覺照得明明白白，所謂「洞見諸法實相」，也就是洞見全宇宙本來面目。全宇宙本來面目，在佛法上謂之法爾如是，就是說全宇宙…"
+    },
+    {
+      "matched": "解脫",
+      "standard": "解脫",
+      "occurrences": 9,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "解脫"
+      ],
+      "sample_context": "…誤以為是自私自利；古代讀書人，也以為學佛的死後可以安樂。其實在小乘部分固有求個人解脫之意，但並非佛法根本。佛法根本，在普為一切眾生發心，所謂「眾生無邊誓願度」。釋迦…"
+    },
+    {
+      "matched": "釋迦",
+      "standard": "釋迦牟尼",
+      "occurrences": 8,
+      "domain": "历史",
+      "subdomain": "人物",
+      "is_standard": false,
+      "variants_of_standard": [
+        "釋尊",
+        "釋迦"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "釋迦"
+      ],
+      "sample_context": "…解脫之意，但並非佛法根本。佛法根本，在普為一切眾生發心，所謂「眾生無邊誓願度」。釋迦發心出家修道度世的動機，就由於對於自然界之觀察：自然界雖生生不息種類繁多，但是天…"
+    },
+    {
+      "matched": "無礙",
+      "standard": "無礙",
+      "occurrences": 8,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無礙"
+      ],
+      "sample_context": "…）  自由主義，並非放縱自我，恣其妄為。無一佛而非遍滿全宇宙，即無障礙法界，亦名無礙法身。無障礙與無我理不相反，無我故無障，無障故自由。這是以全宇宙關係力量成此一物…"
+    },
+    {
+      "matched": "無我",
+      "standard": "無我",
+      "occurrences": 7,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無我"
+      ],
+      "sample_context": "…一行能夠影響全社會全世界。既然知道人無自我性，依此道理做事，自有公平性，即成大公無我；因為大公無我，就是人生宇宙的實性。  平常人認定自我，自私自利，鬥爭不已，以致…"
+    },
+    {
+      "matched": "法爾",
+      "standard": "法爾",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "法爾"
+      ],
+      "sample_context": "…事實如何便還他如何。譬如花瓶就是花瓶，不能說是別樣。現實主義的標題下何以寫著「即法爾如是」呢？佛對於全宇宙完全覺悟，把全宇宙覺照得明明白白，所謂「洞見諸法實相」，也…"
+    },
+    {
+      "matched": "世間",
+      "standard": "世間",
+      "occurrences": 6,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "世間"
+      ],
+      "sample_context": "…宙一切存在的事實本來如此。其次，現實主義又可以說是佛陀無主義的主義。甚麼緣故呢？世間上的種種主義，是參加個人主觀和私見的，不是全宇宙公平無私和本來如是的；佛陀的現實…"
+    },
+    {
+      "matched": "比量",
+      "standard": "比量",
+      "occurrences": 6,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "比量"
+      ],
+      "sample_context": "…量，能量的即是知識。用知識量度宇宙萬物，所以宇宙都是被量的。量有兩種：一現量，二比量。現量是直接知識到的，譬如看見顏色聽見聲音，是現在顯現的。比量是依據直接覺知而推…"
+    },
+    {
+      "matched": "生死輪",
+      "standard": "生死輪",
+      "occurrences": 6,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "生死輪"
+      ],
+      "sample_context": "…都迷而不知，可悲可憫！像這樣，知道全宇宙一切眾生都可悲憫，都可以成佛而卻在冤枉受生死輪迴之苦，於是起大悲心。因此，自己不成佛，永遠沒有脫離痛苦之處，一切眾生亦然。凡…"
+    },
+    {
+      "matched": "流轉",
+      "standard": "流轉",
+      "occurrences": 6,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "流轉"
+      ],
+      "sample_context": "…痛苦之處，一切眾生亦然。凡是未到成佛地位，都是不圓滿，不免向外有所求而有變化，在流轉變化中有不能自主處，所以有種種苦惱。但是眾生本性，像山溪間的流水，千迴百折非流到…"
+    },
+    {
+      "matched": "法身",
+      "standard": "法身",
+      "occurrences": 6,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "法身"
+      ],
+      "sample_context": "… 自由主義，並非放縱自我，恣其妄為。無一佛而非遍滿全宇宙，即無障礙法界，亦名無礙法身。無障礙與無我理不相反，無我故無障，無障故自由。這是以全宇宙關係力量成此一物，能…"
+    },
+    {
+      "matched": "業果",
+      "standard": "業果",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "業果"
+      ],
+      "sample_context": "…智所知境圓融無礙。這個境智自由，佛典上叫做智德。  ### 　　二　業果自由  業果、是以前業力為因所得的結果，業力、是以前的行為。以前的行為結合成現在生命，結果又…"
+    },
+    {
+      "matched": "相續",
+      "standard": "相續",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "相續"
+      ],
+      "sample_context": "…流，可以謂之生命之流。所以全宇宙一切存在的事實，都是大小相通，前後相生，剎那生滅相續的（最短的時間謂之剎那）。這種流變之理，依近代科學的研究，不但不違背，反而證明是…"
+    },
+    {
+      "matched": "超人",
+      "standard": "超人生",
+      "occurrences": 5,
+      "domain": "行持",
+      "subdomain": "菩萨行",
+      "is_standard": false,
+      "variants_of_standard": [
+        "超人",
+        "超超人",
+        "超超人生"
+      ],
+      "vocab_note": "太虚人生佛学的修行阶位框架：人生→超人生→超超人生→佛。以人生为起点，经超人、超超人而达究竟佛果，体现即人而佛的次第发展观。",
+      "source": "phase2_fulltext",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "超人",
+        "超超人"
+      ],
+      "sample_context": "…，也都應當明白，否則會生出許多煩惱來。照大乘道理說，先要做一個完善人，然後再進到超人的菩薩，再進到超超人的佛。想做一個完善人，對於現行實事，就不可不先明白；明白無始…"
+    },
+    {
+      "matched": "菩薩",
+      "standard": "菩薩",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "菩薩"
+      ],
+      "sample_context": "…應當明白，否則會生出許多煩惱來。照大乘道理說，先要做一個完善人，然後再進到超人的菩薩，再進到超超人的佛。想做一個完善人，對於現行實事，就不可不先明白；明白無始無終，…"
+    },
+    {
+      "matched": "光明",
+      "standard": "光明",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "光明"
+      ],
+      "sample_context": "…、一時代、一地域成佛，這是最普遍平等的願心，也就是大悲心。佛心具有普遍全宇宙的大光明智慧與一切完全的道德能力。一切眾生皆具如來智慧德相，但向來迷而不知把自己看得很小…"
+    },
+    {
+      "matched": "三德",
+      "standard": "三德",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "恩德",
+        "斷德",
+        "智德"
+      ],
+      "vocab_note": "對應三身之三種功德",
+      "source": "phase2_fulltext,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "三德",
+        "恩德",
+        "斷德",
+        "智德"
+      ],
+      "sample_context": "…切空、一切種類、同時無不周遍了知，能知智所知境圓融無礙。這個境智自由，佛典上叫做智德。  ### 　　二　業果自由  業果、是以前業力為因所得的結果，業力、是以前的…"
+    },
+    {
+      "matched": "因緣",
+      "standard": "因緣",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "因緣"
+      ],
+      "sample_context": "…仔細考察起來：一人或一屋都有個體，其實這個個體不是定性，也無獨立性；依佛法講，是因緣所生。譬如粉筆，是堊、水、人工、模型等眾緣湊合所成，有因還有緣；又如一莖草，是由…"
+    },
+    {
+      "matched": "佛性",
+      "standard": "佛性",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "如來藏思想",
+      "is_standard": true,
+      "variants_of_standard": [
+        "覺性"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "佛性",
+        "覺性"
+      ],
+      "sample_context": "…上悉皆平等。  一切眾生皆有心，皆有現變實力，都有可以達到最高覺悟的可能性，就是佛性。——依此點講，就一切平等。眾生都可以達到最高尚最圓滿的地位；佛的地位，並非超出…"
+    },
+    {
+      "matched": "無上正覺",
+      "standard": "無上正覺",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無上正覺"
+      ],
+      "sample_context": "…殘酷可悲憫，痛徹心腑，從此發心考察人生宇宙的真相如何，免去苦痛的方法如何，而勤求無上正覺的大道。此乃成佛發心，所以不是消極的；結果也就得著和善安樂的生活，就是大涅槃…"
+    },
+    {
+      "matched": "生死",
+      "standard": "生死",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "生死"
+      ],
+      "sample_context": "…，地球也是多少年數成多少年數壞；再講遠些，到太陽也有成時壞時；所以世事都有成壞、生死的一定限量。見到如此，還沒有見到真相，因為宇宙萬有不但是時時刻刻變化而已。一切顯…"
+    },
+    {
+      "matched": "生滅",
+      "standard": "生滅",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "生滅"
+      ],
+      "sample_context": "…。見到如此，還沒有見到真相，因為宇宙萬有不但是時時刻刻變化而已。一切顯現的事物，生滅起伏，流行變化，如流水一般。這個變化之流，可以謂之生命之流。所以全宇宙一切存在的…"
+    },
+    {
+      "matched": "無邊",
+      "standard": "無邊",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無邊"
+      ],
+      "sample_context": "…這樣的無始無終不是沒有生滅成壞，不過是流行不息循環不斷而已。這就可以把心量放大到無邊無量，心量放大就沒有執著而與宇宙真相契合。像這樣，現行實事無始無終，人生世界都如…"
+    },
+    {
+      "matched": "佛智",
+      "standard": "佛慧",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": false,
+      "variants_of_standard": [
+        "佛智"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "佛智"
+      ],
+      "sample_context": "…於錯誤，沒有真正的現量而來；假如證成了此智，就一切迷妄已去，一切苦痛皆無。至於這佛智如何而得，就必須用深刻的修持工夫。前兩重還可以用理論解釋他，第三重必須依法實行。…"
+    },
+    {
+      "matched": "有相",
+      "standard": "有相",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "有相"
+      ],
+      "sample_context": "…心乃至一切眾生心。人人有心所以人人自己能變化，都能自由自主，只要自己對於宇宙真相有相當的認識，立志力行，即可達到目的。大聖大賢英雄豪傑乃至發大願成佛，都能自由自主，…"
+    },
+    {
+      "matched": "修行",
+      "standard": "修行",
+      "occurrences": 3,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "修行"
+      ],
+      "sample_context": "…知人人都可以成佛，佛不只是被人信仰的，而是做人模範的。只要明白佛是如何發心，如何修行，如何成功，照著他去辦，就一樣的可以成佛。發心，就是動機。動機正當，後來所發生的…"
+    },
+    {
+      "matched": "涅槃",
+      "standard": "涅槃",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "滅度"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "涅槃"
+      ],
+      "sample_context": "…無上正覺的大道。此乃成佛發心，所以不是消極的；結果也就得著和善安樂的生活，就是大涅槃。釋迦修道的動機在成無上正覺之佛，所以成佛以後，居不甯處，說法度人。由此可知佛是…"
+    },
+    {
+      "matched": "加行",
+      "standard": "加行",
+      "occurrences": 3,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "加行"
+      ],
+      "sample_context": "…到佛的地位，這個就叫做進化。也就是由人到十信菩薩地位。再經十住、十行、十迴向、四加行、十地，經過這種種進化，到佛地位才算圓滿。可知宇宙是進化的，人非最後進化之結果，…"
+    },
+    {
+      "matched": "教化",
+      "standard": "教化",
+      "occurrences": 3,
+      "domain": "社会文化",
+      "subdomain": "佛教與教育",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "教化"
+      ],
+      "sample_context": "…好幾十國，所經過的時代不同，民族不同，所以佛教史上很有相沿相革變化的地方。從佛的教化上看，第一、是契真理——所謂真理，是佛的圓滿大智慧所證得宇宙人生的真相。第二、亦…"
+    },
+    {
+      "matched": "信心",
+      "standard": "信心",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "信心"
+      ],
+      "sample_context": "…曲折使由小乘達到大乘的，像大乘妙法蓮華經中所說。小乘是一時的方便，不如此群眾不生信心，不能到佛法中來。佛本來以一大事因緣出現於世，即令一切眾生受佛開示，悟入佛智，得…"
+    },
+    {
+      "matched": "布施",
+      "standard": "布施",
+      "occurrences": 3,
+      "domain": "行持",
+      "subdomain": "菩薩行",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "布施"
+      ],
+      "sample_context": "…理的理性已經能夠符合一致。有此基本能力，多做犧牲利他之事，修波羅密多行：第一是修布施行，又叫做歡喜行，以世間一切眾生之歡喜為歡喜，生命財產都以之布施，乃至犧牲一己去…"
+    },
+    {
+      "matched": "清淨",
+      "standard": "清淨",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "清淨"
+      ],
+      "sample_context": "…無論出現何種自體，而此自體都遍滿全宇宙，以全宇宙為佛；而佛之全宇宙，究竟安樂光明清淨完善。所以佛法是改造人類、改造全宇宙都成最善圓滿，實現佛之理想的辦法。此乃實事，…"
+    },
+    {
+      "matched": "法界",
+      "standard": "法界",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "一真法界",
+        "中實法界",
+        "法界圓明",
+        "法界無障礙"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "法界"
+      ],
+      "sample_context": "…即無障礙義）  自由主義，並非放縱自我，恣其妄為。無一佛而非遍滿全宇宙，即無障礙法界，亦名無礙法身。無障礙與無我理不相反，無我故無障，無障故自由。這是以全宇宙關係力…"
+    },
+    {
+      "matched": "諸法",
+      "standard": "諸法",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "諸法"
+      ],
+      "sample_context": "…以寫著「即法爾如是」呢？佛對於全宇宙完全覺悟，把全宇宙覺照得明明白白，所謂「洞見諸法實相」，也就是洞見全宇宙本來面目。全宇宙本來面目，在佛法上謂之法爾如是，就是說全…"
+    },
+    {
+      "matched": "本來面目",
+      "standard": "本來面目",
+      "occurrences": 2,
+      "domain": "行持",
+      "subdomain": "禪觀",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "本來面目"
+      ],
+      "sample_context": "…於全宇宙完全覺悟，把全宇宙覺照得明明白白，所謂「洞見諸法實相」，也就是洞見全宇宙本來面目。全宇宙本來面目，在佛法上謂之法爾如是，就是說全宇宙一切存在的事實本來如此。…"
+    },
+    {
+      "matched": "心量",
+      "standard": "心量",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "心量"
+      ],
+      "sample_context": "…，世界也是這樣的無始無終不是沒有生滅成壞，不過是流行不息循環不斷而已。這就可以把心量放大到無邊無量，心量放大就沒有執著而與宇宙真相契合。像這樣，現行實事無始無終，人…"
+    },
+    {
+      "matched": "執著",
+      "standard": "執著",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "執著"
+      ],
+      "sample_context": "…滅成壞，不過是流行不息循環不斷而已。這就可以把心量放大到無邊無量，心量放大就沒有執著而與宇宙真相契合。像這樣，現行實事無始無終，人生世界都如此，都是無始無終之生命的…"
+    },
+    {
+      "matched": "無盡",
+      "standard": "無盡",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無盡"
+      ],
+      "sample_context": "…命的實現。過去一切行為為因，現在為果，現在一切行為又發生將來的結果，因果重重相續無盡，所以人生有不朽的價值！這種道理，不但學佛成佛要知道，就是要做有人格的人，有道德…"
+    },
+    {
+      "matched": "定性",
+      "standard": "定性",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "定性"
+      ],
+      "sample_context": "…性  現事，就是現行實事。把他仔細考察起來：一人或一屋都有個體，其實這個個體不是定性，也無獨立性；依佛法講，是因緣所生。譬如粉筆，是堊、水、人工、模型等眾緣湊合所成…"
+    },
+    {
+      "matched": "種子",
+      "standard": "種子",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [
+        "業種"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "種子"
+      ],
+      "sample_context": "…所生。譬如粉筆，是堊、水、人工、模型等眾緣湊合所成，有因還有緣；又如一莖草，是由種子、水、土、日光等所成，也是有因有緣；又如人生是生命之流，加上父母和合機緣，乃至水…"
+    },
+    {
+      "matched": "中有",
+      "standard": "中有",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "中有"
+      ],
+      "sample_context": "…　　丁　現變實力  全宇宙中一切顯然的存在的事事物物，都是隨時變化的，而變化的當中有一種能變的力量，這就是現變實力。平常誤會是神或造物主，依佛學說起來，這是錯誤的。…"
+    },
+    {
+      "matched": "唯心",
+      "standard": "唯心",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "唯心"
+      ],
+      "sample_context": "…變實力。平常誤會是神或造物主，依佛學說起來，這是錯誤的。須知能變的力量所謂「三界唯心，萬法唯識」，是心識的力量。萬有都變化，而真實變化的力量是人心乃至一切眾生心。人…"
+    },
+    {
+      "matched": "唯識",
+      "standard": "唯識",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "大乘有宗",
+      "is_standard": true,
+      "variants_of_standard": [
+        "法相唯識",
+        "唯識現",
+        "諸法唯識現",
+        "一切法唯識現"
+      ],
+      "vocab_note": "",
+      "source": "batch_01",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "唯識"
+      ],
+      "sample_context": "…常誤會是神或造物主，依佛學說起來，這是錯誤的。須知能變的力量所謂「三界唯心，萬法唯識」，是心識的力量。萬有都變化，而真實變化的力量是人心乃至一切眾生心。人人有心所以…"
+    },
+    {
+      "matched": "心識",
+      "standard": "心識",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "心識"
+      ],
+      "sample_context": "…或造物主，依佛學說起來，這是錯誤的。須知能變的力量所謂「三界唯心，萬法唯識」，是心識的力量。萬有都變化，而真實變化的力量是人心乃至一切眾生心。人人有心所以人人自己能…"
+    },
+    {
+      "matched": "厭世",
+      "standard": "厭世",
+      "occurrences": 2,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "厭世"
+      ],
+      "sample_context": "…我們都有心，故都能自由自主的向上發達到最高成佛地位。  簡約說，佛學不是消極的、厭世的或迷信的，而是發達人生到最高最圓滿的地位的。以最高成佛為模範，把人的本性實現出…"
+    },
+    {
+      "matched": "本性",
+      "standard": "本性",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "本性"
+      ],
+      "sample_context": "…極的、厭世的或迷信的，而是發達人生到最高最圓滿的地位的。以最高成佛為模範，把人的本性實現出來，從人生體現出全宇宙的真相，才完成人的意義。  ## 二　動機——平等主…"
+    },
+    {
+      "matched": "信仰",
+      "standard": "信仰",
+      "occurrences": 2,
+      "domain": "社会文化",
+      "subdomain": "佛教與文化",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "信仰"
+      ],
+      "sample_context": "…——平等主義（即大慈悲性）  依前面所說的學理，可知人人都可以成佛，佛不只是被人信仰的，而是做人模範的。只要明白佛是如何發心，如何修行，如何成功，照著他去辦，就一樣…"
+    },
+    {
+      "matched": "無生",
+      "standard": "無生",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無生"
+      ],
+      "sample_context": "…色，體性悉皆平等。但在世法上看起來，並不如此，一類一類的分別是不平等的。像土石是無生機的，草木之類是有生機的，動物是有感情知覺的，到人類更有思想理性道德，這似乎沒平…"
+    },
+    {
+      "matched": "自性",
+      "standard": "自性",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "有無自性",
+        "諸法離言自性",
+        "離言自性"
+      ],
+      "vocab_note": "太虚在判攝中反覆辨析的核心概念",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "自性"
+      ],
+      "sample_context": "…向外推求；人人如此，便互相隔礙爭鬥，種種苦惱隨之而生。其實，這都是冤枉，完全由於自性不覺，自找苦吃！這並非是外物給予我們的，也不是絕對不可變的，不過是對於宇宙真相自…"
+    },
+    {
+      "matched": "鬼神",
+      "standard": "鬼神",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "鬼神"
+      ],
+      "sample_context": "…自己個人，或者以為佛是不可企及的，想倚賴佛去求福避禍，即非學佛者。平常人以為佛與鬼神一樣，信佛可以免禍得福；這種動機，在佛法上是迷非信。所以學佛應當普為一切眾生發心…"
+    },
+    {
+      "matched": "發菩提心",
+      "standard": "發菩提心",
+      "occurrences": 2,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "發菩提心"
+      ],
+      "sample_context": "…完全平等。在大平等主義上發心，才能夠做救國救人類的事業。此在佛法上講起來，即所謂發菩提心，修菩薩行。從佛性上發動為社會性宇宙性而發心，自然是善的而無惡的，學佛的動機…"
+    },
+    {
+      "matched": "菩薩行",
+      "standard": "菩薩行",
+      "occurrences": 2,
+      "domain": "义理维度",
+      "subdomain": "義理體系",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "菩萨行的人生观与革命行动：以无我利他的菩萨精神为革命赋能",
+      "source": "dimensional",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "菩薩行"
+      ],
+      "sample_context": "…大平等主義上發心，才能夠做救國救人類的事業。此在佛法上講起來，即所謂發菩提心，修菩薩行。從佛性上發動為社會性宇宙性而發心，自然是善的而無惡的，學佛的動機如此。  世…"
+    },
+    {
+      "matched": "修道",
+      "standard": "修道",
+      "occurrences": 2,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "修道"
+      ],
+      "sample_context": "…並非佛法根本。佛法根本，在普為一切眾生發心，所謂「眾生無邊誓願度」。釋迦發心出家修道度世的動機，就由於對於自然界之觀察：自然界雖生生不息種類繁多，但是天地不仁，以萬…"
+    },
+    {
+      "matched": "菩提心",
+      "standard": "菩提心",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "菩提心"
+      ],
+      "sample_context": "…中山先生民生主義的動機，也是出於想免去人類苦痛叫他得著安樂和平，也無非是出於一種菩提心。佛的大慈悲心，普為一切眾生，但要免去眾生悲慘的生活，先要自己覺悟宇宙人生的真…"
+    },
+    {
+      "matched": "非人",
+      "standard": "非人",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "非人"
+      ],
+      "sample_context": "…自私自利的，又不是空想做不到的，是有一種妥當辦法切實進行去實現的。平常以為佛法乃非人生的，厭世的，非倫理的，都是誤會。生命之流不自覺悟，所以有不安甯的狀態；求世界人…"
+    },
+    {
+      "matched": "菩提",
+      "standard": "菩提",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "無上菩提"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無上菩提",
+        "菩提"
+      ],
+      "sample_context": "…信宇宙萬有有一種普遍完全的真理；第二重是相信這個真理有最高無上大覺悟的完全認識（無上菩提）；第三重是相信這個無上正覺有得到過的，如釋迦；第四重是相信人人都可以得到。…"
+    },
+    {
+      "matched": "輪迴",
+      "standard": "輪迴",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "輪迴"
+      ],
+      "sample_context": "…即是一種進化主義。此進化主義，與平常不同。依佛法講，此自然界一切眾生是循環流轉（輪迴）的，不是進化的，增進到一定限度即會退回。譬如人，小孩是經驗少，少年時求智識學問…"
+    },
+    {
+      "matched": "菩薩地",
+      "standard": "菩薩地",
+      "occurrences": 2,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "菩薩地"
+      ],
+      "sample_context": "…大路。由眾生的地位用種種方法修證，走到佛的地位，這個就叫做進化。也就是由人到十信菩薩地位。再經十住、十行、十迴向、四加行、十地，經過這種種進化，到佛地位才算圓滿。可…"
+    },
+    {
+      "matched": "十地",
+      "standard": "十地",
+      "occurrences": 2,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "十地"
+      ],
+      "sample_context": "…地位，這個就叫做進化。也就是由人到十信菩薩地位。再經十住、十行、十迴向、四加行、十地，經過這種種進化，到佛地位才算圓滿。可知宇宙是進化的，人非最後進化之結果，還有超…"
+    },
+    {
+      "matched": "事理",
+      "standard": "事理",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "事理"
+      ],
+      "sample_context": "…過都實現出來。第四步是十向，向是回向的意思。從前十住偏於理，十行偏於事，到了十向事理就相一致（回事向理、回理向事到事理不二），這是第一重。其次、回眾生心向佛，回佛心…"
+    },
+    {
+      "matched": "初地",
+      "standard": "初地",
+      "occurrences": 2,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "初地"
+      ],
+      "sample_context": "…就是佛典上所謂初阿僧祇劫。更起加行，就是集中以前所修種種行再加功用之行。由加行到初地——歡喜地，此時已經到了見道的地位，體驗到宇宙人生無始終無方體離一切言說不可思議…"
+    },
+    {
+      "matched": "言說",
+      "standard": "言說",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "言說"
+      ],
+      "sample_context": "…由加行到初地——歡喜地，此時已經到了見道的地位，體驗到宇宙人生無始終無方體離一切言說不可思議的實相（與思想上假思理想不同）。身心改變，為平常人思想上所不能有，程度越…"
+    },
+    {
+      "matched": "不可思議",
+      "standard": "不可思議",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "不可思議"
+      ],
+      "sample_context": "…行到初地——歡喜地，此時已經到了見道的地位，體驗到宇宙人生無始終無方體離一切言說不可思議的實相（與思想上假思理想不同）。身心改變，為平常人思想上所不能有，程度越高，…"
+    },
+    {
+      "matched": "圓融",
+      "standard": "圓融",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "判教框架",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "圓融"
+      ],
+      "sample_context": "…導方向，如以手指月）。學佛目的，就是成功無障礙法身。在此無障礙宇宙中，自他不二，圓融無礙，得大自由。  ### 　　一　境智自由  境是被智慧所認識的一切事物。宇宙…"
+    },
+    {
+      "matched": "正遍覺",
+      "standard": "正遍覺",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "正遍覺"
+      ],
+      "sample_context": "…境，境智一如無二相可得，而又了了然知一切境，一切境而為一切了知智所了。這就是無上正遍覺知，圓明了知宇宙諸法真相，不為空時所拘。平常的知識是相對的，是為空時所拘的；因…"
+    },
+    {
+      "matched": "業因",
+      "standard": "業因",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "業因"
+      ],
+      "sample_context": "…阿羅漢位，還只有部分的自由，到佛才是大自由——去盡一切有漏不善業，無量劫無漏清淨業因圓滿，成就無障清淨之涅槃果。一切不好皆無，一切好的皆圓滿（圓寂），成就斷除一切不…"
+    },
+    {
+      "matched": "教義",
+      "standard": "教義",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "佛法體系",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "教義"
+      ],
+      "sample_context": "…，就是佛用很巧妙的言語文字，把本來如此的現實說出來，叫做現實主義；也就是根據佛陀教義，說明宇宙一切存在事實的真相。上來說明現實主義的名稱所由來，此下再分開來講。  …"
+    },
+    {
+      "matched": "剎那生滅",
+      "standard": "剎那生滅",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "剎那生滅"
+      ],
+      "sample_context": "…個變化之流，可以謂之生命之流。所以全宇宙一切存在的事實，都是大小相通，前後相生，剎那生滅相續的（最短的時間謂之剎那）。這種流變之理，依近代科學的研究，不但不違背，反…"
+    },
+    {
+      "matched": "五官",
+      "standard": "五官",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "五官"
+      ],
+      "sample_context": "…變化的；由此可見萬物流行不息——科學的昌達，對於佛學雖有證明的地方，但科學是根據五官感覺而佛學是直接覺知的——，這才是見到宇宙的真相，即是宇宙現行的實事。  其次、…"
+    },
+    {
+      "matched": "自殺",
+      "standard": "自殺",
+      "occurrences": 1,
+      "domain": "社会文化",
+      "subdomain": "佛教與文化",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "自殺"
+      ],
+      "sample_context": "…虛的，無意義，無價值，除了飲食男女等以外，甚麼事都沒有。這樣迷惑的結果，思想高的自殺；低的以為人生目的在衣食住等欲求的滿足，所以全副精神用在追求生活的美滿享受上。因…"
+    },
+    {
+      "matched": "因果",
+      "standard": "因果",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "因果"
+      ],
+      "sample_context": "…無始無終之生命的實現。過去一切行為為因，現在為果，現在一切行為又發生將來的結果，因果重重相續無盡，所以人生有不朽的價值！這種道理，不但學佛成佛要知道，就是要做有人格…"
+    },
+    {
+      "matched": "煩惱",
+      "standard": "煩惱",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "煩惱"
+      ],
+      "sample_context": "…不但學佛成佛要知道，就是要做有人格的人，有道德的人，也都應當明白，否則會生出許多煩惱來。照大乘道理說，先要做一個完善人，然後再進到超人的菩薩，再進到超超人的佛。想做…"
+    },
+    {
+      "matched": "和合",
+      "standard": "和合",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "和合"
+      ],
+      "sample_context": "…一莖草，是由種子、水、土、日光等所成，也是有因有緣；又如人生是生命之流，加上父母和合機緣，乃至水、土、日光、空氣等關係；大而言之，世界的成功，也是由於因緣——因是四…"
+    },
+    {
+      "matched": "機緣",
+      "standard": "機緣",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "機緣"
+      ],
+      "sample_context": "…草，是由種子、水、土、日光等所成，也是有因有緣；又如人生是生命之流，加上父母和合機緣，乃至水、土、日光、空氣等關係；大而言之，世界的成功，也是由於因緣——因是四大（…"
+    },
+    {
+      "matched": "四大",
+      "standard": "四大",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "四大"
+      ],
+      "sample_context": "…合機緣，乃至水、土、日光、空氣等關係；大而言之，世界的成功，也是由於因緣——因是四大（色法）種子（化學上的原子電子），緣是一切眾生的業力——。由此推論，萬事萬物都是…"
+    },
+    {
+      "matched": "色法",
+      "standard": "色法",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "色法"
+      ],
+      "sample_context": "…，乃至水、土、日光、空氣等關係；大而言之，世界的成功，也是由於因緣——因是四大（色法）種子（化學上的原子電子），緣是一切眾生的業力——。由此推論，萬事萬物都是眾多因…"
+    },
+    {
+      "matched": "人無我",
+      "standard": "諸法無我",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": false,
+      "variants_of_standard": [
+        "人我本空",
+        "人無我"
+      ],
+      "vocab_note": "人無我與法無我之合稱",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "人無我"
+      ],
+      "sample_context": "…為人的行為業力，不但影響於人類，而且還影響於全世界（世界也是業力為緣所成）。可見人無我性，是社會性、宇宙性，所以一言一行能夠影響全社會全世界。既然知道人無自我性，依…"
+    },
+    {
+      "matched": "空無",
+      "standard": "空無",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "中觀學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "空無"
+      ],
+      "sample_context": "…樂。這個並非勉強造成，是宇宙萬有的真實性本來如此。佛陀學的原理，就在眾緣所成，本空無我。既明白人生宇宙的真相如此，知識方面就有智慧，行為方面也就把握到妥當做人的方法…"
+    },
+    {
+      "matched": "生苦",
+      "standard": "生苦",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "生苦"
+      ],
+      "sample_context": "…雖然認為天經地義，現在卻不能適用。可知比量遠離確實性，就會發生流弊，甚至由錯誤而生苦痛。  真正的現量，是完全的普遍的直接知識，不用推論而足以彌補平常知識的缺陷。準…"
+    },
+    {
+      "matched": "一切智",
+      "standard": "一切智",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "一切智"
+      ],
+      "sample_context": "…是相對的。佛學上所要成功的智慧，是要將相對的不完全的超越而成為完全普遍的知識——一切智。成功此智，是佛法上的目的。學佛，即是學得此完全智慧的方法。得到此智，親切證明…"
+    },
+    {
+      "matched": "三界",
+      "standard": "三界",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "九地",
+        "欲界色界無色界"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "三界"
+      ],
+      "sample_context": "…是現變實力。平常誤會是神或造物主，依佛學說起來，這是錯誤的。須知能變的力量所謂「三界唯心，萬法唯識」，是心識的力量。萬有都變化，而真實變化的力量是人心乃至一切眾生心…"
+    },
+    {
+      "matched": "萬法",
+      "standard": "萬法",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "萬法"
+      ],
+      "sample_context": "…。平常誤會是神或造物主，依佛學說起來，這是錯誤的。須知能變的力量所謂「三界唯心，萬法唯識」，是心識的力量。萬有都變化，而真實變化的力量是人心乃至一切眾生心。人人有心…"
+    },
+    {
+      "matched": "心所",
+      "standard": "心所",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "心所"
+      ],
+      "sample_context": "…法唯識」，是心識的力量。萬有都變化，而真實變化的力量是人心乃至一切眾生心。人人有心所以人人自己能變化，都能自由自主，只要自己對於宇宙真相有相當的認識，立志力行，即可…"
+    },
+    {
+      "matched": "識變",
+      "standard": "識變",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "識變"
+      ],
+      "sample_context": "…亦從而變化；乃至民族心理，人類知識，都是世界轉變的原因。故所有事物，都是隨心理知識變化的。講遠一點，天文學上所考究到的全宇宙，也確實是隨眾生心理的變化所顯現。試看佛…"
+    },
+    {
+      "matched": "白佛",
+      "standard": "白佛",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "白佛"
+      ],
+      "sample_context": "…依前面所說的學理，可知人人都可以成佛，佛不只是被人信仰的，而是做人模範的。只要明白佛是如何發心，如何修行，如何成功，照著他去辦，就一樣的可以成佛。發心，就是動機。動…"
+    },
+    {
+      "matched": "體性",
+      "standard": "體性",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "體性"
+      ],
+      "sample_context": "…，就是平等主義，所謂「一切眾生悉皆平等」。就是近從人類，廣到宇宙間一切形形色色，體性悉皆平等。但在世法上看起來，並不如此，一類一類的分別是不平等的。像土石是無生機的…"
+    },
+    {
+      "matched": "世法",
+      "standard": "世法",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "世法"
+      ],
+      "sample_context": "…謂「一切眾生悉皆平等」。就是近從人類，廣到宇宙間一切形形色色，體性悉皆平等。但在世法上看起來，並不如此，一類一類的分別是不平等的。像土石是無生機的，草木之類是有生機…"
+    },
+    {
+      "matched": "眾生界",
+      "standard": "眾生界",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "眾生界"
+      ],
+      "sample_context": "…，如共和國民皆有做共和國元首的可能性，與君主國不合。佛的平等主義，是全宇宙界、全眾生界的平等主義。成佛的動機，是在全宇宙悉皆平等的地方發心，普為全宇宙一切眾生發心成…"
+    },
+    {
+      "matched": "如來",
+      "standard": "如來",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "如來"
+      ],
+      "sample_context": "…，也就是大悲心。佛心具有普遍全宇宙的大光明智慧與一切完全的道德能力。一切眾生皆具如來智慧德相，但向來迷而不知把自己看得很小，將生命流上一點假相認為自己，向外推求；人…"
+    },
+    {
+      "matched": "出家",
+      "standard": "出家",
+      "occurrences": 1,
+      "domain": "制度",
+      "subdomain": "僧制",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "出家"
+      ],
+      "sample_context": "…，但並非佛法根本。佛法根本，在普為一切眾生發心，所謂「眾生無邊誓願度」。釋迦發心出家修道度世的動機，就由於對於自然界之觀察：自然界雖生生不息種類繁多，但是天地不仁，…"
+    },
+    {
+      "matched": "自覺",
+      "standard": "自覺",
+      "occurrences": 1,
+      "domain": "义理维度",
+      "subdomain": "義理體系",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "太虚佛教心理学的核心概念：「自觉」——认识能力、认识主体、认识对象的三位一体",
+      "source": "dimensional",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "自覺"
+      ],
+      "sample_context": "…切實進行去實現的。平常以為佛法乃非人生的，厭世的，非倫理的，都是誤會。生命之流不自覺悟，所以有不安甯的狀態；求世界人類的生活完全平等，再進一步求一切眾生皆得平等安樂…"
+    },
+    {
+      "matched": "正覺",
+      "standard": "正覺",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "正覺"
+      ],
+      "sample_context": "…的評論。所以要辨清學佛的動機，可以約為四義：「皆有佛性，皆能成佛，自憫憫他，普成正覺」。就是說皆有成佛的可能性。皆有學佛平等的實性及可能性，所以皆可以成佛。這又可分…"
+    },
+    {
+      "matched": "大覺",
+      "standard": "大覺",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "大覺"
+      ],
+      "sample_context": "…四層講：第一重是相信宇宙萬有有一種普遍完全的真理；第二重是相信這個真理有最高無上大覺悟的完全認識（無上菩提）；第三重是相信這個無上正覺有得到過的，如釋迦；第四重是相…"
+    },
+    {
+      "matched": "真覺",
+      "standard": "真覺",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "真覺"
+      ],
+      "sample_context": "…痛苦一樣，發自憫憫他心，才是大乘動機。這樣發起大心，普為一切眾生求得無上正覺，有真覺悟才能破迷，一切行為才能合理。惟佛法為能明白一切痛苦之源起於迷惑，根本剷除，可以…"
+    },
+    {
+      "matched": "無相",
+      "standard": "無相",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無相"
+      ],
+      "sample_context": "…平心的偏激方法，以致人類不但不能夠得到安甯，反而使現社會更不安樂。可知理想雖好而無相當辦法，反生更不好的結果。學佛亦然，最初講了原理，又講了動機，若無辦法，如何能成…"
+    },
+    {
+      "matched": "成住壞空",
+      "standard": "成住壞空",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "成住壞空四劫"
+      ],
+      "vocab_note": "器世界循環四相：成劫、住劫、壞劫、空劫，與有情之生老病死對應",
+      "source": "phase2_fulltext,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "成住壞空"
+      ],
+      "sample_context": "…業成功的時候，逐漸進入衰老期，結果不免一死。一生進化成績，至死全毀。又如地球，有成住壞空的變化，也是循環而非進化。人類與世界，不過新陳代謝而已。平常的自然現象，免不…"
+    },
+    {
+      "matched": "無實",
+      "standard": "無實",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無實"
+      ],
+      "sample_context": "…無論何物，都是全宇宙的關係所成，一物即一切物，一入一切。在此真相中，各各事物個體無實自我，乃全宇宙種種關係集合所成的假相；而真相是普遍全宇宙。又人生與世界，是無始無…"
+    },
+    {
+      "matched": "修證",
+      "standard": "修證",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "修證"
+      ],
+      "sample_context": "…的代名詞，乃有覺悟的眾生），打破循環流轉，走上進化的大路。由眾生的地位用種種方法修證，走到佛的地位，這個就叫做進化。也就是由人到十信菩薩地位。再經十住、十行、十迴向…"
+    },
+    {
+      "matched": "十迴向",
+      "standard": "十迴向",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "菩薩行",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "十迴向"
+      ],
+      "sample_context": "…法修證，走到佛的地位，這個就叫做進化。也就是由人到十信菩薩地位。再經十住、十行、十迴向、四加行、十地，經過這種種進化，到佛地位才算圓滿。可知宇宙是進化的，人非最後進…"
+    },
+    {
+      "matched": "修學",
+      "standard": "修學",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "修學"
+      ],
+      "sample_context": "…的結果。  佛雖然普度一切眾生，一切眾生雖皆有成佛的可能性，但惟人類最宜於佛法中修學。人以下的眾生如畜生之類，一則苦痛逼迫，一則知識不發達，雖有佛說法也不能領會。人…"
+    },
+    {
+      "matched": "六道",
+      "standard": "六趣",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": false,
+      "variants_of_standard": [
+        "六道"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "六道"
+      ],
+      "sample_context": "…領會。人以上的眾生，所處境遇太好太快樂，心為當前境界所迷醉，不想學佛。所以人類是六道中最能端正心意趨向菩提的。就是唯有人類最富於成佛的可能性。所以佛示現在人類中說一…"
+    },
+    {
+      "matched": "國土",
+      "standard": "國土",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "國土"
+      ],
+      "sample_context": "…法，現在所講的佛法，就是人類中流行的佛法。  自釋迦成佛至今，已兩三千年，流行的國土有好幾十國，所經過的時代不同，民族不同，所以佛教史上很有相沿相革變化的地方。從佛…"
+    },
+    {
+      "matched": "大智",
+      "standard": "大智",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "大智"
+      ],
+      "sample_context": "…上很有相沿相革變化的地方。從佛的教化上看，第一、是契真理——所謂真理，是佛的圓滿大智慧所證得宇宙人生的真相。第二、亦須合時機——即所謂合時代潮流符群眾心理，倘若不合…"
+    },
+    {
+      "matched": "證得",
+      "standard": "證得",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "證得"
+      ],
+      "sample_context": "…沿相革變化的地方。從佛的教化上看，第一、是契真理——所謂真理，是佛的圓滿大智慧所證得宇宙人生的真相。第二、亦須合時機——即所謂合時代潮流符群眾心理，倘若不合時機，就…"
+    },
+    {
+      "matched": "生老病死",
+      "standard": "生老病死",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "生老病死"
+      ],
+      "sample_context": "…到此地，且把佛教歷史的變遷說一說：釋迦在印度出世時，國家安靖，民殷物阜，人民只怕生老病死。怕死之極，就求個人解脫。釋迦為適合當時印度群眾求個人解脫心理，於是先說小乘…"
+    },
+    {
+      "matched": "當體",
+      "standard": "當體",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "當體"
+      ],
+      "sample_context": "…求個人解脫心理，於是先說小乘法。換句話說，就是當時求解脫的太多，並不知道人生世界當體是無始無終、無限量、無生死可解脫的；所以佛法不得不迂迴曲折，適合當時群眾求解脫的…"
+    },
+    {
+      "matched": "不生",
+      "standard": "不生",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "不生"
+      ],
+      "sample_context": "…迂迴曲折使由小乘達到大乘的，像大乘妙法蓮華經中所說。小乘是一時的方便，不如此群眾不生信心，不能到佛法中來。佛本來以一大事因緣出現於世，即令一切眾生受佛開示，悟入佛智…"
+    },
+    {
+      "matched": "龍樹",
+      "standard": "龍樹",
+      "occurrences": 1,
+      "domain": "历史",
+      "subdomain": "人物",
+      "is_standard": true,
+      "variants_of_standard": [
+        "龍樹菩薩"
+      ],
+      "vocab_note": "中觀宗祖師",
+      "source": "batch_01",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "龍樹"
+      ],
+      "sample_context": "…眾生受佛開示，悟入佛智，得安甯無障礙的快樂。當時一般人只流傳小乘；到四五百年後，龍樹等才昌明大乘，但仍然是小乘形式。臨了婆羅門教復興，佛教衰落，就因為大乘思想與印度…"
+    },
+    {
+      "matched": "婆羅門教",
+      "standard": "婆羅門教",
+      "occurrences": 1,
+      "domain": "社会文化",
+      "subdomain": "佛教與文化",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "婆羅門教"
+      ],
+      "sample_context": "…樂。當時一般人只流傳小乘；到四五百年後，龍樹等才昌明大乘，但仍然是小乘形式。臨了婆羅門教復興，佛教衰落，就因為大乘思想與印度民族不十分相合的緣故。過後，大乘從北印度…"
+    },
+    {
+      "matched": "神道",
+      "standard": "神道",
+      "occurrences": 1,
+      "domain": "社会文化",
+      "subdomain": "佛教與文化",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "神道"
+      ],
+      "sample_context": "…，所以小乘思想不甚合宜而流行大乘思想。但一般社會上流行的，非純正之佛教，而為羼雜神道設教之佛教。大乘思想在儒家思想的中國政治社會下，只能退處山林，不能做社會事業，不…"
+    },
+    {
+      "matched": "現在世",
+      "standard": "現在世",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "現在世"
+      ],
+      "sample_context": "…何處，世界人類的心理如何，把這兩種看清，才能夠把人心中所流行的活的佛教顯揚出來。現在世界人心注重人生問題，力求人類生活如何能夠得到很和平很優美。所應用的工具乃科學的…"
+    },
+    {
+      "matched": "頓教",
+      "standard": "頓教",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "判教框架",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "頓教"
+      ],
+      "sample_context": "…人到佛學光明之路，由人生發達到佛。小乘佛法，離開世界，否定人生，是不相宜的。大乘頓教，也有與現代思想不相合的地方。能與現在的中國民族世界人類最相宜的，以大乘漸教為最…"
+    },
+    {
+      "matched": "法相",
+      "standard": "法相",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "法相"
+      ],
+      "sample_context": "…教以人類為基礎，進一步有一步的實證，就是大乘漸進之法，與科學化、組織化漸得完善之法相近。所以在此時顯揚佛法，應當提倡大乘漸教。  詳細一點說，就是佛學的第一步，在首…"
+    },
+    {
+      "matched": "人間",
+      "standard": "人間",
+      "occurrences": 1,
+      "domain": "社会文化",
+      "subdomain": "佛教與文化",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "人間"
+      ],
+      "sample_context": "…位，使世間受其教化，古來聖賢都如此。這是大乘佛法頭一步所行；所以大乘佛法初步，是人間世一切所行的道德。第二步十住，也有十種經過階段。所有十信心完成的功能德用，結合成…"
+    },
+    {
+      "matched": "理觀",
+      "standard": "理觀",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "禪觀",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "理觀"
+      ],
+      "sample_context": "…這條路一階段一階段進化上去。第三步是十行，從十住心更進一步而入十行地位。十住心由理觀上去用功，修行圓滿的時候，對於真理的理性已經能夠符合一致。有此基本能力，多做犧牲…"
+    },
+    {
+      "matched": "利他",
+      "standard": "利他",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "利他"
+      ],
+      "sample_context": "…上去用功，修行圓滿的時候，對於真理的理性已經能夠符合一致。有此基本能力，多做犧牲利他之事，修波羅密多行：第一是修布施行，又叫做歡喜行，以世間一切眾生之歡喜為歡喜，生…"
+    },
+    {
+      "matched": "財施",
+      "standard": "財施",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "菩薩行",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "財施"
+      ],
+      "sample_context": "…世間一切眾生之歡喜為歡喜，生命財產都以之布施，乃至犧牲一己去救人救世救國——這是財施。還有法施，以種種所發明的真理以及好方法，布施一切人。最後為免除眾生恐怖危險，濟…"
+    },
+    {
+      "matched": "有法",
+      "standard": "有法",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "有法"
+      ],
+      "sample_context": "…眾生之歡喜為歡喜，生命財產都以之布施，乃至犧牲一己去救人救世救國——這是財施。還有法施，以種種所發明的真理以及好方法，布施一切人。最後為免除眾生恐怖危險，濟人救世，…"
+    },
+    {
+      "matched": "無畏施",
+      "standard": "無畏施",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "菩薩行",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無畏施"
+      ],
+      "sample_context": "…以種種所發明的真理以及好方法，布施一切人。最後為免除眾生恐怖危險，濟人救世，叫做無畏施。這樣經過了十重階位，所修行也一步進一步。佛法所說的神通證驗，由此經過都實現出…"
+    },
+    {
+      "matched": "神通",
+      "standard": "神通",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "神通"
+      ],
+      "sample_context": "…怖危險，濟人救世，叫做無畏施。這樣經過了十重階位，所修行也一步進一步。佛法所說的神通證驗，由此經過都實現出來。第四步是十向，向是回向的意思。從前十住偏於理，十行偏於…"
+    },
+    {
+      "matched": "阿僧祇劫",
+      "standard": "阿僧祇劫",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "阿僧祇劫"
+      ],
+      "sample_context": "…  進化上所經過的階級，由人而信而住而行而向，已經走了三分之一，就是佛典上所謂初阿僧祇劫。更起加行，就是集中以前所修種種行再加功用之行。由加行到初地——歡喜地，此時…"
+    },
+    {
+      "matched": "見道",
+      "standard": "見道",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "見道"
+      ],
+      "sample_context": "…起加行，就是集中以前所修種種行再加功用之行。由加行到初地——歡喜地，此時已經到了見道的地位，體驗到宇宙人生無始終無方體離一切言說不可思議的實相（與思想上假思理想不同…"
+    },
+    {
+      "matched": "禪定",
+      "standard": "禪定",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "禪觀",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "禪定"
+      ],
+      "sample_context": "…生活，不能憑心理所造。高等動物生活，有心理力量。心理強影響生理，生理影響物理；到禪定成功，身體變化，眼耳鼻舌不同，自然一切物質跟著變化，入火不爇，入水不沉。改造進步…"
+    },
+    {
+      "matched": "十方世界",
+      "standard": "十方世界",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "十方世界"
+      ],
+      "sample_context": "…地起，宇宙真相完全證明，但智慧還有可以充實之處。一重一重再進步，到第十法雲地，盡十方世界一切諸佛所說法，一剎那心中全能了知；到了菩薩最高地位。如觀音菩薩等、離佛甚近…"
+    },
+    {
+      "matched": "一切諸佛",
+      "standard": "一切諸佛",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "一切諸佛"
+      ],
+      "sample_context": "…宙真相完全證明，但智慧還有可以充實之處。一重一重再進步，到第十法雲地，盡十方世界一切諸佛所說法，一剎那心中全能了知；到了菩薩最高地位。如觀音菩薩等、離佛甚近，十地圓…"
+    },
+    {
+      "matched": "不思議",
+      "standard": "不思議",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "不思議"
+      ],
+      "sample_context": "…地位。如觀音菩薩等、離佛甚近，十地圓滿，即到佛位。佛不是相對的，也不是單獨的，是不思議的。既不是一，也不是多，既不是異，也不是同，無論出現何種自體，而此自體都遍滿全…"
+    },
+    {
+      "matched": "阿羅漢",
+      "standard": "阿羅漢",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "阿羅漢"
+      ],
+      "sample_context": "…行為結合成現在生命，結果又為前世及現生的行為力量所束縛，受新陳代謝，生死輪迴。到阿羅漢位，還只有部分的自由，到佛才是大自由——去盡一切有漏不善業，無量劫無漏清淨業因…"
+    },
+    {
+      "matched": "有部",
+      "standard": "說一切有部",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "宗派",
+      "is_standard": false,
+      "variants_of_standard": [
+        "一切有部",
+        "有部"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "有部"
+      ],
+      "sample_context": "…生命，結果又為前世及現生的行為力量所束縛，受新陳代謝，生死輪迴。到阿羅漢位，還只有部分的自由，到佛才是大自由——去盡一切有漏不善業，無量劫無漏清淨業因圓滿，成就無障…"
+    },
+    {
+      "matched": "有漏",
+      "standard": "有漏",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "有漏"
+      ],
+      "sample_context": "…，受新陳代謝，生死輪迴。到阿羅漢位，還只有部分的自由，到佛才是大自由——去盡一切有漏不善業，無量劫無漏清淨業因圓滿，成就無障清淨之涅槃果。一切不好皆無，一切好的皆圓…"
+    },
+    {
+      "matched": "無量劫",
+      "standard": "無量劫",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無量劫"
+      ],
+      "sample_context": "…，生死輪迴。到阿羅漢位，還只有部分的自由，到佛才是大自由——去盡一切有漏不善業，無量劫無漏清淨業因圓滿，成就無障清淨之涅槃果。一切不好皆無，一切好的皆圓滿（圓寂），…"
+    },
+    {
+      "matched": "無漏",
+      "standard": "無漏",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無漏"
+      ],
+      "sample_context": "…輪迴。到阿羅漢位，還只有部分的自由，到佛才是大自由——去盡一切有漏不善業，無量劫無漏清淨業因圓滿，成就無障清淨之涅槃果。一切不好皆無，一切好的皆圓滿（圓寂），成就斷…"
+    },
+    {
+      "matched": "圓寂",
+      "standard": "圓寂",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "圓寂"
+      ],
+      "sample_context": "…業，無量劫無漏清淨業因圓滿，成就無障清淨之涅槃果。一切不好皆無，一切好的皆圓滿（圓寂），成就斷除一切不良業因所成涅槃功德。這個業果自由，佛典叫做斷德。  ### 　…"
+    },
+    {
+      "matched": "加被",
+      "standard": "加被",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "加被"
+      ],
+      "sample_context": "…。一切眾生在法身中生死，而法身在全世界一切眾生中完全自由。宇宙法身自他不二，能夠加被眾生，利益眾生。眾生於不知不覺間受佛感化，發佛智慧，解一切苦，得一切安樂——於眾…"
+    },
+    {
+      "matched": "佛果",
+      "standard": "佛果",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "佛果"
+      ],
+      "sample_context": "…苦，得一切安樂——於眾生有大恩德，所以佛典上叫做恩德。  以上三種自由，就是三德佛果，是學佛者所希望達到的目的。  （懺華達蘊合記）（見海刊九卷第九及十期）  "
+    }
+  ],
+  "domain_summary": {
+    "domains": {
+      "教理": 113,
+      "行持": 22,
+      "社会文化": 6,
+      "历史": 2,
+      "义理维度": 2,
+      "制度": 1
+    },
+    "subdomains": {
+      "基礎教義": 92,
+      "修行次第": 14,
+      "唯識學": 8,
+      "大乘通義": 5,
+      "佛教與文化": 5,
+      "菩薩行": 4,
+      "禪觀": 3,
+      "佛法體系": 2,
+      "人物": 2,
+      "義理體系": 2,
+      "判教框架": 2,
+      "菩萨行": 1,
+      "如來藏思想": 1,
+      "佛教與教育": 1,
+      "大乘有宗": 1,
+      "中觀學": 1,
+      "僧制": 1,
+      "宗派": 1
+    }
+  }
+}

@@ -165,6 +165,42 @@ def load_standard_labels():
     )
 
 
+
+# Simplified→Traditional character mapping for label normalization
+_S2T_MAP = {
+    "脱": "脫", "觉": "覺", "间": "間", "会": "會", "圆": "圓",
+    "识": "識", "众": "眾", "体": "體", "义": "義", "门": "門",
+    "证": "證", "实": "實", "学": "學", "经": "經", "论": "論",
+    "广": "廣", "严": "嚴", "宝": "寶", "禅": "禪", "观": "觀",
+    "净": "淨", "应": "應", "处": "處", "转": "轉", "释": "釋",
+    "导": "導", "纲": "綱", "约": "約", "说": "說", "总": "總",
+    "系": "係", "构": "構", "专": "專", "题": "題", "达": "達",
+    "传": "傳", "团": "團", "机": "機", "关": "關", "归": "歸",
+    "划": "劃", "节": "節", "类": "類", "历": "歷", "统": "統",
+    "制": "制", "华": "華", "习": "習", "写": "寫", "录": "錄",
+    "录": "錄", "权": "權", "树": "樹", "极": "極", "乐": "樂",
+    "谛": "諦", "摄": "攝", "择": "擇", "据": "據", "断": "斷",
+    "异": "異", "当": "當", "号": "號", "国": "國", "图": "圖",
+    "对": "對", "复": "復", "从": "從", "动": "動", "卫": "衛",
+    "湿": "濕", "煖": "煖", "协": "協",
+}
+_T2S_MAP = {v: k for k, v in _S2T_MAP.items()}
+
+
+def extract_standard_term(label):
+    """Extract standard term from dual-track format like 因緣（因緣生法）.
+    Returns the term before the first fullwidth parenthesis, or the original if no parens."""
+    import re
+    m = re.match(r'^([^（]+)（[^）]+）$', label)
+    return m.group(1) if m else label
+
+def normalize_label(label):
+    """Normalize a label to simplified Chinese for consistent comparison.
+    Works regardless of whether input is traditional or simplified."""
+    result = []
+    for ch in label:
+        result.append(_T2S_MAP.get(ch, ch))
+    return "".join(result)
 def format_label_list(labels):
     """将标签列表格式化为 prompt 中的 、 分隔展示。"""
     return "、".join(labels)

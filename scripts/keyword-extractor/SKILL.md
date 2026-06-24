@@ -265,6 +265,7 @@ scripts/keyword-extractor/
 │   └── _keyword_prompt_v2.md                   ← Phase B LLM prompt 模板（含标准化值域）
 ├── logs/
 │   └── _keyword_gap_log.jsonl                  ← 术语表缺口日志（append-only）
+│   └── _kw_counter.json                        ← 已处理文章计数（自动维护）
 ├── candidates/                                 ← Phase A 候选 JSON 输出目录
 │   └── *_candidates.json
 └── references/                                 ← 参考文档
@@ -295,9 +296,12 @@ scripts/keyword-extractor/
 
 ## 四、如何更新
 
+
+每次 `--apply` 成功后，`_kw_counter.json` 自动 +1（按文章路径去重），并在终端输出「已處理文章數: N，距下次評審還差 M 篇」。
+
 ### 更新术语表
 
-1. 累积约 20 篇文章后，检查 [logs/_keyword_gap_log.jsonl](logs/_keyword_gap_log.jsonl)，筛选 `keywords` 维度
+1. 当 `_kw_counter.json` 显示 ≥ 5 篇时，检查 [logs/_keyword_gap_log.jsonl](logs/_keyword_gap_log.jsonl)，筛选 `keywords` 维度
 2. 筛选出现频次 ≥ 2 的自由关键词
 3. 手动判断是否补入 [vocabulary/keyword_vocabulary_v4.json](vocabulary/keyword_vocabulary_v4.json)
 4. 补入时同步更新 variant 映射和 domain/subdomain 分类
@@ -305,7 +309,7 @@ scripts/keyword-extractor/
 
 ### 更新 prompt
 
-1. 累积约 20 篇文章后，检查 [logs/_keyword_gap_log.jsonl](logs/_keyword_gap_log.jsonl)，筛选 `functional_purposes` 和 `spiritual_directions` 维度
+1. 当 `_kw_counter.json` 显示 ≥ 5 篇时，检查 [logs/_keyword_gap_log.jsonl](logs/_keyword_gap_log.jsonl)，筛选 `functional_purposes` 和 `spiritual_directions` 维度
 2. 如果出现频次 ≥ 2 的新标签类型，手动评审是否加入 [prompts/_keyword_prompt_v2.md](prompts/_keyword_prompt_v2.md) 的参考列表
 3. 同时检查 `knowledge_domains` 维度，若出现不在 8 大域中的新域，考虑扩充术语表 domain 分类
 4. 注意区分：是真正的"新类型"还是已有标签的同义变体（后者应收敛到标准标签）

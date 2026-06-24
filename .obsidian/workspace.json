@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "39ceeb0dea0e807b",
+        "id": "16ce1feda64f284c",
         "type": "tabs",
         "children": [
           {
-            "id": "e6cd33199aec9ec8",
+            "id": "52b7a06698f31370",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "scripts/keyword-extractor/SKILL.md",
+                "file": "_research/01_佛法總學/_01_佛法總學_仪表盘.md",
                 "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "SKILL"
+              "title": "_01_佛法總學_仪表盘"
             }
           }
         ]
@@ -194,18 +194,25 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "e6cd33199aec9ec8",
+  "active": "52b7a06698f31370",
   "lastOpenFiles": [
+    "_research/01_佛法總學/01_概論/01_佛學概論.md",
+    "_research/01_佛法總學/_01_佛法總學_仪表盘.md",
+    "scripts/keyword-extractor/candidates/_research_01_佛法總學_01_概論_05_佛陀學綱_candidates.json",
+    "scripts/keyword-extractor/SKILL.md",
+    "scripts/keyword-extractor/logs/_kw_counter.json",
+    "_research/01_佛法總學/01_概論/04_佛乘宗要論.md",
+    "scripts/keyword-extractor/candidates/_research_01_佛法總學_01_概論_04_佛乘宗要論_candidates.json",
+    "_research/01_佛法總學/01_概論/03_佛法導言.md",
+    "_research/01_佛法總學/01_概論/02_佛理要略.md",
     "scripts/keyword-extractor/vocabulary/labels.json",
     "scripts/keyword-extractor/requirements.md",
-    "_research/01_佛法總學/01_概論/03_佛法導言.md",
     "scripts/keyword-extractor/scripts/__pycache__/extract_keywords.cpython-314.pyc",
     "scripts/keyword-extractor/scripts/__pycache__/_kw_utils.cpython-314.pyc",
     "scripts/keyword-extractor/scripts/__pycache__",
     "scripts/cbeta-xml-reader/format_demo.md",
     "scripts/cbeta-xml-reader/cbeta_catalog.md",
     "scripts/cbeta-xml-reader/catalog_comparison.md",
-    "scripts/keyword-extractor/SKILL.md",
     "_research/_keyword_v2_validation_report.md",
     "scripts/keyword-extractor/references/keyword_extraction_comparison.md",
     "scripts/keyword-extractor/references/keyword_vocabulary_task.md",
@@ -215,23 +222,15 @@
     "scripts/keyword-extractor/candidates/_research_01_佛法總學_01_概論_01_佛學概論_candidates.json",
     "scripts/keyword-extractor/candidates/_research_18_講演_01_我之佛教觀_01_一　佛教與吾人之關係_candidates.json",
     "scripts/keyword-extractor/candidates/_research_09_制議_01_僧制_01_整理僧伽制度論_candidates.json",
-    "scripts/keyword-extractor/candidates/_research_05_法性空慧學_01_教釋_01_金剛般若波羅蜜經義脈_candidates.json",
-    "scripts/keyword-extractor/candidates/_research_01_佛法總學_01_概論_02_佛理要略_candidates.json",
-    "scripts/keyword-extractor/candidates/_research_17_酬對_04_座談_278_佛法能否改善現實社會_candidates.json",
-    "scripts/keyword-extractor/candidates/_research_08_律釋_01_優婆塞戒經講錄_02_懸論_candidates.json",
     "scripts/keyword-extractor/prompts/_keyword_prompt_v2.md",
     "_research/_keyword_method.md",
-    "_research/01_佛法總學/01_概論/02_佛理要略.md",
     "_research/_keyword_v2_validation_manual.md",
     "_research/_keyword_prompt_v2.md",
-    "_research/01_佛法總學/01_概論/01_佛學概論.md",
     "_research/keyword_vocabulary_v4_readable.md",
     "_research/keyword_extraction_comparison.md",
     "_research/keyword_vocabulary_v3_draft_revision.md",
     "_research/phaseB_round2_handoff.md",
     "_research/phaseB_round2_prompt.md",
-    "_research/术语表重做_工作资源梳理报告.md",
-    "_research/taixu_dimensional_terms_review.md",
     "_research/太虚大师中文论文/mineru_output/法尊法师研究-方兰/auto/images/ffb4d0bff17f05ba7a6159ada4c3b91158ff11814830b71a2213b81251410266.jpg",
     "_research/太虚大师中文论文/mineru_output/法尊法师研究-方兰/auto/images/cab27ab50147a331cf1a3c09459de54aba975ce99e028ef3bbdef8986f1d02c5.jpg",
     "_research/太虚大师中文论文/mineru_output/法尊法师研究-方兰/auto/images/c0d5d7fd65cd9dee4ed075c494b580eff9f84958865733f49bfc616a4758101c.jpg",

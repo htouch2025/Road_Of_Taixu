@@ -28,10 +28,13 @@ from _kw_utils import (
     recommended_count, load_vocab, find_headings, heading_hit_count,
     score_candidate,
     load_standard_labels, format_label_list,
+    normalize_label,
+    extract_standard_term,
 )
 
 DEFAULT_VOCAB = SKILL_DIR / "vocabulary" / "keyword_vocabulary_v4.json"
 DEFAULT_GAP_LOG = SKILL_DIR / "logs" / "_keyword_gap_log.jsonl"
+DEFAULT_COUNTER = SKILL_DIR / "logs" / "_kw_counter.json"
 DEFAULT_OUTDIR = SKILL_DIR / "candidates"
 
 
@@ -411,6 +414,76 @@ def process_article(md_path, match_table, length_index, output_dir):
     return out_path
 
 
+
+
+def print_review_report():
+    """Analyze gap log and print a review-frequency summary.
+    Called when article counter hits a multiple of 5 (5, 10, 15, ...).
+    Prints keywords with ≥2 frequency and dimension labels with ≥2 frequency.
+    """
+    if not DEFAULT_GAP_LOG.exists():
+        print("  (尚無缺口日誌)")
+        return
+
+    from collections import Counter
+
+    kw_freq = Counter()
+    kd_freq = Counter()
+    fp_freq = Counter()
+    sd_freq = Counter()
+
+    for line in open(str(DEFAULT_GAP_LOG), encoding="utf-8"):
+        try:
+            entry = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        # Old format: gap_terms (treat as keywords)
+        if "gap_terms" in entry:
+            for t in entry["gap_terms"]:
+                kw_freq[normalize_label(extract_standard_term(t))] += 1
+        # New format: per-dimension gaps
+        for field, counter_map in [
+            ("keywords", kw_freq),
+            ("knowledge_domains", kd_freq),
+            ("functional_purposes", fp_freq),
+            ("spiritual_directions", sd_freq),
+        ]:
+            if field in entry:
+                for t in entry[field]:
+                    counter_map[normalize_label(t)] += 1
+
+    # Print report
+    print("")
+    print("  ═══════════════════════════════════════")
+    print("  📋 評審頻次報告（≥2 次者建议处理）")
+    print("  ═══════════════════════════════════════")
+
+    sections = [
+        ("內容概念 (keywords) → 術語表", kw_freq, False),
+        ("知識域 (knowledge_domains) → 分類樹", kd_freq, False),
+        ("功能取向 (functional_purposes) → prompt", fp_freq, True),
+        ("精神指向 (spiritual_directions) → prompt", sd_freq, True),
+    ]
+
+    any_found = False
+    for label, freq, is_prompt in sections:
+        qualified = {k: v for k, v in freq.items() if v >= 2}
+        if qualified:
+            any_found = True
+            target = "prompt 值域" if is_prompt else "術語表"
+            print(f"  [{label}]")
+            for term, count in sorted(qualified.items(), key=lambda x: -x[1]):
+                print(f"    {term} ({count}篇) → 建議補入{target}")
+        else:
+            na = "暫無 ≥2 者" if freq else "尚無缺口"
+            print(f"  [{label}] {na}")
+
+    if not any_found:
+        print("  ✅ 無需立即處理的缺口")
+
+    print("  ═══════════════════════════════════════")
+    print("")
+
 def process_catalog(catalog_path, match_table, length_index, output_dir,
                     start=None, end=None):
     """批次處理編目錄中的文章。"""
@@ -480,7 +553,9 @@ def main():
             with open(str(DEFAULT_VOCAB), encoding="utf-8") as f:
                 vdata = json.load(f)
             vocab_stds = {t["standard"] for t in vdata.get("terms", [])}
-            domain_stds = {t["domain"] for t in vdata.get("terms", [])}
+            # knowledge_domains: validate against both parent domains and subdomains
+            domain_stds = ({t["domain"] for t in vdata.get("terms", [])}
+                           | {t["subdomain"] for t in vdata.get("terms", []) if t.get("subdomain")})
             # -- functional_purposes and spiritual_directions from labels.json
             func_stds, spirit_stds = load_standard_labels()
 
@@ -495,7 +570,7 @@ def main():
             for dim_name, vals, std_set in dims:
                 if not vals:
                     continue
-                g = [v for v in vals if v not in std_set]
+                g = [v for v in vals if normalize_label(extract_standard_term(v)) not in {normalize_label(s) for s in std_set}]
                 if g:
                     all_gaps[dim_name] = g
 
@@ -512,6 +587,32 @@ def main():
                 print(f"📝 記錄 {total} 個缺口 ({dim_names}) → {str(DEFAULT_GAP_LOG)}")
         except Exception as e:
             print(f"  ⚠ gap log 失敗：{e}", file=sys.stderr)
+
+        # Update article counter (dedup by article path)
+        try:
+            counter = {}
+            if DEFAULT_COUNTER.exists():
+                raw = json.loads(open(str(DEFAULT_COUNTER), encoding="utf-8").read())
+                # Unwrap nested structure if present (legacy bug: repeated wrapping)
+                counter = raw.get("articles", raw)
+            # Normalize to relative path from project root
+            rel = str(Path(args.apply).resolve().relative_to(Path(SKILL_DIR).resolve().parent.parent))
+            counter[rel] = datetime.now().isoformat()
+            counter_wrap = {
+                "total_articles_processed": len(counter),
+                "articles": counter,
+            }
+            with open(str(DEFAULT_COUNTER), "w", encoding="utf-8") as cf:
+                json.dump(counter_wrap, cf, ensure_ascii=False, indent=2)
+            next_review = ((len(counter) // 5) + 1) * 5 if len(counter) >= 5 else 5
+            remaining = next_review - len(counter)
+            if len(counter) % 5 == 0:
+                print(f"📊 已處理文章數: {len(counter)}（已達評審閾值，建議立即評審！）")
+                print_review_report()
+            else:
+                print(f"📊 已處理文章數: {len(counter)}（累計），距下次評審還差 {remaining} 篇")
+        except Exception as e:
+            print(f"  ⚠ counter 更新失败：{e}", file=sys.stderr)
         
         written = []
         if kw_list: written.append(f"{len(kw_list)} 個內容概念")

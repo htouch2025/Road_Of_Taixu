@@ -11404,6 +11404,28 @@
       "subdomain": "基礎教義",
       "source": "v3_draft",
       "note": ""
+    },
+    {
+      "standard": "方便",
+      "variants": [
+        "善巧方便",
+        "方便善巧"
+      ],
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "source": "gap_review_2026-06-25",
+      "note": "3篇高频缺口词（佛法導言×2 + 佛乘宗要論），upāya/skillful means"
+    },
+    {
+      "standard": "無常苦空",
+      "variants": [
+        "无常苦空"
+      ],
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "source": "gap_review_2026-06-25",
+      "note": "2篇高频缺口词（佛法導言×2），三法印之三"
     }
-  ]
+  ],
+  "total_terms": 1373
 }
