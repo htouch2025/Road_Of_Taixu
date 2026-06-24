@@ -1,0 +1,4349 @@
+{
+  "summary": {
+    "total_candidates": 246,
+    "unique_standards": 246,
+    "single_occurrence_ratio": "91/246",
+    "high_frequency_terms": [
+      "唯識",
+      "意識",
+      "八識",
+      "唯心",
+      "法相",
+      "自性",
+      "六識",
+      "法性",
+      "小乘",
+      "所變",
+      "見分",
+      "諸法",
+      "阿賴耶識",
+      "有情",
+      "種子",
+      "遍計所執",
+      "現行",
+      "真如",
+      "相分",
+      "五官",
+      "眼識",
+      "解脫",
+      "第六意識",
+      "因緣",
+      "心所",
+      "五識",
+      "無為",
+      "百法",
+      "獨頭意識",
+      "性境",
+      "帶質境",
+      "所緣",
+      "和合",
+      "心王"
+    ],
+    "heading_weighted": true,
+    "heading_weight": 3
+  },
+  "article": {
+    "path": "/Users/xin/Documents/Road_Of_Taixu/_research/06_法相唯識學/02_義繹/19_法相唯識學概論.md",
+    "title": "法相唯識學概論",
+    "cjk_chars": 21729,
+    "recommended_count": "10-15",
+    "编": "第六编 法相唯識學",
+    "编_number": "6",
+    "category": "義繹"
+  },
+  "vocab_source": "/Users/xin/Documents/Road_Of_Taixu/_research/keyword_vocabulary_v4.json",
+  "match_stats": {
+    "raw_hits": 256,
+    "after_dedup": 246
+  },
+  "candidates": [
+    {
+      "matched": "唯識",
+      "standard": "唯識",
+      "occurrences": 92,
+      "domain": "教理",
+      "subdomain": "大乘有宗",
+      "is_standard": true,
+      "variants_of_standard": [
+        "法相唯識",
+        "唯識現",
+        "諸法唯識現",
+        "一切法唯識現"
+      ],
+      "vocab_note": "",
+      "source": "batch_01",
+      "in_heading": true,
+      "_heading_hits": 7,
+      "matched_via": [
+        "唯識",
+        "法相唯識"
+      ],
+      "sample_context": "…2 年 12 月，在廈大文哲學會講）  ## 一　法相唯識學之略釋  此次所講為法相唯識學概論，為佛學中重要之學問，其典籍甚多，此次祗提此學綱要作簡單之研究而已。惟…"
+    },
+    {
+      "matched": "意識",
+      "standard": "意識",
+      "occurrences": 74,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "意識"
+      ],
+      "sample_context": "….相貌之相平常指由眼識所見之事物而言。然相貌之能了別，不惟眼識已也，眼識之外猶有意識了知存焉。如心不在焉，視而不見，即意識不注，眼見同於不見之故也。由意識與眼識同起…"
+    },
+    {
+      "matched": "八識",
+      "standard": "八識",
+      "occurrences": 59,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [
+        "八識二無我",
+        "八識心王"
+      ],
+      "vocab_note": "含阿賴耶識、末那識等",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "八識",
+        "八識心王"
+      ],
+      "sample_context": "…才有味覺也。然意識與前五識合作所感覺，亦可稱體相之相，此中惟加上意識之義相耳。第八識所覺到亦是體相之相，以第八所覺到亦有實體故。  以上被心知所覺到之相，可分三類：…"
+    },
+    {
+      "matched": "唯心",
+      "standard": "唯心",
+      "occurrences": 52,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "唯心"
+      ],
+      "sample_context": "…，有無事實之證明，與可得相當之效果否。然與唯識類似之說，不能不先一辨之，即各種之唯心論是也。各種唯心論，雖各言之成理，持之有故，惟有許多問題不能解決，而卒不能有所成…"
+    },
+    {
+      "matched": "法相",
+      "standard": "法相",
+      "occurrences": 36,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "法相"
+      ],
+      "sample_context": "…綱要作簡單之研究而已。惟未講斯學之先，將此法相唯識學之名一審定之。在佛學中有稱為法相學者，有稱為唯識學者，其內容本同，今合稱法相唯識學，有特別之意義在。以近人或謂法…"
+    },
+    {
+      "matched": "自性",
+      "standard": "自性",
+      "occurrences": 33,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "有無自性",
+        "諸法離言自性",
+        "離言自性"
+      ],
+      "vocab_note": "太虚在判攝中反覆辨析的核心概念",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "自性"
+      ],
+      "sample_context": "…既如上述之廣，然其定義何在？依佛典言，法有二義：何者為二？一、軌範他解，二、持存自性。如言白色，保持白之自性而存在，是謂法之持存自性義。又能使他人了解其為白而不生他…"
+    },
+    {
+      "matched": "六識",
+      "standard": "六識",
+      "occurrences": 27,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "六識"
+      ],
+      "sample_context": "…極成立之法相唯識學，次第設立各種問題論之。  #### 　　　　１獨頭意識與同時六識——虛實問題  主觀唯心論謂唯主觀的自心是實在，其他事物不過心中之影子而已，一切…"
+    },
+    {
+      "matched": "法性",
+      "standard": "法性",
+      "occurrences": 26,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "法性"
+      ],
+      "sample_context": "…稱為獨影境。由上三類，體相之相通於性境。體相之相，既通性境，則佛典中真如、體性、法性，亦包括在體相之內，以真如為根本無分別智所了知故，真如即無相之實體故。義相之相，…"
+    },
+    {
+      "matched": "小乘",
+      "standard": "小乘",
+      "occurrences": 24,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "二乘",
+        "小乘法"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "小乘",
+        "小乘法"
+      ],
+      "sample_context": "…其內容本同，今合稱法相唯識學，有特別之意義在。以近人或謂法相學範圍寬大，通於大乘小乘之一分而言，唯識學只屬大乘之一分而已。余意法相唯識學應合稱，小乘不應歸入法相學，…"
+    },
+    {
+      "matched": "所變",
+      "standard": "所變",
+      "occurrences": 22,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "所變"
+      ],
+      "sample_context": "…、極逈色，謂推測虛空明闇等無質之色，至極遠處難為達見者故名。三、定所引色，謂禪定所變現之色、聲、香、味等境故名。四、受所引色，又名無表色，謂受戒時動作上言語上受感動…"
+    },
+    {
+      "matched": "見分",
+      "standard": "見分",
+      "occurrences": 21,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "見分"
+      ],
+      "sample_context": "…知識即能了知之知識，故不離能知，而能知又為所知之一，故能知亦包括在所知也。——如見分緣相分時，即為自證分之所緣，故能知同時即為所知。——知識能知亦所知法之一，故法相…"
+    },
+    {
+      "matched": "諸法",
+      "standard": "諸法",
+      "occurrences": 21,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "諸法"
+      ],
+      "sample_context": "…言，佛非創造或主宰世界之人，乃徹底覺悟之人也。惟佛之與佛，更無言說之必要，以所證諸法性相，皆已如如相應故。其所以有種種之言說教化，莫非因眾生未得佛智之前，生出遍計之…"
+    },
+    {
+      "matched": "阿賴耶識",
+      "standard": "阿賴耶識",
+      "occurrences": 20,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [
+        "一切種識",
+        "本識",
+        "賴耶",
+        "阿賴耶"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "賴耶",
+        "阿賴耶",
+        "阿賴耶識"
+      ],
+      "sample_context": "…manoVijnana（Soiledmindconsciousness.），八、阿賴耶識AlayaVijnana（RepositoryConsciousness.）…"
+    },
+    {
+      "matched": "有情",
+      "standard": "有情",
+      "occurrences": 19,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "有情"
+      ],
+      "sample_context": "…種關係（Co-inherence），是名和合義。若實句義九種全備而和合，即成人等有情，以「我」「意」為有情精神之特徵故；若僅有前七——除我意，則成無情物體。在西洋希…"
+    },
+    {
+      "matched": "種子",
+      "standard": "種子",
+      "occurrences": 19,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [
+        "業種"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "種子"
+      ],
+      "sample_context": "…行之潛勢力保藏之處也。此識具有三義：一、能藏，二、所藏，三、我愛執藏。一、對一切種子名能藏，因一切種皆收藏於阿賴耶識之中，種子為所藏，阿賴耶識即能藏之處也，故曰能藏…"
+    },
+    {
+      "matched": "遍計所執",
+      "standard": "遍計所執",
+      "occurrences": 17,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [
+        "遍計"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "遍計",
+        "遍計所執"
+      ],
+      "sample_context": "…——正智所知之法體。能以五法含攝一切，故以藏名，如四庫全書之庫。  復次、相又為遍計所執、依他起、圓成實之三性相：一、遍計所執，謂義相中之顛倒虛妄相。二、依他起，依…"
+    },
+    {
+      "matched": "現行",
+      "standard": "現行",
+      "occurrences": 17,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "現行"
+      ],
+      "sample_context": "…，不過為意識所憶想耳。但獨頭意識範圍頗寬，又分三位、一、夢位意識，夢時前五識不起現行，唯是第六意識之分別現境也。二、散位意識，清醒時心理之分散，而非集中統一者，為散…"
+    },
+    {
+      "matched": "真如",
+      "standard": "真如",
+      "occurrences": 16,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "一心真如",
+        "真如理"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "真如"
+      ],
+      "sample_context": "…擬之影像，皆稱為獨影境。由上三類，體相之相通於性境。體相之相，既通性境，則佛典中真如、體性、法性，亦包括在體相之內，以真如為根本無分別智所了知故，真如即無相之實體故…"
+    },
+    {
+      "matched": "相分",
+      "standard": "相分",
+      "occurrences": 15,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "相分"
+      ],
+      "sample_context": "…能了知之知識，故不離能知，而能知又為所知之一，故能知亦包括在所知也。——如見分緣相分時，即為自證分之所緣，故能知同時即為所知。——知識能知亦所知法之一，故法相包括所…"
+    },
+    {
+      "matched": "五官",
+      "standard": "五官",
+      "occurrences": 15,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "五官"
+      ],
+      "sample_context": "…典言之，佛之智慧與常人不同，蓋諸佛經過長久修證之工夫，已得無上正遍覺知，與世人憑五官感驗或意識上所推斷之知識，逈異其趣。惟其如此，諸佛對於萬有真理實相，於一切時一切…"
+    },
+    {
+      "matched": "眼識",
+      "standard": "眼識",
+      "occurrences": 14,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "眼識"
+      ],
+      "sample_context": "…之相，及體相之相三者，是法相唯識所取義。今先述相貌之相：  1.相貌之相平常指由眼識所見之事物而言。然相貌之能了別，不惟眼識已也，眼識之外猶有意識了知存焉。如心不在…"
+    },
+    {
+      "matched": "解脫",
+      "standard": "解脫",
+      "occurrences": 11,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "解脫"
+      ],
+      "sample_context": "…（Prakriti）。彼解釋一切謂：由神我忽生要求，與自性相感而生宇宙萬有；欲得解脫，須究明二十五諦之真相，依禪定而止息神我之要求，歸還自性不動之狀態。其最後之結果…"
+    },
+    {
+      "matched": "第六意識",
+      "standard": "第六意識",
+      "occurrences": 13,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "第六意識"
+      ],
+      "sample_context": "…相之相。非前五識——眼、耳、鼻、舌、身識所能了到，乃意識所取之義相也。詳言之，則第六意識及第七意根所取之相也。第七末那識於隱微不知不覺之中取自我之相；其餘一切義相，…"
+    },
+    {
+      "matched": "因緣",
+      "standard": "因緣",
+      "occurrences": 13,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "因緣"
+      ],
+      "sample_context": "…所執、依他起、圓成實之三性相：一、遍計所執，謂義相中之顛倒虛妄相。二、依他起，依因緣和合所起之相。三、圓成實，謂圓滿成就真實不變之體相。  ### 　　丁　何謂法相…"
+    },
+    {
+      "matched": "心所",
+      "standard": "心所",
+      "occurrences": 13,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "心所"
+      ],
+      "sample_context": "…n.），五、慧Mati（intelligenceorwisdom.）。  三、善心所MeritoriousMentalProperties十一者：一、信Sraddh…"
+    },
+    {
+      "matched": "五識",
+      "standard": "五識",
+      "occurrences": 12,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "五識"
+      ],
+      "sample_context": "…相意識上所了解之相，曰：義相之相。意識所分別、所思維、所判斷，皆是義相之相。非前五識——眼、耳、鼻、舌、身識所能了到，乃意識所取之義相也。詳言之，則第六意識及第七意…"
+    },
+    {
+      "matched": "無為",
+      "standard": "無為",
+      "occurrences": 12,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無為"
+      ],
+      "sample_context": "…nce.），二十四、不合和性Bheda（noninherence.）。  第五種無為法Asamskrta（unconditionedFactors）者：一、虛空無為…"
+    },
+    {
+      "matched": "百法",
+      "standard": "百法",
+      "occurrences": 11,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "百法"
+      ],
+      "sample_context": "…貌、義相及體相。一切法無窮無盡，不可勝說，然研究法相唯識學者，最重要、最基本者在百法，天親百法明門論及大乘五蘊論等，可尋究參考之。  百法中，第一種為心法Citta…"
+    },
+    {
+      "matched": "獨頭意識",
+      "standard": "獨頭意識",
+      "occurrences": 11,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "不與前五識俱起之意識，分散位、定位、夢位三種獨頭意識",
+      "source": "phase2_fulltext,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "獨頭意識"
+      ],
+      "sample_context": "…成就！今再以能極成立之法相唯識學，次第設立各種問題論之。  #### 　　　　１獨頭意識與同時六識——虛實問題  主觀唯心論謂唯主觀的自心是實在，其他事物不過心中之…"
+    },
+    {
+      "matched": "性境",
+      "standard": "性境",
+      "occurrences": 10,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "性境"
+      ],
+      "sample_context": "…到亦是體相之相，以第八所覺到亦有實體故。  以上被心知所覺到之相，可分三類：一、性境，實有體性之境，即體相之相。二、帶質境，帶質乃原相加上心理主觀之意識作用所取之義…"
+    },
+    {
+      "matched": "帶質境",
+      "standard": "帶質境",
+      "occurrences": 10,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "帶質境"
+      ],
+      "sample_context": "…故。  以上被心知所覺到之相，可分三類：一、性境，實有體性之境，即體相之相。二、帶質境，帶質乃原相加上心理主觀之意識作用所取之義相；如眼覺之白，此白之名詞，乃意識所…"
+    },
+    {
+      "matched": "所緣",
+      "standard": "所緣",
+      "occurrences": 10,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "所緣"
+      ],
+      "sample_context": "…能知，而能知又為所知之一，故能知亦包括在所知也。——如見分緣相分時，即為自證分之所緣，故能知同時即為所知。——知識能知亦所知法之一，故法相包括所知一切法之相貌、義相…"
+    },
+    {
+      "matched": "和合",
+      "standard": "和合",
+      "occurrences": 10,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "和合"
+      ],
+      "sample_context": "…、依他起、圓成實之三性相：一、遍計所執，謂義相中之顛倒虛妄相。二、依他起，依因緣和合所起之相。三、圓成實，謂圓滿成就真實不變之體相。  ### 　　丁　何謂法相唯識…"
+    },
+    {
+      "matched": "心王",
+      "standard": "心王",
+      "occurrences": 10,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "心王"
+      ],
+      "sample_context": "…之範圍耳。今將百法分類列表如下：   ``` 　　　　　　　　　　　　　　　　┌心王：眼識、耳識、鼻識、舌識、身識、意識、末那識 　　　　　　　　　　　　　┌心法┤…"
+    },
+    {
+      "matched": "末那識",
+      "standard": "末那識",
+      "occurrences": 9,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [
+        "末那"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "末那",
+        "末那識"
+      ],
+      "sample_context": "…、身識所能了到，乃意識所取之義相也。詳言之，則第六意識及第七意根所取之相也。第七末那識於隱微不知不覺之中取自我之相；其餘一切義相，乃意識所取之相。以事實言，凡過去之…"
+    },
+    {
+      "matched": "圓成實性",
+      "standard": "圓成實性",
+      "occurrences": 9,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [
+        "圓成"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "圓成",
+        "圓成實性"
+      ],
+      "sample_context": "…。能以五法含攝一切，故以藏名，如四庫全書之庫。  復次、相又為遍計所執、依他起、圓成實之三性相：一、遍計所執，謂義相中之顛倒虛妄相。二、依他起，依因緣和合所起之相。…"
+    },
+    {
+      "matched": "心所法",
+      "standard": "心所法",
+      "occurrences": 9,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "心所法"
+      ],
+      "sample_context": "…影響而變動。法性明一切法從多種因緣所現之相非固定，其自性本空；法相則彰萬法依心及心所法如幻如化而建立，不於識外別有他物，故曰法相唯識。法性本空，可破小乘之法執；而法…"
+    },
+    {
+      "matched": "色法",
+      "standard": "色法",
+      "occurrences": 8,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "色法"
+      ],
+      "sample_context": "…），四、伺Vicara（sustainedapplication.）。  第三種色法Rupa（MatterLiterallyformorshape）略有十一種：一、…"
+    },
+    {
+      "matched": "不相應行法",
+      "standard": "色心二法",
+      "occurrences": 8,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": false,
+      "variants_of_standard": [
+        "不相應行法",
+        "心心所法"
+      ],
+      "vocab_note": "五位百法之基本分類",
+      "source": "batch_01",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "不相應行法",
+        "心心所法"
+      ],
+      "sample_context": "…攝色Matterincludedunderdharmadhatu.。  第四種心不相應行法TheCittaViprayuktaWharmar：一、得Prapti（a…"
+    },
+    {
+      "matched": "五根",
+      "standard": "五根",
+      "occurrences": 8,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "五根"
+      ],
+      "sample_context": "…義雖或不全，然大致不謬，而可作從西文以研佛學之一喤引。  眼、耳、鼻、舌、身、為五根。色、聲、香、味、觸、為五境。——觸通能所，此指所觸。——法處所攝色，為意識所取…"
+    },
+    {
+      "matched": "清淨",
+      "standard": "清淨",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "清淨"
+      ],
+      "sample_context": "…之消滅。惟其有消滅之可能，故有創造、改造、自擇、自新之路；轉煩惱為菩提，轉雜染為清淨，其斯之謂歟！  #### 　　　　９一切法種與一切法現——同異問題  一一法各…"
+    },
+    {
+      "matched": "無礙",
+      "standard": "無礙",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "無礙"
+      ],
+      "sample_context": "…由心理生理改變而到物理改變；及至宇宙之現象，皆即無分別之真如，而成為自他互融彼此無礙之宇宙。換言之，即成為不可思議之事事無礙法界也。然此改造入手，首由心理之訓練，即…"
+    },
+    {
+      "matched": "我法",
+      "standard": "我法",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "我法"
+      ],
+      "sample_context": "…學之能成立。  ## 四　法相唯識學之利益  ### 　　甲　破除我法之謬執  我法皆從遍計執而生，因計有主觀之自我名為我執，計有客觀之宇宙名為法執。因我則有非我，…"
+    },
+    {
+      "matched": "佛學",
+      "standard": "佛學",
+      "occurrences": 7,
+      "domain": "教理",
+      "subdomain": "佛法體系",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "全書根本概念，太虚自稱「佛學」而非「佛教學」",
+      "source": "manual_gap",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "佛學"
+      ],
+      "sample_context": "…在廈大文哲學會講）  ## 一　法相唯識學之略釋  此次所講為法相唯識學概論，為佛學中重要之學問，其典籍甚多，此次祗提此學綱要作簡單之研究而已。惟未講斯學之先，將此…"
+    },
+    {
+      "matched": "中有",
+      "standard": "中有",
+      "occurrences": 7,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "中有"
+      ],
+      "sample_context": "…祗提此學綱要作簡單之研究而已。惟未講斯學之先，將此法相唯識學之名一審定之。在佛學中有稱為法相學者，有稱為唯識學者，其內容本同，今合稱法相唯識學，有特別之意義在。以近…"
+    },
+    {
+      "matched": "因果",
+      "standard": "因果",
+      "occurrences": 7,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "因果"
+      ],
+      "sample_context": "…，（LawofIdentity）矛盾律，（LawofContradiction）因果律，（LawofCauseandeffect），即通此相之義也。  ### 　　…"
+    },
+    {
+      "matched": "心法",
+      "standard": "心法",
+      "occurrences": 7,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "心法"
+      ],
+      "sample_context": "…能知為所知之一部份，所知之範圍廣而能知之範圍狹也。如一切法為所知，一切法中一部份心法為能知，同時亦可為所知；如意識上起一剎那之知識，即此了知一剎那之知識為能知，其餘…"
+    },
+    {
+      "matched": "煩惱",
+      "standard": "煩惱",
+      "occurrences": 7,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "煩惱"
+      ],
+      "sample_context": "…　、阿賴耶識。 　　　　　　　　　　　　　│　　└心所：遍行五，別境五，善十一，煩惱六，隨煩惱二十 　　　　　　　　　　　　　│　　　　　　，不定四。 　　　　　　…"
+    },
+    {
+      "matched": "生死",
+      "standard": "生死",
+      "occurrences": 7,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "生死"
+      ],
+      "sample_context": "…寄生霄壤之間，此數十年與草木何異？為善成仁，作惡行詐，其價值何在歟？設非然者，人生死而有不死之自我者存，則彼不死者又何往歟？隨此界以升沈歟？入他界而受生歟？如是等者…"
+    },
+    {
+      "matched": "世間",
+      "standard": "世間",
+      "occurrences": 7,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "世間"
+      ],
+      "sample_context": "…雖可慰暫時之煩惱，以神為唯一之依恃；然其認神權為無上，捨自作自受之理於不顧，已犯世間相違等過。而自我之獨存，亦徒為玄想耳。  #### 　　　　２質散之斷滅與生空之…"
+    },
+    {
+      "matched": "菩提",
+      "standard": "菩提",
+      "occurrences": 7,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "無上菩提"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "菩提"
+      ],
+      "sample_context": "…之性質，仍可使之消滅。惟其有消滅之可能，故有創造、改造、自擇、自新之路；轉煩惱為菩提，轉雜染為清淨，其斯之謂歟！  #### 　　　　９一切法種與一切法現——同異問…"
+    },
+    {
+      "matched": "體性",
+      "standard": "體性",
+      "occurrences": 6,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "體性"
+      ],
+      "sample_context": "…存自性義。又能使他人了解其為白而不生他解，是謂法之軌範他解義。前為能保持其自己之體性，後謂使他人了解不生他想耳。白色如是，其他亦然；具此二義，即名為法。  ### …"
+    },
+    {
+      "matched": "身識",
+      "standard": "身識",
+      "occurrences": 6,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "身識"
+      ],
+      "sample_context": "…義相之相。意識所分別、所思維、所判斷，皆是義相之相。非前五識——眼、耳、鼻、舌、身識所能了到，乃意識所取之義相也。詳言之，則第六意識及第七意根所取之相也。第七末那識…"
+    },
+    {
+      "matched": "五蘊",
+      "standard": "五蘊",
+      "occurrences": 6,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "色受想行識",
+      "source": "batch_01",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "五蘊"
+      ],
+      "sample_context": "…無盡，不可勝說，然研究法相唯識學者，最重要、最基本者在百法，天親百法明門論及大乘五蘊論等，可尋究參考之。  百法中，第一種為心法Citta（mind），略有八種：一…"
+    },
+    {
+      "matched": "隨煩惱",
+      "standard": "隨煩惱",
+      "occurrences": 6,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "隨煩惱"
+      ],
+      "sample_context": "…bt.），六、惡見Asamyagdrsti（erroneousviews.）。次隨煩惱TheSubsidiaryKlesas.二十者：一、忿Krodha（Anger…"
+    },
+    {
+      "matched": "虛空",
+      "standard": "虛空",
+      "occurrences": 6,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "虛空"
+      ],
+      "sample_context": "…五種無為法Asamskrta（unconditionedFactors）者：一、虛空無為Akasa（omnipresentether.），二、擇滅無為Pratisa…"
+    },
+    {
+      "matched": "有為",
+      "standard": "有為",
+      "occurrences": 6,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "有為"
+      ],
+      "sample_context": "…、橫、豎等色相而假立。其作用在聲色變化上，故屬不相應行法。以上皆從略言之耳。  有為法有造作、有變化、有功用，無為法則無造作、無變化、無功用。何謂虛空無為？非眼所見…"
+    },
+    {
+      "matched": "眾生",
+      "standard": "眾生",
+      "occurrences": 6,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "眾生"
+      ],
+      "sample_context": "…有之本因及體質之推究  凡學說之產生必有其因由，固勿論古今中外也。諸佛說法，原應眾生之機感為其緣起。自佛典言之，佛之智慧與常人不同，蓋諸佛經過長久修證之工夫，已得無…"
+    },
+    {
+      "matched": "修證",
+      "standard": "修證",
+      "occurrences": 6,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "修證"
+      ],
+      "sample_context": "…諸佛說法，原應眾生之機感為其緣起。自佛典言之，佛之智慧與常人不同，蓋諸佛經過長久修證之工夫，已得無上正遍覺知，與世人憑五官感驗或意識上所推斷之知識，逈異其趣。惟其如…"
+    },
+    {
+      "matched": "實際",
+      "standard": "實際",
+      "occurrences": 6,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "實際"
+      ],
+      "sample_context": "…，其餘不能為究竟也。今之科學，其方法多據孔氏之言，發揮而光大之耳。所謂科學，即從實際證驗狀況之如何而敘述之，然後依敘述再加推論以說明其實在。五官驗證所不足者，以器械…"
+    },
+    {
+      "matched": "名言",
+      "standard": "名言",
+      "occurrences": 6,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "名言"
+      ],
+      "sample_context": "…之心，不過稱彼為心，其與素樸實在論不可證明之物，亦僅名之不同，同為不能證知，但隨名言而假立耳。若唯物論不成立，則客觀唯心論亦不能成立。今縱許汝有共同心之存在，萬有乃…"
+    },
+    {
+      "matched": "現量",
+      "standard": "現量",
+      "occurrences": 6,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "現量"
+      ],
+      "sample_context": "…、重量等，皆非眼所見，通常即以此直接眼見到之少分以為眼能見桌，其實非真見，乃成似現量之非量。二、如唯物論或素樸實在論之種種推論，又成為相似比量之推理的非量知識。定位…"
+    },
+    {
+      "matched": "心識",
+      "standard": "心識",
+      "occurrences": 6,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "心識"
+      ],
+      "sample_context": "…識之境相；能為見分，所為相分。因此事實上感覺之有感於是而有所知識，均不離純粹感覺心識之外，故仍是唯識。此種不離純粹經驗六識覺到之現象之外，有所謂「感覺今有」或「感覺…"
+    },
+    {
+      "matched": "業報",
+      "standard": "業報",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "六道業果",
+        "因果報應"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "業報"
+      ],
+      "sample_context": "…有同、同中有異之說明。但此祗就非生命之一切法以論其差別，欲究生命之差別，當更進論業報。  #### 　　　　10前六識業與八六識報——生死問題  通常以初受胎為生，…"
+    },
+    {
+      "matched": "妄執",
+      "standard": "妄執",
+      "occurrences": 6,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "妄執"
+      ],
+      "sample_context": "…計度而不能適如其量，或增益之，或損減之，此所執法之自性，可知其絕無實體。惟此祗指妄執彼依他起法之所執法為空，非將事實之意識本身亦撥為空；離此妄執，於實體性之法而不起…"
+    },
+    {
+      "matched": "大乘",
+      "standard": "大乘",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "大乘不共法",
+        "大乘法",
+        "大乘特法"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "大乘"
+      ],
+      "sample_context": "…者，其內容本同，今合稱法相唯識學，有特別之意義在。以近人或謂法相學範圍寬大，通於大乘小乘之一分而言，唯識學只屬大乘之一分而已。余意法相唯識學應合稱，小乘不應歸入法相…"
+    },
+    {
+      "matched": "耳識",
+      "standard": "耳識",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "耳識"
+      ],
+      "sample_context": "…：一、眼識Consciousnessdependentuponsight.，二、耳識Consciousnessdependentuponsound.，三、鼻識Con…"
+    },
+    {
+      "matched": "相應",
+      "standard": "相應",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "相應"
+      ],
+      "sample_context": "…mena.），十六、定異Aprapti（non-attainment.），十七、相應Pratyanubandha（correlation.），十八、勢速Javany…"
+    },
+    {
+      "matched": "如化",
+      "standard": "如化",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "中觀學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "如化"
+      ],
+      "sample_context": "…觸、為五境。——觸通能所，此指所觸。——法處所攝色，為意識所取色，眼等所不能見；如化學上之電子、元子之類，天文家所推想宇宙之屬是也。法處所攝色有五：一、極略色，謂分…"
+    },
+    {
+      "matched": "智慧",
+      "standard": "智慧",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "智慧"
+      ],
+      "sample_context": "…必有其因由，固勿論古今中外也。諸佛說法，原應眾生之機感為其緣起。自佛典言之，佛之智慧與常人不同，蓋諸佛經過長久修證之工夫，已得無上正遍覺知，與世人憑五官感驗或意識上…"
+    },
+    {
+      "matched": "如幻",
+      "standard": "如幻",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "如幻"
+      ],
+      "sample_context": "…變動。法性明一切法從多種因緣所現之相非固定，其自性本空；法相則彰萬法依心及心所法如幻如化而建立，不於識外別有他物，故曰法相唯識。法性本空，可破小乘之法執；而法相唯識…"
+    },
+    {
+      "matched": "有相",
+      "standard": "有相",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "有相"
+      ],
+      "sample_context": "…生，則世界與各人意志又如何貫通耶？又復應問：向之不知其然而然之求生意志，其現起為有相依之關係耶？抑無相依之關係耶？如無相依之關係，則不能以其他方法使之消滅；如有相依…"
+    },
+    {
+      "matched": "所藏",
+      "standard": "所藏",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "所藏"
+      ],
+      "sample_context": "…故此識亦可言「處」，即一切所現行之潛勢力保藏之處也。此識具有三義：一、能藏，二、所藏，三、我愛執藏。一、對一切種子名能藏，因一切種皆收藏於阿賴耶識之中，種子為所藏，…"
+    },
+    {
+      "matched": "我執",
+      "standard": "我執",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "我執"
+      ],
+      "sample_context": "…取第八識見執為自我，無時或息，童稚之時，第六識之自我觀念，雖無甚顯著，然根本之自我執，仍無間斷，至成人則到處時時保存自己，發揚自己，提高自己，自我之觀念，極為顯著；…"
+    },
+    {
+      "matched": "如實智",
+      "standard": "如實智",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "如實智"
+      ],
+      "sample_context": "…進化之義亦不成立。今於此分兩段言之：  ##### 　　　　　　（一）四尋思引四如實智與五重唯識觀  四尋思引四如實智與五重唯識觀，即明由心理改變心理，次由心理改變…"
+    },
+    {
+      "matched": "變壞",
+      "standard": "變壞",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "變壞"
+      ],
+      "sample_context": "…如專制君國之朝代，終有消滅之時，以其業有盡而報必壞也。能將我法謬執去掉，則能解脫變壞之業報，而成為四智菩提不思議業之圓滿報。佛學所謂了脫生死，即指此而言。  ###…"
+    },
+    {
+      "matched": "證得",
+      "standard": "證得",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "證得"
+      ],
+      "sample_context": "…，皆成為束縛而無真實自由之可言；若能修無漏清淨行，得成淨唯識界，轉識成智之時，即證得無礙之清淨，所謂我淨是也。  "
+    },
+    {
+      "matched": "唯識學",
+      "standard": "唯識學",
+      "occurrences": 4,
+      "domain": "义理维度",
+      "subdomain": "義理體系",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "指出太虚「学宗唯识」的个人理论信仰特质，作为慈宗的义理根基",
+      "source": "dimensional",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "唯識學"
+      ],
+      "sample_context": "…而已。惟未講斯學之先，將此法相唯識學之名一審定之。在佛學中有稱為法相學者，有稱為唯識學者，其內容本同，今合稱法相唯識學，有特別之意義在。以近人或謂法相學範圍寬大，通…"
+    },
+    {
+      "matched": "不生",
+      "standard": "不生",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "不生"
+      ],
+      "sample_context": "…存自性。如言白色，保持白之自性而存在，是謂法之持存自性義。又能使他人了解其為白而不生他解，是謂法之軌範他解義。前為能保持其自己之體性，後謂使他人了解不生他想耳。白色…"
+    },
+    {
+      "matched": "實有",
+      "standard": "實有",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "實有"
+      ],
+      "sample_context": "…體相之相，以第八所覺到亦有實體故。  以上被心知所覺到之相，可分三類：一、性境，實有體性之境，即體相之相。二、帶質境，帶質乃原相加上心理主觀之意識作用所取之義相；如…"
+    },
+    {
+      "matched": "法處",
+      "standard": "法處",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "法處"
+      ],
+      "sample_context": "…t.，九、味塵Dasteobject.，十、觸塵Touchobject.，十一、法處所攝色Matterincludedunderdharmadhatu.。  第四種…"
+    },
+    {
+      "matched": "命根",
+      "standard": "命根",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "有情的壽命，唯識不相應行法之一，有別於普通植物性「生命」概念",
+      "source": "phase2_fulltext,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "命根"
+      ],
+      "sample_context": "…rayuktaWharmar：一、得Prapti（attainment.），二、命根Jwitendriya（vitality.），三、眾同分Sabhagata（un…"
+    },
+    {
+      "matched": "擇滅",
+      "standard": "擇滅",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "擇滅"
+      ],
+      "sample_context": "…tors）者：一、虛空無為Akasa（omnipresentether.），二、擇滅無為PratisamkhyaNirodha（consciouscessation…"
+    },
+    {
+      "matched": "一心",
+      "standard": "一心",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "一心"
+      ],
+      "sample_context": "…，則示一切法——五法、三相等——皆唯識所現。唯、不離義，識、即百法中之八識及五十一心所，其餘四十一法亦皆不能離識而存在；以一切法皆唯識所現故，一切法多分受識之影響而…"
+    },
+    {
+      "matched": "言說",
+      "standard": "言說",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "言說"
+      ],
+      "sample_context": "…如如證明也。易詞而言，佛非創造或主宰世界之人，乃徹底覺悟之人也。惟佛之與佛，更無言說之必要，以所證諸法性相，皆已如如相應故。其所以有種種之言說教化，莫非因眾生未得佛…"
+    },
+    {
+      "matched": "性相",
+      "standard": "性相",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "性相"
+      ],
+      "sample_context": "…佛非創造或主宰世界之人，乃徹底覺悟之人也。惟佛之與佛，更無言說之必要，以所證諸法性相，皆已如如相應故。其所以有種種之言說教化，莫非因眾生未得佛智之前，生出遍計之見，…"
+    },
+    {
+      "matched": "萬法",
+      "standard": "萬法",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "萬法"
+      ],
+      "sample_context": "…  #### 　　　　３法性之本空與唯識之轉依  法性從小乘法作進一步之解釋，明萬法本性為空，大般若經、大智度論、中論皆屬之。小乘以觀法有而顯我空，謂五蘊等諸法恆有…"
+    },
+    {
+      "matched": "生空",
+      "standard": "生空",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "生空"
+      ],
+      "sample_context": "…犯世間相違等過。而自我之獨存，亦徒為玄想耳。  #### 　　　　２質散之斷滅與生空之解脫  科學謂人生作何事業，留於團體，或可不朽。如將每人個體觀察，皆依物理為基…"
+    },
+    {
+      "matched": "無實",
+      "standard": "無實",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無實"
+      ],
+      "sample_context": "…抵相抗，乃由相依相益，由戒生定，由定發慧，將世人迷有自我的實體破除，明內無我，外無實物，向以物我為實之推求，於焉而息，一切心理活動亦隨之而息。得此生空之解脫，表面上…"
+    },
+    {
+      "matched": "染法",
+      "standard": "染法",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "染法"
+      ],
+      "sample_context": "…種皆收藏於阿賴耶識之中，種子為所藏，阿賴耶識即能藏之處也，故曰能藏。二、對一切雜染法名所藏，因根身器界一切雜染現行之後，阿賴耶識反為一切雜染法覆藏，為一切雜染所藏也…"
+    },
+    {
+      "matched": "法界",
+      "standard": "法界",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "一真法界",
+        "中實法界",
+        "法界圓明",
+        "法界無障礙"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "一真法界",
+        "法界"
+      ],
+      "sample_context": "…見不同故。又、前後之影，應錯亂無序同糅於腦府之中故。依佛典言，識乃依境之大小而遍法界，故各人之阿賴耶識皆交遍宇宙，凡事實上或經驗上皆賴保藏，使之復現也；此識雖交遍法…"
+    },
+    {
+      "matched": "總相",
+      "standard": "總相",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "總相"
+      ],
+      "sample_context": "…識，則除以上遍行位外，復有貪、癡、慢、惡見及隨煩惱等，皆從我見所生也。八心王法取總相，諸心所法取各別之相。故有總別之分。如見一種顏色或形相，眼識取一總相，伴眼識所起…"
+    },
+    {
+      "matched": "見相",
+      "standard": "見相",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "見相"
+      ],
+      "sample_context": "…，要說明能知如何，即須說明所知如何也。渾然不分的覺心為自體分，自體分分能所知則有見相二分；見分為識體一種覺知之用，相分為見分所知之相，體、見、相、合稱三分也。八識各…"
+    },
+    {
+      "matched": "龜毛",
+      "standard": "龜毛",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "龜毛"
+      ],
+      "sample_context": "…析至極微為法，集聚成具體亦為法；有變化、有作用為法，無變化、無作用亦名為法；乃至龜毛、兔角之畢竟無，亦稱為無法也：其範圍有廣於吾人所謂萬物之「物」字者。法之範圍既如…"
+    },
+    {
+      "matched": "兔角",
+      "standard": "兔角",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "兔角"
+      ],
+      "sample_context": "…微為法，集聚成具體亦為法；有變化、有作用為法，無變化、無作用亦名為法；乃至龜毛、兔角之畢竟無，亦稱為無法也：其範圍有廣於吾人所謂萬物之「物」字者。法之範圍既如上述之…"
+    },
+    {
+      "matched": "顯色",
+      "standard": "顯色",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "顯色"
+      ],
+      "sample_context": "…眼識同起作用，所了之長短、廣狹之相貌乃生。色塵為眼及意所了，有青、黃、赤、白等之顯色，長、短、方、圓等之形色，及行、住、屈、伸等之表色。此三者，皆意識作用存也。  …"
+    },
+    {
+      "matched": "無相",
+      "standard": "無相",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無相"
+      ],
+      "sample_context": "…則佛典中真如、體性、法性，亦包括在體相之內，以真如為根本無分別智所了知故，真如即無相之實體故。義相之相，通帶質獨影。相貌之相，則通性境及帶質二境。以上所言三相與三境…"
+    },
+    {
+      "matched": "因相",
+      "standard": "因相",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "因相"
+      ],
+      "sample_context": "…此。  心知之所了知，即所取之相。相字、除以上三種義外，尚有自相、共相、差別相、因相、果相五種。如言鋼筆，鋼筆之自身為自相；一言鋼筆，則一切鋼筆多包括在內，此鋼筆乃…"
+    },
+    {
+      "matched": "果相",
+      "standard": "果相",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "果相"
+      ],
+      "sample_context": "… 心知之所了知，即所取之相。相字、除以上三種義外，尚有自相、共相、差別相、因相、果相五種。如言鋼筆，鋼筆之自身為自相；一言鋼筆，則一切鋼筆多包括在內，此鋼筆乃無數鋼…"
+    },
+    {
+      "matched": "自證",
+      "standard": "自證",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "自證"
+      ],
+      "sample_context": "…，故不離能知，而能知又為所知之一，故能知亦包括在所知也。——如見分緣相分時，即為自證分之所緣，故能知同時即為所知。——知識能知亦所知法之一，故法相包括所知一切法之相…"
+    },
+    {
+      "matched": "五法",
+      "standard": "五法",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "五法"
+      ],
+      "sample_context": "…義相及體相也。梵言爾燄，譯所知義，或境義，即一切法為所知境也。  復次、法又分為五法藏，即名——能詮表種種事物，相——為名所詮表之事物，分別——識能分別，正智——離…"
+    },
+    {
+      "matched": "虛妄",
+      "standard": "虛妄",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "虛妄"
+      ],
+      "sample_context": "…。  復次、相又為遍計所執、依他起、圓成實之三性相：一、遍計所執，謂義相中之顛倒虛妄相。二、依他起，依因緣和合所起之相。三、圓成實，謂圓滿成就真實不變之體相。  #…"
+    },
+    {
+      "matched": "鼻識",
+      "standard": "鼻識",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "鼻識"
+      ],
+      "sample_context": "…，二、耳識Consciousnessdependentuponsound.，三、鼻識Consciousnessdependentuponsmell.，四、舌識Con…"
+    },
+    {
+      "matched": "舌識",
+      "standard": "舌識",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "舌識"
+      ],
+      "sample_context": "…，三、鼻識Consciousnessdependentuponsmell.，四、舌識Consciousnessdependentupontaste.，五、身識Con…"
+    },
+    {
+      "matched": "心所有法",
+      "standard": "心所有法",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "大乘有宗",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "心所分類六類五十一種：遍行五、別境五、善十一、根本煩惱六、隨煩惱二十、不定四",
+      "source": "phase2_fulltext",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "心所有法"
+      ],
+      "sample_context": "…aVijnana（RepositoryConsciousness.）。  第二種心所有法CaitasikaDharmas（MentalProperties），又有五…"
+    },
+    {
+      "matched": "別境",
+      "standard": "別境",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "別境"
+      ],
+      "sample_context": "…jna（ideation.），五、思Cetana（Volition.）。  二、別境ParticularMentalProperties五者：一、欲Chanda（W…"
+    },
+    {
+      "matched": "正覺",
+      "standard": "正覺",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "正覺"
+      ],
+      "sample_context": "…說教化，莫非因眾生未得佛智之前，生出遍計之見，或全不覺悟，或覺悟不澈底，欲令同得正覺而說也。可知諸佛非應眾生心理上之要求，自無佛之所說法也。  對於現前宇宙之現象人…"
+    },
+    {
+      "matched": "色蘊",
+      "standard": "色蘊",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "色蘊"
+      ],
+      "sample_context": "…零片之粗相也。以佛學衡之，科學之實驗與小乘之執法頗為相近。小乘對人觀察，乃物理「色蘊」，生理心理「受蘊、想蘊」等現象之組合，現象之外，並無整個之自我存焉。而宇宙萬有…"
+    },
+    {
+      "matched": "行蘊",
+      "standard": "行蘊",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "行蘊"
+      ],
+      "sample_context": "…相觸為知識之感覺，亦為感情。三、想蘊，從感受境上分出彼此，思想名詞由是而立。四、行蘊，行為之行，或道德或不道德所發動皆屬之，見之語言意志活動，行蘊關係最切。以上四蘊…"
+    },
+    {
+      "matched": "二識",
+      "standard": "二識",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "二識"
+      ],
+      "sample_context": "…，行蘊關係最切。以上四蘊，皆被知識。五、識蘊，即百法中之心法，惟小乘未見到七、八二識耳。小乘五蘊之色蘊包括色法，受蘊、想蘊惟指五遍行中之受、想，行蘊包括其餘心所有法…"
+    },
+    {
+      "matched": "轉依",
+      "standard": "轉依",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [
+        "無上轉依",
+        "轉所依",
+        "轉所得",
+        "轉所捨"
+      ],
+      "vocab_note": "瑜伽行派核心概念：轉所依、轉所捨、轉所得（所顯得真如涅槃、所生得菩提功德）",
+      "source": "batch_01,phase2_fulltext,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "轉依"
+      ],
+      "sample_context": "…用方法及其目標則異，二者皆未臻圓滿也。  #### 　　　　３法性之本空與唯識之轉依  法性從小乘法作進一步之解釋，明萬法本性為空，大般若經、大智度論、中論皆屬之。…"
+    },
+    {
+      "matched": "法執",
+      "standard": "法執",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "法執"
+      ],
+      "sample_context": "…依心及心所法如幻如化而建立，不於識外別有他物，故曰法相唯識。法性本空，可破小乘之法執；而法相唯識，又可顯法性本空中多種因緣所現之法相非離識而有，皆同為識變故。以法性…"
+    },
+    {
+      "matched": "天神",
+      "standard": "天神",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "天神"
+      ],
+      "sample_context": "…宗教倫理之說起；然其開始，實由神道之說。茲亦分三節言之：  #### 　　　　１天神之永生與自我之獨存  天神之永生與前迷信之神話相一致，此神為無始無終無所不在，而…"
+    },
+    {
+      "matched": "比量",
+      "standard": "比量",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "比量"
+      ],
+      "sample_context": "…之，佔通常心理作用百分之九十九；此種知識又分為二：一、貫通前所經驗成為推理不誤之比量知識，二、有大部份則為錯誤知識。此中又有二種：一、如言見桌，不過見到一小部份之顏…"
+    },
+    {
+      "matched": "執藏",
+      "standard": "執藏",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "執藏"
+      ],
+      "sample_context": "…處」，即一切所現行之潛勢力保藏之處也。此識具有三義：一、能藏，二、所藏，三、我愛執藏。一、對一切種子名能藏，因一切種皆收藏於阿賴耶識之中，種子為所藏，阿賴耶識即能藏…"
+    },
+    {
+      "matched": "我所",
+      "standard": "我所",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "我所"
+      ],
+      "sample_context": "…自我也。通常之自我精神，皆依託此根本第八識見而有所發表於外，因有我則有非我，因有我所有，則有非我所有，區別彼此，乃有自他之見。然溯其源，皆因第七末那識——梵言末那，…"
+    },
+    {
+      "matched": "心心",
+      "standard": "心心",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "心心"
+      ],
+      "sample_context": "…二識須依修證定慧才能明瞭到、觀察到故。第八識有遍行五種心所：一、作意，能警動其餘心心所現起之主動力。二、觸，根、境、識三接觸，能觸境之心理作用。三、受，順觸之領受。…"
+    },
+    {
+      "matched": "唯識觀",
+      "standard": "唯識觀",
+      "occurrences": 3,
+      "domain": "行持",
+      "subdomain": "禪觀",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "唯識觀"
+      ],
+      "sample_context": "…成立。今於此分兩段言之：  ##### 　　　　　　（一）四尋思引四如實智與五重唯識觀  四尋思引四如實智與五重唯識觀，即明由心理改變心理，次由心理改變而到生理改變…"
+    },
+    {
+      "matched": "色塵",
+      "standard": "色塵",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "色塵"
+      ],
+      "sample_context": "…意識不注，眼見同於不見之故也。由意識與眼識同起作用，所了之長短、廣狹之相貌乃生。色塵為眼及意所了，有青、黃、赤、白等之顯色，長、短、方、圓等之形色，及行、住、屈、伸…"
+    },
+    {
+      "matched": "施設",
+      "standard": "施設",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "施設"
+      ],
+      "sample_context": "…，然已非體相之相，故謂之帶質境。三、獨影境，過去之回憶，將來之推想，乃至名詞上所施設龜毛、兔角等，凡意識之假想，比擬之影像，皆稱為獨影境。由上三類，體相之相通於性境…"
+    },
+    {
+      "matched": "三相",
+      "standard": "三相",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "三相"
+      ],
+      "sample_context": "…真如即無相之實體故。義相之相，通帶質獨影。相貌之相，則通性境及帶質二境。以上所言三相與三境之關係，略如此。  心知之所了知，即所取之相。相字、除以上三種義外，尚有自…"
+    },
+    {
+      "matched": "自相",
+      "standard": "自相",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "自相"
+      ],
+      "sample_context": "…相與三境之關係，略如此。  心知之所了知，即所取之相。相字、除以上三種義外，尚有自相、共相、差別相、因相、果相五種。如言鋼筆，鋼筆之自身為自相；一言鋼筆，則一切鋼筆…"
+    },
+    {
+      "matched": "心靈",
+      "standard": "心靈",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "心靈"
+      ],
+      "sample_context": "…所知」二義：所知即是被知，一切法皆為所知，與所知相對為能知，能知謂人類及其他動物心靈之能了知作用。然能知亦為所知，使能知非所知，亦不知其有此能知也。可知能知必為所知…"
+    },
+    {
+      "matched": "如意",
+      "standard": "如意",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "如意"
+      ],
+      "sample_context": "…圍廣而能知之範圍狹也。如一切法為所知，一切法中一部份心法為能知，同時亦可為所知；如意識上起一剎那之知識，即此了知一剎那之知識為能知，其餘皆為所知。所知的知識即能了知…"
+    },
+    {
+      "matched": "虛妄分別",
+      "standard": "虛妄分別",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "虛妄分別"
+      ],
+      "sample_context": "…藏，即名——能詮表種種事物，相——為名所詮表之事物，分別——識能分別，正智——離虛妄分別之能了知，真如——正智所知之法體。能以五法含攝一切，故以藏名，如四庫全書之庫…"
+    },
+    {
+      "matched": "放逸",
+      "standard": "放逸",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "放逸"
+      ],
+      "sample_context": "…ignorance.），八、輕安Prarabdhi（serenity.），九、不放逸Apramada（carefulness.），十、不害Ahimsa（harmle…"
+    },
+    {
+      "matched": "根本煩惱",
+      "standard": "根本煩惱",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "根本煩惱"
+      ],
+      "sample_context": "… 四、不善心所DemeritoriousMentalProperties中，初、根本煩惱TheFundamentalKlesas六者：一、貪Lobha（cupidi…"
+    },
+    {
+      "matched": "惡見",
+      "standard": "惡見",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "惡見"
+      ],
+      "sample_context": "…，四、慢Mana（pride.），五、疑Vicikitsa（doubt.），六、惡見Asamyagdrsti（erroneousviews.）。次隨煩惱TheSub…"
+    },
+    {
+      "matched": "能所",
+      "standard": "能所",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "能所"
+      ],
+      "sample_context": "…學之一喤引。  眼、耳、鼻、舌、身、為五根。色、聲、香、味、觸、為五境。——觸通能所，此指所觸。——法處所攝色，為意識所取色，眼等所不能見；如化學上之電子、元子之類…"
+    },
+    {
+      "matched": "禪定",
+      "standard": "禪定",
+      "occurrences": 2,
+      "domain": "行持",
+      "subdomain": "禪觀",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "禪定"
+      ],
+      "sample_context": "…。二、極逈色，謂推測虛空明闇等無質之色，至極遠處難為達見者故名。三、定所引色，謂禪定所變現之色、聲、香、味等境故名。四、受所引色，又名無表色，謂受戒時動作上言語上受…"
+    },
+    {
+      "matched": "常住",
+      "standard": "常住",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "常住"
+      ],
+      "sample_context": "…顯色，是有為色法故；以通過之空，是有為觸法故，變動不居故。此間無為法之虛空，體是常住，無隔別故。何謂真如？真如謂一切法真實如此之體性：普遍如此，常住如此，一切變化皆…"
+    },
+    {
+      "matched": "緣起",
+      "standard": "緣起",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "緣生"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "緣起"
+      ],
+      "sample_context": "…之推究  凡學說之產生必有其因由，固勿論古今中外也。諸佛說法，原應眾生之機感為其緣起。自佛典言之，佛之智慧與常人不同，蓋諸佛經過長久修證之工夫，已得無上正遍覺知，與…"
+    },
+    {
+      "matched": "實相",
+      "standard": "實相",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "實相"
+      ],
+      "sample_context": "…覺知，與世人憑五官感驗或意識上所推斷之知識，逈異其趣。惟其如此，諸佛對於萬有真理實相，於一切時一切處如如證明也。易詞而言，佛非創造或主宰世界之人，乃徹底覺悟之人也。…"
+    },
+    {
+      "matched": "大梵天",
+      "standard": "大梵天",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "大梵天"
+      ],
+      "sample_context": "…有之前，由神自動所創造，宇宙萬有即以神為體質。基督教上帝創造萬物，印度婆羅門教以大梵天為宇宙萬有之因體，乃至中國神話中所謂盤古開闢天地之說皆屬之。古代人智淺薄，以神…"
+    },
+    {
+      "matched": "勝論",
+      "standard": "勝論",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "論典",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "勝論"
+      ],
+      "sample_context": "…物之說，計虛無為宇宙萬有之因體。在印度則有數論派（Samkhyasystem），勝論派（Vaiceshika）等之玄談。數論，梵云僧佉，此翻為數，即以智慧數數推度諸…"
+    },
+    {
+      "matched": "有體",
+      "standard": "有體",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "有體"
+      ],
+      "sample_context": "…saranam）五、行（gananam）。茶杯是有非無，但別有一大有能有之而有。有體是實德業三之所共。同是茶杯者為同句義，非茶杯者為異句義。其中又有同中異、異中同。…"
+    },
+    {
+      "matched": "外道",
+      "standard": "外道",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "外道"
+      ],
+      "sample_context": "…宇宙之因體，由水而成，或由火而成，或由空氣而成，或由地水火風等而成，略同印度順世外道四大極微為因體也。以上中西哲學所推究宇宙之因體，雖較宗教中之計有能造之上帝為進一…"
+    },
+    {
+      "matched": "玄學",
+      "standard": "玄學",
+      "occurrences": 2,
+      "domain": "社会文化",
+      "subdomain": "佛教與文化",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "玄學"
+      ],
+      "sample_context": "…合各科學實驗之結果，作為哲學推論之基礎。彼分社會進化有三階段：一、宗教階段，二、玄學階段，三、實證階段。今此一階段以證驗支配一切，遇事皆探本窮源，求最後之解決。以為…"
+    },
+    {
+      "matched": "識蘊",
+      "standard": "識蘊",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "識蘊"
+      ],
+      "sample_context": "…德或不道德所發動皆屬之，見之語言意志活動，行蘊關係最切。以上四蘊，皆被知識。五、識蘊，即百法中之心法，惟小乘未見到七、八二識耳。小乘五蘊之色蘊包括色法，受蘊、想蘊惟…"
+    },
+    {
+      "matched": "有法",
+      "standard": "有法",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "有法"
+      ],
+      "sample_context": "…法等。小乘與大乘雖有出入之處，大部分仍相差不遠耳。小乘以為宇宙萬有，人生世界，祗有法——五蘊等——之存在，猶之科學以為祗有心理、生理、物理之現象也。神我、上帝皆為彼…"
+    },
+    {
+      "matched": "本性",
+      "standard": "本性",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "本性"
+      ],
+      "sample_context": "…#### 　　　　３法性之本空與唯識之轉依  法性從小乘法作進一步之解釋，明萬法本性為空，大般若經、大智度論、中論皆屬之。小乘以觀法有而顯我空，謂五蘊等諸法恆有，於…"
+    },
+    {
+      "matched": "定慧",
+      "standard": "定慧",
+      "occurrences": 2,
+      "domain": "行持",
+      "subdomain": "禪觀",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "定慧"
+      ],
+      "sample_context": "…至於自我之獨存，古印度數論，即創此說，彼為生死所以循環不息，乃出自我之要求，必假定慧之力，將自我要求息滅，漸能離自性而獨存矣。其餘耆那教等，亦莫不以自我解脫而獨存，…"
+    },
+    {
+      "matched": "無生",
+      "standard": "無生",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無生"
+      ],
+      "sample_context": "…性明萬法本空，了無隔礙，常是如此，普遍如此，故曰諸法空相，不生不滅，不增不減。亦無生死苦惱可脫，以萬法本空，本無生滅增減故，故曰：本空之常如。諸法之本性雖空，然諸法…"
+    },
+    {
+      "matched": "轉識",
+      "standard": "轉識",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "轉識"
+      ],
+      "sample_context": "…不圓滿之有漏法既依識所變，即此不善不圓滿所依之識，改轉之使為覺悟而圓滿，佛典謂為轉識成智，則達善之價值永存之極則矣。  ## 三　法相唯識學之成立  由前出發於究真…"
+    },
+    {
+      "matched": "定性",
+      "standard": "定性",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "定性"
+      ],
+      "sample_context": "…用的方為真理。世間所有之事業及思想，既皆依素樸經驗復經意識彫刻而成，故真理亦無決定性可得。簡言之、於此時、此地能適應吾人實際生活之要求，方成真理也。此派非以唯心論自…"
+    },
+    {
+      "matched": "所緣緣",
+      "standard": "所緣緣",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "所緣緣"
+      ],
+      "sample_context": "…作用所起不同。同時意識乃真實之性境，惟其為真實性境刺戟所生起之意識，故謂同時六識所緣緣乃為實在有體性之境。從內容言，此性境與新實在論（NewRealism）所謂的客…"
+    },
+    {
+      "matched": "機緣",
+      "standard": "機緣",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "機緣"
+      ],
+      "sample_context": "…，礦植為無情。宇宙一切有情，各有一阿賴耶識，此識能將各個所有經驗保藏之無失，遇有機緣即可復現。通常所有記憶想像之功能，即有保藏之第八識使然也。普通心理學以為腦府能保…"
+    },
+    {
+      "matched": "諸根",
+      "standard": "諸根",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "諸根"
+      ],
+      "sample_context": "…，於是乃有自共問題。解決此問題，須知根身器界有共變不共變之義，絕對不共變，即淨色諸根是也。淨色諸根非有情形體，略似生活的神經系，此種五根乃各個有情第八識所各變，生時…"
+    },
+    {
+      "matched": "相續",
+      "standard": "相續",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "相續"
+      ],
+      "sample_context": "…時保存自己，發揚自己，提高自己，自我之觀念，極為顯著；凡一切有生命之動物，皆有此相續不斷之自我見，即第七識見專取第八識見分為自我也。通常之自我精神，皆依託此根本第八…"
+    },
+    {
+      "matched": "觀心",
+      "standard": "觀心",
+      "occurrences": 2,
+      "domain": "行持",
+      "subdomain": "禪觀",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "觀心"
+      ],
+      "sample_context": "…葉花，復從花生果可為種也。則知宇宙萬有不同之現實，皆由不同之因而生，非從上帝或客觀心等一因而生，以上帝或客觀心等之生萬物，與因果義相違故！因一果多，不相稱故！現行法…"
+    },
+    {
+      "matched": "二執",
+      "standard": "二執",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "二執"
+      ],
+      "sample_context": "…起法之所執法為空，非將事實之意識本身亦撥為空；離此妄執，於實體性之法而不起增損之二執，固無妨遍計焉。二、依他起自性，此雖無有獨立存在之法性，然可依眾多之關係而現起相…"
+    },
+    {
+      "matched": "通達",
+      "standard": "通達",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "通達"
+      ],
+      "sample_context": "…平等普遍之智慧所了知之境，則不惟意識妄計之遍計所執皆空，而依他起之差別亦空，如此通達諸法真實性相，是為圓成實性。由此可知依他起、圓成實為有，遍計執為空。而所要者，在…"
+    },
+    {
+      "matched": "如實",
+      "standard": "如實",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "如實"
+      ],
+      "sample_context": "…，則可引生四如實智。所謂如實智，即習成如其實際了知之心理，而生起印可決定之智也。如實於所緣名、事、自性、差別，了知其唯名、唯事、唯假立，謂之四尋思引如實智也。五重唯…"
+    },
+    {
+      "matched": "般涅槃",
+      "standard": "般涅槃",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "般涅槃"
+      ],
+      "sample_context": "…仍用此五重觀數數修習增進，乃證圓滿二轉依果。  ##### 　　　　　　（二）大般涅槃與四智菩提  涅槃、圓寂義。染唯識轉為淨唯識，得大般涅槃，涅槃所成為四智菩提。…"
+    },
+    {
+      "matched": "涅槃",
+      "standard": "涅槃",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "滅度"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "涅槃"
+      ],
+      "sample_context": "…增進，乃證圓滿二轉依果。  ##### 　　　　　　（二）大般涅槃與四智菩提  涅槃、圓寂義。染唯識轉為淨唯識，得大般涅槃，涅槃所成為四智菩提。菩提、正覺義。前五識…"
+    },
+    {
+      "matched": "無作",
+      "standard": "無作",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無作"
+      ],
+      "sample_context": "…念，亦可稱之為法；分析至極微為法，集聚成具體亦為法；有變化、有作用為法，無變化、無作用亦名為法；乃至龜毛、兔角之畢竟無，亦稱為無法也：其範圍有廣於吾人所謂萬物之「物…"
+    },
+    {
+      "matched": "畢竟無",
+      "standard": "畢竟無",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "中觀學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "畢竟無"
+      ],
+      "sample_context": "…，集聚成具體亦為法；有變化、有作用為法，無變化、無作用亦名為法；乃至龜毛、兔角之畢竟無，亦稱為無法也：其範圍有廣於吾人所謂萬物之「物」字者。法之範圍既如上述之廣，然…"
+    },
+    {
+      "matched": "所詮",
+      "standard": "所詮",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "所詮"
+      ],
+      "sample_context": "…即一切法為所知境也。  復次、法又分為五法藏，即名——能詮表種種事物，相——為名所詮表之事物，分別——識能分別，正智——離虛妄分別之能了知，真如——正智所知之法體。…"
+    },
+    {
+      "matched": "法體",
+      "standard": "法體",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "法體"
+      ],
+      "sample_context": "…名所詮表之事物，分別——識能分別，正智——離虛妄分別之能了知，真如——正智所知之法體。能以五法含攝一切，故以藏名，如四庫全書之庫。  復次、相又為遍計所執、依他起、…"
+    },
+    {
+      "matched": "三性",
+      "standard": "三性",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "大乘有宗",
+      "is_standard": true,
+      "variants_of_standard": [
+        "五法三自性",
+        "三性三無性"
+      ],
+      "vocab_note": "遍計所執性、依他起性、圓成實性",
+      "source": "batch_01",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "三性"
+      ],
+      "sample_context": "…法含攝一切，故以藏名，如四庫全書之庫。  復次、相又為遍計所執、依他起、圓成實之三性相：一、遍計所執，謂義相中之顛倒虛妄相。二、依他起，依因緣和合所起之相。三、圓成…"
+    },
+    {
+      "matched": "無盡",
+      "standard": "無盡",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無盡"
+      ],
+      "sample_context": "… ### 　　丁　何謂法相唯識  法相謂所知一切法之相貌、義相及體相。一切法無窮無盡，不可勝說，然研究法相唯識學者，最重要、最基本者在百法，天親百法明門論及大乘五蘊…"
+    },
+    {
+      "matched": "天親",
+      "standard": "世親",
+      "occurrences": 1,
+      "domain": "历史",
+      "subdomain": "人物",
+      "is_standard": false,
+      "variants_of_standard": [
+        "天親"
+      ],
+      "vocab_note": "唯識宗祖師",
+      "source": "batch_01",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "天親"
+      ],
+      "sample_context": "…相及體相。一切法無窮無盡，不可勝說，然研究法相唯識學者，最重要、最基本者在百法，天親百法明門論及大乘五蘊論等，可尋究參考之。  百法中，第一種為心法Citta（mi…"
+    },
+    {
+      "matched": "三摩地",
+      "standard": "三摩地",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "禪觀",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "三摩地"
+      ],
+      "sample_context": "…ssormemory.），三、勝解Adhimoksa（deciding.），四、三摩地Samadhi（concentration.），五、慧Mati（intelli…"
+    },
+    {
+      "matched": "精進",
+      "standard": "精進",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "菩薩行",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "精進"
+      ],
+      "sample_context": "…entalProperties十一者：一、信Sraddha（faith.），二、精進Virya（energy.），三、慚Hri（shame.），四、愧Apatrap…"
+    },
+    {
+      "matched": "輕安",
+      "standard": "輕安",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "輕安"
+      ],
+      "sample_context": "…hate.），七、無癡Amoha（absenceofignorance.），八、輕安Prarabdhi（serenity.），九、不放逸Apramada（caref…"
+    },
+    {
+      "matched": "不害",
+      "standard": "不害",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "戒律行持",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "不害"
+      ],
+      "sample_context": "…erenity.），九、不放逸Apramada（carefulness.），十、不害Ahimsa（harmlessness.），十一、行捨Upeksa（indiff…"
+    },
+    {
+      "matched": "無慚",
+      "standard": "無慚",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無慚"
+      ],
+      "sample_context": "…sa（harmfulness.），十、憍Mada（arrogance.），十一、無慚Ahrikya（shamelessness.），十二、無愧Anapatrapya…"
+    },
+    {
+      "matched": "無愧",
+      "standard": "無愧",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無愧"
+      ],
+      "sample_context": "…gance.），十一、無慚Ahrikya（shamelessness.），十二、無愧Anapatrapya（impudence.），十三、惛沈Styana（slot…"
+    },
+    {
+      "matched": "不信",
+      "standard": "不信",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "不信"
+      ],
+      "sample_context": "…loth.），十四、掉舉Auddhatya（recklessness.），十五、不信Asraddha（lackoffaith.），十六、懈怠Kausidya（idl…"
+    },
+    {
+      "matched": "懈怠",
+      "standard": "懈怠",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "懈怠"
+      ],
+      "sample_context": "…ssness.），十五、不信Asraddha（lackoffaith.），十六、懈怠Kausidya（idlenessorremissness），十七、放逸Pram…"
+    },
+    {
+      "matched": "眼根",
+      "standard": "眼根",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "眼根"
+      ],
+      "sample_context": "…Rupa（MatterLiterallyformorshape）略有十一種：一、眼根Sightorgan.，二、耳根Soundorgan.，三、鼻根Smellorg…"
+    },
+    {
+      "matched": "耳根",
+      "standard": "耳根",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "耳根"
+      ],
+      "sample_context": "…allyformorshape）略有十一種：一、眼根Sightorgan.，二、耳根Soundorgan.，三、鼻根Smellorgan.，四、舌根Dasteorg…"
+    },
+    {
+      "matched": "眾同分",
+      "standard": "眾同分",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "眾同分"
+      ],
+      "sample_context": "…tainment.），二、命根Jwitendriya（vitality.），三、眾同分Sabhagata（uniformityofcharacteristics），…"
+    },
+    {
+      "matched": "異生性",
+      "standard": "異生性",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "異生性"
+      ],
+      "sample_context": "…abhagata（uniformityofcharacteristics），四、異生性Evambhagiya（individuality.），五、無想報Asamjn…"
+    },
+    {
+      "matched": "無想定",
+      "standard": "無想定",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "禪觀",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無想定"
+      ],
+      "sample_context": "…ty.），五、無想報Asamjnika（unconsciousness.），六、無想定Asamjnisamapatti（mentaltrainingleadingt…"
+    },
+    {
+      "matched": "滅盡定",
+      "standard": "滅盡定",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "禪觀",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "滅盡定"
+      ],
+      "sample_context": "…taltrainingleadingtounconsciousness.），七、滅盡定Virodhasamapatti（thementaltrainingleadi…"
+    },
+    {
+      "matched": "無常",
+      "standard": "無常",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無常"
+      ],
+      "sample_context": "…ara（decay.），十三、住Sthiti（continuance.），十四、無常Anityata（death.），十五、流轉Pravrtti（phenomena…"
+    },
+    {
+      "matched": "流轉",
+      "standard": "流轉",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "流轉"
+      ],
+      "sample_context": "…（continuance.），十四、無常Anityata（death.），十五、流轉Pravrtti（phenomena.），十六、定異Aprapti（non-at…"
+    },
+    {
+      "matched": "色相",
+      "standard": "色相",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "色相"
+      ],
+      "sample_context": "…成之文字，本依聲之抑揚、長短、曲直而假立；書本之名、句、文，又依點、畫、橫、豎等色相而假立。其作用在聲色變化上，故屬不相應行法。以上皆從略言之耳。  有為法有造作、…"
+    },
+    {
+      "matched": "非人",
+      "standard": "非人",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "非人"
+      ],
+      "sample_context": "…有變化、有功用，無為法則無造作、無變化、無功用。何謂虛空無為？非眼所見之虛空，亦非人物等可通過之空。以眼所見之空，屬色法中之顯色，是有為色法故；以通過之空，是有為觸…"
+    },
+    {
+      "matched": "假名",
+      "standard": "假名",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "假名"
+      ],
+      "sample_context": "…色 　　　　　　　│　　│　　　　　　　　　└遍計所執色 　　　　　　　│　　└假名……不相應行分位假法之命根等二十四 　　　　　　　└無為……虛空、擇滅、非擇滅、…"
+    },
+    {
+      "matched": "不相應行",
+      "standard": "不相應行",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "不相應行"
+      ],
+      "sample_context": "…　　　　　│　　│　　　　　　　　　└遍計所執色 　　　　　　　│　　└假名……不相應行分位假法之命根等二十四 　　　　　　　└無為……虛空、擇滅、非擇滅、不動滅、…"
+    },
+    {
+      "matched": "機感",
+      "standard": "機感",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "機感"
+      ],
+      "sample_context": "…因及體質之推究  凡學說之產生必有其因由，固勿論古今中外也。諸佛說法，原應眾生之機感為其緣起。自佛典言之，佛之智慧與常人不同，蓋諸佛經過長久修證之工夫，已得無上正遍…"
+    },
+    {
+      "matched": "佛經",
+      "standard": "佛經",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "經典",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "佛經"
+      ],
+      "sample_context": "…今中外也。諸佛說法，原應眾生之機感為其緣起。自佛典言之，佛之智慧與常人不同，蓋諸佛經過長久修證之工夫，已得無上正遍覺知，與世人憑五官感驗或意識上所推斷之知識，逈異其…"
+    },
+    {
+      "matched": "正遍覺",
+      "standard": "正遍覺",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "正遍覺"
+      ],
+      "sample_context": "…機感為其緣起。自佛典言之，佛之智慧與常人不同，蓋諸佛經過長久修證之工夫，已得無上正遍覺知，與世人憑五官感驗或意識上所推斷之知識，逈異其趣。惟其如此，諸佛對於萬有真理…"
+    },
+    {
+      "matched": "教化",
+      "standard": "教化",
+      "occurrences": 1,
+      "domain": "社会文化",
+      "subdomain": "佛教與教育",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "教化"
+      ],
+      "sample_context": "…。惟佛之與佛，更無言說之必要，以所證諸法性相，皆已如如相應故。其所以有種種之言說教化，莫非因眾生未得佛智之前，生出遍計之見，或全不覺悟，或覺悟不澈底，欲令同得正覺而…"
+    },
+    {
+      "matched": "佛智",
+      "standard": "佛慧",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": false,
+      "variants_of_standard": [
+        "佛智"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "佛智"
+      ],
+      "sample_context": "…說之必要，以所證諸法性相，皆已如如相應故。其所以有種種之言說教化，莫非因眾生未得佛智之前，生出遍計之見，或全不覺悟，或覺悟不澈底，欲令同得正覺而說也。可知諸佛非應眾…"
+    },
+    {
+      "matched": "信仰",
+      "standard": "信仰",
+      "occurrences": 1,
+      "domain": "社会文化",
+      "subdomain": "佛教與文化",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "信仰"
+      ],
+      "sample_context": "…之玄談  欲究宇宙萬有之真相，最早則有多神教或一神教之解釋。此種神教之解答，祗可信仰，不能用思想推論也。神教以萬物未有之前，由神自動所創造，宇宙萬有即以神為體質。基…"
+    },
+    {
+      "matched": "婆羅門教",
+      "standard": "婆羅門教",
+      "occurrences": 1,
+      "domain": "社会文化",
+      "subdomain": "佛教與文化",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "婆羅門教"
+      ],
+      "sample_context": "…教以萬物未有之前，由神自動所創造，宇宙萬有即以神為體質。基督教上帝創造萬物，印度婆羅門教以大梵天為宇宙萬有之因體，乃至中國神話中所謂盤古開闢天地之說皆屬之。古代人智…"
+    },
+    {
+      "matched": "本有",
+      "standard": "本有",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "本有"
+      ],
+      "sample_context": "…佉，此翻為數，即以智慧數數推度諸法之根本立名，從數起論，名為數論。此派計宇宙之根本有二物，純然為二元論（dualism）：一、為精神之「神我」（Purusa），二、…"
+    },
+    {
+      "matched": "有性",
+      "standard": "有性",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "有性"
+      ],
+      "sample_context": "…a），德句義（gunapadartha），業句義（Karmapadartha），有性句義（Samanyapadartha），同異句義（Visesapadartha）…"
+    },
+    {
+      "matched": "地水火風",
+      "standard": "地水火風",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "地水火風"
+      ],
+      "sample_context": "…情物體。在西洋希臘古哲，有謂宇宙之因體，由水而成，或由火而成，或由空氣而成，或由地水火風等而成，略同印度順世外道四大極微為因體也。以上中西哲學所推究宇宙之因體，雖較…"
+    },
+    {
+      "matched": "四大",
+      "standard": "四大",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "四大"
+      ],
+      "sample_context": "…之因體，由水而成，或由火而成，或由空氣而成，或由地水火風等而成，略同印度順世外道四大極微為因體也。以上中西哲學所推究宇宙之因體，雖較宗教中之計有能造之上帝為進一步，…"
+    },
+    {
+      "matched": "五遍行",
+      "standard": "五遍行",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "五遍行"
+      ],
+      "sample_context": "…即百法中之心法，惟小乘未見到七、八二識耳。小乘五蘊之色蘊包括色法，受蘊、想蘊惟指五遍行中之受、想，行蘊包括其餘心所有法及心不相應行法，識蘊即包括心法等。小乘與大乘雖…"
+    },
+    {
+      "matched": "戒定",
+      "standard": "戒定",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "戒定"
+      ],
+      "sample_context": "…所否認，小乘論條理非常精細，亦如科學之嚴密，惟科學乃憑五官及器械以證驗，小乘乃由戒定所生之智慧，以明宇宙之法；前為恃外之觀察，後為從內之觀察，此其不同耳。故科學小乘…"
+    },
+    {
+      "matched": "大般若經",
+      "standard": "大般若經",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "經典",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "大般若經"
+      ],
+      "sample_context": "…　　　　３法性之本空與唯識之轉依  法性從小乘法作進一步之解釋，明萬法本性為空，大般若經、大智度論、中論皆屬之。小乘以觀法有而顯我空，謂五蘊等諸法恆有，於粗相之物體…"
+    },
+    {
+      "matched": "大智度論",
+      "standard": "大智度論",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "論典",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "大智度論"
+      ],
+      "sample_context": "…法性之本空與唯識之轉依  法性從小乘法作進一步之解釋，明萬法本性為空，大般若經、大智度論、中論皆屬之。小乘以觀法有而顯我空，謂五蘊等諸法恆有，於粗相之物體已見其空，…"
+    },
+    {
+      "matched": "中論",
+      "standard": "中論",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "論典",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "中論"
+      ],
+      "sample_context": "…與唯識之轉依  法性從小乘法作進一步之解釋，明萬法本性為空，大般若經、大智度論、中論皆屬之。小乘以觀法有而顯我空，謂五蘊等諸法恆有，於粗相之物體已見其空，於細微之法…"
+    },
+    {
+      "matched": "我空",
+      "standard": "我空",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "我空"
+      ],
+      "sample_context": "…作進一步之解釋，明萬法本性為空，大般若經、大智度論、中論皆屬之。小乘以觀法有而顯我空，謂五蘊等諸法恆有，於粗相之物體已見其空，於細微之法仍有未明，故於世界上之草木，…"
+    },
+    {
+      "matched": "增上緣",
+      "standard": "增上緣",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "增上緣"
+      ],
+      "sample_context": "…其周圍之環境或時處觀點一變，其事物之本身亦即全異也。如地球繞日而行，以相對之理或增上緣之理而言，不惟日球與地球有密切之關係，實由其他行星、流星等相切相磨而成，故知地…"
+    },
+    {
+      "matched": "緣成",
+      "standard": "緣成",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "緣成"
+      ],
+      "sample_context": "…亦因緣互集之假相，與我之空，了無二致。僅有因緣之聚集，而無因緣所共合之實體；僅有緣成之因緣，而無因緣之自性：此法性本空之義也。然僅知法性本空，不知法相之唯識義，則眾…"
+    },
+    {
+      "matched": "八相",
+      "standard": "八相",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "八相"
+      ],
+      "sample_context": "…能知識之中，凡此皆心理知識中之現象，非離識外另有色等諸法。所覺知者，則為前六托第八相分為本質塵所變之相分，仍在識內而非外；見託相起，相挾見生，法相皆多分受心理知識影…"
+    },
+    {
+      "matched": "識變",
+      "standard": "識變",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "識變"
+      ],
+      "sample_context": "…可破小乘之法執；而法相唯識，又可顯法性本空中多種因緣所現之法相非離識而有，皆同為識變故。以法性詮法相，則法相如幻如化，皆成妙用；以法相顯法性，則法性本空，其相唯識。…"
+    },
+    {
+      "matched": "安立",
+      "standard": "安立",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "安立"
+      ],
+      "sample_context": "…法相顯法性，則法性本空，其相唯識。性相如如，故推究萬有之本因及其體質，至此方理善安立。  ### 　　乙　出發於存善之要求者——吾人之自我及價值之存在  人之生也，…"
+    },
+    {
+      "matched": "有宗",
+      "standard": "瑜伽行派",
+      "occurrences": 1,
+      "domain": "历史",
+      "subdomain": "大乘宗派",
+      "is_standard": false,
+      "variants_of_standard": [
+        "有宗",
+        "瑜伽行",
+        "傳世親學"
+      ],
+      "vocab_note": "印度大乘二大系之一",
+      "source": "batch_01",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "有宗"
+      ],
+      "sample_context": "…不死之自我者存，則彼不死者又何往歟？隨此界以升沈歟？入他界而受生歟？如是等者，乃有宗教、哲學、倫理出發於存善動機之由來，古之賢哲篤行其志，或立功，或立德，或立言，覺…"
+    },
+    {
+      "matched": "神道",
+      "standard": "神道",
+      "occurrences": 1,
+      "domain": "社会文化",
+      "subdomain": "佛教與文化",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "神道"
+      ],
+      "sample_context": "…價值永存藉以自慰者，要求有最善永存不滅之標準，於是宗教倫理之說起；然其開始，實由神道之說。茲亦分三節言之：  #### 　　　　１天神之永生與自我之獨存  天神之永…"
+    },
+    {
+      "matched": "無始",
+      "standard": "無始",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無始"
+      ],
+      "sample_context": "…## 　　　　１天神之永生與自我之獨存  天神之永生與前迷信之神話相一致，此神為無始無終無所不在，而人為神所創造所管領，能將低等性質破除，培植為善之道德，即能與神同…"
+    },
+    {
+      "matched": "理觀",
+      "standard": "理觀",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "禪觀",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "理觀"
+      ],
+      "sample_context": "…離自性而獨存矣。其餘耆那教等，亦莫不以自我解脫而獨存，為達最高善之目的。以法相之理觀之，其託神庇護者，雖可慰暫時之煩惱，以神為唯一之依恃；然其認神權為無上，捨自作自…"
+    },
+    {
+      "matched": "無我",
+      "standard": "無我",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無我"
+      ],
+      "sample_context": "…行，非相抵相抗，乃由相依相益，由戒生定，由定發慧，將世人迷有自我的實體破除，明內無我，外無實物，向以物我為實之推求，於焉而息，一切心理活動亦隨之而息。得此生空之解脫…"
+    },
+    {
+      "matched": "空相",
+      "standard": "空相",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "中觀學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "空相"
+      ],
+      "sample_context": "…於法性法相之義，亦未契合。法性明萬法本空，了無隔礙，常是如此，普遍如此，故曰諸法空相，不生不滅，不增不減。亦無生死苦惱可脫，以萬法本空，本無生滅增減故，故曰：本空之…"
+    },
+    {
+      "matched": "不增不減",
+      "standard": "不增不減",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "中觀學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "不增不減"
+      ],
+      "sample_context": "…亦未契合。法性明萬法本空，了無隔礙，常是如此，普遍如此，故曰諸法空相，不生不滅，不增不減。亦無生死苦惱可脫，以萬法本空，本無生滅增減故，故曰：本空之常如。諸法之本性…"
+    },
+    {
+      "matched": "有漏",
+      "standard": "有漏",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "有漏"
+      ],
+      "sample_context": "…，然諸法之現象，仍隨因緣之合散而變現；一切法皆依識，故可從識而轉之也。凡不圓滿之有漏法既依識所變，即此不善不圓滿所依之識，改轉之使為覺悟而圓滿，佛典謂為轉識成智，則…"
+    },
+    {
+      "matched": "覺者",
+      "standard": "覺者",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "覺者"
+      ],
+      "sample_context": "…意、以為一切事物之存在，均在主觀意識之內，主觀意識之外無事物存在，凡存在者即被知覺者也。此主觀唯心論，在其一貫的理論上，似亦能成立，然一推究，則疑問重重。勃氏以一切…"
+    },
+    {
+      "matched": "本源",
+      "standard": "本源",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "本源"
+      ],
+      "sample_context": "…sBergson1859-X）並非以所謂直覺（Intuitionism）為萬有之本源，彼所謂萬有之根原乃「生命之流」，或「生之衝動」；惟此生命之流非理智可以把捉，乃…"
+    },
+    {
+      "matched": "道教",
+      "standard": "道教",
+      "occurrences": 1,
+      "domain": "社会文化",
+      "subdomain": "佛教與文化",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "道教"
+      ],
+      "sample_context": "…意識。三、定位意識，此非常人所有，須經修定工夫乃能發現，不惟佛教得定之人有之，即道教及印度外道經過修定工夫，使心力集中統一，精神上成為和平安寧，而增加許多超越之力量…"
+    },
+    {
+      "matched": "神力",
+      "standard": "神力",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "神力"
+      ],
+      "sample_context": "…有帶有實質之境，如因生理關係影響而成夢，乃至其他心之關係使成為夢等，皆帶有其他精神力之關係者，故夢位意識亦有帶質之境；惟大部份為獨影境，少部份為帶質境耳。散位意識大…"
+    },
+    {
+      "matched": "即心",
+      "standard": "即心",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "即心"
+      ],
+      "sample_context": "…物論無異乎？但須知此間所言同時六識，略同實驗主義之純粹經驗，經驗本身即感覺，感覺即心識，謂須境之剌戟，不過就純粹經驗之說明上而言，此種所經驗的仍在純粹經驗之中。感覺…"
+    },
+    {
+      "matched": "依止",
+      "standard": "依止",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "依止"
+      ],
+      "sample_context": "…二、能變。有情生命本身之第八識為能變，得到一段生命，則有生命本身，即是根身，其所依止之處即器界是也；同時六識境像所依之本質，即第八識所變一部分之器世間，即所謂內變根…"
+    },
+    {
+      "matched": "具足",
+      "standard": "具足",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "具足"
+      ],
+      "sample_context": "…，每一人或每一動物，對於器界皆有不共變之性質存也；譬如有植物於此，若有某人或某緣具足則繁榮，反是則枯衰矣。乃土地江湖亦或因某人或某緣之關係，乃可使之改變興廢者，植物…"
+    },
+    {
+      "matched": "業果",
+      "standard": "業果",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "業果"
+      ],
+      "sample_context": "…言之大梵天等，佛說其先此一小世界之有而有，後此一小世界之滅而滅，亦仍有生有滅，惟業果較尋常悠遠耳，並非唯為此天神所主宰也。譬如建立國家之要素，固由人民、土地、生產種…"
+    },
+    {
+      "matched": "無間",
+      "standard": "無間",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無間"
+      ],
+      "sample_context": "…見執為自我，無時或息，童稚之時，第六識之自我觀念，雖無甚顯著，然根本之自我執，仍無間斷，至成人則到處時時保存自己，發揚自己，提高自己，自我之觀念，極為顯著；凡一切有…"
+    },
+    {
+      "matched": "成唯識論",
+      "standard": "成唯識論",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "論典",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "成唯識論"
+      ],
+      "sample_context": "…剎那同時有此諸心所，乃謂第六意識於此諸心所法皆可相應耳。至前五識則或有無有也；依成唯識論考訂，前五識祗有三十四，不定位無，隨煩惱位或有或無也。第七識有十八種，第八識…"
+    },
+    {
+      "matched": "戒定慧",
+      "standard": "戒定慧",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "戒定慧"
+      ],
+      "sample_context": "…斷，亦不間隔，故曰恆。如各人心識死時似斷，其實仍不斷，惟在平常經驗未易見到，須經戒定慧破脫了無明，得無分別智極顯明之智慧纔能見到耳。惟第八識現行事實上雖恆續而有轉變…"
+    },
+    {
+      "matched": "無明",
+      "standard": "無明",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無明"
+      ],
+      "sample_context": "…，故曰恆。如各人心識死時似斷，其實仍不斷，惟在平常經驗未易見到，須經戒定慧破脫了無明，得無分別智極顯明之智慧纔能見到耳。惟第八識現行事實上雖恆續而有轉變，其餘一切法…"
+    },
+    {
+      "matched": "剎那生滅",
+      "standard": "剎那生滅",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "剎那生滅"
+      ],
+      "sample_context": "…雖恆續而有轉變，其餘一切法種子皆依第八識而存，故雖不斷滅而亦并非固定存在，乃剎那剎那生滅連續而存在也。然一切法種與一切法雖可以恆存而不斷滅，亦非絕對不能斷滅；易詞而…"
+    },
+    {
+      "matched": "光明",
+      "standard": "光明",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "光明"
+      ],
+      "sample_context": "…以恆存而不斷滅，亦非絕對不能斷滅；易詞而言，以有相反之性質，亦可使之消滅也。例如光明永久現行，黑暗種子即不得生是也。可知一切法種雖依八識恆轉，若遇相反之性質，仍可使…"
+    },
+    {
+      "matched": "生因",
+      "standard": "生因",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "生因"
+      ],
+      "sample_context": "…而又共為同，故現起法有種種差別現象。而其他唯心論以一心生萬有，一多相違，成能生所生因果相違，故難極成。然何以同中有同，別中有別耶？以一一法能生之功能差別，故成現象差…"
+    },
+    {
+      "matched": "生滅",
+      "standard": "生滅",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "生滅"
+      ],
+      "sample_context": "…盡耳。換言之，即諸業之起伏乘除耳。此伏彼顯，彼來此去，知其他種引生及範型之業又可生滅，故有生死輪迴之事。從過去「世間極成真實」證之，如一開國君王，決定一朝代之興亡期…"
+    },
+    {
+      "matched": "生死輪",
+      "standard": "生死輪",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "生死輪"
+      ],
+      "sample_context": "…之，即諸業之起伏乘除耳。此伏彼顯，彼來此去，知其他種引生及範型之業又可生滅，故有生死輪迴之事。從過去「世間極成真實」證之，如一開國君王，決定一朝代之興亡期限，達至極…"
+    },
+    {
+      "matched": "無性",
+      "standard": "無性",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無性"
+      ],
+      "sample_context": "…人民并滅，其他強有力者，固將另刱新朝代起而代之也。  #### 　　　　11諸法無性與諸法自性——空有問題  前來已大略講明唯識之諸法，然此唯識諸法是否有決定性？如…"
+    },
+    {
+      "matched": "空宗",
+      "standard": "空宗",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "中觀學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "空宗"
+      ],
+      "sample_context": "…顯現須有無分別之真實智，纔能通達眾緣所生之依他起，達此依他起相，纔無妄執。佛法之空宗，皆對遍計所執法而說，遍計所執法如不澈底空掉，則不能達到諸法實相；如未達到圓成實…"
+    },
+    {
+      "matched": "現觀",
+      "standard": "現觀",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "禪觀",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "現觀"
+      ],
+      "sample_context": "…，皆為能變知識所了知故。依種種差別之知識現種種差別法相，如能離掉依他起差別之相，現觀一切法真如實性，乃謂之唯識法性也。簡言之，在能變之識與所變之法上，將遍計執離掉之…"
+    },
+    {
+      "matched": "幻有",
+      "standard": "幻有",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "中觀學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "幻有"
+      ],
+      "sample_context": "…緣之有，乃相對之有，非澈底之有；換言之、依他起乃如幻之有耳。通常所謂現象本質，皆幻有之依他起法，眾緣所成，如幻如化；至圓成實性之唯識法性，即諸法真實性，乃真實非幻也…"
+    },
+    {
+      "matched": "凡夫",
+      "standard": "凡夫",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "凡夫"
+      ],
+      "sample_context": "…精嚴之解決，須得聖果纔能謂之聖。聖果有高高下下不同之階級：小乘有四，大乘有十一。凡夫證聖果，初步須將現行煩惱所依之種子，要能永遠斷滅其一部分，即第六識有一部分分別所…"
+    },
+    {
+      "matched": "聖位",
+      "standard": "聖位",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "聖位"
+      ],
+      "sample_context": "…自我執著之心，將此計我之心離掉，並將俱生而有恆審思量之我執永離一分，方可入於最初聖位。唯識界、指一切法之範圍而言，有雜染唯識界，以根本煩惱及隨煩惱本身為染法，凡有此…"
+    },
+    {
+      "matched": "真修",
+      "standard": "真修",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "真修"
+      ],
+      "sample_context": "…果——修證問題  此段明須用何種工夫，改變之成為聖果也，故有修證問題。蓋假使不能真修實證，不惟成為空談而已，即前說須依修證所成之理論，亦將隨之而根本推翻也。修唯識行…"
+    },
+    {
+      "matched": "不可思議",
+      "standard": "不可思議",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "不可思議"
+      ],
+      "sample_context": "…；及至宇宙之現象，皆即無分別之真如，而成為自他互融彼此無礙之宇宙。換言之，即成為不可思議之事事無礙法界也。然此改造入手，首由心理之訓練，即先從意識上改造。常人大抵以…"
+    },
+    {
+      "matched": "印可",
+      "standard": "印可",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "印可"
+      ],
+      "sample_context": "…種尋思觀常常練習，則可引生四如實智。所謂如實智，即習成如其實際了知之心理，而生起印可決定之智也。如實於所緣名、事、自性、差別，了知其唯名、唯事、唯假立，謂之四尋思引…"
+    },
+    {
+      "matched": "圓寂",
+      "standard": "圓寂",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "圓寂"
+      ],
+      "sample_context": "…乃證圓滿二轉依果。  ##### 　　　　　　（二）大般涅槃與四智菩提  涅槃、圓寂義。染唯識轉為淨唯識，得大般涅槃，涅槃所成為四智菩提。菩提、正覺義。前五識成為成…"
+    },
+    {
+      "matched": "妙觀察智",
+      "standard": "妙觀察智",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "妙觀察智"
+      ],
+      "sample_context": "…，得大般涅槃，涅槃所成為四智菩提。菩提、正覺義。前五識成為成所作事智，第六意識成妙觀察智，第七末那識成平等性智，第八阿賴耶識成大圓鏡智；即將雜染界之八識，成為正覺界…"
+    },
+    {
+      "matched": "平等性智",
+      "standard": "平等性智",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "平等性智"
+      ],
+      "sample_context": "…為四智菩提。菩提、正覺義。前五識成為成所作事智，第六意識成妙觀察智，第七末那識成平等性智，第八阿賴耶識成大圓鏡智；即將雜染界之八識，成為正覺界之四智也。以上二段，可…"
+    },
+    {
+      "matched": "大圓鏡智",
+      "standard": "大圓鏡智",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "大圓鏡智"
+      ],
+      "sample_context": "…。前五識成為成所作事智，第六意識成妙觀察智，第七末那識成平等性智，第八阿賴耶識成大圓鏡智；即將雜染界之八識，成為正覺界之四智也。以上二段，可知法相唯識學，確可由凡入…"
+    },
+    {
+      "matched": "入聖",
+      "standard": "入聖",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "入聖"
+      ],
+      "sample_context": "…圓鏡智；即將雜染界之八識，成為正覺界之四智也。以上二段，可知法相唯識學，確可由凡入聖，而證明法相唯識學之能成立。  ## 四　法相唯識學之利益  ### 　　甲　破…"
+    },
+    {
+      "matched": "不思議",
+      "standard": "不思議",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "不思議"
+      ],
+      "sample_context": "…之時，以其業有盡而報必壞也。能將我法謬執去掉，則能解脫變壞之業報，而成為四智菩提不思議業之圓滿報。佛學所謂了脫生死，即指此而言。  ### 　　丁　滿足心性之意願 …"
+    },
+    {
+      "matched": "生苦",
+      "standard": "生苦",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "生苦"
+      ],
+      "sample_context": "…人謀最大幸福之社會主義國家，皆有限業力所成之有限安樂而非永久。蓋世界一治一亂，人生苦樂相尋，況國家不能有存而無亡，人生世界不能有成而無壞，僅以目前為限，尚何價值之足…"
+    },
+    {
+      "matched": "無漏",
+      "standard": "無漏",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無漏"
+      ],
+      "sample_context": "…絕對善也。通常所謂自由，因受根塵有限之牽制，皆成為束縛而無真實自由之可言；若能修無漏清淨行，得成淨唯識界，轉識成智之時，即證得無礙之清淨，所謂我淨是也。  "
+    }
+  ],
+  "domain_summary": {
+    "domains": {
+      "教理": 218,
+      "行持": 19,
+      "社会文化": 6,
+      "历史": 2,
+      "义理维度": 1
+    },
+    "subdomains": {
+      "基礎教義": 148,
+      "唯識學": 52,
+      "禪觀": 9,
+      "修行次第": 8,
+      "中觀學": 6,
+      "佛教與文化": 5,
+      "論典": 4,
+      "大乘有宗": 3,
+      "大乘通義": 2,
+      "經典": 2,
+      "佛法體系": 1,
+      "義理體系": 1,
+      "人物": 1,
+      "菩薩行": 1,
+      "戒律行持": 1,
+      "佛教與教育": 1,
+      "大乘宗派": 1
+    }
+  }
+}

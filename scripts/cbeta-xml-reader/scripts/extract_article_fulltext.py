@@ -799,7 +799,7 @@ def extract_article(xml_path, byte_start, byte_end, toc_only=False):
     title_note = ''
     if title_note_anchor and title_note_anchor in notes_map:
         n = notes_map[title_note_anchor]
-        title_note = f' {n}'
+        title_note = f' [{n}]'
         
     md_lines = [f'# {article_name}{title_note}']
     if byline:

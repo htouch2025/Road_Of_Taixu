@@ -1,0 +1,2580 @@
+{
+  "summary": {
+    "total_candidates": 145,
+    "unique_standards": 145,
+    "single_occurrence_ratio": "62/145",
+    "high_frequency_terms": [
+      "般若",
+      "眾生",
+      "菩薩",
+      "降伏",
+      "金剛智",
+      "如來",
+      "涅槃",
+      "體性",
+      "法身",
+      "妄見"
+    ],
+    "heading_weighted": true,
+    "heading_weight": 3
+  },
+  "article": {
+    "path": "/Users/xin/Documents/Road_Of_Taixu/_research/05_法性空慧學/01_教釋/01_金剛般若波羅蜜經義脈.md",
+    "title": "金剛般若波羅蜜經義脈",
+    "cjk_chars": 5363,
+    "recommended_count": "8-12",
+    "编": "第五编 法性空慧學",
+    "编_number": "5",
+    "category": "教釋"
+  },
+  "vocab_source": "/Users/xin/Documents/Road_Of_Taixu/_research/keyword_vocabulary_v4.json",
+  "match_stats": {
+    "raw_hits": 148,
+    "after_dedup": 145
+  },
+  "candidates": [
+    {
+      "matched": "般若",
+      "standard": "般若",
+      "occurrences": 46,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "般若中論"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "般若"
+      ],
+      "sample_context": "…脈 （1921 年 10 月，在北京夏宅講）  ## 一　釋經題目  此經名金剛般若波羅密。佛說般若，有十六會，故般若波羅密一名，通於諸部般若，是為通名；金剛一名，…"
+    },
+    {
+      "matched": "眾生",
+      "standard": "眾生",
+      "occurrences": 31,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "眾生"
+      ],
+      "sample_context": "…皆消歸於此體性，亦名金剛。是以金剛具有堅固、決斷二義。  此般若用，本不離體，在眾生分中，既未能顯現此體，般若妙用亦無由而發生。苟一旦體顯用生時，則一切妄相妄見，悉…"
+    },
+    {
+      "matched": "菩薩",
+      "standard": "菩薩",
+      "occurrences": 30,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "菩薩"
+      ],
+      "sample_context": "…，妄想若斷，相見均寂。但此妄想最極堅固深細，無處不到，無法不緣，通於一切眾生法、菩薩法、佛法，甚難斷除，可謂之為金剛妄想，非金剛智無能斷之。  能斷即般若慧，此慧有…"
+    },
+    {
+      "matched": "降伏",
+      "standard": "降伏",
+      "occurrences": 26,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "降伏"
+      ],
+      "sample_context": "…修二慧。聞、思二慧及修慧中之一分，皆為資糧慧，其餘一分為加行慧；由資糧加行二慧，降伏妄想。由加行位中世第一位進證智體，創獲實慧而斷除之，妄想斷處即般若顯發處。此能斷…"
+    },
+    {
+      "matched": "金剛智",
+      "standard": "金剛智",
+      "occurrences": 19,
+      "domain": "历史",
+      "subdomain": "人物",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "金剛智"
+      ],
+      "sample_context": "…無處不到，無法不緣，通於一切眾生法、菩薩法、佛法，甚難斷除，可謂之為金剛妄想，非金剛智無能斷之。  能斷即般若慧，此慧有三：曰聞、思、修。由文字般若發生聞慧，觀照般…"
+    },
+    {
+      "matched": "如來",
+      "standard": "如來",
+      "occurrences": 19,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "如來"
+      ],
+      "sample_context": "…自第三分至第卅二分前半是。  讚請印允，即為四段：一、須菩提讚歎，即『希有世尊！如來善護念諸菩薩，善付囑諸菩薩』是。蓋眾生初始發菩提心，尚未開顯金剛智體時，非佛為之…"
+    },
+    {
+      "matched": "涅槃",
+      "standard": "涅槃",
+      "occurrences": 15,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "滅度"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "涅槃",
+        "滅度"
+      ],
+      "sample_context": "…明所覆，若以金剛智顯現之，顯現至於究竟，即成就三德中之法身德，三身中之法性身，三涅槃中之性淨涅槃。所謂一究竟一切究竟，一切究竟一究竟。全經能顯之法雖有種種，而所顯者…"
+    },
+    {
+      "matched": "體性",
+      "standard": "體性",
+      "occurrences": 12,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "體性"
+      ],
+      "sample_context": "…若斷。般若有二：一、體，二、用。此般若體，從本以來不生不滅，不垢不淨，不增不減，體性堅固，常住不動，不可破壞，故曰金剛。又此體性顯現時，一切妄相妄見，悉決斷無有，皆…"
+    },
+    {
+      "matched": "法身",
+      "standard": "法身",
+      "occurrences": 11,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "法身"
+      ],
+      "sample_context": "…搖，生佛同具；不過眾生為無明所覆，若以金剛智顯現之，顯現至於究竟，即成就三德中之法身德，三身中之法性身，三涅槃中之性淨涅槃。所謂一究竟一切究竟，一切究竟一究竟。全經…"
+    },
+    {
+      "matched": "妄見",
+      "standard": "妄見",
+      "occurrences": 10,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "妄見"
+      ],
+      "sample_context": "…不淨，不增不減，體性堅固，常住不動，不可破壞，故曰金剛。又此體性顯現時，一切妄相妄見，悉決斷無有，皆消歸於此體性，亦名金剛。是以金剛具有堅固、決斷二義。  此般若用…"
+    },
+    {
+      "matched": "當體",
+      "standard": "當體",
+      "occurrences": 9,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "當體"
+      ],
+      "sample_context": "…光明清淨之虛空，亦即平等周遍之金剛般若體性。故吾人當前所有之一切法相，種種妄想，當體即金剛智體，何所用其降伏？又何待降伏？祗了達妄想即空，即妄見自然無所分別。相見既…"
+    },
+    {
+      "matched": "空寂",
+      "standard": "空寂",
+      "occurrences": 8,
+      "domain": "教理",
+      "subdomain": "中觀學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "空寂"
+      ],
+      "sample_context": "…妄之本。蓋對治之法，乃係以妄除妄；妄妄無窮，終非究竟，故於妄心起時，即觀妄心當體空寂，無絲毫實在可得，無所用其降伏，即澈底降伏無餘矣。此無四相，約人空明，以四相皆不…"
+    },
+    {
+      "matched": "不生",
+      "standard": "不生",
+      "occurrences": 7,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "不生"
+      ],
+      "sample_context": "…  金剛有二：一、般若，二、般若斷。般若有二：一、體，二、用。此般若體，從本以來不生不滅，不垢不淨，不增不減，體性堅固，常住不動，不可破壞，故曰金剛。又此體性顯現時…"
+    },
+    {
+      "matched": "正宗",
+      "standard": "正宗",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "判教框架",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "正宗"
+      ],
+      "sample_context": "…百五十人俱』，為通序，同諸經故。自『爾時世尊至敷座而坐』，為別序，異他經故。二、正宗分，自第二分至第卅二分前半是。三、流通分，第卅二分後半是。  ### 　　甲　序…"
+    },
+    {
+      "matched": "身相",
+      "standard": "身相",
+      "occurrences": 7,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "身相"
+      ],
+      "sample_context": "…菩薩得證佛果，無不由度眾生而來，既云無生可度，菩薩從何而證佛果。佛遂問之曰：可以身相見如來不？空生經佛一問，即悟如來身相本來空寂，不應於此相上執著分別。下文所有問答…"
+    },
+    {
+      "matched": "序分",
+      "standard": "序分",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "經典",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "序分"
+      ],
+      "sample_context": "…智　用┘ ```   ## 二　解經義脈  茲釋經文，暫依卅二分，另為分判：一、序分，即第一分是。由『如是我聞至千二百五十人俱』，為通序，同諸經故。自『爾時世尊至敷…"
+    },
+    {
+      "matched": "須菩提",
+      "standard": "須菩提",
+      "occurrences": 6,
+      "domain": "历史",
+      "subdomain": "人物",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "須菩提"
+      ],
+      "sample_context": "…，第二分是。二、示教解釋，自第三分至第卅二分前半是。  讚請印允，即為四段：一、須菩提讚歎，即『希有世尊！如來善護念諸菩薩，善付囑諸菩薩』是。蓋眾生初始發菩提心，尚…"
+    },
+    {
+      "matched": "四相",
+      "standard": "四相",
+      "occurrences": 6,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "四相"
+      ],
+      "sample_context": "…度中分其根性利鈍品類差別等，是曰眾生相；又計其輪迴生死流轉相續，是曰壽者相。若著四相，則我見堅固，妄想隨逐，尚無能自度，何暇度生，故曰即非菩薩。若能觀眾相皆空，則本…"
+    },
+    {
+      "matched": "常住",
+      "standard": "常住",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "常住"
+      ],
+      "sample_context": "…有二：一、體，二、用。此般若體，從本以來不生不滅，不垢不淨，不增不減，體性堅固，常住不動，不可破壞，故曰金剛。又此體性顯現時，一切妄相妄見，悉決斷無有，皆消歸於此體…"
+    },
+    {
+      "matched": "三身",
+      "standard": "三身",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "三佛身",
+        "受用身",
+        "自性身",
+        "變化身"
+      ],
+      "vocab_note": "自性身（斷德）、受用身（智德）、變化身（恩德）",
+      "source": "phase2_fulltext,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "三身",
+        "受用身"
+      ],
+      "sample_context": "…同具；不過眾生為無明所覆，若以金剛智顯現之，顯現至於究竟，即成就三德中之法身德，三身中之法性身，三涅槃中之性淨涅槃。所謂一究竟一切究竟，一切究竟一究竟。全經能顯之法…"
+    },
+    {
+      "matched": "無住",
+      "standard": "無住",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "中觀學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無住"
+      ],
+      "sample_context": "…由修習而漸次出生增長。到究竟時，即成就三德中之般若德，三身中之受用身，三涅槃中之無住涅槃。因地之種種妄想，至此皆成無量河沙之功德，所謂不可思議之般若妙用也。  三、…"
+    },
+    {
+      "matched": "佛果",
+      "standard": "佛果",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "佛果"
+      ],
+      "sample_context": "…且多退墮。是以經過二大阿僧祇劫之八地菩薩，尚須諸佛之警覺，始不住於所證空性而進取佛果，況初發心者！然亦眾生之自生自長，非佛能代其生長，不過佛時時調護愛念之，為其增上…"
+    },
+    {
+      "matched": "小乘",
+      "standard": "小乘",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "二乘",
+        "小乘法"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "二乘",
+        "小乘"
+      ],
+      "sample_context": "…提請問，即『世尊！善男子至云何降伏其心』是。在須菩提意，以為菩薩發心，雖廣大過於二乘，然其必有所應住之境，所降伏之妄想，及能降伏之道，與二乘非異。三、佛印證所讚非謬…"
+    },
+    {
+      "matched": "無相",
+      "standard": "無相",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無相"
+      ],
+      "sample_context": "…第三十二分前半反覆問答，皆不過顯明此二種問答耳。此本經之脈絡也。今略明之：夫心本無相，由妄想而幻起，能取之見分與所取之相分。相如空華，空華本體即光明清淨之虛空，亦即…"
+    },
+    {
+      "matched": "凡夫",
+      "standard": "凡夫",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "凡夫"
+      ],
+      "sample_context": "…無過咎降伏，為不共二乘之獨菩薩法降伏。所言降伏者，即非降伏，是名降伏。所云住者，凡夫則住於生死，二乘則住於涅槃，皆以有所住為住，因其未開顯此金剛般若體性，不能發生金…"
+    },
+    {
+      "matched": "不空",
+      "standard": "不空",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "不空"
+      ],
+      "sample_context": "…智用現前，則無量無邊福德聚，而空無之妄見亦祛。全經脈絡皆如是，所謂以畢竟空顯畢竟不空之無量福德也。後文乃由空生等餘疑未了，佛乃重重破之耳。當知其破處，正是顯此金剛智…"
+    },
+    {
+      "matched": "莊嚴",
+      "standard": "莊嚴",
+      "occurrences": 5,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "莊嚴"
+      ],
+      "sample_context": "…。  第十分就大乘果行以明金剛智體。如來在然燈佛所，於法實無所得，從果上顯。菩薩莊嚴佛土，從因上顯。以果因皆不可得，顯出非因非果之法身自性。菩薩莊嚴佛土，即是以大慈…"
+    },
+    {
+      "matched": "知見",
+      "standard": "知見",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "知見"
+      ],
+      "sample_context": "…著福德，而所受之福德自無量矣。  ##### 　　　　　　（十二）就如來威儀住持知見明——第廿九、卅、卅一、卅二前半分  上破取色身相，此去來等破取作用相。以如來真…"
+    },
+    {
+      "matched": "如空",
+      "standard": "如空",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "中觀學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "如空"
+      ],
+      "sample_context": "…有二：一、所斷，二、能斷。所斷非他，即妄相妄見耳。所見之妄相，由能見之妄見而生，如空花由目眚而有。妄相妄見皆一妄想心所現，如空花赤眚，皆從一眼病而起；眼病若愈，眚花…"
+    },
+    {
+      "matched": "資糧",
+      "standard": "資糧",
+      "occurrences": 4,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "資糧"
+      ],
+      "sample_context": "…、修。由文字般若發生聞慧，觀照般若發生思、修二慧。聞、思二慧及修慧中之一分，皆為資糧慧，其餘一分為加行慧；由資糧加行二慧，降伏妄想。由加行位中世第一位進證智體，創獲…"
+    },
+    {
+      "matched": "加行",
+      "standard": "加行",
+      "occurrences": 4,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "加行"
+      ],
+      "sample_context": "…生聞慧，觀照般若發生思、修二慧。聞、思二慧及修慧中之一分，皆為資糧慧，其餘一分為加行慧；由資糧加行二慧，降伏妄想。由加行位中世第一位進證智體，創獲實慧而斷除之，妄想…"
+    },
+    {
+      "matched": "世尊",
+      "standard": "世尊",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "世尊"
+      ],
+      "sample_context": "…一、序分，即第一分是。由『如是我聞至千二百五十人俱』，為通序，同諸經故。自『爾時世尊至敷座而坐』，為別序，異他經故。二、正宗分，自第二分至第卅二分前半是。三、流通分…"
+    },
+    {
+      "matched": "虛空",
+      "standard": "虛空",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "虛空"
+      ],
+      "sample_context": "…夫心本無相，由妄想而幻起，能取之見分與所取之相分。相如空華，空華本體即光明清淨之虛空，亦即平等周遍之金剛般若體性。故吾人當前所有之一切法相，種種妄想，當體即金剛智體…"
+    },
+    {
+      "matched": "法相",
+      "standard": "法相",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "法相"
+      ],
+      "sample_context": "…空華，空華本體即光明清淨之虛空，亦即平等周遍之金剛般若體性。故吾人當前所有之一切法相，種種妄想，當體即金剛智體，何所用其降伏？又何待降伏？祗了達妄想即空，即妄見自然…"
+    },
+    {
+      "matched": "無邊",
+      "standard": "無邊",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無邊"
+      ],
+      "sample_context": "…能住於法之菩薩？以一切不住故，則能發生一切心，獲得不可思議之金剛智用，遂成就無量無邊等同金剛體性之福德，故非住相布施等福德所能比較，此全經之大義也。是以絕相顯體，即…"
+    },
+    {
+      "matched": "布施",
+      "standard": "布施",
+      "occurrences": 4,
+      "domain": "行持",
+      "subdomain": "菩薩行",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "布施"
+      ],
+      "sample_context": "…能發生一切心，獲得不可思議之金剛智用，遂成就無量無邊等同金剛體性之福德，故非住相布施等福德所能比較，此全經之大義也。是以絕相顯體，即降伏其心；體顯用生，即無住而住矣…"
+    },
+    {
+      "matched": "執著",
+      "standard": "執著",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "執著"
+      ],
+      "sample_context": "…，實則本無所度之眾生，亦無所入之涅槃。然亦非不度眾生，不過既了眾生性空，乃能不起執著，正好廣行一切度生事業。若不了此，則必妄計有能度眾生之菩薩，是曰我相；計有所度，…"
+    },
+    {
+      "matched": "實有",
+      "standard": "實有",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "實有"
+      ],
+      "sample_context": "…夫不了，妄見有所住耳。夫謂空有花，已是顛倒，復問此花應云何住，豈非迷罔？皆由執法實有，不達法空耳。故佛特告之曰：菩薩於法應無所住行於布施。夫不住於法者，非有一實在之…"
+    },
+    {
+      "matched": "法界",
+      "standard": "法界",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "一真法界",
+        "中實法界",
+        "法界圓明",
+        "法界無障礙"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "法界"
+      ],
+      "sample_context": "…法令其不住，實一切法皆由妄心分別堅執為有，體本空寂故無可住。以不住故，則契應周遍法界等同虛空之金剛智體，由體起用，發而為施、戒、忍、進、禪、智等度。此施等六度之智用…"
+    },
+    {
+      "matched": "空無",
+      "standard": "空無",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "中觀學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "空無"
+      ],
+      "sample_context": "…若之妙用，以此智體本來具足一切法故。夫不應住於法者，破有相之執也；行於布施者，破空無之執也。以破一切相，金剛智體顯；智體顯現，則智用現前；智用現前，則無量無邊福德聚…"
+    },
+    {
+      "matched": "三德",
+      "standard": "三德",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "恩德",
+        "斷德",
+        "智德"
+      ],
+      "vocab_note": "對應三身之三種功德",
+      "source": "phase2_fulltext,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "三德"
+      ],
+      "sample_context": "…，無動無搖，生佛同具；不過眾生為無明所覆，若以金剛智顯現之，顯現至於究竟，即成就三德中之法身德，三身中之法性身，三涅槃中之性淨涅槃。所謂一究竟一切究竟，一切究竟一究…"
+    },
+    {
+      "matched": "法性身",
+      "standard": "法性身",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "法性身"
+      ],
+      "sample_context": "…過眾生為無明所覆，若以金剛智顯現之，顯現至於究竟，即成就三德中之法身德，三身中之法性身，三涅槃中之性淨涅槃。所謂一究竟一切究竟，一切究竟一究竟。全經能顯之法雖有種種…"
+    },
+    {
+      "matched": "能所",
+      "standard": "能所",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "能所"
+      ],
+      "sample_context": "…無量河沙之功德，所謂不可思議之般若妙用也。  三、金剛斷究竟，所謂伏斷淨盡。斷通能所，能斷有二：一、緣能斷，即資糧、加行二慧。二、真能斷，即世第一位進證智體所生之根…"
+    },
+    {
+      "matched": "應化身",
+      "standard": "應化身",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "應化身"
+      ],
+      "sample_context": "…曰波羅密。合能所斷皆究竟，故曰金剛斷究竟。此斷究竟，即成三德中之解脫德，三身中之應化身，三涅槃中之擇滅涅槃。此真能斷，即前之智體、智用，亦即金剛也。試列表於左：  …"
+    },
+    {
+      "matched": "清淨",
+      "standard": "清淨",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "清淨"
+      ],
+      "sample_context": "…明之：夫心本無相，由妄想而幻起，能取之見分與所取之相分。相如空華，空華本體即光明清淨之虛空，亦即平等周遍之金剛般若體性。故吾人當前所有之一切法相，種種妄想，當體即金…"
+    },
+    {
+      "matched": "生死",
+      "standard": "生死",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "生死"
+      ],
+      "sample_context": "…，為不共二乘之獨菩薩法降伏。所言降伏者，即非降伏，是名降伏。所云住者，凡夫則住於生死，二乘則住於涅槃，皆以有所住為住，因其未開顯此金剛般若體性，不能發生金剛般若妙用…"
+    },
+    {
+      "matched": "畢竟空",
+      "standard": "畢竟空",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "中觀學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "畢竟空"
+      ],
+      "sample_context": "…顯此金剛般若體性，不能發生金剛般若妙用，遂住於法而不住般若矣。菩薩了達一切法當體畢竟空寂之金剛智性，有何法為菩薩所住？又何有能住於法之菩薩？以一切不住故，則能發生一…"
+    },
+    {
+      "matched": "四分",
+      "standard": "四分",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "四分"
+      ],
+      "sample_context": "…又更總分為十二段。  ##### 　　　　　　（一）就菩薩所度眾生明——第三、第四分  此段最為緊要，為全經之綱宗。下十一段，皆不過就須菩提及大眾所疑上逐層解釋，藉…"
+    },
+    {
+      "matched": "眾生相",
+      "standard": "眾生相",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "眾生相"
+      ],
+      "sample_context": "…眾生之類，我皆令入無餘涅槃而滅度之，而同時又須觀察實無所度之眾生可令其涅槃者。蓋眾生相乃由妄想分別而起，眾生真實體性，即不生不滅常住周遍之大般涅槃，既本來涅槃，何須…"
+    },
+    {
+      "matched": "六度",
+      "standard": "六度",
+      "occurrences": 3,
+      "domain": "行持",
+      "subdomain": "菩薩行",
+      "is_standard": true,
+      "variants_of_standard": [
+        "六波羅蜜"
+      ],
+      "vocab_note": "布施、持戒、忍辱、精進、禪定、般若",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "六度"
+      ],
+      "sample_context": "…應周遍法界等同虛空之金剛智體，由體起用，發而為施、戒、忍、進、禪、智等度。此施等六度之智用，既由周遍法界之智體而發，故其所得之福德，亦等同智體，而不可思量。是以住相…"
+    },
+    {
+      "matched": "實相",
+      "standard": "實相",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "實相"
+      ],
+      "sample_context": "…亦等同智體，而不可思量。是以住相行施，不但福德有限，且為菩薩應斷之妄想；以不了達實相無相，妄有所住故。不住相布施，則成為金剛般若之妙用，以此智體本來具足一切法故。夫…"
+    },
+    {
+      "matched": "虛妄",
+      "standard": "虛妄",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "虛妄"
+      ],
+      "sample_context": "…化身，雖不可見，然隨各人所見各各不同，以其本無定相可見，不過隨心變現，究竟是一種虛妄之法，非金剛般若本體，以本體不可以相見故。若見諸相非相者，破一切虛妄也。即見如來…"
+    },
+    {
+      "matched": "無為",
+      "standard": "無為",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無為"
+      ],
+      "sample_context": "…，本非妄見所能取，亦非語言可能道。凡一切法，皆無有決定相可取可說，以法即非法故。無為法、指金剛智體；差別、指金剛智用。此明降伏其心。下明應如是住，此四句偈，一一字皆…"
+    },
+    {
+      "matched": "受持",
+      "standard": "受持",
+      "occurrences": 3,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "受持"
+      ],
+      "sample_context": "…；差別、指金剛智用。此明降伏其心。下明應如是住，此四句偈，一一字皆顯金剛體性，故受持之福德殊勝。此經即離一切相即一切法之金剛般若體用，故佛法全體即此經，諸佛之法無不…"
+    },
+    {
+      "matched": "相即",
+      "standard": "相即",
+      "occurrences": 3,
+      "domain": "方法論",
+      "subdomain": "判攝方法",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "相即"
+      ],
+      "sample_context": "…其心。下明應如是住，此四句偈，一一字皆顯金剛體性，故受持之福德殊勝。此經即離一切相即一切法之金剛般若體用，故佛法全體即此經，諸佛之法無不從此經出。實則諸佛之法既即此…"
+    },
+    {
+      "matched": "真如",
+      "standard": "真如",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "一心真如",
+        "真如理"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "真如"
+      ],
+      "sample_context": "…一切眾生；即非莊嚴是名莊嚴，即是實無有眾生得滅度者。以一切畢竟空寂，顯現本來之妙真如性，即是清淨心，具足萬法；一有所住，即為法縛，而不清淨矣。譬如手能執一切物，若執…"
+    },
+    {
+      "matched": "三十二相",
+      "standard": "三十二相",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "三十二相"
+      ],
+      "sample_context": "…密，非般若波羅密，即空此法相也。微塵非微塵，世界非世界，以依報空寂，顯金剛智體；三十二相非三十二相，以正報空寂，顯此金剛智體；體顯用生，故福德無量。  ##### …"
+    },
+    {
+      "matched": "無實",
+      "standard": "無實",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無實"
+      ],
+      "sample_context": "…行而言，以顯離相之功用。若心有所住，即非依所教而住，故應無住而住，無修而修。此法無實虛者，以本無所得故。十五、十六兩分，皆顯不住相修持之福德無量耳。  ##### …"
+    },
+    {
+      "matched": "無明",
+      "standard": "無明",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無明"
+      ],
+      "sample_context": "…般若若大火聚，凡有觸者無不被燒。苟妄想緣般若時，妄想即當下消滅，歸乎般若；若暗中無明，暗中若得明，則明存暗亡；妄想若緣般若，則般若生妄想不生矣。故此智用，非常堅固，…"
+    },
+    {
+      "matched": "文字般若",
+      "standard": "文字般若",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "文字般若"
+      ],
+      "sample_context": "…可謂之為金剛妄想，非金剛智無能斷之。  能斷即般若慧，此慧有三：曰聞、思、修。由文字般若發生聞慧，觀照般若發生思、修二慧。聞、思二慧及修慧中之一分，皆為資糧慧，其餘…"
+    },
+    {
+      "matched": "證智",
+      "standard": "證智",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "證智"
+      ],
+      "sample_context": "…分，皆為資糧慧，其餘一分為加行慧；由資糧加行二慧，降伏妄想。由加行位中世第一位進證智體，創獲實慧而斷除之，妄想斷處即般若顯發處。此能斷之般若，最為堅利，故名金剛。—…"
+    },
+    {
+      "matched": "不可思議",
+      "standard": "不可思議",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "不可思議"
+      ],
+      "sample_context": "…三身中之受用身，三涅槃中之無住涅槃。因地之種種妄想，至此皆成無量河沙之功德，所謂不可思議之般若妙用也。  三、金剛斷究竟，所謂伏斷淨盡。斷通能所，能斷有二：一、緣能…"
+    },
+    {
+      "matched": "無餘",
+      "standard": "無餘",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無餘"
+      ],
+      "sample_context": "…能斷除妄想至於究竟，故曰金剛般若波羅蜜。所斷之妄想，若種子，若現行，一一悉皆被斷無餘，亦曰波羅密。合能所斷皆究竟，故曰金剛斷究竟。此斷究竟，即成三德中之解脫德，三身…"
+    },
+    {
+      "matched": "解脫",
+      "standard": "解脫",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "解脫"
+      ],
+      "sample_context": "…悉皆被斷無餘，亦曰波羅密。合能所斷皆究竟，故曰金剛斷究竟。此斷究竟，即成三德中之解脫德，三身中之應化身，三涅槃中之擇滅涅槃。此真能斷，即前之智體、智用，亦即金剛也。…"
+    },
+    {
+      "matched": "擇滅涅槃",
+      "standard": "涅槃寂靜",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": false,
+      "variants_of_standard": [
+        "擇滅涅槃",
+        "涅槃解脫"
+      ],
+      "vocab_note": "",
+      "source": "batch_01",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "擇滅涅槃"
+      ],
+      "sample_context": "…皆究竟，故曰金剛斷究竟。此斷究竟，即成三德中之解脫德，三身中之應化身，三涅槃中之擇滅涅槃。此真能斷，即前之智體、智用，亦即金剛也。試列表於左：   ``` 　　　　…"
+    },
+    {
+      "matched": "發心",
+      "standard": "發心",
+      "occurrences": 2,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "發心"
+      ],
+      "sample_context": "…是以經過二大阿僧祇劫之八地菩薩，尚須諸佛之警覺，始不住於所證空性而進取佛果，況初發心者！然亦眾生之自生自長，非佛能代其生長，不過佛時時調護愛念之，為其增上緣，以除其…"
+    },
+    {
+      "matched": "假名",
+      "standard": "假名",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "假名"
+      ],
+      "sample_context": "…妄見自然無所分別。相見既息，妄心寂滅，常住平等之金剛智性豁然顯現；故妄想非妄想，假名為妄想耳。既無所降伏之妄，亦無能降伏之道。如是降伏者，為真降伏，為究竟降伏，為無…"
+    },
+    {
+      "matched": "相續",
+      "standard": "相續",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "相續"
+      ],
+      "sample_context": "…所度，是曰人相；復於所度中分其根性利鈍品類差別等，是曰眾生相；又計其輪迴生死流轉相續，是曰壽者相。若著四相，則我見堅固，妄想隨逐，尚無能自度，何暇度生，故曰即非菩薩…"
+    },
+    {
+      "matched": "對治",
+      "standard": "對治",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "對治"
+      ],
+      "sample_context": "…度，何暇度生，故曰即非菩薩。若能觀眾相皆空，則本體立現，妄心不降而自降，不用何種對治法以為滋妄之本。蓋對治之法，乃係以妄除妄；妄妄無窮，終非究竟，故於妄心起時，即觀…"
+    },
+    {
+      "matched": "具足",
+      "standard": "具足",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "具足"
+      ],
+      "sample_context": "…想；以不了達實相無相，妄有所住故。不住相布施，則成為金剛般若之妙用，以此智體本來具足一切法故。夫不應住於法者，破有相之執也；行於布施者，破空無之執也。以破一切相，金…"
+    },
+    {
+      "matched": "有相",
+      "standard": "有相",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "有相"
+      ],
+      "sample_context": "…。不住相布施，則成為金剛般若之妙用，以此智體本來具足一切法故。夫不應住於法者，破有相之執也；行於布施者，破空無之執也。以破一切相，金剛智體顯；智體顯現，則智用現前；…"
+    },
+    {
+      "matched": "不可得",
+      "standard": "不可得",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "不可得"
+      ],
+      "sample_context": "…佛法身，本來離一切相、一切分別，故不可見；即佛之自受用身，亦周遍法界，等同虛空，不可得見；佛他受用身及應化身，雖不可見，然隨各人所見各各不同，以其本無定相可見，不過…"
+    },
+    {
+      "matched": "定相",
+      "standard": "定相",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "定相"
+      ],
+      "sample_context": "…等同虛空，不可得見；佛他受用身及應化身，雖不可見，然隨各人所見各各不同，以其本無定相可見，不過隨心變現，究竟是一種虛妄之法，非金剛般若本體，以本體不可以相見故。若見…"
+    },
+    {
+      "matched": "淨信",
+      "standard": "淨信",
+      "occurrences": 2,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "淨信"
+      ],
+      "sample_context": "…諸相非相者，破一切虛妄也。即見如來者，妄破而體顯也。體顯則智用生，故下即云一念生淨信，得福無量，此淨信本於空一切妄想而生，故其得福德亦等同法性無量無邊矣。下復就無四…"
+    },
+    {
+      "matched": "法性",
+      "standard": "法性",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "法性"
+      ],
+      "sample_context": "…智用生，故下即云一念生淨信，得福無量，此淨信本於空一切妄想而生，故其得福德亦等同法性無量無邊矣。下復就無四相等明者，重顯一切法相無不空寂，究竟不應取著耳。  ###…"
+    },
+    {
+      "matched": "殊勝",
+      "standard": "殊勝",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "殊勝"
+      ],
+      "sample_context": "…金剛智用。此明降伏其心。下明應如是住，此四句偈，一一字皆顯金剛體性，故受持之福德殊勝。此經即離一切相即一切法之金剛般若體用，故佛法全體即此經，諸佛之法無不從此經出。…"
+    },
+    {
+      "matched": "四果",
+      "standard": "四果",
+      "occurrences": 2,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "四果"
+      ],
+      "sample_context": "…為法而有差別，遂疑既云無為法，云何復有差別耶？佛乃以其所證者一一徵問之，空生遂悟四果當體全空，毫無自性，雖有其名，並無其實。是以四果非果，差別非差別，亦無所修之行，…"
+    },
+    {
+      "matched": "自性",
+      "standard": "自性",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "有無自性",
+        "諸法離言自性",
+        "離言自性"
+      ],
+      "vocab_note": "太虚在判攝中反覆辨析的核心概念",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "自性"
+      ],
+      "sample_context": "…既云無為法，云何復有差別耶？佛乃以其所證者一一徵問之，空生遂悟四果當體全空，毫無自性，雖有其名，並無其實。是以四果非果，差別非差別，亦無所修之行，以實無所行，乃名之…"
+    },
+    {
+      "matched": "無所得",
+      "standard": "無所得",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "中觀學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無所得"
+      ],
+      "sample_context": "…行，乃名之曰阿蘭那行耳。  第十分就大乘果行以明金剛智體。如來在然燈佛所，於法實無所得，從果上顯。菩薩莊嚴佛土，從因上顯。以果因皆不可得，顯出非因非果之法身自性。菩…"
+    },
+    {
+      "matched": "依報",
+      "standard": "依報",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "有情共業所感之器世間為依報，各別業力所感之根身為正報",
+      "source": "phase2_fulltext,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "依報"
+      ],
+      "sample_context": "…明——第十三分  此疑餘者可空，而現在當前聞佛所說之金剛般若波羅密之法相，及所見依報之佛土，正報之佛身，總不可空。佛乃顯其無不皆空，故云：般若波羅密，非般若波羅密，…"
+    },
+    {
+      "matched": "正報",
+      "standard": "正報",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "正報"
+      ],
+      "sample_context": "…分  此疑餘者可空，而現在當前聞佛所說之金剛般若波羅密之法相，及所見依報之佛土，正報之佛身，總不可空。佛乃顯其無不皆空，故云：般若波羅密，非般若波羅密，即空此法相也…"
+    },
+    {
+      "matched": "有法",
+      "standard": "有法",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "有法"
+      ],
+      "sample_context": "…，是以一切法即非一切法，無一法非佛法。又恐其執著有一了達法即非法之菩薩，故言實無有法名為菩薩；若通達人法二無我者，真是菩薩。  ##### 　　　　　　（八）就如來…"
+    },
+    {
+      "matched": "有為",
+      "standard": "有為",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "有為"
+      ],
+      "sample_context": "…，即顯現金剛般若之無相妙體。此無相體性，不可知見，不可取著；以可知見取著者，皆是有為有相之法耳。一切有為之法，無不似有而有，有即非有，於此非有之妙有中而行於六度，即…"
+    },
+    {
+      "matched": "不淨",
+      "standard": "不淨",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "不淨"
+      ],
+      "sample_context": "…一、般若，二、般若斷。般若有二：一、體，二、用。此般若體，從本以來不生不滅，不垢不淨，不增不減，體性堅固，常住不動，不可破壞，故曰金剛。又此體性顯現時，一切妄相妄見…"
+    },
+    {
+      "matched": "不增不減",
+      "standard": "不增不減",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "中觀學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "不增不減"
+      ],
+      "sample_context": "…若，二、般若斷。般若有二：一、體，二、用。此般若體，從本以來不生不滅，不垢不淨，不增不減，體性堅固，常住不動，不可破壞，故曰金剛。又此體性顯現時，一切妄相妄見，悉決…"
+    },
+    {
+      "matched": "心所",
+      "standard": "心所",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "心所"
+      ],
+      "sample_context": "…，即妄相妄見耳。所見之妄相，由能見之妄見而生，如空花由目眚而有。妄相妄見皆一妄想心所現，如空花赤眚，皆從一眼病而起；眼病若愈，眚花俱滅，妄想若斷，相見均寂。但此妄想…"
+    },
+    {
+      "matched": "聞慧",
+      "standard": "聞慧",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "聞慧"
+      ],
+      "sample_context": "…妄想，非金剛智無能斷之。  能斷即般若慧，此慧有三：曰聞、思、修。由文字般若發生聞慧，觀照般若發生思、修二慧。聞、思二慧及修慧中之一分，皆為資糧慧，其餘一分為加行慧…"
+    },
+    {
+      "matched": "加行位",
+      "standard": "加行位",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "加行位"
+      ],
+      "sample_context": "…思二慧及修慧中之一分，皆為資糧慧，其餘一分為加行慧；由資糧加行二慧，降伏妄想。由加行位中世第一位進證智體，創獲實慧而斷除之，妄想斷處即般若顯發處。此能斷之般若，最為…"
+    },
+    {
+      "matched": "生佛",
+      "standard": "生佛",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "生佛"
+      ],
+      "sample_context": "…三：一、金剛智體究竟，所謂顯現究竟。此體本來不生，亦無有滅，平等週遍，無動無搖，生佛同具；不過眾生為無明所覆，若以金剛智顯現之，顯現至於究竟，即成就三德中之法身德，…"
+    },
+    {
+      "matched": "慧能",
+      "standard": "慧能",
+      "occurrences": 1,
+      "domain": "历史",
+      "subdomain": "人物",
+      "is_standard": true,
+      "variants_of_standard": [
+        "六祖慧能"
+      ],
+      "vocab_note": "禪宗六祖",
+      "source": "batch_01",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "慧能"
+      ],
+      "sample_context": "…、緣能斷，即資糧、加行二慧。二、真能斷，即世第一位進證智體所生之根本無分別慧；此慧能斷除妄想至於究竟，故曰金剛般若波羅蜜。所斷之妄想，若種子，若現行，一一悉皆被斷無…"
+    },
+    {
+      "matched": "種子",
+      "standard": "種子",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [
+        "業種"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "種子"
+      ],
+      "sample_context": "…體所生之根本無分別慧；此慧能斷除妄想至於究竟，故曰金剛般若波羅蜜。所斷之妄想，若種子，若現行，一一悉皆被斷無餘，亦曰波羅密。合能所斷皆究竟，故曰金剛斷究竟。此斷究竟…"
+    },
+    {
+      "matched": "現行",
+      "standard": "現行",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "現行"
+      ],
+      "sample_context": "…根本無分別慧；此慧能斷除妄想至於究竟，故曰金剛般若波羅蜜。所斷之妄想，若種子，若現行，一一悉皆被斷無餘，亦曰波羅密。合能所斷皆究竟，故曰金剛斷究竟。此斷究竟，即成三…"
+    },
+    {
+      "matched": "智慧",
+      "standard": "智慧",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "智慧"
+      ],
+      "sample_context": "…　　　　　┌般　若┤ 　　　　　　　　　　　　　　　│　　　└智用……發生圓滿…智慧…受用身…無住涅槃 　　　　　　　　　　　　金　剛┤　　　　　　　　┌妄相┐ 　…"
+    },
+    {
+      "matched": "如是我聞",
+      "standard": "如是我聞",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "經典",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "如是我聞"
+      ],
+      "sample_context": "…## 二　解經義脈  茲釋經文，暫依卅二分，另為分判：一、序分，即第一分是。由『如是我聞至千二百五十人俱』，為通序，同諸經故。自『爾時世尊至敷座而坐』，為別序，異他…"
+    },
+    {
+      "matched": "發菩提心",
+      "standard": "發菩提心",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "發菩提心"
+      ],
+      "sample_context": "…段：一、須菩提讚歎，即『希有世尊！如來善護念諸菩薩，善付囑諸菩薩』是。蓋眾生初始發菩提心，尚未開顯金剛智體時，非佛為之調護愛念，不但不能增長，且多退墮。是以經過二大…"
+    },
+    {
+      "matched": "阿僧祇劫",
+      "standard": "阿僧祇劫",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "阿僧祇劫"
+      ],
+      "sample_context": "…提心，尚未開顯金剛智體時，非佛為之調護愛念，不但不能增長，且多退墮。是以經過二大阿僧祇劫之八地菩薩，尚須諸佛之警覺，始不住於所證空性而進取佛果，況初發心者！然亦眾生…"
+    },
+    {
+      "matched": "空性",
+      "standard": "空性",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "中觀學",
+      "is_standard": true,
+      "variants_of_standard": [
+        "一切法自性空",
+        "本性空寂",
+        "空",
+        "自性空",
+        "諸法畢竟空"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "空性"
+      ],
+      "sample_context": "…不能增長，且多退墮。是以經過二大阿僧祇劫之八地菩薩，尚須諸佛之警覺，始不住於所證空性而進取佛果，況初發心者！然亦眾生之自生自長，非佛能代其生長，不過佛時時調護愛念之…"
+    },
+    {
+      "matched": "增上緣",
+      "standard": "增上緣",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "增上緣"
+      ],
+      "sample_context": "…佛果，況初發心者！然亦眾生之自生自長，非佛能代其生長，不過佛時時調護愛念之，為其增上緣，以除其妨害生長者耳，故謂之善護念。既得佛護念，遂能開發智體，智體顯現後，佛即…"
+    },
+    {
+      "matched": "善男子",
+      "standard": "善男子",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "善男子"
+      ],
+      "sample_context": "…拔度眾生，是曰付囑。以其實無所付囑而付囑，故曰善付囑。二、須菩提請問，即『世尊！善男子至云何降伏其心』是。在須菩提意，以為菩薩發心，雖廣大過於二乘，然其必有所應住之…"
+    },
+    {
+      "matched": "見分",
+      "standard": "見分",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "見分"
+      ],
+      "sample_context": "…不過顯明此二種問答耳。此本經之脈絡也。今略明之：夫心本無相，由妄想而幻起，能取之見分與所取之相分。相如空華，空華本體即光明清淨之虛空，亦即平等周遍之金剛般若體性。故…"
+    },
+    {
+      "matched": "相分",
+      "standard": "相分",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "相分"
+      ],
+      "sample_context": "…種問答耳。此本經之脈絡也。今略明之：夫心本無相，由妄想而幻起，能取之見分與所取之相分。相如空華，空華本體即光明清淨之虛空，亦即平等周遍之金剛般若體性。故吾人當前所有…"
+    },
+    {
+      "matched": "光明",
+      "standard": "光明",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "光明"
+      ],
+      "sample_context": "…今略明之：夫心本無相，由妄想而幻起，能取之見分與所取之相分。相如空華，空華本體即光明清淨之虛空，亦即平等周遍之金剛般若體性。故吾人當前所有之一切法相，種種妄想，當體…"
+    },
+    {
+      "matched": "精進",
+      "standard": "精進",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "菩薩行",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "精進"
+      ],
+      "sample_context": "…，即第三分。次答應如是住，即第四分。  菩薩降伏其心之法，即在發度一切眾生心，而精進勇猛修行一切度生事業，所謂所有一切眾生之類，我皆令入無餘涅槃而滅度之，而同時又須…"
+    },
+    {
+      "matched": "修行",
+      "standard": "修行",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "修行"
+      ],
+      "sample_context": "…分。次答應如是住，即第四分。  菩薩降伏其心之法，即在發度一切眾生心，而精進勇猛修行一切度生事業，所謂所有一切眾生之類，我皆令入無餘涅槃而滅度之，而同時又須觀察實無…"
+    },
+    {
+      "matched": "無餘涅槃",
+      "standard": "無餘涅槃",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無餘涅槃"
+      ],
+      "sample_context": "…，即在發度一切眾生心，而精進勇猛修行一切度生事業，所謂所有一切眾生之類，我皆令入無餘涅槃而滅度之，而同時又須觀察實無所度之眾生可令其涅槃者。蓋眾生相乃由妄想分別而起…"
+    },
+    {
+      "matched": "般涅槃",
+      "standard": "般涅槃",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "般涅槃"
+      ],
+      "sample_context": "…眾生可令其涅槃者。蓋眾生相乃由妄想分別而起，眾生真實體性，即不生不滅常住周遍之大般涅槃，既本來涅槃，何須菩薩令其入耶？如虛空本來無花，何從有滅？不過如幻之眾生，於不…"
+    },
+    {
+      "matched": "如幻",
+      "standard": "如幻",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "如幻"
+      ],
+      "sample_context": "…常住周遍之大般涅槃，既本來涅槃，何須菩薩令其入耶？如虛空本來無花，何從有滅？不過如幻之眾生，於不生不滅法上幻起生死大苦，菩薩乃起空花萬行，巧設種種方便而度脫之，實則…"
+    },
+    {
+      "matched": "性空",
+      "standard": "性空",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "中觀學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "性空"
+      ],
+      "sample_context": "…種方便而度脫之，實則本無所度之眾生，亦無所入之涅槃。然亦非不度眾生，不過既了眾生性空，乃能不起執著，正好廣行一切度生事業。若不了此，則必妄計有能度眾生之菩薩，是曰我…"
+    },
+    {
+      "matched": "我相",
+      "standard": "我相",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "我相"
+      ],
+      "sample_context": "…空，乃能不起執著，正好廣行一切度生事業。若不了此，則必妄計有能度眾生之菩薩，是曰我相；計有所度，是曰人相；復於所度中分其根性利鈍品類差別等，是曰眾生相；又計其輪迴生…"
+    },
+    {
+      "matched": "輪迴",
+      "standard": "輪迴",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "輪迴"
+      ],
+      "sample_context": "…曰我相；計有所度，是曰人相；復於所度中分其根性利鈍品類差別等，是曰眾生相；又計其輪迴生死流轉相續，是曰壽者相。若著四相，則我見堅固，妄想隨逐，尚無能自度，何暇度生，…"
+    },
+    {
+      "matched": "流轉",
+      "standard": "流轉",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "流轉"
+      ],
+      "sample_context": "…計有所度，是曰人相；復於所度中分其根性利鈍品類差別等，是曰眾生相；又計其輪迴生死流轉相續，是曰壽者相。若著四相，則我見堅固，妄想隨逐，尚無能自度，何暇度生，故曰即非…"
+    },
+    {
+      "matched": "人空",
+      "standard": "人空",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "人空"
+      ],
+      "sample_context": "…，即觀妄心當體空寂，無絲毫實在可得，無所用其降伏，即澈底降伏無餘矣。此無四相，約人空明，以四相皆不離於人我執故。  次答應云何住：夫心本周遍，離能離所，絕對絕待，無…"
+    },
+    {
+      "matched": "我執",
+      "standard": "我執",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "我執"
+      ],
+      "sample_context": "…毫實在可得，無所用其降伏，即澈底降伏無餘矣。此無四相，約人空明，以四相皆不離於人我執故。  次答應云何住：夫心本周遍，離能離所，絕對絕待，無所可住，亦無能住，凡夫不…"
+    },
+    {
+      "matched": "絕待",
+      "standard": "絕待",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "絕待"
+      ],
+      "sample_context": "…，約人空明，以四相皆不離於人我執故。  次答應云何住：夫心本周遍，離能離所，絕對絕待，無所可住，亦無能住，凡夫不了，妄見有所住耳。夫謂空有花，已是顛倒，復問此花應云…"
+    },
+    {
+      "matched": "無生",
+      "standard": "無生",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無生"
+      ],
+      "sample_context": "…第五、第六分  上文云無眾生可度，空生遂疑：菩薩得證佛果，無不由度眾生而來，既云無生可度，菩薩從何而證佛果。佛遂問之曰：可以身相見如來不？空生經佛一問，即悟如來身相…"
+    },
+    {
+      "matched": "自受用身",
+      "standard": "自受用身",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "自受用身"
+      ],
+      "sample_context": "…下文所有問答之意，大約相同。蓋諸佛法身，本來離一切相、一切分別，故不可見；即佛之自受用身，亦周遍法界，等同虛空，不可得見；佛他受用身及應化身，雖不可見，然隨各人所見…"
+    },
+    {
+      "matched": "他受用身",
+      "standard": "他受用身",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "他受用身"
+      ],
+      "sample_context": "…離一切相、一切分別，故不可見；即佛之自受用身，亦周遍法界，等同虛空，不可得見；佛他受用身及應化身，雖不可見，然隨各人所見各各不同，以其本無定相可見，不過隨心變現，究…"
+    },
+    {
+      "matched": "一念",
+      "standard": "一念",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "一念"
+      ],
+      "sample_context": "…。若見諸相非相者，破一切虛妄也。即見如來者，妄破而體顯也。體顯則智用生，故下即云一念生淨信，得福無量，此淨信本於空一切妄想而生，故其得福德亦等同法性無量無邊矣。下復…"
+    },
+    {
+      "matched": "大乘",
+      "standard": "大乘",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "大乘不共法",
+        "大乘法",
+        "大乘特法"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "大乘"
+      ],
+      "sample_context": "…四果非果，差別非差別，亦無所修之行，以實無所行，乃名之曰阿蘭那行耳。  第十分就大乘果行以明金剛智體。如來在然燈佛所，於法實無所得，從果上顯。菩薩莊嚴佛土，從因上顯…"
+    },
+    {
+      "matched": "大慈悲",
+      "standard": "大慈悲",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "大悲心",
+        "平等主義"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "大慈悲"
+      ],
+      "sample_context": "…莊嚴佛土，從因上顯。以果因皆不可得，顯出非因非果之法身自性。菩薩莊嚴佛土，即是以大慈悲心滅度一切眾生；即非莊嚴是名莊嚴，即是實無有眾生得滅度者。以一切畢竟空寂，顯現…"
+    },
+    {
+      "matched": "清淨心",
+      "standard": "清淨心",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "清淨心"
+      ],
+      "sample_context": "…非莊嚴是名莊嚴，即是實無有眾生得滅度者。以一切畢竟空寂，顯現本來之妙真如性，即是清淨心，具足萬法；一有所住，即為法縛，而不清淨矣。譬如手能執一切物，若執一物，餘物皆…"
+    },
+    {
+      "matched": "萬法",
+      "standard": "萬法",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "萬法"
+      ],
+      "sample_context": "…嚴，即是實無有眾生得滅度者。以一切畢竟空寂，顯現本來之妙真如性，即是清淨心，具足萬法；一有所住，即為法縛，而不清淨矣。譬如手能執一切物，若執一物，餘物皆不能執，則成…"
+    },
+    {
+      "matched": "報身",
+      "standard": "報身",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "報身"
+      ],
+      "sample_context": "…而不清淨矣。譬如手能執一切物，若執一物，餘物皆不能執，則成專執此物之手矣。大身指報身言。非身名大身者，謂遍滿法界法皆是非身，而大身即以此一切法為其身，故名大身。  …"
+    },
+    {
+      "matched": "經典",
+      "standard": "經典",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "經典",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "經典"
+      ],
+      "sample_context": "…無量。以此經全是顯佛之法身，故此經即佛法身舍利，一字一句，皆係佛之法性身所現，故經典所在之處，即為三寶所在處也。  ##### 　　　　　　（五）就現在當處所聞所見…"
+    },
+    {
+      "matched": "三寶",
+      "standard": "三寶",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "三寶"
+      ],
+      "sample_context": "…佛之法身，故此經即佛法身舍利，一字一句，皆係佛之法性身所現，故經典所在之處，即為三寶所在處也。  ##### 　　　　　　（五）就現在當處所聞所見明——第十三分  …"
+    },
+    {
+      "matched": "生因",
+      "standard": "生因",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "生因"
+      ],
+      "sample_context": "…十五、十六分  此就後世眾生持此經，及佛過去修此行，而明此金剛智體。實相無相，非生因之所生，及了因之所了，必信心清淨不著於相，乃能生此非相之實相。來世眾生取著一切相…"
+    },
+    {
+      "matched": "信心",
+      "standard": "信心",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "信心"
+      ],
+      "sample_context": "…持此經，及佛過去修此行，而明此金剛智體。實相無相，非生因之所生，及了因之所了，必信心清淨不著於相，乃能生此非相之實相。來世眾生取著一切相，皆不能了解此義，故不能受持…"
+    },
+    {
+      "matched": "來世",
+      "standard": "來世",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "來世"
+      ],
+      "sample_context": "…。實相無相，非生因之所生，及了因之所了，必信心清淨不著於相，乃能生此非相之實相。來世眾生取著一切相，皆不能了解此義，故不能受持；真能受持者，必能離一切相；離一切相，…"
+    },
+    {
+      "matched": "當來",
+      "standard": "當來",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "當來"
+      ],
+      "sample_context": "…諸佛平等法身，故名諸佛。第一波羅密，即般若波羅密；以相即非相，故般若非般若。上就當來眾生言，下就佛過去修忍辱行而言，以顯離相之功用。若心有所住，即非依所教而住，故應…"
+    },
+    {
+      "matched": "忍辱",
+      "standard": "忍辱",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "菩薩行",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "忍辱"
+      ],
+      "sample_context": "…第一波羅密，即般若波羅密；以相即非相，故般若非般若。上就當來眾生言，下就佛過去修忍辱行而言，以顯離相之功用。若心有所住，即非依所教而住，故應無住而住，無修而修。此法…"
+    },
+    {
+      "matched": "因果",
+      "standard": "因果",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "因果"
+      ],
+      "sample_context": "…##### 　　　　　　（七）就菩薩能行自身明——第十七分  前數段，皆就所行之因果明其空寂，以顯金剛智體，此則就菩薩能行之自身而言，所謂前空所空，今空能空。故須菩…"
+    },
+    {
+      "matched": "通達",
+      "standard": "通達",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "通達"
+      ],
+      "sample_context": "…一切法，無一法非佛法。又恐其執著有一了達法即非法之菩薩，故言實無有法名為菩薩；若通達人法二無我者，真是菩薩。  ##### 　　　　　　（八）就如來玅智觀機明——第…"
+    },
+    {
+      "matched": "人法",
+      "standard": "人法",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "人法"
+      ],
+      "sample_context": "…法，無一法非佛法。又恐其執著有一了達法即非法之菩薩，故言實無有法名為菩薩；若通達人法二無我者，真是菩薩。  ##### 　　　　　　（八）就如來玅智觀機明——第十八…"
+    },
+    {
+      "matched": "二無我",
+      "standard": "二無我",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "二無我"
+      ],
+      "sample_context": "…無一法非佛法。又恐其執著有一了達法即非法之菩薩，故言實無有法名為菩薩；若通達人法二無我者，真是菩薩。  ##### 　　　　　　（八）就如來玅智觀機明——第十八、十…"
+    },
+    {
+      "matched": "心相",
+      "standard": "心相",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "心相"
+      ],
+      "sample_context": "…干種心，本無空間之表現，祇有時間之相續，而過去既過去，未來尚未來，現在又不住，故心相差別雖多，而毫無自體可得。以其實體即如來所證之平等法性涅槃妙心故，故無不悉知悉見…"
+    },
+    {
+      "matched": "真心",
+      "standard": "真心",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "如來藏思想",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "真心"
+      ],
+      "sample_context": "…，故無不悉知悉見。又恐執於空無，故云：福德無即福德多。並可例知諸心即非心，非心即真心也。  ##### 　　　　　　（九）就如來現身說明法——第廿、廿一分  佛之身…"
+    },
+    {
+      "matched": "相應",
+      "standard": "相應",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "相應"
+      ],
+      "sample_context": "…分  佛之身相無論如何莊嚴，皆由眾生妄想所見；故應了身相即非身相，始與離相之法身相應。既無身相可得，亦無有法可說。空生遂疑：未來眾生，恐不易信此空而不空，有而不有之…"
+    },
+    {
+      "matched": "甚深",
+      "standard": "甚深",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "甚深"
+      ],
+      "sample_context": "…。既無身相可得，亦無有法可說。空生遂疑：未來眾生，恐不易信此空而不空，有而不有之甚深妙法，佛遂以眾生本非眾生，何有生信與不生信破之。  ##### 　　　　　　（十…"
+    },
+    {
+      "matched": "證果",
+      "standard": "證果",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "證果"
+      ],
+      "sample_context": "…遂以眾生本非眾生，何有生信與不生信破之。  ##### 　　　　　　（十）就如來證果修因明——第廿二、廿三、廿四分  此明如來證即無證，修即非修。無修而修，修此因行…"
+    },
+    {
+      "matched": "因明",
+      "standard": "因明",
+      "occurrences": 1,
+      "domain": "方法論",
+      "subdomain": "著述體裁",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "佛教邏輯學，與內明、聲明、醫方明、工巧明合稱五明",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "因明"
+      ],
+      "sample_context": "…生本非眾生，何有生信與不生信破之。  ##### 　　　　　　（十）就如來證果修因明——第廿二、廿三、廿四分  此明如來證即無證，修即非修。無修而修，修此因行；無得…"
+    },
+    {
+      "matched": "滅相",
+      "standard": "滅相",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "滅相"
+      ],
+      "sample_context": "…以觀如來。以一切諸相既本來平等，當體即是如來法身本體，本無有生，從何有滅？故不應滅相以觀如來。能將此一切法無我之理，忍可於心，行於六度，不貪著福德，而所受之福德自無…"
+    },
+    {
+      "matched": "法無我",
+      "standard": "法無我",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "法無我"
+      ],
+      "sample_context": "…來平等，當體即是如來法身本體，本無有生，從何有滅？故不應滅相以觀如來。能將此一切法無我之理，忍可於心，行於六度，不貪著福德，而所受之福德自無量矣。  ##### 　…"
+    },
+    {
+      "matched": "威儀",
+      "standard": "威儀",
+      "occurrences": 1,
+      "domain": "制度",
+      "subdomain": "戒律制度",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "威儀"
+      ],
+      "sample_context": "…度，不貪著福德，而所受之福德自無量矣。  ##### 　　　　　　（十二）就如來威儀住持知見明——第廿九、卅、卅一、卅二前半分  上破取色身相，此去來等破取作用相。…"
+    },
+    {
+      "matched": "住持",
+      "standard": "住持",
+      "occurrences": 1,
+      "domain": "制度",
+      "subdomain": "寺院管理",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "住持"
+      ],
+      "sample_context": "…不貪著福德，而所受之福德自無量矣。  ##### 　　　　　　（十二）就如來威儀住持知見明——第廿九、卅、卅一、卅二前半分  上破取色身相，此去來等破取作用相。以如…"
+    },
+    {
+      "matched": "信受奉行",
+      "standard": "信受奉行",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "信受奉行"
+      ],
+      "sample_context": "…妙用，亦即降伏其心、安住其心之究竟法矣。  上來正宗分竟。自『佛說是經已』，至『信受奉行』，為流通分。如常釋。  （大勇記）（見海刊二卷十二期）  "
+    }
+  ],
+  "domain_summary": {
+    "domains": {
+      "教理": 120,
+      "行持": 18,
+      "历史": 3,
+      "方法論": 2,
+      "制度": 2
+    },
+    "subdomains": {
+      "基礎教義": 96,
+      "修行次第": 14,
+      "中觀學": 9,
+      "唯識學": 7,
+      "菩薩行": 4,
+      "大乘通義": 3,
+      "人物": 3,
+      "經典": 3,
+      "判教框架": 1,
+      "判攝方法": 1,
+      "如來藏思想": 1,
+      "著述體裁": 1,
+      "戒律制度": 1,
+      "寺院管理": 1
+    }
+  }
+}

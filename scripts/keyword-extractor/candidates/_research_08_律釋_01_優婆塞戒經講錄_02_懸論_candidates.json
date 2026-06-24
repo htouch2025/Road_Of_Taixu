@@ -1,0 +1,2926 @@
+{
+  "summary": {
+    "total_candidates": 163,
+    "unique_standards": 163,
+    "single_occurrence_ratio": "91/163",
+    "high_frequency_terms": [
+      "優婆塞",
+      "大乘",
+      "成佛",
+      "菩薩",
+      "修行",
+      "眾生",
+      "發心",
+      "法師",
+      "發菩提心"
+    ],
+    "heading_weighted": true,
+    "heading_weight": 3
+  },
+  "article": {
+    "path": "/Users/xin/Documents/Road_Of_Taixu/_research/08_律釋/01_優婆塞戒經講錄/02_懸論.md",
+    "title": "懸論",
+    "cjk_chars": 5103,
+    "recommended_count": "8-12",
+    "编": "第八编 律釋",
+    "编_number": "8",
+    "category": "優婆塞戒經講錄"
+  },
+  "vocab_source": "/Users/xin/Documents/Road_Of_Taixu/_research/keyword_vocabulary_v4.json",
+  "match_stats": {
+    "raw_hits": 170,
+    "after_dedup": 163
+  },
+  "candidates": [
+    {
+      "matched": "優婆塞",
+      "standard": "優婆塞",
+      "occurrences": 27,
+      "domain": "制度",
+      "subdomain": "僧制",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": true,
+      "_heading_hits": 2,
+      "matched_via": [
+        "優婆塞"
+      ],
+      "sample_context": "…對於佛法，極應研究了解，依以修行也！  ## 二　此經在佛法中之位置  此經、即優婆塞戒經，為眾經中之一部。流行之佛典，大概可分為：經、律、論之三藏；復有古德種種著…"
+    },
+    {
+      "matched": "大乘",
+      "standard": "大乘",
+      "occurrences": 22,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "大乘不共法",
+        "大乘法",
+        "大乘特法"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": true,
+      "_heading_hits": 2,
+      "matched_via": [
+        "大乘",
+        "大乘不共法",
+        "大乘法"
+      ],
+      "sample_context": "…基礎。二、三乘共法，同為了脫生死超出輪轉之法，即聲聞之四諦，緣覺之十二因緣。三、大乘不共法，即發菩提心、廣度眾生、修學六度萬行成佛之法。此經在三大類中，以名優婆塞戒…"
+    },
+    {
+      "matched": "成佛",
+      "standard": "成佛",
+      "occurrences": 14,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": true,
+      "_heading_hits": 2,
+      "matched_via": [
+        "成佛"
+      ],
+      "sample_context": "…為盡虛空無邊世界一切眾生之類而說。但現今流傳此世界之佛法，則為釋迦牟尼在此人類中成佛所說。人類固為眾生之一類，而在一切眾生中，卻具有特殊之意義。蓋釋迦牟尼佛現身人類…"
+    },
+    {
+      "matched": "菩薩",
+      "standard": "菩薩",
+      "occurrences": 17,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "菩薩"
+      ],
+      "sample_context": "…中為惡、為善，或發解脫心，或發菩提心，則可轉受惡趣、善趣，或阿羅漢、辟支佛，以至菩薩及佛之果報。此由聞到佛法，乃知人生意義之深廣，而佛法與人生關係之密切，亦可見矣。…"
+    },
+    {
+      "matched": "修行",
+      "standard": "修行",
+      "occurrences": 12,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": true,
+      "_heading_hits": 2,
+      "matched_via": [
+        "修行"
+      ],
+      "sample_context": "…係言之，人類為佛法所依，佛法為人類所最需要；所以人生對於佛法，極應研究了解，依以修行也！  ## 二　此經在佛法中之位置  此經、即優婆塞戒經，為眾經中之一部。流行…"
+    },
+    {
+      "matched": "眾生",
+      "standard": "眾生",
+      "occurrences": 17,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "眾生"
+      ],
+      "sample_context": "…法出發點言，佛法不獨為此地球人類而說，是普為一切而說；所謂普為盡虛空無邊世界一切眾生之類而說。但現今流傳此世界之佛法，則為釋迦牟尼在此人類中成佛所說。人類固為眾生之…"
+    },
+    {
+      "matched": "人間",
+      "standard": "人間",
+      "occurrences": 9,
+      "domain": "社会文化",
+      "subdomain": "佛教與文化",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": true,
+      "_heading_hits": 2,
+      "matched_via": [
+        "人間"
+      ],
+      "sample_context": "…乃有超凡入聖之希望。  ### 　　丙、降生人間成佛說法  佛法是釋迦牟尼佛降生人間所證所說之法。佛有三身，所謂：法性身，受用身，變化身。佛之法性身與自受用身遍一切…"
+    },
+    {
+      "matched": "發心",
+      "standard": "發心",
+      "occurrences": 11,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "發心"
+      ],
+      "sample_context": "…丙、無求即時成佛之貪心  佛法，原不拘限以現身此世為立足點，乃普為法界一切眾生而發心。蓋以佛法觀察，一人與一切眾生互相關涉，而一世界與無量世界亦相攝相入，如帝網之重…"
+    },
+    {
+      "matched": "法師",
+      "standard": "法師",
+      "occurrences": 11,
+      "domain": "制度",
+      "subdomain": "僧制",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "法師"
+      ],
+      "sample_context": "…紀錄，或用口語背誦，皆用印度語文之巴利文或梵文等。此經由梵文譯為漢文，係由曇無讖法師、在北涼朝之姑臧地方所譯。北涼、係在南朝劉宋文帝時代，於現在甘肅地方所成立之一朝…"
+    },
+    {
+      "matched": "六度",
+      "standard": "六度",
+      "occurrences": 9,
+      "domain": "行持",
+      "subdomain": "菩薩行",
+      "is_standard": true,
+      "variants_of_standard": [
+        "六波羅蜜"
+      ],
+      "vocab_note": "布施、持戒、忍辱、精進、禪定、般若",
+      "source": "batch_01,v3_draft",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "六度"
+      ],
+      "sample_context": "…轉之法，即聲聞之四諦，緣覺之十二因緣。三、大乘不共法，即發菩提心、廣度眾生、修學六度萬行成佛之法。此經在三大類中，以名優婆塞戒故，可為五乘共法；以明發菩提心、修學六…"
+    },
+    {
+      "matched": "發菩提心",
+      "standard": "發菩提心",
+      "occurrences": 11,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "發菩提心"
+      ],
+      "sample_context": "…。因有善業，方能得到人身，而人身又復無常。假使在人生中為惡、為善，或發解脫心，或發菩提心，則可轉受惡趣、善趣，或阿羅漢、辟支佛，以至菩薩及佛之果報。此由聞到佛法，乃…"
+    },
+    {
+      "matched": "五乘",
+      "standard": "五乘",
+      "occurrences": 8,
+      "domain": "教理",
+      "subdomain": "判教框架",
+      "is_standard": true,
+      "variants_of_standard": [
+        "聲聞乘"
+      ],
+      "vocab_note": "太虚基本判教框架",
+      "source": "batch_01,v3_draft",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "五乘"
+      ],
+      "sample_context": "…置，茲略加以分別。  ### 　　甲、五乘共法與大乘不共法  佛法可分三類：一、五乘共法，即人、天、聲聞、緣覺、菩薩共法；此五乘共法中，人天善法為出世三乘之基礎。二…"
+    },
+    {
+      "matched": "在家菩薩",
+      "standard": "在家菩薩",
+      "occurrences": 5,
+      "domain": "制度",
+      "subdomain": "僧制",
+      "is_standard": true,
+      "variants_of_standard": [
+        "在家大乘行者",
+        "即俗即真的大乘行者"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "在家菩薩"
+      ],
+      "sample_context": "…名之曰優婆塞戒經。  ### 　　丁、在家菩薩中心之佛法  優婆塞戒經，最好題為在家菩薩經。蓋觀集會品所明：在家之人發菩提心，勝於阿羅漢辟支佛等果。又每品末，皆謂：…"
+    },
+    {
+      "matched": "意趣",
+      "standard": "意趣",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "意趣"
+      ],
+      "sample_context": "…種經典。其決定講此優婆塞戒經者，乃出於本人之選擇，而選講此經，有關本人在佛法中之意趣，故特提出說明之。  ### 　　甲、非研究佛書之學者  有人見本人有許多著述，…"
+    },
+    {
+      "matched": "菩薩戒",
+      "standard": "菩薩戒",
+      "occurrences": 8,
+      "domain": "行持",
+      "subdomain": "戒律行持",
+      "is_standard": true,
+      "variants_of_standard": [
+        "三聚淨戒",
+        "大乘菩薩戒",
+        "瑜伽菩薩戒"
+      ],
+      "vocab_note": "僧寺经济建设的旨归——「践行菩萨戒」，以戒律精神统摄经济活动",
+      "source": "dimensional,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "瑜伽菩薩戒",
+        "菩薩戒"
+      ],
+      "sample_context": "…，在姑臧所譯。法豐法師在中國所譯，除此經外，尚有涅槃、大集、金光明經等，而古譯之菩薩戒本經，亦為法師所譯，故師既為涅槃宗之初祖，亦為中土傳弘菩薩戒之初祖。與當時之求…"
+    },
+    {
+      "matched": "在家",
+      "standard": "在家",
+      "occurrences": 7,
+      "domain": "制度",
+      "subdomain": "僧制",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "在家"
+      ],
+      "sample_context": "…，有翻為善宿者；總而言之，可謂清淨正信近事佛法之弟子。塞字、亦為譯音，意指男性。在家弟子有男性，有女性，此經因為男弟子善生所問起而說，故題為優婆塞戒經。論其性質，亦…"
+    },
+    {
+      "matched": "性相",
+      "standard": "性相",
+      "occurrences": 6,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "性相"
+      ],
+      "sample_context": "…乙、在境行果中特重在行  此經在佛法境、行、果中，以說明何者為主？佛經凡說明諸法性相者，為境；說明持戒、修六度行者，為行；說明佛果福智莊嚴功德者，為果。諸經中，有特…"
+    },
+    {
+      "matched": "四聖",
+      "standard": "四聖",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "四聖"
+      ],
+      "sample_context": "… 　　乙、人道為罪福聖凡樞紐  人為無數眾生中之一類。佛法中常分眾生為十類，所謂四聖、六凡。四聖為：阿羅漢、辟支佛、菩薩、及佛，此四聖已超脫生死輪轉；其猶在生死中輪…"
+    },
+    {
+      "matched": "出家",
+      "standard": "出家",
+      "occurrences": 5,
+      "domain": "制度",
+      "subdomain": "僧制",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "出家"
+      ],
+      "sample_context": "…八相成佛之變化身佛，則為人類等眾生所共見之佛。此係最後身菩薩從兜率天上降生人間，出家修道，成佛說法。就此八相成佛言，乃有佛所說法。然此佛法非僅流行於人世，即天宮、海…"
+    },
+    {
+      "matched": "三乘",
+      "standard": "三乘",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "出世三乘",
+        "聲聞緣覺菩薩"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "三乘",
+        "出世三乘"
+      ],
+      "sample_context": "…可分三類：一、五乘共法，即人、天、聲聞、緣覺、菩薩共法；此五乘共法中，人天善法為出世三乘之基礎。二、三乘共法，同為了脫生死超出輪轉之法，即聲聞之四諦，緣覺之十二因緣…"
+    },
+    {
+      "matched": "諸法",
+      "standard": "諸法",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "諸法"
+      ],
+      "sample_context": "…　　乙、在境行果中特重在行  此經在佛法境、行、果中，以說明何者為主？佛經凡說明諸法性相者，為境；說明持戒、修六度行者，為行；說明佛果福智莊嚴功德者，為果。諸經中，…"
+    },
+    {
+      "matched": "凡夫",
+      "standard": "凡夫",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "凡夫"
+      ],
+      "sample_context": "…　　丁、為學菩薩發心修行者  前三從消極的反面說，此則從積極的正面言之。本人係以凡夫之人，得聞解佛法信受奉行者。認為五乘共法、三乘共法及大乘不共法，均一貫可達到究竟…"
+    },
+    {
+      "matched": "五戒",
+      "standard": "五戒",
+      "occurrences": 5,
+      "domain": "行持",
+      "subdomain": "戒律行持",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "五戒"
+      ],
+      "sample_context": "…類似各經之辨別  類似此經者，有中阿含經中優婆塞戒經，為瞿曇僧伽提婆所譯；但雖講五戒，而仍為普通所行五戒。又有優婆塞五戒相經，為求那跋摩法師所譯，乃佛因淨飯王所問而…"
+    },
+    {
+      "matched": "釋迦牟尼",
+      "standard": "釋迦牟尼",
+      "occurrences": 4,
+      "domain": "历史",
+      "subdomain": "人物",
+      "is_standard": true,
+      "variants_of_standard": [
+        "釋尊",
+        "釋迦"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "釋尊",
+        "釋迦牟尼"
+      ],
+      "sample_context": "…為一切而說；所謂普為盡虛空無邊世界一切眾生之類而說。但現今流傳此世界之佛法，則為釋迦牟尼在此人類中成佛所說。人類固為眾生之一類，而在一切眾生中，卻具有特殊之意義。蓋…"
+    },
+    {
+      "matched": "罪福",
+      "standard": "罪福",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "罪福"
+      ],
+      "sample_context": "…乃知人生意義之深廣，而佛法與人生關係之密切，亦可見矣。  ### 　　乙、人道為罪福聖凡樞紐  人為無數眾生中之一類。佛法中常分眾生為十類，所謂四聖、六凡。四聖為：…"
+    },
+    {
+      "matched": "六凡",
+      "standard": "六凡",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "六凡"
+      ],
+      "sample_context": "…乙、人道為罪福聖凡樞紐  人為無數眾生中之一類。佛法中常分眾生為十類，所謂四聖、六凡。四聖為：阿羅漢、辟支佛、菩薩、及佛，此四聖已超脫生死輪轉；其猶在生死中輪迴者，…"
+    },
+    {
+      "matched": "三身",
+      "standard": "三身",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "三佛身",
+        "受用身",
+        "自性身",
+        "變化身"
+      ],
+      "vocab_note": "自性身（斷德）、受用身（智德）、變化身（恩德）",
+      "source": "phase2_fulltext,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "三身",
+        "受用身",
+        "變化身"
+      ],
+      "sample_context": "… ### 　　丙、降生人間成佛說法  佛法是釋迦牟尼佛降生人間所證所說之法。佛有三身，所謂：法性身，受用身，變化身。佛之法性身與自受用身遍一切處，無相可睹；其所說八…"
+    },
+    {
+      "matched": "境行果",
+      "standard": "境行果",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "佛法體系",
+      "is_standard": true,
+      "variants_of_standard": [
+        "化他境行果",
+        "境、行、果",
+        "自證境行果"
+      ],
+      "vocab_note": "大乘法之綱目：觀境、起行、證果",
+      "source": "batch_01,phase2_fulltext,v3_draft",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "境行果"
+      ],
+      "sample_context": "…五乘共法與大乘不共法；因之受持此經之戒者，即為菩薩優婆塞。  ### 　　乙、在境行果中特重在行  此經在佛法境、行、果中，以說明何者為主？佛經凡說明諸法性相者，為…"
+    },
+    {
+      "matched": "優婆夷",
+      "standard": "優婆夷",
+      "occurrences": 4,
+      "domain": "制度",
+      "subdomain": "僧制",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "優婆夷"
+      ],
+      "sample_context": "…男性，有女性，此經因為男弟子善生所問起而說，故題為優婆塞戒經。論其性質，亦可題為優婆夷戒經；夷者、女性也，以優婆戒男女無分別故。此經所明佛法，關涉佛所證所說之一切法…"
+    },
+    {
+      "matched": "小乘",
+      "standard": "小乘",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "二乘",
+        "小乘法"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "小乘"
+      ],
+      "sample_context": "…之臨濟、曹洞、溈仰等。此皆是古德以自悟之心得及教化上適應時機而建立。最早在印度有小乘十八派、或二十派之別，嗣後大乘復興，遂有大小乘對立，大乘復分法性、法相之空有兩宗…"
+    },
+    {
+      "matched": "菩薩行",
+      "standard": "菩薩行",
+      "occurrences": 4,
+      "domain": "义理维度",
+      "subdomain": "義理體系",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "菩萨行的人生观与革命行动：以无我利他的菩萨精神为革命赋能",
+      "source": "dimensional",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "菩薩行"
+      ],
+      "sample_context": "…信行，即能自悟悟他，精進無息，再無庸拘定要即此身成佛。蓋成佛亦不過自悟悟他而已！菩薩行滿，佛陀果成；但勤耕耘，自能收穫，何藉刻期企求？若有拘求，心量自狹，將不免為虛…"
+    },
+    {
+      "matched": "無邊",
+      "standard": "無邊",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無邊"
+      ],
+      "sample_context": "…難聞  從佛法出發點言，佛法不獨為此地球人類而說，是普為一切而說；所謂普為盡虛空無邊世界一切眾生之類而說。但現今流傳此世界之佛法，則為釋迦牟尼在此人類中成佛所說。人…"
+    },
+    {
+      "matched": "施設",
+      "standard": "施設",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "施設"
+      ],
+      "sample_context": "…，而在一切眾生中，卻具有特殊之意義。蓋釋迦牟尼佛現身人類中說法，大部分為依人類而施設者，佛謂：『人生難得，佛法難聞』；即言得生為人之不易。以佛法觀人類，確有優勝之點…"
+    },
+    {
+      "matched": "阿羅漢",
+      "standard": "阿羅漢",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "阿羅漢"
+      ],
+      "sample_context": "…又復無常。假使在人生中為惡、為善，或發解脫心，或發菩提心，則可轉受惡趣、善趣，或阿羅漢、辟支佛，以至菩薩及佛之果報。此由聞到佛法，乃知人生意義之深廣，而佛法與人生關…"
+    },
+    {
+      "matched": "辟支佛",
+      "standard": "辟支佛",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "辟支佛"
+      ],
+      "sample_context": "…。假使在人生中為惡、為善，或發解脫心，或發菩提心，則可轉受惡趣、善趣，或阿羅漢、辟支佛，以至菩薩及佛之果報。此由聞到佛法，乃知人生意義之深廣，而佛法與人生關係之密切…"
+    },
+    {
+      "matched": "阿修羅",
+      "standard": "阿修羅",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "阿修羅"
+      ],
+      "sample_context": "…辟支佛、菩薩、及佛，此四聖已超脫生死輪轉；其猶在生死中輪迴者，則為六凡：天、人、阿修羅、地獄、鬼、畜生。在六凡中，人道之上祇有天之一道；在人道下則為阿修羅、地獄、餓…"
+    },
+    {
+      "matched": "地獄",
+      "standard": "地獄",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "地獄"
+      ],
+      "sample_context": "…菩薩、及佛，此四聖已超脫生死輪轉；其猶在生死中輪迴者，則為六凡：天、人、阿修羅、地獄、鬼、畜生。在六凡中，人道之上祇有天之一道；在人道下則為阿修羅、地獄、餓鬼、畜生…"
+    },
+    {
+      "matched": "古德",
+      "standard": "古德",
+      "occurrences": 3,
+      "domain": "历史",
+      "subdomain": "人物",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "古德"
+      ],
+      "sample_context": "…經、即優婆塞戒經，為眾經中之一部。流行之佛典，大概可分為：經、律、論之三藏；復有古德種種著作為雜藏，併之可稱為四藏。此經屬經藏中之一經。經者、梵語修多羅，乃結集佛所…"
+    },
+    {
+      "matched": "聲聞",
+      "standard": "聲聞",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "聲聞"
+      ],
+      "sample_context": "… ### 　　甲、五乘共法與大乘不共法  佛法可分三類：一、五乘共法，即人、天、聲聞、緣覺、菩薩共法；此五乘共法中，人天善法為出世三乘之基礎。二、三乘共法，同為了脫…"
+    },
+    {
+      "matched": "人天",
+      "standard": "人天",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "人天"
+      ],
+      "sample_context": "…法  佛法可分三類：一、五乘共法，即人、天、聲聞、緣覺、菩薩共法；此五乘共法中，人天善法為出世三乘之基礎。二、三乘共法，同為了脫生死超出輪轉之法，即聲聞之四諦，緣覺…"
+    },
+    {
+      "matched": "修學",
+      "standard": "修學",
+      "occurrences": 3,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "修學"
+      ],
+      "sample_context": "…出輪轉之法，即聲聞之四諦，緣覺之十二因緣。三、大乘不共法，即發菩提心、廣度眾生、修學六度萬行成佛之法。此經在三大類中，以名優婆塞戒故，可為五乘共法；以明發菩提心、修…"
+    },
+    {
+      "matched": "法本",
+      "standard": "法本",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "法本"
+      ],
+      "sample_context": "…中之意趣，以為由佛之無上遍正覺所證明之法界性相，為度眾生應機設教，則法有多門，故法本一味而方便門則無量無邊。佛法本旨既是如此，所以一切菩薩古德所開承之宗派，無非在方…"
+    },
+    {
+      "matched": "阿含",
+      "standard": "阿含",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "經典",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "阿含"
+      ],
+      "sample_context": "…即是菩薩優婆塞戒行。  ### 　　乙、與此經類似各經之辨別  類似此經者，有中阿含經中優婆塞戒經，為瞿曇僧伽提婆所譯；但雖講五戒，而仍為普通所行五戒。又有優婆塞五…"
+    },
+    {
+      "matched": "無始",
+      "standard": "無始",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無始"
+      ],
+      "sample_context": "…聞到佛法。如不聞佛法，則不知人生之真價，而一期人生，仍是空過。必要聞到佛法，方知無始以來從業受果，一生一生，生生相續。因有善業，方能得到人身，而人身又復無常。假使在…"
+    },
+    {
+      "matched": "惡趣",
+      "standard": "惡道",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": false,
+      "variants_of_standard": [
+        "惡趣"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "惡趣"
+      ],
+      "sample_context": "…到人身，而人身又復無常。假使在人生中為惡、為善，或發解脫心，或發菩提心，則可轉受惡趣、善趣，或阿羅漢、辟支佛，以至菩薩及佛之果報。此由聞到佛法，乃知人生意義之深廣，…"
+    },
+    {
+      "matched": "生死",
+      "standard": "生死",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "生死"
+      ],
+      "sample_context": "…所謂四聖、六凡。四聖為：阿羅漢、辟支佛、菩薩、及佛，此四聖已超脫生死輪轉；其猶在生死中輪迴者，則為六凡：天、人、阿修羅、地獄、鬼、畜生。在六凡中，人道之上祇有天之一…"
+    },
+    {
+      "matched": "惡業",
+      "standard": "惡業",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "惡業"
+      ],
+      "sample_context": "…之上祇有天之一道；在人道下則為阿修羅、地獄、餓鬼、畜生、之四道，即四惡趣，係感受惡業之果報者。阿修羅、意為非天，近似常人所說之所謂神道，彼有天之威福而無天之德，其性…"
+    },
+    {
+      "matched": "天道",
+      "standard": "天道",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "天道"
+      ],
+      "sample_context": "…也。此兩道眾生，純受苦報。大致在十類中，人與天兩道適居中間。但人、天雖同處中間，天道則以享受福報為勝，其身心之創造能力，則仍不及於人道。在人道中，造惡業則可受多生多…"
+    },
+    {
+      "matched": "異生",
+      "standard": "異生",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "凡夫之專業術語，常在異類流轉生死之有情，依人我執而假立異生性，與聖者相對",
+      "source": "phase2_fulltext,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "異生"
+      ],
+      "sample_context": "…則可受多生多劫之福報，且從凡位轉超入四聖果位；此唯人道為能之，如餘經論中詳說。由異生——即六凡——而生起聖道者，唯人中能之，為別道異生所無，以人道能修習布施、持戒、…"
+    },
+    {
+      "matched": "布施",
+      "standard": "布施",
+      "occurrences": 2,
+      "domain": "行持",
+      "subdomain": "菩薩行",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "布施"
+      ],
+      "sample_context": "…詳說。由異生——即六凡——而生起聖道者，唯人中能之，為別道異生所無，以人道能修習布施、持戒、多聞等極多功德，雖天道亦有所不如，此為人道特殊之功能。所以謂人道為轉生四…"
+    },
+    {
+      "matched": "持戒",
+      "standard": "持戒",
+      "occurrences": 2,
+      "domain": "行持",
+      "subdomain": "戒律行持",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "持戒"
+      ],
+      "sample_context": "…由異生——即六凡——而生起聖道者，唯人中能之，為別道異生所無，以人道能修習布施、持戒、多聞等極多功德，雖天道亦有所不如，此為人道特殊之功能。所以謂人道為轉生四聖及其…"
+    },
+    {
+      "matched": "法性身",
+      "standard": "法性身",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "法性身"
+      ],
+      "sample_context": "…　丙、降生人間成佛說法  佛法是釋迦牟尼佛降生人間所證所說之法。佛有三身，所謂：法性身，受用身，變化身。佛之法性身與自受用身遍一切處，無相可睹；其所說八相成佛之變化…"
+    },
+    {
+      "matched": "八相",
+      "standard": "八相",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "八相"
+      ],
+      "sample_context": "…身，所謂：法性身，受用身，變化身。佛之法性身與自受用身遍一切處，無相可睹；其所說八相成佛之變化身佛，則為人類等眾生所共見之佛。此係最後身菩薩從兜率天上降生人間，出家…"
+    },
+    {
+      "matched": "菩提",
+      "standard": "菩提",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "無上菩提"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "菩提"
+      ],
+      "sample_context": "…作圓覺經序云：『諸天正樂，修羅方瞋，鬼神沉幽囚之苦，畜生懷獝狖之悲，其能整心慮趣菩提者，唯人道為能』。故知佛法雖普為眾生，而就特殊關係言之，人類為佛法所依，佛法為人…"
+    },
+    {
+      "matched": "三藏",
+      "standard": "三藏",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "經典",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "三藏"
+      ],
+      "sample_context": "…位置  此經、即優婆塞戒經，為眾經中之一部。流行之佛典，大概可分為：經、律、論之三藏；復有古德種種著作為雜藏，併之可稱為四藏。此經屬經藏中之一經。經者、梵語修多羅，…"
+    },
+    {
+      "matched": "結集",
+      "standard": "結集",
+      "occurrences": 2,
+      "domain": "历史",
+      "subdomain": "佛教事件",
+      "is_standard": true,
+      "variants_of_standard": [
+        "集結"
+      ],
+      "vocab_note": "佛教史關鍵事件：第一次結集至第四次結集",
+      "source": "manual_gap",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "結集"
+      ],
+      "sample_context": "…復有古德種種著作為雜藏，併之可稱為四藏。此經屬經藏中之一經。經者、梵語修多羅，乃結集佛所說法以傳世者。而此經在佛經中居如何之位置，茲略加以分別。  ### 　　甲、…"
+    },
+    {
+      "matched": "佛經",
+      "standard": "佛經",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "經典",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "佛經"
+      ],
+      "sample_context": "…稱為四藏。此經屬經藏中之一經。經者、梵語修多羅，乃結集佛所說法以傳世者。而此經在佛經中居如何之位置，茲略加以分別。  ### 　　甲、五乘共法與大乘不共法  佛法可…"
+    },
+    {
+      "matched": "緣覺",
+      "standard": "緣覺",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "緣覺"
+      ],
+      "sample_context": "…# 　　甲、五乘共法與大乘不共法  佛法可分三類：一、五乘共法，即人、天、聲聞、緣覺、菩薩共法；此五乘共法中，人天善法為出世三乘之基礎。二、三乘共法，同為了脫生死超…"
+    },
+    {
+      "matched": "受持",
+      "standard": "受持",
+      "occurrences": 2,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "受持"
+      ],
+      "sample_context": "…修學六度、廣度眾生故，又可為大乘不共法。所以此經可謂為五乘共法與大乘不共法；因之受持此經之戒者，即為菩薩優婆塞。  ### 　　乙、在境行果中特重在行  此經在佛法…"
+    },
+    {
+      "matched": "戒行",
+      "standard": "戒行",
+      "occurrences": 2,
+      "domain": "行持",
+      "subdomain": "戒律行持",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "戒行"
+      ],
+      "sample_context": "…為果。諸經中，有特重明境者，有特重明行或果者，有兼重若二若三者。此經重在說明受持戒行，故於境、行、果中為特重在行之經。  ### 　　丙、優婆塞戒中心之佛法  以此…"
+    },
+    {
+      "matched": "供養",
+      "standard": "供養",
+      "occurrences": 2,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "供養"
+      ],
+      "sample_context": "…，從四天王乃至阿迦尼吒諸天，皆大驚喜，尊得人天之師。又以出家之人不事生產，受人天供養，於布施波羅密反難圓滿；故此經乃特為在家菩薩之所宗也。  ## 三　本人在佛法中…"
+    },
+    {
+      "matched": "佛學",
+      "standard": "佛學",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "佛法體系",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "全書根本概念，太虚自稱「佛學」而非「佛教學」",
+      "source": "manual_gap",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "佛學"
+      ],
+      "sample_context": "…出說明之。  ### 　　甲、非研究佛書之學者  有人見本人有許多著述，以為是於佛學有專門研究之學者。其實從事考稽佛學書籍而研究其義理，以造成一專門之學者，亦殊非易…"
+    },
+    {
+      "matched": "正覺",
+      "standard": "正覺",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "正覺"
+      ],
+      "sample_context": "…承之人，系統甚嚴，而各自弘揚其本宗之教義。至本人在佛法中之意趣，以為由佛之無上遍正覺所證明之法界性相，為度眾生應機設教，則法有多門，故法本一味而方便門則無量無邊。佛…"
+    },
+    {
+      "matched": "法界",
+      "standard": "法界",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "一真法界",
+        "中實法界",
+        "法界圓明",
+        "法界無障礙"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "法界"
+      ],
+      "sample_context": "…甚嚴，而各自弘揚其本宗之教義。至本人在佛法中之意趣，以為由佛之無上遍正覺所證明之法界性相，為度眾生應機設教，則法有多門，故法本一味而方便門則無量無邊。佛法本旨既是如…"
+    },
+    {
+      "matched": "密法",
+      "standard": "密法",
+      "occurrences": 2,
+      "domain": "行持",
+      "subdomain": "密法",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "密法"
+      ],
+      "sample_context": "…樹、馬鳴、無著、天親傳弘之，則成中期大乘；由龍智、善無畏、蓮華生傳承之，則成後期密法。印度佛法，因之即分為三期。至佛滅千二百餘年後，佛法在印度，即由衰落而銷聲匿跡，…"
+    },
+    {
+      "matched": "通達",
+      "standard": "通達",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "通達"
+      ],
+      "sample_context": "…行二千餘年之大概。其於諸法性相一味平等之各宗派法門，本可隨人根機所宜而修學，藉以通達究竟覺海，則能修之人與所修之法本無高下。所以本人觀察佛法之五乘共法，三乘共法，及…"
+    },
+    {
+      "matched": "教法",
+      "standard": "教法",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "佛法體系",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "教法"
+      ],
+      "sample_context": "…下。所以本人觀察佛法之五乘共法，三乘共法，及大乘不共法，原為一貫，在教理解釋上，教法弘揚上，隨宜施設，不專承一宗以自拘礙。  ### 　　丙、無求即時成佛之貪心  …"
+    },
+    {
+      "matched": "信行",
+      "standard": "信行",
+      "occurrences": 2,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "信行"
+      ],
+      "sample_context": "…修行，應不為空間時間所限，宜普遍平等，超出一切時空而涉入一切時空。於佛法如此理解信行，即能自悟悟他，精進無息，再無庸拘定要即此身成佛。蓋成佛亦不過自悟悟他而已！菩薩…"
+    },
+    {
+      "matched": "即身",
+      "standard": "即身",
+      "occurrences": 2,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "即身"
+      ],
+      "sample_context": "…去著相貪求，則反增煩悶，難得自在！佛法為接引一類好夸大之眾生，亦曾施設立地成佛、即身成佛等假名，而本人則不因此假名而引起希求即身成佛之貪心。  ### 　　丁、為學…"
+    },
+    {
+      "matched": "假名",
+      "standard": "假名",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "假名"
+      ],
+      "sample_context": "…，則反增煩悶，難得自在！佛法為接引一類好夸大之眾生，亦曾施設立地成佛、即身成佛等假名，而本人則不因此假名而引起希求即身成佛之貪心。  ### 　　丁、為學菩薩發心修…"
+    },
+    {
+      "matched": "相應",
+      "standard": "相應",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "相應"
+      ],
+      "sample_context": "…學，應先修習戒學為基本，所謂由戒生定，依定發慧；戒為定、慧之基，定生後、戒即與之相應而成為定共戒，慧發後、戒即與慧相應而成為道共戒。戒能生定者，以戒具足後，理得心安…"
+    },
+    {
+      "matched": "涅槃",
+      "standard": "涅槃",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "滅度"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "涅槃"
+      ],
+      "sample_context": "…稱為三藏法師。此經為法師到北涼後，在姑臧所譯。法豐法師在中國所譯，除此經外，尚有涅槃、大集、金光明經等，而古譯之菩薩戒本經，亦為法師所譯，故師既為涅槃宗之初祖，亦為…"
+    },
+    {
+      "matched": "初祖",
+      "standard": "初祖",
+      "occurrences": 2,
+      "domain": "历史",
+      "subdomain": "人物",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "初祖"
+      ],
+      "sample_context": "…，尚有涅槃、大集、金光明經等，而古譯之菩薩戒本經，亦為法師所譯，故師既為涅槃宗之初祖，亦為中土傳弘菩薩戒之初祖。與當時之求那跋摩——功德鎧——法師較略在前也。法豐法…"
+    },
+    {
+      "matched": "佛因",
+      "standard": "佛因",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "佛因"
+      ],
+      "sample_context": "…所譯；但雖講五戒，而仍為普通所行五戒。又有優婆塞五戒相經，為求那跋摩法師所譯，乃佛因淨飯王所問而說，亦為普通之五戒，故皆與此經不同。又有優婆塞五戒威儀經，亦為求那跋…"
+    },
+    {
+      "matched": "虛空",
+      "standard": "虛空",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "虛空"
+      ],
+      "sample_context": "…佛法難聞  從佛法出發點言，佛法不獨為此地球人類而說，是普為一切而說；所謂普為盡虛空無邊世界一切眾生之類而說。但現今流傳此世界之佛法，則為釋迦牟尼在此人類中成佛所說…"
+    },
+    {
+      "matched": "相續",
+      "standard": "相續",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "相續"
+      ],
+      "sample_context": "…之真價，而一期人生，仍是空過。必要聞到佛法，方知無始以來從業受果，一生一生，生生相續。因有善業，方能得到人身，而人身又復無常。假使在人生中為惡、為善，或發解脫心，或…"
+    },
+    {
+      "matched": "無常",
+      "standard": "無常",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無常"
+      ],
+      "sample_context": "…法，方知無始以來從業受果，一生一生，生生相續。因有善業，方能得到人身，而人身又復無常。假使在人生中為惡、為善，或發解脫心，或發菩提心，則可轉受惡趣、善趣，或阿羅漢、…"
+    },
+    {
+      "matched": "解脫",
+      "standard": "解脫",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "解脫"
+      ],
+      "sample_context": "…，生生相續。因有善業，方能得到人身，而人身又復無常。假使在人生中為惡、為善，或發解脫心，或發菩提心，則可轉受惡趣、善趣，或阿羅漢、辟支佛，以至菩薩及佛之果報。此由聞…"
+    },
+    {
+      "matched": "生死輪",
+      "standard": "生死輪",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "生死輪"
+      ],
+      "sample_context": "…常分眾生為十類，所謂四聖、六凡。四聖為：阿羅漢、辟支佛、菩薩、及佛，此四聖已超脫生死輪轉；其猶在生死中輪迴者，則為六凡：天、人、阿修羅、地獄、鬼、畜生。在六凡中，人…"
+    },
+    {
+      "matched": "輪迴",
+      "standard": "輪迴",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "輪迴"
+      ],
+      "sample_context": "…聖、六凡。四聖為：阿羅漢、辟支佛、菩薩、及佛，此四聖已超脫生死輪轉；其猶在生死中輪迴者，則為六凡：天、人、阿修羅、地獄、鬼、畜生。在六凡中，人道之上祇有天之一道；在…"
+    },
+    {
+      "matched": "神道",
+      "standard": "神道",
+      "occurrences": 1,
+      "domain": "社会文化",
+      "subdomain": "佛教與文化",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "神道"
+      ],
+      "sample_context": "…畜生、之四道，即四惡趣，係感受惡業之果報者。阿修羅、意為非天，近似常人所說之所謂神道，彼有天之威福而無天之德，其性好鬥，故時亦受苦。此下畜生、即飛禽走獸等類，常人謂…"
+    },
+    {
+      "matched": "三寶",
+      "standard": "三寶",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "三寶"
+      ],
+      "sample_context": "…心之創造能力，則仍不及於人道。在人道中，造惡業則可受多生多劫之罪報，造善業或值遇三寶聞持佛法，則可受多生多劫之福報，且從凡位轉超入四聖果位；此唯人道為能之，如餘經論…"
+    },
+    {
+      "matched": "聖道",
+      "standard": "聖道",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "聖道"
+      ],
+      "sample_context": "…從凡位轉超入四聖果位；此唯人道為能之，如餘經論中詳說。由異生——即六凡——而生起聖道者，唯人中能之，為別道異生所無，以人道能修習布施、持戒、多聞等極多功德，雖天道亦…"
+    },
+    {
+      "matched": "多聞",
+      "standard": "多聞",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "多聞"
+      ],
+      "sample_context": "…——即六凡——而生起聖道者，唯人中能之，為別道異生所無，以人道能修習布施、持戒、多聞等極多功德，雖天道亦有所不如，此為人道特殊之功能。所以謂人道為轉生四聖及其餘五凡…"
+    },
+    {
+      "matched": "入聖",
+      "standard": "入聖",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "入聖"
+      ],
+      "sample_context": "…生四聖及其餘五凡之樞紐。人生此種意義，唯佛法發揮盡致，非佛法則不能知人生乃有超凡入聖之希望。  ### 　　丙、降生人間成佛說法  佛法是釋迦牟尼佛降生人間所證所說…"
+    },
+    {
+      "matched": "自受用身",
+      "standard": "自受用身",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "自受用身"
+      ],
+      "sample_context": "…牟尼佛降生人間所證所說之法。佛有三身，所謂：法性身，受用身，變化身。佛之法性身與自受用身遍一切處，無相可睹；其所說八相成佛之變化身佛，則為人類等眾生所共見之佛。此係…"
+    },
+    {
+      "matched": "無相",
+      "standard": "無相",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無相"
+      ],
+      "sample_context": "…所說之法。佛有三身，所謂：法性身，受用身，變化身。佛之法性身與自受用身遍一切處，無相可睹；其所說八相成佛之變化身佛，則為人類等眾生所共見之佛。此係最後身菩薩從兜率天…"
+    },
+    {
+      "matched": "兜率天",
+      "standard": "兜率天",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "淨土法門",
+      "is_standard": true,
+      "variants_of_standard": [
+        "兜率"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "兜率天"
+      ],
+      "sample_context": "…，無相可睹；其所說八相成佛之變化身佛，則為人類等眾生所共見之佛。此係最後身菩薩從兜率天上降生人間，出家修道，成佛說法。就此八相成佛言，乃有佛所說法。然此佛法非僅流行…"
+    },
+    {
+      "matched": "修道",
+      "standard": "修道",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "修道"
+      ],
+      "sample_context": "…成佛之變化身佛，則為人類等眾生所共見之佛。此係最後身菩薩從兜率天上降生人間，出家修道，成佛說法。就此八相成佛言，乃有佛所說法。然此佛法非僅流行於人世，即天宮、海藏、…"
+    },
+    {
+      "matched": "圓覺經",
+      "standard": "圓覺經",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "經典",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "圓覺經"
+      ],
+      "sample_context": "…法化行。因現身成佛，說法度生皆在人間，即可見佛法與人間關係尤切。所以唐裴休長者作圓覺經序云：『諸天正樂，修羅方瞋，鬼神沉幽囚之苦，畜生懷獝狖之悲，其能整心慮趣菩提者…"
+    },
+    {
+      "matched": "鬼神",
+      "standard": "鬼神",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "鬼神"
+      ],
+      "sample_context": "…間，即可見佛法與人間關係尤切。所以唐裴休長者作圓覺經序云：『諸天正樂，修羅方瞋，鬼神沉幽囚之苦，畜生懷獝狖之悲，其能整心慮趣菩提者，唯人道為能』。故知佛法雖普為眾生…"
+    },
+    {
+      "matched": "經藏",
+      "standard": "經藏",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "經典",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "經藏"
+      ],
+      "sample_context": "…典，大概可分為：經、律、論之三藏；復有古德種種著作為雜藏，併之可稱為四藏。此經屬經藏中之一經。經者、梵語修多羅，乃結集佛所說法以傳世者。而此經在佛經中居如何之位置，…"
+    },
+    {
+      "matched": "修多羅",
+      "standard": "修多羅",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "經典",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "修多羅"
+      ],
+      "sample_context": "…論之三藏；復有古德種種著作為雜藏，併之可稱為四藏。此經屬經藏中之一經。經者、梵語修多羅，乃結集佛所說法以傳世者。而此經在佛經中居如何之位置，茲略加以分別。  ###…"
+    },
+    {
+      "matched": "善法",
+      "standard": "善法",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "善法"
+      ],
+      "sample_context": "… 佛法可分三類：一、五乘共法，即人、天、聲聞、緣覺、菩薩共法；此五乘共法中，人天善法為出世三乘之基礎。二、三乘共法，同為了脫生死超出輪轉之法，即聲聞之四諦，緣覺之十…"
+    },
+    {
+      "matched": "輪轉",
+      "standard": "輪轉",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "輪轉"
+      ],
+      "sample_context": "…菩薩共法；此五乘共法中，人天善法為出世三乘之基礎。二、三乘共法，同為了脫生死超出輪轉之法，即聲聞之四諦，緣覺之十二因緣。三、大乘不共法，即發菩提心、廣度眾生、修學六…"
+    },
+    {
+      "matched": "四諦",
+      "standard": "四諦",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "四諦"
+      ],
+      "sample_context": "…法中，人天善法為出世三乘之基礎。二、三乘共法，同為了脫生死超出輪轉之法，即聲聞之四諦，緣覺之十二因緣。三、大乘不共法，即發菩提心、廣度眾生、修學六度萬行成佛之法。此…"
+    },
+    {
+      "matched": "十二因緣",
+      "standard": "十二因緣",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "十二有支",
+        "十二緣起法"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "十二因緣"
+      ],
+      "sample_context": "…法為出世三乘之基礎。二、三乘共法，同為了脫生死超出輪轉之法，即聲聞之四諦，緣覺之十二因緣。三、大乘不共法，即發菩提心、廣度眾生、修學六度萬行成佛之法。此經在三大類中…"
+    },
+    {
+      "matched": "佛果",
+      "standard": "佛果",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "佛果"
+      ],
+      "sample_context": "…中，以說明何者為主？佛經凡說明諸法性相者，為境；說明持戒、修六度行者，為行；說明佛果福智莊嚴功德者，為果。諸經中，有特重明境者，有特重明行或果者，有兼重若二若三者。…"
+    },
+    {
+      "matched": "莊嚴",
+      "standard": "莊嚴",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "莊嚴"
+      ],
+      "sample_context": "…明何者為主？佛經凡說明諸法性相者，為境；說明持戒、修六度行者，為行；說明佛果福智莊嚴功德者，為果。諸經中，有特重明境者，有特重明行或果者，有兼重若二若三者。此經重在…"
+    },
+    {
+      "matched": "清淨",
+      "standard": "清淨",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "清淨"
+      ],
+      "sample_context": "…法。優婆二字為譯音，譯意有翻為清信者，有翻為近事者，有翻為善宿者；總而言之，可謂清淨正信近事佛法之弟子。塞字、亦為譯音，意指男性。在家弟子有男性，有女性，此經因為男…"
+    },
+    {
+      "matched": "正信",
+      "standard": "正信",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "正信"
+      ],
+      "sample_context": "…優婆二字為譯音，譯意有翻為清信者，有翻為近事者，有翻為善宿者；總而言之，可謂清淨正信近事佛法之弟子。塞字、亦為譯音，意指男性。在家弟子有男性，有女性，此經因為男弟子…"
+    },
+    {
+      "matched": "般若",
+      "standard": "般若",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "般若中論"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "般若"
+      ],
+      "sample_context": "…貫通之也。由此點觀之，自發菩提心至受戒品，為明由能優婆塞戒之人而受戒；自淨戒品至般若波羅密品，為明受優婆塞戒人所應修之行，故名之曰優婆塞戒經。  ### 　　丁、在…"
+    },
+    {
+      "matched": "四天王",
+      "standard": "四天王",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "四天王"
+      ],
+      "sample_context": "…經雖貫通於一切佛法靡不窮盡，然究以在家菩薩為其中心。而其讚歎在家之人發菩提心，從四天王乃至阿迦尼吒諸天，皆大驚喜，尊得人天之師。又以出家之人不事生產，受人天供養，於…"
+    },
+    {
+      "matched": "經典",
+      "standard": "經典",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "經典",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "經典"
+      ],
+      "sample_context": "…宗也。  ## 三　本人在佛法中之意趣  首都各界此次發起請本人講經，原未定何種經典。其決定講此優婆塞戒經者，乃出於本人之選擇，而選講此經，有關本人在佛法中之意趣，…"
+    },
+    {
+      "matched": "人見",
+      "standard": "人見",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "人見"
+      ],
+      "sample_context": "…關本人在佛法中之意趣，故特提出說明之。  ### 　　甲、非研究佛書之學者  有人見本人有許多著述，以為是於佛學有專門研究之學者。其實從事考稽佛學書籍而研究其義理，…"
+    },
+    {
+      "matched": "天台",
+      "standard": "天台宗",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "宗派",
+      "is_standard": false,
+      "variants_of_standard": [
+        "台教",
+        "天台",
+        "天台學",
+        "天台教"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "天台"
+      ],
+      "sample_context": "…。  ### 　　乙、不為專承一宗徒裔  在佛法中、自古即有開承一宗者，如中國之天台、賢首等，而宗又分派，則如禪宗之臨濟、曹洞、溈仰等。此皆是古德以自悟之心得及教化…"
+    },
+    {
+      "matched": "賢首",
+      "standard": "華嚴宗",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "宗派",
+      "is_standard": false,
+      "variants_of_standard": [
+        "賢首",
+        "賢首宗",
+        "賢首教"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "賢首"
+      ],
+      "sample_context": "…### 　　乙、不為專承一宗徒裔  在佛法中、自古即有開承一宗者，如中國之天台、賢首等，而宗又分派，則如禪宗之臨濟、曹洞、溈仰等。此皆是古德以自悟之心得及教化上適應…"
+    },
+    {
+      "matched": "禪宗",
+      "standard": "禪宗",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "宗派",
+      "is_standard": true,
+      "variants_of_standard": [
+        "心宗",
+        "祖師禪"
+      ],
+      "vocab_note": "援引太虚「中华佛化之特质在乎禅宗」的判断，作为人间佛教与禅宗传统的义理衔接",
+      "source": "batch_01,dimensional,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "禪宗"
+      ],
+      "sample_context": "…一宗徒裔  在佛法中、自古即有開承一宗者，如中國之天台、賢首等，而宗又分派，則如禪宗之臨濟、曹洞、溈仰等。此皆是古德以自悟之心得及教化上適應時機而建立。最早在印度有…"
+    },
+    {
+      "matched": "教化",
+      "standard": "教化",
+      "occurrences": 1,
+      "domain": "社会文化",
+      "subdomain": "佛教與教育",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "教化"
+      ],
+      "sample_context": "…天台、賢首等，而宗又分派，則如禪宗之臨濟、曹洞、溈仰等。此皆是古德以自悟之心得及教化上適應時機而建立。最早在印度有小乘十八派、或二十派之別，嗣後大乘復興，遂有大小乘…"
+    },
+    {
+      "matched": "法性",
+      "standard": "法性",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "法性"
+      ],
+      "sample_context": "…立。最早在印度有小乘十八派、或二十派之別，嗣後大乘復興，遂有大小乘對立，大乘復分法性、法相之空有兩宗，繼之又有真言宗興起，故宗派對峙，不獨在中國為然也。至中國性、相…"
+    },
+    {
+      "matched": "法相",
+      "standard": "法相",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "法相"
+      ],
+      "sample_context": "…早在印度有小乘十八派、或二十派之別，嗣後大乘復興，遂有大小乘對立，大乘復分法性、法相之空有兩宗，繼之又有真言宗興起，故宗派對峙，不獨在中國為然也。至中國性、相、律、…"
+    },
+    {
+      "matched": "真言宗",
+      "standard": "真言宗",
+      "occurrences": 1,
+      "domain": "历史",
+      "subdomain": "中國宗派",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "batch_01",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "真言宗"
+      ],
+      "sample_context": "…二十派之別，嗣後大乘復興，遂有大小乘對立，大乘復分法性、法相之空有兩宗，繼之又有真言宗興起，故宗派對峙，不獨在中國為然也。至中國性、相、律、密、各宗，為承傳印度之宗…"
+    },
+    {
+      "matched": "淨土真宗",
+      "standard": "淨土真宗",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "宗派",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "日本淨土系最大宗派（親鸞開創），太虛指出其信徒佔日本佛教徒總數之半。其寺院中修行者實為居士而非出家僧，晝入寺工作夜返家，此為東僧被誤解為不守戒行的根源",
+      "source": "phase3_sample,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "淨土真宗"
+      ],
+      "sample_context": "…，為承傳印度之宗派；台、賢、禪、淨等宗，則為創立之宗派。日本承中國，復有日蓮宗、淨土真宗等之開創。各宗至今皆有專承之人，系統甚嚴，而各自弘揚其本宗之教義。至本人在佛…"
+    },
+    {
+      "matched": "教義",
+      "standard": "教義",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "佛法體系",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "教義"
+      ],
+      "sample_context": "…復有日蓮宗、淨土真宗等之開創。各宗至今皆有專承之人，系統甚嚴，而各自弘揚其本宗之教義。至本人在佛法中之意趣，以為由佛之無上遍正覺所證明之法界性相，為度眾生應機設教，…"
+    },
+    {
+      "matched": "大覺",
+      "standard": "大覺",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "大覺"
+      ],
+      "sample_context": "…如此，所以一切菩薩古德所開承之宗派，無非在方便妙用上顯其區別，究竟均是趣向於無上大覺海中者。由此，本人於佛法中不為專承一宗而弘傳之人。佛之現身人間，應機說法，而聽法…"
+    },
+    {
+      "matched": "應機說法",
+      "standard": "契理適機",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "佛法體系",
+      "is_standard": false,
+      "variants_of_standard": [
+        "應機說法"
+      ],
+      "vocab_note": "太虚分析佛法適應性的核心原則",
+      "source": "batch_01",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "應機說法"
+      ],
+      "sample_context": "…是趣向於無上大覺海中者。由此，本人於佛法中不為專承一宗而弘傳之人。佛之現身人間，應機說法，而聽法承傳之人，當即不免各有偏勝。故佛所說法，由迦葉、阿難承傳之，則成初期…"
+    },
+    {
+      "matched": "龍樹",
+      "standard": "龍樹",
+      "occurrences": 1,
+      "domain": "历史",
+      "subdomain": "人物",
+      "is_standard": true,
+      "variants_of_standard": [
+        "龍樹菩薩"
+      ],
+      "vocab_note": "中觀宗祖師",
+      "source": "batch_01",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "龍樹"
+      ],
+      "sample_context": "…聽法承傳之人，當即不免各有偏勝。故佛所說法，由迦葉、阿難承傳之，則成初期小乘；由龍樹、馬鳴、無著、天親傳弘之，則成中期大乘；由龍智、善無畏、蓮華生傳承之，則成後期密…"
+    },
+    {
+      "matched": "馬鳴",
+      "standard": "馬鳴",
+      "occurrences": 1,
+      "domain": "历史",
+      "subdomain": "人物",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "馬鳴"
+      ],
+      "sample_context": "…傳之人，當即不免各有偏勝。故佛所說法，由迦葉、阿難承傳之，則成初期小乘；由龍樹、馬鳴、無著、天親傳弘之，則成中期大乘；由龍智、善無畏、蓮華生傳承之，則成後期密法。印…"
+    },
+    {
+      "matched": "無著",
+      "standard": "無著",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無著"
+      ],
+      "sample_context": "…，當即不免各有偏勝。故佛所說法，由迦葉、阿難承傳之，則成初期小乘；由龍樹、馬鳴、無著、天親傳弘之，則成中期大乘；由龍智、善無畏、蓮華生傳承之，則成後期密法。印度佛法…"
+    },
+    {
+      "matched": "天親",
+      "standard": "世親",
+      "occurrences": 1,
+      "domain": "历史",
+      "subdomain": "人物",
+      "is_standard": false,
+      "variants_of_standard": [
+        "天親"
+      ],
+      "vocab_note": "唯識宗祖師",
+      "source": "batch_01",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "天親"
+      ],
+      "sample_context": "…不免各有偏勝。故佛所說法，由迦葉、阿難承傳之，則成初期小乘；由龍樹、馬鳴、無著、天親傳弘之，則成中期大乘；由龍智、善無畏、蓮華生傳承之，則成後期密法。印度佛法，因之…"
+    },
+    {
+      "matched": "佛滅",
+      "standard": "佛滅",
+      "occurrences": 1,
+      "domain": "历史",
+      "subdomain": "佛教事件",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "佛滅"
+      ],
+      "sample_context": "…期大乘；由龍智、善無畏、蓮華生傳承之，則成後期密法。印度佛法，因之即分為三期。至佛滅千二百餘年後，佛法在印度，即由衰落而銷聲匿跡，而轉盛行於異地。印度初期佛法，可以…"
+    },
+    {
+      "matched": "三系",
+      "standard": "三系佛法",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "判教框架",
+      "is_standard": false,
+      "variants_of_standard": [
+        "三系",
+        "巴利文系佛法",
+        "華文系佛法",
+        "藏文系佛法"
+      ],
+      "vocab_note": "太虛特有判教概念 | 依文本传统将佛法分为華文系/巴利文系/藏文系三系，区别于三期三系的历史分期",
+      "source": "phase2_fulltext,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "三系"
+      ],
+      "sample_context": "…藏而密法為中心系見之，西藏再傳於蒙古、尼泊爾等地，以西藏為代表。此為印度三期分流三系之佛教，流行二千餘年之大概。其於諸法性相一味平等之各宗派法門，本可隨人根機所宜而…"
+    },
+    {
+      "matched": "根機",
+      "standard": "根機",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "根機"
+      ],
+      "sample_context": "…期分流三系之佛教，流行二千餘年之大概。其於諸法性相一味平等之各宗派法門，本可隨人根機所宜而修學，藉以通達究竟覺海，則能修之人與所修之法本無高下。所以本人觀察佛法之五…"
+    },
+    {
+      "matched": "究竟覺",
+      "standard": "究竟覺",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "如來藏思想",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "究竟覺"
+      ],
+      "sample_context": "…千餘年之大概。其於諸法性相一味平等之各宗派法門，本可隨人根機所宜而修學，藉以通達究竟覺海，則能修之人與所修之法本無高下。所以本人觀察佛法之五乘共法，三乘共法，及大乘…"
+    },
+    {
+      "matched": "無盡",
+      "standard": "無盡",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無盡"
+      ],
+      "sample_context": "…蓋以佛法觀察，一人與一切眾生互相關涉，而一世界與無量世界亦相攝相入，如帝網之重重無盡。因此、佛法不是為此一人生與此一世界而起，即此一生、一世亦當體無始無終無邊無中；…"
+    },
+    {
+      "matched": "當體",
+      "standard": "當體",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "當體"
+      ],
+      "sample_context": "…相入，如帝網之重重無盡。因此、佛法不是為此一人生與此一世界而起，即此一生、一世亦當體無始無終無邊無中；所以發心、修行，應不為空間時間所限，宜普遍平等，超出一切時空而…"
+    },
+    {
+      "matched": "精進",
+      "standard": "精進",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "菩薩行",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "精進"
+      ],
+      "sample_context": "…所限，宜普遍平等，超出一切時空而涉入一切時空。於佛法如此理解信行，即能自悟悟他，精進無息，再無庸拘定要即此身成佛。蓋成佛亦不過自悟悟他而已！菩薩行滿，佛陀果成；但勤…"
+    },
+    {
+      "matched": "佛陀",
+      "standard": "佛陀",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "佛陀"
+      ],
+      "sample_context": "…自悟悟他，精進無息，再無庸拘定要即此身成佛。蓋成佛亦不過自悟悟他而已！菩薩行滿，佛陀果成；但勤耕耘，自能收穫，何藉刻期企求？若有拘求，心量自狹，將不免為虛榮心所驅使…"
+    },
+    {
+      "matched": "心量",
+      "standard": "心量",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "心量"
+      ],
+      "sample_context": "…過自悟悟他而已！菩薩行滿，佛陀果成；但勤耕耘，自能收穫，何藉刻期企求？若有拘求，心量自狹，將不免為虛榮心所驅使，為滿足此虛榮心而去著相貪求，則反增煩悶，難得自在！佛…"
+    },
+    {
+      "matched": "心所",
+      "standard": "心所",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "心所"
+      ],
+      "sample_context": "…滿，佛陀果成；但勤耕耘，自能收穫，何藉刻期企求？若有拘求，心量自狹，將不免為虛榮心所驅使，為滿足此虛榮心而去著相貪求，則反增煩悶，難得自在！佛法為接引一類好夸大之眾…"
+    },
+    {
+      "matched": "自在",
+      "standard": "自在",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "自在"
+      ],
+      "sample_context": "…求，心量自狹，將不免為虛榮心所驅使，為滿足此虛榮心而去著相貪求，則反增煩悶，難得自在！佛法為接引一類好夸大之眾生，亦曾施設立地成佛、即身成佛等假名，而本人則不因此假…"
+    },
+    {
+      "matched": "接引",
+      "standard": "接引",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "接引"
+      ],
+      "sample_context": "…，將不免為虛榮心所驅使，為滿足此虛榮心而去著相貪求，則反增煩悶，難得自在！佛法為接引一類好夸大之眾生，亦曾施設立地成佛、即身成佛等假名，而本人則不因此假名而引起希求…"
+    },
+    {
+      "matched": "信受奉行",
+      "standard": "信受奉行",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "信受奉行"
+      ],
+      "sample_context": "…修行者  前三從消極的反面說，此則從積極的正面言之。本人係以凡夫之人，得聞解佛法信受奉行者。認為五乘共法、三乘共法及大乘不共法，均一貫可達到究竟圓滿之覺海；凡從貫通…"
+    },
+    {
+      "matched": "初住",
+      "standard": "初住",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "初住"
+      ],
+      "sample_context": "…菩薩。願以凡夫之身學菩薩發心修行，即是本人意趣之所在。蓋真發菩提心已，歷十信而登初住，由此經十住、十行、十迴向、修菩薩行，則為集福智資糧之菩薩。今人每多稍具信行，便…"
+    },
+    {
+      "matched": "十迴向",
+      "standard": "十迴向",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "菩薩行",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "十迴向"
+      ],
+      "sample_context": "…發心修行，即是本人意趣之所在。蓋真發菩提心已，歷十信而登初住，由此經十住、十行、十迴向、修菩薩行，則為集福智資糧之菩薩。今人每多稍具信行，便爾心高氣傲，不知尚未做到…"
+    },
+    {
+      "matched": "資糧",
+      "standard": "資糧",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "資糧"
+      ],
+      "sample_context": "…。蓋真發菩提心已，歷十信而登初住，由此經十住、十行、十迴向、修菩薩行，則為集福智資糧之菩薩。今人每多稍具信行，便爾心高氣傲，不知尚未做到發菩提心之少分。照起信論講，…"
+    },
+    {
+      "matched": "起信論",
+      "standard": "起信論",
+      "occurrences": 1,
+      "domain": "义理维度",
+      "subdomain": "義理體系",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "《大乘起信论》作为被诠释对象——太虚的「起信论唯识释」",
+      "source": "dimensional",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "起信論"
+      ],
+      "sample_context": "…集福智資糧之菩薩。今人每多稍具信行，便爾心高氣傲，不知尚未做到發菩提心之少分。照起信論講，入初發心住以前，尚須十千大劫修習六度行，乃成真正初發心菩薩；然後再經三大無…"
+    },
+    {
+      "matched": "大劫",
+      "standard": "大劫",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "大劫"
+      ],
+      "sample_context": "…，便爾心高氣傲，不知尚未做到發菩提心之少分。照起信論講，入初發心住以前，尚須十千大劫修習六度行，乃成真正初發心菩薩；然後再經三大無數劫，方能成就無上遍正覺。故本人為…"
+    },
+    {
+      "matched": "菩提心",
+      "standard": "菩提心",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "菩提心"
+      ],
+      "sample_context": "…真正初發心菩薩；然後再經三大無數劫，方能成就無上遍正覺。故本人為一欲學菩薩發真正菩提心而學修六度行者。此經正是教凡夫人學發菩提心、學修菩薩行者，故深合本人之意趣。 …"
+    },
+    {
+      "matched": "世間",
+      "standard": "世間",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "世間"
+      ],
+      "sample_context": "…深切之意義；而推究佛法真正本旨，凡所證所說，均為大乘佛法。故欲弘揚佛法，應以人類世間為依據而弘揚大乘佛法。又、惟人生最需要大乘佛法，所以應建立人間大乘佛教。此經可為…"
+    },
+    {
+      "matched": "善根",
+      "standard": "善根",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "善根"
+      ],
+      "sample_context": "…而弘揚大乘佛法。又、惟人生最需要大乘佛法，所以應建立人間大乘佛教。此經可為一切具善根之男人、女人修成在家菩薩之規範；如人皆依據此經去發心修行、自利利他，則人間大乘佛…"
+    },
+    {
+      "matched": "自利利他",
+      "standard": "自利利他",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "自他等利"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "自利利他"
+      ],
+      "sample_context": "…教。此經可為一切具善根之男人、女人修成在家菩薩之規範；如人皆依據此經去發心修行、自利利他，則人間大乘佛教即由此建立，而此世界人類即可由此大乘佛教之利益，而得享受和平…"
+    },
+    {
+      "matched": "有為",
+      "standard": "有為",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "有為"
+      ],
+      "sample_context": "…益，而得享受和平安樂之幸福矣。  ### 　　乙、為提倡實踐修行  學佛之人中，有為專造成一宗一派之學者，或為成一博學者，因而努力研求。然此雖亦佛法之所需，而佛法之…"
+    },
+    {
+      "matched": "無上覺",
+      "standard": "無上覺",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無上覺"
+      ],
+      "sample_context": "…學者，或為成一博學者，因而努力研求。然此雖亦佛法之所需，而佛法之本旨，原從修行成無上覺而證明諸法性相，再由開示諸法性相而導他實踐修行，期亦證明諸法性相而成無上正覺，…"
+    },
+    {
+      "matched": "無上正覺",
+      "standard": "無上正覺",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無上正覺"
+      ],
+      "sample_context": "…修行成無上覺而證明諸法性相，再由開示諸法性相而導他實踐修行，期亦證明諸法性相而成無上正覺，故佛所說法重在實行。如由凡夫眾生而發心趣求菩提者，即應從此優婆塞戒經而實踐…"
+    },
+    {
+      "matched": "因緣",
+      "standard": "因緣",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "因緣"
+      ],
+      "sample_context": "…從此優婆塞戒經而實踐修行；如此經集會品，辨菩薩性非本自有，非依佛有，乃由發心修行因緣而有，尤為此經重行之特色。今為提倡發心學佛人實踐修行，故特選此經。  ### 　…"
+    },
+    {
+      "matched": "三學",
+      "standard": "三學",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "三學"
+      ],
+      "sample_context": "…在家人為數甚多；此經係應在家之人而發揮學戒之需要，故最能普及人類。而於戒、定、慧三學，應先修習戒學為基本，所謂由戒生定，依定發慧；戒為定、慧之基，定生後、戒即與之相…"
+    },
+    {
+      "matched": "具足",
+      "standard": "具足",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "具足"
+      ],
+      "sample_context": "…後、戒即與之相應而成為定共戒，慧發後、戒即與慧相應而成為道共戒。戒能生定者，以戒具足後，理得心安，內心即常生歡喜安樂，由安而定，依定體驗觀察而發生智慧，則為無漏聖智…"
+    },
+    {
+      "matched": "智慧",
+      "standard": "智慧",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "智慧"
+      ],
+      "sample_context": "…能生定者，以戒具足後，理得心安，內心即常生歡喜安樂，由安而定，依定體驗觀察而發生智慧，則為無漏聖智。故佛法應從戒學之根本上修起。  ### 　　丁、為從普通之六度修…"
+    },
+    {
+      "matched": "無漏",
+      "standard": "無漏",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無漏"
+      ],
+      "sample_context": "…以戒具足後，理得心安，內心即常生歡喜安樂，由安而定，依定體驗觀察而發生智慧，則為無漏聖智。故佛法應從戒學之根本上修起。  ### 　　丁、為從普通之六度修去  中國…"
+    },
+    {
+      "matched": "一切即一",
+      "standard": "一切即一",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "判教框架",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "一切即一"
+      ],
+      "sample_context": "…修去。並引或者謂不必定有六度，可合為四。或通為一等言而斥破之。蓋此雖為一即一切、一切即一之圓融道理，即一度可攝一切度，一切度可入一度，但根本上必先成立各各波羅密之獨…"
+    },
+    {
+      "matched": "圓融",
+      "standard": "圓融",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "判教框架",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "圓融"
+      ],
+      "sample_context": "…或者謂不必定有六度，可合為四。或通為一等言而斥破之。蓋此雖為一即一切、一切即一之圓融道理，即一度可攝一切度，一切度可入一度，但根本上必先成立各各波羅密之獨殊相，而後…"
+    },
+    {
+      "matched": "一切經",
+      "standard": "一切經",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "經典",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "一切經"
+      ],
+      "sample_context": "…之：  ### 　　甲、曇無讖法師在北涼姑臧譯  此說明本經翻譯之人及時與地者。一切經皆釋尊所說，由弟子結集而成。當時或以文字紀錄，或用口語背誦，皆用印度語文之巴利…"
+    },
+    {
+      "matched": "三藏法師",
+      "standard": "三藏法師",
+      "occurrences": 1,
+      "domain": "制度",
+      "subdomain": "僧制",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "三藏法師"
+      ],
+      "sample_context": "…，讖、即「豐」義，合云法豐。中印度、即中天竺。法豐法師通達經、律、論三藏，故稱為三藏法師。此經為法師到北涼後，在姑臧所譯。法豐法師在中國所譯，除此經外，尚有涅槃、大…"
+    },
+    {
+      "matched": "光明",
+      "standard": "光明",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "光明"
+      ],
+      "sample_context": "…此經為法師到北涼後，在姑臧所譯。法豐法師在中國所譯，除此經外，尚有涅槃、大集、金光明經等，而古譯之菩薩戒本經，亦為法師所譯，故師既為涅槃宗之初祖，亦為中土傳弘菩薩戒…"
+    },
+    {
+      "matched": "玄奘",
+      "standard": "玄奘",
+      "occurrences": 1,
+      "domain": "历史",
+      "subdomain": "人物",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "玄奘"
+      ],
+      "sample_context": "…之初祖。與當時之求那跋摩——功德鎧——法師較略在前也。法豐法師所譯之菩薩戒本，與玄奘法師所譯之瑜伽菩薩戒本，原本無異而譯文稍減。故達磨迦羅——此云法時——為傳聲聞戒…"
+    },
+    {
+      "matched": "達磨",
+      "standard": "達磨",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "達磨"
+      ],
+      "sample_context": "…也。法豐法師所譯之菩薩戒本，與玄奘法師所譯之瑜伽菩薩戒本，原本無異而譯文稍減。故達磨迦羅——此云法時——為傳聲聞戒之首，法豐法師為傳菩薩戒之首。以此大師而譯此經，可…"
+    },
+    {
+      "matched": "僧伽",
+      "standard": "僧伽",
+      "occurrences": 1,
+      "domain": "制度",
+      "subdomain": "僧制",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "僧伽"
+      ],
+      "sample_context": "…## 　　乙、與此經類似各經之辨別  類似此經者，有中阿含經中優婆塞戒經，為瞿曇僧伽提婆所譯；但雖講五戒，而仍為普通所行五戒。又有優婆塞五戒相經，為求那跋摩法師所譯…"
+    },
+    {
+      "matched": "提婆",
+      "standard": "提婆",
+      "occurrences": 1,
+      "domain": "历史",
+      "subdomain": "人物",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "提婆"
+      ],
+      "sample_context": "… 　　乙、與此經類似各經之辨別  類似此經者，有中阿含經中優婆塞戒經，為瞿曇僧伽提婆所譯；但雖講五戒，而仍為普通所行五戒。又有優婆塞五戒相經，為求那跋摩法師所譯，乃…"
+    },
+    {
+      "matched": "威儀",
+      "standard": "威儀",
+      "occurrences": 1,
+      "domain": "制度",
+      "subdomain": "戒律制度",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "威儀"
+      ],
+      "sample_context": "…摩法師所譯，乃佛因淨飯王所問而說，亦為普通之五戒，故皆與此經不同。又有優婆塞五戒威儀經，亦為求那跋摩所譯，其實是瑜伽菩薩戒本之異譯，與此經名稱相近。又有優婆夷淨行法…"
+    },
+    {
+      "matched": "淨行",
+      "standard": "淨行",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "淨行"
+      ],
+      "sample_context": "…戒威儀經，亦為求那跋摩所譯，其實是瑜伽菩薩戒本之異譯，與此經名稱相近。又有優婆夷淨行法門經，亦與此經不同，係佛為最有名之優婆夷鹿母所說。鹿母為大富婦，施構竹林精舍以…"
+    },
+    {
+      "matched": "精舍",
+      "standard": "精舍",
+      "occurrences": 1,
+      "domain": "制度",
+      "subdomain": "寺院管理",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "精舍"
+      ],
+      "sample_context": "…夷淨行法門經，亦與此經不同，係佛為最有名之優婆夷鹿母所說。鹿母為大富婦，施構竹林精舍以供養佛，即於大乘優婆塞戒修行者；優婆夷發心修大乘行，亦可依此經也。又、此經係佛…"
+    },
+    {
+      "matched": "梵網經",
+      "standard": "梵網經",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "經典",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "梵網經"
+      ],
+      "sample_context": "…塞戒本  有單行本題為優婆塞戒經受生品者，即此經之受戒品，內分六重、二十八輕，與梵網經之分為十重、四十八輕，瑜伽菩薩戒本之分為四重、四十三輕者，同可別行為常誦之戒本…"
+    }
+  ],
+  "domain_summary": {
+    "domains": {
+      "教理": 106,
+      "行持": 31,
+      "历史": 11,
+      "制度": 10,
+      "社会文化": 3,
+      "义理维度": 2
+    },
+    "subdomains": {
+      "基礎教義": 71,
+      "修行次第": 21,
+      "大乘通義": 10,
+      "經典": 9,
+      "僧制": 8,
+      "人物": 8,
+      "佛法體系": 5,
+      "菩薩行": 4,
+      "判教框架": 4,
+      "戒律行持": 4,
+      "宗派": 4,
+      "佛教與文化": 2,
+      "義理體系": 2,
+      "佛教事件": 2,
+      "唯識學": 2,
+      "密法": 1,
+      "淨土法門": 1,
+      "佛教與教育": 1,
+      "中國宗派": 1,
+      "如來藏思想": 1,
+      "戒律制度": 1,
+      "寺院管理": 1
+    }
+  }
+}

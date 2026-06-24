@@ -61,12 +61,13 @@
       "file": "TX04n0004.xml",
       "mulu_index": 1,
       "byte_start": 5121,
-      "byte_end": 108178,
-      "byte_size": 103057,
+      "byte_end": 108072,
+      "byte_size": 102951,
       "prev": null,
       "next": "大乘理趣六波羅密多經發菩提心品講錄",
       "prev_index": null,
-      "next_index": 50
+      "next_index": 1,
+      "字数": 18218
     },
     {
       "編號": 2,
@@ -77,12 +78,13 @@
       "file": "TX04n0004.xml",
       "mulu_index": 50,
       "byte_start": 108178,
-      "byte_end": 191938,
-      "byte_size": 83760,
+      "byte_end": 191832,
+      "byte_size": 83654,
       "prev": "大乘理趣六波羅密多經皈依三寶品講錄",
       "next": "大乘伽耶山頂經講記",
-      "prev_index": 1,
-      "next_index": 93
+      "prev_index": 0,
+      "next_index": 2,
+      "字数": 15550
     },
     {
       "編號": 3,
@@ -93,12 +95,13 @@
       "file": "TX04n0004.xml",
       "mulu_index": 93,
       "byte_start": 191938,
-      "byte_end": 312894,
-      "byte_size": 120956,
+      "byte_end": 312788,
+      "byte_size": 120850,
       "prev": "大乘理趣六波羅密多經發菩提心品講錄",
       "next": "出生菩提心經講記",
-      "prev_index": 50,
-      "next_index": 142
+      "prev_index": 1,
+      "next_index": 3,
+      "字数": 22207
     },
     {
       "編號": 4,
@@ -109,12 +112,13 @@
       "file": "TX04n0004.xml",
       "mulu_index": 142,
       "byte_start": 312894,
-      "byte_end": 355729,
-      "byte_size": 42835,
+      "byte_end": 355623,
+      "byte_size": 42729,
       "prev": "大乘伽耶山頂經講記",
       "next": "大乘本生心地觀經講記",
-      "prev_index": 93,
-      "next_index": 164
+      "prev_index": 2,
+      "next_index": 4,
+      "字数": 7496
     },
     {
       "編號": 5,
@@ -125,12 +129,13 @@
       "file": "TX04n0004.xml",
       "mulu_index": 164,
       "byte_start": 355729,
-      "byte_end": 812652,
-      "byte_size": 456923,
+      "byte_end": 810619,
+      "byte_size": 454890,
       "prev": "出生菩提心經講記",
       "next": "發菩提心論開題",
-      "prev_index": 142,
-      "next_index": 499
+      "prev_index": 3,
+      "next_index": 5,
+      "字数": 83073
     },
     {
       "編號": 6,
@@ -141,12 +146,13 @@
       "file": "TX05n0004.xml",
       "mulu_index": 499,
       "byte_start": 480774,
-      "byte_end": 502926,
-      "byte_size": 22152,
+      "byte_end": 502741,
+      "byte_size": 21967,
       "prev": "大乘本生心地觀經講記",
       "next": "佛法之真價",
-      "prev_index": 164,
-      "next_index": 524
+      "prev_index": 4,
+      "next_index": 6,
+      "字数": 3212
     },
     {
       "編號": 7,
@@ -157,12 +163,13 @@
       "file": "TX05n0004.xml",
       "mulu_index": 524,
       "byte_start": 502926,
-      "byte_end": 506058,
-      "byte_size": 3132,
+      "byte_end": 505952,
+      "byte_size": 3026,
       "prev": "發菩提心論開題",
       "next": "大乘佛法的真義",
-      "prev_index": 499,
-      "next_index": 525
+      "prev_index": 5,
+      "next_index": 7,
+      "字数": 510
     },
     {
       "編號": 8,
@@ -173,12 +180,13 @@
       "file": "TX05n0004.xml",
       "mulu_index": 525,
       "byte_start": 506058,
-      "byte_end": 510961,
-      "byte_size": 4903,
+      "byte_end": 510854,
+      "byte_size": 4796,
       "prev": "佛法之真價",
       "next": "行為主義之佛乘",
-      "prev_index": 524,
-      "next_index": 526
+      "prev_index": 6,
+      "next_index": 8,
+      "字数": 938
     },
     {
       "編號": 9,
@@ -189,12 +197,13 @@
       "file": "TX05n0004.xml",
       "mulu_index": 526,
       "byte_start": 510961,
-      "byte_end": 521982,
-      "byte_size": 11021,
+      "byte_end": 521875,
+      "byte_size": 10914,
       "prev": "大乘佛法的真義",
       "next": "佛法之真精神",
-      "prev_index": 525,
-      "next_index": 531
+      "prev_index": 7,
+      "next_index": 9,
+      "字数": 921
     },
     {
       "編號": 10,
@@ -205,12 +214,13 @@
       "file": "TX05n0004.xml",
       "mulu_index": 531,
       "byte_start": 521982,
-      "byte_end": 532049,
-      "byte_size": 10067,
+      "byte_end": 531942,
+      "byte_size": 9960,
       "prev": "行為主義之佛乘",
       "next": "菩薩",
-      "prev_index": 526,
-      "next_index": 532
+      "prev_index": 8,
+      "next_index": 10,
+      "字数": 2114
     },
     {
       "編號": 11,
@@ -221,12 +231,13 @@
       "file": "TX05n0004.xml",
       "mulu_index": 532,
       "byte_start": 532049,
-      "byte_end": 545466,
-      "byte_size": 13417,
+      "byte_end": 545359,
+      "byte_size": 13310,
       "prev": "佛法之真精神",
       "next": "菩薩行與大乘勝解",
-      "prev_index": 531,
-      "next_index": 542
+      "prev_index": 9,
+      "next_index": 11,
+      "字数": 2352
     },
     {
       "編號": 12,
@@ -237,12 +248,13 @@
       "file": "TX05n0004.xml",
       "mulu_index": 542,
       "byte_start": 545466,
-      "byte_end": 557921,
-      "byte_size": 12455,
+      "byte_end": 557814,
+      "byte_size": 12348,
       "prev": "菩薩",
       "next": "從慈悲為本方便為門以明孛經大旨——佛法要旨",
-      "prev_index": 532,
-      "next_index": 543
+      "prev_index": 10,
+      "next_index": 12,
+      "字数": 2589
     },
     {
       "編號": 13,
@@ -253,12 +265,13 @@
       "file": "TX05n0004.xml",
       "mulu_index": 543,
       "byte_start": 557921,
-      "byte_end": 578458,
-      "byte_size": 20537,
+      "byte_end": 578351,
+      "byte_size": 20430,
       "prev": "菩薩行與大乘勝解",
       "next": "成大乘論",
-      "prev_index": 542,
-      "next_index": 549
+      "prev_index": 11,
+      "next_index": 13,
+      "字数": 4179
     },
     {
       "編號": 14,
@@ -269,12 +282,13 @@
       "file": "TX05n0004.xml",
       "mulu_index": 549,
       "byte_start": 578458,
-      "byte_end": 591839,
-      "byte_size": 13381,
+      "byte_end": 591732,
+      "byte_size": 13274,
       "prev": "從慈悲為本方便為門以明孛經大旨——佛法要旨",
       "next": "對辨大乘一乘",
-      "prev_index": 543,
-      "next_index": 555
+      "prev_index": 12,
+      "next_index": 14,
+      "字数": 2524
     },
     {
       "編號": 15,
@@ -285,12 +299,13 @@
       "file": "TX05n0004.xml",
       "mulu_index": 555,
       "byte_start": 591839,
-      "byte_end": 607565,
-      "byte_size": 15726,
+      "byte_end": 607458,
+      "byte_size": 15619,
       "prev": "成大乘論",
       "next": "三唯論圖釋",
-      "prev_index": 549,
-      "next_index": 556
+      "prev_index": 13,
+      "next_index": 15,
+      "字数": 3168
     },
     {
       "編號": 16,
@@ -301,12 +316,13 @@
       "file": "TX05n0004.xml",
       "mulu_index": 556,
       "byte_start": 607565,
-      "byte_end": 617813,
-      "byte_size": 10248,
+      "byte_end": 617706,
+      "byte_size": 10141,
       "prev": "對辨大乘一乘",
       "next": "再論大乘三宗",
-      "prev_index": 555,
-      "next_index": 564
+      "prev_index": 14,
+      "next_index": 16,
+      "字数": 1646
     },
     {
       "編號": 17,
@@ -317,12 +333,13 @@
       "file": "TX05n0004.xml",
       "mulu_index": 564,
       "byte_start": 617813,
-      "byte_end": 622313,
-      "byte_size": 4500,
+      "byte_end": 622206,
+      "byte_size": 4393,
       "prev": "三唯論圖釋",
       "next": "大乘位與大乘各宗",
-      "prev_index": 556,
-      "next_index": 565
+      "prev_index": 15,
+      "next_index": 17,
+      "字数": 798
     },
     {
       "編號": 18,
@@ -333,12 +350,13 @@
       "file": "TX05n0004.xml",
       "mulu_index": 565,
       "byte_start": 622313,
-      "byte_end": 653450,
-      "byte_size": 31137,
+      "byte_end": 653343,
+      "byte_size": 31030,
       "prev": "再論大乘三宗",
       "next": "大乘法之三種異門表",
-      "prev_index": 564,
-      "next_index": 588
+      "prev_index": 16,
+      "next_index": 18,
+      "字数": 5449
     },
     {
       "編號": 19,
@@ -349,12 +367,13 @@
       "file": "TX05n0004.xml",
       "mulu_index": 588,
       "byte_start": 653450,
-      "byte_end": 662590,
-      "byte_size": 9140,
+      "byte_end": 662483,
+      "byte_size": 9033,
       "prev": "大乘位與大乘各宗",
       "next": "大乘宗地引論",
-      "prev_index": 565,
-      "next_index": 589
+      "prev_index": 17,
+      "next_index": 19,
+      "字数": 1619
     },
     {
       "編號": 20,
@@ -365,12 +384,13 @@
       "file": "TX05n0004.xml",
       "mulu_index": 589,
       "byte_start": 662590,
-      "byte_end": 676078,
-      "byte_size": 13488,
+      "byte_end": 675971,
+      "byte_size": 13381,
       "prev": "大乘法之三種異門表",
       "next": "大乘宗地圖釋",
-      "prev_index": 588,
-      "next_index": 614
+      "prev_index": 18,
+      "next_index": 20,
+      "字数": 1581
     },
     {
       "編號": 21,
@@ -381,12 +401,13 @@
       "file": "TX05n0004.xml",
       "mulu_index": 614,
       "byte_start": 676078,
-      "byte_end": 908099,
-      "byte_size": 232021,
+      "byte_end": 901851,
+      "byte_size": 225773,
       "prev": "大乘宗地引論",
       "next": null,
-      "prev_index": 589,
-      "next_index": null
+      "prev_index": 19,
+      "next_index": null,
+      "字数": 40042
     }
   ]
 }

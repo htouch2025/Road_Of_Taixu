@@ -1,0 +1,4958 @@
+{
+  "summary": {
+    "total_candidates": 281,
+    "unique_standards": 281,
+    "single_occurrence_ratio": "142/281",
+    "high_frequency_terms": [
+      "大乘",
+      "小乘",
+      "涅槃",
+      "生死",
+      "菩提心",
+      "菩薩",
+      "出家",
+      "貪愛",
+      "大慈悲"
+    ],
+    "heading_weighted": true,
+    "heading_weight": 3
+  },
+  "article": {
+    "path": "/Users/xin/Documents/Road_Of_Taixu/_research/01_佛法總學/01_概論/03_佛法導言.md",
+    "title": "佛法導言",
+    "cjk_chars": 7033,
+    "recommended_count": "8-12",
+    "编": "第一编 佛法總學",
+    "编_number": "1",
+    "category": "概論"
+  },
+  "vocab_source": "/Users/xin/Documents/Road_Of_Taixu/scripts/keyword-extractor/vocabulary/keyword_vocabulary_v4.json",
+  "match_stats": {
+    "raw_hits": 284,
+    "after_dedup": 281
+  },
+  "candidates": [
+    {
+      "matched": "大乘",
+      "standard": "大乘",
+      "occurrences": 39,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "大乘不共法",
+        "大乘法",
+        "大乘特法"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": true,
+      "_heading_hits": 2,
+      "matched_via": [
+        "大乘",
+        "大乘法"
+      ],
+      "sample_context": "…一句，欲名何為佛法？然以因緣方便，佛法隨宜如理而說，轉緣多勢，開合無定，今略說為大乘、小乘。有法能運眾生，度脫無常苦空不淨，得至常樂真淨，故名曰乘。  ## 二　小…"
+    },
+    {
+      "matched": "小乘",
+      "standard": "小乘",
+      "occurrences": 17,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "二乘",
+        "小乘法"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": true,
+      "_heading_hits": 2,
+      "matched_via": [
+        "小乘",
+        "小乘法"
+      ],
+      "sample_context": "…欲名何為佛法？然以因緣方便，佛法隨宜如理而說，轉緣多勢，開合無定，今略說為大乘、小乘。有法能運眾生，度脫無常苦空不淨，得至常樂真淨，故名曰乘。  ## 二　小乘  …"
+    },
+    {
+      "matched": "涅槃",
+      "standard": "涅槃",
+      "occurrences": 20,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "滅度"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "涅槃"
+      ],
+      "sample_context": "…苦邊際，更無後有。流轉永寂，成辟支佛及阿羅漢。尚餘先業所遺任運滅身苦依，謂有餘依涅槃；遺業身捨泯滅無餘，謂無餘依涅槃：涅槃即究竟也。  問曰：此宗佛法何義而說？答曰…"
+    },
+    {
+      "matched": "生死",
+      "standard": "生死",
+      "occurrences": 19,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "生死"
+      ],
+      "sample_context": "…不淨，得至常樂真淨，故名曰乘。  ## 二　小乘  問曰：其小乘法如何？答曰：了生死為因，離貪愛為根本，滅盡為究竟。  云何了生死為因？謂有生故則有老病死滅，有老死…"
+    },
+    {
+      "matched": "菩提心",
+      "standard": "菩提心",
+      "occurrences": 12,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "菩提心"
+      ],
+      "sample_context": "…甚矣！——是為略說小乘要義。  ## 三　大乘  問曰：其大乘法要義如何？答曰：菩提心為因，大慈悲為根本，方便為究竟。斯義深博微奧，蓋重言之，言之不密，翻作世論流布…"
+    },
+    {
+      "matched": "菩薩",
+      "standard": "菩薩",
+      "occurrences": 12,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "菩薩"
+      ],
+      "sample_context": "…入究竟。其次、究中百者或僅成天臺通教三乘人；究唯識者或僅成天臺別教信仰人而同藏教菩薩，此則假名菩薩而未入大乘者，實乃信仰佛法之人天乘。蓋言非空遍計所執性得妙觀察真智…"
+    },
+    {
+      "matched": "出家",
+      "standard": "出家",
+      "occurrences": 11,
+      "domain": "制度",
+      "subdomain": "僧制",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "出家"
+      ],
+      "sample_context": "…所同欲，所欲遍一切境遍一切事，無間自身他身，有情無情，故為精勝。為離此二欲貪，故出家持苾芻戒律，因戒生定則勝劣欲貪皆離矣。了生死苦，情我已捨，但因無始積遺業習，其我…"
+    },
+    {
+      "matched": "貪愛",
+      "standard": "貪愛",
+      "occurrences": 10,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "貪愛"
+      ],
+      "sample_context": "…樂真淨，故名曰乘。  ## 二　小乘  問曰：其小乘法如何？答曰：了生死為因，離貪愛為根本，滅盡為究竟。  云何了生死為因？謂有生故則有老病死滅，有老死故則有憂悲苦…"
+    },
+    {
+      "matched": "大慈悲",
+      "standard": "大慈悲",
+      "occurrences": 10,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "大悲心",
+        "平等主義"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "大慈悲"
+      ],
+      "sample_context": "…為略說小乘要義。  ## 三　大乘  問曰：其大乘法要義如何？答曰：菩提心為因，大慈悲為根本，方便為究竟。斯義深博微奧，蓋重言之，言之不密，翻作世論流布，徒益大迷無…"
+    },
+    {
+      "matched": "眾生",
+      "standard": "眾生",
+      "occurrences": 8,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "眾生"
+      ],
+      "sample_context": "…然以因緣方便，佛法隨宜如理而說，轉緣多勢，開合無定，今略說為大乘、小乘。有法能運眾生，度脫無常苦空不淨，得至常樂真淨，故名曰乘。  ## 二　小乘  問曰：其小乘法…"
+    },
+    {
+      "matched": "人天",
+      "standard": "人天",
+      "occurrences": 7,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "人天"
+      ],
+      "sample_context": "…覺。雖獲解脫煩惱生死，尚無大智大悲大行，故對大乘說為小乘。然小乘純為出世法，全與人天俗教不同。未出家持苾芻戒者，可預聖流，不獲現世盡生死苦成阿羅漢，故必出家乃得修入…"
+    },
+    {
+      "matched": "清淨",
+      "standard": "清淨",
+      "occurrences": 7,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "清淨"
+      ],
+      "sample_context": "…而能了諸行，猶如幻事等，雖有而無性』，故非世俗所云平等博愛可相比傅。此乃無量無邊清淨功德總持法身，萬福之源萬善之歸，故曰根本。  方便者，謂種種方便行也。廣為八萬四…"
+    },
+    {
+      "matched": "宗門",
+      "standard": "宗門",
+      "occurrences": 7,
+      "domain": "教理",
+      "subdomain": "宗派",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "宗門"
+      ],
+      "sample_context": "…天戒善，不能成佛菩薩。故求入大乘者，必先直抉根本無明而妙悟真心也。  問曰：此於宗門如何？答云：盡乎宗門所云參學。抑上論教法之安立相如是耳，若自發心求悟入大乘者，必…"
+    },
+    {
+      "matched": "無常",
+      "standard": "無常",
+      "occurrences": 6,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無常"
+      ],
+      "sample_context": "…便，佛法隨宜如理而說，轉緣多勢，開合無定，今略說為大乘、小乘。有法能運眾生，度脫無常苦空不淨，得至常樂真淨，故名曰乘。  ## 二　小乘  問曰：其小乘法如何？答曰…"
+    },
+    {
+      "matched": "我所",
+      "standard": "我所",
+      "occurrences": 6,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "我所"
+      ],
+      "sample_context": "…之，依愛我貪生之情為標準，遂於前境而有順違，故戀愛希貪憎惡怨恨皆本乎貪愛。而我與我所之界無定量，我身、我家、我國、我類乃至我世界、我天神。常情以身為我，身外則為我所…"
+    },
+    {
+      "matched": "無漏",
+      "standard": "無漏",
+      "occurrences": 6,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無漏"
+      ],
+      "sample_context": "…禪定力雖離欲貪，禪定力衰還墮欲塵。故須依定精進修習無常苦空無我不淨慧觀，由定開發無漏真慧，從無漏慧具修戒定慧法滿足，則情業全消而貪愛永離矣。  云何滅盡為究竟？情愛…"
+    },
+    {
+      "matched": "沙門",
+      "standard": "沙門",
+      "occurrences": 6,
+      "domain": "制度",
+      "subdomain": "僧制",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "沙門"
+      ],
+      "sample_context": "…類犬也！  求大乘道者，本不限在家出家。然其最初求悟入時事同，既悟入則出家者當修沙門行，具無漏戒定慧功德；在家者隨其出處之地位，修己利人，行菩薩道。要之，在家當自行…"
+    },
+    {
+      "matched": "苾芻",
+      "standard": "苾芻",
+      "occurrences": 5,
+      "domain": "制度",
+      "subdomain": "僧制",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "苾芻"
+      ],
+      "sample_context": "…，所欲遍一切境遍一切事，無間自身他身，有情無情，故為精勝。為離此二欲貪，故出家持苾芻戒律，因戒生定則勝劣欲貪皆離矣。了生死苦，情我已捨，但因無始積遺業習，其我愛恆起…"
+    },
+    {
+      "matched": "空無",
+      "standard": "空無",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "中觀學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "空無"
+      ],
+      "sample_context": "…盡。故色界無色界諸天，由禪定力雖離欲貪，禪定力衰還墮欲塵。故須依定精進修習無常苦空無我不淨慧觀，由定開發無漏真慧，從無漏慧具修戒定慧法滿足，則情業全消而貪愛永離矣。…"
+    },
+    {
+      "matched": "解脫",
+      "standard": "解脫",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "解脫"
+      ],
+      "sample_context": "…法滿足，則情業全消而貪愛永離矣。  云何滅盡為究竟？情愛欲貪離盡，妙應真常，知見解脫，我生已盡，出苦邊際，更無後有。流轉永寂，成辟支佛及阿羅漢。尚餘先業所遺任運滅身…"
+    },
+    {
+      "matched": "阿羅漢",
+      "standard": "阿羅漢",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "阿羅漢"
+      ],
+      "sample_context": "…欲貪離盡，妙應真常，知見解脫，我生已盡，出苦邊際，更無後有。流轉永寂，成辟支佛及阿羅漢。尚餘先業所遺任運滅身苦依，謂有餘依涅槃；遺業身捨泯滅無餘，謂無餘依涅槃：涅槃…"
+    },
+    {
+      "matched": "百論",
+      "standard": "百論",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "論典",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "百論"
+      ],
+      "sample_context": "…亦相融無間。震旦所宏大乘教宗，就其特相之有力者分別言之，當研究般若宗（即三論宗）百論中論悟菩提心：蓋百論蕩一切邪見情見，中論盡空一切佛見（亦即我見）法見，杜絕妄想無…"
+    },
+    {
+      "matched": "中論",
+      "standard": "中論",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "論典",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "中論"
+      ],
+      "sample_context": "…融無間。震旦所宏大乘教宗，就其特相之有力者分別言之，當研究般若宗（即三論宗）百論中論悟菩提心：蓋百論蕩一切邪見情見，中論盡空一切佛見（亦即我見）法見，杜絕妄想無出頭…"
+    },
+    {
+      "matched": "因緣",
+      "standard": "因緣",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "因緣"
+      ],
+      "sample_context": "…  問曰：佛法要義如何？答曰：佛法二字亦不可得，竟無一義一句，欲名何為佛法？然以因緣方便，佛法隨宜如理而說，轉緣多勢，開合無定，今略說為大乘、小乘。有法能運眾生，度…"
+    },
+    {
+      "matched": "不淨",
+      "standard": "不淨",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "不淨"
+      ],
+      "sample_context": "…隨宜如理而說，轉緣多勢，開合無定，今略說為大乘、小乘。有法能運眾生，度脫無常苦空不淨，得至常樂真淨，故名曰乘。  ## 二　小乘  問曰：其小乘法如何？答曰：了生死…"
+    },
+    {
+      "matched": "無住",
+      "standard": "無住",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "中觀學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無住"
+      ],
+      "sample_context": "…類人類畜類鬼類、若罪業福業無動業、若欲界梵界無形類、若此處彼處無量處、若前際後際無住際：舉要言之，一切皆是生住異滅——有為法。有為法故無常，無常故危迫不安穩，不安穩…"
+    },
+    {
+      "matched": "流轉",
+      "standard": "流轉",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "流轉"
+      ],
+      "sample_context": "…是生住異滅——有為法。有為法故無常，無常故危迫不安穩，不安穩故是苦，苦故繫縛牽引流轉不自在，不自在故無我，無我故空，空故無可取著為真淨者。既如是如實了知已，在此生死…"
+    },
+    {
+      "matched": "無我",
+      "standard": "無我",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無我"
+      ],
+      "sample_context": "…。有為法故無常，無常故危迫不安穩，不安穩故是苦，苦故繫縛牽引流轉不自在，不自在故無我，無我故空，空故無可取著為真淨者。既如是如實了知已，在此生死純大苦海，如香潔衣忽…"
+    },
+    {
+      "matched": "無明",
+      "standard": "無明",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無明"
+      ],
+      "sample_context": "…以馳求營為執取染著者，則本乎情愛欲貪（亦曰我愛塵貪）也。愛根乎我，不明本無我性（無明）；緣是盲然心動（無明緣行）；緣心動故虛妄分別（行緣識也）；緣虛妄分別故現五蘊，…"
+    },
+    {
+      "matched": "我我所",
+      "standard": "我我所",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "我我所"
+      ],
+      "sample_context": "…緣是盲然心動（無明緣行）；緣心動故虛妄分別（行緣識也）；緣虛妄分別故現五蘊，取執我我所（識緣名色）；緣於五蘊執取我我所故，則有能見所見乃至能知所知（名色緣六入也）；…"
+    },
+    {
+      "matched": "五欲",
+      "standard": "五欲",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "五欲"
+      ],
+      "sample_context": "…。  今別釋之，愛謂內愛情我，貪謂外貪欲塵。欲塵者，生情所欲塵境也，而有精粗二種五欲。其粗五欲，則財產、男女、名譽、衣食、睡眠也。具此五欲者，皆唯人間之事，且所欲者…"
+    },
+    {
+      "matched": "精進",
+      "standard": "精進",
+      "occurrences": 4,
+      "domain": "行持",
+      "subdomain": "菩薩行",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "精進"
+      ],
+      "sample_context": "…由強制，終難淨盡。故色界無色界諸天，由禪定力雖離欲貪，禪定力衰還墮欲塵。故須依定精進修習無常苦空無我不淨慧觀，由定開發無漏真慧，從無漏慧具修戒定慧法滿足，則情業全消…"
+    },
+    {
+      "matched": "有餘",
+      "standard": "有餘",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "有餘"
+      ],
+      "sample_context": "…盡，出苦邊際，更無後有。流轉永寂，成辟支佛及阿羅漢。尚餘先業所遺任運滅身苦依，謂有餘依涅槃；遺業身捨泯滅無餘，謂無餘依涅槃：涅槃即究竟也。  問曰：此宗佛法何義而說…"
+    },
+    {
+      "matched": "無餘",
+      "standard": "無餘",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無餘"
+      ],
+      "sample_context": "…流轉永寂，成辟支佛及阿羅漢。尚餘先業所遺任運滅身苦依，謂有餘依涅槃；遺業身捨泯滅無餘，謂無餘依涅槃：涅槃即究竟也。  問曰：此宗佛法何義而說？答曰：此所宗者即四諦也…"
+    },
+    {
+      "matched": "聲聞",
+      "standard": "聲聞",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "聲聞"
+      ],
+      "sample_context": "…因緣流轉即集苦諦，十二因緣還滅即道滅諦。小乘謂獨覺、聲聞乘：聞佛教聲而悟修者謂之聲聞，獨自覺悟而修證者謂之獨覺。雖獲解脫煩惱生死，尚無大智大悲大行，故對大乘說為小乘…"
+    },
+    {
+      "matched": "煩惱",
+      "standard": "煩惱",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "煩惱"
+      ],
+      "sample_context": "…小乘謂獨覺、聲聞乘：聞佛教聲而悟修者謂之聲聞，獨自覺悟而修證者謂之獨覺。雖獲解脫煩惱生死，尚無大智大悲大行，故對大乘說為小乘。然小乘純為出世法，全與人天俗教不同。未…"
+    },
+    {
+      "matched": "大悲",
+      "standard": "大悲",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "大悲"
+      ],
+      "sample_context": "…：聞佛教聲而悟修者謂之聲聞，獨自覺悟而修證者謂之獨覺。雖獲解脫煩惱生死，尚無大智大悲大行，故對大乘說為小乘。然小乘純為出世法，全與人天俗教不同。未出家持苾芻戒者，可…"
+    },
+    {
+      "matched": "善根",
+      "standard": "善根",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "善根"
+      ],
+      "sample_context": "…現世盡生死苦成阿羅漢，故必出家乃得修入，其要備於佛遺教經。而小乘教對於未具出生死善根者，亦以人天善法漸馴化之，一令依福捨罪不墮惡趣，二令回心向佛遠作道種。若居家而求…"
+    },
+    {
+      "matched": "世俗",
+      "standard": "世俗",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "世俗"
+      ],
+      "sample_context": "…馴化之，一令依福捨罪不墮惡趣，二令回心向佛遠作道種。若居家而求證涅槃，出家而反務世俗，顛倒甚矣！——是為略說小乘要義。  ## 三　大乘  問曰：其大乘法要義如何？…"
+    },
+    {
+      "matched": "菩提",
+      "standard": "菩提",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "無上菩提"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "菩提"
+      ],
+      "sample_context": "…，徒益大迷無當正悟。今且令略知名義耳，聞者當生希有之心，敬之念之！審之慎之！  菩提者覺也，菩提心者覺心也。或曰真覺靈覺自覺聖智。或曰真心本心堅實心體，種種名號如標…"
+    },
+    {
+      "matched": "真心",
+      "standard": "真心",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "如來藏思想",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "真心"
+      ],
+      "sample_context": "…，敬之念之！審之慎之！  菩提者覺也，菩提心者覺心也。或曰真覺靈覺自覺聖智。或曰真心本心堅實心體，種種名號如標指月，唯可神悟難以言求！然「大涅槃」既正翻「圓寂」，則…"
+    },
+    {
+      "matched": "如來",
+      "standard": "如來",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "如來"
+      ],
+      "sample_context": "…平等大慈同體大悲。蓋親證本不生大菩提心，現見一切有情圓同真心，非自非他不如不異，如來恆在眾生心中轉正覺輪，眾生恆在如來心中造雜業因。是以等諸佛之慈力，體群情之悲仰，…"
+    },
+    {
+      "matched": "如幻",
+      "standard": "如幻",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "如幻"
+      ],
+      "sample_context": "…，體群情之悲仰，普救含靈如人護目，咸適幻緣如水呈月。『非不見真如，而能了諸行，猶如幻事等，雖有而無性』，故非世俗所云平等博愛可相比傅。此乃無量無邊清淨功德總持法身，…"
+    },
+    {
+      "matched": "唯識",
+      "standard": "唯識",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "大乘有宗",
+      "is_standard": true,
+      "variants_of_standard": [
+        "法相唯識",
+        "唯識現",
+        "諸法唯識現",
+        "一切法唯識現"
+      ],
+      "vocab_note": "",
+      "source": "batch_01",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "唯識"
+      ],
+      "sample_context": "…，般若生一切法不生矣。當研究瑜伽宗（即唯識宗）成唯識論發大慈悲：此明三界唯心萬法唯識之理最為深顯，了阿賴耶識與一切有情非一非異，緣起如幻無心外法，則普度眾生即自淨其…"
+    },
+    {
+      "matched": "假名",
+      "standard": "假名",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "假名"
+      ],
+      "sample_context": "…次、究中百者或僅成天臺通教三乘人；究唯識者或僅成天臺別教信仰人而同藏教菩薩，此則假名菩薩而未入大乘者，實乃信仰佛法之人天乘。蓋言非空遍計所執性得妙觀察真智，不見依他…"
+    },
+    {
+      "matched": "慈悲",
+      "standard": "慈悲",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "慈悲"
+      ],
+      "sample_context": "…一經一論以為證：若大佛頂首楞嚴經，前之三卷，悟入菩提心也；至第六卷選圓通竟，開發慈悲也；下則具足種種方便行也（亦可第四卷前半為開發大悲，其下皆是方便究竟）。若大乘起…"
+    },
+    {
+      "matched": "在家",
+      "standard": "在家",
+      "occurrences": 4,
+      "domain": "制度",
+      "subdomain": "僧制",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "在家"
+      ],
+      "sample_context": "…學教念佛隨順信行遠矣！蓋畫鵠不成尚如騖，畫虎不成反類犬也！  求大乘道者，本不限在家出家。然其最初求悟入時事同，既悟入則出家者當修沙門行，具無漏戒定慧功德；在家者隨…"
+    },
+    {
+      "matched": "十善",
+      "standard": "十善",
+      "occurrences": 4,
+      "domain": "行持",
+      "subdomain": "戒律行持",
+      "is_standard": true,
+      "variants_of_standard": [
+        "十善業"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "十善"
+      ],
+      "sample_context": "…漏戒定慧功德；在家者隨其出處之地位，修己利人，行菩薩道。要之，在家當自行教人興崇十善福，出家當自行教人修證二空慧，壹以真覺大悲為本，則此皆是大乘之方便行門也。——是…"
+    },
+    {
+      "matched": "利生",
+      "standard": "利生",
+      "occurrences": 4,
+      "domain": "行持",
+      "subdomain": "菩薩行",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "利生"
+      ],
+      "sample_context": "… 四　小乘與大乘之關係  問曰：然則小乘亦是大乘方便行耶？答曰：如是！人乘天乘為利生法，聲聞乘獨覺乘為出世法；用利生法依福善捨罪惡，用出世法依空慧捨福善，一切捨則一…"
+    },
+    {
+      "matched": "無生",
+      "standard": "無生",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無生"
+      ],
+      "sample_context": "…，如慈母之愛子，以子由我勞苦而得，復有期望孝養我念，亦因我愛而起。故非離貪愛而證無生我，不成平等大慈同體大悲；而滅盡生死煩惱，則正令離繫自由得起無邊方便解脫行也。唯…"
+    },
+    {
+      "matched": "十戒",
+      "standard": "十戒",
+      "occurrences": 4,
+      "domain": "行持",
+      "subdomain": "戒律行持",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "十戒"
+      ],
+      "sample_context": "…蓋其上者為餘宗之所無，而其下者統他教之所有，則人天乘十善法也。十善兼乎戒定，析為十戒十定，一一戒一一定各有四種通德。戒四通德，十戒為本，則戒殘殺、戒偷盜、戒淫亂、戒…"
+    },
+    {
+      "matched": "中國佛教之整建",
+      "standard": "佛教改革",
+      "occurrences": 1,
+      "domain": "历史",
+      "subdomain": "佛教事件",
+      "is_standard": false,
+      "variants_of_standard": [
+        "中國佛教之整建"
+      ],
+      "vocab_note": "借鉴基督教的组织方式、传教方法引导佛教革新发展",
+      "source": "batch_01,dimensional,v3_draft",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "中國佛教之整建"
+      ],
+      "sample_context": "…忍，現大士莊嚴相好殊勝尊特神通身，開化甯不尤廣？在行者宜自知時耳！  ## 七　中國佛教之整建與發揚  處今中華民國佛教四眾信人，則當請政府廢寺廟管理條例，參酌佛教…"
+    },
+    {
+      "matched": "信心",
+      "standard": "信心",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "信心"
+      ],
+      "sample_context": "…）  ## 一　緒言  皈佛！皈佛法！皈佛法僧！  論曰：今當略說佛法要義，引發信心，導歸覺海。  問曰：佛法要義如何？答曰：佛法二字亦不可得，竟無一義一句，欲名何…"
+    },
+    {
+      "matched": "不可得",
+      "standard": "不可得",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "不可得"
+      ],
+      "sample_context": "…：今當略說佛法要義，引發信心，導歸覺海。  問曰：佛法要義如何？答曰：佛法二字亦不可得，竟無一義一句，欲名何為佛法？然以因緣方便，佛法隨宜如理而說，轉緣多勢，開合無…"
+    },
+    {
+      "matched": "真淨",
+      "standard": "真淨",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "真淨"
+      ],
+      "sample_context": "…轉緣多勢，開合無定，今略說為大乘、小乘。有法能運眾生，度脫無常苦空不淨，得至常樂真淨，故名曰乘。  ## 二　小乘  問曰：其小乘法如何？答曰：了生死為因，離貪愛為…"
+    },
+    {
+      "matched": "和合",
+      "standard": "和合",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "和合"
+      ],
+      "sample_context": "…、若諸無命、若諸有情、若諸無情、若諸地水氣質、若諸風水電力、若諸各別離相、若諸眾和合事、若諸色聚受聚想聚行聚識聚、若諸天類神類人類畜類鬼類、若罪業福業無動業、若欲界…"
+    },
+    {
+      "matched": "自在",
+      "standard": "自在",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "自在"
+      ],
+      "sample_context": "…異滅——有為法。有為法故無常，無常故危迫不安穩，不安穩故是苦，苦故繫縛牽引流轉不自在，不自在故無我，無我故空，空故無可取著為真淨者。既如是如實了知已，在此生死純大苦…"
+    },
+    {
+      "matched": "六入",
+      "standard": "六入",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "六入"
+      ],
+      "sample_context": "…，取執我我所（識緣名色）；緣於五蘊執取我我所故，則有能見所見乃至能知所知（名色緣六入也）；緣能所知見故，有根塵識三和合轉（六入緣觸）；緣三和合則有順違而生苦樂憂喜（…"
+    },
+    {
+      "matched": "緣起",
+      "standard": "緣起",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "緣生"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "緣起"
+      ],
+      "sample_context": "…則嗔也。然癡情存乎愛，癡是情識，故曰情愛。嗔則因乎違欲貪起，恆欲貪所樂所喜事，反緣起所憂所苦事而來逼迫，或障礙所欲貪之事令不得究竟，或破壞所欲貪之事令歸失敗，遂有憎…"
+    },
+    {
+      "matched": "人間",
+      "standard": "人間",
+      "occurrences": 3,
+      "domain": "社会文化",
+      "subdomain": "佛教與文化",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "人間"
+      ],
+      "sample_context": "…，而有精粗二種五欲。其粗五欲，則財產、男女、名譽、衣食、睡眠也。具此五欲者，皆唯人間之事，且所欲者皆在身外，故為粗劣。其精五欲，則美色、美音、美香、美味、美觸也。此…"
+    },
+    {
+      "matched": "有情",
+      "standard": "有情",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "有情"
+      ],
+      "sample_context": "…、美香、美味、美觸也。此為欲界眾生之所同欲，所欲遍一切境遍一切事，無間自身他身，有情無情，故為精勝。為離此二欲貪，故出家持苾芻戒律，因戒生定則勝劣欲貪皆離矣。了生死…"
+    },
+    {
+      "matched": "自覺",
+      "standard": "自覺",
+      "occurrences": 3,
+      "domain": "义理维度",
+      "subdomain": "義理體系",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "太虚佛教心理学的核心概念：「自觉」——认识能力、认识主体、认识对象的三位一体",
+      "source": "dimensional",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "自覺"
+      ],
+      "sample_context": "…律，因戒生定則勝劣欲貪皆離矣。了生死苦，情我已捨，但因無始積遺業習，其我愛恆起不自覺；情愛猶在，則離欲貪亦由強制，終難淨盡。故色界無色界諸天，由禪定力雖離欲貪，禪定…"
+    },
+    {
+      "matched": "戒定慧",
+      "standard": "戒定慧",
+      "occurrences": 3,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "戒定慧"
+      ],
+      "sample_context": "…衰還墮欲塵。故須依定精進修習無常苦空無我不淨慧觀，由定開發無漏真慧，從無漏慧具修戒定慧法滿足，則情業全消而貪愛永離矣。  云何滅盡為究竟？情愛欲貪離盡，妙應真常，知…"
+    },
+    {
+      "matched": "苦集",
+      "standard": "苦集",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "苦集"
+      ],
+      "sample_context": "…究竟也。  問曰：此宗佛法何義而說？答曰：此所宗者即四諦也。生死是苦聖諦，貪愛是苦集聖諦，滅盡是苦集滅聖諦，了生死離貪愛是苦集滅道聖諦。道諦即三十七道品：了生死苦即…"
+    },
+    {
+      "matched": "十二因緣",
+      "standard": "十二因緣",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "十二有支",
+        "十二緣起法"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "十二因緣"
+      ],
+      "sample_context": "…由定開發無漏真慧，即五根、五力、七覺支；從無漏慧具修戒定慧法滿足，即八正道。亦同十二因緣有支，十二因緣流轉即集苦諦，十二因緣還滅即道滅諦。小乘謂獨覺、聲聞乘：聞佛教…"
+    },
+    {
+      "matched": "五乘",
+      "standard": "五乘",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "判教框架",
+      "is_standard": true,
+      "variants_of_standard": [
+        "聲聞乘"
+      ],
+      "vocab_note": "太虚基本判教框架",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "五乘",
+        "聲聞乘"
+      ],
+      "sample_context": "…正道。亦同十二因緣有支，十二因緣流轉即集苦諦，十二因緣還滅即道滅諦。小乘謂獨覺、聲聞乘：聞佛教聲而悟修者謂之聲聞，獨自覺悟而修證者謂之獨覺。雖獲解脫煩惱生死，尚無大…"
+    },
+    {
+      "matched": "修證",
+      "standard": "修證",
+      "occurrences": 3,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "修證"
+      ],
+      "sample_context": "…，十二因緣還滅即道滅諦。小乘謂獨覺、聲聞乘：聞佛教聲而悟修者謂之聲聞，獨自覺悟而修證者謂之獨覺。雖獲解脫煩惱生死，尚無大智大悲大行，故對大乘說為小乘。然小乘純為出世…"
+    },
+    {
+      "matched": "世法",
+      "standard": "世法",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "世法"
+      ],
+      "sample_context": "…證者謂之獨覺。雖獲解脫煩惱生死，尚無大智大悲大行，故對大乘說為小乘。然小乘純為出世法，全與人天俗教不同。未出家持苾芻戒者，可預聖流，不獲現世盡生死苦成阿羅漢，故必出…"
+    },
+    {
+      "matched": "世間",
+      "standard": "世間",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "世間"
+      ],
+      "sample_context": "…覺心也。圓常而本成實，覺如而絕依待，無可擬議，無可安立，無可趨向，無可修證，非諸世間名字語言思量分別所能得到，一切世間名字語言思量分別靡不寂滅。非獲菩提心者不入大乘…"
+    },
+    {
+      "matched": "同體大悲",
+      "standard": "同體大悲",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "菩萨行",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "眾生與我同體之大悲心",
+      "source": "phase2_fulltext",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "同體大悲"
+      ],
+      "sample_context": "…量分別靡不寂滅。非獲菩提心者不入大乘，故曰菩提心為因。  大慈悲者，所謂平等大慈同體大悲。蓋親證本不生大菩提心，現見一切有情圓同真心，非自非他不如不異，如來恆在眾生…"
+    },
+    {
+      "matched": "真如",
+      "standard": "真如",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "一心真如",
+        "真如理"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "真如"
+      ],
+      "sample_context": "…因。是以等諸佛之慈力，體群情之悲仰，普救含靈如人護目，咸適幻緣如水呈月。『非不見真如，而能了諸行，猶如幻事等，雖有而無性』，故非世俗所云平等博愛可相比傅。此乃無量無…"
+    },
+    {
+      "matched": "無邊",
+      "standard": "無邊",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無邊"
+      ],
+      "sample_context": "…如，而能了諸行，猶如幻事等，雖有而無性』，故非世俗所云平等博愛可相比傅。此乃無量無邊清淨功德總持法身，萬福之源萬善之歸，故曰根本。  方便者，謂種種方便行也。廣為八…"
+    },
+    {
+      "matched": "三乘",
+      "standard": "三乘",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "出世三乘",
+        "聲聞緣覺菩薩"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "三乘"
+      ],
+      "sample_context": "…焉分別而非分別，獨坐孤峰赫聲容之充遍，泊焉無為而無不為；三身千身億身無量身，一乘三乘五乘無量乘；我為法王，法自在轉；事事圓成，頭頭解脫：蓋非世俗所云自由快樂可得附會…"
+    },
+    {
+      "matched": "般若",
+      "standard": "般若",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "般若中論"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "般若"
+      ],
+      "sample_context": "…義教相互有偏顯，然亦相融無間。震旦所宏大乘教宗，就其特相之有力者分別言之，當研究般若宗（即三論宗）百論中論悟菩提心：蓋百論蕩一切邪見情見，中論盡空一切佛見（亦即我見…"
+    },
+    {
+      "matched": "不生",
+      "standard": "不生",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "不生"
+      ],
+      "sample_context": "…情見，中論盡空一切佛見（亦即我見）法見，杜絕妄想無出頭路；於此透徹得過，則一切法不生般若生，般若生一切法不生矣。當研究瑜伽宗（即唯識宗）成唯識論發大慈悲：此明三界唯…"
+    },
+    {
+      "matched": "具足",
+      "standard": "具足",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "具足"
+      ],
+      "sample_context": "…諸功德相，起信論謂「唯依淨熏業識說有如來藏諸功德相」也。當依天臺華嚴淨土真言律宗具足修方便行。凡是若非已悟入大乘者，多倒執不可得之妙法，迴為取相之雜毒，但成天台藏教…"
+    },
+    {
+      "matched": "成佛",
+      "standard": "成佛",
+      "occurrences": 3,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "成佛"
+      ],
+      "sample_context": "…便行也，誠以不如是者，仰承方便行之流，只成假名菩薩、獨覺、聲聞、人、天戒善，不能成佛菩薩。故求入大乘者，必先直抉根本無明而妙悟真心也。  問曰：此於宗門如何？答云：…"
+    },
+    {
+      "matched": "修學",
+      "standard": "修學",
+      "occurrences": 3,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "修學"
+      ],
+      "sample_context": "…所謂知有及悟向上，唯是參悟本心，悟入與不悟入無二，一觸悟入或千生萬生不悟入，絕無修學位次可言，以一向佛如眾生如故也。然依五位三關言之，其初悟入即是徹初關及正中偏位，…"
+    },
+    {
+      "matched": "大劫",
+      "standard": "大劫",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "大劫"
+      ],
+      "sample_context": "…針對為入大乘而設：生不了其所始，死不了其所終（此非得夙命智可了，若阿羅漢能知八萬大劫死此生彼之事，然八萬大劫初生何所始，八萬大劫後，又死何所終，仍不能了），非最切之…"
+    },
+    {
+      "matched": "正信",
+      "standard": "正信",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "正信"
+      ],
+      "sample_context": "…濟苦等），三、修禮義行（改良風俗，整齊文化），四、修喜捨心，五、修慈悲心，六、修正信心（於常常時，於恆恆時，誠敬圓滿成就聖尊，誠敬真實深妙正法，誠敬律儀和悅淨眾）。…"
+    },
+    {
+      "matched": "法要",
+      "standard": "法要",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "法要"
+      ],
+      "sample_context": "…春，作於普陀）  ## 一　緒言  皈佛！皈佛法！皈佛法僧！  論曰：今當略說佛法要義，引發信心，導歸覺海。  問曰：佛法要義如何？答曰：佛法二字亦不可得，竟無一義…"
+    },
+    {
+      "matched": "諸有",
+      "standard": "諸有",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "諸有"
+      ],
+      "sample_context": "…有老病死滅，有老死故則有憂悲苦惱。遍觀若一一身、若一一塵、若內諸物、若外諸物、若諸有命、若諸無命、若諸有情、若諸無情、若諸地水氣質、若諸風水電力、若諸各別離相、若諸…"
+    },
+    {
+      "matched": "罪業",
+      "standard": "罪業",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "罪業"
+      ],
+      "sample_context": "…諸各別離相、若諸眾和合事、若諸色聚受聚想聚行聚識聚、若諸天類神類人類畜類鬼類、若罪業福業無動業、若欲界梵界無形類、若此處彼處無量處、若前際後際無住際：舉要言之，一切…"
+    },
+    {
+      "matched": "欲界",
+      "standard": "欲界",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "欲界"
+      ],
+      "sample_context": "…和合事、若諸色聚受聚想聚行聚識聚、若諸天類神類人類畜類鬼類、若罪業福業無動業、若欲界梵界無形類、若此處彼處無量處、若前際後際無住際：舉要言之，一切皆是生住異滅——有…"
+    },
+    {
+      "matched": "有為",
+      "standard": "有為",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "有為"
+      ],
+      "sample_context": "…界梵界無形類、若此處彼處無量處、若前際後際無住際：舉要言之，一切皆是生住異滅——有為法。有為法故無常，無常故危迫不安穩，不安穩故是苦，苦故繫縛牽引流轉不自在，不自在…"
+    },
+    {
+      "matched": "如實",
+      "standard": "如實",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "如實"
+      ],
+      "sample_context": "…苦，苦故繫縛牽引流轉不自在，不自在故無我，無我故空，空故無可取著為真淨者。既如是如實了知已，在此生死純大苦海，如香潔衣忽沾糞穢，如姣冶面忽生瘡皰，極起厭患，速求除滅…"
+    },
+    {
+      "matched": "虛妄分別",
+      "standard": "虛妄分別",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "虛妄分別"
+      ],
+      "sample_context": "…我愛塵貪）也。愛根乎我，不明本無我性（無明）；緣是盲然心動（無明緣行）；緣心動故虛妄分別（行緣識也）；緣虛妄分別故現五蘊，取執我我所（識緣名色）；緣於五蘊執取我我所…"
+    },
+    {
+      "matched": "五蘊",
+      "standard": "五蘊",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "色受想行識",
+      "source": "batch_01",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "五蘊"
+      ],
+      "sample_context": "…（無明）；緣是盲然心動（無明緣行）；緣心動故虛妄分別（行緣識也）；緣虛妄分別故現五蘊，取執我我所（識緣名色）；緣於五蘊執取我我所故，則有能見所見乃至能知所知（名色緣…"
+    },
+    {
+      "matched": "名色",
+      "standard": "名色",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "名色"
+      ],
+      "sample_context": "…（無明緣行）；緣心動故虛妄分別（行緣識也）；緣虛妄分別故現五蘊，取執我我所（識緣名色）；緣於五蘊執取我我所故，則有能見所見乃至能知所知（名色緣六入也）；緣能所知見故…"
+    },
+    {
+      "matched": "知見",
+      "standard": "知見",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "知見"
+      ],
+      "sample_context": "…緣名色）；緣於五蘊執取我我所故，則有能見所見乃至能知所知（名色緣六入也）；緣能所知見故，有根塵識三和合轉（六入緣觸）；緣三和合則有順違而生苦樂憂喜（觸緣受也）；故六…"
+    },
+    {
+      "matched": "無間",
+      "standard": "無間",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無間"
+      ],
+      "sample_context": "…，則美色、美音、美香、美味、美觸也。此為欲界眾生之所同欲，所欲遍一切境遍一切事，無間自身他身，有情無情，故為精勝。為離此二欲貪，故出家持苾芻戒律，因戒生定則勝劣欲貪…"
+    },
+    {
+      "matched": "離欲",
+      "standard": "離欲",
+      "occurrences": 2,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "離欲"
+      ],
+      "sample_context": "…欲貪皆離矣。了生死苦，情我已捨，但因無始積遺業習，其我愛恆起不自覺；情愛猶在，則離欲貪亦由強制，終難淨盡。故色界無色界諸天，由禪定力雖離欲貪，禪定力衰還墮欲塵。故須…"
+    },
+    {
+      "matched": "禪定",
+      "standard": "禪定",
+      "occurrences": 2,
+      "domain": "行持",
+      "subdomain": "禪觀",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "禪定"
+      ],
+      "sample_context": "…習，其我愛恆起不自覺；情愛猶在，則離欲貪亦由強制，終難淨盡。故色界無色界諸天，由禪定力雖離欲貪，禪定力衰還墮欲塵。故須依定精進修習無常苦空無我不淨慧觀，由定開發無漏…"
+    },
+    {
+      "matched": "真覺",
+      "standard": "真覺",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "真覺"
+      ],
+      "sample_context": "…義耳，聞者當生希有之心，敬之念之！審之慎之！  菩提者覺也，菩提心者覺心也。或曰真覺靈覺自覺聖智。或曰真心本心堅實心體，種種名號如標指月，唯可神悟難以言求！然「大涅…"
+    },
+    {
+      "matched": "安立",
+      "standard": "安立",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "安立"
+      ],
+      "sample_context": "…「圓覺」為定義，是故菩提心者圓覺心也。圓常而本成實，覺如而絕依待，無可擬議，無可安立，無可趨向，無可修證，非諸世間名字語言思量分別所能得到，一切世間名字語言思量分別…"
+    },
+    {
+      "matched": "無性",
+      "standard": "無性",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無性"
+      ],
+      "sample_context": "…普救含靈如人護目，咸適幻緣如水呈月。『非不見真如，而能了諸行，猶如幻事等，雖有而無性』，故非世俗所云平等博愛可相比傅。此乃無量無邊清淨功德總持法身，萬福之源萬善之歸…"
+    },
+    {
+      "matched": "法身",
+      "standard": "法身",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "法身"
+      ],
+      "sample_context": "…猶如幻事等，雖有而無性』，故非世俗所云平等博愛可相比傅。此乃無量無邊清淨功德總持法身，萬福之源萬善之歸，故曰根本。  方便者，謂種種方便行也。廣為八萬四千法門乃至不…"
+    },
+    {
+      "matched": "神通",
+      "standard": "神通",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "神通"
+      ],
+      "sample_context": "…道場來，觸著磕著皆自家的；順手拈來宛然妙諦，稱心施設總契真源；安妙高於芥孔，不是神通，握黑土為黃金，無非法爾；於一字中說無量義，於無量義不見一字；千名萬相絕蹤跡之可…"
+    },
+    {
+      "matched": "無餘涅槃",
+      "standard": "無餘涅槃",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無餘涅槃"
+      ],
+      "sample_context": "…涅槃義。依大乘教多說四種涅槃：菩提心因當性淨涅槃，大慈悲本當有餘涅槃，方便究竟當無餘涅槃，總之名無住處涅槃。問曰：大慈悲本云何當有餘涅槃？方便究竟云何當無餘涅槃？答…"
+    },
+    {
+      "matched": "震旦",
+      "standard": "震旦",
+      "occurrences": 2,
+      "domain": "历史",
+      "subdomain": "佛教史分期",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "震旦"
+      ],
+      "sample_context": "…何經論教典可得研究悟入？答曰：諸大乘經大都圓秘，論義教相互有偏顯，然亦相融無間。震旦所宏大乘教宗，就其特相之有力者分別言之，當研究般若宗（即三論宗）百論中論悟菩提心…"
+    },
+    {
+      "matched": "成唯識論",
+      "standard": "成唯識論",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "論典",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "成唯識論"
+      ],
+      "sample_context": "…；於此透徹得過，則一切法不生般若生，般若生一切法不生矣。當研究瑜伽宗（即唯識宗）成唯識論發大慈悲：此明三界唯心萬法唯識之理最為深顯，了阿賴耶識與一切有情非一非異，緣…"
+    },
+    {
+      "matched": "如來藏",
+      "standard": "如來藏",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "如來藏思想",
+      "is_standard": true,
+      "variants_of_standard": [
+        "如來藏緣起",
+        "如來藏覺不覺緣起"
+      ],
+      "vocab_note": "如来藏与众生心——唯识学框架中的如来藏思想",
+      "source": "batch_01,dimensional,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "如來藏"
+      ],
+      "sample_context": "…情非一非異，緣起如幻無心外法，則普度眾生即自淨其心，大慈悲心自充生乎不已，而開發如來藏諸功德相，起信論謂「唯依淨熏業識說有如來藏諸功德相」也。當依天臺華嚴淨土真言律…"
+    },
+    {
+      "matched": "華嚴",
+      "standard": "華嚴",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "宗派",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "華嚴"
+      ],
+      "sample_context": "…已，而開發如來藏諸功德相，起信論謂「唯依淨熏業識說有如來藏諸功德相」也。當依天臺華嚴淨土真言律宗具足修方便行。凡是若非已悟入大乘者，多倒執不可得之妙法，迴為取相之雜…"
+    },
+    {
+      "matched": "天台",
+      "standard": "天台宗",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "宗派",
+      "is_standard": false,
+      "variants_of_standard": [
+        "台教",
+        "天台",
+        "天台學",
+        "天台教"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "天台"
+      ],
+      "sample_context": "…律宗具足修方便行。凡是若非已悟入大乘者，多倒執不可得之妙法，迴為取相之雜毒，但成天台藏教三乘及人天法，於大乘中種為善根而已。  問曰：祇究百論中論，或祇究成唯識論者…"
+    },
+    {
+      "matched": "通教",
+      "standard": "通教",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "判教框架",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "通教"
+      ],
+      "sample_context": "…識論者如何？答曰：理當圓具，功有偏用，智者隨一皆入究竟。其次、究中百者或僅成天臺通教三乘人；究唯識者或僅成天臺別教信仰人而同藏教菩薩，此則假名菩薩而未入大乘者，實乃…"
+    },
+    {
+      "matched": "信仰",
+      "standard": "信仰",
+      "occurrences": 2,
+      "domain": "社会文化",
+      "subdomain": "佛教與文化",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "信仰"
+      ],
+      "sample_context": "…用，智者隨一皆入究竟。其次、究中百者或僅成天臺通教三乘人；究唯識者或僅成天臺別教信仰人而同藏教菩薩，此則假名菩薩而未入大乘者，實乃信仰佛法之人天乘。蓋言非空遍計所執…"
+    },
+    {
+      "matched": "人天乘",
+      "standard": "人天乘",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "五乘中的人乘与天乘合称，太虚强调其为「佛乘之初阶」，以十戒十施为人乘善法、十定为天乘善法，构成由世间善法通向出世间的修行阶梯。",
+      "source": "phase2_fulltext,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "人天乘"
+      ],
+      "sample_context": "…唯識者或僅成天臺別教信仰人而同藏教菩薩，此則假名菩薩而未入大乘者，實乃信仰佛法之人天乘。蓋言非空遍計所執性得妙觀察真智，不見依他起性之如幻藏海也。然其論義固皆圓實，…"
+    },
+    {
+      "matched": "真智",
+      "standard": "真智",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "真智"
+      ],
+      "sample_context": "…菩薩，此則假名菩薩而未入大乘者，實乃信仰佛法之人天乘。蓋言非空遍計所執性得妙觀察真智，不見依他起性之如幻藏海也。然其論義固皆圓實，特顯入大乘之次第各有勝能耳。今引三…"
+    },
+    {
+      "matched": "圓通",
+      "standard": "圓通",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "圓通"
+      ],
+      "sample_context": "…義平等周足之一經一論以為證：若大佛頂首楞嚴經，前之三卷，悟入菩提心也；至第六卷選圓通竟，開發慈悲也；下則具足種種方便行也（亦可第四卷前半為開發大悲，其下皆是方便究竟…"
+    },
+    {
+      "matched": "體相用",
+      "standard": "體相用",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "佛法體系",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "體相用"
+      ],
+      "sample_context": "…究竟）。若大乘起信論，初依心真如相示大乘體，悟入菩提心也；次依心生滅因緣顯大乘自體相用，開發大悲也；下亦具足種種方便行也，誠以不如是者，仰承方便行之流，只成假名菩薩…"
+    },
+    {
+      "matched": "發心",
+      "standard": "發心",
+      "occurrences": 2,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "發心"
+      ],
+      "sample_context": "…。  問曰：此於宗門如何？答云：盡乎宗門所云參學。抑上論教法之安立相如是耳，若自發心求悟入大乘者，必入宗門；其真悟大乘者，亦未有不契宗門。若二祖參初祖，依止數年，引…"
+    },
+    {
+      "matched": "無著",
+      "standard": "無著",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無著"
+      ],
+      "sample_context": "…一切不許，卒以悟發不可得心。時若有人集其問答而條理之，當與中論相等，其語氣當尤同無著菩薩說中論入大乘之最初要義集也。此即是參，亦即由參得悟，然非講習中百論者可得比擬…"
+    },
+    {
+      "matched": "曹溪",
+      "standard": "曹溪",
+      "occurrences": 2,
+      "domain": "历史",
+      "subdomain": "佛教史分期",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "曹溪"
+      ],
+      "sample_context": "…求，乃入大乘之正軌也。  宗門在先祇指一二上根利智，直悟本心，即得究竟更無餘事。曹溪後參禪者浸多，機器漸劣，根性亦雜，遂設五位三關等為揀擇，要可為已參悟者道，若道外…"
+    },
+    {
+      "matched": "五位",
+      "standard": "五位",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "五位"
+      ],
+      "sample_context": "…上根利智，直悟本心，即得究竟更無餘事。曹溪後參禪者浸多，機器漸劣，根性亦雜，遂設五位三關等為揀擇，要可為已參悟者道，若道外人則還作世諦流布矣。所謂知有及悟向上，唯是…"
+    },
+    {
+      "matched": "發菩提心",
+      "standard": "發菩提心",
+      "occurrences": 2,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "發菩提心"
+      ],
+      "sample_context": "…如故也。然依五位三關言之，其初悟入即是徹初關及正中偏位，猶教下初入歡喜地，此即開發菩提心也。宗下先參後學，既悟則可得論修學：偏中正位猶初位至七地，修戒修定修道品慧修…"
+    },
+    {
+      "matched": "正法",
+      "standard": "正法",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "正法"
+      ],
+      "sample_context": "…則八地至十地，成熟大慈悲而具方便行。兼中到位，佛不立佛，入真佛地乃得究竟，亦謂瞎正法眼而透徹末後牢關也。至是參學事畢，乃圓興果後普賢方便行，塵塵不動，法法皆真，如永…"
+    },
+    {
+      "matched": "普賢",
+      "standard": "普賢",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "普賢"
+      ],
+      "sample_context": "…不立佛，入真佛地乃得究竟，亦謂瞎正法眼而透徹末後牢關也。至是參學事畢，乃圓興果後普賢方便行，塵塵不動，法法皆真，如永嘉則一見曹溪即參學事畢矣。謂之無事人，亦謂之閑道…"
+    },
+    {
+      "matched": "須陀洹",
+      "standard": "須陀洹",
+      "occurrences": 2,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "須陀洹"
+      ],
+      "sample_context": "…畢矣。謂之無事人，亦謂之閑道人，亦謂智慧佛，亦謂佛菩薩，亦謂無礙阿羅漢，亦謂大乘須陀洹。在天臺謂之相似佛；在華嚴謂之信滿人，猶善財重由文殊見普賢，成等佛界等眾生界等…"
+    },
+    {
+      "matched": "眾生界",
+      "standard": "眾生界",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "眾生界"
+      ],
+      "sample_context": "…大乘須陀洹。在天臺謂之相似佛；在華嚴謂之信滿人，猶善財重由文殊見普賢，成等佛界等眾生界等虛空界心；亦同唯識頓悟直往菩薩。故曰：『夫宗門者真唯識量，但入信心便登祖位』…"
+    },
+    {
+      "matched": "莊嚴",
+      "standard": "莊嚴",
+      "occurrences": 2,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "莊嚴"
+      ],
+      "sample_context": "…惱任運銷落，可同須陀洹等；就斷爾燄而獲平等如實真智，全同清淨法身如來；就成就功德莊嚴俗智，乃是住前菩薩。教中位次皆就此論，故亦回向安養、兜率。雖然，此正所謂方便行也…"
+    },
+    {
+      "matched": "凡夫",
+      "standard": "凡夫",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "凡夫"
+      ],
+      "sample_context": "…次皆就此論，故亦回向安養、兜率。雖然，此正所謂方便行也。是以祖位亦人亦佛亦聖者亦凡夫，都無所住，一切不捨。然在宗門唯重最初悟向上事，故後代有宗教之畛。實則正須入祖位…"
+    },
+    {
+      "matched": "隨順",
+      "standard": "隨順",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "隨順"
+      ],
+      "sample_context": "…柏諸公，乃為勝耳！若不真參實悟，守黑空狂，唯執取語錄機鋒棒喝為宗者，不如學教念佛隨順信行遠矣！蓋畫鵠不成尚如騖，畫虎不成反類犬也！  求大乘道者，本不限在家出家。然…"
+    },
+    {
+      "matched": "信行",
+      "standard": "信行",
+      "occurrences": 2,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "信行"
+      ],
+      "sample_context": "…公，乃為勝耳！若不真參實悟，守黑空狂，唯執取語錄機鋒棒喝為宗者，不如學教念佛隨順信行遠矣！蓋畫鵠不成尚如騖，畫虎不成反類犬也！  求大乘道者，本不限在家出家。然其最…"
+    },
+    {
+      "matched": "空慧",
+      "standard": "空慧",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "中觀學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "空慧"
+      ],
+      "sample_context": "…之地位，修己利人，行菩薩道。要之，在家當自行教人興崇十善福，出家當自行教人修證二空慧，壹以真覺大悲為本，則此皆是大乘之方便行門也。——是謂略說大乘要義。  ## 四…"
+    },
+    {
+      "matched": "天乘",
+      "standard": "天乘",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "天乘"
+      ],
+      "sample_context": "… ## 四　小乘與大乘之關係  問曰：然則小乘亦是大乘方便行耶？答曰：如是！人乘天乘為利生法，聲聞乘獨覺乘為出世法；用利生法依福善捨罪惡，用出世法依空慧捨福善，一切…"
+    },
+    {
+      "matched": "佛學",
+      "standard": "佛學",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "佛法體系",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "全書根本概念，太虚自稱「佛學」而非「佛教學」",
+      "source": "manual_gap",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "佛學"
+      ],
+      "sample_context": "…惡，用出世法依空慧捨福善，一切捨則一切不生，大乘自體相用斯圓顯矣。未悟入大乘而信佛學佛，具修人天聲聞獨覺乘法，則為假名菩薩權乘，即天台所判藏教通教及別教地前之菩薩也…"
+    },
+    {
+      "matched": "地獄",
+      "standard": "地獄",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "地獄"
+      ],
+      "sample_context": "…，是以「無生死可出無涅槃可證」等言，非未入大乘貪玩生死之凡夫可得執著；而「我不入地獄誰入地獄」之說，亦非夸妄之徒可得自擬。故大涅槃經中，佛對諸小果人則說常樂我淨，而…"
+    },
+    {
+      "matched": "常樂我淨",
+      "standard": "常樂我淨",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "常樂我淨"
+      ],
+      "sample_context": "…「我不入地獄誰入地獄」之說，亦非夸妄之徒可得自擬。故大涅槃經中，佛對諸小果人則說常樂我淨，而對諸外道人還說無常苦空無我不淨，蓋外道未度脫生死煩惱，則依其生死妄想心計…"
+    },
+    {
+      "matched": "外道",
+      "standard": "外道",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "外道"
+      ],
+      "sample_context": "…地獄」之說，亦非夸妄之徒可得自擬。故大涅槃經中，佛對諸小果人則說常樂我淨，而對諸外道人還說無常苦空無我不淨，蓋外道未度脫生死煩惱，則依其生死妄想心計度貪著常樂我淨，…"
+    },
+    {
+      "matched": "教化",
+      "standard": "教化",
+      "occurrences": 2,
+      "domain": "社会文化",
+      "subdomain": "佛教與教育",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "教化"
+      ],
+      "sample_context": "…之關係  問曰：佛法行世之益如何？答曰：佛法乃盡法界眾生界唯一真正之宗教。凡世間教化兼道理德行而言，能為道理德行宗極之本源，能為道理德行宗歸而究竟，謂之宗教，此非佛…"
+    },
+    {
+      "matched": "增上",
+      "standard": "增上",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "增上"
+      ],
+      "sample_context": "…言、戒綺語、戒惡口、戒異舌、戒慳貪、戒嗔恚、戒邪慢是也。助成之者，為忍辱德。戒之增上則為施捨，一、修救護行（此無畏施，若救放生命，弭息兵災，除暴安良，成仁取義等），…"
+    },
+    {
+      "matched": "無畏施",
+      "standard": "無畏施",
+      "occurrences": 2,
+      "domain": "行持",
+      "subdomain": "菩薩行",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無畏施"
+      ],
+      "sample_context": "…慳貪、戒嗔恚、戒邪慢是也。助成之者，為忍辱德。戒之增上則為施捨，一、修救護行（此無畏施，若救放生命，弭息兵災，除暴安良，成仁取義等），二、修利樂行（此為財施，若保幼…"
+    },
+    {
+      "matched": "財施",
+      "standard": "財施",
+      "occurrences": 2,
+      "domain": "行持",
+      "subdomain": "菩薩行",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "財施"
+      ],
+      "sample_context": "…護行（此無畏施，若救放生命，弭息兵災，除暴安良，成仁取義等），二、修利樂行（此為財施，若保幼、養老、恤貧、濟苦等），三、修禮義行（改良風俗，整齊文化），四、修喜捨心…"
+    },
+    {
+      "matched": "律儀",
+      "standard": "律儀",
+      "occurrences": 2,
+      "domain": "制度",
+      "subdomain": "戒律制度",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "律儀"
+      ],
+      "sample_context": "…悲心，六、修正信心（於常常時，於恆恆時，誠敬圓滿成就聖尊，誠敬真實深妙正法，誠敬律儀和悅淨眾）。助成之者，為精勤德。定四通德，十定為本，一、薄欲未發定，二、離生喜樂…"
+    },
+    {
+      "matched": "離生",
+      "standard": "離生",
+      "occurrences": 2,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "離生"
+      ],
+      "sample_context": "…誠敬律儀和悅淨眾）。助成之者，為精勤德。定四通德，十定為本，一、薄欲未發定，二、離生喜樂定，三、定生喜樂定，四、離喜妙樂定，五、捨念清淨定，六、有色無想定，七、空無…"
+    },
+    {
+      "matched": "住持",
+      "standard": "住持",
+      "occurrences": 2,
+      "domain": "制度",
+      "subdomain": "寺院管理",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "住持"
+      ],
+      "sample_context": "…乎其上者，則其源不清，其流雜染，而未足宗極宗歸。故必得出家專修增上戒心慧學之苾芻住持佛法，建人心正信善根也。至夫應真大士，隨俗利生，則形類無定，莫可情求矣！  ##…"
+    },
+    {
+      "matched": "正教",
+      "standard": "正教",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "正教"
+      ],
+      "sample_context": "…重其言者，猶不直粱惠王「何以利吾國」之國家主義，祗曰「有仁義而已矣」，況釋迦清淨正教哉！故住持佛教之苾芻，不應心縈國家社會，效流俗耑耑分別乎私德公德，亦普教人人崇修…"
+    },
+    {
+      "matched": "法施",
+      "standard": "法施",
+      "occurrences": 2,
+      "domain": "行持",
+      "subdomain": "菩薩行",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "法施"
+      ],
+      "sample_context": "…，而集幽谷者則當寶之為吾谷明也。  理雖如是，但今震旦沙門，有未可自安於此者。佛法施行一切國土，貴適乎時而當乎機，隨順差別必觀因緣。就吾國言，中國今為宇內貧弱危困之…"
+    },
+    {
+      "matched": "國土",
+      "standard": "國土",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "國土"
+      ],
+      "sample_context": "…者則當寶之為吾谷明也。  理雖如是，但今震旦沙門，有未可自安於此者。佛法施行一切國土，貴適乎時而當乎機，隨順差別必觀因緣。就吾國言，中國今為宇內貧弱危困之國，民心苟…"
+    },
+    {
+      "matched": "佛乘",
+      "standard": "佛乘",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "太虚以「佛乘」统摄全体佛法，为该论核心框架概念。文章开篇即定义：「佛乘宗要論者，隨順時機以略明佛法之宗本及其綱要之論也」，将佛乘置于小乘/大乘二分之上。",
+      "source": "phase2_fulltext,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "佛乘"
+      ],
+      "sample_context": "…，咸歸自性平等覺海。  （附註）本論為普陀關中最早之作，四年秋季即印行流通。亦名佛乘導言或佛學導言，為佛乘宗要論所本。              "
+    },
+    {
+      "matched": "有法",
+      "standard": "有法",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "有法"
+      ],
+      "sample_context": "…為佛法？然以因緣方便，佛法隨宜如理而說，轉緣多勢，開合無定，今略說為大乘、小乘。有法能運眾生，度脫無常苦空不淨，得至常樂真淨，故名曰乘。  ## 二　小乘  問曰：…"
+    },
+    {
+      "matched": "常樂",
+      "standard": "常樂",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "常樂"
+      ],
+      "sample_context": "…說，轉緣多勢，開合無定，今略說為大乘、小乘。有法能運眾生，度脫無常苦空不淨，得至常樂真淨，故名曰乘。  ## 二　小乘  問曰：其小乘法如何？答曰：了生死為因，離貪…"
+    },
+    {
+      "matched": "諸色",
+      "standard": "諸色",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "諸色"
+      ],
+      "sample_context": "…、若諸有情、若諸無情、若諸地水氣質、若諸風水電力、若諸各別離相、若諸眾和合事、若諸色聚受聚想聚行聚識聚、若諸天類神類人類畜類鬼類、若罪業福業無動業、若欲界梵界無形類…"
+    },
+    {
+      "matched": "繫縛",
+      "standard": "繫縛",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "繫縛"
+      ],
+      "sample_context": "…，一切皆是生住異滅——有為法。有為法故無常，無常故危迫不安穩，不安穩故是苦，苦故繫縛牽引流轉不自在，不自在故無我，無我故空，空故無可取著為真淨者。既如是如實了知已，…"
+    },
+    {
+      "matched": "苦海",
+      "standard": "苦海",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "苦海"
+      ],
+      "sample_context": "…在，不自在故無我，無我故空，空故無可取著為真淨者。既如是如實了知已，在此生死純大苦海，如香潔衣忽沾糞穢，如姣冶面忽生瘡皰，極起厭患，速求除滅，是為最初得聞「小乘真聖…"
+    },
+    {
+      "matched": "能所",
+      "standard": "能所",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "能所"
+      ],
+      "sample_context": "…（識緣名色）；緣於五蘊執取我我所故，則有能見所見乃至能知所知（名色緣六入也）；緣能所知見故，有根塵識三和合轉（六入緣觸）；緣三和合則有順違而生苦樂憂喜（觸緣受也）；…"
+    },
+    {
+      "matched": "生苦",
+      "standard": "生苦",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "生苦"
+      ],
+      "sample_context": "…（名色緣六入也）；緣能所知見故，有根塵識三和合轉（六入緣觸）；緣三和合則有順違而生苦樂憂喜（觸緣受也）；故六入識心趨六受境，於喜樂則戀愛希貪，於憂苦則憎惡怨恨（受緣…"
+    },
+    {
+      "matched": "識心",
+      "standard": "識心",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "識心"
+      ],
+      "sample_context": "…，有根塵識三和合轉（六入緣觸）；緣三和合則有順違而生苦樂憂喜（觸緣受也）；故六入識心趨六受境，於喜樂則戀愛希貪，於憂苦則憎惡怨恨（受緣愛也）。夫本不見有我而我愛起於…"
+    },
+    {
+      "matched": "天神",
+      "standard": "天神",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "天神"
+      ],
+      "sample_context": "…貪憎惡怨恨皆本乎貪愛。而我與我所之界無定量，我身、我家、我國、我類乃至我世界、我天神。常情以身為我，身外則為我所。執我甚者，復以我所攝受為我，對取非攝受者而為我所，…"
+    },
+    {
+      "matched": "來世",
+      "standard": "來世",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "來世"
+      ],
+      "sample_context": "…所。我所在即貪愛所存，故必渴望永住存在。迫此渴愛，遂取著而造作善惡雜染諸業，復感來世生死之苦。而今生之癡情，則依往世愛、取、業有。三世流轉，輪迴無已。是故要捨生死，…"
+    },
+    {
+      "matched": "三世",
+      "standard": "三世",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "三世"
+      ],
+      "sample_context": "…遂取著而造作善惡雜染諸業，復感來世生死之苦。而今生之癡情，則依往世愛、取、業有。三世流轉，輪迴無已。是故要捨生死，以離貪愛為本。  今別釋之，愛謂內愛情我，貪謂外貪…"
+    },
+    {
+      "matched": "輪迴",
+      "standard": "輪迴",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "輪迴"
+      ],
+      "sample_context": "…作善惡雜染諸業，復感來世生死之苦。而今生之癡情，則依往世愛、取、業有。三世流轉，輪迴無已。是故要捨生死，以離貪愛為本。  今別釋之，愛謂內愛情我，貪謂外貪欲塵。欲塵…"
+    },
+    {
+      "matched": "戒律",
+      "standard": "戒律",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "戒律行持",
+      "is_standard": true,
+      "variants_of_standard": [
+        "律儀行"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "戒律"
+      ],
+      "sample_context": "…欲遍一切境遍一切事，無間自身他身，有情無情，故為精勝。為離此二欲貪，故出家持苾芻戒律，因戒生定則勝劣欲貪皆離矣。了生死苦，情我已捨，但因無始積遺業習，其我愛恆起不自…"
+    },
+    {
+      "matched": "無始",
+      "standard": "無始",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無始"
+      ],
+      "sample_context": "…離此二欲貪，故出家持苾芻戒律，因戒生定則勝劣欲貪皆離矣。了生死苦，情我已捨，但因無始積遺業習，其我愛恆起不自覺；情愛猶在，則離欲貪亦由強制，終難淨盡。故色界無色界諸…"
+    },
+    {
+      "matched": "色界",
+      "standard": "色界",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "色界"
+      ],
+      "sample_context": "…捨，但因無始積遺業習，其我愛恆起不自覺；情愛猶在，則離欲貪亦由強制，終難淨盡。故色界無色界諸天，由禪定力雖離欲貪，禪定力衰還墮欲塵。故須依定精進修習無常苦空無我不淨…"
+    },
+    {
+      "matched": "無色界",
+      "standard": "無色界",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無色界"
+      ],
+      "sample_context": "…但因無始積遺業習，其我愛恆起不自覺；情愛猶在，則離欲貪亦由強制，終難淨盡。故色界無色界諸天，由禪定力雖離欲貪，禪定力衰還墮欲塵。故須依定精進修習無常苦空無我不淨慧觀…"
+    },
+    {
+      "matched": "真常",
+      "standard": "真常",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "如來藏思想",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "真常"
+      ],
+      "sample_context": "…具修戒定慧法滿足，則情業全消而貪愛永離矣。  云何滅盡為究竟？情愛欲貪離盡，妙應真常，知見解脫，我生已盡，出苦邊際，更無後有。流轉永寂，成辟支佛及阿羅漢。尚餘先業所…"
+    },
+    {
+      "matched": "辟支佛",
+      "standard": "辟支佛",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "辟支佛"
+      ],
+      "sample_context": "…竟？情愛欲貪離盡，妙應真常，知見解脫，我生已盡，出苦邊際，更無後有。流轉永寂，成辟支佛及阿羅漢。尚餘先業所遺任運滅身苦依，謂有餘依涅槃；遺業身捨泯滅無餘，謂無餘依涅…"
+    },
+    {
+      "matched": "先業",
+      "standard": "先業",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "先業"
+      ],
+      "sample_context": "…應真常，知見解脫，我生已盡，出苦邊際，更無後有。流轉永寂，成辟支佛及阿羅漢。尚餘先業所遺任運滅身苦依，謂有餘依涅槃；遺業身捨泯滅無餘，謂無餘依涅槃：涅槃即究竟也。 …"
+    },
+    {
+      "matched": "四諦",
+      "standard": "四諦",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "四諦"
+      ],
+      "sample_context": "…滅無餘，謂無餘依涅槃：涅槃即究竟也。  問曰：此宗佛法何義而說？答曰：此所宗者即四諦也。生死是苦聖諦，貪愛是苦集聖諦，滅盡是苦集滅聖諦，了生死離貪愛是苦集滅道聖諦。…"
+    },
+    {
+      "matched": "道諦",
+      "standard": "道諦",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "道諦"
+      ],
+      "sample_context": "…也。生死是苦聖諦，貪愛是苦集聖諦，滅盡是苦集滅聖諦，了生死離貪愛是苦集滅道聖諦。道諦即三十七道品：了生死苦即四念處；而其離貪愛中持戒生定，即四正勤、四如意足；由定開…"
+    },
+    {
+      "matched": "三十七道品",
+      "standard": "三十七道品",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "三十七道品"
+      ],
+      "sample_context": "…死是苦聖諦，貪愛是苦集聖諦，滅盡是苦集滅聖諦，了生死離貪愛是苦集滅道聖諦。道諦即三十七道品：了生死苦即四念處；而其離貪愛中持戒生定，即四正勤、四如意足；由定開發無漏…"
+    },
+    {
+      "matched": "四念處",
+      "standard": "四念處",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "四念處"
+      ],
+      "sample_context": "…聖諦，滅盡是苦集滅聖諦，了生死離貪愛是苦集滅道聖諦。道諦即三十七道品：了生死苦即四念處；而其離貪愛中持戒生定，即四正勤、四如意足；由定開發無漏真慧，即五根、五力、七…"
+    },
+    {
+      "matched": "持戒",
+      "standard": "持戒",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "戒律行持",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "持戒"
+      ],
+      "sample_context": "…諦，了生死離貪愛是苦集滅道聖諦。道諦即三十七道品：了生死苦即四念處；而其離貪愛中持戒生定，即四正勤、四如意足；由定開發無漏真慧，即五根、五力、七覺支；從無漏慧具修戒…"
+    },
+    {
+      "matched": "四正勤",
+      "standard": "四正勤",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "四正勤"
+      ],
+      "sample_context": "…貪愛是苦集滅道聖諦。道諦即三十七道品：了生死苦即四念處；而其離貪愛中持戒生定，即四正勤、四如意足；由定開發無漏真慧，即五根、五力、七覺支；從無漏慧具修戒定慧法滿足，…"
+    },
+    {
+      "matched": "如意",
+      "standard": "如意",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "如意"
+      ],
+      "sample_context": "…滅道聖諦。道諦即三十七道品：了生死苦即四念處；而其離貪愛中持戒生定，即四正勤、四如意足；由定開發無漏真慧，即五根、五力、七覺支；從無漏慧具修戒定慧法滿足，即八正道。…"
+    },
+    {
+      "matched": "五根",
+      "standard": "五根",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "五根"
+      ],
+      "sample_context": "…了生死苦即四念處；而其離貪愛中持戒生定，即四正勤、四如意足；由定開發無漏真慧，即五根、五力、七覺支；從無漏慧具修戒定慧法滿足，即八正道。亦同十二因緣有支，十二因緣流…"
+    },
+    {
+      "matched": "八正道",
+      "standard": "八正道",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "八正道"
+      ],
+      "sample_context": "…、四如意足；由定開發無漏真慧，即五根、五力、七覺支；從無漏慧具修戒定慧法滿足，即八正道。亦同十二因緣有支，十二因緣流轉即集苦諦，十二因緣還滅即道滅諦。小乘謂獨覺、聲…"
+    },
+    {
+      "matched": "苦諦",
+      "standard": "苦諦",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "苦諦"
+      ],
+      "sample_context": "…、七覺支；從無漏慧具修戒定慧法滿足，即八正道。亦同十二因緣有支，十二因緣流轉即集苦諦，十二因緣還滅即道滅諦。小乘謂獨覺、聲聞乘：聞佛教聲而悟修者謂之聲聞，獨自覺悟而…"
+    },
+    {
+      "matched": "還滅",
+      "standard": "還滅",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "還滅"
+      ],
+      "sample_context": "…漏慧具修戒定慧法滿足，即八正道。亦同十二因緣有支，十二因緣流轉即集苦諦，十二因緣還滅即道滅諦。小乘謂獨覺、聲聞乘：聞佛教聲而悟修者謂之聲聞，獨自覺悟而修證者謂之獨覺…"
+    },
+    {
+      "matched": "滅諦",
+      "standard": "滅諦",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "滅諦"
+      ],
+      "sample_context": "…戒定慧法滿足，即八正道。亦同十二因緣有支，十二因緣流轉即集苦諦，十二因緣還滅即道滅諦。小乘謂獨覺、聲聞乘：聞佛教聲而悟修者謂之聲聞，獨自覺悟而修證者謂之獨覺。雖獲解…"
+    },
+    {
+      "matched": "大智",
+      "standard": "大智",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "大智"
+      ],
+      "sample_context": "…聞乘：聞佛教聲而悟修者謂之聲聞，獨自覺悟而修證者謂之獨覺。雖獲解脫煩惱生死，尚無大智大悲大行，故對大乘說為小乘。然小乘純為出世法，全與人天俗教不同。未出家持苾芻戒者…"
+    },
+    {
+      "matched": "遺教",
+      "standard": "遺教",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "經典",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "遺教"
+      ],
+      "sample_context": "…出家持苾芻戒者，可預聖流，不獲現世盡生死苦成阿羅漢，故必出家乃得修入，其要備於佛遺教經。而小乘教對於未具出生死善根者，亦以人天善法漸馴化之，一令依福捨罪不墮惡趣，二…"
+    },
+    {
+      "matched": "善法",
+      "standard": "善法",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "善法"
+      ],
+      "sample_context": "…羅漢，故必出家乃得修入，其要備於佛遺教經。而小乘教對於未具出生死善根者，亦以人天善法漸馴化之，一令依福捨罪不墮惡趣，二令回心向佛遠作道種。若居家而求證涅槃，出家而反…"
+    },
+    {
+      "matched": "惡趣",
+      "standard": "惡道",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": false,
+      "variants_of_standard": [
+        "惡趣"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "惡趣"
+      ],
+      "sample_context": "…於佛遺教經。而小乘教對於未具出生死善根者，亦以人天善法漸馴化之，一令依福捨罪不墮惡趣，二令回心向佛遠作道種。若居家而求證涅槃，出家而反務世俗，顛倒甚矣！——是為略說…"
+    },
+    {
+      "matched": "圓寂",
+      "standard": "圓寂",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "圓寂"
+      ],
+      "sample_context": "…。或曰真心本心堅實心體，種種名號如標指月，唯可神悟難以言求！然「大涅槃」既正翻「圓寂」，則「大菩提」亦當以「圓覺」為定義，是故菩提心者圓覺心也。圓常而本成實，覺如而…"
+    },
+    {
+      "matched": "成實",
+      "standard": "成實",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "成實"
+      ],
+      "sample_context": "…既正翻「圓寂」，則「大菩提」亦當以「圓覺」為定義，是故菩提心者圓覺心也。圓常而本成實，覺如而絕依待，無可擬議，無可安立，無可趨向，無可修證，非諸世間名字語言思量分別…"
+    },
+    {
+      "matched": "本不生",
+      "standard": "本不生",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "本不生"
+      ],
+      "sample_context": "…非獲菩提心者不入大乘，故曰菩提心為因。  大慈悲者，所謂平等大慈同體大悲。蓋親證本不生大菩提心，現見一切有情圓同真心，非自非他不如不異，如來恆在眾生心中轉正覺輪，眾…"
+    },
+    {
+      "matched": "大菩提心",
+      "standard": "大菩提心",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "大菩提心"
+      ],
+      "sample_context": "…提心者不入大乘，故曰菩提心為因。  大慈悲者，所謂平等大慈同體大悲。蓋親證本不生大菩提心，現見一切有情圓同真心，非自非他不如不異，如來恆在眾生心中轉正覺輪，眾生恆在…"
+    },
+    {
+      "matched": "正覺",
+      "standard": "正覺",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "正覺"
+      ],
+      "sample_context": "…蓋親證本不生大菩提心，現見一切有情圓同真心，非自非他不如不異，如來恆在眾生心中轉正覺輪，眾生恆在如來心中造雜業因。是以等諸佛之慈力，體群情之悲仰，普救含靈如人護目，…"
+    },
+    {
+      "matched": "業因",
+      "standard": "業因",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "業因"
+      ],
+      "sample_context": "…切有情圓同真心，非自非他不如不異，如來恆在眾生心中轉正覺輪，眾生恆在如來心中造雜業因。是以等諸佛之慈力，體群情之悲仰，普救含靈如人護目，咸適幻緣如水呈月。『非不見真…"
+    },
+    {
+      "matched": "總持",
+      "standard": "總持",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "總持"
+      ],
+      "sample_context": "…行，猶如幻事等，雖有而無性』，故非世俗所云平等博愛可相比傅。此乃無量無邊清淨功德總持法身，萬福之源萬善之歸，故曰根本。  方便者，謂種種方便行也。廣為八萬四千法門乃…"
+    },
+    {
+      "matched": "施設",
+      "standard": "施設",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "施設"
+      ],
+      "sample_context": "…心體，緣起乎大慈悲藏；舉足下足從道場來，觸著磕著皆自家的；順手拈來宛然妙諦，稱心施設總契真源；安妙高於芥孔，不是神通，握黑土為黃金，無非法爾；於一字中說無量義，於無…"
+    },
+    {
+      "matched": "法爾",
+      "standard": "法爾",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "法爾"
+      ],
+      "sample_context": "…；順手拈來宛然妙諦，稱心施設總契真源；安妙高於芥孔，不是神通，握黑土為黃金，無非法爾；於一字中說無量義，於無量義不見一字；千名萬相絕蹤跡之可尋，熾焉分別而非分別，獨…"
+    },
+    {
+      "matched": "無為",
+      "standard": "無為",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無為"
+      ],
+      "sample_context": "…量義不見一字；千名萬相絕蹤跡之可尋，熾焉分別而非分別，獨坐孤峰赫聲容之充遍，泊焉無為而無不為；三身千身億身無量身，一乘三乘五乘無量乘；我為法王，法自在轉；事事圓成，…"
+    },
+    {
+      "matched": "三身",
+      "standard": "三身",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "三佛身",
+        "受用身",
+        "自性身",
+        "變化身"
+      ],
+      "vocab_note": "自性身（斷德）、受用身（智德）、變化身（恩德）",
+      "source": "phase2_fulltext,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "三身"
+      ],
+      "sample_context": "…千名萬相絕蹤跡之可尋，熾焉分別而非分別，獨坐孤峰赫聲容之充遍，泊焉無為而無不為；三身千身億身無量身，一乘三乘五乘無量乘；我為法王，法自在轉；事事圓成，頭頭解脫：蓋非…"
+    },
+    {
+      "matched": "一乘",
+      "standard": "一乘",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "一乘"
+      ],
+      "sample_context": "…，熾焉分別而非分別，獨坐孤峰赫聲容之充遍，泊焉無為而無不為；三身千身億身無量身，一乘三乘五乘無量乘；我為法王，法自在轉；事事圓成，頭頭解脫：蓋非世俗所云自由快樂可得…"
+    },
+    {
+      "matched": "法王",
+      "standard": "法王",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "法王"
+      ],
+      "sample_context": "…孤峰赫聲容之充遍，泊焉無為而無不為；三身千身億身無量身，一乘三乘五乘無量乘；我為法王，法自在轉；事事圓成，頭頭解脫：蓋非世俗所云自由快樂可得附會。一一不可思議，塵塵…"
+    },
+    {
+      "matched": "圓成",
+      "standard": "圓成實性",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": false,
+      "variants_of_standard": [
+        "圓成"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "圓成"
+      ],
+      "sample_context": "…焉無為而無不為；三身千身億身無量身，一乘三乘五乘無量乘；我為法王，法自在轉；事事圓成，頭頭解脫：蓋非世俗所云自由快樂可得附會。一一不可思議，塵塵常寂滅相，故曰究竟。…"
+    },
+    {
+      "matched": "不可思議",
+      "standard": "不可思議",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "不可思議"
+      ],
+      "sample_context": "…量乘；我為法王，法自在轉；事事圓成，頭頭解脫：蓋非世俗所云自由快樂可得附會。一一不可思議，塵塵常寂滅相，故曰究竟。  問曰：大乘涅槃之義如何？答曰：菩提心因，大慈悲…"
+    },
+    {
+      "matched": "滅相",
+      "standard": "滅相",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "滅相"
+      ],
+      "sample_context": "…自在轉；事事圓成，頭頭解脫：蓋非世俗所云自由快樂可得附會。一一不可思議，塵塵常寂滅相，故曰究竟。  問曰：大乘涅槃之義如何？答曰：菩提心因，大慈悲本，方便究竟，皆涅…"
+    },
+    {
+      "matched": "龜毛",
+      "standard": "龜毛",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "龜毛"
+      ],
+      "sample_context": "…盡非苦依在，惑染依盡福慧依在，故曰有餘；如幻無性，妙離清淨，故曰涅槃；種種方便，龜毛兔角究竟無得，故曰無餘。亦可方便究竟，是無住處涅槃。亦可三皆性淨涅槃，乃至三皆無…"
+    },
+    {
+      "matched": "兔角",
+      "standard": "兔角",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "兔角"
+      ],
+      "sample_context": "…苦依在，惑染依盡福慧依在，故曰有餘；如幻無性，妙離清淨，故曰涅槃；種種方便，龜毛兔角究竟無得，故曰無餘。亦可方便究竟，是無住處涅槃。亦可三皆性淨涅槃，乃至三皆無住處…"
+    },
+    {
+      "matched": "教典",
+      "standard": "教典",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "經典",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "教典"
+      ],
+      "sample_context": "…三皆性淨涅槃，乃至三皆無住處涅槃，一究竟一切究竟故。  問曰：此義幽玄，依何經論教典可得研究悟入？答曰：諸大乘經大都圓秘，論義教相互有偏顯，然亦相融無間。震旦所宏大…"
+    },
+    {
+      "matched": "教相",
+      "standard": "教相",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "判教框架",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "教相"
+      ],
+      "sample_context": "…竟故。  問曰：此義幽玄，依何經論教典可得研究悟入？答曰：諸大乘經大都圓秘，論義教相互有偏顯，然亦相融無間。震旦所宏大乘教宗，就其特相之有力者分別言之，當研究般若宗…"
+    },
+    {
+      "matched": "三論宗",
+      "standard": "三論宗",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "宗派",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "三論宗"
+      ],
+      "sample_context": "…偏顯，然亦相融無間。震旦所宏大乘教宗，就其特相之有力者分別言之，當研究般若宗（即三論宗）百論中論悟菩提心：蓋百論蕩一切邪見情見，中論盡空一切佛見（亦即我見）法見，杜…"
+    },
+    {
+      "matched": "邪見",
+      "standard": "邪見",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "邪見"
+      ],
+      "sample_context": "…就其特相之有力者分別言之，當研究般若宗（即三論宗）百論中論悟菩提心：蓋百論蕩一切邪見情見，中論盡空一切佛見（亦即我見）法見，杜絕妄想無出頭路；於此透徹得過，則一切法…"
+    },
+    {
+      "matched": "瑜伽",
+      "standard": "瑜伽",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "瑜伽"
+      ],
+      "sample_context": "…，杜絕妄想無出頭路；於此透徹得過，則一切法不生般若生，般若生一切法不生矣。當研究瑜伽宗（即唯識宗）成唯識論發大慈悲：此明三界唯心萬法唯識之理最為深顯，了阿賴耶識與一…"
+    },
+    {
+      "matched": "唯識宗",
+      "standard": "唯識宗",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "宗派",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "唯識宗"
+      ],
+      "sample_context": "…無出頭路；於此透徹得過，則一切法不生般若生，般若生一切法不生矣。當研究瑜伽宗（即唯識宗）成唯識論發大慈悲：此明三界唯心萬法唯識之理最為深顯，了阿賴耶識與一切有情非一…"
+    },
+    {
+      "matched": "三界",
+      "standard": "三界",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "九地",
+        "欲界色界無色界"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "三界"
+      ],
+      "sample_context": "…法不生般若生，般若生一切法不生矣。當研究瑜伽宗（即唯識宗）成唯識論發大慈悲：此明三界唯心萬法唯識之理最為深顯，了阿賴耶識與一切有情非一非異，緣起如幻無心外法，則普度…"
+    },
+    {
+      "matched": "唯心",
+      "standard": "唯心",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "唯心"
+      ],
+      "sample_context": "…生般若生，般若生一切法不生矣。當研究瑜伽宗（即唯識宗）成唯識論發大慈悲：此明三界唯心萬法唯識之理最為深顯，了阿賴耶識與一切有情非一非異，緣起如幻無心外法，則普度眾生…"
+    },
+    {
+      "matched": "萬法",
+      "standard": "萬法",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "萬法"
+      ],
+      "sample_context": "…若生，般若生一切法不生矣。當研究瑜伽宗（即唯識宗）成唯識論發大慈悲：此明三界唯心萬法唯識之理最為深顯，了阿賴耶識與一切有情非一非異，緣起如幻無心外法，則普度眾生即自…"
+    },
+    {
+      "matched": "阿賴耶識",
+      "standard": "阿賴耶識",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [
+        "一切種識",
+        "本識",
+        "賴耶",
+        "阿賴耶"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "阿賴耶識"
+      ],
+      "sample_context": "…。當研究瑜伽宗（即唯識宗）成唯識論發大慈悲：此明三界唯心萬法唯識之理最為深顯，了阿賴耶識與一切有情非一非異，緣起如幻無心外法，則普度眾生即自淨其心，大慈悲心自充生乎…"
+    },
+    {
+      "matched": "起信論",
+      "standard": "起信論",
+      "occurrences": 1,
+      "domain": "义理维度",
+      "subdomain": "義理體系",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "《大乘起信论》作为被诠释对象——太虚的「起信论唯识释」",
+      "source": "dimensional",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "起信論"
+      ],
+      "sample_context": "…如幻無心外法，則普度眾生即自淨其心，大慈悲心自充生乎不已，而開發如來藏諸功德相，起信論謂「唯依淨熏業識說有如來藏諸功德相」也。當依天臺華嚴淨土真言律宗具足修方便行。…"
+    },
+    {
+      "matched": "業識",
+      "standard": "業識",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "一期生命起源之最初受胎心識，十二緣起中無明行識之識，即阿賴耶識",
+      "source": "phase2_fulltext,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "業識"
+      ],
+      "sample_context": "…度眾生即自淨其心，大慈悲心自充生乎不已，而開發如來藏諸功德相，起信論謂「唯依淨熏業識說有如來藏諸功德相」也。當依天臺華嚴淨土真言律宗具足修方便行。凡是若非已悟入大乘…"
+    },
+    {
+      "matched": "淨土",
+      "standard": "淨土",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "淨土法門",
+      "is_standard": true,
+      "variants_of_standard": [
+        "極樂淨土",
+        "淨土行"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "淨土"
+      ],
+      "sample_context": "…而開發如來藏諸功德相，起信論謂「唯依淨熏業識說有如來藏諸功德相」也。當依天臺華嚴淨土真言律宗具足修方便行。凡是若非已悟入大乘者，多倒執不可得之妙法，迴為取相之雜毒，…"
+    },
+    {
+      "matched": "真言",
+      "standard": "密咒",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "密法",
+      "is_standard": false,
+      "variants_of_standard": [
+        "真言",
+        "真言行"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "真言"
+      ],
+      "sample_context": "…發如來藏諸功德相，起信論謂「唯依淨熏業識說有如來藏諸功德相」也。當依天臺華嚴淨土真言律宗具足修方便行。凡是若非已悟入大乘者，多倒執不可得之妙法，迴為取相之雜毒，但成…"
+    },
+    {
+      "matched": "律宗",
+      "standard": "律宗",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "宗派",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "律宗"
+      ],
+      "sample_context": "…來藏諸功德相，起信論謂「唯依淨熏業識說有如來藏諸功德相」也。當依天臺華嚴淨土真言律宗具足修方便行。凡是若非已悟入大乘者，多倒執不可得之妙法，迴為取相之雜毒，但成天台…"
+    },
+    {
+      "matched": "取相",
+      "standard": "取相",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "取相"
+      ],
+      "sample_context": "…天臺華嚴淨土真言律宗具足修方便行。凡是若非已悟入大乘者，多倒執不可得之妙法，迴為取相之雜毒，但成天台藏教三乘及人天法，於大乘中種為善根而已。  問曰：祇究百論中論，…"
+    },
+    {
+      "matched": "遍計所執性",
+      "standard": "三自性",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": false,
+      "variants_of_standard": [
+        "遍計所執性"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "遍計所執性"
+      ],
+      "sample_context": "…別教信仰人而同藏教菩薩，此則假名菩薩而未入大乘者，實乃信仰佛法之人天乘。蓋言非空遍計所執性得妙觀察真智，不見依他起性之如幻藏海也。然其論義固皆圓實，特顯入大乘之次第…"
+    },
+    {
+      "matched": "妙觀",
+      "standard": "胡瑞霖",
+      "occurrences": 1,
+      "domain": "制度",
+      "subdomain": "人物",
+      "is_standard": false,
+      "variants_of_standard": [
+        "妙觀"
+      ],
+      "vocab_note": "字子笏，法名妙观，五台行者。太虚早年重要护法居士，协助筹设世界佛学苑。序中以'药方'之喻评太虚唯识学适应时代的创新",
+      "source": "phase3_sample",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "妙觀"
+      ],
+      "sample_context": "…同藏教菩薩，此則假名菩薩而未入大乘者，實乃信仰佛法之人天乘。蓋言非空遍計所執性得妙觀察真智，不見依他起性之如幻藏海也。然其論義固皆圓實，特顯入大乘之次第各有勝能耳。…"
+    },
+    {
+      "matched": "依他起性",
+      "standard": "依他起性",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "依他起性"
+      ],
+      "sample_context": "…假名菩薩而未入大乘者，實乃信仰佛法之人天乘。蓋言非空遍計所執性得妙觀察真智，不見依他起性之如幻藏海也。然其論義固皆圓實，特顯入大乘之次第各有勝能耳。今引三義平等周足…"
+    },
+    {
+      "matched": "楞嚴經",
+      "standard": "楞嚴經",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "經典",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "楞嚴經"
+      ],
+      "sample_context": "…皆圓實，特顯入大乘之次第各有勝能耳。今引三義平等周足之一經一論以為證：若大佛頂首楞嚴經，前之三卷，悟入菩提心也；至第六卷選圓通竟，開發慈悲也；下則具足種種方便行也（…"
+    },
+    {
+      "matched": "大乘起信論",
+      "standard": "大乘起信論",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "論典",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "大乘起信論"
+      ],
+      "sample_context": "…發慈悲也；下則具足種種方便行也（亦可第四卷前半為開發大悲，其下皆是方便究竟）。若大乘起信論，初依心真如相示大乘體，悟入菩提心也；次依心生滅因緣顯大乘自體相用，開發大…"
+    },
+    {
+      "matched": "生滅",
+      "standard": "生滅",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "生滅"
+      ],
+      "sample_context": "…悲，其下皆是方便究竟）。若大乘起信論，初依心真如相示大乘體，悟入菩提心也；次依心生滅因緣顯大乘自體相用，開發大悲也；下亦具足種種方便行也，誠以不如是者，仰承方便行之…"
+    },
+    {
+      "matched": "教法",
+      "standard": "教法",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "佛法體系",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "教法"
+      ],
+      "sample_context": "…直抉根本無明而妙悟真心也。  問曰：此於宗門如何？答云：盡乎宗門所云參學。抑上論教法之安立相如是耳，若自發心求悟入大乘者，必入宗門；其真悟大乘者，亦未有不契宗門。若…"
+    },
+    {
+      "matched": "初祖",
+      "standard": "初祖",
+      "occurrences": 1,
+      "domain": "历史",
+      "subdomain": "人物",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "初祖"
+      ],
+      "sample_context": "…相如是耳，若自發心求悟入大乘者，必入宗門；其真悟大乘者，亦未有不契宗門。若二祖參初祖，依止數年，引稱種種經論一切不許，卒以悟發不可得心。時若有人集其問答而條理之，當…"
+    },
+    {
+      "matched": "依止",
+      "standard": "依止",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "依止"
+      ],
+      "sample_context": "…耳，若自發心求悟入大乘者，必入宗門；其真悟大乘者，亦未有不契宗門。若二祖參初祖，依止數年，引稱種種經論一切不許，卒以悟發不可得心。時若有人集其問答而條理之，當與中論…"
+    },
+    {
+      "matched": "提婆",
+      "standard": "提婆",
+      "occurrences": 1,
+      "domain": "历史",
+      "subdomain": "人物",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "提婆"
+      ],
+      "sample_context": "…，亦即由參得悟，然非講習中百論者可得比擬。蓋非已悟向上事，講習中百亦同貪著戲論。提婆固言「破如可破」，竟無一字可得，有何中百論可講習？故永覺作洞上古轍，謂若不先悟向…"
+    },
+    {
+      "matched": "觀行",
+      "standard": "觀行",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "禪觀",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "觀行"
+      ],
+      "sample_context": "…洞上古轍，謂若不先悟向上事，學此亦與教下講習無異。凡教下豈徒講習無交涉，即依之起觀行，亦從意言所起假想，用蝦為目，隔靴搔癢，未入深位而得真切，但是假名大乘人耳。故必…"
+    },
+    {
+      "matched": "上根",
+      "standard": "上根",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "上根"
+      ],
+      "sample_context": "…人耳。故必令真參實悟，自明本來，佛亦不求，乃入大乘之正軌也。  宗門在先祇指一二上根利智，直悟本心，即得究竟更無餘事。曹溪後參禪者浸多，機器漸劣，根性亦雜，遂設五位…"
+    },
+    {
+      "matched": "參禪",
+      "standard": "參禪",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "禪觀",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "參禪"
+      ],
+      "sample_context": "…入大乘之正軌也。  宗門在先祇指一二上根利智，直悟本心，即得究竟更無餘事。曹溪後參禪者浸多，機器漸劣，根性亦雜，遂設五位三關等為揀擇，要可為已參悟者道，若道外人則還…"
+    },
+    {
+      "matched": "世諦",
+      "standard": "世諦",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "中觀學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "世諦"
+      ],
+      "sample_context": "…浸多，機器漸劣，根性亦雜，遂設五位三關等為揀擇，要可為已參悟者道，若道外人則還作世諦流布矣。所謂知有及悟向上，唯是參悟本心，悟入與不悟入無二，一觸悟入或千生萬生不悟…"
+    },
+    {
+      "matched": "修道",
+      "standard": "修道",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "修道"
+      ],
+      "sample_context": "…此即開發菩提心也。宗下先參後學，既悟則可得論修學：偏中正位猶初位至七地，修戒修定修道品慧修世俗慧修因緣慧，而一以空無相慧為宗也。正中來位則八地，從第一義空轉身而大用…"
+    },
+    {
+      "matched": "十地",
+      "standard": "十地",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "十地"
+      ],
+      "sample_context": "…提心即得透徹重關；若起人情佛法等見，仍是悟之未徹，更深參究而已。兼中至位則八地至十地，成熟大慈悲而具方便行。兼中到位，佛不立佛，入真佛地乃得究竟，亦謂瞎正法眼而透徹…"
+    },
+    {
+      "matched": "智慧",
+      "standard": "智慧",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "智慧"
+      ],
+      "sample_context": "…塵塵不動，法法皆真，如永嘉則一見曹溪即參學事畢矣。謂之無事人，亦謂之閑道人，亦謂智慧佛，亦謂佛菩薩，亦謂無礙阿羅漢，亦謂大乘須陀洹。在天臺謂之相似佛；在華嚴謂之信滿…"
+    },
+    {
+      "matched": "無礙",
+      "standard": "無礙",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無礙"
+      ],
+      "sample_context": "…嘉則一見曹溪即參學事畢矣。謂之無事人，亦謂之閑道人，亦謂智慧佛，亦謂佛菩薩，亦謂無礙阿羅漢，亦謂大乘須陀洹。在天臺謂之相似佛；在華嚴謂之信滿人，猶善財重由文殊見普賢…"
+    },
+    {
+      "matched": "佛界",
+      "standard": "佛界",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "佛界"
+      ],
+      "sample_context": "…，亦謂大乘須陀洹。在天臺謂之相似佛；在華嚴謂之信滿人，猶善財重由文殊見普賢，成等佛界等眾生界等虛空界心；亦同唯識頓悟直往菩薩。故曰：『夫宗門者真唯識量，但入信心便登…"
+    },
+    {
+      "matched": "虛空",
+      "standard": "虛空",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "虛空"
+      ],
+      "sample_context": "…洹。在天臺謂之相似佛；在華嚴謂之信滿人，猶善財重由文殊見普賢，成等佛界等眾生界等虛空界心；亦同唯識頓悟直往菩薩。故曰：『夫宗門者真唯識量，但入信心便登祖位』。蓋就煩…"
+    },
+    {
+      "matched": "頓悟",
+      "standard": "頓悟",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "禪觀",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "頓悟"
+      ],
+      "sample_context": "…佛；在華嚴謂之信滿人，猶善財重由文殊見普賢，成等佛界等眾生界等虛空界心；亦同唯識頓悟直往菩薩。故曰：『夫宗門者真唯識量，但入信心便登祖位』。蓋就煩惱任運銷落，可同須…"
+    },
+    {
+      "matched": "兜率",
+      "standard": "兜率天",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "淨土法門",
+      "is_standard": false,
+      "variants_of_standard": [
+        "兜率"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "兜率"
+      ],
+      "sample_context": "…清淨法身如來；就成就功德莊嚴俗智，乃是住前菩薩。教中位次皆就此論，故亦回向安養、兜率。雖然，此正所謂方便行也。是以祖位亦人亦佛亦聖者亦凡夫，都無所住，一切不捨。然在…"
+    },
+    {
+      "matched": "有宗",
+      "standard": "瑜伽行派",
+      "occurrences": 1,
+      "domain": "历史",
+      "subdomain": "大乘宗派",
+      "is_standard": false,
+      "variants_of_standard": [
+        "有宗",
+        "瑜伽行",
+        "傳世親學"
+      ],
+      "vocab_note": "印度大乘二大系之一",
+      "source": "batch_01",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "有宗"
+      ],
+      "sample_context": "…以祖位亦人亦佛亦聖者亦凡夫，都無所住，一切不捨。然在宗門唯重最初悟向上事，故後代有宗教之畛。實則正須入祖位者乃能宏大乘教，否則自縛未解者不能解人縛，講經說論修習教觀…"
+    },
+    {
+      "matched": "馬鳴",
+      "standard": "馬鳴",
+      "occurrences": 1,
+      "domain": "历史",
+      "subdomain": "人物",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "馬鳴"
+      ],
+      "sample_context": "…者不能解人縛，講經說論修習教觀，但能令得人天權小之益及種大乘善根，不入大乘。故如馬鳴、龍樹、無著、肇公、遠公、南獄、帝心、智者、窺基、永嘉、永明、紫柏諸公，乃為勝耳…"
+    },
+    {
+      "matched": "龍樹",
+      "standard": "龍樹",
+      "occurrences": 1,
+      "domain": "历史",
+      "subdomain": "人物",
+      "is_standard": true,
+      "variants_of_standard": [
+        "龍樹菩薩"
+      ],
+      "vocab_note": "中觀宗祖師",
+      "source": "batch_01",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "龍樹"
+      ],
+      "sample_context": "…解人縛，講經說論修習教觀，但能令得人天權小之益及種大乘善根，不入大乘。故如馬鳴、龍樹、無著、肇公、遠公、南獄、帝心、智者、窺基、永嘉、永明、紫柏諸公，乃為勝耳！若不…"
+    },
+    {
+      "matched": "窺基",
+      "standard": "窺基",
+      "occurrences": 1,
+      "domain": "历史",
+      "subdomain": "人物",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "窺基"
+      ],
+      "sample_context": "…之益及種大乘善根，不入大乘。故如馬鳴、龍樹、無著、肇公、遠公、南獄、帝心、智者、窺基、永嘉、永明、紫柏諸公，乃為勝耳！若不真參實悟，守黑空狂，唯執取語錄機鋒棒喝為宗…"
+    },
+    {
+      "matched": "永明",
+      "standard": "永明",
+      "occurrences": 1,
+      "domain": "历史",
+      "subdomain": "人物",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "永明"
+      ],
+      "sample_context": "…善根，不入大乘。故如馬鳴、龍樹、無著、肇公、遠公、南獄、帝心、智者、窺基、永嘉、永明、紫柏諸公，乃為勝耳！若不真參實悟，守黑空狂，唯執取語錄機鋒棒喝為宗者，不如學教…"
+    },
+    {
+      "matched": "語錄",
+      "standard": "語錄",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "著述體裁",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "語錄"
+      ],
+      "sample_context": "…帝心、智者、窺基、永嘉、永明、紫柏諸公，乃為勝耳！若不真參實悟，守黑空狂，唯執取語錄機鋒棒喝為宗者，不如學教念佛隨順信行遠矣！蓋畫鵠不成尚如騖，畫虎不成反類犬也！ …"
+    },
+    {
+      "matched": "菩薩道",
+      "standard": "菩薩道",
+      "occurrences": 1,
+      "domain": "义理维度",
+      "subdomain": "義理體系",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "从「人」至「菩萨」的行动伦理，作为社会构建的佛教基础",
+      "source": "dimensional",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "菩薩道"
+      ],
+      "sample_context": "…，既悟入則出家者當修沙門行，具無漏戒定慧功德；在家者隨其出處之地位，修己利人，行菩薩道。要之，在家當自行教人興崇十善福，出家當自行教人修證二空慧，壹以真覺大悲為本，…"
+    },
+    {
+      "matched": "人乘",
+      "standard": "人乘",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "人乘"
+      ],
+      "sample_context": "…。  ## 四　小乘與大乘之關係  問曰：然則小乘亦是大乘方便行耶？答曰：如是！人乘天乘為利生法，聲聞乘獨覺乘為出世法；用利生法依福善捨罪惡，用出世法依空慧捨福善，…"
+    },
+    {
+      "matched": "地前",
+      "standard": "地前",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "地前"
+      ],
+      "sample_context": "…大乘而信佛學佛，具修人天聲聞獨覺乘法，則為假名菩薩權乘，即天台所判藏教通教及別教地前之菩薩也。抑小乘法，一一針對為入大乘而設：生不了其所始，死不了其所終（此非得夙命…"
+    },
+    {
+      "matched": "非得",
+      "standard": "非得",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "非得"
+      ],
+      "sample_context": "…別教地前之菩薩也。抑小乘法，一一針對為入大乘而設：生不了其所始，死不了其所終（此非得夙命智可了，若阿羅漢能知八萬大劫死此生彼之事，然八萬大劫初生何所始，八萬大劫後，…"
+    },
+    {
+      "matched": "妄念",
+      "standard": "妄念",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "妄念"
+      ],
+      "sample_context": "…，仍不能了），非最切之無明苦耶？故修佛法者，皆從此發心，從此懷疑，從此參究，忽離妄念觸證真心，則悟一切諸法皆涅槃相，一切眾生皆菩提相。情不能入，緣莫能到，本無所欣，…"
+    },
+    {
+      "matched": "諸法",
+      "standard": "諸法",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "諸法"
+      ],
+      "sample_context": "…無明苦耶？故修佛法者，皆從此發心，從此懷疑，從此參究，忽離妄念觸證真心，則悟一切諸法皆涅槃相，一切眾生皆菩提相。情不能入，緣莫能到，本無所欣，為何所厭！故曰了生死苦…"
+    },
+    {
+      "matched": "我相",
+      "standard": "我相",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "我相"
+      ],
+      "sample_context": "…，本無所欣，為何所厭！故曰了生死苦，發菩提心。情愛因乎執我，執我則雖行慈悲而終有我相為礙（孔耶等諸人天教所行者不能出此），如慈母之愛子，以子由我勞苦而得，復有期望孝…"
+    },
+    {
+      "matched": "授記",
+      "standard": "授記",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "授記"
+      ],
+      "sample_context": "…家求道者，正可為說小乘令依修入，既修入則一轉即得成佛菩薩。故法華會上一切聲聞無不授記成佛，蓋小乘正是入大乘之方便行，小乘究竟之涅槃即大乘方便淨涅槃也。顧後代人師，既…"
+    },
+    {
+      "matched": "執著",
+      "standard": "執著",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "執著"
+      ],
+      "sample_context": "…乘正是入大乘方便，是以「無生死可出無涅槃可證」等言，非未入大乘貪玩生死之凡夫可得執著；而「我不入地獄誰入地獄」之說，亦非夸妄之徒可得自擬。故大涅槃經中，佛對諸小果人…"
+    },
+    {
+      "matched": "涅槃經",
+      "standard": "涅槃經",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "經典",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "涅槃經"
+      ],
+      "sample_context": "…貪玩生死之凡夫可得執著；而「我不入地獄誰入地獄」之說，亦非夸妄之徒可得自擬。故大涅槃經中，佛對諸小果人則說常樂我淨，而對諸外道人還說無常苦空無我不淨，蓋外道未度脫生…"
+    },
+    {
+      "matched": "法界",
+      "standard": "法界",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "一真法界",
+        "中實法界",
+        "法界圓明",
+        "法界無障礙"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "法界"
+      ],
+      "sample_context": "…糞出也。  ## 五　佛法與人世之關係  問曰：佛法行世之益如何？答曰：佛法乃盡法界眾生界唯一真正之宗教。凡世間教化兼道理德行而言，能為道理德行宗極之本源，能為道理…"
+    },
+    {
+      "matched": "一真",
+      "standard": "一真",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "一真"
+      ],
+      "sample_context": "…## 五　佛法與人世之關係  問曰：佛法行世之益如何？答曰：佛法乃盡法界眾生界唯一真正之宗教。凡世間教化兼道理德行而言，能為道理德行宗極之本源，能為道理德行宗歸而究…"
+    },
+    {
+      "matched": "本源",
+      "standard": "本源",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "本源"
+      ],
+      "sample_context": "…：佛法乃盡法界眾生界唯一真正之宗教。凡世間教化兼道理德行而言，能為道理德行宗極之本源，能為道理德行宗歸而究竟，謂之宗教，此非佛法無足當者，異乎諂媚庸陋之天人小教也！…"
+    },
+    {
+      "matched": "因果",
+      "standard": "因果",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "因果"
+      ],
+      "sample_context": "…二空而通聖性，廣修萬行而福民生，解脫煩憂，開豁神智，疑畏消滅，意志清明；次亦信崇因果，戒除罪惡，修習悲敬，施濟群眾。蓋其上者為餘宗之所無，而其下者統他教之所有，則人…"
+    },
+    {
+      "matched": "戒定",
+      "standard": "戒定",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "戒定"
+      ],
+      "sample_context": "…施濟群眾。蓋其上者為餘宗之所無，而其下者統他教之所有，則人天乘十善法也。十善兼乎戒定，析為十戒十定，一一戒一一定各有四種通德。戒四通德，十戒為本，則戒殘殺、戒偷盜、…"
+    },
+    {
+      "matched": "綺語",
+      "standard": "綺語",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "戒律行持",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "綺語"
+      ],
+      "sample_context": "…一戒一一定各有四種通德。戒四通德，十戒為本，則戒殘殺、戒偷盜、戒淫亂、戒妄言、戒綺語、戒惡口、戒異舌、戒慳貪、戒嗔恚、戒邪慢是也。助成之者，為忍辱德。戒之增上則為施…"
+    },
+    {
+      "matched": "惡口",
+      "standard": "惡口",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "戒律行持",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "惡口"
+      ],
+      "sample_context": "…定各有四種通德。戒四通德，十戒為本，則戒殘殺、戒偷盜、戒淫亂、戒妄言、戒綺語、戒惡口、戒異舌、戒慳貪、戒嗔恚、戒邪慢是也。助成之者，為忍辱德。戒之增上則為施捨，一、…"
+    },
+    {
+      "matched": "忍辱",
+      "standard": "忍辱",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "菩薩行",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "忍辱"
+      ],
+      "sample_context": "…戒淫亂、戒妄言、戒綺語、戒惡口、戒異舌、戒慳貪、戒嗔恚、戒邪慢是也。助成之者，為忍辱德。戒之增上則為施捨，一、修救護行（此無畏施，若救放生命，弭息兵災，除暴安良，成…"
+    },
+    {
+      "matched": "利樂",
+      "standard": "利樂",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "菩薩行",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "利樂"
+      ],
+      "sample_context": "…捨，一、修救護行（此無畏施，若救放生命，弭息兵災，除暴安良，成仁取義等），二、修利樂行（此為財施，若保幼、養老、恤貧、濟苦等），三、修禮義行（改良風俗，整齊文化），…"
+    },
+    {
+      "matched": "無想定",
+      "standard": "無想定",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "禪觀",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無想定"
+      ],
+      "sample_context": "…未發定，二、離生喜樂定，三、定生喜樂定，四、離喜妙樂定，五、捨念清淨定，六、有色無想定，七、空無邊處定，八、識無邊處定，九、行不行處定，十、想非想處定。助成之者，為…"
+    },
+    {
+      "matched": "非想",
+      "standard": "非想",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "非想"
+      ],
+      "sample_context": "…念清淨定，六、有色無想定，七、空無邊處定，八、識無邊處定，九、行不行處定，十、想非想處定。助成之者，為安忍德。定之策發則為厭捨，謂厭捨戲鬧，厭捨聲囂，厭捨尋伺，厭捨…"
+    },
+    {
+      "matched": "尋伺",
+      "standard": "尋伺",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "尋伺"
+      ],
+      "sample_context": "…十、想非想處定。助成之者，為安忍德。定之策發則為厭捨，謂厭捨戲鬧，厭捨聲囂，厭捨尋伺，厭捨喜掉，厭捨樂著，厭捨意想，厭捨色身，厭捨空境，厭捨空識，厭捨空行，展轉階升…"
+    },
+    {
+      "matched": "修得",
+      "standard": "修得",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "修得"
+      ],
+      "sample_context": "…況解其義！而保傅人道，則十戒盡矣。然志為人倫師法者，雖未能成平等大慈同體大悲，當修得離生喜樂定，涵養宏暢其慈悲喜護心，漸令充滿一天地間。蓋必通乎天德，然後聖乎人性，…"
+    },
+    {
+      "matched": "性德",
+      "standard": "性德",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "如來藏思想",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "性德"
+      ],
+      "sample_context": "…，顏氏修之得三月不違仁，亦殆庶幾矣。然此猶是人天業行，非有成出世心證無生法持真如性德藏乎其上者，則其源不清，其流雜染，而未足宗極宗歸。故必得出家專修增上戒心慧學之苾…"
+    },
+    {
+      "matched": "慧學",
+      "standard": "慧學",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "慧學"
+      ],
+      "sample_context": "…真如性德藏乎其上者，則其源不清，其流雜染，而未足宗極宗歸。故必得出家專修增上戒心慧學之苾芻住持佛法，建人心正信善根也。至夫應真大士，隨俗利生，則形類無定，莫可情求矣…"
+    },
+    {
+      "matched": "釋迦",
+      "standard": "釋迦牟尼",
+      "occurrences": 1,
+      "domain": "历史",
+      "subdomain": "人物",
+      "is_standard": false,
+      "variants_of_standard": [
+        "釋尊",
+        "釋迦"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "釋迦"
+      ],
+      "sample_context": "…師仲尼以重其言者，猶不直粱惠王「何以利吾國」之國家主義，祗曰「有仁義而已矣」，況釋迦清淨正教哉！故住持佛教之苾芻，不應心縈國家社會，效流俗耑耑分別乎私德公德，亦普教…"
+    },
+    {
+      "matched": "幻有",
+      "standard": "幻有",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "中觀學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "幻有"
+      ],
+      "sample_context": "…食人壑鄰之事，唯善無惡不違正義，救存援溺當賦同舟。是故沙門既悟我我所空，尤當持諸幻有乃至血肉骨髓，作法施財施無畏施，供養國家，利濟社會。奮大勇猛，運常精進，國群有益…"
+    },
+    {
+      "matched": "供養",
+      "standard": "供養",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "供養"
+      ],
+      "sample_context": "…援溺當賦同舟。是故沙門既悟我我所空，尤當持諸幻有乃至血肉骨髓，作法施財施無畏施，供養國家，利濟社會。奮大勇猛，運常精進，國群有益罔不趨興，先之勞之，無或稍懈，備世之…"
+    },
+    {
+      "matched": "僧尼",
+      "standard": "僧尼",
+      "occurrences": 1,
+      "domain": "制度",
+      "subdomain": "僧制",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "僧尼"
+      ],
+      "sample_context": "…，陰盜陽憎，心奉口違。故考民俗風習，雖皆信行佛教，而多不居為佛教徒，唯任出家二眾僧尼遊乎方外，若存若亡，鮮在家眾持續傳守，且時或凌折之。故我佛聲光雖嘗大振乎隋唐，浸…"
+    },
+    {
+      "matched": "法幢",
+      "standard": "法幢",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "法幢"
+      ],
+      "sample_context": "…宗，現今中國有待佛教尤殷。顧佛教有墜落之憂，唯沙門負恢振之責。然則報酬佛恩，興建法幢，攝化國民，開導世人，其可不勇猛精進於菩薩涉俗利生行乎！此又其一。今世異學異教風…"
+    },
+    {
+      "matched": "皈依",
+      "standard": "皈依",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "皈依"
+      ],
+      "sample_context": "…，各稱道真自成宗尚，互偏標榜競為朋黨。而中國人心當此泛應繁變之勢會，倀倀乎莫知所皈依，較餘土為尤甚。顛倒東西，淆混黑白，既目眯而意醉，乃冥趨以盲從，唯煊赫強盛之是崇…"
+    },
+    {
+      "matched": "所緣緣",
+      "standard": "所緣緣",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "所緣緣"
+      ],
+      "sample_context": "…。悲矣群瞽！痛哉眾狂！天下斯傾，大道其沉！勢非恒俗庸化之士可能挽回圖救千一。菩提所緣緣苦眾生，佛言「唯度迷情方順佛心」，則正須以超世之身，轉適群機，廣行四攝，集大法…"
+    },
+    {
+      "matched": "四攝",
+      "standard": "四攝",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "菩薩行",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "四攝"
+      ],
+      "sample_context": "…一。菩提所緣緣苦眾生，佛言「唯度迷情方順佛心」，則正須以超世之身，轉適群機，廣行四攝，集大法眾，結大法會，震大法雷，作大法事，捧佛日於虞淵，啟人心之正信，此又其一。…"
+    },
+    {
+      "matched": "苦行",
+      "standard": "苦行",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "苦行"
+      ],
+      "sample_context": "…大法雷，作大法事，捧佛日於虞淵，啟人心之正信，此又其一。以故未可拘守沙門苾芻杜多苦行，唯幽閒清淨端居之是安。古師聖天、圭峰、大慧、紫柏，近德松風、月照，斯堪法矣！異…"
+    },
+    {
+      "matched": "大慧",
+      "standard": "大慧",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "大慧"
+      ],
+      "sample_context": "…，此又其一。以故未可拘守沙門苾芻杜多苦行，唯幽閒清淨端居之是安。古師聖天、圭峰、大慧、紫柏，近德松風、月照，斯堪法矣！異日人心晉善世道康和，如來正教普被全球，多有在…"
+    },
+    {
+      "matched": "在家菩薩",
+      "standard": "在家菩薩",
+      "occurrences": 1,
+      "domain": "制度",
+      "subdomain": "僧制",
+      "is_standard": true,
+      "variants_of_standard": [
+        "在家大乘行者",
+        "即俗即真的大乘行者"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "在家菩薩"
+      ],
+      "sample_context": "…慧、紫柏，近德松風、月照，斯堪法矣！異日人心晉善世道康和，如來正教普被全球，多有在家菩薩宏修十善信護三尊，則出家者固應專習無上希有之法，精嚴無漏真淨之行，剋獲聖果現…"
+    },
+    {
+      "matched": "法忍",
+      "standard": "法忍",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [
+        "成就法忍"
+      ],
+      "vocab_note": "於佛法忍可於心，不復疑惑",
+      "source": "phase2_fulltext,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "法忍"
+      ],
+      "sample_context": "…證，以供天人神鬼瞻仰讚歎崇奉尊敬。雖然，蠖不屈不伸，行不冥不昭，今此有能剋證無生法忍，現大士莊嚴相好殊勝尊特神通身，開化甯不尤廣？在行者宜自知時耳！  ## 七　中…"
+    },
+    {
+      "matched": "相好",
+      "standard": "相好",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "相好"
+      ],
+      "sample_context": "…瞻仰讚歎崇奉尊敬。雖然，蠖不屈不伸，行不冥不昭，今此有能剋證無生法忍，現大士莊嚴相好殊勝尊特神通身，開化甯不尤廣？在行者宜自知時耳！  ## 七　中國佛教之整建與發…"
+    },
+    {
+      "matched": "殊勝",
+      "standard": "殊勝",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "殊勝"
+      ],
+      "sample_context": "…讚歎崇奉尊敬。雖然，蠖不屈不伸，行不冥不昭，今此有能剋證無生法忍，現大士莊嚴相好殊勝尊特神通身，開化甯不尤廣？在行者宜自知時耳！  ## 七　中國佛教之整建與發揚 …"
+    },
+    {
+      "matched": "教會",
+      "standard": "教會",
+      "occurrences": 1,
+      "domain": "制度",
+      "subdomain": "佛教組織",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "教會"
+      ],
+      "sample_context": "… 處今中華民國佛教四眾信人，則當請政府廢寺廟管理條例，參酌佛教總會教章，重建立佛教會。內以真實研究佛法道德，整肅僧眾，清淨律儀；外以勤勇施行慈善事業，輯和國民，淳正…"
+    },
+    {
+      "matched": "僧眾",
+      "standard": "僧眾",
+      "occurrences": 1,
+      "domain": "制度",
+      "subdomain": "僧制",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "僧眾"
+      ],
+      "sample_context": "…請政府廢寺廟管理條例，參酌佛教總會教章，重建立佛教會。內以真實研究佛法道德，整肅僧眾，清淨律儀；外以勤勇施行慈善事業，輯和國民，淳正風化，廣興國民教育，陶鑄國民人格…"
+    },
+    {
+      "matched": "僧俗",
+      "standard": "僧俗",
+      "occurrences": 1,
+      "domain": "制度",
+      "subdomain": "僧制",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "僧俗"
+      ],
+      "sample_context": "…國民教育，陶鑄國民人格，一洗揜偷瑣陋委靡頹唐之習，令世人之耳目一新。則佛法可綸貫僧俗，布攝歐亞，同發本真大乘信心，咸歸自性平等覺海。  （附註）本論為普陀關中最早之…"
+    },
+    {
+      "matched": "自性",
+      "standard": "自性",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "有無自性",
+        "諸法離言自性",
+        "離言自性"
+      ],
+      "vocab_note": "太虚在判攝中反覆辨析的核心概念",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "自性"
+      ],
+      "sample_context": "…靡頹唐之習，令世人之耳目一新。則佛法可綸貫僧俗，布攝歐亞，同發本真大乘信心，咸歸自性平等覺海。  （附註）本論為普陀關中最早之作，四年秋季即印行流通。亦名佛乘導言或…"
+    },
+    {
+      "matched": "宗要",
+      "standard": "宗要",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "佛法體系",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "宗要"
+      ],
+      "sample_context": "…附註）本論為普陀關中最早之作，四年秋季即印行流通。亦名佛乘導言或佛學導言，為佛乘宗要論所本。              "
+    }
+  ],
+  "domain_summary": {
+    "domains": {
+      "教理": 203,
+      "行持": 49,
+      "制度": 12,
+      "历史": 11,
+      "社会文化": 3,
+      "义理维度": 3
+    },
+    "subdomains": {
+      "基礎教義": 141,
+      "修行次第": 27,
+      "唯識學": 16,
+      "大乘通義": 13,
+      "僧制": 8,
+      "菩薩行": 8,
+      "人物": 8,
+      "宗派": 6,
+      "戒律行持": 6,
+      "中觀學": 5,
+      "禪觀": 5,
+      "論典": 4,
+      "如來藏思想": 4,
+      "佛法體系": 4,
+      "經典": 4,
+      "義理體系": 3,
+      "判教框架": 3,
+      "佛教與文化": 2,
+      "佛教史分期": 2,
+      "淨土法門": 2,
+      "大乘有宗": 1,
+      "佛教事件": 1,
+      "菩萨行": 1,
+      "佛教與教育": 1,
+      "戒律制度": 1,
+      "寺院管理": 1,
+      "密法": 1,
+      "大乘宗派": 1,
+      "著述體裁": 1,
+      "佛教組織": 1
+    }
+  }
+}

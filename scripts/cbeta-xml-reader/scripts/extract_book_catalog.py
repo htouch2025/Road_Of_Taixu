@@ -234,8 +234,8 @@ def build_json(entries, book_name, book_num, file_map):
             'byte_size': e['byte_end'] - e['byte_start'],
             'prev': entries[i - 1]['篇名'] if i > 0 else None,
             'next': entries[i + 1]['篇名'] if i < len(entries) - 1 else None,
-            'prev_index': entries[i - 1]['mulu_index'] if i > 0 else None,
-            'next_index': entries[i + 1]['mulu_index'] if i < len(entries) - 1 else None,
+            'prev_index': i - 1 if i > 0 else None,
+            'next_index': i + 1 if i < len(entries) - 1 else None,
         })
 
     return {
@@ -270,7 +270,7 @@ def main():
 
     if args.out_dir is None:
         book_parts = args.book.split(None, 1)
-        bian_suffix = bian_parts[1] if len(bian_parts) > 1 else args.book
+        bian_suffix = book_parts[1] if len(book_parts) > 1 else args.book
         args.out_dir = f'_research/{args.book_num:02d}_{bian_suffix}'
 
     entries, file_map = extract_catalog(args.xml_files)

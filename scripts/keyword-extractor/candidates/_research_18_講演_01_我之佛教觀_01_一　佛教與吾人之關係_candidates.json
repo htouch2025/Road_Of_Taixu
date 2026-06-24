@@ -1,0 +1,529 @@
+{
+  "summary": {
+    "total_candidates": 28,
+    "unique_standards": 28,
+    "single_occurrence_ratio": "20/28",
+    "high_frequency_terms": [],
+    "heading_weighted": true,
+    "heading_weight": 3
+  },
+  "article": {
+    "path": "/Users/xin/Documents/Road_Of_Taixu/_research/18_講演/01_我之佛教觀/01_一　佛教與吾人之關係.md",
+    "title": "一　佛教與吾人之關係",
+    "cjk_chars": 1189,
+    "recommended_count": "5-8",
+    "编": "第十八编 講演",
+    "编_number": "18",
+    "category": "我之佛教觀"
+  },
+  "vocab_source": "/Users/xin/Documents/Road_Of_Taixu/_research/keyword_vocabulary_v4.json",
+  "match_stats": {
+    "raw_hits": 28,
+    "after_dedup": 28
+  },
+  "candidates": [
+    {
+      "matched": "三寶",
+      "standard": "三寶",
+      "occurrences": 8,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "三寶"
+      ],
+      "sample_context": "…向其心依止無上真正之道，心與道一之謂。無上真正之道，即是佛教，佛教即是佛、法、僧三寶。佛是能覺悟開示無上真正之道之人，佛法是佛覺悟開示之無上真正之道，佛法僧是信解行…"
+    },
+    {
+      "matched": "智慧",
+      "standard": "智慧",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "智慧"
+      ],
+      "sample_context": "…，親悟真理以成聖智，達美滿優勝之地位，獲常住周遍之安樂者，故曰「一切眾生皆具如來智慧德相」。顧牽攝於事勢，顛倒於感倩，馳逐於名利，奔走於衣食，又鮮不喪失其本心，始誠…"
+    },
+    {
+      "matched": "皈依",
+      "standard": "皈依",
+      "occurrences": 3,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "皈依"
+      ],
+      "sample_context": "…，定慧性之命，必求佛教之無上真正之道，非其餘人天之邪宗，小教所致也。而宗教者，即皈依之義；皈依者，即皈向其心依止無上真正之道，心與道一之謂。無上真正之道，即是佛教，…"
+    },
+    {
+      "matched": "流轉",
+      "standard": "流轉",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "流轉"
+      ],
+      "sample_context": "…日即趨近死限一日，如牽赴屠場之豕，步步行近死地；生而不得不死，死又不得不生，隨業流轉，生死無已。夫生死之變亦大矣！吾浪死虛生，虛生浪死，竟不能稍稍自覺，稍稍自由，可…"
+    },
+    {
+      "matched": "生死",
+      "standard": "生死",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "生死"
+      ],
+      "sample_context": "…近死限一日，如牽赴屠場之豕，步步行近死地；生而不得不死，死又不得不生，隨業流轉，生死無已。夫生死之變亦大矣！吾浪死虛生，虛生浪死，竟不能稍稍自覺，稍稍自由，可不哀乎…"
+    },
+    {
+      "matched": "自覺",
+      "standard": "自覺",
+      "occurrences": 2,
+      "domain": "义理维度",
+      "subdomain": "義理體系",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "太虚佛教心理学的核心概念：「自觉」——认识能力、认识主体、认识对象的三位一体",
+      "source": "dimensional",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "自覺"
+      ],
+      "sample_context": "…不得不生，隨業流轉，生死無已。夫生死之變亦大矣！吾浪死虛生，虛生浪死，竟不能稍稍自覺，稍稍自由，可不哀乎！不寧惟是，即在有生之域，數十年間，其本心誰不欲勉為善行以邀…"
+    },
+    {
+      "matched": "如來",
+      "standard": "如來",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "如來"
+      ],
+      "sample_context": "…天福，親悟真理以成聖智，達美滿優勝之地位，獲常住周遍之安樂者，故曰「一切眾生皆具如來智慧德相」。顧牽攝於事勢，顛倒於感倩，馳逐於名利，奔走於衣食，又鮮不喪失其本心，…"
+    },
+    {
+      "matched": "信解",
+      "standard": "信解",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "信解"
+      ],
+      "sample_context": "…僧三寶。佛是能覺悟開示無上真正之道之人，佛法是佛覺悟開示之無上真正之道，佛法僧是信解行證無上真正之道之人。三寶之德，不可言量！吾人在茫茫苦海中，三寶為舟航；漫漫黑夜…"
+    },
+    {
+      "matched": "無常",
+      "standard": "無常",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無常"
+      ],
+      "sample_context": "…覽憑弔。嗟夫！古人之跡在此，古人之真何往耶？雖然、吾人自幼而壯，自壯而老，剽劫於無常急駛之流，猶落花之墮湍水，不容停駐，數十年之光陰，一瞥即逝，又將有後來之過客，以…"
+    },
+    {
+      "matched": "不生",
+      "standard": "不生",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "不生"
+      ],
+      "sample_context": "…在世，度一日即趨近死限一日，如牽赴屠場之豕，步步行近死地；生而不得不死，死又不得不生，隨業流轉，生死無已。夫生死之變亦大矣！吾浪死虛生，虛生浪死，竟不能稍稍自覺，稍…"
+    },
+    {
+      "matched": "常住",
+      "standard": "常住",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "常住"
+      ],
+      "sample_context": "…，數十年間，其本心誰不欲勉為善行以邀天福，親悟真理以成聖智，達美滿優勝之地位，獲常住周遍之安樂者，故曰「一切眾生皆具如來智慧德相」。顧牽攝於事勢，顛倒於感倩，馳逐於…"
+    },
+    {
+      "matched": "眾生",
+      "standard": "眾生",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "眾生"
+      ],
+      "sample_context": "…善行以邀天福，親悟真理以成聖智，達美滿優勝之地位，獲常住周遍之安樂者，故曰「一切眾生皆具如來智慧德相」。顧牽攝於事勢，顛倒於感倩，馳逐於名利，奔走於衣食，又鮮不喪失…"
+    },
+    {
+      "matched": "常樂",
+      "standard": "常樂",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "常樂"
+      ],
+      "sample_context": "…則早已失卻矣。夫佛教者，即救度吾人之本心而活之者也。令人人發自心之智慧，悟自心之常樂，故吾人之自心，即光明無量、壽命無量之阿彌陀佛也。令人人充自心之慈悲，致自心之寧…"
+    },
+    {
+      "matched": "光明",
+      "standard": "光明",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "光明"
+      ],
+      "sample_context": "…，即救度吾人之本心而活之者也。令人人發自心之智慧，悟自心之常樂，故吾人之自心，即光明無量、壽命無量之阿彌陀佛也。令人人充自心之慈悲，致自心之寧靜，故吾人之自心，即能…"
+    },
+    {
+      "matched": "彌陀",
+      "standard": "彌陀",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "淨土法門",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "彌陀"
+      ],
+      "sample_context": "…之者也。令人人發自心之智慧，悟自心之常樂，故吾人之自心，即光明無量、壽命無量之阿彌陀佛也。令人人充自心之慈悲，致自心之寧靜，故吾人之自心，即能仁寂默之釋迦牟尼佛也。…"
+    },
+    {
+      "matched": "慈悲",
+      "standard": "慈悲",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "慈悲"
+      ],
+      "sample_context": "…慧，悟自心之常樂，故吾人之自心，即光明無量、壽命無量之阿彌陀佛也。令人人充自心之慈悲，致自心之寧靜，故吾人之自心，即能仁寂默之釋迦牟尼佛也。蓋吾人固非不能遍知遍覺自…"
+    },
+    {
+      "matched": "釋迦牟尼",
+      "standard": "釋迦牟尼",
+      "occurrences": 1,
+      "domain": "历史",
+      "subdomain": "人物",
+      "is_standard": true,
+      "variants_of_standard": [
+        "釋尊",
+        "釋迦"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "釋迦牟尼"
+      ],
+      "sample_context": "…命無量之阿彌陀佛也。令人人充自心之慈悲，致自心之寧靜，故吾人之自心，即能仁寂默之釋迦牟尼佛也。蓋吾人固非不能遍知遍覺自由自主者，祇以未得無上真正之道，安定其心志，立…"
+    },
+    {
+      "matched": "甚深",
+      "standard": "甚深",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "甚深"
+      ],
+      "sample_context": "…能有所成就。故曰：「道也者，不可須臾離也，可離非道也」，此宗教與吾人之關係，所以甚深甚重，更無第二事能與相等也。然欲令吾人安信志之心，定慧性之命，必求佛教之無上真正…"
+    },
+    {
+      "matched": "定慧",
+      "standard": "定慧",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "禪觀",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "定慧"
+      ],
+      "sample_context": "…，此宗教與吾人之關係，所以甚深甚重，更無第二事能與相等也。然欲令吾人安信志之心，定慧性之命，必求佛教之無上真正之道，非其餘人天之邪宗，小教所致也。而宗教者，即皈依之…"
+    },
+    {
+      "matched": "人天",
+      "standard": "人天",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "人天"
+      ],
+      "sample_context": "…二事能與相等也。然欲令吾人安信志之心，定慧性之命，必求佛教之無上真正之道，非其餘人天之邪宗，小教所致也。而宗教者，即皈依之義；皈依者，即皈向其心依止無上真正之道，心…"
+    },
+    {
+      "matched": "依止",
+      "standard": "依止",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "依止"
+      ],
+      "sample_context": "…真正之道，非其餘人天之邪宗，小教所致也。而宗教者，即皈依之義；皈依者，即皈向其心依止無上真正之道，心與道一之謂。無上真正之道，即是佛教，佛教即是佛、法、僧三寶。佛是…"
+    },
+    {
+      "matched": "行證",
+      "standard": "行證",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "行證"
+      ],
+      "sample_context": "…寶。佛是能覺悟開示無上真正之道之人，佛法是佛覺悟開示之無上真正之道，佛法僧是信解行證無上真正之道之人。三寶之德，不可言量！吾人在茫茫苦海中，三寶為舟航；漫漫黑夜中，…"
+    },
+    {
+      "matched": "苦海",
+      "standard": "苦海",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "苦海"
+      ],
+      "sample_context": "…之無上真正之道，佛法僧是信解行證無上真正之道之人。三寶之德，不可言量！吾人在茫茫苦海中，三寶為舟航；漫漫黑夜中，三寶為明燈；悠悠險道中，三寶為導師；冥冥曠野中，三寶…"
+    },
+    {
+      "matched": "導師",
+      "standard": "導師",
+      "occurrences": 1,
+      "domain": "制度",
+      "subdomain": "僧制",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "導師"
+      ],
+      "sample_context": "…可言量！吾人在茫茫苦海中，三寶為舟航；漫漫黑夜中，三寶為明燈；悠悠險道中，三寶為導師；冥冥曠野中，三寶為真宅；舉要言之，三寶是吾人第一可依恃者，第一可崇拜者，亦是第…"
+    },
+    {
+      "matched": "覺者",
+      "standard": "覺者",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "覺者"
+      ],
+      "sample_context": "…第一可依恃者，第一可崇拜者，亦是第一能覺悟吾人者，能救護吾人者！故吾人凡有心知靈覺者，皆有佛性，皆是佛子，皆應了解無上真正之佛道，信仰無上真正之佛教，皈依三寶以為安…"
+    },
+    {
+      "matched": "佛性",
+      "standard": "佛性",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "如來藏思想",
+      "is_standard": true,
+      "variants_of_standard": [
+        "覺性"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "佛性"
+      ],
+      "sample_context": "…者，第一可崇拜者，亦是第一能覺悟吾人者，能救護吾人者！故吾人凡有心知靈覺者，皆有佛性，皆是佛子，皆應了解無上真正之佛道，信仰無上真正之佛教，皈依三寶以為安身立命之地…"
+    },
+    {
+      "matched": "信仰",
+      "standard": "信仰",
+      "occurrences": 1,
+      "domain": "社会文化",
+      "subdomain": "佛教與文化",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "信仰"
+      ],
+      "sample_context": "…能救護吾人者！故吾人凡有心知靈覺者，皆有佛性，皆是佛子，皆應了解無上真正之佛道，信仰無上真正之佛教，皈依三寶以為安身立命之地。從之於哲理上轉迷成悟，於倫理上轉惡成善…"
+    },
+    {
+      "matched": "受持",
+      "standard": "受持",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "受持"
+      ],
+      "sample_context": "…種方面，與佛教皆比較而分別觀察，令知究竟唯一佛教，為無上真正之道，故吾人皆應信解受持也！  "
+    }
+  ],
+  "domain_summary": {
+    "domains": {
+      "教理": 20,
+      "行持": 4,
+      "义理维度": 1,
+      "历史": 1,
+      "制度": 1,
+      "社会文化": 1
+    },
+    "subdomains": {
+      "基礎教義": 17,
+      "修行次第": 3,
+      "義理體系": 1,
+      "淨土法門": 1,
+      "人物": 1,
+      "禪觀": 1,
+      "大乘通義": 1,
+      "僧制": 1,
+      "如來藏思想": 1,
+      "佛教與文化": 1
+    }
+  }
+}

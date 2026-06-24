@@ -1,0 +1,133 @@
+# Task Group: cbeta-tx-extraction
+
+scope: full-text Markdown extraction from CBETA TX XML files using extract_article_fulltext.py; includes script design, iterative format fixes (heading spacing, 二三法印 splitting, anchor removal, byline/note extraction, 天干 prefix, word count), code-doc synchronization, skill updates, and catalog byte-offset bug fixes
+applies_to: cwd=/Users/xin/Documents/Road_Of_Taixu; reuse_rule=reusable for any single-article full-text extraction in this project; the script and skill are project-specific
+
+## Task 1: Design and implement extract_article_fulltext.py
+
+### rollout_summary_files
+
+- <rollout_summaries/2026-06-19T00-55-15-ePhH-cbeta_fulltext_extractor_implementation.md> (cwd=/Users/xin/Documents/Road_Of_Taixu, rollout_path=/Users/xin/.codex/sessions/2026/06/19/rollout-2026-06-19T08-55-15-019edd5f-f95b-7f71-b066-e9bc7feaecb5.jsonl, updated_at=2026-06-19T03:26:05+00:00, thread_id=019edd5f-f95b-7f71-b066-e9bc7feaecb5, initial full design and prototype)
+
+### keywords
+
+- extract_article_fulltext, CBETA, XML, TEI, TOC, back-notes, bidirectional-links, normalize_heading, walk_div_tree, render_paragraph
+
+## Task 2: Refine format (heading spacing, 二三法印 split, anchor removal, byline extraction)
+
+### rollout_summary_files
+
+- <rollout_summaries/2026-06-19T03-26-16-VG8U-cbeta_article_extraction_refinement_and_skill_update.md> (cwd=/Users/xin/Documents/Road_Of_Taixu, rollout_path=/Users/xin/.codex/sessions/2026/06/19/rollout-2026-06-19T11-26-16-019eddea-3d2d-7223-9d35-bbcd6d2671b8.jsonl, updated_at=2026-06-19T04:10:58+00:00, thread_id=019eddea-3d2d-7223-9d35-bbcd6d2671b8, format fixes applied to 佛理要略 extraction)
+- <rollout_summaries/2026-06-20T08-47-08-tdhc-extract_first_article_cbeta_xml_reader_foxue_gailun.md> (cwd=/Users/xin/Documents/Road_Of_Taixu, updated_at=2026-06-20T08:48:39+00:00, thread_id=019ee436-5cb8-71c1-9fce-e0fae486b5a6, clean usage of the stable extraction pipeline on 佛學概論)
+
+### keywords
+
+- normalize_heading, 二三法印, Obsidian锚点, 空格间距, byline, 篇末注释, 纯文本, SKILL.md, 佛學概論
+
+## Task 3: Fix 天干 heading spacing and reaffirm 科分 filter
+
+### rollout_summary_files
+
+- <rollout_summaries/2026-06-20T01-34-57-uuMK-cbeta_extract_fix_gan_heading_space_and_kefen_skip.md> (cwd=/Users/xin/Documents/Road_Of_Taixu, updated_at=2026-06-20T01:44:07+00:00, thread_id=019ee2aa-af55-7dd3-958d-27057f427056, code fix for 天干 prefix + 科分 filter then doc sync)
+
+### keywords
+
+- normalize_heading, should_skip_div, 天干, 科分, negative lookahead, GAN, 甲乙丙丁戊己庚辛壬癸, code-doc-sync
+
+## Task 4: Extract 般若波羅密多心經講義 (5th bian article)
+
+### rollout_summary_files
+
+- <rollout_summaries/2026-06-20T03-41-55-V5zS-extract_article_and_unify_skill_management_to_project_dir.md> (cwd=/Users/xin/Documents/Road_Of_Taixu, updated_at=2026-06-20T04:08:55+00:00, thread_id=019ee31e-eddb-75e3-8a13-83da68bcf45c, article extraction for 般若波羅密多心經講義 + skill management unification)
+
+### keywords
+
+- 第五编, 法性空慧學, 教釋, TX06n0005, 般若波羅密多心經講義, extract_article_fulltext
+
+## Task 5: Add Chinese character word count feature to article extraction
+
+### rollout_summary_files
+
+- <rollout_summaries/2026-06-20T09-29-23-s6O9-add_word_count_to_article_extraction.md> (cwd=/Users/xin/Documents/Road_Of_Taixu, updated_at=2026-06-20T10:21:46+00:00, thread_id=019ee45d-0cad-7e12-bf99-b9b5174c6afd, word count feature + catalog 子目 ordering fix)
+
+### keywords
+
+- word count, 字数, 万字, count_chinese_chars, CJK_RANGES, regenerate_catalog_md, 子目 ordering, extract_article_fulltext.py
+
+## Task 6: Diagnose and fix CBETA catalog byte-offset bugs in extract_bian_catalog.py
+
+### rollout_summary_files
+
+- <rollout_summaries/2026-06-20T13-35-22-caE4-cbeta_catalog_byte_offset_bug_diagnosis_and_fix.md> (cwd=/Users/xin/Documents/Road_Of_Taixu, updated_at=2026-06-20T14:04:26+00:00, thread_id=019ee53e-3fd1-71a1-991b-df073504673c, bug diagnosis and fix for scan_byte_offsets)
+
+### keywords
+
+- extract_bian_catalog.py, scan_byte_offsets, byte_start, byte_end, character offset vs byte offset, depth-tracking, cb:div, mismatched tag, ET.fromstring ParseError
+
+## Task 7: Batch clean article extractions using stabilized pipeline (佛理要略, 佛乘宗要論, 甚麼是佛學)
+
+### rollout_summary_files
+
+- <rollout_summaries/2026-06-20T08-50-26-LHx1-extract_fo_li_yao_lue_from_cbeta_catalog.md> (cwd=/Users/xin/Documents/Road_Of_Taixu, updated_at=2026-06-20T08:52:07+00:00, thread_id=019ee439-6342-78e2-9596-0472268ca3e3, first-attempt success on 佛理要略)
+- <rollout_summaries/2026-06-20T09-21-33-vKUP-extract_fochengsongyaolun_article_from_cbeta_xml.md> (cwd=/Users/xin/Documents/Road_Of_Taixu, updated_at=2026-06-20T09:23:33+00:00, thread_id=019ee455-e0dd-7ec0-966e-c2a25eb0ab33, clean extraction of 佛乘宗要論)
+- <rollout_summaries/2026-06-20T14-35-11-NPZ7-cbeta_xml_reader_extract_article_06_shenme_shi_foxue.md> (cwd=/Users/xin/Documents/Road_Of_Taixu, updated_at=2026-06-20T14:37:06+00:00, thread_id=019ee575-039d-7b33-9c1e-7fd6f044cf11, 甚麼是佛學 with correct --catalog/--article params)
+- <rollout_summaries/2026-06-20T11-14-57-7BA6-extract_shenme_shi_foxue_from_cbeta_xml_markdown.md> (cwd=/Users/xin/Documents/Road_Of_Taixu, updated_at=2026-06-20T11:17:11+00:00, thread_id=019ee4bd-b0fe-7bb1-b9c2-26890b8ec1ea, user preference: do not echo long text in conversation)
+
+### keywords
+
+- extract_article_fulltext.py, --catalog, --article, 佛理要略, 佛乘宗要論, 甚麼是佛學, TX01n0001.xml, 概論
+
+## rollout_summary_files
+
+- <rollout_summaries/2026-06-20T11-14-57-7BA6-extract_shenme_shi_foxue_from_cbeta_xml_markdown.md> (cwd=/Users/xin/Documents/Road_Of_Taixu, updated_at=2026-06-20T11:17:11+00:00, thread_id=019ee4bd-b0fe-7bb1-b9c2-26890b8ec1ea, extraction followed by user correcting long-text echo)
+
+### keywords
+
+- extract_article_fulltext.py, 甚麼是佛學, long text output, save-to-file preference, 编目录 JSON
+
+
+## Task 8: Add 附文 (appendix) handling to extraction script and catalog
+
+### rollout_summary_files
+
+- <rollout_summaries/2026-06-20T00-15-56-mX01-add_appendix_handling_to_taixu_cbeta_extraction_script.md> (cwd=/Users/xin/Documents/Road_Of_Taixu, updated_at=2026-06-20T01:32:56+00:00, thread_id=019ee262-57ae-7fd3-bce7-570ac2f81d0d, full appendix handling implementation)
+
+### keywords
+
+- 附, appendix, walk_div_tree, level_offset, find_appendix_info, normalize_heading, 編目錄, 附照見五蘊皆空, 法性空慧學, 般若波羅密多心經講義
+
+## Task 9: Adjust heading spacing (extra blank line before ## headings)
+
+### rollout_summary_files
+
+- <rollout_summaries/2026-06-20T08-53-13-CHqa-cbeta_xml_reader_extra_blank_line_before_section_headings.md> (cwd=/Users/xin/Documents/Road_Of_Taixu, updated_at=2026-06-20T09:18:06+00:00, thread_id=019ee43b-f07c-7463-8e3c-bb960b1e5d92, attempted to add blank line before ## headings; outcome partial)
+
+### keywords
+
+- heading spacing, blank line, ##, walk_div_tree, 排版, Markdown spacing, 佛法導言
+
+## Task 10: Batch article extractions using --batch mode (判攝 articles via catalog range)
+
+### rollout_summary_files
+
+- <rollout_summaries/2026-06-20T23-23-09-VG8F-extract_article_8_cbeta_xml_reader.md> (cwd=/Users/xin/Documents/Road_Of_Taixu, updated_at=2026-06-20T23:24:52+00:00, thread_id=019ee758-603f-7ac3-9800-1fb8403b8679, extracted article 8 佛法嗧義廣論)
+- <rollout_summaries/2026-06-20T23-26-13-i0nt-cbeta_xml_reader_extract_first_article_sublist.md> (cwd=/Users/xin/Documents/Road_Of_Taixu, updated_at=2026-06-20T23:27:41+00:00, thread_id=019ee75b-2f70-7af1-8625-0f9bb148bfaf, extracted 佛藏擇法眼圖 as first 判攝 article)
+- <rollout_summaries/2026-06-21T02-57-17-k6Xb-extract_cbeta_first_volume_second_subsection_fifth_article.md> (cwd=/Users/xin/Documents/Road_Of_Taixu, updated_at=2026-06-21T02:58:30+00:00, thread_id=019ee81c-6b07-79c0-adfd-33928c52b5bd, extracted 佛法一味論之十宗片面觀 as 判攝 #5)
+- <rollout_summaries/2026-06-21T03-00-01-bbZZ-extract_fofa_first_compilation_part_2_articles_6_8.md> (cwd=/Users/xin/Documents/Road_Of_Taixu, updated_at=2026-06-21T03:01:18+00:00, thread_id=019ee81e-edf1-7752-a4ea-51e48d13bed7, batch extracted 判攝 #6-8 using --batch --from --to)
+- <rollout_summaries/2026-06-21T07-42-32-lhqW-extract_first_division_part2_articles_9_11.md> (cwd=/Users/xin/Documents/Road_Of_Taixu, updated_at=2026-06-21T07:43:36+00:00, thread_id=019ee921-9275-7881-8b2e-a0f4aa48e832, batch extracted 判攝 #9-11)
+- <rollout_summaries/2026-06-21T08-14-28-bWoX-extract_cbeta_xml_articles_general_introduction_6_7.md> (cwd=/Users/xin/Documents/Road_Of_Taixu, updated_at=2026-06-21T08:15:52+00:00, thread_id=019ee93e-cfa2-7942-9955-9d00d46d74ab, batch extracted 概論 #6-7 using --batch --子目 概論 --from 6 --to 7)
+
+### keywords
+
+- --batch, --子目, --from, --to, 判攝, 佛法嗧義廣論, 佛藏擇法眼圖, 佛法一味論之十宗片面觀, extract_article_fulltext, 概論, 甚麼是佛學, 佛學講要, TX01n0001, batch mode sub-section extraction
+
+## Task 11: Fix byline placement bug (end-of-article byline mistaken for title annotation)
+
+### rollout_summary_files
+
+- <rollout_summaries/2026-06-21T07-26-46-MPek-cbeta_xml_reader_fix_byline_placement_bug.md> (cwd=/Users/xin/Documents/Road_Of_Taixu, updated_at=2026-06-21T07:36:05+00:00, thread_id=019ee913-2631-7ab3-9a52-7ea3a645bb84, fixed get_byline_text() to skip bylines after <p>)
+
+### keywords
+
+- get_byline_text, byline, 題注, 篇末附注, TX01n0001, 性釋, end-of-article annotation, Python inline replacement
+

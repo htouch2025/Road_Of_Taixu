@@ -1,0 +1,3342 @@
+{
+  "summary": {
+    "total_candidates": 185,
+    "unique_standards": 185,
+    "single_occurrence_ratio": "85/185",
+    "high_frequency_terms": [
+      "三界",
+      "因緣生法",
+      "向上增進心",
+      "眾生",
+      "因緣",
+      "大乘",
+      "三乘",
+      "三法印",
+      "生死",
+      "出離流轉心",
+      "五乘",
+      "因果",
+      "緣起",
+      "流轉",
+      "成佛"
+    ],
+    "heading_weighted": true,
+    "heading_weight": 3
+  },
+  "article": {
+    "path": "/Users/xin/Documents/Road_Of_Taixu/_research/01_佛法總學/01_概論/02_佛理要略.md",
+    "title": "佛理要略",
+    "cjk_chars": 5292,
+    "recommended_count": "8-12",
+    "编": "第一编 佛法總學",
+    "编_number": "1",
+    "category": "概論"
+  },
+  "vocab_source": "/Users/xin/Documents/Road_Of_Taixu/_research/keyword_vocabulary_v4.json",
+  "match_stats": {
+    "raw_hits": 199,
+    "after_dedup": 185
+  },
+  "candidates": [
+    {
+      "matched": "三界",
+      "standard": "三界",
+      "occurrences": 31,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "九地",
+        "欲界色界無色界"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "三界",
+        "九地"
+      ],
+      "sample_context": "…大乘即佛菩薩乘。此中所謂人乘，就吾輩人類之因果以明。人類因果既明，進而天乘，更明三界諸天果因之如何也。天之果有欲天、色天、無色天，感天之因有福業，不動業等。然此人乘…"
+    },
+    {
+      "matched": "因緣生法",
+      "standard": "因緣生法",
+      "occurrences": 21,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "因緣所生法",
+        "諸法眾緣生",
+        "萬有皆因緣所生",
+        "因緣生果"
+      ],
+      "vocab_note": "亦含緣起義，太虚常以「因緣生法」為五乘共法之總綱",
+      "source": "batch_01",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "因緣所生法",
+        "因緣生果",
+        "因緣生法"
+      ],
+      "sample_context": "…年 9 月，在漢藏教理院講）  ## 一　因緣生法——五乘共法——向上增進心  因緣生法之意義於下當明，此中所亟須言者，即佛理要略云何先就因緣生法義上而明？蓋因緣生…"
+    },
+    {
+      "matched": "向上增進心",
+      "standard": "向上增進心",
+      "occurrences": 21,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "太虚三心體系之一，對應五乘共法之向上追求",
+      "source": "manual_gap",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "向上增進心"
+      ],
+      "sample_context": "…皆於此法上建立，亦通出世三乘，故為五乘共法也。  明因緣生法之主要目的，厥為發起向上增進心。所謂向上，即非向下之義，明乎此則能明善惡因果。故於此能真正了達確信不疑者…"
+    },
+    {
+      "matched": "眾生",
+      "standard": "眾生",
+      "occurrences": 24,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "眾生"
+      ],
+      "sample_context": "…從無明緣行等十二法相續不斷也。所謂由無明、愛、取三煩惱故有業，由業故有生死；更在眾生共業報的器世間有成、住、壞、空。知此、則佛法所說的正因緣法明。可知現在之果皆從往…"
+    },
+    {
+      "matched": "因緣",
+      "standard": "因緣",
+      "occurrences": 19,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "因緣"
+      ],
+      "sample_context": "…此中所亟須言者，即佛理要略云何先就因緣生法義上而明？蓋因緣生之意義，乃明一切法從因緣而生，此實為佛法建立唯一之根本；其理最為普遍，所謂一切世出世法皆從因緣生是也。故…"
+    },
+    {
+      "matched": "大乘",
+      "standard": "大乘",
+      "occurrences": 16,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "大乘不共法",
+        "大乘法",
+        "大乘特法"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "大乘",
+        "大乘法"
+      ],
+      "sample_context": "…共通法而攝盡世出世法。言五乘者：一、人乘，二、天乘，三、聲聞乘，四、緣覺乘，五、大乘即佛菩薩乘。此中所謂人乘，就吾輩人類之因果以明。人類因果既明，進而天乘，更明三界…"
+    },
+    {
+      "matched": "三乘",
+      "standard": "三乘",
+      "occurrences": 11,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "出世三乘",
+        "聲聞緣覺菩薩"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": true,
+      "_heading_hits": 2,
+      "matched_via": [
+        "三乘",
+        "出世三乘"
+      ],
+      "sample_context": "…緣生法，以為佛法之基本故。  因緣生法，可遍通五乘共法。佛法隨機，故於乘有一乘、三乘、五乘之差。此雖種種，大致此因緣生法可為五乘共通法而攝盡世出世法。言五乘者：一、…"
+    },
+    {
+      "matched": "三法印",
+      "standard": "三法印",
+      "occurrences": 14,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "諸行無常、諸法無我、涅槃寂靜，三乘共學",
+      "source": "batch_01",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "三法印"
+      ],
+      "sample_context": "…## 二　三法印——三乘共法——出離流轉心  第一段所講為因緣所生法，今講第二段三法印——三乘共法。此三法印，在佛法中總印定一切佛法：即與此三法印合者是為佛法或出世…"
+    },
+    {
+      "matched": "生死",
+      "standard": "生死",
+      "occurrences": 16,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "生死"
+      ],
+      "sample_context": "…德禪定等資糧生天，亦為向上增進心，不過仍為世間所攝耳。至於要明出世因果，超脫三界生死證出世聖果，更為進一步的向上增進心。總之、一切世出世善行勝果，固皆以明因緣生法所…"
+    },
+    {
+      "matched": "出離流轉心",
+      "standard": "出離流轉心",
+      "occurrences": 12,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "太虚三心體系之一，對應三乘共法之出離解脫",
+      "source": "manual_gap",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "出離流轉心"
+      ],
+      "sample_context": "…為修學佛法之基本；然雖有此向上增進心，尚不必能出離生死，故必須了解三法印，乃生起出離流轉心也。  所謂流轉，謂觀六道三界九地皆同流轉，即上地靜妙離，無論如何增上，亦…"
+    },
+    {
+      "matched": "五乘",
+      "standard": "五乘",
+      "occurrences": 11,
+      "domain": "教理",
+      "subdomain": "判教框架",
+      "is_standard": true,
+      "variants_of_standard": [
+        "聲聞乘"
+      ],
+      "vocab_note": "太虚基本判教框架",
+      "source": "batch_01,v3_draft",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "五乘",
+        "聲聞乘"
+      ],
+      "sample_context": "…緣生是也。故若欲明佛理要略，必明因緣生法，以為佛法之基本故。  因緣生法，可遍通五乘共法。佛法隨機，故於乘有一乘、三乘、五乘之差。此雖種種，大致此因緣生法可為五乘共…"
+    },
+    {
+      "matched": "因果",
+      "standard": "因果",
+      "occurrences": 14,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "因果"
+      ],
+      "sample_context": "…二、天乘，三、聲聞乘，四、緣覺乘，五、大乘即佛菩薩乘。此中所謂人乘，就吾輩人類之因果以明。人類因果既明，進而天乘，更明三界諸天果因之如何也。天之果有欲天、色天、無色…"
+    },
+    {
+      "matched": "緣起",
+      "standard": "緣起",
+      "occurrences": 14,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "緣生"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "緣生",
+        "緣起"
+      ],
+      "sample_context": "…多經論廣明。今略釋分二：  #### 　　　　１十二緣起法  十二緣起者，謂無明緣起行、行緣起識、識緣起名色、名色緣起六入、六入緣起觸、觸緣起受、受緣起愛，愛緣起取…"
+    },
+    {
+      "matched": "流轉",
+      "standard": "流轉",
+      "occurrences": 14,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "流轉"
+      ],
+      "sample_context": "…生死之法，乃唯聲聞、獨覺、大乘所共同修學者也。於此三法印若真能信解，即能發起出離流轉之決心。此心較向上增進心轉勝：因向上增進心是了知善惡因果而發，於惡趣墮落深生怖畏…"
+    },
+    {
+      "matched": "唯識",
+      "standard": "唯識",
+      "occurrences": 8,
+      "domain": "教理",
+      "subdomain": "大乘有宗",
+      "is_standard": true,
+      "variants_of_standard": [
+        "法相唯識",
+        "唯識現",
+        "諸法唯識現",
+        "一切法唯識現"
+      ],
+      "vocab_note": "",
+      "source": "batch_01",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "一切法唯識現",
+        "唯識",
+        "唯識現"
+      ],
+      "sample_context": "…緣可曰順緣；若遭風霜冰雪等所枯萎，即為違緣。此等皆就色法的生起變化粗相上說。至於唯識釋因緣深義，謂賴耶識中色法種子才是親因緣，餘皆為增上緣也。心法既須各各自因，更須…"
+    },
+    {
+      "matched": "成佛",
+      "standard": "成佛",
+      "occurrences": 11,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "成佛"
+      ],
+      "sample_context": "…亦即菩提心。——菩提應具云阿耨多羅三藐三菩提，義即無上正遍覺。——發起此心即為發成佛之志願，為欲普度一切眾生離一切苦得究竟樂故求成佛也。若非為普度眾生則不須成佛，反…"
+    },
+    {
+      "matched": "總持",
+      "standard": "總持",
+      "occurrences": 7,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "總持"
+      ],
+      "sample_context": "…眾生行，轉識成智證見真如，即成無上菩提。  ### 　　丙一　切法大總持義  「總持」即陀羅尼義。普通指陀羅尼為咒，是取狹義。然陀羅尼義實甚廣，如法陀羅尼、義陀羅尼…"
+    },
+    {
+      "matched": "有為",
+      "standard": "有為",
+      "occurrences": 9,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "有為"
+      ],
+      "sample_context": "…．即有一類執有一個神為宇宙萬物之創造主宰，或稱大梵天等者是。今之耶穌教等亦主張萬有為神所造，神乃宇宙萬有之因；此神等種類亦多，概言之為造萬有之神也。2．或有執一種物…"
+    },
+    {
+      "matched": "諸行無常",
+      "standard": "諸行無常",
+      "occurrences": 6,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "諸行無常"
+      ],
+      "sample_context": "…—且觀此三界業果，剎那遷流生滅不停，了知三界六道眾生業因果報之法，皆生滅無常。故諸行無常，即謂有為業果皆無常性。——蓋此業果無常遷流，如輕葉隨水漂流非能自主。三界有…"
+    },
+    {
+      "matched": "涅槃寂靜",
+      "standard": "涅槃寂靜",
+      "occurrences": 6,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "擇滅涅槃",
+        "涅槃解脫"
+      ],
+      "vocab_note": "",
+      "source": "batch_01",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "涅槃寂靜"
+      ],
+      "sample_context": "…也。  此三法印攝苦、集、滅、道四諦：諸行無常、諸法無我是苦諦，其生苦因即集諦，涅槃寂靜即滅諦，其證滅因即道諦。  又發生此出離流轉心，有兩方面：1.知三界苦可滅；…"
+    },
+    {
+      "matched": "世間",
+      "standard": "世間",
+      "occurrences": 8,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "世間"
+      ],
+      "sample_context": "…何也。天之果有欲天、色天、無色天，感天之因有福業，不動業等。然此人乘、天乘、皆屬世間善法；至於出世間善法，則聲聞乘、緣覺乘、大乘菩薩佛也。此中所謂因緣生法即是五乘共…"
+    },
+    {
+      "matched": "諸法",
+      "standard": "諸法",
+      "occurrences": 8,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "諸法"
+      ],
+      "sample_context": "…萬物生於有，有生於無』，即從虛空生萬物也。4．或有執抽象的一種理為萬物生因，如曰諸法從時生，到時即生，時為實有；或計從數論所計之冥性——萬物以前之體——而生；或如中…"
+    },
+    {
+      "matched": "無明",
+      "standard": "無明",
+      "occurrences": 8,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無明"
+      ],
+      "sample_context": "…有眾多經論廣明。今略釋分二：  #### 　　　　１十二緣起法  十二緣起者，謂無明緣起行、行緣起識、識緣起名色、名色緣起六入、六入緣起觸、觸緣起受、受緣起愛，愛緣…"
+    },
+    {
+      "matched": "六道",
+      "standard": "六趣",
+      "occurrences": 8,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": false,
+      "variants_of_standard": [
+        "六道"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "六道"
+      ],
+      "sample_context": "…然。  ### 　　丙　近明六道業果——惡止善行  無因邪因既破，則可知佛法所說六道三界業果，真實不虛。由造福業、非福業、不動業，故感愛、非愛等果。福業者即十善業，…"
+    },
+    {
+      "matched": "業果",
+      "standard": "業果",
+      "occurrences": 8,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "業果"
+      ],
+      "sample_context": "…### 　　丙　近明六道業果——惡止善行  無因邪因既破，則可知佛法所說六道三界業果，真實不虛。由造福業、非福業、不動業，故感愛、非愛等果。福業者即十善業，非福業者…"
+    },
+    {
+      "matched": "增上",
+      "standard": "增上",
+      "occurrences": 7,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "增上"
+      ],
+      "sample_context": "…必不肯虛度，最低限度，亦要不令退墮而有所進步，即向上增進心所致。如菩提道次曰：『增上生者，謂得此增上生福報，唯有增上善因緣方能獲得』。亦同於斯向上增進心之意義。  …"
+    },
+    {
+      "matched": "四緣",
+      "standard": "四緣",
+      "occurrences": 7,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "一切有為法生起之四種條件：因緣、增上緣、所緣緣、等無間緣，因緣為親因（種子），餘三為緣",
+      "source": "phase2_fulltext,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "四緣"
+      ],
+      "sample_context": "…，達此義，則從現在一念心上不起無明，不造有漏業即可解脫。  #### 　　　　２四緣生法  四緣者，因緣、增上緣、等無間緣、所緣緣。此中所明因緣生法，理甚廣泛，普遍…"
+    },
+    {
+      "matched": "自性空",
+      "standard": "空性",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "中觀學",
+      "is_standard": false,
+      "variants_of_standard": [
+        "一切法自性空",
+        "本性空寂",
+        "空",
+        "自性空",
+        "諸法畢竟空"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "一切法自性空",
+        "自性空"
+      ],
+      "sample_context": "…講諸行無常、諸法無我、涅槃寂靜，諸行指有為法，諸法指有為無為法，即此諸行諸法本來自性空寂，即是本來不生不滅涅槃寂靜。故諸行諸法皆是因緣假現，都無自性。前之三法印徹底…"
+    },
+    {
+      "matched": "人天",
+      "standard": "人天",
+      "occurrences": 6,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "人天"
+      ],
+      "sample_context": "…至於出世間善法，則聲聞乘、緣覺乘、大乘菩薩佛也。此中所謂因緣生法即是五乘共法，蓋人天因果皆於此法上建立，亦通出世三乘，故為五乘共法也。  明因緣生法之主要目的，厥為…"
+    },
+    {
+      "matched": "諸法無我",
+      "standard": "諸法無我",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "人我本空",
+        "人無我"
+      ],
+      "vocab_note": "人無我與法無我之合稱",
+      "source": "batch_01,v3_draft",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "諸法無我"
+      ],
+      "sample_context": "…久安甯矣。故此安甯者，即苦已滅盡也。  此三法印攝苦、集、滅、道四諦：諸行無常、諸法無我是苦諦，其生苦因即集諦，涅槃寂靜即滅諦，其證滅因即道諦。  又發生此出離流轉…"
+    },
+    {
+      "matched": "普度成佛心",
+      "standard": "普度成佛心",
+      "occurrences": 3,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "太虚三心體系之一，對應大乘不共法之成佛度生",
+      "source": "manual_gap",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "普度成佛心"
+      ],
+      "sample_context": "…是苦，然不能發起普度眾生同出離之決心，故亦無須求成無上正遍覺之佛。此大乘法中則發普度成佛心，以見三界眾生皆在苦中，為求共同出離之法，而修共同出離之行，故名大乘。大乘…"
+    },
+    {
+      "matched": "因緣生",
+      "standard": "因緣生",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "因緣生"
+      ],
+      "sample_context": "… 因緣生法之意義於下當明，此中所亟須言者，即佛理要略云何先就因緣生法義上而明？蓋因緣生之意義，乃明一切法從因緣而生，此實為佛法建立唯一之根本；其理最為普遍，所謂一切…"
+    },
+    {
+      "matched": "世法",
+      "standard": "世法",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "世法"
+      ],
+      "sample_context": "…意義，乃明一切法從因緣而生，此實為佛法建立唯一之根本；其理最為普遍，所謂一切世出世法皆從因緣生是也。故若欲明佛理要略，必明因緣生法，以為佛法之基本故。  因緣生法，…"
+    },
+    {
+      "matched": "菩提",
+      "standard": "菩提",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "無上菩提"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無上菩提",
+        "菩提"
+      ],
+      "sample_context": "…生法，則於一生必不肯虛度，最低限度，亦要不令退墮而有所進步，即向上增進心所致。如菩提道次曰：『增上生者，謂得此增上生福報，唯有增上善因緣方能獲得』。亦同於斯向上增進…"
+    },
+    {
+      "matched": "十二緣起",
+      "standard": "十二緣起",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "十二緣起"
+      ],
+      "sample_context": "…緣生果之道理，有眾多經論廣明。今略釋分二：  #### 　　　　１十二緣起法  十二緣起者，謂無明緣起行、行緣起識、識緣起名色、名色緣起六入、六入緣起觸、觸緣起受、…"
+    },
+    {
+      "matched": "無我",
+      "standard": "無我",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無我"
+      ],
+      "sample_context": "…皆因緣生；而十二緣起正明異熟因果，非無因或邪因也。此中所謂無明，即對於異熟因果與無我理不明，由不明異熟因果，即為一切煩惱之根本。故佛法明正因緣法，首明十二緣起。此十…"
+    },
+    {
+      "matched": "心法",
+      "standard": "心法",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "心法"
+      ],
+      "sample_context": "…一切法。此一切法攝為五蘊、十二處、十八界，或總括為色、心、心所法。然心所法，攝於心法中故唯言色心二法即可。色為因緣、增上緣二緣所生，心法須加所緣緣、等無間緣，具四緣…"
+    },
+    {
+      "matched": "涅槃",
+      "standard": "涅槃",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "滅度"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "涅槃"
+      ],
+      "sample_context": "…更為向上增進而已。其修四禪八定，厭下地苦粗障欣上地靜妙離，厭穢土欣淨土，厭生死欣涅槃，固皆為向上增進心，為修學佛法之基本；然雖有此向上增進心，尚不必能出離生死，故必…"
+    },
+    {
+      "matched": "非想",
+      "standard": "非想",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "非想"
+      ],
+      "sample_context": "…，然享樂盡仍可墮落流轉。經說有忉利天子，命終墮於豬胎。非但欲天，即色無色諸天至非非想，壽經八萬大劫，後仍可墮於地獄。如佛在世時，有某外道生非非想處，佛說其死後先墮畜…"
+    },
+    {
+      "matched": "大劫",
+      "standard": "大劫",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "大劫"
+      ],
+      "sample_context": "…墮落流轉。經說有忉利天子，命終墮於豬胎。非但欲天，即色無色諸天至非非想，壽經八萬大劫，後仍可墮於地獄。如佛在世時，有某外道生非非想處，佛說其死後先墮畜生再墮地獄。因…"
+    },
+    {
+      "matched": "無常",
+      "standard": "無常",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無常"
+      ],
+      "sample_context": "…諸行無常  一切法包括有為法無為法。諸行、雖總指一切有為法，而此處特重在三界業果無常。若了此業果無常，則了三界之有漏、有為皆苦。所謂有為，謂有情有生老病死，器界有成…"
+    },
+    {
+      "matched": "法界",
+      "standard": "法界",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "一真法界",
+        "中實法界",
+        "法界圓明",
+        "法界無障礙"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "法界"
+      ],
+      "sample_context": "…有是大陀羅尼，亦有僅為一事一用之小陀羅尼。一切法皆大總持義，如天台圓教一色一香皆法界義，賢首圓教事事無礙法界義，皆任何一法包一切法，等於密教大陀羅尼。何以故？如云隨…"
+    },
+    {
+      "matched": "十二因緣",
+      "standard": "十二因緣",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "十二有支",
+        "十二緣起法"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "十二因緣",
+        "十二緣起法"
+      ],
+      "sample_context": "…緣法，在說明因緣生果之道理，有眾多經論廣明。今略釋分二：  #### 　　　　１十二緣起法  十二緣起者，謂無明緣起行、行緣起識、識緣起名色、名色緣起六入、六入緣起…"
+    },
+    {
+      "matched": "解脫",
+      "standard": "解脫",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "解脫"
+      ],
+      "sample_context": "…論終則現在即終，言始則現在即始，達此義，則從現在一念心上不起無明，不造有漏業即可解脫。  #### 　　　　２四緣生法  四緣者，因緣、增上緣、等無間緣、所緣緣。此…"
+    },
+    {
+      "matched": "增上緣",
+      "standard": "增上緣",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "增上緣"
+      ],
+      "sample_context": "…不起無明，不造有漏業即可解脫。  #### 　　　　２四緣生法  四緣者，因緣、增上緣、等無間緣、所緣緣。此中所明因緣生法，理甚廣泛，普遍於一切因果法。故四緣生法的…"
+    },
+    {
+      "matched": "六道業果",
+      "standard": "業報",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": false,
+      "variants_of_standard": [
+        "六道業果",
+        "因果報應"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "六道業果"
+      ],
+      "sample_context": "…心一切法皆為四緣所生，從細至粗，從淺至深，其理至為顯然。  ### 　　丙　近明六道業果——惡止善行  無因邪因既破，則可知佛法所說六道三界業果，真實不虛。由造福業…"
+    },
+    {
+      "matched": "發心",
+      "standard": "發心",
+      "occurrences": 4,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "發心"
+      ],
+      "sample_context": "…畏，故修三皈五戒十善等保持人格，不使墮落；或在人中能修十善及四禪八定等生天因果，發心更為向上增進而已。其修四禪八定，厭下地苦粗障欣上地靜妙離，厭穢土欣淨土，厭生死欣…"
+    },
+    {
+      "matched": "有情",
+      "standard": "有情",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "有情"
+      ],
+      "sample_context": "…而此處特重在三界業果無常。若了此業果無常，則了三界之有漏、有為皆苦。所謂有為，謂有情有生老病死，器界有成住壞空，皆由有所造作而成，故歸之壞滅也。——且觀此三界業果，…"
+    },
+    {
+      "matched": "貪愛",
+      "standard": "貪愛",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "貪愛"
+      ],
+      "sample_context": "…八萬大劫中亦剎那遷流不止。故能了知三界諸行無常，即見畢竟是苦，更不於三有果因生起貪愛。法華經云：「三界所生，貪欲為本」。對於三界之業果既不生貪愛，即成決定出離流轉心…"
+    },
+    {
+      "matched": "真如",
+      "standard": "真如",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "一心真如",
+        "真如理"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "真如"
+      ],
+      "sample_context": "…自意樂，而根本是苦，則斷除三界貪愛，生出離流轉心。亦由此引生我空慧，真正證得我空真如，即出離三界六道流轉之生死也。  ### 　　丙　涅槃寂靜  涅槃雖有多義，此處…"
+    },
+    {
+      "matched": "人乘",
+      "standard": "人乘",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "人乘"
+      ],
+      "sample_context": "…、五乘之差。此雖種種，大致此因緣生法可為五乘共通法而攝盡世出世法。言五乘者：一、人乘，二、天乘，三、聲聞乘，四、緣覺乘，五、大乘即佛菩薩乘。此中所謂人乘，就吾輩人類…"
+    },
+    {
+      "matched": "天乘",
+      "standard": "天乘",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "天乘"
+      ],
+      "sample_context": "…。此雖種種，大致此因緣生法可為五乘共通法而攝盡世出世法。言五乘者：一、人乘，二、天乘，三、聲聞乘，四、緣覺乘，五、大乘即佛菩薩乘。此中所謂人乘，就吾輩人類之因果以明…"
+    },
+    {
+      "matched": "資糧",
+      "standard": "資糧",
+      "occurrences": 3,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "資糧"
+      ],
+      "sample_context": "…本乎此。儒家謂「在止於至善」，與夫使人希聖希賢，皆是使人向上。由人修積福德禪定等資糧生天，亦為向上增進心，不過仍為世間所攝耳。至於要明出世因果，超脫三界生死證出世聖…"
+    },
+    {
+      "matched": "異熟",
+      "standard": "異熟",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "異熟"
+      ],
+      "sample_context": "…在佛法中明正因緣法，即所有一切五趣、三界之正報依報等法，皆因緣生；而十二緣起正明異熟因果，非無因或邪因也。此中所謂無明，即對於異熟因果與無我理不明，由不明異熟因果，…"
+    },
+    {
+      "matched": "煩惱",
+      "standard": "煩惱",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "煩惱"
+      ],
+      "sample_context": "…無因或邪因也。此中所謂無明，即對於異熟因果與無我理不明，由不明異熟因果，即為一切煩惱之根本。故佛法明正因緣法，首明十二緣起。此十二緣起之意義，在經論中或淺或深或廣或…"
+    },
+    {
+      "matched": "惡趣",
+      "standard": "惡道",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": false,
+      "variants_of_standard": [
+        "惡趣"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "惡趣"
+      ],
+      "sample_context": "…之因，欲得善果亦唯有現在造善因才克濟事。故此因果，憑現在眾生心上即可判明：所謂造惡趣因當感惡趣果，造善趣因當感善趣果，此即佛法所明十二緣起法也。若明此十二緣起法，即…"
+    },
+    {
+      "matched": "五蘊",
+      "standard": "五蘊",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "色受想行識",
+      "source": "batch_01",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "五蘊"
+      ],
+      "sample_context": "…緣生法，理甚廣泛，普遍於一切因果法。故四緣生法的所謂法，乃指一切法。此一切法攝為五蘊、十二處、十八界，或總括為色、心、心所法。然心所法，攝於心法中故唯言色心二法即可…"
+    },
+    {
+      "matched": "十二處",
+      "standard": "十二處",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "十二處"
+      ],
+      "sample_context": "…，理甚廣泛，普遍於一切因果法。故四緣生法的所謂法，乃指一切法。此一切法攝為五蘊、十二處、十八界，或總括為色、心、心所法。然心所法，攝於心法中故唯言色心二法即可。色為…"
+    },
+    {
+      "matched": "無為",
+      "standard": "無為",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無為"
+      ],
+      "sample_context": "…生，心法須加所緣緣、等無間緣，具四緣方生。此外不相應行法是隨所生色心法上而假立；無為法為一切因緣生法所顯無相法性，故明四緣生法可從色心上明也。色法從因緣增上緣生，若…"
+    },
+    {
+      "matched": "色法",
+      "standard": "色法",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "色法"
+      ],
+      "sample_context": "…生色心法上而假立；無為法為一切因緣生法所顯無相法性，故明四緣生法可從色心上明也。色法從因緣增上緣生，若在粗相上說，如草木等，種即其因，水土日光等資養即是其緣。此緣可…"
+    },
+    {
+      "matched": "十善",
+      "standard": "十善",
+      "occurrences": 3,
+      "domain": "行持",
+      "subdomain": "戒律行持",
+      "is_standard": true,
+      "variants_of_standard": [
+        "十善業"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "十善",
+        "十善業"
+      ],
+      "sample_context": "…所說六道三界業果，真實不虛。由造福業、非福業、不動業，故感愛、非愛等果。福業者即十善業，非福業者即十惡業，此復各有上中下品。惡業感地獄等果，善業感人天等果。若於此六…"
+    },
+    {
+      "matched": "地獄",
+      "standard": "地獄",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "地獄"
+      ],
+      "sample_context": "…業，故感愛、非愛等果。福業者即十善業，非福業者即十惡業，此復各有上中下品。惡業感地獄等果，善業感人天等果。若於此六道、三界業果能確信不疑，自能惡止、善行。由修向上增…"
+    },
+    {
+      "matched": "修行",
+      "standard": "修行",
+      "occurrences": 3,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "修行"
+      ],
+      "sample_context": "…正行，集隨順無漏解脫的種種福德智慧資糧，或求往生出過三界善報所起的諸佛淨土中聞法修行，或依增上生人天勝報中修證展轉勝進的出世行果。要皆明因緣生法所發向上增進心上所有…"
+    },
+    {
+      "matched": "修學",
+      "standard": "修學",
+      "occurrences": 3,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "修學"
+      ],
+      "sample_context": "…或非出世法，故此三種名三法印。此三法印在佛法中為三乘共法。前所講因緣生法通人天所修學為五乘共法，今此惟出世法，即平常所說了生死之法，乃唯聲聞、獨覺、大乘所共同修學者…"
+    },
+    {
+      "matched": "密宗",
+      "standard": "密宗",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "宗派",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "密宗"
+      ],
+      "sample_context": "…、義陀羅尼、忍陀羅尼等。此中所明一切法大陀羅尼，即指陀羅尼中之大陀羅尼也。非但指密宗之咒，——密咒中有是大陀羅尼，亦有僅為一事一用之小陀羅尼。一切法皆大總持義，如天…"
+    },
+    {
+      "matched": "緣覺乘",
+      "standard": "緣覺乘",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "緣覺乘"
+      ],
+      "sample_context": "…生法可為五乘共通法而攝盡世出世法。言五乘者：一、人乘，二、天乘，三、聲聞乘，四、緣覺乘，五、大乘即佛菩薩乘。此中所謂人乘，就吾輩人類之因果以明。人類因果既明，進而天…"
+    },
+    {
+      "matched": "不動業",
+      "standard": "不動業",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基础教义",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "能得色無色界天果報常在定中之業，與福業、罪業並列為三類業",
+      "source": "phase2_fulltext",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "不動業"
+      ],
+      "sample_context": "…進而天乘，更明三界諸天果因之如何也。天之果有欲天、色天、無色天，感天之因有福業，不動業等。然此人乘、天乘、皆屬世間善法；至於出世間善法，則聲聞乘、緣覺乘、大乘菩薩佛…"
+    },
+    {
+      "matched": "善法",
+      "standard": "善法",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "善法"
+      ],
+      "sample_context": "…。天之果有欲天、色天、無色天，感天之因有福業，不動業等。然此人乘、天乘、皆屬世間善法；至於出世間善法，則聲聞乘、緣覺乘、大乘菩薩佛也。此中所謂因緣生法即是五乘共法，…"
+    },
+    {
+      "matched": "菩薩",
+      "standard": "菩薩",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "菩薩"
+      ],
+      "sample_context": "…，不動業等。然此人乘、天乘、皆屬世間善法；至於出世間善法，則聲聞乘、緣覺乘、大乘菩薩佛也。此中所謂因緣生法即是五乘共法，蓋人天因果皆於此法上建立，亦通出世三乘，故為…"
+    },
+    {
+      "matched": "信解",
+      "standard": "信解",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "信解"
+      ],
+      "sample_context": "…之義，明乎此則能明善惡因果。故於此能真正了達確信不疑者，必能發生向上增進心。正確信解，顯非彷彿之明了，蓋彷彿之心，每隨境轉而無有定也。  向上增進心，不但為信修佛法…"
+    },
+    {
+      "matched": "放逸",
+      "standard": "放逸",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "放逸"
+      ],
+      "sample_context": "…緣，死亦無所謂因緣；此乃不明因緣生法所致。由執無因而自然偶成，於是即易生懶惰懈怠放逸等墮落行為，若成若敗，完全付之於命運，更無所謂志願或向上心。此在印度中國皆有之。…"
+    },
+    {
+      "matched": "虛空",
+      "standard": "虛空",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "虛空"
+      ],
+      "sample_context": "…非一，古有以四大極微為因者，今說原子電子等，總之皆以物質為因是。3．或有執萬有從虛空所生；如中國古語，『萬物生於有，有生於無』，即從虛空生萬物也。4．或有執抽象的一…"
+    },
+    {
+      "matched": "生因",
+      "standard": "生因",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "生因"
+      ],
+      "sample_context": "…國古語，『萬物生於有，有生於無』，即從虛空生萬物也。4．或有執抽象的一種理為萬物生因，如曰諸法從時生，到時即生，時為實有；或計從數論所計之冥性——萬物以前之體——而…"
+    },
+    {
+      "matched": "名色",
+      "standard": "名色",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "名色"
+      ],
+      "sample_context": "…  #### 　　　　１十二緣起法  十二緣起者，謂無明緣起行、行緣起識、識緣起名色、名色緣起六入、六入緣起觸、觸緣起受、受緣起愛，愛緣起取、取緣起有、有緣起生、生…"
+    },
+    {
+      "matched": "六入",
+      "standard": "六入",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "六入"
+      ],
+      "sample_context": "…　　　　１十二緣起法  十二緣起者，謂無明緣起行、行緣起識、識緣起名色、名色緣起六入、六入緣起觸、觸緣起受、受緣起愛，愛緣起取、取緣起有、有緣起生、生緣起老死之十二…"
+    },
+    {
+      "matched": "無始",
+      "standard": "無始",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無始"
+      ],
+      "sample_context": "…此即佛法所明十二緣起法也。若明此十二緣起法，即可發向上增進心；且亦可明人生世間是無始亦無終之理。何則？蓋求其一定之業因，上溯是無始，下推亦無窮，終始了不可得何有始終…"
+    },
+    {
+      "matched": "業因",
+      "standard": "業因",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "業因"
+      ],
+      "sample_context": "…二緣起法，即可發向上增進心；且亦可明人生世間是無始亦無終之理。何則？蓋求其一定之業因，上溯是無始，下推亦無窮，終始了不可得何有始終！故實欲論終則現在即終，言始則現在…"
+    },
+    {
+      "matched": "有漏",
+      "standard": "有漏",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "有漏"
+      ],
+      "sample_context": "…終！故實欲論終則現在即終，言始則現在即始，達此義，則從現在一念心上不起無明，不造有漏業即可解脫。  #### 　　　　２四緣生法  四緣者，因緣、增上緣、等無間緣、…"
+    },
+    {
+      "matched": "等無間緣",
+      "standard": "等無間緣",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "等無間緣"
+      ],
+      "sample_context": "…，不造有漏業即可解脫。  #### 　　　　２四緣生法  四緣者，因緣、增上緣、等無間緣、所緣緣。此中所明因緣生法，理甚廣泛，普遍於一切因果法。故四緣生法的所謂法，…"
+    },
+    {
+      "matched": "所緣緣",
+      "standard": "所緣緣",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "所緣緣"
+      ],
+      "sample_context": "…業即可解脫。  #### 　　　　２四緣生法  四緣者，因緣、增上緣、等無間緣、所緣緣。此中所明因緣生法，理甚廣泛，普遍於一切因果法。故四緣生法的所謂法，乃指一切法…"
+    },
+    {
+      "matched": "十八界",
+      "standard": "十八界",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "含十二處（六根六塵）",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "十八界"
+      ],
+      "sample_context": "…泛，普遍於一切因果法。故四緣生法的所謂法，乃指一切法。此一切法攝為五蘊、十二處、十八界，或總括為色、心、心所法。然心所法，攝於心法中故唯言色心二法即可。色為因緣、增…"
+    },
+    {
+      "matched": "心所法",
+      "standard": "心所法",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "心所法"
+      ],
+      "sample_context": "…四緣生法的所謂法，乃指一切法。此一切法攝為五蘊、十二處、十八界，或總括為色、心、心所法。然心所法，攝於心法中故唯言色心二法即可。色為因緣、增上緣二緣所生，心法須加所…"
+    },
+    {
+      "matched": "色心二法",
+      "standard": "色心二法",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "不相應行法",
+        "心心所法"
+      ],
+      "vocab_note": "五位百法之基本分類",
+      "source": "batch_01",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "不相應行法",
+        "色心二法"
+      ],
+      "sample_context": "…切法攝為五蘊、十二處、十八界，或總括為色、心、心所法。然心所法，攝於心法中故唯言色心二法即可。色為因緣、增上緣二緣所生，心法須加所緣緣、等無間緣，具四緣方生。此外不…"
+    },
+    {
+      "matched": "智慧",
+      "standard": "智慧",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "智慧"
+      ],
+      "sample_context": "…支還滅門，獲三乘解脫果。亦由明正因緣故修習出世三乘正行，集隨順無漏解脫的種種福德智慧資糧，或求往生出過三界善報所起的諸佛淨土中聞法修行，或依增上生人天勝報中修證展轉…"
+    },
+    {
+      "matched": "淨土",
+      "standard": "淨土",
+      "occurrences": 2,
+      "domain": "行持",
+      "subdomain": "淨土法門",
+      "is_standard": true,
+      "variants_of_standard": [
+        "極樂淨土",
+        "淨土行"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "淨土"
+      ],
+      "sample_context": "…習出世三乘正行，集隨順無漏解脫的種種福德智慧資糧，或求往生出過三界善報所起的諸佛淨土中聞法修行，或依增上生人天勝報中修證展轉勝進的出世行果。要皆明因緣生法所發向上增…"
+    },
+    {
+      "matched": "四禪",
+      "standard": "四禪",
+      "occurrences": 2,
+      "domain": "行持",
+      "subdomain": "禪觀",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "四禪"
+      ],
+      "sample_context": "…發，於惡趣墮落深生怖畏，故修三皈五戒十善等保持人格，不使墮落；或在人中能修十善及四禪八定等生天因果，發心更為向上增進而已。其修四禪八定，厭下地苦粗障欣上地靜妙離，厭…"
+    },
+    {
+      "matched": "八定",
+      "standard": "八定",
+      "occurrences": 2,
+      "domain": "行持",
+      "subdomain": "禪觀",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "八定"
+      ],
+      "sample_context": "…於惡趣墮落深生怖畏，故修三皈五戒十善等保持人格，不使墮落；或在人中能修十善及四禪八定等生天因果，發心更為向上增進而已。其修四禪八定，厭下地苦粗障欣上地靜妙離，厭穢土…"
+    },
+    {
+      "matched": "生老病死",
+      "standard": "生老病死",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "生老病死"
+      ],
+      "sample_context": "…特重在三界業果無常。若了此業果無常，則了三界之有漏、有為皆苦。所謂有為，謂有情有生老病死，器界有成住壞空，皆由有所造作而成，故歸之壞滅也。——且觀此三界業果，剎那遷…"
+    },
+    {
+      "matched": "生滅",
+      "standard": "生滅",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "生滅"
+      ],
+      "sample_context": "…死，器界有成住壞空，皆由有所造作而成，故歸之壞滅也。——且觀此三界業果，剎那遷流生滅不停，了知三界六道眾生業因果報之法，皆生滅無常。故諸行無常，即謂有為業果皆無常性…"
+    },
+    {
+      "matched": "不生",
+      "standard": "不生",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "不生"
+      ],
+      "sample_context": "…是苦，更不於三有果因生起貪愛。法華經云：「三界所生，貪欲為本」。對於三界之業果既不生貪愛，即成決定出離流轉心，而可出離流轉矣。  ### 　　乙　諸法無我  愛三界…"
+    },
+    {
+      "matched": "妄見",
+      "standard": "妄見",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "妄見"
+      ],
+      "sample_context": "…乃生死根本。故佛法中尤注重將所愛著之自我，諦觀之為非有，因所愛著之自我，純由無明妄見為有而實非有也。如觀任何有情，五蘊中無我，十二處中、十八界中亦皆無我；既內中皆無…"
+    },
+    {
+      "matched": "自在",
+      "standard": "自在",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "自在"
+      ],
+      "sample_context": "…有自體愛則生境界愛而流轉生死。——且此五蘊十二處等諸法皆是和合相續都無我體，亦無自在力。既無自在力，故不能隨自意樂，而根本是苦，則斷除三界貪愛，生出離流轉心。亦由此…"
+    },
+    {
+      "matched": "我空",
+      "standard": "我空",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "我空"
+      ],
+      "sample_context": "…既無自在力，故不能隨自意樂，而根本是苦，則斷除三界貪愛，生出離流轉心。亦由此引生我空慧，真正證得我空真如，即出離三界六道流轉之生死也。  ### 　　丙　涅槃寂靜 …"
+    },
+    {
+      "matched": "正遍覺",
+      "standard": "正遍覺",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "正遍覺"
+      ],
+      "sample_context": "…自求出離，或雖見三界眾生皆是苦，然不能發起普度眾生同出離之決心，故亦無須求成無上正遍覺之佛。此大乘法中則發普度成佛心，以見三界眾生皆在苦中，為求共同出離之法，而修共…"
+    },
+    {
+      "matched": "菩提心",
+      "standard": "菩提心",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "菩提心"
+      ],
+      "sample_context": "…拔除生死苦，此為普度大眾究竟出離的道理。  在大乘法中之發心，即普度成佛心，亦即菩提心。——菩提應具云阿耨多羅三藐三菩提，義即無上正遍覺。——發起此心即為發成佛之志…"
+    },
+    {
+      "matched": "自性",
+      "standard": "自性",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "有無自性",
+        "諸法離言自性",
+        "離言自性"
+      ],
+      "vocab_note": "太虚在判攝中反覆辨析的核心概念",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "自性"
+      ],
+      "sample_context": "…即此諸行諸法本來自性空寂，即是本來不生不滅涅槃寂靜。故諸行諸法皆是因緣假現，都無自性。前之三法印徹底觀之，即此一切法自性空義。——謂見諸行畢竟無常，諸法畢竟無我，皆…"
+    },
+    {
+      "matched": "畢竟無",
+      "standard": "畢竟無",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "中觀學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "畢竟無"
+      ],
+      "sample_context": "…諸法皆是因緣假現，都無自性。前之三法印徹底觀之，即此一切法自性空義。——謂見諸行畢竟無常，諸法畢竟無我，皆畢竟空無自體本來涅槃寂靜；雖諸法本來性空而不撥因緣生，正以…"
+    },
+    {
+      "matched": "圓教",
+      "standard": "圓教",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "判教框架",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "圓教"
+      ],
+      "sample_context": "…咒，——密咒中有是大陀羅尼，亦有僅為一事一用之小陀羅尼。一切法皆大總持義，如天台圓教一色一香皆法界義，賢首圓教事事無礙法界義，皆任何一法包一切法，等於密教大陀羅尼。…"
+    },
+    {
+      "matched": "無礙",
+      "standard": "無礙",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無礙"
+      ],
+      "sample_context": "…為一事一用之小陀羅尼。一切法皆大總持義，如天台圓教一色一香皆法界義，賢首圓教事事無礙法界義，皆任何一法包一切法，等於密教大陀羅尼。何以故？如云隨拈一法皆為法界，今拈…"
+    },
+    {
+      "matched": "無量劫",
+      "standard": "無量劫",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無量劫"
+      ],
+      "sample_context": "…為體與相，此即為用。又所謂大總持，謂一眾生即一切眾生，一切眾生即一眾生，一剎那即無量劫，無量劫即一剎那等。明此則更無空界時劫拘限，速疾圓成佛果，普度眾生之大用。  …"
+    },
+    {
+      "matched": "欲界",
+      "standard": "欲界",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "欲界"
+      ],
+      "sample_context": "…廣如性、相、台、賢、禪、密各宗義中說。例如密宗，也不過發揮此法法皆大總持之妙用；欲界特盛之貪莫過淫欲，最重之惡莫過忿殺，——欲界魔所恃以害修行人的極兇工具亦莫過淫殺…"
+    },
+    {
+      "matched": "漢藏教理院",
+      "standard": "漢藏教理院",
+      "occurrences": 1,
+      "domain": "制度",
+      "subdomain": "僧教育",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "太虚創辦，溝通漢藏佛教 | 兵役争议直接涉及汉藏教理院学僧的免役问题，为该院的制度运作提供了具体史料",
+      "source": "batch_01,dimensional,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "漢藏教理院"
+      ],
+      "sample_context": "# 佛理要略 （1937 年 9 月，在漢藏教理院講）  ## 一　因緣生法——五乘共法——向上增進心  因緣生法之意義於下…"
+    },
+    {
+      "matched": "一乘",
+      "standard": "一乘",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "一乘"
+      ],
+      "sample_context": "…必明因緣生法，以為佛法之基本故。  因緣生法，可遍通五乘共法。佛法隨機，故於乘有一乘、三乘、五乘之差。此雖種種，大致此因緣生法可為五乘共通法而攝盡世出世法。言五乘者…"
+    },
+    {
+      "matched": "菩薩乘",
+      "standard": "菩薩乘",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "菩薩乘"
+      ],
+      "sample_context": "…攝盡世出世法。言五乘者：一、人乘，二、天乘，三、聲聞乘，四、緣覺乘，五、大乘即佛菩薩乘。此中所謂人乘，就吾輩人類之因果以明。人類因果既明，進而天乘，更明三界諸天果因…"
+    },
+    {
+      "matched": "出世間",
+      "standard": "出世間",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "出世間"
+      ],
+      "sample_context": "…欲天、色天、無色天，感天之因有福業，不動業等。然此人乘、天乘、皆屬世間善法；至於出世間善法，則聲聞乘、緣覺乘、大乘菩薩佛也。此中所謂因緣生法即是五乘共法，蓋人天因果…"
+    },
+    {
+      "matched": "禪定",
+      "standard": "禪定",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "禪觀",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "禪定"
+      ],
+      "sample_context": "…道德亦本乎此。儒家謂「在止於至善」，與夫使人希聖希賢，皆是使人向上。由人修積福德禪定等資糧生天，亦為向上增進心，不過仍為世間所攝耳。至於要明出世因果，超脫三界生死證…"
+    },
+    {
+      "matched": "懈怠",
+      "standard": "懈怠",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "懈怠"
+      ],
+      "sample_context": "…謂因緣，死亦無所謂因緣；此乃不明因緣生法所致。由執無因而自然偶成，於是即易生懶惰懈怠放逸等墮落行為，若成若敗，完全付之於命運，更無所謂志願或向上心。此在印度中國皆有…"
+    },
+    {
+      "matched": "大梵天",
+      "standard": "大梵天",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "大梵天"
+      ],
+      "sample_context": "…邪因，邪因甚多，茲擇其要者言之：1．即有一類執有一個神為宇宙萬物之創造主宰，或稱大梵天等者是。今之耶穌教等亦主張萬有為神所造，神乃宇宙萬有之因；此神等種類亦多，概言…"
+    },
+    {
+      "matched": "四大",
+      "standard": "四大",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "四大"
+      ],
+      "sample_context": "…或有執一種物質為生宇宙萬有之因，如近代唯物科學者即主張此說。此之物質非一，古有以四大極微為因者，今說原子電子等，總之皆以物質為因是。3．或有執萬有從虛空所生；如中國…"
+    },
+    {
+      "matched": "實有",
+      "standard": "實有",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "實有"
+      ],
+      "sample_context": "…從虛空生萬物也。4．或有執抽象的一種理為萬物生因，如曰諸法從時生，到時即生，時為實有；或計從數論所計之冥性——萬物以前之體——而生；或如中國古代所說萬物生於太極，太…"
+    },
+    {
+      "matched": "五趣",
+      "standard": "五趣",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "天、人、畜、鬼、獄五趣（不含阿修羅），與通稱六道之別在於阿修羅通於天鬼二趣故不別立",
+      "source": "phase2_fulltext,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "五趣"
+      ],
+      "sample_context": "…取、取緣起有、有緣起生、生緣起老死之十二種法。應知在佛法中明正因緣法，即所有一切五趣、三界之正報依報等法，皆因緣生；而十二緣起正明異熟因果，非無因或邪因也。此中所謂…"
+    },
+    {
+      "matched": "正報",
+      "standard": "正報",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "正報"
+      ],
+      "sample_context": "…、有緣起生、生緣起老死之十二種法。應知在佛法中明正因緣法，即所有一切五趣、三界之正報依報等法，皆因緣生；而十二緣起正明異熟因果，非無因或邪因也。此中所謂無明，即對於…"
+    },
+    {
+      "matched": "依報",
+      "standard": "依報",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "有情共業所感之器世間為依報，各別業力所感之根身為正報",
+      "source": "phase2_fulltext,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "依報"
+      ],
+      "sample_context": "…緣起生、生緣起老死之十二種法。應知在佛法中明正因緣法，即所有一切五趣、三界之正報依報等法，皆因緣生；而十二緣起正明異熟因果，非無因或邪因也。此中所謂無明，即對於異熟…"
+    },
+    {
+      "matched": "相續",
+      "standard": "相續",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "相續"
+      ],
+      "sample_context": "…，乃明此十二相生，以顯世間之所起，非無因亦非主宰的神及特別的物質所起。此世間所以相續不斷，即從無明緣行等十二法相續不斷也。所謂由無明、愛、取三煩惱故有業，由業故有生…"
+    },
+    {
+      "matched": "法相",
+      "standard": "法相",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "法相"
+      ],
+      "sample_context": "…所起，非無因亦非主宰的神及特別的物質所起。此世間所以相續不斷，即從無明緣行等十二法相續不斷也。所謂由無明、愛、取三煩惱故有業，由業故有生死；更在眾生共業報的器世間有…"
+    },
+    {
+      "matched": "共業",
+      "standard": "共業",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "共同業報",
+        "別業",
+        "各別業",
+        "各別業報"
+      ],
+      "vocab_note": "有情共同造作感得器世間為共業，個別造作感得根身為別業，世界生起由此二業總集",
+      "source": "phase2_fulltext,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "共業"
+      ],
+      "sample_context": "…明緣行等十二法相續不斷也。所謂由無明、愛、取三煩惱故有業，由業故有生死；更在眾生共業報的器世間有成、住、壞、空。知此、則佛法所說的正因緣法明。可知現在之果皆從往昔所…"
+    },
+    {
+      "matched": "善果",
+      "standard": "善果",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "善果"
+      ],
+      "sample_context": "…成、住、壞、空。知此、則佛法所說的正因緣法明。可知現在之果皆從往昔所造之因，欲得善果亦唯有現在造善因才克濟事。故此因果，憑現在眾生心上即可判明：所謂造惡趣因當感惡趣…"
+    },
+    {
+      "matched": "不可得",
+      "standard": "不可得",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "不可得"
+      ],
+      "sample_context": "…人生世間是無始亦無終之理。何則？蓋求其一定之業因，上溯是無始，下推亦無窮，終始了不可得何有始終！故實欲論終則現在即終，言始則現在即始，達此義，則從現在一念心上不起無…"
+    },
+    {
+      "matched": "一念",
+      "standard": "一念",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "一念"
+      ],
+      "sample_context": "…窮，終始了不可得何有始終！故實欲論終則現在即終，言始則現在即始，達此義，則從現在一念心上不起無明，不造有漏業即可解脫。  #### 　　　　２四緣生法  四緣者，因…"
+    },
+    {
+      "matched": "無相",
+      "standard": "無相",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無相"
+      ],
+      "sample_context": "…間緣，具四緣方生。此外不相應行法是隨所生色心法上而假立；無為法為一切因緣生法所顯無相法性，故明四緣生法可從色心上明也。色法從因緣增上緣生，若在粗相上說，如草木等，種…"
+    },
+    {
+      "matched": "法性",
+      "standard": "法性",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "法性"
+      ],
+      "sample_context": "…，具四緣方生。此外不相應行法是隨所生色心法上而假立；無為法為一切因緣生法所顯無相法性，故明四緣生法可從色心上明也。色法從因緣增上緣生，若在粗相上說，如草木等，種即其…"
+    },
+    {
+      "matched": "賴耶",
+      "standard": "阿賴耶識",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": false,
+      "variants_of_standard": [
+        "一切種識",
+        "本識",
+        "賴耶",
+        "阿賴耶"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "賴耶"
+      ],
+      "sample_context": "…霜冰雪等所枯萎，即為違緣。此等皆就色法的生起變化粗相上說。至於唯識釋因緣深義，謂賴耶識中色法種子才是親因緣，餘皆為增上緣也。心法既須各各自因，更須增上等三緣，四緣具…"
+    },
+    {
+      "matched": "種子",
+      "standard": "種子",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [
+        "業種"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "種子"
+      ],
+      "sample_context": "…萎，即為違緣。此等皆就色法的生起變化粗相上說。至於唯識釋因緣深義，謂賴耶識中色法種子才是親因緣，餘皆為增上緣也。心法既須各各自因，更須增上等三緣，四緣具心法方生。如…"
+    },
+    {
+      "matched": "十惡",
+      "standard": "十惡",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "戒律行持",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "十惡"
+      ],
+      "sample_context": "…真實不虛。由造福業、非福業、不動業，故感愛、非愛等果。福業者即十善業，非福業者即十惡業，此復各有上中下品。惡業感地獄等果，善業感人天等果。若於此六道、三界業果能確信…"
+    },
+    {
+      "matched": "下品",
+      "standard": "下品",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "下品"
+      ],
+      "sample_context": "…非福業、不動業，故感愛、非愛等果。福業者即十善業，非福業者即十惡業，此復各有上中下品。惡業感地獄等果，善業感人天等果。若於此六道、三界業果能確信不疑，自能惡止、善行…"
+    },
+    {
+      "matched": "惡業",
+      "standard": "惡業",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "惡業"
+      ],
+      "sample_context": "…、不動業，故感愛、非愛等果。福業者即十善業，非福業者即十惡業，此復各有上中下品。惡業感地獄等果，善業感人天等果。若於此六道、三界業果能確信不疑，自能惡止、善行。由修…"
+    },
+    {
+      "matched": "業感",
+      "standard": "業感",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "業感"
+      ],
+      "sample_context": "…非愛等果。福業者即十善業，非福業者即十惡業，此復各有上中下品。惡業感地獄等果，善業感人天等果。若於此六道、三界業果能確信不疑，自能惡止、善行。由修向上增進心故，惡止…"
+    },
+    {
+      "matched": "殊勝",
+      "standard": "殊勝",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "殊勝"
+      ],
+      "sample_context": "…。若於此六道、三界業果能確信不疑，自能惡止、善行。由修向上增進心故，惡止善行而感殊勝之果，此不但佛法如是，即世間聖賢亦如是。吾人不欲為聖為賢則已，若欲為聖為賢，必須…"
+    },
+    {
+      "matched": "還滅",
+      "standard": "還滅",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "還滅"
+      ],
+      "sample_context": "…趣淨  復次、由明正因緣生法之正因果故，從「無明滅則行滅乃至老死滅」的十二緣起支還滅門，獲三乘解脫果。亦由明正因緣故修習出世三乘正行，集隨順無漏解脫的種種福德智慧資…"
+    },
+    {
+      "matched": "隨順",
+      "standard": "隨順",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "隨順"
+      ],
+      "sample_context": "…乃至老死滅」的十二緣起支還滅門，獲三乘解脫果。亦由明正因緣故修習出世三乘正行，集隨順無漏解脫的種種福德智慧資糧，或求往生出過三界善報所起的諸佛淨土中聞法修行，或依增…"
+    },
+    {
+      "matched": "無漏",
+      "standard": "無漏",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無漏"
+      ],
+      "sample_context": "…老死滅」的十二緣起支還滅門，獲三乘解脫果。亦由明正因緣故修習出世三乘正行，集隨順無漏解脫的種種福德智慧資糧，或求往生出過三界善報所起的諸佛淨土中聞法修行，或依增上生…"
+    },
+    {
+      "matched": "往生",
+      "standard": "往生",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "淨土法門",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "往生"
+      ],
+      "sample_context": "…乘解脫果。亦由明正因緣故修習出世三乘正行，集隨順無漏解脫的種種福德智慧資糧，或求往生出過三界善報所起的諸佛淨土中聞法修行，或依增上生人天勝報中修證展轉勝進的出世行果…"
+    },
+    {
+      "matched": "聞法",
+      "standard": "聞法",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "聞法"
+      ],
+      "sample_context": "…三乘正行，集隨順無漏解脫的種種福德智慧資糧，或求往生出過三界善報所起的諸佛淨土中聞法修行，或依增上生人天勝報中修證展轉勝進的出世行果。要皆明因緣生法所發向上增進心上…"
+    },
+    {
+      "matched": "修證",
+      "standard": "修證",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "修證"
+      ],
+      "sample_context": "…福德智慧資糧，或求往生出過三界善報所起的諸佛淨土中聞法修行，或依增上生人天勝報中修證展轉勝進的出世行果。要皆明因緣生法所發向上增進心上所有事，故為人天及出世三乘之五…"
+    },
+    {
+      "matched": "聲聞",
+      "standard": "聲聞",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "聲聞"
+      ],
+      "sample_context": "…。前所講因緣生法通人天所修學為五乘共法，今此惟出世法，即平常所說了生死之法，乃唯聲聞、獨覺、大乘所共同修學者也。於此三法印若真能信解，即能發起出離流轉之決心。此心較…"
+    },
+    {
+      "matched": "五戒",
+      "standard": "五戒",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "戒律行持",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "五戒"
+      ],
+      "sample_context": "…心較向上增進心轉勝：因向上增進心是了知善惡因果而發，於惡趣墮落深生怖畏，故修三皈五戒十善等保持人格，不使墮落；或在人中能修十善及四禪八定等生天因果，發心更為向上增進…"
+    },
+    {
+      "matched": "穢土",
+      "standard": "穢土",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "淨土法門",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "穢土"
+      ],
+      "sample_context": "…八定等生天因果，發心更為向上增進而已。其修四禪八定，厭下地苦粗障欣上地靜妙離，厭穢土欣淨土，厭生死欣涅槃，固皆為向上增進心，為修學佛法之基本；然雖有此向上增進心，尚…"
+    },
+    {
+      "matched": "離生",
+      "standard": "離生",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "離生"
+      ],
+      "sample_context": "…厭生死欣涅槃，固皆為向上增進心，為修學佛法之基本；然雖有此向上增進心，尚不必能出離生死，故必須了解三法印，乃生起出離流轉心也。  所謂流轉，謂觀六道三界九地皆同流轉…"
+    },
+    {
+      "matched": "忉利天",
+      "standard": "忉利天",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "忉利天"
+      ],
+      "sample_context": "…，後世不免墮落。又如昇欲天，壽長福大，雖較人更增上，然享樂盡仍可墮落流轉。經說有忉利天子，命終墮於豬胎。非但欲天，即色無色諸天至非非想，壽經八萬大劫，後仍可墮於地獄…"
+    },
+    {
+      "matched": "外道",
+      "standard": "外道",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "外道"
+      ],
+      "sample_context": "…。非但欲天，即色無色諸天至非非想，壽經八萬大劫，後仍可墮於地獄。如佛在世時，有某外道生非非想處，佛說其死後先墮畜生再墮地獄。因此、但有向上增進心，縱然增進至非非想處…"
+    },
+    {
+      "matched": "空無",
+      "standard": "空無",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "中觀學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "空無"
+      ],
+      "sample_context": "…獄。因此、但有向上增進心，縱然增進至非非想處天終當隨業受報，報盡還墮，至死壞時仍空無所獲。故在流轉中用盡功力，而所修得之結果終是壞滅，等於無果。由是觀察，則當由了知…"
+    },
+    {
+      "matched": "修得",
+      "standard": "修得",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "修得"
+      ],
+      "sample_context": "…至非非想處天終當隨業受報，報盡還墮，至死壞時仍空無所獲。故在流轉中用盡功力，而所修得之結果終是壞滅，等於無果。由是觀察，則當由了知三法印而決定發起出離三界六道流轉心…"
+    },
+    {
+      "matched": "成住壞空",
+      "standard": "成住壞空",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "成住壞空四劫"
+      ],
+      "vocab_note": "器世界循環四相：成劫、住劫、壞劫、空劫，與有情之生老病死對應",
+      "source": "phase2_fulltext,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "成住壞空"
+      ],
+      "sample_context": "…常。若了此業果無常，則了三界之有漏、有為皆苦。所謂有為，謂有情有生老病死，器界有成住壞空，皆由有所造作而成，故歸之壞滅也。——且觀此三界業果，剎那遷流生滅不停，了知…"
+    },
+    {
+      "matched": "剎那生滅",
+      "standard": "剎那生滅",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "剎那生滅"
+      ],
+      "sample_context": "…。三界有情普遍如此，故三界有情皆有行苦。行苦、就粗相上說是生老病死，就細相上說即剎那生滅。如生非非想天者壽經八萬大劫，不唯八萬大劫終有罄盡，而在此八萬大劫中亦剎那遷…"
+    },
+    {
+      "matched": "三有",
+      "standard": "三有",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "三有"
+      ],
+      "sample_context": "…罄盡，而在此八萬大劫中亦剎那遷流不止。故能了知三界諸行無常，即見畢竟是苦，更不於三有果因生起貪愛。法華經云：「三界所生，貪欲為本」。對於三界之業果既不生貪愛，即成決…"
+    },
+    {
+      "matched": "法華經",
+      "standard": "法華經",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "經典",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "法華經"
+      ],
+      "sample_context": "…劫中亦剎那遷流不止。故能了知三界諸行無常，即見畢竟是苦，更不於三有果因生起貪愛。法華經云：「三界所生，貪欲為本」。對於三界之業果既不生貪愛，即成決定出離流轉心，而可…"
+    },
+    {
+      "matched": "我我所",
+      "standard": "我我所",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "我我所"
+      ],
+      "sample_context": "…法無我  愛三界生死的貪愛中，有境界愛與自體愛。要先有自體愛然後方有境界愛。如云我我所愛，自體愛即我愛，乃生死根本。故佛法中尤注重將所愛著之自我，諦觀之為非有，因所…"
+    },
+    {
+      "matched": "和合相",
+      "standard": "連續相",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "佛教认识论",
+      "is_standard": false,
+      "variants_of_standard": [
+        "和合相"
+      ],
+      "vocab_note": "太虚分析世间一切法的两种假相：连续相如星火转环、见环不见火；和合相如分析个体至微而不可得本质。用以论证世间的无常无实可伏可断。",
+      "source": "phase2_fulltext",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "和合相"
+      ],
+      "sample_context": "…故觀察無我為遣除愛，以有自體愛則生境界愛而流轉生死。——且此五蘊十二處等諸法皆是和合相續都無我體，亦無自在力。既無自在力，故不能隨自意樂，而根本是苦，則斷除三界貪愛…"
+    },
+    {
+      "matched": "意樂",
+      "standard": "意樂",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "意樂"
+      ],
+      "sample_context": "…——且此五蘊十二處等諸法皆是和合相續都無我體，亦無自在力。既無自在力，故不能隨自意樂，而根本是苦，則斷除三界貪愛，生出離流轉心。亦由此引生我空慧，真正證得我空真如，…"
+    },
+    {
+      "matched": "證得",
+      "standard": "證得",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "證得"
+      ],
+      "sample_context": "…故不能隨自意樂，而根本是苦，則斷除三界貪愛，生出離流轉心。亦由此引生我空慧，真正證得我空真如，即出離三界六道流轉之生死也。  ### 　　丙　涅槃寂靜  涅槃雖有多…"
+    },
+    {
+      "matched": "擇滅",
+      "standard": "擇滅",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "擇滅"
+      ],
+      "sample_context": "…出離三界六道流轉之生死也。  ### 　　丙　涅槃寂靜  涅槃雖有多義，此處卻指擇滅。謂遍知諸行無常等。滅除無明妄見及所引解脫果，故名涅槃（涅槃有滅靜妙離義）。寂靜…"
+    },
+    {
+      "matched": "四諦",
+      "standard": "四諦",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "四諦"
+      ],
+      "sample_context": "…而證涅槃後即得永久安甯矣。故此安甯者，即苦已滅盡也。  此三法印攝苦、集、滅、道四諦：諸行無常、諸法無我是苦諦，其生苦因即集諦，涅槃寂靜即滅諦，其證滅因即道諦。  …"
+    },
+    {
+      "matched": "苦諦",
+      "standard": "苦諦",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "苦諦"
+      ],
+      "sample_context": "…故此安甯者，即苦已滅盡也。  此三法印攝苦、集、滅、道四諦：諸行無常、諸法無我是苦諦，其生苦因即集諦，涅槃寂靜即滅諦，其證滅因即道諦。  又發生此出離流轉心，有兩方…"
+    },
+    {
+      "matched": "生苦",
+      "standard": "生苦",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "生苦"
+      ],
+      "sample_context": "…者，即苦已滅盡也。  此三法印攝苦、集、滅、道四諦：諸行無常、諸法無我是苦諦，其生苦因即集諦，涅槃寂靜即滅諦，其證滅因即道諦。  又發生此出離流轉心，有兩方面：1.…"
+    },
+    {
+      "matched": "集諦",
+      "standard": "集諦",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "集諦"
+      ],
+      "sample_context": "…已滅盡也。  此三法印攝苦、集、滅、道四諦：諸行無常、諸法無我是苦諦，其生苦因即集諦，涅槃寂靜即滅諦，其證滅因即道諦。  又發生此出離流轉心，有兩方面：1.知三界苦…"
+    },
+    {
+      "matched": "滅諦",
+      "standard": "滅諦",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "滅諦"
+      ],
+      "sample_context": "…三法印攝苦、集、滅、道四諦：諸行無常、諸法無我是苦諦，其生苦因即集諦，涅槃寂靜即滅諦，其證滅因即道諦。  又發生此出離流轉心，有兩方面：1.知三界苦可滅；2.了知苦…"
+    },
+    {
+      "matched": "道諦",
+      "standard": "道諦",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "道諦"
+      ],
+      "sample_context": "…滅、道四諦：諸行無常、諸法無我是苦諦，其生苦因即集諦，涅槃寂靜即滅諦，其證滅因即道諦。  又發生此出離流轉心，有兩方面：1.知三界苦可滅；2.了知苦滅後得永久安甯：…"
+    },
+    {
+      "matched": "大慈悲",
+      "standard": "大慈悲",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "大悲心",
+        "平等主義"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "大慈悲"
+      ],
+      "sample_context": "…成佛，反之、若不成佛亦不能普度眾生，故必成佛方能真正究竟普度眾生。此普度眾生心即大慈悲心，由見三界一切眾生在生死苦中，為欲拔除，生同體悲憫。於是以種種善巧方便修積資…"
+    },
+    {
+      "matched": "善巧方便",
+      "standard": "善巧方便",
+      "occurrences": 1,
+      "domain": "义理维度",
+      "subdomain": "義理體系",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "太虚发挥「大乘佛教善巧方便的智慧」将基督教现代性转化为佛教革新的资源",
+      "source": "dimensional",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "善巧方便"
+      ],
+      "sample_context": "…度眾生心即大慈悲心，由見三界一切眾生在生死苦中，為欲拔除，生同體悲憫。於是以種種善巧方便修積資糧，誓求成佛。  ### 　　甲一　切法自性空義  此即三法印之究竟意…"
+    },
+    {
+      "matched": "畢竟空",
+      "standard": "畢竟空",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "中觀學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "畢竟空"
+      ],
+      "sample_context": "…。前之三法印徹底觀之，即此一切法自性空義。——謂見諸行畢竟無常，諸法畢竟無我，皆畢竟空無自體本來涅槃寂靜；雖諸法本來性空而不撥因緣生，正以緣生故其性皆空，所謂緣生即…"
+    },
+    {
+      "matched": "性空",
+      "standard": "性空",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "中觀學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "性空"
+      ],
+      "sample_context": "…空義。——謂見諸行畢竟無常，諸法畢竟無我，皆畢竟空無自體本來涅槃寂靜；雖諸法本來性空而不撥因緣生，正以緣生故其性皆空，所謂緣生即空、空即緣生是也。此即大乘般若，以了…"
+    },
+    {
+      "matched": "般若",
+      "standard": "般若",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "般若中論"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "般若"
+      ],
+      "sample_context": "…法本來性空而不撥因緣生，正以緣生故其性皆空，所謂緣生即空、空即緣生是也。此即大乘般若，以了達此義，乃有大乘空慧。有此究竟智慧，則能運大車普度眾生，而亦不見有實眾生可…"
+    },
+    {
+      "matched": "空慧",
+      "standard": "空慧",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "中觀學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "空慧"
+      ],
+      "sample_context": "…以緣生故其性皆空，所謂緣生即空、空即緣生是也。此即大乘般若，以了達此義，乃有大乘空慧。有此究竟智慧，則能運大車普度眾生，而亦不見有實眾生可度，以知一切皆無自性故。 …"
+    },
+    {
+      "matched": "通達",
+      "standard": "通達",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "通達"
+      ],
+      "sample_context": "…度，以知一切皆無自性故。  ### 　　乙一　切法唯識現義  由前義故，能令菩薩通達一切諸法平等皆自性空、涅槃寂靜，故能普度一切眾生無自他分別心。今此唯識現義，即空…"
+    },
+    {
+      "matched": "有法",
+      "standard": "有法",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "有法"
+      ],
+      "sample_context": "…皆自性空、涅槃寂靜，故能普度一切眾生無自他分別心。今此唯識現義，即空中幻起之因緣有法，亦即因緣生法之究竟義。此唯識現之現義有二：1.變現，2.顯現。變現者、如向來非…"
+    },
+    {
+      "matched": "八識",
+      "standard": "八識",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [
+        "八識二無我",
+        "八識心王"
+      ],
+      "vocab_note": "含阿賴耶識、末那識等",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "八識"
+      ],
+      "sample_context": "…中不見桌等，由燈故見，此桌非燈所生不過因燈而現耳。識證真如性亦如是。此中「識」通八識王所，今謂一切因緣生之依他起有為法，皆是唯識變現；即此能變所變一切法中所顯本來如…"
+    },
+    {
+      "matched": "所變",
+      "standard": "所變",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "所變"
+      ],
+      "sample_context": "…如是。此中「識」通八識王所，今謂一切因緣生之依他起有為法，皆是唯識變現；即此能變所變一切法中所顯本來如是的真如性，即唯識顯現，故總謂一切皆唯識現也。能明一切法唯識現…"
+    },
+    {
+      "matched": "同體大悲",
+      "standard": "同體大悲",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "菩萨行",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "眾生與我同體之大悲心",
+      "source": "phase2_fulltext",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "同體大悲"
+      ],
+      "sample_context": "…是的真如性，即唯識顯現，故總謂一切皆唯識現也。能明一切法唯識現，即能不離自識而發同體大悲心，廣修普度一切眾生行，轉識成智證見真如，即成無上菩提。  ### 　　丙一…"
+    },
+    {
+      "matched": "轉識",
+      "standard": "轉識",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "轉識"
+      ],
+      "sample_context": "…切皆唯識現也。能明一切法唯識現，即能不離自識而發同體大悲心，廣修普度一切眾生行，轉識成智證見真如，即成無上菩提。  ### 　　丙一　切法大總持義  「總持」即陀羅…"
+    },
+    {
+      "matched": "如法",
+      "standard": "如法",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "如法"
+      ],
+      "sample_context": "…法大總持義  「總持」即陀羅尼義。普通指陀羅尼為咒，是取狹義。然陀羅尼義實甚廣，如法陀羅尼、義陀羅尼、忍陀羅尼等。此中所明一切法大陀羅尼，即指陀羅尼中之大陀羅尼也。…"
+    },
+    {
+      "matched": "密咒",
+      "standard": "密咒",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "密法",
+      "is_standard": true,
+      "variants_of_standard": [
+        "真言",
+        "真言行"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "密咒"
+      ],
+      "sample_context": "…陀羅尼等。此中所明一切法大陀羅尼，即指陀羅尼中之大陀羅尼也。非但指密宗之咒，——密咒中有是大陀羅尼，亦有僅為一事一用之小陀羅尼。一切法皆大總持義，如天台圓教一色一香…"
+    },
+    {
+      "matched": "中有",
+      "standard": "中有",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "中有"
+      ],
+      "sample_context": "…尼等。此中所明一切法大陀羅尼，即指陀羅尼中之大陀羅尼也。非但指密宗之咒，——密咒中有是大陀羅尼，亦有僅為一事一用之小陀羅尼。一切法皆大總持義，如天台圓教一色一香皆法…"
+    },
+    {
+      "matched": "天台",
+      "standard": "天台宗",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "宗派",
+      "is_standard": false,
+      "variants_of_standard": [
+        "台教",
+        "天台",
+        "天台學",
+        "天台教"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "天台"
+      ],
+      "sample_context": "…宗之咒，——密咒中有是大陀羅尼，亦有僅為一事一用之小陀羅尼。一切法皆大總持義，如天台圓教一色一香皆法界義，賢首圓教事事無礙法界義，皆任何一法包一切法，等於密教大陀羅…"
+    },
+    {
+      "matched": "賢首",
+      "standard": "華嚴宗",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "宗派",
+      "is_standard": false,
+      "variants_of_standard": [
+        "賢首",
+        "賢首宗",
+        "賢首教"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "賢首"
+      ],
+      "sample_context": "…羅尼，亦有僅為一事一用之小陀羅尼。一切法皆大總持義，如天台圓教一色一香皆法界義，賢首圓教事事無礙法界義，皆任何一法包一切法，等於密教大陀羅尼。何以故？如云隨拈一法皆…"
+    },
+    {
+      "matched": "密教",
+      "standard": "密教",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "宗派",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "密教"
+      ],
+      "sample_context": "…義，如天台圓教一色一香皆法界義，賢首圓教事事無礙法界義，皆任何一法包一切法，等於密教大陀羅尼。何以故？如云隨拈一法皆為法界，今拈一紙亦即攝一切法；蓋任拈一法既皆法界…"
+    },
+    {
+      "matched": "即心",
+      "standard": "即心",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "即心"
+      ],
+      "sample_context": "…不能出此法界外也。又如事事無礙，則任何一事物即一切事物，一切事物亦即一事物，即境即心，即身即佛。  此一切法大總持即大乘之妙用，融會前二而成就。前二為體與相，此即為…"
+    },
+    {
+      "matched": "即身",
+      "standard": "即身",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "即身"
+      ],
+      "sample_context": "…此法界外也。又如事事無礙，則任何一事物即一切事物，一切事物亦即一事物，即境即心，即身即佛。  此一切法大總持即大乘之妙用，融會前二而成就。前二為體與相，此即為用。又…"
+    },
+    {
+      "matched": "圓成",
+      "standard": "圓成實性",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": false,
+      "variants_of_standard": [
+        "圓成"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "圓成"
+      ],
+      "sample_context": "…一切眾生即一眾生，一剎那即無量劫，無量劫即一剎那等。明此則更無空界時劫拘限，速疾圓成佛果，普度眾生之大用。  如是大乘法三義甚深甚廣，今為初學粗略而談，廣如性、相、…"
+    },
+    {
+      "matched": "佛果",
+      "standard": "佛果",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "佛果"
+      ],
+      "sample_context": "…眾生即一眾生，一剎那即無量劫，無量劫即一剎那等。明此則更無空界時劫拘限，速疾圓成佛果，普度眾生之大用。  如是大乘法三義甚深甚廣，今為初學粗略而談，廣如性、相、台、…"
+    },
+    {
+      "matched": "甚深",
+      "standard": "甚深",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "甚深"
+      ],
+      "sample_context": "…剎那等。明此則更無空界時劫拘限，速疾圓成佛果，普度眾生之大用。  如是大乘法三義甚深甚廣，今為初學粗略而談，廣如性、相、台、賢、禪、密各宗義中說。例如密宗，也不過發…"
+    },
+    {
+      "matched": "宗義",
+      "standard": "宗義",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "佛法體系",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "宗義"
+      ],
+      "sample_context": "…大用。  如是大乘法三義甚深甚廣，今為初學粗略而談，廣如性、相、台、賢、禪、密各宗義中說。例如密宗，也不過發揮此法法皆大總持之妙用；欲界特盛之貪莫過淫欲，最重之惡莫…"
+    },
+    {
+      "matched": "能立",
+      "standard": "能立",
+      "occurrences": 1,
+      "domain": "方法論",
+      "subdomain": "著述體裁",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "能立"
+      ],
+      "sample_context": "…三心乃展轉相依，由向上增進心方有出離流轉心，若無向上增進心即縱任懶怠放逸墮落，何能立「出離流轉」決心！故須向上增進心為基本，乃可發起出離流轉心、及大乘成佛心。若無出…"
+    },
+    {
+      "matched": "離苦",
+      "standard": "離苦",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "離苦"
+      ],
+      "sample_context": "…人雖亦談平等博愛，然終不出人天因果，以未知三界皆苦決心出離故，非能普度眾生達究竟離苦之果。——故能發成佛心，必先有出離流轉之心也。故此三心次第相依，若無前二必無後心…"
+    },
+    {
+      "matched": "佛學",
+      "standard": "佛學",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "佛法體系",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "全書根本概念，太虚自稱「佛學」而非「佛教學」",
+      "source": "manual_gap",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "佛學"
+      ],
+      "sample_context": "…等，若果未了三界眾生生死之苦，決非究竟成佛之菩提心也。  研究此佛理要略，可參考佛學概論。  （碧松記）（原見海潮音月刊十八卷十一期）     "
+    },
+    {
+      "matched": "海潮音",
+      "standard": "海潮音",
+      "occurrences": 1,
+      "domain": "历史",
+      "subdomain": "佛教事件",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "海潮音"
+      ],
+      "sample_context": "…決非究竟成佛之菩提心也。  研究此佛理要略，可參考佛學概論。  （碧松記）（原見海潮音月刊十八卷十一期）     "
+    }
+  ],
+  "domain_summary": {
+    "domains": {
+      "教理": 156,
+      "行持": 25,
+      "制度": 1,
+      "义理维度": 1,
+      "方法論": 1,
+      "历史": 1
+    },
+    "subdomains": {
+      "基礎教義": 115,
+      "修行次第": 15,
+      "大乘通義": 11,
+      "唯識學": 11,
+      "中觀學": 6,
+      "宗派": 4,
+      "戒律行持": 3,
+      "淨土法門": 3,
+      "禪觀": 3,
+      "判教框架": 2,
+      "佛法體系": 2,
+      "大乘有宗": 1,
+      "基础教义": 1,
+      "僧教育": 1,
+      "經典": 1,
+      "佛教认识论": 1,
+      "義理體系": 1,
+      "菩萨行": 1,
+      "密法": 1,
+      "著述體裁": 1,
+      "佛教事件": 1
+    }
+  }
+}
