@@ -154,14 +154,14 @@ def score_candidate(candidate, heading_ranges, heading_weight=3):
 
 
 def load_standard_labels():
-    """从 labels.json 读取功能取向和精神指向的标准标签集。
-    返回 (func_set, spirit_set) 两个 frozenset。"""
+    """从 labels.json 读取论用和旨归的标准标签集。
+    返回 (func_set, bearing_set) 两个 frozenset。"""
     labels_path = SKILL_DIR / "vocabulary" / "labels.json"
     with open(labels_path, encoding="utf-8") as f:
         data = json.load(f)
     return (
-        frozenset(data.get("functional_purposes", [])),
-        frozenset(data.get("spiritual_directions", [])),
+        frozenset(data.get("functions", [])),
+        frozenset(data.get("bearings", [])),
     )
 
 

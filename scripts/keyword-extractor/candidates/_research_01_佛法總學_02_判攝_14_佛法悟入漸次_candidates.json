@@ -1,0 +1,2034 @@
+{
+  "summary": {
+    "total_candidates": 113,
+    "unique_standards": 113,
+    "single_occurrence_ratio": "68/113",
+    "high_frequency_terms": [
+      "因果"
+    ],
+    "heading_weighted": true,
+    "heading_weight": 3
+  },
+  "article": {
+    "path": "/Users/xin/Documents/Road_Of_Taixu/_research/01_佛法總學/02_判攝/14_佛法悟入漸次.md",
+    "title": "佛法悟入漸次",
+    "cjk_chars": 3203,
+    "recommended_count": "5-8",
+    "编": "第一编 佛法總學",
+    "编_number": "1",
+    "category": "判攝"
+  },
+  "vocab_source": "/Users/xin/Documents/Road_Of_Taixu/scripts/keyword-extractor/vocabulary/keyword_vocabulary_v4.json",
+  "match_stats": {
+    "raw_hits": 117,
+    "after_dedup": 113
+  },
+  "candidates": [
+    {
+      "matched": "因果",
+      "standard": "因果",
+      "occurrences": 14,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "因果"
+      ],
+      "sample_context": "…質物力；然彼所說皆謂物集則相顯，物散則相沒，人生宇宙所言一切之果相，莫不由物理之因果律所致也。計為神造，東土則計為天，西土則計為上帝；然彼等皆謂宇宙之所以有此森羅萬…"
+    },
+    {
+      "matched": "業果",
+      "standard": "業果",
+      "occurrences": 9,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "業果"
+      ],
+      "sample_context": "…異，遂得異類之總報。報體即識，報名曰果；復依此果而造諸業，更感後果。由斯前前後後業果不斷，亙古歷今，各隨所造之業得其所應得之果，異生遂長夜沈淪於生死海底，相續於六道…"
+    },
+    {
+      "matched": "諸法",
+      "standard": "諸法",
+      "occurrences": 9,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "諸法"
+      ],
+      "sample_context": "…此緣起有十二支故。此中所謂無明者，即不明之謂也。其所不明者有二種：一者真實義，謂諸法生滅無常，緣生無我，性空無為之義；二者異熟果，謂諸所作業異時必變異異類而成熟為果…"
+    },
+    {
+      "matched": "有情",
+      "standard": "有情",
+      "occurrences": 7,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "有情"
+      ],
+      "sample_context": "…23 年 7 月，在廬山世界佛教聯合會講）  ## 一　明業果不斷故有情續生  有情依其身語意三者所發動之善惡染淨等行為，皆謂之業。有如是業，即有如是感招後異熟報之…"
+    },
+    {
+      "matched": "無明",
+      "standard": "無明",
+      "occurrences": 8,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無明"
+      ],
+      "sample_context": "…中矣。或曰：理既如斯，其相若何？曰：若示概相，可依十二因緣以明之。十二因緣者，謂無明、行、識、名色、六入、觸、受、愛、取、有、生、老死。此十二因緣亦名十二緣起，以業…"
+    },
+    {
+      "matched": "不信",
+      "standard": "不信",
+      "occurrences": 8,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "不信"
+      ],
+      "sample_context": "…吾人之主宰，萬能而全知，是以信之敬之念之禱之，當必賴之永生天堂，享快樂於無窮；若不信而忽之侮之慢之背之，自求永墮地獄，終為撤但，常流於化外而莫之救藥。噫！此教此見，…"
+    },
+    {
+      "matched": "五蘊",
+      "standard": "五蘊",
+      "occurrences": 8,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "色受想行識",
+      "source": "batch_01",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "五蘊"
+      ],
+      "sample_context": "…果之五乘通義，繼則應達我空三乘聖教。此三乘出世之學，最初所明者，即人我本空之理，五蘊幻聚之相。蓋以生死因於惑業，惑業原於執我，而庸人所執之我，則皆由不達五蘊假相而妄…"
+    },
+    {
+      "matched": "人我本空",
+      "standard": "諸法無我",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": false,
+      "variants_of_standard": [
+        "人我本空",
+        "人無我"
+      ],
+      "vocab_note": "人無我與法無我之合稱",
+      "source": "batch_01,v3_draft",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "人我本空"
+      ],
+      "sample_context": "…矣！是以既曉業果之五乘通義，繼則應達我空三乘聖教。此三乘出世之學，最初所明者，即人我本空之理，五蘊幻聚之相。蓋以生死因於惑業，惑業原於執我，而庸人所執之我，則皆由不…"
+    },
+    {
+      "matched": "佛知見",
+      "standard": "佛知見",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "佛之知見"
+      ],
+      "vocab_note": "法華經開示悟入佛之知見",
+      "source": "batch_01,v3_draft",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "佛之知見",
+        "佛知見"
+      ],
+      "sample_context": "…義故說之為本非空有。法華經云：『佛為一大事因緣出現於世，為令世間一切眾生開示悟入佛之知見』。所謂悟入佛之知見者，即是親證此非有之空非無之真也。然啟發此親證實相之智，…"
+    },
+    {
+      "matched": "緣起",
+      "standard": "緣起",
+      "occurrences": 6,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "緣生"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "緣生",
+        "緣起"
+      ],
+      "sample_context": "…老死。此十二因緣亦名十二緣起，以業果之相由十二種之因緣而起故；亦名十二有支，以此緣起有十二支故。此中所謂無明者，即不明之謂也。其所不明者有二種：一者真實義，謂諸法生…"
+    },
+    {
+      "matched": "異生",
+      "standard": "異生",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "凡夫之專業術語，常在異類流轉生死之有情，依人我執而假立異生性，與聖者相對",
+      "source": "phase2_fulltext,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "異生"
+      ],
+      "sample_context": "…為，皆謂之業。有如是業，即有如是感招後異熟報之力，所感之後報能酬前業，是謂之果。異生二執俱生，於異熟果不達依他無我之理，遂起四顛倒而造善惡等種種之業。業持於識，為識…"
+    },
+    {
+      "matched": "無我",
+      "standard": "無我",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無我"
+      ],
+      "sample_context": "…是感招後異熟報之力，所感之後報能酬前業，是謂之果。異生二執俱生，於異熟果不達依他無我之理，遂起四顛倒而造善惡等種種之業。業持於識，為識增上；業為識造，識為業牽；此善…"
+    },
+    {
+      "matched": "十二因緣",
+      "standard": "十二因緣",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "十二有支",
+        "十二緣起法"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "十二因緣",
+        "十二有支"
+      ],
+      "sample_context": "…夜沈淪於生死海底，相續於六道趣中矣。或曰：理既如斯，其相若何？曰：若示概相，可依十二因緣以明之。十二因緣者，謂無明、行、識、名色、六入、觸、受、愛、取、有、生、老死…"
+    },
+    {
+      "matched": "輪迴",
+      "standard": "輪迴",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "輪迴"
+      ],
+      "sample_context": "…。噫！此教此見，一梗於胸中，其最善者或幸能生天享一期之福報，但報盡則仍不免於六道輪迴，三途之痛苦；次之者則什九不免鬼道幽冥之苦矣。計斷見者，即自然迷派與物集迷派；蓋…"
+    },
+    {
+      "matched": "唯識所變",
+      "standard": "唯識所變",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "唯識所變"
+      ],
+      "sample_context": "…心識，故一切皆所變，唯識能變、唯識能了，故曰唯識。以體空而相有故，故曰諸法本空，唯識所變也。但此法空識變之義，非二乘定性者所能領受所可悟入者，故此義亦曰大乘不共教義…"
+    },
+    {
+      "matched": "業報",
+      "standard": "業報",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "六道業果",
+        "因果報應"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "因果報應",
+        "業報"
+      ],
+      "sample_context": "…之意，亦非借此論以駭懼世人，使勿殺人放火也；亦非待釋氏道出因果之論，而後世間方有因果報應也；惟因事相本來實現為如此如此，故釋氏說為如此如此。蓋以於事實上雖因果昭昭不…"
+    },
+    {
+      "matched": "三乘",
+      "standard": "三乘",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "出世三乘",
+        "聲聞緣覺菩薩"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "三乘"
+      ],
+      "sample_context": "…之道，則福果一盡，人生之再報，將難乎為繼矣！是以既曉業果之五乘通義，繼則應達我空三乘聖教。此三乘出世之學，最初所明者，即人我本空之理，五蘊幻聚之相。蓋以生死因於惑業…"
+    },
+    {
+      "matched": "異熟果",
+      "standard": "異熟果",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "異熟果"
+      ],
+      "sample_context": "…如是業，即有如是感招後異熟報之力，所感之後報能酬前業，是謂之果。異生二執俱生，於異熟果不達依他無我之理，遂起四顛倒而造善惡等種種之業。業持於識，為識增上；業為識造，…"
+    },
+    {
+      "matched": "六道",
+      "standard": "六趣",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": false,
+      "variants_of_standard": [
+        "六道"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "六道"
+      ],
+      "sample_context": "…業果不斷，亙古歷今，各隨所造之業得其所應得之果，異生遂長夜沈淪於生死海底，相續於六道趣中矣。或曰：理既如斯，其相若何？曰：若示概相，可依十二因緣以明之。十二因緣者，…"
+    },
+    {
+      "matched": "名色",
+      "standard": "名色",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "名色"
+      ],
+      "sample_context": "…既如斯，其相若何？曰：若示概相，可依十二因緣以明之。十二因緣者，謂無明、行、識、名色、六入、觸、受、愛、取、有、生、老死。此十二因緣亦名十二緣起，以業果之相由十二種…"
+    },
+    {
+      "matched": "來世",
+      "standard": "來世",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "來世"
+      ],
+      "sample_context": "…故，於現前境認定而欲保取之或欲摧滅之，是之謂取。以取迷為緣故，造作諸業，以業有引來世之力，是之謂有，蓋謂此報雖未捨，而來世應有之業因已有也。依此有故復得後報，是之謂…"
+    },
+    {
+      "matched": "斷見",
+      "standard": "斷見",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "斷見"
+      ],
+      "sample_context": "…相續；成住壞空，一劫復一劫共同之業果不斷。諸有不達此義者，遂依其現見之果法上起諸斷見或起常見，或計其為無因而然，或計其為有因而然。計無因者，謂去來今宇宙一切參差之現…"
+    },
+    {
+      "matched": "常見",
+      "standard": "常見",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "常見"
+      ],
+      "sample_context": "…住壞空，一劫復一劫共同之業果不斷。諸有不達此義者，遂依其現見之果法上起諸斷見或起常見，或計其為無因而然，或計其為有因而然。計無因者，謂去來今宇宙一切參差之現象森羅環…"
+    },
+    {
+      "matched": "五乘",
+      "standard": "五乘",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "判教框架",
+      "is_standard": true,
+      "variants_of_standard": [
+        "聲聞乘"
+      ],
+      "vocab_note": "太虚基本判教框架",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "五乘"
+      ],
+      "sample_context": "…；推而廣之，做天乃至做佛，亦莫不基此為出發之點，奉此為根本之理。故在佛法應謂之曰五乘之共通教義，為學佛之最低限度也。  上來所說，非如世俗糢糊影響之談因果。若能以之…"
+    },
+    {
+      "matched": "世間",
+      "standard": "世間",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "世間"
+      ],
+      "sample_context": "…哉！釋氏之意，亦非借此論以駭懼世人，使勿殺人放火也；亦非待釋氏道出因果之論，而後世間方有因果報應也；惟因事相本來實現為如此如此，故釋氏說為如此如此。蓋以於事實上雖因…"
+    },
+    {
+      "matched": "唯識",
+      "standard": "唯識",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "大乘有宗",
+      "is_standard": true,
+      "variants_of_standard": [
+        "法相唯識",
+        "唯識現",
+        "諸法唯識現",
+        "一切法唯識現"
+      ],
+      "vocab_note": "",
+      "source": "batch_01",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "唯識"
+      ],
+      "sample_context": "…位百法耶？曰：體雖空寂幻相非無也。然非無之相，不出能變能了之心識，故一切皆所變，唯識能變、唯識能了，故曰唯識。以體空而相有故，故曰諸法本空，唯識所變也。但此法空識變…"
+    },
+    {
+      "matched": "異熟",
+      "standard": "異熟",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "異熟"
+      ],
+      "sample_context": "…  有情依其身語意三者所發動之善惡染淨等行為，皆謂之業。有如是業，即有如是感招後異熟報之力，所感之後報能酬前業，是謂之果。異生二執俱生，於異熟果不達依他無我之理，遂…"
+    },
+    {
+      "matched": "生死",
+      "standard": "生死",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "生死"
+      ],
+      "sample_context": "…果。由斯前前後後業果不斷，亙古歷今，各隨所造之業得其所應得之果，異生遂長夜沈淪於生死海底，相續於六道趣中矣。或曰：理既如斯，其相若何？曰：若示概相，可依十二因緣以明…"
+    },
+    {
+      "matched": "相續",
+      "standard": "相續",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "相續"
+      ],
+      "sample_context": "…前後後業果不斷，亙古歷今，各隨所造之業得其所應得之果，異生遂長夜沈淪於生死海底，相續於六道趣中矣。或曰：理既如斯，其相若何？曰：若示概相，可依十二因緣以明之。十二因…"
+    },
+    {
+      "matched": "因緣",
+      "standard": "因緣",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "因緣"
+      ],
+      "sample_context": "…六入、觸、受、愛、取、有、生、老死。此十二因緣亦名十二緣起，以業果之相由十二種之因緣而起故；亦名十二有支，以此緣起有十二支故。此中所謂無明者，即不明之謂也。其所不明…"
+    },
+    {
+      "matched": "無常",
+      "standard": "無常",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無常"
+      ],
+      "sample_context": "…十二支故。此中所謂無明者，即不明之謂也。其所不明者有二種：一者真實義，謂諸法生滅無常，緣生無我，性空無為之義；二者異熟果，謂諸所作業異時必變異異類而成熟為果，曰異熟…"
+    },
+    {
+      "matched": "性空",
+      "standard": "性空",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "中觀學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "性空"
+      ],
+      "sample_context": "…謂無明者，即不明之謂也。其所不明者有二種：一者真實義，謂諸法生滅無常，緣生無我，性空無為之義；二者異熟果，謂諸所作業異時必變異異類而成熟為果，曰異熟果。異時是所難究…"
+    },
+    {
+      "matched": "增上緣",
+      "standard": "增上緣",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "增上緣"
+      ],
+      "sample_context": "…無我非妄心所緣；異生無正比量智以通此理，無真現量智以達此事，故曰無明也。以無明為增上緣，貪瞋等種遂爾現行，身語業於斯而起行為動作，是之謂行。以無明行為增上緣，命終之…"
+    },
+    {
+      "matched": "識心",
+      "standard": "識心",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "識心"
+      ],
+      "sample_context": "…種遂爾現行，身語業於斯而起行為動作，是之謂行。以無明行為增上緣，命終之時惑業感牽識心，識心被牽遂復趣生，是之謂行緣識。當其趣生得命之時，此識即與父母愛情之精血合為一…"
+    },
+    {
+      "matched": "諸有",
+      "standard": "諸有",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "諸有"
+      ],
+      "sample_context": "…所陶成。生老病死，一期復一期別異之業果相續；成住壞空，一劫復一劫共同之業果不斷。諸有不達此義者，遂依其現見之果法上起諸斷見或起常見，或計其為無因而然，或計其為有因而…"
+    },
+    {
+      "matched": "地獄",
+      "standard": "地獄",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "地獄"
+      ],
+      "sample_context": "…敬之念之禱之，當必賴之永生天堂，享快樂於無窮；若不信而忽之侮之慢之背之，自求永墮地獄，終為撤但，常流於化外而莫之救藥。噫！此教此見，一梗於胸中，其最善者或幸能生天享…"
+    },
+    {
+      "matched": "解脫",
+      "standard": "解脫",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "解脫"
+      ],
+      "sample_context": "…物集迷派；蓋謂自然如是，本無因果，好醜固定，佛豈可致？遂順其貪瞋慢之流而不復求其解脫之方。又謂人由物集，物散人亡，人生無常，應即時行樂；苟得以滿吾貪瞋慢之狂壑者，雖…"
+    },
+    {
+      "matched": "通教",
+      "standard": "通教",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "判教框架",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "通教"
+      ],
+      "sample_context": "…之，做天乃至做佛，亦莫不基此為出發之點，奉此為根本之理。故在佛法應謂之曰五乘之共通教義，為學佛之最低限度也。  上來所說，非如世俗糢糊影響之談因果。若能以之普及於今…"
+    },
+    {
+      "matched": "來生",
+      "standard": "來生",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "來生"
+      ],
+      "sample_context": "…世人不曉，而謂因果之教，唯是釋氏所施設，唯是佛教徒所迷信，豈人生真有所謂因果輪迴來生來世哉！縱聞有二三現見之果報等事，亦不過適逢其會耳！總之，輪迴非現前可見證，來生…"
+    },
+    {
+      "matched": "我空",
+      "standard": "我空",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "我空"
+      ],
+      "sample_context": "…出世之道，則福果一盡，人生之再報，將難乎為繼矣！是以既曉業果之五乘通義，繼則應達我空三乘聖教。此三乘出世之學，最初所明者，即人我本空之理，五蘊幻聚之相。蓋以生死因於…"
+    },
+    {
+      "matched": "色蘊",
+      "standard": "色蘊",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "色蘊"
+      ],
+      "sample_context": "…惑業，惑業原於執我，而庸人所執之我，則皆由不達五蘊假相而妄計之以為我之故也。或計色蘊是我，或計受蘊是我，或計想蘊是我，或計行蘊是我，或計識蘊是我，或計五蘊和合是我；…"
+    },
+    {
+      "matched": "和合",
+      "standard": "和合",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "和合"
+      ],
+      "sample_context": "…。或計色蘊是我，或計受蘊是我，或計想蘊是我，或計行蘊是我，或計識蘊是我，或計五蘊和合是我；要皆是誤繩為蛇，顧影覓首也。若就其所計而推研之，彼將彷徨而莫知措其手足矣！…"
+    },
+    {
+      "matched": "識變",
+      "standard": "識變",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "識變"
+      ],
+      "sample_context": "…唯識能變、唯識能了，故曰唯識。以體空而相有故，故曰諸法本空，唯識所變也。但此法空識變之義，非二乘定性者所能領受所可悟入者，故此義亦曰大乘不共教義也。  ## 四　明…"
+    },
+    {
+      "matched": "眾生",
+      "standard": "眾生",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "眾生"
+      ],
+      "sample_context": "…共教義也。  ## 四　明本非空有故入佛知見  有執即生執除即佛，除執即是佛法。眾生妄情所執之妄相雖非有，而諸佛妙智所證之實相則非無；證與未證，諸法之真際本來如是，…"
+    },
+    {
+      "matched": "實相",
+      "standard": "實相",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "實相"
+      ],
+      "sample_context": "…見  有執即生執除即佛，除執即是佛法。眾生妄情所執之妄相雖非有，而諸佛妙智所證之實相則非無；證與未證，諸法之真際本來如是，以是義故說之為本非空有。法華經云：『佛為一…"
+    },
+    {
+      "matched": "世界佛教",
+      "standard": "世界佛教",
+      "occurrences": 1,
+      "domain": "社会文化",
+      "subdomain": "國際交流",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "太虛國際視野 | 论证人间佛教的「世界性视域」及其实现途径，属太虚世界佛教运动的理论延伸",
+      "source": "dimensional,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "世界佛教"
+      ],
+      "sample_context": "# 佛法悟入漸次 （1923 年 7 月，在廬山世界佛教聯合會講）  ## 一　明業果不斷故有情續生  有情依其身語意三者所發動之善…"
+    },
+    {
+      "matched": "二執",
+      "standard": "二執",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "二執"
+      ],
+      "sample_context": "…皆謂之業。有如是業，即有如是感招後異熟報之力，所感之後報能酬前業，是謂之果。異生二執俱生，於異熟果不達依他無我之理，遂起四顛倒而造善惡等種種之業。業持於識，為識增上…"
+    },
+    {
+      "matched": "增上",
+      "standard": "增上",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "增上"
+      ],
+      "sample_context": "…二執俱生，於異熟果不達依他無我之理，遂起四顛倒而造善惡等種種之業。業持於識，為識增上；業為識造，識為業牽；此善惡之業，依有情之識，異時變異，遂得異類之總報。報體即識…"
+    },
+    {
+      "matched": "六入",
+      "standard": "六入",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "六入"
+      ],
+      "sample_context": "…，其相若何？曰：若示概相，可依十二因緣以明之。十二因緣者，謂無明、行、識、名色、六入、觸、受、愛、取、有、生、老死。此十二因緣亦名十二緣起，以業果之相由十二種之因緣…"
+    },
+    {
+      "matched": "十二緣起",
+      "standard": "十二緣起",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "十二緣起"
+      ],
+      "sample_context": "…因緣者，謂無明、行、識、名色、六入、觸、受、愛、取、有、生、老死。此十二因緣亦名十二緣起，以業果之相由十二種之因緣而起故；亦名十二有支，以此緣起有十二支故。此中所謂…"
+    },
+    {
+      "matched": "真實義",
+      "standard": "真實義",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "真實義"
+      ],
+      "sample_context": "…二有支，以此緣起有十二支故。此中所謂無明者，即不明之謂也。其所不明者有二種：一者真實義，謂諸法生滅無常，緣生無我，性空無為之義；二者異熟果，謂諸所作業異時必變異異類…"
+    },
+    {
+      "matched": "生滅",
+      "standard": "生滅",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "生滅"
+      ],
+      "sample_context": "…起有十二支故。此中所謂無明者，即不明之謂也。其所不明者有二種：一者真實義，謂諸法生滅無常，緣生無我，性空無為之義；二者異熟果，謂諸所作業異時必變異異類而成熟為果，曰…"
+    },
+    {
+      "matched": "無為",
+      "standard": "無為",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無為"
+      ],
+      "sample_context": "…明者，即不明之謂也。其所不明者有二種：一者真實義，謂諸法生滅無常，緣生無我，性空無為之義；二者異熟果，謂諸所作業異時必變異異類而成熟為果，曰異熟果。異時是所難究，變…"
+    },
+    {
+      "matched": "作業",
+      "standard": "業",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": false,
+      "variants_of_standard": [
+        "作業"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "作業"
+      ],
+      "sample_context": "…者有二種：一者真實義，謂諸法生滅無常，緣生無我，性空無為之義；二者異熟果，謂諸所作業異時必變異異類而成熟為果，曰異熟果。異時是所難究，變異則相不識，性空故理趣玄深，…"
+    },
+    {
+      "matched": "心所",
+      "standard": "心所",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "心所"
+      ],
+      "sample_context": "…異異類而成熟為果，曰異熟果。異時是所難究，變異則相不識，性空故理趣玄深，無我非妄心所緣；異生無正比量智以通此理，無真現量智以達此事，故曰無明也。以無明為增上緣，貪瞋…"
+    },
+    {
+      "matched": "比量",
+      "standard": "比量",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "比量"
+      ],
+      "sample_context": "…，曰異熟果。異時是所難究，變異則相不識，性空故理趣玄深，無我非妄心所緣；異生無正比量智以通此理，無真現量智以達此事，故曰無明也。以無明為增上緣，貪瞋等種遂爾現行，身…"
+    },
+    {
+      "matched": "現量",
+      "standard": "現量",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "現量"
+      ],
+      "sample_context": "…難究，變異則相不識，性空故理趣玄深，無我非妄心所緣；異生無正比量智以通此理，無真現量智以達此事，故曰無明也。以無明為增上緣，貪瞋等種遂爾現行，身語業於斯而起行為動作…"
+    },
+    {
+      "matched": "現行",
+      "standard": "現行",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "現行"
+      ],
+      "sample_context": "…無正比量智以通此理，無真現量智以達此事，故曰無明也。以無明為增上緣，貪瞋等種遂爾現行，身語業於斯而起行為動作，是之謂行。以無明行為增上緣，命終之時惑業感牽識心，識心…"
+    },
+    {
+      "matched": "業感",
+      "standard": "業感",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "業感"
+      ],
+      "sample_context": "…貪瞋等種遂爾現行，身語業於斯而起行為動作，是之謂行。以無明行為增上緣，命終之時惑業感牽識心，識心被牽遂復趣生，是之謂行緣識。當其趣生得命之時，此識即與父母愛情之精血…"
+    },
+    {
+      "matched": "虛妄",
+      "standard": "虛妄",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "虛妄"
+      ],
+      "sample_context": "…接觸，是之謂觸。當此觸時，即有逼近之苦樂與捨等之感受，是之謂受。於現所受不明其為虛妄，遂依之於境而生愛憎，是之謂受為緣生愛。以愛迷為緣故，於現前境認定而欲保取之或欲…"
+    },
+    {
+      "matched": "業因",
+      "standard": "業因",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "業因"
+      ],
+      "sample_context": "…以取迷為緣故，造作諸業，以業有引來世之力，是之謂有，蓋謂此報雖未捨，而來世應有之業因已有也。依此有故復得後報，是之謂有為緣生。報得曰生，果壞曰死。斯之謂無明緣行乃至…"
+    },
+    {
+      "matched": "有為",
+      "standard": "有為",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "有為"
+      ],
+      "sample_context": "…之力，是之謂有，蓋謂此報雖未捨，而來世應有之業因已有也。依此有故復得後報，是之謂有為緣生。報得曰生，果壞曰死。斯之謂無明緣行乃至生緣老死；即業果不斷有情續生之概相也…"
+    },
+    {
+      "matched": "正報",
+      "standard": "正報",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "正報"
+      ],
+      "sample_context": "…者必共得。別異之報果乃別異之惑業所致，共同之果報即共同之惑業所感。根與身為別異之正報，器世界即共同之依報；國家乃共別之業招集，世界即共共之業所陶成。生老病死，一期復…"
+    },
+    {
+      "matched": "依報",
+      "standard": "依報",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "有情共業所感之器世間為依報，各別業力所感之根身為正報",
+      "source": "phase2_fulltext,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "依報"
+      ],
+      "sample_context": "…乃別異之惑業所致，共同之果報即共同之惑業所感。根與身為別異之正報，器世界即共同之依報；國家乃共別之業招集，世界即共共之業所陶成。生老病死，一期復一期別異之業果相續；…"
+    },
+    {
+      "matched": "生老病死",
+      "standard": "生老病死",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "生老病死"
+      ],
+      "sample_context": "…與身為別異之正報，器世界即共同之依報；國家乃共別之業招集，世界即共共之業所陶成。生老病死，一期復一期別異之業果相續；成住壞空，一劫復一劫共同之業果不斷。諸有不達此義…"
+    },
+    {
+      "matched": "成住壞空",
+      "standard": "成住壞空",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "成住壞空四劫"
+      ],
+      "vocab_note": "器世界循環四相：成劫、住劫、壞劫、空劫，與有情之生老病死對應",
+      "source": "phase2_fulltext,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "成住壞空"
+      ],
+      "sample_context": "…；國家乃共別之業招集，世界即共共之業所陶成。生老病死，一期復一期別異之業果相續；成住壞空，一劫復一劫共同之業果不斷。諸有不達此義者，遂依其現見之果法上起諸斷見或起常…"
+    },
+    {
+      "matched": "果法",
+      "standard": "教理行果",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "佛法體系",
+      "is_standard": false,
+      "variants_of_standard": [
+        "教理門",
+        "果法",
+        "理法"
+      ],
+      "vocab_note": "太虚分析佛法的四維框架 | 四種法寶分類，佛學體系之總綱",
+      "source": "batch_01,phase2_fulltext,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "果法"
+      ],
+      "sample_context": "…別異之業果相續；成住壞空，一劫復一劫共同之業果不斷。諸有不達此義者，遂依其現見之果法上起諸斷見或起常見，或計其為無因而然，或計其為有因而然。計無因者，謂去來今宇宙一…"
+    },
+    {
+      "matched": "地水火風",
+      "standard": "地水火風",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "地水火風"
+      ],
+      "sample_context": "…神造的，一計宇宙人生為物集的。計為物集，中土則說為陰陽二氣、五行生剋；印度則說為地水火風，極微造色；西土則說為原子電子，物質物力；然彼所說皆謂物集則相顯，物散則相沒…"
+    },
+    {
+      "matched": "果相",
+      "standard": "果相",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "果相"
+      ],
+      "sample_context": "…則說為原子電子，物質物力；然彼所說皆謂物集則相顯，物散則相沒，人生宇宙所言一切之果相，莫不由物理之因果律所致也。計為神造，東土則計為天，西土則計為上帝；然彼等皆謂宇…"
+    },
+    {
+      "matched": "獨尊",
+      "standard": "獨尊",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "獨尊"
+      ],
+      "sample_context": "…土則計為上帝；然彼等皆謂宇宙之所以有此森羅萬象，人生之所以有諸存亡休咎者，必有一獨尊萬能全知之天神主之宰之造之作之也；豈無而能然耶！何以故？以現見能活動之人之畜，不…"
+    },
+    {
+      "matched": "天神",
+      "standard": "天神",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "天神"
+      ],
+      "sample_context": "…然彼等皆謂宇宙之所以有此森羅萬象，人生之所以有諸存亡休咎者，必有一獨尊萬能全知之天神主之宰之造之作之也；豈無而能然耶！何以故？以現見能活動之人之畜，不能如此故耳！不…"
+    },
+    {
+      "matched": "邪見",
+      "standard": "邪見",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "邪見"
+      ],
+      "sample_context": "…遂其所樂欲而常為環境之苦所支配乎？故必有上帝也。合此二支與自然一派，又可約為二種邪見：一者斷見，二者常見。計常見者即神迷派，彼謂上帝既為吾人之主宰，萬能而全知，是以…"
+    },
+    {
+      "matched": "五逆",
+      "standard": "五逆",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "五逆"
+      ],
+      "sample_context": "…之方。又謂人由物集，物散人亡，人生無常，應即時行樂；苟得以滿吾貪瞋慢之狂壑者，雖五逆十惡亦何憚而不犯！雖殺盡天下人，亦何所顧忌而不為！苟不得遂吾之所欲為，悶悶一生，…"
+    },
+    {
+      "matched": "十惡",
+      "standard": "十惡",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "戒律行持",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "十惡"
+      ],
+      "sample_context": "…。又謂人由物集，物散人亡，人生無常，應即時行樂；苟得以滿吾貪瞋慢之狂壑者，雖五逆十惡亦何憚而不犯！雖殺盡天下人，亦何所顧忌而不為！苟不得遂吾之所欲為，悶悶一生，則無…"
+    },
+    {
+      "matched": "自殺",
+      "standard": "自殺",
+      "occurrences": 1,
+      "domain": "社会文化",
+      "subdomain": "佛教與文化",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "自殺"
+      ],
+      "sample_context": "…何憚而不犯！雖殺盡天下人，亦何所顧忌而不為！苟不得遂吾之所欲為，悶悶一生，則無如自殺速死之為快耳！吁嗟乎！此見一印入腦中，其不長淪惡趣註冊地獄者鮮矣！噫！不明十二因…"
+    },
+    {
+      "matched": "惡趣",
+      "standard": "惡道",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": false,
+      "variants_of_standard": [
+        "惡趣"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "惡趣"
+      ],
+      "sample_context": "…遂吾之所欲為，悶悶一生，則無如自殺速死之為快耳！吁嗟乎！此見一印入腦中，其不長淪惡趣註冊地獄者鮮矣！噫！不明十二因緣之概相，別共業感之正理，則不落於常，即流於斷；既…"
+    },
+    {
+      "matched": "共業",
+      "standard": "共業",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "共同業報",
+        "別業",
+        "各別業",
+        "各別業報"
+      ],
+      "vocab_note": "有情共同造作感得器世間為共業，個別造作感得根身為別業，世界生起由此二業總集",
+      "source": "phase2_fulltext,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "共業"
+      ],
+      "sample_context": "…！吁嗟乎！此見一印入腦中，其不長淪惡趣註冊地獄者鮮矣！噫！不明十二因緣之概相，別共業感之正理，則不落於常，即流於斷；既落斷常而欲保持人類之地位尚烏可得耶！故吾人若真…"
+    },
+    {
+      "matched": "世俗",
+      "standard": "世俗",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "世俗"
+      ],
+      "sample_context": "…根本之理。故在佛法應謂之曰五乘之共通教義，為學佛之最低限度也。  上來所說，非如世俗糢糊影響之談因果。若能以之普及於今世之人類，則雖不倡世界和平而世界必趨於和平矣。…"
+    },
+    {
+      "matched": "世界和平",
+      "standard": "世界和平",
+      "occurrences": 1,
+      "domain": "社会文化",
+      "subdomain": "國際交流",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "太虚将佛教慈悲精神与民族复兴、世界和平相关联——慈善具有国际和平的维度",
+      "source": "dimensional,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "世界和平"
+      ],
+      "sample_context": "…度也。  上來所說，非如世俗糢糊影響之談因果。若能以之普及於今世之人類，則雖不倡世界和平而世界必趨於和平矣。且儒家雖不深明佛法，亦常謂佛教之談因果，有裨於世道人心，…"
+    },
+    {
+      "matched": "佛家",
+      "standard": "佛家",
+      "occurrences": 1,
+      "domain": "社会文化",
+      "subdomain": "佛教與文化",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "佛家"
+      ],
+      "sample_context": "…謂佛教之談因果，有裨於世道人心，足以補儒之闕也。  （記者謹案：中國庸儒，每耳食佛家有因果之論，輒謂佛教之談因果，其於世道人心亦不無小補；實屬乖謬已極，可知彼輩於佛…"
+    },
+    {
+      "matched": "佛經",
+      "standard": "佛經",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "經典",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "佛經"
+      ],
+      "sample_context": "…家有因果之論，輒謂佛教之談因果，其於世道人心亦不無小補；實屬乖謬已極，可知彼輩於佛經佛論必未曾寓目，於因果之理，必完全不能彷彿其粗義也。夫釋氏所云因果之理，乃如實而…"
+    },
+    {
+      "matched": "如實",
+      "standard": "如實",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "如實"
+      ],
+      "sample_context": "…於佛經佛論必未曾寓目，於因果之理，必完全不能彷彿其粗義也。夫釋氏所云因果之理，乃如實而言，豈彼橫記妄說為如是如是哉！釋氏之意，亦非借此論以駭懼世人，使勿殺人放火也；…"
+    },
+    {
+      "matched": "施設",
+      "standard": "施設",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "施設"
+      ],
+      "sample_context": "…迴之事情，使之由此理上比知必有六道輪迴之事實。世人不曉，而謂因果之教，唯是釋氏所施設，唯是佛教徒所迷信，豈人生真有所謂因果輪迴來生來世哉！縱聞有二三現見之果報等事，…"
+    },
+    {
+      "matched": "凡夫",
+      "standard": "凡夫",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "凡夫"
+      ],
+      "sample_context": "…業報之事，本來如是如是；吾甚為昧者危焉！）  ## 二　明唯有根塵故人我本空  凡夫鮮具宿命之慧，菩薩尚有隔陰之迷，且貪瞋內擾，濁境外眩，吾人若不亟求所以出世之道，…"
+    },
+    {
+      "matched": "宿命",
+      "standard": "宿命",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "宿命"
+      ],
+      "sample_context": "…，本來如是如是；吾甚為昧者危焉！）  ## 二　明唯有根塵故人我本空  凡夫鮮具宿命之慧，菩薩尚有隔陰之迷，且貪瞋內擾，濁境外眩，吾人若不亟求所以出世之道，則福果一…"
+    },
+    {
+      "matched": "菩薩",
+      "standard": "菩薩",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "菩薩"
+      ],
+      "sample_context": "…如是；吾甚為昧者危焉！）  ## 二　明唯有根塵故人我本空  凡夫鮮具宿命之慧，菩薩尚有隔陰之迷，且貪瞋內擾，濁境外眩，吾人若不亟求所以出世之道，則福果一盡，人生之…"
+    },
+    {
+      "matched": "行蘊",
+      "standard": "行蘊",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "行蘊"
+      ],
+      "sample_context": "…不達五蘊假相而妄計之以為我之故也。或計色蘊是我，或計受蘊是我，或計想蘊是我，或計行蘊是我，或計識蘊是我，或計五蘊和合是我；要皆是誤繩為蛇，顧影覓首也。若就其所計而推…"
+    },
+    {
+      "matched": "識蘊",
+      "standard": "識蘊",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "識蘊"
+      ],
+      "sample_context": "…妄計之以為我之故也。或計色蘊是我，或計受蘊是我，或計想蘊是我，或計行蘊是我，或計識蘊是我，或計五蘊和合是我；要皆是誤繩為蛇，顧影覓首也。若就其所計而推研之，彼將彷徨…"
+    },
+    {
+      "matched": "無作",
+      "standard": "無作",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無作"
+      ],
+      "sample_context": "…見有色受蘊等，而未見有我也。或難曰：若但是五蘊而無我者，則誰是作者，誰是受者？若無作亦無受，則豈不違於業果不斷有情續生之義耶？曰：應知「諸蘊從緣生，和合相續故，假現…"
+    },
+    {
+      "matched": "和合相",
+      "standard": "連續相",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "佛教认识论",
+      "is_standard": false,
+      "variants_of_standard": [
+        "和合相"
+      ],
+      "vocab_note": "太虚分析世间一切法的两种假相：连续相如星火转环、见环不见火；和合相如分析个体至微而不可得本质。用以论证世间的无常无实可伏可断。",
+      "source": "phase2_fulltext",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "和合相"
+      ],
+      "sample_context": "…誰是受者？若無作亦無受，則豈不違於業果不斷有情續生之義耶？曰：應知「諸蘊從緣生，和合相續故，假現為我相，但唯有根塵」。所謂塵者，即色聲香味觸法六塵；根者，即眼耳鼻舌…"
+    },
+    {
+      "matched": "我相",
+      "standard": "我相",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "我相"
+      ],
+      "sample_context": "…無受，則豈不違於業果不斷有情續生之義耶？曰：應知「諸蘊從緣生，和合相續故，假現為我相，但唯有根塵」。所謂塵者，即色聲香味觸法六塵；根者，即眼耳鼻舌身意六根也。蓋由根…"
+    },
+    {
+      "matched": "見相",
+      "standard": "見相",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "見相"
+      ],
+      "sample_context": "…根塵」。所謂塵者，即色聲香味觸法六塵；根者，即眼耳鼻舌身意六根也。蓋由根塵構接，見相假現，五蘊和續，惑業滋起，起業受果，仍在五蘊。蘊謂積聚，和合有相；此假合相，唯依…"
+    },
+    {
+      "matched": "有相",
+      "standard": "有相",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "有相"
+      ],
+      "sample_context": "…。蓋由根塵構接，見相假現，五蘊和續，惑業滋起，起業受果，仍在五蘊。蘊謂積聚，和合有相；此假合相，唯依根塵內外六處，覓我不得；為明斯義，是故說言唯是根塵，人我本空也。…"
+    },
+    {
+      "matched": "三界",
+      "standard": "三界",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "九地",
+        "欲界色界無色界"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "三界"
+      ],
+      "sample_context": "…；為明斯義，是故說言唯是根塵，人我本空也。若無我執即無惑業，若無惑業則無所報，無三界報是曰出世。若明我空即無無明，無明滅則行滅乃至老死亦滅；滅染還淨，縛乃解脫，此即…"
+    },
+    {
+      "matched": "出世間",
+      "standard": "出世間",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "出世間"
+      ],
+      "sample_context": "…行滅乃至老死亦滅；滅染還淨，縛乃解脫，此即出世之根本，三乘之共通教義也。諸有欲超出世間。離脫苦海，於唯有根塵人我本空之義，盍細味之！  ## 三　明諸法本空故唯識所…"
+    },
+    {
+      "matched": "苦海",
+      "standard": "苦海",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "苦海"
+      ],
+      "sample_context": "…亦滅；滅染還淨，縛乃解脫，此即出世之根本，三乘之共通教義也。諸有欲超出世間。離脫苦海，於唯有根塵人我本空之義，盍細味之！  ## 三　明諸法本空故唯識所變  依上所…"
+    },
+    {
+      "matched": "諸緣",
+      "standard": "諸緣",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "諸緣"
+      ],
+      "sample_context": "…所明，雖可出世，若深究之，義猶未詳，言猶未至也。夫一切諸法不越五蘊，而色蘊等根塵諸緣亦從緣生亦無自性，體空而性寂，故曰諸法本空也。難者曰：諸法若空，即無有諸法，何以…"
+    },
+    {
+      "matched": "自性",
+      "standard": "自性",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "有無自性",
+        "諸法離言自性",
+        "離言自性"
+      ],
+      "vocab_note": "太虚在判攝中反覆辨析的核心概念",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "自性"
+      ],
+      "sample_context": "…若深究之，義猶未詳，言猶未至也。夫一切諸法不越五蘊，而色蘊等根塵諸緣亦從緣生亦無自性，體空而性寂，故曰諸法本空也。難者曰：諸法若空，即無有諸法，何以世間共見有種種差…"
+    },
+    {
+      "matched": "五位",
+      "standard": "五位",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "五位"
+      ],
+      "sample_context": "…法本空也。難者曰：諸法若空，即無有諸法，何以世間共見有種種差別之相，而聖教亦說有五位百法耶？曰：體雖空寂幻相非無也。然非無之相，不出能變能了之心識，故一切皆所變，唯…"
+    },
+    {
+      "matched": "百法",
+      "standard": "百法",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "百法"
+      ],
+      "sample_context": "…空也。難者曰：諸法若空，即無有諸法，何以世間共見有種種差別之相，而聖教亦說有五位百法耶？曰：體雖空寂幻相非無也。然非無之相，不出能變能了之心識，故一切皆所變，唯識能…"
+    },
+    {
+      "matched": "空寂",
+      "standard": "空寂",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "中觀學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "空寂"
+      ],
+      "sample_context": "…法若空，即無有諸法，何以世間共見有種種差別之相，而聖教亦說有五位百法耶？曰：體雖空寂幻相非無也。然非無之相，不出能變能了之心識，故一切皆所變，唯識能變、唯識能了，故…"
+    },
+    {
+      "matched": "幻相",
+      "standard": "幻相",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "幻相"
+      ],
+      "sample_context": "…空，即無有諸法，何以世間共見有種種差別之相，而聖教亦說有五位百法耶？曰：體雖空寂幻相非無也。然非無之相，不出能變能了之心識，故一切皆所變，唯識能變、唯識能了，故曰唯…"
+    },
+    {
+      "matched": "心識",
+      "standard": "心識",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "心識"
+      ],
+      "sample_context": "…之相，而聖教亦說有五位百法耶？曰：體雖空寂幻相非無也。然非無之相，不出能變能了之心識，故一切皆所變，唯識能變、唯識能了，故曰唯識。以體空而相有故，故曰諸法本空，唯識…"
+    },
+    {
+      "matched": "所變",
+      "standard": "所變",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "所變"
+      ],
+      "sample_context": "…說有五位百法耶？曰：體雖空寂幻相非無也。然非無之相，不出能變能了之心識，故一切皆所變，唯識能變、唯識能了，故曰唯識。以體空而相有故，故曰諸法本空，唯識所變也。但此法…"
+    },
+    {
+      "matched": "二乘",
+      "standard": "小乘",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": false,
+      "variants_of_standard": [
+        "二乘",
+        "小乘法"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "二乘"
+      ],
+      "sample_context": "…識能了，故曰唯識。以體空而相有故，故曰諸法本空，唯識所變也。但此法空識變之義，非二乘定性者所能領受所可悟入者，故此義亦曰大乘不共教義也。  ## 四　明本非空有故入…"
+    },
+    {
+      "matched": "定性",
+      "standard": "定性",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "定性"
+      ],
+      "sample_context": "…了，故曰唯識。以體空而相有故，故曰諸法本空，唯識所變也。但此法空識變之義，非二乘定性者所能領受所可悟入者，故此義亦曰大乘不共教義也。  ## 四　明本非空有故入佛知…"
+    },
+    {
+      "matched": "大乘",
+      "standard": "大乘",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "大乘不共法",
+        "大乘法",
+        "大乘特法"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "大乘"
+      ],
+      "sample_context": "…法本空，唯識所變也。但此法空識變之義，非二乘定性者所能領受所可悟入者，故此義亦曰大乘不共教義也。  ## 四　明本非空有故入佛知見  有執即生執除即佛，除執即是佛法…"
+    },
+    {
+      "matched": "教義",
+      "standard": "教義",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "佛法體系",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "教義"
+      ],
+      "sample_context": "…唯識所變也。但此法空識變之義，非二乘定性者所能領受所可悟入者，故此義亦曰大乘不共教義也。  ## 四　明本非空有故入佛知見  有執即生執除即佛，除執即是佛法。眾生妄…"
+    },
+    {
+      "matched": "法華經",
+      "standard": "法華經",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "經典",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "法華經"
+      ],
+      "sample_context": "…諸佛妙智所證之實相則非無；證與未證，諸法之真際本來如是，以是義故說之為本非空有。法華經云：『佛為一大事因緣出現於世，為令世間一切眾生開示悟入佛之知見』。所謂悟入佛之…"
+    },
+    {
+      "matched": "開示悟入",
+      "standard": "開示悟入",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "經典",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "開示悟入"
+      ],
+      "sample_context": "…是，以是義故說之為本非空有。法華經云：『佛為一大事因緣出現於世，為令世間一切眾生開示悟入佛之知見』。所謂悟入佛之知見者，即是親證此非有之空非無之真也。然啟發此親證實…"
+    },
+    {
+      "matched": "方便",
+      "standard": "方便",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "善巧方便",
+        "方便善巧"
+      ],
+      "vocab_note": "3篇高频缺口词（佛法導言×2 + 佛乘宗要論），upāya/skillful means",
+      "source": "gap_review_2026-06-25",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "方便"
+      ],
+      "sample_context": "…諸法本非空有之理，不得而入，故曰明本非空有故開佛知見也。應知上三所明，皆為除執之方便談，非和盤托出直示目標之論。然諸佛所以說五乘通理、三乘共教、法空識變之大義者，皆…"
+    },
+    {
+      "matched": "眾生根",
+      "standard": "眾生根",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "眾生根"
+      ],
+      "sample_context": "…，非和盤托出直示目標之論。然諸佛所以說五乘通理、三乘共教、法空識變之大義者，皆為眾生根鈍福薄，不得已而降低其教程，以之為階漸耳，非直探其本懷之談也。故吾明佛法之悟入…"
+    },
+    {
+      "matched": "本懷",
+      "standard": "本懷",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "本懷"
+      ],
+      "sample_context": "…、法空識變之大義者，皆為眾生根鈍福薄，不得已而降低其教程，以之為階漸耳，非直探其本懷之談也。故吾明佛法之悟入，而以此居於最後也。  上來所言，不過略示梗概，粗談綱要…"
+    }
+  ],
+  "domain_summary": {
+    "domains": {
+      "教理": 107,
+      "社会文化": 4,
+      "行持": 2
+    },
+    "subdomains": {
+      "基礎教義": 75,
+      "唯識學": 16,
+      "大乘通義": 5,
+      "經典": 3,
+      "判教框架": 2,
+      "中觀學": 2,
+      "國際交流": 2,
+      "佛法體系": 2,
+      "佛教與文化": 2,
+      "大乘有宗": 1,
+      "戒律行持": 1,
+      "佛教认识论": 1,
+      "修行次第": 1
+    }
+  }
+}

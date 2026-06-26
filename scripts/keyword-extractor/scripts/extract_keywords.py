@@ -5,7 +5,7 @@
 用法:
   python scripts/extract_keywords.py --article MD_PATH
   python scripts/extract_keywords.py --catalog CATALOG_JSON [--start N --end M]
-  python scripts/extract_keywords.py --apply MD_PATH --keywords '["KW1","KW2"]'
+  python scripts/extract_keywords.py --apply MD_PATH --concepts '["KW1","KW2"]'
   python scripts/extract_keywords.py --build-prompt MD_PATH
 
 選項:
@@ -179,17 +179,17 @@ def read_article(md_path):
 
 # ── 寫入 keywords ─────────────────────────────────────────
 
-def apply_annotations(md_path, keywords=None, knowledge_domains=None,
-                       functional_purposes=None, spiritual_directions=None):
+def apply_annotations(md_path, concepts=None, domains=None,
+                       functions=None, bearings=None):
     """将多维标注写入 YAML frontmatter。
     每个维度独立写入，已存在的同名块会被替换。
-    写入顺序：keywords → knowledge_domains → functional_purposes → spiritual_directions
+    写入顺序：concepts → domains → functions → bearings
     """
     all_fields = [
-        ("keywords", keywords),
-        ("knowledge_domains", knowledge_domains),
-        ("functional_purposes", functional_purposes),
-        ("spiritual_directions", spiritual_directions),
+        ("concepts", concepts),
+        ("domains", domains),
+        ("functions", functions),
+        ("bearings", bearings),
     ]
     for field_name, values in all_fields:
         if values is None:
@@ -419,70 +419,348 @@ def process_article(md_path, match_table, length_index, output_dir):
 def print_review_report():
     """Analyze gap log and print a review-frequency summary.
     Called when article counter hits a multiple of 5 (5, 10, 15, ...).
-    Prints keywords with ≥2 frequency and dimension labels with ≥2 frequency.
+    Automatically applies changes for gaps with freq ≥ 2.
     """
-    if not DEFAULT_GAP_LOG.exists():
+    report, actions = review_gaps(apply_changes=True)
+    if report.get("status") == "no_gap_log":
         print("  (尚無缺口日誌)")
         return
-
-    from collections import Counter
-
-    kw_freq = Counter()
-    kd_freq = Counter()
-    fp_freq = Counter()
-    sd_freq = Counter()
-
-    for line in open(str(DEFAULT_GAP_LOG), encoding="utf-8"):
-        try:
-            entry = json.loads(line)
-        except json.JSONDecodeError:
-            continue
-        # Old format: gap_terms (treat as keywords)
-        if "gap_terms" in entry:
-            for t in entry["gap_terms"]:
-                kw_freq[normalize_label(extract_standard_term(t))] += 1
-        # New format: per-dimension gaps
-        for field, counter_map in [
-            ("keywords", kw_freq),
-            ("knowledge_domains", kd_freq),
-            ("functional_purposes", fp_freq),
-            ("spiritual_directions", sd_freq),
-        ]:
-            if field in entry:
-                for t in entry[field]:
-                    counter_map[normalize_label(t)] += 1
-
-    # Print report
     print("")
     print("  ═══════════════════════════════════════")
-    print("  📋 評審頻次報告（≥2 次者建议处理）")
+    print(f"  📋 自動評審完成（≥2 次已自動補入）")
     print("  ═══════════════════════════════════════")
 
     sections = [
-        ("內容概念 (keywords) → 術語表", kw_freq, False),
-        ("知識域 (knowledge_domains) → 分類樹", kd_freq, False),
-        ("功能取向 (functional_purposes) → prompt", fp_freq, True),
-        ("精神指向 (spiritual_directions) → prompt", sd_freq, True),
+        ("要义 → 術語表", report.get("concepts", {})),
+        ("论域 → labels.json", report.get("domains", {})),
+        ("论用 → labels.json", report.get("functions", {})),
+        ("旨归 → labels.json", report.get("bearings", {})),
     ]
 
     any_found = False
-    for label, freq, is_prompt in sections:
-        qualified = {k: v for k, v in freq.items() if v >= 2}
-        if qualified:
+    for label, freq in sections:
+        if freq:
             any_found = True
-            target = "prompt 值域" if is_prompt else "術語表"
             print(f"  [{label}]")
-            for term, count in sorted(qualified.items(), key=lambda x: -x[1]):
-                print(f"    {term} ({count}篇) → 建議補入{target}")
+            for term, count in sorted(freq.items(), key=lambda x: -x[1]):
+                print(f"    {term} ({count}篇) → 建議補入")
         else:
-            na = "暫無 ≥2 者" if freq else "尚無缺口"
+            na = "暫無 ≥2 者"
             print(f"  [{label}] {na}")
 
     if not any_found:
-        print("  ✅ 無需立即處理的缺口")
+        print("  ✅ 無需立即處理的缺口（或均為單次出現）")
 
     print("  ═══════════════════════════════════════")
     print("")
+
+    if actions:
+        print("  ⚡ 本次自動補入：")
+        for a in actions:
+            print(f"    {a}")
+        print("")
+
+
+def review_gaps(apply_changes=False):
+    """自动化缺口审查：过滤假阳性、对频次≥2的真实缺口自动补入词表/labels。
+
+    返回 (report_dict, actions_taken_list) 供调用方汇报。
+    """
+    if not DEFAULT_GAP_LOG.exists():
+        return {"status": "no_gap_log"}, []
+
+    # ── 1. 加载当前标准集 ──
+    with open(str(DEFAULT_VOCAB), encoding="utf-8") as f:
+        vdata = json.load(f)
+    terms_list = vdata.get("terms", [])
+    vocab_stds = {t["standard"] for t in terms_list}
+    variant_stds = set()
+    std_to_entry = {}
+    for t in terms_list:
+        std_to_entry[t["standard"]] = t
+        for v in t.get("variants", []):
+            variant_stds.add(v)
+    concept_check = {normalize_label(s) for s in (vocab_stds | variant_stds)}
+
+    domain_stds = ({t["domain"] for t in terms_list}
+                   | {t["subdomain"] for t in terms_list if t.get("subdomain")})
+    domain_check = {normalize_label(s) for s in domain_stds}
+
+    func_stds_raw, spirit_stds_raw = load_standard_labels()
+    func_check = {normalize_label(s) for s in func_stds_raw}
+    spirit_check = {normalize_label(s) for s in spirit_stds_raw}
+
+    # ── 2. 读取缺口日志 ──
+    raw_entries = []
+    repo_prefix = "/Users/xin/Documents/Road_Of_Taixu/"
+    for line in open(str(DEFAULT_GAP_LOG), encoding="utf-8"):
+        try:
+            raw_entries.append(json.loads(line))
+        except json.JSONDecodeError:
+            continue
+
+    # ── 3. 逐条检查，分离真缺口和假阳性 ──
+    from collections import Counter
+
+    true_cn = Counter()
+    true_dm = Counter()
+    true_fn = Counter()
+    true_br = Counter()
+    false_positive_count = 0
+    clean_entries = []  # 去除假阳性后的日志条目
+
+    seen = set()
+    for entry in raw_entries:
+        art_path = entry.get("article_path", "")
+        if "/tmp/" in art_path:
+            clean_entries.append(entry)  # 保留测试条目
+            continue
+        if art_path.startswith(repo_prefix):
+            art_path = art_path[len(repo_prefix):]
+        # Normalize ../../ relative paths (from older gap log entries)
+        while art_path.startswith("../"):
+            art_path = art_path[3:]
+
+        # 处理旧格式 (gap_terms / keywords)
+        old_terms = entry.get("gap_terms", []) or entry.get("keywords", [])
+        true_old = []
+        false_old = 0
+        for t in old_terms:
+            check_val = normalize_label(extract_standard_term(t))
+            if check_val in concept_check:
+                false_old += 1
+                false_positive_count += 1
+            else:
+                true_old.append(t)
+                key = (art_path, "concepts", check_val)
+                if key not in seen:
+                    seen.add(key)
+                    true_cn[check_val] += 1
+
+        # 处理新格式
+        dim_map = [
+            ("concepts", concept_check, true_cn),
+            ("domains", domain_check, true_dm),
+            ("functions", func_check, true_fn),
+            ("bearings", spirit_check, true_br),
+        ]
+        new_gaps = {}
+        for field, check_set, freq_map in dim_map:
+            vals = entry.get(field, [])
+            true_vals = []
+            for v in vals:
+                check_val = normalize_label(v)
+                if check_val in check_set:
+                    false_positive_count += 1
+                else:
+                    true_vals.append(v)
+                    key = (art_path, field, check_val)
+                    if key not in seen:
+                        seen.add(key)
+                        freq_map[check_val] += 1
+            if true_vals:
+                new_gaps[field] = true_vals
+
+        # 重建干净的条目
+        cleaned = {}
+        if true_old:
+            cleaned["gap_terms"] = true_old
+        else:
+            # 旧格式 keywords 全部是假阳性时，过滤后只保留真正的缺口
+            clean_kw = [t for t in entry.get("keywords", [])
+                       if normalize_label(extract_standard_term(t)) not in concept_check]
+            if clean_kw:
+                cleaned["keywords"] = clean_kw
+        # 只有在至少有一个维度真正存在缺口时，才保留其他维度信息
+        if cleaned or new_gaps:
+            cleaned.update(new_gaps)
+            # 保留旧条目中与缺口共存的其他元信息（如 knowledge_domains）
+            for legacy_key in ["knowledge_domains", "functional_purposes",
+                               "spiritual_directions"]:
+                if legacy_key in entry:
+                    cleaned[legacy_key] = entry[legacy_key]
+        if cleaned:
+            cleaned["article_path"] = art_path
+            cleaned["timestamp"] = entry.get("timestamp", "")
+            clean_entries.append(cleaned)
+        # 如果整条都是假阳性（无 cleaned 内容），直接丢弃
+
+    # ── 4. 统计 ──
+    report = {
+        "status": "ok",
+        "total_entries": len(raw_entries),
+        "false_positives_removed": false_positive_count,
+        "concepts": {k: v for k, v in true_cn.items() if v >= 2},
+        "concepts_all": dict(true_cn),
+        "domains": {k: v for k, v in true_dm.items() if v >= 2},
+        "domains_all": dict(true_dm),
+        "functions": {k: v for k, v in true_fn.items() if v >= 2},
+        "functions_all": dict(true_fn),
+        "bearings": {k: v for k, v in true_br.items() if v >= 2},
+        "bearings_all": dict(true_br),
+    }
+
+    actions = []
+    if not apply_changes:
+        # 只报告不修改
+        return report, actions
+
+    # ── 5. 自动补入 ──
+    vocab_changed = False
+
+    # 5a. concepts → 词表
+    for term_val, freq in true_cn.items():
+        if freq < 2:
+            continue
+        # 推断 domain/subdomain：从词条的 domain 分布中推断
+        # 先尝试从原始缺口日志中找上下文
+        context_domain = _infer_domain(term_val, raw_entries, concept_check, terms_list)
+        new_entry = {
+            "standard": term_val,
+            "variants": [],
+            "domain": context_domain.get("domain", "教理"),
+            "subdomain": context_domain.get("subdomain", ""),
+            "source": "gap_review_auto",
+            "note": f"自動補入：{freq}篇缺口"
+        }
+        terms_list.append(new_entry)
+        std_to_entry[term_val] = new_entry
+        vocab_changed = True
+        actions.append(f"➕ 術語表: {term_val}（{context_domain.get('domain','教理')}/{context_domain.get('subdomain','')}，{freq}篇）")
+
+    # 5b. domains → labels.json
+    labels_changed = False
+    labels_path = SKILL_DIR / "vocabulary" / "labels.json"
+    with open(str(labels_path), encoding="utf-8") as f:
+        labels = json.load(f)
+
+    domains_list = labels.get("domains", [])
+    for d, freq in true_dm.items():
+        if freq < 2:
+            continue
+        nd = normalize_label(d)
+        if nd not in {normalize_label(x) for x in domains_list}:
+            domains_list.append(d)
+            labels_changed = True
+            actions.append(f"➕ labels.domains: {d}（{freq}篇）")
+
+    # 5c. functions → labels.json
+    funcs_list = labels.get("functions", [])
+    for fv, freq in true_fn.items():
+        if freq < 2:
+            continue
+        nf = normalize_label(fv)
+        if nf not in {normalize_label(x) for x in funcs_list}:
+            funcs_list.append(fv)
+            labels_changed = True
+            actions.append(f"➕ labels.functions: {fv}（{freq}篇）")
+
+    # 5d. bearings → labels.json
+    bearings_list = labels.get("bearings", [])
+    for b, freq in true_br.items():
+        if freq < 2:
+            continue
+        nb = normalize_label(b)
+        if nb not in {normalize_label(x) for x in bearings_list}:
+            bearings_list.append(b)
+            labels_changed = True
+            actions.append(f"➕ labels.bearings: {b}（{freq}篇）")
+
+    if labels_changed:
+        with open(str(labels_path), "w", encoding="utf-8") as f:
+            json.dump(labels, f, ensure_ascii=False, indent=2)
+
+    if vocab_changed:
+        vdata["terms"] = terms_list
+        with open(str(DEFAULT_VOCAB), "w", encoding="utf-8") as f:
+            json.dump(vdata, f, ensure_ascii=False, indent=2)
+
+    # ── 6. 回写清洁后的缺口日志 ──
+    with open(str(DEFAULT_GAP_LOG), "w", encoding="utf-8") as f:
+        for e in clean_entries:
+            f.write(json.dumps(e, ensure_ascii=False) + "\n")
+
+    return report, actions
+
+
+def _print_review_gaps_report(report, actions, apply_flag):
+    """格式化输出 review_gaps 报告。"""
+    if report.get("status") == "no_gap_log":
+        print("✅ 尚無缺口日誌，無需審閱")
+        return
+
+    fp = report.get("false_positives_removed", 0)
+    total = report.get("total_entries", 0)
+    print(f"\n{'='*50}")
+    print(f"📋 缺口日志審閱完成（{total} 條記錄，{fp} 條假陽性已過濾）")
+    print(f"{'='*50}")
+
+    sections = [
+        ("要义 (concepts)", report.get("concepts", {}), report.get("concepts_all", {}), "詞表"),
+        ("论域 (domains)", report.get("domains", {}), report.get("domains_all", {}), "labels.json"),
+        ("论用 (functions)", report.get("functions", {}), report.get("functions_all", {}), "labels.json"),
+        ("旨归 (bearings)", report.get("bearings", {}), report.get("bearings_all", {}), "labels.json"),
+    ]
+
+    any_gap = False
+    for label, qualified, all_items, target in sections:
+        print(f"\n  [{label}]")
+        if qualified:
+            any_gap = True
+            for term, count in sorted(qualified.items(), key=lambda x: -x[1]):
+                action_mark = "✓ 已補入" if apply_flag else "→ 建議補入"
+                print(f"    {term} ({count}篇) {action_mark} {target}")
+        else:
+            if all_items:
+                low_freq = [f"{t}({c})" for t, c in sorted(all_items.items(), key=lambda x: -x[1])]
+                print(f"    暫無 ≥2 者（單次出現：{', '.join(low_freq)}）")
+            else:
+                print(f"    無缺口")
+
+    if not any_gap:
+        print(f"\n  ✅ 無需立即處理的頻次≥2缺口")
+    else:
+        print(f"\n  📝 共 {sum(len(v) for v in [report['concepts'], report['domains'], report['functions'], report['bearings']])} 類缺口達 ≥2 閾值")
+    print(f"{'='*50}\n")
+
+
+def _infer_domain(term_name, raw_entries, concept_check, terms_list):
+    """为缺口术语推断 domain/subdomain 分类。
+
+    策略：从同一文章的其他概念（已在词表中的）的 domain 分布推断。
+    """
+    from collections import Counter
+    domain_votes = Counter()
+    subdomain_votes = Counter()
+
+    for entry in raw_entries:
+        concepts = entry.get("concepts", entry.get("keywords", entry.get("gap_terms", [])))
+        has_this_term = any(
+            normalize_label(extract_standard_term(c)) == normalize_label(term_name)
+            for c in concepts
+        )
+        if not has_this_term:
+            continue
+        # 同一篇文章中的其他概念，看它们所属的 domain
+        for c in concepts:
+            check_val = normalize_label(extract_standard_term(c))
+            if check_val == normalize_label(term_name):
+                continue
+            if check_val in concept_check:
+                # 在词表中，查找其 domain
+                for t in terms_list:
+                    s = t.get("standard", "")
+                    if normalize_label(s) == check_val:
+                        if t.get("domain"):
+                            domain_votes[t["domain"]] += 1
+                        if t.get("subdomain"):
+                            subdomain_votes[t["subdomain"]] += 1
+                        break
+
+    domain = domain_votes.most_common(1)[0][0] if domain_votes else "教理"
+    subdomain = subdomain_votes.most_common(1)[0][0] if subdomain_votes else ""
+    return {"domain": domain, "subdomain": subdomain}
+
 
 def process_catalog(catalog_path, match_table, length_index, output_dir,
                     start=None, end=None):
@@ -520,31 +798,42 @@ def main():
     parser.add_argument("--start", type=int, help="起始編號")
     parser.add_argument("--end", type=int, help="結束編號")
     parser.add_argument("--apply", help="寫入關鍵詞的目標 MD 路徑")
-    parser.add_argument("--keywords", help="關鍵詞 JSON 列表字串")
-    parser.add_argument("--knowledge-domains", help="知识域 JSON 列表字串")
-    parser.add_argument("--functional-purposes", help="功能取向 JSON 列表字串")
-    parser.add_argument("--spiritual-directions", help="精神指向 JSON 列表字串")
+    parser.add_argument("--concepts", "--keywords", help="要义 JSON 列表字串")
+    parser.add_argument("--domains", "--knowledge-domains", help="论域 JSON 列表字串")
+    parser.add_argument("--functions", "--functional-purposes", help="论用 JSON 列表字串")
+    parser.add_argument("--bearings", "--spiritual-directions", help="旨归 JSON 列表字串")
     parser.add_argument("--vocab", default=str(DEFAULT_VOCAB), help="術語表路徑")
     parser.add_argument("--output-dir", default=str(DEFAULT_OUTDIR), help="候選輸出目錄")
     parser.add_argument("--build-prompt", help="構建完整 Phase B prompt 並輸出到 stdout")
+    parser.add_argument("--review-gaps", action="store_true",
+                        help="自動審閱缺口日誌：過濾假陽性、報告頻次統計")
+    parser.add_argument("--review-gaps-apply", action="store_true",
+                        help="審閱後自動補入頻次≥2的缺口詞到詞表和 labels")
     args = parser.parse_args()
+
+    # --review-gaps mode
+    if args.review_gaps or args.review_gaps_apply:
+        apply_flag = args.review_gaps_apply
+        report, actions = review_gaps(apply_changes=apply_flag)
+        _print_review_gaps_report(report, actions, apply_flag)
+        return
 
     # --apply mode
     if args.apply:
-        kw_list = json.loads(args.keywords) if args.keywords else None
-        kd_list = json.loads(args.knowledge_domains) if args.knowledge_domains else None
-        fp_list = json.loads(args.functional_purposes) if args.functional_purposes else None
-        sd_list = json.loads(args.spiritual_directions) if args.spiritual_directions else None
-        
-        if kw_list is None and kd_list is None and fp_list is None and sd_list is None:
-            print("⚠ 未提供任何标注字段 (--keywords / --knowledge-domains / --functional-purposes / --spiritual-directions)", file=sys.stderr)
+        cn_list = json.loads(args.concepts) if args.concepts else None
+        dm_list = json.loads(args.domains) if args.domains else None
+        fn_list = json.loads(args.functions) if args.functions else None
+        br_list = json.loads(args.bearings) if args.bearings else None
+
+        if cn_list is None and dm_list is None and fn_list is None and br_list is None:
+            print("⚠ 未提供任何标注字段 (--concepts / --domains / --functions / --bearings)", file=sys.stderr)
             return
-        
+
         apply_annotations(args.apply,
-                          keywords=kw_list,
-                          knowledge_domains=kd_list,
-                          functional_purposes=fp_list,
-                          spiritual_directions=sd_list)
+                          concepts=cn_list,
+                          domains=dm_list,
+                          functions=fn_list,
+                          bearings=br_list)
         
         # Log gaps for all four dimensions
         # Each dimension checked against its own standard value set
@@ -553,24 +842,30 @@ def main():
             with open(str(DEFAULT_VOCAB), encoding="utf-8") as f:
                 vdata = json.load(f)
             vocab_stds = {t["standard"] for t in vdata.get("terms", [])}
-            # knowledge_domains: validate against both parent domains and subdomains
+            # domains: validate against both parent domains and subdomains
             domain_stds = ({t["domain"] for t in vdata.get("terms", [])}
                            | {t["subdomain"] for t in vdata.get("terms", []) if t.get("subdomain")})
-            # -- functional_purposes and spiritual_directions from labels.json
+            # -- functions and bearings from labels.json
+            # Build variant→standard mapping for concept gap detection
+            variant_stds = set()
+            for t in vdata.get("terms", []):
+                for v in t.get("variants", []):
+                    variant_stds.add(v)
             func_stds, spirit_stds = load_standard_labels()
 
             dims = [
-                ("keywords", kw_list, vocab_stds),
-                ("knowledge_domains", kd_list, domain_stds),
-                ("functional_purposes", fp_list, func_stds),
-                ("spiritual_directions", sd_list, spirit_stds),
+                ("concepts", cn_list, vocab_stds),
+                ("domains", dm_list, domain_stds),
+                ("functions", fn_list, func_stds),
+                ("bearings", br_list, spirit_stds),
             ]
             from datetime import datetime
             all_gaps = {}
             for dim_name, vals, std_set in dims:
                 if not vals:
                     continue
-                g = [v for v in vals if normalize_label(extract_standard_term(v)) not in {normalize_label(s) for s in std_set}]
+                check_set = {normalize_label(s) for s in (std_set | variant_stds)} if dim_name == "concepts" else {normalize_label(s) for s in std_set}
+                g = [v for v in vals if normalize_label(extract_standard_term(v)) not in check_set]
                 if g:
                     all_gaps[dim_name] = g
 
@@ -615,10 +910,10 @@ def main():
             print(f"  ⚠ counter 更新失败：{e}", file=sys.stderr)
         
         written = []
-        if kw_list: written.append(f"{len(kw_list)} 個內容概念")
-        if kd_list: written.append(f"{len(kd_list)} 個知識域")
-        if fp_list: written.append(f"{len(fp_list)} 個功能取向")
-        if sd_list: written.append(f"{len(sd_list)} 個精神指向")
+        if cn_list: written.append(f"{len(cn_list)} 個要义")
+        if dm_list: written.append(f"{len(dm_list)} 個论域")
+        if fn_list: written.append(f"{len(fn_list)} 個论用")
+        if br_list: written.append(f"{len(br_list)} 個旨归")
         print(f"✅ 已寫入 {' / '.join(written)} → {args.apply}")
         return
 

@@ -1,0 +1,1359 @@
+{
+  "summary": {
+    "total_candidates": 72,
+    "unique_standards": 72,
+    "single_occurrence_ratio": "43/72",
+    "high_frequency_terms": [
+      "真如",
+      "唯識",
+      "大乘",
+      "三乘"
+    ],
+    "heading_weighted": true,
+    "heading_weight": 3
+  },
+  "article": {
+    "path": "/Users/xin/Documents/Road_Of_Taixu/_research/01_佛法總學/02_判攝/11_佛法之分宗判教.md",
+    "title": "佛法之分宗判教",
+    "cjk_chars": 1533,
+    "recommended_count": "5-8",
+    "编": "第一编 佛法總學",
+    "编_number": "1",
+    "category": "判攝"
+  },
+  "vocab_source": "/Users/xin/Documents/Road_Of_Taixu/scripts/keyword-extractor/vocabulary/keyword_vocabulary_v4.json",
+  "match_stats": {
+    "raw_hits": 75,
+    "after_dedup": 72
+  },
+  "candidates": [
+    {
+      "matched": "真如",
+      "standard": "真如",
+      "occurrences": 15,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "一心真如",
+        "真如理"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "真如"
+      ],
+      "sample_context": "…　└─戒律─┘ 　　　　　　　　┌─禪那─┐ 　　　　　　　　│　　　　├─全體真如───自性清淨 　　　　　　　　├─天台─┘ 　　　　真如宗─┼─賢首───離垢…"
+    },
+    {
+      "matched": "唯識",
+      "standard": "唯識",
+      "occurrences": 14,
+      "domain": "教理",
+      "subdomain": "大乘有宗",
+      "is_standard": true,
+      "variants_of_standard": [
+        "法相唯識",
+        "唯識現",
+        "諸法唯識現",
+        "一切法唯識現"
+      ],
+      "vocab_note": "",
+      "source": "batch_01",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "唯識"
+      ],
+      "sample_context": "…三乘共教為本幹，大乘別教則其根源也，五乘共教是其枝葉也，故應有此三教之判。  然唯識等大乘八家，則均以實相法界——即諸法唯心為根本，及妙覺佛果——即無上菩提為究竟。…"
+    },
+    {
+      "matched": "大乘",
+      "standard": "大乘",
+      "occurrences": 13,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "大乘不共法",
+        "大乘法",
+        "大乘特法"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "大乘"
+      ],
+      "sample_context": "…宗判教  梵土戒賢、智光二家，及華土賢首、天台諸家，以一時門庭施設之方便，於唯一大乘教所詮之自證境行果、化他境行果上，判教高下，致後人死守其語互爭優劣，予固不偏取之…"
+    },
+    {
+      "matched": "三乘",
+      "standard": "三乘",
+      "occurrences": 10,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "出世三乘",
+        "聲聞緣覺菩薩"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "三乘"
+      ],
+      "sample_context": "…不一其說：有時總說為一，乘無別而教亦無判；有時分為大小二乘；有時分菩薩獨覺聲聞之三乘；有時加人天為四乘；有時分所加人天為五乘。復有於三乘加佛乘為四乘者，此則迷一大乘…"
+    },
+    {
+      "matched": "諸法",
+      "standard": "諸法",
+      "occurrences": 7,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "諸法"
+      ],
+      "sample_context": "… 　　　　大︵　　　　　　　　　　　三︵　　　　　　　　　　五︵ 　　　　乘正明諸法唯心義　　　　　乘出明五蘊無我義　　　　乘化明因緣生果義 　　　　別覺　　　　　…"
+    },
+    {
+      "matched": "五乘",
+      "standard": "五乘",
+      "occurrences": 6,
+      "domain": "教理",
+      "subdomain": "判教框架",
+      "is_standard": true,
+      "variants_of_standard": [
+        "聲聞乘"
+      ],
+      "vocab_note": "太虚基本判教框架",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "五乘",
+        "聲聞乘"
+      ],
+      "sample_context": "…；有時分為大小二乘；有時分菩薩獨覺聲聞之三乘；有時加人天為四乘；有時分所加人天為五乘。復有於三乘加佛乘為四乘者，此則迷一大乘之因果以為二，出於後人謬計，為聖教明文所…"
+    },
+    {
+      "matched": "清淨",
+      "standard": "清淨",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "清淨"
+      ],
+      "sample_context": "…為三宗，為表如下：   ``` 　　　　空慧宗───三論───二空觀慧───得此清淨 　　　　　　　　┌─唯識─┐ 　　　　唯識宗─┤　　　　├─諸法唯識───染淨…"
+    },
+    {
+      "matched": "唯識宗",
+      "standard": "唯識宗",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "宗派",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "唯識宗"
+      ],
+      "sample_context": "…宗───三論───二空觀慧───得此清淨 　　　　　　　　┌─唯識─┐ 　　　　唯識宗─┤　　　　├─諸法唯識───染淨所依 　　　　　　　　└─戒律─┘ 　　　　…"
+    },
+    {
+      "matched": "分宗判教",
+      "standard": "判攝",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "太虛特有概念",
+      "is_standard": false,
+      "variants_of_standard": [
+        "分宗判教"
+      ],
+      "vocab_note": "太虚對全部佛法的分類統攝方法",
+      "source": "batch_01",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "分宗判教"
+      ],
+      "sample_context": "# 佛法之分宗判教  梵土戒賢、智光二家，及華土賢首、天台諸家，以一時門庭施設之方便，於唯一大…"
+    },
+    {
+      "matched": "境行果",
+      "standard": "境行果",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "佛法體系",
+      "is_standard": true,
+      "variants_of_standard": [
+        "化他境行果",
+        "境、行、果",
+        "自證境行果"
+      ],
+      "vocab_note": "大乘法之綱目：觀境、起行、證果",
+      "source": "batch_01,phase2_fulltext,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "化他境行果",
+        "境行果",
+        "自證境行果"
+      ],
+      "sample_context": "…土戒賢、智光二家，及華土賢首、天台諸家，以一時門庭施設之方便，於唯一大乘教所詮之自證境行果、化他境行果上，判教高下，致後人死守其語互爭優劣，予固不偏取之。而近人聞古…"
+    },
+    {
+      "matched": "空慧",
+      "standard": "空慧",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "中觀學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "空慧"
+      ],
+      "sample_context": "…崇尚之宗主，則昔於佛法總抉擇談中，嘗大別為三宗，為表如下：   ``` 　　　　空慧宗───三論───二空觀慧───得此清淨 　　　　　　　　┌─唯識─┐ 　　　　…"
+    },
+    {
+      "matched": "天台",
+      "standard": "天台宗",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "宗派",
+      "is_standard": false,
+      "variants_of_standard": [
+        "台教",
+        "天台",
+        "天台學",
+        "天台教"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "天台"
+      ],
+      "sample_context": "# 佛法之分宗判教  梵土戒賢、智光二家，及華土賢首、天台諸家，以一時門庭施設之方便，於唯一大乘教所詮之自證境行果、化他境行果上，判教高下…"
+    },
+    {
+      "matched": "所詮",
+      "standard": "所詮",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "所詮"
+      ],
+      "sample_context": "…  梵土戒賢、智光二家，及華土賢首、天台諸家，以一時門庭施設之方便，於唯一大乘教所詮之自證境行果、化他境行果上，判教高下，致後人死守其語互爭優劣，予固不偏取之。而近…"
+    },
+    {
+      "matched": "判教",
+      "standard": "判教",
+      "occurrences": 3,
+      "domain": "方法論",
+      "subdomain": "判攝方法",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "开篇即点明太虚思想的根本路径：对全体佛法进行「总抉择和总判摄」",
+      "source": "dimensional,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "判教"
+      ],
+      "sample_context": "…首、天台諸家，以一時門庭施設之方便，於唯一大乘教所詮之自證境行果、化他境行果上，判教高下，致後人死守其語互爭優劣，予固不偏取之。而近人聞古者一音教之風而悅之，膠執「…"
+    },
+    {
+      "matched": "一乘",
+      "standard": "一乘",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "一乘"
+      ],
+      "sample_context": "…下，致後人死守其語互爭優劣，予固不偏取之。而近人聞古者一音教之風而悅之，膠執「教一乘三」，亦有未可。蓋同一大乘教，特其所詮於境行果有偏重，或自證化他有偏重，雖偏重即…"
+    },
+    {
+      "matched": "法相",
+      "standard": "法相",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "法相"
+      ],
+      "sample_context": "…有以握厥總要，則泛覽教理而行莫由起！若知為便令起行之教理集中點謂之宗，則近人橫分法相、唯識為二宗，詡詡以獨能發前人所未發自矜者，可知其尚泛濫教理而無所歸，故不知法相…"
+    },
+    {
+      "matched": "法相宗",
+      "standard": "法相宗",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "宗派",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "法相宗"
+      ],
+      "sample_context": "…理，乃能宗之宗相；而攝大乘、成唯識等，由集教理以起觀行，正所宗之宗旨。故以宗言，法相宗乎唯識，不應將能宗所宗之一法相唯識宗強析為二，而正名定義但應曰唯識宗也。復就唯…"
+    },
+    {
+      "matched": "賢首",
+      "standard": "華嚴宗",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "宗派",
+      "is_standard": false,
+      "variants_of_standard": [
+        "賢首",
+        "賢首宗",
+        "賢首教"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "賢首"
+      ],
+      "sample_context": "# 佛法之分宗判教  梵土戒賢、智光二家，及華土賢首、天台諸家，以一時門庭施設之方便，於唯一大乘教所詮之自證境行果、化他境行果上，判…"
+    },
+    {
+      "matched": "方便",
+      "standard": "方便",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "善巧方便",
+        "方便善巧"
+      ],
+      "vocab_note": "3篇高频缺口词（佛法導言×2 + 佛乘宗要論），upāya/skillful means",
+      "source": "gap_review_2026-06-25",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "方便"
+      ],
+      "sample_context": "# 佛法之分宗判教  梵土戒賢、智光二家，及華土賢首、天台諸家，以一時門庭施設之方便，於唯一大乘教所詮之自證境行果、化他境行果上，判教高下，致後人死守其語互爭優劣，…"
+    },
+    {
+      "matched": "菩薩",
+      "standard": "菩薩",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "菩薩"
+      ],
+      "sample_context": "… 然乘之開合亦不一其說：有時總說為一，乘無別而教亦無判；有時分為大小二乘；有時分菩薩獨覺聲聞之三乘；有時加人天為四乘；有時分所加人天為五乘。復有於三乘加佛乘為四乘者…"
+    },
+    {
+      "matched": "聲聞",
+      "standard": "聲聞",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "聲聞"
+      ],
+      "sample_context": "…開合亦不一其說：有時總說為一，乘無別而教亦無判；有時分為大小二乘；有時分菩薩獨覺聲聞之三乘；有時加人天為四乘；有時分所加人天為五乘。復有於三乘加佛乘為四乘者，此則迷…"
+    },
+    {
+      "matched": "人天",
+      "standard": "人天",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "人天"
+      ],
+      "sample_context": "…時總說為一，乘無別而教亦無判；有時分為大小二乘；有時分菩薩獨覺聲聞之三乘；有時加人天為四乘；有時分所加人天為五乘。復有於三乘加佛乘為四乘者，此則迷一大乘之因果以為二…"
+    },
+    {
+      "matched": "佛乘",
+      "standard": "佛乘",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "太虚以「佛乘」统摄全体佛法，为该论核心框架概念。文章开篇即定义：「佛乘宗要論者，隨順時機以略明佛法之宗本及其綱要之論也」，将佛乘置于小乘/大乘二分之上。",
+      "source": "phase2_fulltext,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "佛乘"
+      ],
+      "sample_context": "…；有時分菩薩獨覺聲聞之三乘；有時加人天為四乘；有時分所加人天為五乘。復有於三乘加佛乘為四乘者，此則迷一大乘之因果以為二，出於後人謬計，為聖教明文所無也。但今綜佛法之…"
+    },
+    {
+      "matched": "唯心",
+      "standard": "唯心",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [
+        "唯心論"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "唯心"
+      ],
+      "sample_context": "…　　　大︵　　　　　　　　　　　三︵　　　　　　　　　　五︵ 　　　　乘正明諸法唯心義　　　　　乘出明五蘊無我義　　　　乘化明因緣生果義 　　　　別覺　　　　　　　…"
+    },
+    {
+      "matched": "無上菩提",
+      "standard": "菩提",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": false,
+      "variants_of_standard": [
+        "無上菩提"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無上菩提"
+      ],
+      "sample_context": "…義 　　　　別覺　　　　　　　　　　　共世　　　　　　　　　　共俗 　　　　教教無上菩提為鵠　　　　　教教無餘涅槃為鵠　　　　教教生長善因為鵠 　　　　　︶　　　　…"
+    },
+    {
+      "matched": "無餘涅槃",
+      "standard": "無餘涅槃",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無餘涅槃"
+      ],
+      "sample_context": "…　　　　　　共世　　　　　　　　　　共俗 　　　　教教無上菩提為鵠　　　　　教教無餘涅槃為鵠　　　　教教生長善因為鵠 　　　　　︶　　　　　　　　　　　　︶　　　　…"
+    },
+    {
+      "matched": "三宗",
+      "standard": "三宗",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "宗派",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "三宗"
+      ],
+      "sample_context": "…而就其集理起行之特點以明其教理所趨重所崇尚之宗主，則昔於佛法總抉擇談中，嘗大別為三宗，為表如下：   ``` 　　　　空慧宗───三論───二空觀慧───得此清淨 …"
+    },
+    {
+      "matched": "空觀",
+      "standard": "空觀",
+      "occurrences": 2,
+      "domain": "行持",
+      "subdomain": "禪觀",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "空觀"
+      ],
+      "sample_context": "…抉擇談中，嘗大別為三宗，為表如下：   ``` 　　　　空慧宗───三論───二空觀慧───得此清淨 　　　　　　　　┌─唯識─┐ 　　　　唯識宗─┤　　　　├─諸…"
+    },
+    {
+      "matched": "律宗",
+      "standard": "律宗",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "宗派",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "律宗"
+      ],
+      "sample_context": "…　　　├─等流真如───生境清淨 　　　　　　　　└─淨土─┘ ```   此中律宗專指終南山道宣律師之律宗，道宣律師宗歸唯識，及明藏識中種子為戒體，皆有明文，故屬…"
+    },
+    {
+      "matched": "律師",
+      "standard": "律師",
+      "occurrences": 2,
+      "domain": "制度",
+      "subdomain": "僧制",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "律師"
+      ],
+      "sample_context": "…───生境清淨 　　　　　　　　└─淨土─┘ ```   此中律宗專指終南山道宣律師之律宗，道宣律師宗歸唯識，及明藏識中種子為戒體，皆有明文，故屬於唯識宗。真如宗中…"
+    },
+    {
+      "matched": "戒賢",
+      "standard": "戒賢",
+      "occurrences": 1,
+      "domain": "历史",
+      "subdomain": "人物",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "戒賢"
+      ],
+      "sample_context": "# 佛法之分宗判教  梵土戒賢、智光二家，及華土賢首、天台諸家，以一時門庭施設之方便，於唯一大乘教所詮之自證境…"
+    },
+    {
+      "matched": "施設",
+      "standard": "施設",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "施設"
+      ],
+      "sample_context": "# 佛法之分宗判教  梵土戒賢、智光二家，及華土賢首、天台諸家，以一時門庭施設之方便，於唯一大乘教所詮之自證境行果、化他境行果上，判教高下，致後人死守其語互爭…"
+    },
+    {
+      "matched": "一音",
+      "standard": "一音",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "一音"
+      ],
+      "sample_context": "…行果、化他境行果上，判教高下，致後人死守其語互爭優劣，予固不偏取之。而近人聞古者一音教之風而悅之，膠執「教一乘三」，亦有未可。蓋同一大乘教，特其所詮於境行果有偏重，…"
+    },
+    {
+      "matched": "自證",
+      "standard": "自證",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "自證"
+      ],
+      "sample_context": "…之風而悅之，膠執「教一乘三」，亦有未可。蓋同一大乘教，特其所詮於境行果有偏重，或自證化他有偏重，雖偏重即為其殊勝之處，而統計其全，則平等平等也。至大乘與餘乘則不然、…"
+    },
+    {
+      "matched": "殊勝",
+      "standard": "殊勝",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "殊勝"
+      ],
+      "sample_context": "…，亦有未可。蓋同一大乘教，特其所詮於境行果有偏重，或自證化他有偏重，雖偏重即為其殊勝之處，而統計其全，則平等平等也。至大乘與餘乘則不然、其所詮各有自乘之境行果，其能…"
+    },
+    {
+      "matched": "感應",
+      "standard": "感應",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "感應"
+      ],
+      "sample_context": "…何有乎教？機不感佛何有乎乘？故應機三則乘三教亦三；感佛一則教一乘亦一。若無機佛之感應，何論教乘之一三哉？故予意教之判當依乘之別，乘之別、不別於後世，在佛應機而教興時…"
+    },
+    {
+      "matched": "二乘",
+      "standard": "小乘",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": false,
+      "variants_of_standard": [
+        "二乘",
+        "小乘法"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "二乘"
+      ],
+      "sample_context": "…之明文也。  然乘之開合亦不一其說：有時總說為一，乘無別而教亦無判；有時分為大小二乘；有時分菩薩獨覺聲聞之三乘；有時加人天為四乘；有時分所加人天為五乘。復有於三乘加…"
+    },
+    {
+      "matched": "因果",
+      "standard": "因果",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "因果"
+      ],
+      "sample_context": "…有時加人天為四乘；有時分所加人天為五乘。復有於三乘加佛乘為四乘者，此則迷一大乘之因果以為二，出於後人謬計，為聖教明文所無也。但今綜佛法之大全以類別之，可別為三：一、…"
+    },
+    {
+      "matched": "正覺",
+      "standard": "正覺",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "正覺"
+      ],
+      "sample_context": "…別為三：一、化俗教，謂人及天等五乘之共教。二、出世教，謂聲聞乘等三乘之共教。三、正覺教，謂大乘（菩薩乘佛乘）不共教。初一不離後二，而後二非初一能盡，若離後二，則成凡…"
+    },
+    {
+      "matched": "菩薩乘",
+      "standard": "菩薩乘",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "菩薩乘"
+      ],
+      "sample_context": "…教，謂人及天等五乘之共教。二、出世教，謂聲聞乘等三乘之共教。三、正覺教，謂大乘（菩薩乘佛乘）不共教。初一不離後二，而後二非初一能盡，若離後二，則成凡外之法而非佛法；…"
+    },
+    {
+      "matched": "教法",
+      "standard": "教法",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "佛法體系",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "教法"
+      ],
+      "sample_context": "…非佛法；前二不離後一，而後一非前二能盡，若離後一，則僅凡小之法而非佛法。故此三乘教法，皆不離佛自住之大乘也。茲表如下：   ``` 　　　　┌………………………………"
+    },
+    {
+      "matched": "天乘",
+      "standard": "天乘",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "天乘"
+      ],
+      "sample_context": "……………├─聲聞 　　　　│　　　　　　　　　　　　│　　　　　　　　　　　├─天乘 　　　　│　　　　　　　　　　　　│　　　　　　　　　　　├─人乘 　　　　大…"
+    },
+    {
+      "matched": "人乘",
+      "standard": "人乘",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "人乘"
+      ],
+      "sample_context": "…　　　　├─天乘 　　　　│　　　　　　　　　　　　│　　　　　　　　　　　├─人乘 　　　　大︵　　　　　　　　　　　三︵　　　　　　　　　　五︵ 　　　　乘正明…"
+    },
+    {
+      "matched": "五蘊",
+      "standard": "五蘊",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "色受想行識",
+      "source": "batch_01",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "五蘊"
+      ],
+      "sample_context": "…　　　　　三︵　　　　　　　　　　五︵ 　　　　乘正明諸法唯心義　　　　　乘出明五蘊無我義　　　　乘化明因緣生果義 　　　　別覺　　　　　　　　　　　共世　　　　　…"
+    },
+    {
+      "matched": "無我",
+      "standard": "無我",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無我"
+      ],
+      "sample_context": "…　　　三︵　　　　　　　　　　五︵ 　　　　乘正明諸法唯心義　　　　　乘出明五蘊無我義　　　　乘化明因緣生果義 　　　　別覺　　　　　　　　　　　共世　　　　　　　…"
+    },
+    {
+      "matched": "因緣生果",
+      "standard": "因緣生法",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": false,
+      "variants_of_standard": [
+        "因緣所生法",
+        "諸法眾緣生",
+        "萬有皆因緣所生",
+        "因緣生果"
+      ],
+      "vocab_note": "亦含緣起義，太虚常以「因緣生法」為五乘共法之總綱",
+      "source": "batch_01",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "因緣生果"
+      ],
+      "sample_context": "…　　　　　五︵ 　　　　乘正明諸法唯心義　　　　　乘出明五蘊無我義　　　　乘化明因緣生果義 　　　　別覺　　　　　　　　　　　共世　　　　　　　　　　共俗 　　　　…"
+    },
+    {
+      "matched": "內學",
+      "standard": "內學",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "內學"
+      ],
+      "sample_context": "…　︶　　　　　　　　　　　　︶　　　　　　　　　　　︶ ```   近人（見支那內學院各書）引金剛般若，佛令一切眾生皆入無餘涅槃之意，證明其「乘三教一」，由僅知三乘…"
+    },
+    {
+      "matched": "般若",
+      "standard": "般若",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "般若中論"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "般若"
+      ],
+      "sample_context": "…　　　　　︶　　　　　　　　　　　︶ ```   近人（見支那內學院各書）引金剛般若，佛令一切眾生皆入無餘涅槃之意，證明其「乘三教一」，由僅知三乘共教之故耳。然三乘…"
+    },
+    {
+      "matched": "眾生",
+      "standard": "眾生",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "眾生"
+      ],
+      "sample_context": "…　　　　　　　　　　︶ ```   近人（見支那內學院各書）引金剛般若，佛令一切眾生皆入無餘涅槃之意，證明其「乘三教一」，由僅知三乘共教之故耳。然三乘共教誠亦佛法之…"
+    },
+    {
+      "matched": "實相",
+      "standard": "實相",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "實相"
+      ],
+      "sample_context": "…教則其根源也，五乘共教是其枝葉也，故應有此三教之判。  然唯識等大乘八家，則均以實相法界——即諸法唯心為根本，及妙覺佛果——即無上菩提為究竟。以此根本義故，究竟義故…"
+    },
+    {
+      "matched": "法界",
+      "standard": "法界",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "一真法界",
+        "中實法界",
+        "法界圓明",
+        "法界無障礙"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "法界"
+      ],
+      "sample_context": "…其根源也，五乘共教是其枝葉也，故應有此三教之判。  然唯識等大乘八家，則均以實相法界——即諸法唯心為根本，及妙覺佛果——即無上菩提為究竟。以此根本義故，究竟義故，同…"
+    },
+    {
+      "matched": "妙覺",
+      "standard": "妙覺",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "妙覺"
+      ],
+      "sample_context": "…，故應有此三教之判。  然唯識等大乘八家，則均以實相法界——即諸法唯心為根本，及妙覺佛果——即無上菩提為究竟。以此根本義故，究竟義故，同一大乘平等平等。而就其集理起…"
+    },
+    {
+      "matched": "佛果",
+      "standard": "佛果",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "佛果"
+      ],
+      "sample_context": "…應有此三教之判。  然唯識等大乘八家，則均以實相法界——即諸法唯心為根本，及妙覺佛果——即無上菩提為究竟。以此根本義故，究竟義故，同一大乘平等平等。而就其集理起行之…"
+    },
+    {
+      "matched": "戒律",
+      "standard": "戒律",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "戒律行持",
+      "is_standard": true,
+      "variants_of_standard": [
+        "律儀行"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "戒律"
+      ],
+      "sample_context": "…─┐ 　　　　唯識宗─┤　　　　├─諸法唯識───染淨所依 　　　　　　　　└─戒律─┘ 　　　　　　　　┌─禪那─┐ 　　　　　　　　│　　　　├─全體真如───…"
+    },
+    {
+      "matched": "禪那",
+      "standard": "禪那",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "禪觀",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "禪那"
+      ],
+      "sample_context": "…　├─諸法唯識───染淨所依 　　　　　　　　└─戒律─┘ 　　　　　　　　┌─禪那─┐ 　　　　　　　　│　　　　├─全體真如───自性清淨 　　　　　　　　├─…"
+    },
+    {
+      "matched": "自性",
+      "standard": "自性",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "有無自性",
+        "諸法離言自性",
+        "離言自性"
+      ],
+      "vocab_note": "太虚在判攝中反覆辨析的核心概念",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "自性"
+      ],
+      "sample_context": "…─┘ 　　　　　　　　┌─禪那─┐ 　　　　　　　　│　　　　├─全體真如───自性清淨 　　　　　　　　├─天台─┘ 　　　　真如宗─┼─賢首───離垢真如───…"
+    },
+    {
+      "matched": "等流",
+      "standard": "等流",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "等流"
+      ],
+      "sample_context": "…真如───離垢清淨 　　　　　　　　├─真如─┐ 　　　　　　　　│　　　　├─等流真如───生境清淨 　　　　　　　　└─淨土─┘ ```   此中律宗專指終南山…"
+    },
+    {
+      "matched": "淨土",
+      "standard": "淨土",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "淨土法門",
+      "is_standard": true,
+      "variants_of_standard": [
+        "極樂淨土",
+        "淨土行"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "淨土"
+      ],
+      "sample_context": "…─┐ 　　　　　　　　│　　　　├─等流真如───生境清淨 　　　　　　　　└─淨土─┘ ```   此中律宗專指終南山道宣律師之律宗，道宣律師宗歸唯識，及明藏識中…"
+    },
+    {
+      "matched": "南山",
+      "standard": "南山",
+      "occurrences": 1,
+      "domain": "历史",
+      "subdomain": "人物",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "南山"
+      ],
+      "sample_context": "…等流真如───生境清淨 　　　　　　　　└─淨土─┘ ```   此中律宗專指終南山道宣律師之律宗，道宣律師宗歸唯識，及明藏識中種子為戒體，皆有明文，故屬於唯識宗。…"
+    },
+    {
+      "matched": "種子",
+      "standard": "種子",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [
+        "業種"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "種子"
+      ],
+      "sample_context": "…─┘ ```   此中律宗專指終南山道宣律師之律宗，道宣律師宗歸唯識，及明藏識中種子為戒體，皆有明文，故屬於唯識宗。真如宗中禪及天台等之五家，細分之猶別有宗尚，今就…"
+    },
+    {
+      "matched": "有宗",
+      "standard": "瑜伽行派",
+      "occurrences": 1,
+      "domain": "历史",
+      "subdomain": "大乘宗派",
+      "is_standard": false,
+      "variants_of_standard": [
+        "有宗",
+        "瑜伽行",
+        "傳世親學"
+      ],
+      "vocab_note": "印度大乘二大系之一",
+      "source": "batch_01",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "有宗"
+      ],
+      "sample_context": "…明藏識中種子為戒體，皆有明文，故屬於唯識宗。真如宗中禪及天台等之五家，細分之猶別有宗尚，今就真如之廣義言，諸清淨法總名真如，故總曰真如宗。竟無居士謂當由唯識以進言唯…"
+    },
+    {
+      "matched": "居士",
+      "standard": "居士",
+      "occurrences": 1,
+      "domain": "制度",
+      "subdomain": "僧制",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "居士"
+      ],
+      "sample_context": "…之五家，細分之猶別有宗尚，今就真如之廣義言，諸清淨法總名真如，故總曰真如宗。竟無居士謂當由唯識以進言唯智，唯智即是此言之真如宗——予昔作三唯論，即謂唯性（今曰空慧）…"
+    },
+    {
+      "matched": "二宗",
+      "standard": "二宗",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "宗派",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "二宗"
+      ],
+      "sample_context": "…，則泛覽教理而行莫由起！若知為便令起行之教理集中點謂之宗，則近人橫分法相、唯識為二宗，詡詡以獨能發前人所未發自矜者，可知其尚泛濫教理而無所歸，故不知法相教理所宗即為…"
+    },
+    {
+      "matched": "諸緣",
+      "standard": "諸緣",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "諸緣"
+      ],
+      "sample_context": "…所未發自矜者，可知其尚泛濫教理而無所歸，故不知法相教理所宗即為唯識也！蓋平列偏明諸緣所生法若集論及瑜伽等等，由立言教以明義理，乃能宗之宗相；而攝大乘、成唯識等，由集…"
+    },
+    {
+      "matched": "瑜伽",
+      "standard": "瑜伽",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "瑜伽"
+      ],
+      "sample_context": "…其尚泛濫教理而無所歸，故不知法相教理所宗即為唯識也！蓋平列偏明諸緣所生法若集論及瑜伽等等，由立言教以明義理，乃能宗之宗相；而攝大乘、成唯識等，由集教理以起觀行，正所…"
+    },
+    {
+      "matched": "觀行",
+      "standard": "觀行",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "禪觀",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "觀行"
+      ],
+      "sample_context": "…集論及瑜伽等等，由立言教以明義理，乃能宗之宗相；而攝大乘、成唯識等，由集教理以起觀行，正所宗之宗旨。故以宗言，法相宗乎唯識，不應將能宗所宗之一法相唯識宗強析為二，而…"
+    },
+    {
+      "matched": "法相唯識宗",
+      "standard": "法相唯識宗",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "判教框架",
+      "is_standard": true,
+      "variants_of_standard": [
+        "法相唯識系"
+      ],
+      "vocab_note": "太虚三宗判教之二",
+      "source": "batch_01",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "法相唯識宗"
+      ],
+      "sample_context": "…識等，由集教理以起觀行，正所宗之宗旨。故以宗言，法相宗乎唯識，不應將能宗所宗之一法相唯識宗強析為二，而正名定義但應曰唯識宗也。復就唯識以言，能唯是識（識言詮心心所）…"
+    },
+    {
+      "matched": "言詮",
+      "standard": "言詮",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "言詮"
+      ],
+      "sample_context": "…所宗之一法相唯識宗強析為二，而正名定義但應曰唯識宗也。復就唯識以言，能唯是識（識言詮心心所），所唯（謂簡我法及持相性）即謂緣生法相及二空所顯真如性，若但明一識謂之曰…"
+    },
+    {
+      "matched": "心心",
+      "standard": "心心",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "心心"
+      ],
+      "sample_context": "…之一法相唯識宗強析為二，而正名定義但應曰唯識宗也。復就唯識以言，能唯是識（識言詮心心所），所唯（謂簡我法及持相性）即謂緣生法相及二空所顯真如性，若但明一識謂之曰唯識…"
+    },
+    {
+      "matched": "我法",
+      "standard": "我法",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "我法"
+      ],
+      "sample_context": "…二，而正名定義但應曰唯識宗也。復就唯識以言，能唯是識（識言詮心心所），所唯（謂簡我法及持相性）即謂緣生法相及二空所顯真如性，若但明一識謂之曰唯識，而離諸法相性於唯識…"
+    },
+    {
+      "matched": "緣生",
+      "standard": "緣起",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": false,
+      "variants_of_standard": [
+        "緣生"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "緣生"
+      ],
+      "sample_context": "…曰唯識宗也。復就唯識以言，能唯是識（識言詮心心所），所唯（謂簡我法及持相性）即謂緣生法相及二空所顯真如性，若但明一識謂之曰唯識，而離諸法相性於唯識外別謂之法相宗，則…"
+    },
+    {
+      "matched": "機感",
+      "standard": "機感",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "機感"
+      ],
+      "sample_context": "…概觀諸大乘教理起行之方便，則得其綱領矣。  三乘共教及五乘共教之分宗，不復一一。機感佛而興教，故依乘以判教。理集要以起行，故依教以分宗。判教分宗，如是如是！  （見…"
+    }
+  ],
+  "domain_summary": {
+    "domains": {
+      "教理": 60,
+      "行持": 6,
+      "历史": 3,
+      "制度": 2,
+      "方法論": 1
+    },
+    "subdomains": {
+      "基礎教義": 30,
+      "大乘通義": 12,
+      "宗派": 7,
+      "唯識學": 4,
+      "禪觀": 3,
+      "判教框架": 2,
+      "佛法體系": 2,
+      "僧制": 2,
+      "人物": 2,
+      "大乘有宗": 1,
+      "太虛特有概念": 1,
+      "中觀學": 1,
+      "判攝方法": 1,
+      "修行次第": 1,
+      "戒律行持": 1,
+      "淨土法門": 1,
+      "大乘宗派": 1
+    }
+  }
+}

@@ -1,8 +1,8 @@
 {
   "meta": {
-    "version": "v4",
+    "version": "v4.2",
     "created": "2026-06-24",
-    "total_terms": 1371,
+    "total_terms": 1391,
     "sources_merged": [
       "v3_draft",
       "batch_01",
@@ -11,19 +11,20 @@
       "dimensional"
     ],
     "domain_distribution": {
-      "教理": 832,
-      "制度": 118,
-      "行持": 227,
-      "方法論": 26,
-      "社会文化": 31,
-      "社会": 26,
       "义理维度": 38,
-      "历史": 73
+      "制度": 118,
+      "历史": 73,
+      "教理": 846,
+      "方法論": 27,
+      "社会": 26,
+      "社会文化": 31,
+      "行持": 232
     },
-    "terms_with_variants": 145,
-    "total_variant_mappings": 264,
-    "unique_variant_mappings": 1629,
-    "manual_gap_terms": 6
+    "terms_with_variants": 159,
+    "total_variant_mappings": 280,
+    "unique_variant_mappings": 280,
+    "manual_gap_terms": 6,
+    "last_updated": "2026-06-25"
   },
   "terms": [
     {
@@ -182,6 +183,14 @@
       "note": ""
     },
     {
+      "standard": "三乘共教",
+      "variants": [],
+      "domain": "教理",
+      "subdomain": "判教框架",
+      "source": "gap_2026-06-25",
+      "note": "太虛三級分類：化俗教(五乘共教)、出世教(三乘共教)、正覺教(大乘別教)"
+    },
+    {
       "standard": "三劫五位",
       "variants": [],
       "domain": "教理",
@@ -228,6 +237,14 @@
       "subdomain": "判教框架",
       "source": "phase3_sample,v3_draft",
       "note": "太虛特有概念 | 太虚的大乘判摄核心框架：依三性（遍计执性、依他起性、圆成实性）偏胜而立三宗——般若宗（宗無得正觀）、唯識宗（宗唯識現）、真如宗（宗真如）。三宗各存互容相摄而非互相排斥"
+    },
+    {
+      "standard": "三密相應",
+      "variants": [],
+      "domain": "行持",
+      "subdomain": "密法",
+      "source": "gap_2026-06-25",
+      "note": "身語意三密與本尊相應"
     },
     {
       "standard": "三寶",
@@ -1061,6 +1078,24 @@
       "note": "太虚基本判教框架"
     },
     {
+      "standard": "五乘共教",
+      "variants": [
+        "化俗教"
+      ],
+      "domain": "教理",
+      "subdomain": "判教框架",
+      "source": "gap_2026-06-25",
+      "note": "太虛三級分類之一，人天等五乘之共教"
+    },
+    {
+      "standard": "五乘共法",
+      "variants": [],
+      "domain": "教理",
+      "subdomain": "判教框架",
+      "source": "gap_2026-06-25",
+      "note": "太虛判教術語，人天聲聞緣覺菩薩五乘共通之法"
+    },
+    {
       "standard": "五位",
       "variants": [],
       "domain": "教理",
@@ -1379,6 +1414,16 @@
       "subdomain": "寺院管理",
       "source": "v3_draft",
       "note": ""
+    },
+    {
+      "standard": "住持三寶",
+      "variants": [
+        "住持僧寶"
+      ],
+      "domain": "教理",
+      "subdomain": "佛法體系",
+      "source": "review_20260625",
+      "note": "三寶分類：住持三寶"
     },
     {
       "standard": "住持僧",
@@ -1805,6 +1850,17 @@
       "note": ""
     },
     {
+      "standard": "佛法",
+      "variants": [
+        "佛法",
+        "佛陀教法"
+      ],
+      "domain": "教理",
+      "subdomain": "佛法體系",
+      "source": "gap_review_manual",
+      "note": "基礎術語，初始詞表遺漏，手動補入"
+    },
+    {
       "standard": "佛法護國",
       "variants": [],
       "domain": "义理维度",
@@ -2113,6 +2169,16 @@
       "note": ""
     },
     {
+      "standard": "假相觀",
+      "variants": [
+        "假相觀行門"
+      ],
+      "domain": "行持",
+      "subdomain": "禪觀",
+      "source": "gap_2026-06-25",
+      "note": "觀行二門之一，妙極於密宗"
+    },
+    {
       "standard": "傳戒",
       "variants": [],
       "domain": "制度",
@@ -2341,6 +2407,16 @@
       "subdomain": "淨土法門",
       "source": "v3_draft",
       "note": ""
+    },
+    {
+      "standard": "兜率淨土",
+      "variants": [
+        "兜率內院"
+      ],
+      "domain": "行持",
+      "subdomain": "淨土法門",
+      "source": "gap_2026-06-25",
+      "note": "彌勒菩薩之兜率天淨土，太虛晚年所歸"
     },
     {
       "standard": "入世佛教",
@@ -2807,6 +2883,14 @@
       "note": "开篇即点明太虚思想的根本路径：对全体佛法进行「总抉择和总判摄」"
     },
     {
+      "standard": "判解",
+      "variants": [],
+      "domain": "方法論",
+      "subdomain": "判攝方法",
+      "source": "review_20260625",
+      "note": "太虚判摄方法论核心概念"
+    },
+    {
       "standard": "別境",
       "variants": [],
       "domain": "教理",
@@ -2927,6 +3011,14 @@
       "subdomain": "基礎教義",
       "source": "v3_draft",
       "note": ""
+    },
+    {
+      "standard": "勝義僧",
+      "variants": [],
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "source": "review_20260625",
+      "note": "僧寶分類：勝義僧"
     },
     {
       "standard": "勝義諦",
@@ -3328,7 +3420,9 @@
     },
     {
       "standard": "唯心",
-      "variants": [],
+      "variants": [
+        "唯心論"
+      ],
       "domain": "教理",
       "subdomain": "唯識學",
       "source": "v3_draft",
@@ -4120,6 +4214,16 @@
       "subdomain": "宗派",
       "source": "dimensional,v3_draft",
       "note": "以八宗为框架：各宗之宗点、相互关系、核心义理、平等不二"
+    },
+    {
+      "standard": "大乘別教",
+      "variants": [
+        "正覺教"
+      ],
+      "domain": "教理",
+      "subdomain": "判教框架",
+      "source": "gap_2026-06-25",
+      "note": "太虛三級分類之一，大乘不共教"
     },
     {
       "standard": "大乘宗地圖",
@@ -6132,6 +6236,17 @@
       "note": ""
     },
     {
+      "standard": "方便",
+      "variants": [
+        "善巧方便",
+        "方便善巧"
+      ],
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "source": "gap_review_2026-06-25",
+      "note": "3篇高频缺口词（佛法導言×2 + 佛乘宗要論），upāya/skillful means"
+    },
+    {
       "standard": "方便與究竟",
       "variants": [],
       "domain": "方法論",
@@ -6561,6 +6676,16 @@
       "subdomain": "基礎教義",
       "source": "v3_draft",
       "note": ""
+    },
+    {
+      "standard": "根塵",
+      "variants": [
+        "根塵識"
+      ],
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "source": "gap_2026-06-25",
+      "note": "六根與六塵，十二處之簡稱"
     },
     {
       "standard": "根本依",
@@ -7559,6 +7684,16 @@
       "note": ""
     },
     {
+      "standard": "無常苦空",
+      "variants": [
+        "无常苦空"
+      ],
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "source": "gap_review_2026-06-25",
+      "note": "2篇高频缺口词（佛法導言×2），三法印之三"
+    },
+    {
       "standard": "無性",
       "variants": [],
       "domain": "教理",
@@ -8412,6 +8547,16 @@
       "note": ""
     },
     {
+      "standard": "真如宗",
+      "variants": [
+        "法界圓覺宗"
+      ],
+      "domain": "教理",
+      "subdomain": "太虛特有概念",
+      "source": "gap_2026-06-25",
+      "note": "太虛三宗之一，以全體真如為宗，攝禪、天台、賢首、淨土等"
+    },
+    {
       "standard": "真妄",
       "variants": [],
       "domain": "教理",
@@ -8498,6 +8643,16 @@
       "subdomain": "太虚特有概念",
       "source": "phase3_sample",
       "note": "太虚对社会主义的佛教化改造：保留货价交通自由（区别于共產黨的呆板形式），以职團自治取代階級战争，以教育平等为经济平等的前提"
+    },
+    {
+      "standard": "真空觀",
+      "variants": [
+        "真空觀行門"
+      ],
+      "domain": "行持",
+      "subdomain": "禪觀",
+      "source": "gap_2026-06-25",
+      "note": "觀行二門之一，妙極於禪宗"
     },
     {
       "standard": "真見道",
@@ -8897,6 +9052,22 @@
       "subdomain": "中觀學",
       "source": "v3_draft",
       "note": ""
+    },
+    {
+      "standard": "空慧宗",
+      "variants": [],
+      "domain": "教理",
+      "subdomain": "太虛特有概念",
+      "source": "gap_2026-06-25",
+      "note": "太虛三宗之一，以二空觀慧為宗，攝三論等"
+    },
+    {
+      "standard": "空有不二",
+      "variants": [],
+      "domain": "教理",
+      "subdomain": "中觀學",
+      "source": "review_20260625",
+      "note": "大乘中觀核心義理"
     },
     {
       "standard": "空海",
@@ -9438,6 +9609,16 @@
       "subdomain": "大乘通義",
       "source": "batch_01,v3_draft",
       "note": ""
+    },
+    {
+      "standard": "自力",
+      "variants": [
+        "自力行"
+      ],
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "source": "gap_2026-06-25",
+      "note": "律禪自力與密淨他力對舉"
     },
     {
       "standard": "自受用身",
@@ -10351,6 +10532,14 @@
       "subdomain": "修行次第",
       "source": "v3_draft",
       "note": ""
+    },
+    {
+      "standard": "證法",
+      "variants": [],
+      "domain": "教理",
+      "subdomain": "佛法體系",
+      "source": "review_20260625",
+      "note": "佛法僧義廣論核心概念"
     },
     {
       "standard": "識心",
@@ -11406,26 +11595,13 @@
       "note": ""
     },
     {
-      "standard": "方便",
-      "variants": [
-        "善巧方便",
-        "方便善巧"
-      ],
+      "standard": "生命",
+      "variants": [],
       "domain": "教理",
-      "subdomain": "大乘通義",
-      "source": "gap_review_2026-06-25",
-      "note": "3篇高频缺口词（佛法導言×2 + 佛乘宗要論），upāya/skillful means"
-    },
-    {
-      "standard": "無常苦空",
-      "variants": [
-        "无常苦空"
-      ],
-      "domain": "教理",
-      "subdomain": "基礎教義",
-      "source": "gap_review_2026-06-25",
-      "note": "2篇高频缺口词（佛法導言×2），三法印之三"
+      "subdomain": "",
+      "source": "gap_review_auto",
+      "note": "自動補入：2篇缺口"
     }
   ],
-  "total_terms": 1373
+  "total_terms": 1391
 }

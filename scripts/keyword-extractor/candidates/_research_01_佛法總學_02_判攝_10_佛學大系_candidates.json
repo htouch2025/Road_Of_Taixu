@@ -1,0 +1,1116 @@
+{
+  "summary": {
+    "total_candidates": 61,
+    "unique_standards": 61,
+    "single_occurrence_ratio": "42/61",
+    "high_frequency_terms": [
+      "名色",
+      "真如",
+      "意識",
+      "佛學"
+    ],
+    "heading_weighted": true,
+    "heading_weight": 3
+  },
+  "article": {
+    "path": "/Users/xin/Documents/Road_Of_Taixu/_research/01_佛法總學/02_判攝/10_佛學大系.md",
+    "title": "佛學大系",
+    "cjk_chars": 2041,
+    "recommended_count": "5-8",
+    "编": "第一编 佛法總學",
+    "编_number": "1",
+    "category": "判攝"
+  },
+  "vocab_source": "/Users/xin/Documents/Road_Of_Taixu/scripts/keyword-extractor/vocabulary/keyword_vocabulary_v4.json",
+  "match_stats": {
+    "raw_hits": 61,
+    "after_dedup": 61
+  },
+  "candidates": [
+    {
+      "matched": "名色",
+      "standard": "名色",
+      "occurrences": 27,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "名色"
+      ],
+      "sample_context": "…底」之大丈夫志量者，殆皆有三個疑問橫亙心中，務求個完全解決。那三個疑問呢？一、名名色色的「本來」是什麼？二、名名色色的「現行」是什麼？三、名名色色的「究極」是什麼？…"
+    },
+    {
+      "matched": "真如",
+      "standard": "真如",
+      "occurrences": 25,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "一心真如",
+        "真如理"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "真如"
+      ],
+      "sample_context": "…必是無變無異的，無變無異的方是真的，故名名色色皆不是真，唯「如」是真，強謂之曰「真如」。真如既是無乎不在無乎不然的，便可知佛學於名名色色之本體是甚麼的答案，就是「真…"
+    },
+    {
+      "matched": "意識",
+      "standard": "意識",
+      "occurrences": 20,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "意識"
+      ],
+      "sample_context": "…之變異者，乃心之了別力的識；於是亦便可知佛學於名名色色之生緣是甚麼的答案，就是「意識」了。  「意識」是參錯流動的，是有執見有創造的；然則那意識又何以不能契證真如，…"
+    },
+    {
+      "matched": "佛學",
+      "standard": "佛學",
+      "occurrences": 10,
+      "domain": "教理",
+      "subdomain": "佛法體系",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "全書根本概念，太虚自稱「佛學」而非「佛教學」",
+      "source": "manual_gap",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "佛學"
+      ],
+      "sample_context": "…若有此三個疑問必求解決，便於一切宗教、哲學、皆有了研究的需要；若求個完全解決，則佛學便成了唯一的需要。  佛學於上列三大問題的答案怎麼樣？  名名（精神的種現）色色…"
+    },
+    {
+      "matched": "妙覺",
+      "standard": "妙覺",
+      "occurrences": 7,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "妙覺"
+      ],
+      "sample_context": "…如，真如即意識——意識即真如，故意識便不生幻夢質礙；真如即意識，故真如便圓成了「妙覺明知」。真如圓成了妙覺明知，故徹體圓照名名色色而自性虛靈不昧；意識不生幻夢質礙，…"
+    },
+    {
+      "matched": "唯性論",
+      "standard": "唯性論",
+      "occurrences": 6,
+      "domain": "教理",
+      "subdomain": "太虚特有概念",
+      "is_standard": true,
+      "variants_of_standard": [
+        "唯實論"
+      ],
+      "vocab_note": "太虚九系判摄之第一系第一格：真如宗立场，以圆成实性（性）统摄一切，无事于识而唯事于性。对应熊十力新唯识论的哲学立场",
+      "source": "phase3_sample",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "唯性論"
+      ],
+      "sample_context": "…來所說的歸納起來，便結成三唯勝義。那三唯勝義是：第一、說明「實在」是「真如」的「唯性論」，第二、說明「現有」是「意識」的「唯心論」，第三、說明「究極」是「妙覺」的「…"
+    },
+    {
+      "matched": "唯心",
+      "standard": "唯心",
+      "occurrences": 6,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "唯心"
+      ],
+      "sample_context": "…義是：第一、說明「實在」是「真如」的「唯性論」，第二、說明「現有」是「意識」的「唯心論」，第三、說明「究極」是「妙覺」的「唯智論」。此三唯論，便是佛學的大系了。  …"
+    },
+    {
+      "matched": "唯智論",
+      "standard": "唯智論",
+      "occurrences": 6,
+      "domain": "教理",
+      "subdomain": "太虚特有概念",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "太虚九系判摄之第二系第一格：以佛之自证智为宗，直显真如实性。对应禅宗、真言宗",
+      "source": "phase3_sample",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "唯智論"
+      ],
+      "sample_context": "…論」，第二、說明「現有」是「意識」的「唯心論」，第三、說明「究極」是「妙覺」的「唯智論」。此三唯論，便是佛學的大系了。  ## 二　三唯論之含攝  ### 　　甲三…"
+    },
+    {
+      "matched": "眾生",
+      "standard": "眾生",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "眾生"
+      ],
+      "sample_context": "……淨……樂……聖……佛……唯智論 　　　　　　　　　　　┌體──唯性論 　　　　眾生──唯心論┤ 　　　　　　　　　　　└用──唯智論 　　　　　　　　　　┌性──…"
+    },
+    {
+      "matched": "大乘",
+      "standard": "大乘",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "大乘不共法",
+        "大乘法",
+        "大乘特法"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "大乘"
+      ],
+      "sample_context": "…別。是謂三唯論互攝之妙法。  ## 三　三唯論之貫通  ### 　　甲三　唯論與大乘宗   ``` 　　　　　　　　　　┌從「教觀」入者…………嘉祥宗 　　　　真如…"
+    },
+    {
+      "matched": "法性",
+      "standard": "法性",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "法性"
+      ],
+      "sample_context": "… 　　甲三　唯論的各攝   ``` 　　　　五　　蘊┐ 　　　　十 二 處├根本法性┐ 　　　　十 八 界┘　　　　│ 　　　　三　　毒┐　　　　│ 　　　　三　　…"
+    },
+    {
+      "matched": "無常",
+      "standard": "無常",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無常"
+      ],
+      "sample_context": "…「真如」了。  「真如」是虛豁圓活的，是無形對無識別的，然則那無數無數物差類別、無常無常生成壞滅的名名色色，是怎麼樣現起存在的呢？實在的祗是「真如」，實無他物；然現…"
+    },
+    {
+      "matched": "不生",
+      "standard": "不生",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "不生"
+      ],
+      "sample_context": "…持變異名名色色的力量便消減了。進觀意識即真如，真如即意識——意識即真如，故意識便不生幻夢質礙；真如即意識，故真如便圓成了「妙覺明知」。真如圓成了妙覺明知，故徹體圓照…"
+    },
+    {
+      "matched": "圓成",
+      "standard": "圓成實性",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": false,
+      "variants_of_standard": [
+        "圓成"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "圓成"
+      ],
+      "sample_context": "…意識即真如，真如即意識——意識即真如，故意識便不生幻夢質礙；真如即意識，故真如便圓成了「妙覺明知」。真如圓成了妙覺明知，故徹體圓照名名色色而自性虛靈不昧；意識不生幻…"
+    },
+    {
+      "matched": "自性",
+      "standard": "自性",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "有無自性",
+        "諸法離言自性",
+        "離言自性"
+      ],
+      "vocab_note": "太虚在判攝中反覆辨析的核心概念",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "自性"
+      ],
+      "sample_context": "…真如即意識，故真如便圓成了「妙覺明知」。真如圓成了妙覺明知，故徹體圓照名名色色而自性虛靈不昧；意識不生幻夢質礙，故隨緣普現名名色色而當相融映無盡；是之謂無上正等覺。…"
+    },
+    {
+      "matched": "勝義",
+      "standard": "勝義",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "勝義"
+      ],
+      "sample_context": "…名名色色之究極是甚麼的答案，就是「妙覺」了。  將上來所說的歸納起來，便結成三唯勝義。那三唯勝義是：第一、說明「實在」是「真如」的「唯性論」，第二、說明「現有」是「…"
+    },
+    {
+      "matched": "六凡",
+      "standard": "六凡",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "六凡"
+      ],
+      "sample_context": "…　　　　十 八 界┘　　　　│ 　　　　三　　毒┐　　　　│ 　　　　三　　業├六凡法性├真如性 　　　　三　　有┘　　　　│ 　　　　四 聖 諦┐　　　　│ 　　…"
+    },
+    {
+      "matched": "四聖",
+      "standard": "四聖",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "四聖"
+      ],
+      "sample_context": "…　　　　三　　有┘　　　　│ 　　　　四 聖 諦┐　　　　│ 　　　　十二緣起├四聖法性┘ 　　　　六度萬行│ 　　　　二 轉 依┘  　　　　　　　　　┌─八識心…"
+    },
+    {
+      "matched": "業果",
+      "standard": "業果",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "業果"
+      ],
+      "sample_context": "…　　　　　　│　　　　　　└一切種智──┼──┘ 　　　　　　　│　　　┌知世間業果智─┐　│ 　　　　　　　└救世智┤　　　　　　　├─┴───後得智……如量智 …"
+    },
+    {
+      "matched": "成佛",
+      "standard": "成佛",
+      "occurrences": 2,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "成佛"
+      ],
+      "sample_context": "…一絲一毫都沒有錯誤了，即為成了佛。有了都無錯誤的認識，故不復得起錯誤；此便是即人成佛之學。成佛不是件奇怪的事，人人可即成的，但也要有些丈夫的志量始得。  （見海刊二…"
+    },
+    {
+      "matched": "虛空",
+      "standard": "虛空",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "虛空"
+      ],
+      "sample_context": "# 佛學大系  ## 一　三唯論  凡治徹頭徹尾之學，有「展手撐破虛空邊，伸腳踏透宇宙底」之大丈夫志量者，殆皆有三個疑問橫亙心中，務求個完全解決。那三…"
+    },
+    {
+      "matched": "現行",
+      "standard": "現行",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "現行"
+      ],
+      "sample_context": "…中，務求個完全解決。那三個疑問呢？一、名名色色的「本來」是什麼？二、名名色色的「現行」是什麼？三、名名色色的「究極」是什麼？若有此三個疑問必求解決，便於一切宗教、哲…"
+    },
+    {
+      "matched": "異相",
+      "standard": "異相",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "異相"
+      ],
+      "sample_context": "…，確實是有未嘗異未嘗變、永不異永不變之性的。譬如有不隔不別不壞不失的水，故那洶洶異相滔滔變現的波浪，得以無際無斷。但名名色色都是變異的，不是不變異的，故此不變異的雖…"
+    },
+    {
+      "matched": "無際",
+      "standard": "無際",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無際"
+      ],
+      "sample_context": "…永不異永不變之性的。譬如有不隔不別不壞不失的水，故那洶洶異相滔滔變現的波浪，得以無際無斷。但名名色色都是變異的，不是不變異的，故此不變異的雖不可無亦不能有，祗得強名…"
+    },
+    {
+      "matched": "無明",
+      "standard": "無明",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無明"
+      ],
+      "sample_context": "…是「真如」，實無他物；然現為名名色色者，即由真如是無形對無識別的，所以不曾自知（無明）；復由真如是虛豁圓活的，所以又得欲知之心；欲知之心乍動，所知之境隨變，乃現為名…"
+    },
+    {
+      "matched": "所變",
+      "standard": "所變",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "所變"
+      ],
+      "sample_context": "…如，但發生了別那變異的名名色色呢？就因為意識是真如不自知而起的欲知，故所知的皆是所變生的名名色色而不能知真如也。然在意識持變的名名色色中，每每免不了迷悶及牽逼之苦，…"
+    },
+    {
+      "matched": "解脫",
+      "standard": "解脫",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "解脫"
+      ],
+      "sample_context": "…意識持變的名名色色中，每每免不了迷悶及牽逼之苦，由是意識對於名名色色又起了悟徹及解脫的心願。信有不由意識而生起存在的不變不異真如覺性，一旦契會，便得透脫名名色色，自…"
+    },
+    {
+      "matched": "覺性",
+      "standard": "佛性",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "如來藏思想",
+      "is_standard": false,
+      "variants_of_standard": [
+        "覺性"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "覺性"
+      ],
+      "sample_context": "…由是意識對於名名色色又起了悟徹及解脫的心願。信有不由意識而生起存在的不變不異真如覺性，一旦契會，便得透脫名名色色，自在遍照。如此第一步便觀察名名色色皆是意識變生的；…"
+    },
+    {
+      "matched": "自在",
+      "standard": "自在",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "自在"
+      ],
+      "sample_context": "…脫的心願。信有不由意識而生起存在的不變不異真如覺性，一旦契會，便得透脫名名色色，自在遍照。如此第一步便觀察名名色色皆是意識變生的；此第一層已明確證知，則名名色色都唯…"
+    },
+    {
+      "matched": "遍照",
+      "standard": "遍照",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "遍照"
+      ],
+      "sample_context": "…心願。信有不由意識而生起存在的不變不異真如覺性，一旦契會，便得透脫名名色色，自在遍照。如此第一步便觀察名名色色皆是意識變生的；此第一層已明確證知，則名名色色都唯意識…"
+    },
+    {
+      "matched": "隨緣",
+      "standard": "隨緣",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "隨緣"
+      ],
+      "sample_context": "…知」。真如圓成了妙覺明知，故徹體圓照名名色色而自性虛靈不昧；意識不生幻夢質礙，故隨緣普現名名色色而當相融映無盡；是之謂無上正等覺。於此便可知佛學於名名色色之究極是甚…"
+    },
+    {
+      "matched": "無盡",
+      "standard": "無盡",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無盡"
+      ],
+      "sample_context": "…故徹體圓照名名色色而自性虛靈不昧；意識不生幻夢質礙，故隨緣普現名名色色而當相融映無盡；是之謂無上正等覺。於此便可知佛學於名名色色之究極是甚麼的答案，就是「妙覺」了。…"
+    },
+    {
+      "matched": "十二緣起",
+      "standard": "十二緣起",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "十二緣起"
+      ],
+      "sample_context": "…├真如性 　　　　三　　有┘　　　　│ 　　　　四 聖 諦┐　　　　│ 　　　　十二緣起├四聖法性┘ 　　　　六度萬行│ 　　　　二 轉 依┘  　　　　　　　　　…"
+    },
+    {
+      "matched": "六度",
+      "standard": "六度",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "菩薩行",
+      "is_standard": true,
+      "variants_of_standard": [
+        "六波羅蜜"
+      ],
+      "vocab_note": "布施、持戒、忍辱、精進、禪定、般若",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "六度"
+      ],
+      "sample_context": "…　　　│ 　　　　四 聖 諦┐　　　　│ 　　　　十二緣起├四聖法性┘ 　　　　六度萬行│ 　　　　二 轉 依┘  　　　　　　　　　┌─八識心王─┐ 　　　　　　…"
+    },
+    {
+      "matched": "八識心王",
+      "standard": "八識",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": false,
+      "variants_of_standard": [
+        "八識二無我",
+        "八識心王"
+      ],
+      "vocab_note": "含阿賴耶識、末那識等",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "八識心王"
+      ],
+      "sample_context": "…├四聖法性┘ 　　　　六度萬行│ 　　　　二 轉 依┘  　　　　　　　　　┌─八識心王─┐ 　　　　　　　　　├─五類心所─┼實┐ 　　　　　　　　　├─十一色法…"
+    },
+    {
+      "matched": "心所",
+      "standard": "心所",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "心所"
+      ],
+      "sample_context": "…　二 轉 依┘  　　　　　　　　　┌─八識心王─┐ 　　　　　　　　　├─五類心所─┼實┐ 　　　　　　　　　├─十一色法─┘　│　　　　　　　　　┌─阿羅漢 　…"
+    },
+    {
+      "matched": "色法",
+      "standard": "色法",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "色法"
+      ],
+      "sample_context": "…八識心王─┐ 　　　　　　　　　├─五類心所─┼實┐ 　　　　　　　　　├─十一色法─┘　│　　　　　　　　　┌─阿羅漢 　　　　四聖六凡─┤　　　　　　　　├有為…"
+    },
+    {
+      "matched": "阿羅漢",
+      "standard": "阿羅漢",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "阿羅漢"
+      ],
+      "sample_context": "…─五類心所─┼實┐ 　　　　　　　　　├─十一色法─┘　│　　　　　　　　　┌─阿羅漢 　　　　四聖六凡─┤　　　　　　　　├有為─意識心─無為┼─辟支覺 　　　　…"
+    },
+    {
+      "matched": "有為",
+      "standard": "有為",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "有為"
+      ],
+      "sample_context": "…色法─┘　│　　　　　　　　　┌─阿羅漢 　　　　四聖六凡─┤　　　　　　　　├有為─意識心─無為┼─辟支覺 　　　　　　　　　├─分 位 假─┐　│　　　　　　　…"
+    },
+    {
+      "matched": "無為",
+      "standard": "無為",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無為"
+      ],
+      "sample_context": "…　　　　　　　　┌─阿羅漢 　　　　四聖六凡─┤　　　　　　　　├有為─意識心─無為┼─辟支覺 　　　　　　　　　├─分 位 假─┐　│　　　　　　　　　├─菩薩 …"
+    },
+    {
+      "matched": "菩薩",
+      "standard": "菩薩",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "菩薩"
+      ],
+      "sample_context": "…─無為┼─辟支覺 　　　　　　　　　├─分 位 假─┐　│　　　　　　　　　├─菩薩 　　　　　　　　　├─和 合 假─┼假┘　　　　　　　　　└─如來 　　　　　…"
+    },
+    {
+      "matched": "如來",
+      "standard": "如來",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "如來"
+      ],
+      "sample_context": "…　　　　├─菩薩 　　　　　　　　　├─和 合 假─┼假┘　　　　　　　　　└─如來 　　　　　　　　　└─相 續 假─┘ 　　　　　　　　　　　　　　　　　┌淹通…"
+    },
+    {
+      "matched": "聞慧",
+      "standard": "聞慧",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "聞慧"
+      ],
+      "sample_context": "…┘ 　　　　　　　　　　　　　　　　　┌淹通世學 　　　　　　　　　　　　　　┌聞慧┤ 　　　　　　　　　　　　　　│　　└博達法藏 　　　　　　　　　　　　　　│…"
+    },
+    {
+      "matched": "事理",
+      "standard": "事理",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "事理"
+      ],
+      "sample_context": "…　　　　　　　　　　　│　　└博達法藏 　　　　　　　　　　　　　　│　　┌解決事理 　　　　　　　　　　　┌因智┤思慧┤ 　　　　　　　　　　　│　　│　　└悟徹…"
+    },
+    {
+      "matched": "性相",
+      "standard": "性相",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "性相"
+      ],
+      "sample_context": "… 　　　　　　　　　　　┌因智┤思慧┤ 　　　　　　　　　　　│　　│　　└悟徹性相 　　　　　　　　　　　│　　│　　　　　┌施戒慧 　　　　　　　　　　　│　　…"
+    },
+    {
+      "matched": "資糧",
+      "standard": "資糧",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "資糧"
+      ],
+      "sample_context": "…　　　　　　　　│　　│　　　　　┌施戒慧 　　　　　　　　　　　│　　│　　┌資糧┤ 　　　　　　　┌出世智┤　　└修慧┤　　└忍定慧 　　　　　　　│　　　│　…"
+    },
+    {
+      "matched": "定慧",
+      "standard": "定慧",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "禪觀",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "定慧"
+      ],
+      "sample_context": "…　　　　　　　│　　│　　┌資糧┤ 　　　　　　　┌出世智┤　　└修慧┤　　└忍定慧 　　　　　　　│　　　│　　　　　│　　┌尋思智 　　　　　　　│　　　│　　…"
+    },
+    {
+      "matched": "加行",
+      "standard": "加行",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "加行"
+      ],
+      "sample_context": "…　　　　│　　　│　　　　　│　　┌尋思智 　　　　　　　│　　　│　　　　　└加行┤ 　　　　　　　│　　　│　　　　　　　　└如實智 　　　　　　　│　　　│　…"
+    },
+    {
+      "matched": "如實智",
+      "standard": "如實智",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "如實智"
+      ],
+      "sample_context": "…　　　　│　　　│　　　　　└加行┤ 　　　　　　　│　　　│　　　　　　　　└如實智 　　　　　　　│　　　│　　┌一 切 智─────┐ 　　　　妙覺智┤　　　…"
+    },
+    {
+      "matched": "一切種智",
+      "standard": "一切種智",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "一切種智"
+      ],
+      "sample_context": "…　└智果┤道 種 智──┐　　├根本智……如理智 　　　　　　　│　　　　　　└一切種智──┼──┘ 　　　　　　　│　　　┌知世間業果智─┐　│ 　　　　　　　└…"
+    },
+    {
+      "matched": "世間",
+      "standard": "世間",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "世間"
+      ],
+      "sample_context": "… 　　　　　　　│　　　　　　└一切種智──┼──┘ 　　　　　　　│　　　┌知世間業果智─┐　│ 　　　　　　　└救世智┤　　　　　　　├─┴───後得智……如量…"
+    },
+    {
+      "matched": "證悟",
+      "standard": "證悟",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "證悟"
+      ],
+      "sample_context": "…從「教觀」入者…………嘉祥宗 　　　　真如的唯性論┤ 　　　　　　　　　　└從「證悟」入者…………少室宗 　　　　　　　　　　┌…………注重理論者……慈恩宗 　　　…"
+    },
+    {
+      "matched": "慈恩",
+      "standard": "慈恩",
+      "occurrences": 1,
+      "domain": "历史",
+      "subdomain": "人物",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "慈恩"
+      ],
+      "sample_context": "…　　└從「證悟」入者…………少室宗 　　　　　　　　　　┌…………注重理論者……慈恩宗 　　　　意識的唯心論┤ 　　　　　　　　　　└…………注重行為者……南山宗 …"
+    },
+    {
+      "matched": "南山",
+      "standard": "南山",
+      "occurrences": 1,
+      "domain": "历史",
+      "subdomain": "人物",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "南山"
+      ],
+      "sample_context": "………慈恩宗 　　　　意識的唯心論┤ 　　　　　　　　　　└…………注重行為者……南山宗 　　　　　　　　　　　　　　┌實智證現者……清涼宗 　　　　　　　　　　┌智…"
+    },
+    {
+      "matched": "天台宗",
+      "standard": "天台宗",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "宗派",
+      "is_standard": true,
+      "variants_of_standard": [
+        "台教",
+        "天台",
+        "天台學",
+        "天台教"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "天台宗"
+      ],
+      "sample_context": "…宗 　　　　　　　　　　┌智性者┤ 　　　　　　　　　　│　　　└權智施顯者……天台宗 　　　　妙覺的唯智論┤ 　　　　　　　　　　│　　　┌正報加持者……開元宗 …"
+    },
+    {
+      "matched": "正報",
+      "standard": "正報",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "正報"
+      ],
+      "sample_context": "…　└權智施顯者……天台宗 　　　　妙覺的唯智論┤ 　　　　　　　　　　│　　　┌正報加持者……開元宗 　　　　　　　　　　└智相者┤ 　　　　　　　　　　　　　　└…"
+    },
+    {
+      "matched": "加持",
+      "standard": "加持",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "密法",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "加持"
+      ],
+      "sample_context": "…權智施顯者……天台宗 　　　　妙覺的唯智論┤ 　　　　　　　　　　│　　　┌正報加持者……開元宗 　　　　　　　　　　└智相者┤ 　　　　　　　　　　　　　　└依報…"
+    },
+    {
+      "matched": "依報",
+      "standard": "依報",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "有情共業所感之器世間為依報，各別業力所感之根身為正報",
+      "source": "phase2_fulltext,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "依報"
+      ],
+      "sample_context": "…加持者……開元宗 　　　　　　　　　　└智相者┤ 　　　　　　　　　　　　　　└依報引歸者……廬山宗 ```   ### 　　乙三　唯論與哲學  哲學上唯一大事之本…"
+    },
+    {
+      "matched": "因果",
+      "standard": "因果",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "因果"
+      ],
+      "sample_context": "…必以佛學之真如的唯性論為極則。哲學對於宇宙的物質現象、精神現象、生命現象、亦須有因果、生滅、成壞、恆轉、分合、業用、功能、造化等關係的相當說明，其說明雖亦種種不同，…"
+    },
+    {
+      "matched": "生滅",
+      "standard": "生滅",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "生滅"
+      ],
+      "sample_context": "…學之真如的唯性論為極則。哲學對於宇宙的物質現象、精神現象、生命現象、亦須有因果、生滅、成壞、恆轉、分合、業用、功能、造化等關係的相當說明，其說明雖亦種種不同，而佛學…"
+    },
+    {
+      "matched": "相續",
+      "standard": "相續",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "相續"
+      ],
+      "sample_context": "…加錯，謬種流傳，迷眼深積，錯錯相結而不解，錯錯相引而不斷，故有眾生、世界、業果之相續。若自知向來之認識都錯誤了，革了那錯誤認識的命，化為真確之知識，認識一一法自性的…"
+    }
+  ],
+  "domain_summary": {
+    "domains": {
+      "教理": 50,
+      "行持": 9,
+      "历史": 2
+    },
+    "subdomains": {
+      "基礎教義": 36,
+      "唯識學": 7,
+      "修行次第": 6,
+      "太虚特有概念": 2,
+      "大乘通義": 2,
+      "人物": 2,
+      "佛法體系": 1,
+      "如來藏思想": 1,
+      "菩薩行": 1,
+      "禪觀": 1,
+      "宗派": 1,
+      "密法": 1
+    }
+  }
+}

@@ -1,10 +1,12 @@
 {
   "summary": {
-    "total_candidates": 281,
-    "unique_standards": 281,
-    "single_occurrence_ratio": "142/281",
+    "total_candidates": 284,
+    "unique_standards": 284,
+    "single_occurrence_ratio": "144/284",
     "high_frequency_terms": [
       "大乘",
+      "佛法",
+      "方便",
       "小乘",
       "涅槃",
       "生死",
@@ -28,8 +30,8 @@
   },
   "vocab_source": "/Users/xin/Documents/Road_Of_Taixu/scripts/keyword-extractor/vocabulary/keyword_vocabulary_v4.json",
   "match_stats": {
-    "raw_hits": 284,
-    "after_dedup": 281
+    "raw_hits": 287,
+    "after_dedup": 284
   },
   "candidates": [
     {
@@ -53,6 +55,46 @@
         "大乘法"
       ],
       "sample_context": "…一句，欲名何為佛法？然以因緣方便，佛法隨宜如理而說，轉緣多勢，開合無定，今略說為大乘、小乘。有法能運眾生，度脫無常苦空不淨，得至常樂真淨，故名曰乘。  ## 二　小…"
+    },
+    {
+      "matched": "佛法",
+      "standard": "佛法",
+      "occurrences": 21,
+      "domain": "教理",
+      "subdomain": "佛法體系",
+      "is_standard": true,
+      "variants_of_standard": [
+        "佛法",
+        "佛陀教法"
+      ],
+      "vocab_note": "基礎術語，初始詞表遺漏，手動補入",
+      "source": "gap_review_manual",
+      "in_heading": true,
+      "_heading_hits": 3,
+      "matched_via": [
+        "佛法"
+      ],
+      "sample_context": "# 佛法導言 （1915 年春，作於普陀）  ## 一　緒言  皈佛！皈佛法！皈佛法僧！  論曰：今當略說佛法要義，引發信心，導歸覺海。  問曰：佛法要義如…"
+    },
+    {
+      "matched": "方便",
+      "standard": "方便",
+      "occurrences": 24,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "善巧方便",
+        "方便善巧"
+      ],
+      "vocab_note": "3篇高频缺口词（佛法導言×2 + 佛乘宗要論），upāya/skillful means",
+      "source": "gap_review_2026-06-25",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "方便"
+      ],
+      "sample_context": "…問曰：佛法要義如何？答曰：佛法二字亦不可得，竟無一義一句，欲名何為佛法？然以因緣方便，佛法隨宜如理而說，轉緣多勢，開合無定，今略說為大乘、小乘。有法能運眾生，度脫無…"
     },
     {
       "matched": "小乘",
@@ -217,6 +259,23 @@
       "sample_context": "…然以因緣方便，佛法隨宜如理而說，轉緣多勢，開合無定，今略說為大乘、小乘。有法能運眾生，度脫無常苦空不淨，得至常樂真淨，故名曰乘。  ## 二　小乘  問曰：其小乘法…"
     },
     {
+      "matched": "無我",
+      "standard": "無我",
+      "occurrences": 7,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無我"
+      ],
+      "sample_context": "…。有為法故無常，無常故危迫不安穩，不安穩故是苦，苦故繫縛牽引流轉不自在，不自在故無我，無我故空，空故無可取著為真淨者。既如是如實了知已，在此生死純大苦海，如香潔衣忽…"
+    },
+    {
       "matched": "人天",
       "standard": "人天",
       "occurrences": 7,
@@ -266,23 +325,6 @@
         "宗門"
       ],
       "sample_context": "…天戒善，不能成佛菩薩。故求入大乘者，必先直抉根本無明而妙悟真心也。  問曰：此於宗門如何？答云：盡乎宗門所云參學。抑上論教法之安立相如是耳，若自發心求悟入大乘者，必…"
-    },
-    {
-      "matched": "無常",
-      "standard": "無常",
-      "occurrences": 6,
-      "domain": "教理",
-      "subdomain": "基礎教義",
-      "is_standard": true,
-      "variants_of_standard": [],
-      "vocab_note": "",
-      "source": "v3_draft",
-      "in_heading": false,
-      "_heading_hits": 0,
-      "matched_via": [
-        "無常"
-      ],
-      "sample_context": "…便，佛法隨宜如理而說，轉緣多勢，開合無定，今略說為大乘、小乘。有法能運眾生，度脫無常苦空不淨，得至常樂真淨，故名曰乘。  ## 二　小乘  問曰：其小乘法如何？答曰…"
     },
     {
       "matched": "我所",
@@ -351,23 +393,6 @@
         "苾芻"
       ],
       "sample_context": "…，所欲遍一切境遍一切事，無間自身他身，有情無情，故為精勝。為離此二欲貪，故出家持苾芻戒律，因戒生定則勝劣欲貪皆離矣。了生死苦，情我已捨，但因無始積遺業習，其我愛恆起…"
-    },
-    {
-      "matched": "空無",
-      "standard": "空無",
-      "occurrences": 5,
-      "domain": "教理",
-      "subdomain": "中觀學",
-      "is_standard": true,
-      "variants_of_standard": [],
-      "vocab_note": "",
-      "source": "v3_draft",
-      "in_heading": false,
-      "_heading_hits": 0,
-      "matched_via": [
-        "空無"
-      ],
-      "sample_context": "…盡。故色界無色界諸天，由禪定力雖離欲貪，禪定力衰還墮欲塵。故須依定精進修習無常苦空無我不淨慧觀，由定開發無漏真慧，從無漏慧具修戒定慧法滿足，則情業全消而貪愛永離矣。…"
     },
     {
       "matched": "解脫",
@@ -455,6 +480,25 @@
       "sample_context": "…  問曰：佛法要義如何？答曰：佛法二字亦不可得，竟無一義一句，欲名何為佛法？然以因緣方便，佛法隨宜如理而說，轉緣多勢，開合無定，今略說為大乘、小乘。有法能運眾生，度…"
     },
     {
+      "matched": "無常苦空",
+      "standard": "無常苦空",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "无常苦空"
+      ],
+      "vocab_note": "2篇高频缺口词（佛法導言×2），三法印之三",
+      "source": "gap_review_2026-06-25",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無常苦空"
+      ],
+      "sample_context": "…便，佛法隨宜如理而說，轉緣多勢，開合無定，今略說為大乘、小乘。有法能運眾生，度脫無常苦空不淨，得至常樂真淨，故名曰乘。  ## 二　小乘  問曰：其小乘法如何？答曰…"
+    },
+    {
       "matched": "不淨",
       "standard": "不淨",
       "occurrences": 4,
@@ -504,23 +548,6 @@
         "流轉"
       ],
       "sample_context": "…是生住異滅——有為法。有為法故無常，無常故危迫不安穩，不安穩故是苦，苦故繫縛牽引流轉不自在，不自在故無我，無我故空，空故無可取著為真淨者。既如是如實了知已，在此生死…"
-    },
-    {
-      "matched": "無我",
-      "standard": "無我",
-      "occurrences": 4,
-      "domain": "教理",
-      "subdomain": "基礎教義",
-      "is_standard": true,
-      "variants_of_standard": [],
-      "vocab_note": "",
-      "source": "v3_draft",
-      "in_heading": false,
-      "_heading_hits": 0,
-      "matched_via": [
-        "無我"
-      ],
-      "sample_context": "…。有為法故無常，無常故危迫不安穩，不安穩故是苦，苦故繫縛牽引流轉不自在，不自在故無我，無我故空，空故無可取著為真淨者。既如是如實了知已，在此生死純大苦海，如香潔衣忽…"
     },
     {
       "matched": "無明",
@@ -1434,23 +1461,6 @@
       "sample_context": "…濟苦等），三、修禮義行（改良風俗，整齊文化），四、修喜捨心，五、修慈悲心，六、修正信心（於常常時，於恆恆時，誠敬圓滿成就聖尊，誠敬真實深妙正法，誠敬律儀和悅淨眾）。…"
     },
     {
-      "matched": "法要",
-      "standard": "法要",
-      "occurrences": 2,
-      "domain": "教理",
-      "subdomain": "基礎教義",
-      "is_standard": true,
-      "variants_of_standard": [],
-      "vocab_note": "",
-      "source": "v3_draft",
-      "in_heading": false,
-      "_heading_hits": 0,
-      "matched_via": [
-        "法要"
-      ],
-      "sample_context": "…春，作於普陀）  ## 一　緒言  皈佛！皈佛法！皈佛法僧！  論曰：今當略說佛法要義，引發信心，導歸覺海。  問曰：佛法要義如何？答曰：佛法二字亦不可得，竟無一義…"
-    },
-    {
       "matched": "諸有",
       "standard": "諸有",
       "occurrences": 2,
@@ -1517,6 +1527,23 @@
         "有為"
       ],
       "sample_context": "…界梵界無形類、若此處彼處無量處、若前際後際無住際：舉要言之，一切皆是生住異滅——有為法。有為法故無常，無常故危迫不安穩，不安穩故是苦，苦故繫縛牽引流轉不自在，不自在…"
+    },
+    {
+      "matched": "無常",
+      "standard": "無常",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無常"
+      ],
+      "sample_context": "…此處彼處無量處、若前際後際無住際：舉要言之，一切皆是生住異滅——有為法。有為法故無常，無常故危迫不安穩，不安穩故是苦，苦故繫縛牽引流轉不自在，不自在故無我，無我故空…"
     },
     {
       "matched": "如實",
@@ -2037,6 +2064,23 @@
       "sample_context": "…如故也。然依五位三關言之，其初悟入即是徹初關及正中偏位，猶教下初入歡喜地，此即開發菩提心也。宗下先參後學，既悟則可得論修學：偏中正位猶初位至七地，修戒修定修道品慧修…"
     },
     {
+      "matched": "空無",
+      "standard": "空無",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "中觀學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "空無"
+      ],
+      "sample_context": "…既悟則可得論修學：偏中正位猶初位至七地，修戒修定修道品慧修世俗慧修因緣慧，而一以空無相慧為宗也。正中來位則八地，從第一義空轉身而大用現前也；此即開顯菩提心而成大慈悲…"
+    },
+    {
       "matched": "正法",
       "standard": "正法",
       "occurrences": 2,
@@ -2411,23 +2455,6 @@
       "sample_context": "…重其言者，猶不直粱惠王「何以利吾國」之國家主義，祗曰「有仁義而已矣」，況釋迦清淨正教哉！故住持佛教之苾芻，不應心縈國家社會，效流俗耑耑分別乎私德公德，亦普教人人崇修…"
     },
     {
-      "matched": "法施",
-      "standard": "法施",
-      "occurrences": 2,
-      "domain": "行持",
-      "subdomain": "菩薩行",
-      "is_standard": true,
-      "variants_of_standard": [],
-      "vocab_note": "",
-      "source": "v3_draft",
-      "in_heading": false,
-      "_heading_hits": 0,
-      "matched_via": [
-        "法施"
-      ],
-      "sample_context": "…，而集幽谷者則當寶之為吾谷明也。  理雖如是，但今震旦沙門，有未可自安於此者。佛法施行一切國土，貴適乎時而當乎機，隨順差別必觀因緣。就吾國言，中國今為宇內貧弱危困之…"
-    },
-    {
       "matched": "國土",
       "standard": "國土",
       "occurrences": 2,
@@ -2459,7 +2486,7 @@
       "matched_via": [
         "佛乘"
       ],
-      "sample_context": "…，咸歸自性平等覺海。  （附註）本論為普陀關中最早之作，四年秋季即印行流通。亦名佛乘導言或佛學導言，為佛乘宗要論所本。              "
+      "sample_context": "…，咸歸自性平等覺海。  （附註）本論為普陀關中最早之作，四年秋季即印行流通。亦名佛乘導言或佛學導言，為佛乘宗要論所本。               "
     },
     {
       "matched": "有法",
@@ -2562,6 +2589,25 @@
         "能所"
       ],
       "sample_context": "…（識緣名色）；緣於五蘊執取我我所故，則有能見所見乃至能知所知（名色緣六入也）；緣能所知見故，有根塵識三和合轉（六入緣觸）；緣三和合則有順違而生苦樂憂喜（觸緣受也）；…"
+    },
+    {
+      "matched": "根塵識",
+      "standard": "根塵",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": false,
+      "variants_of_standard": [
+        "根塵識"
+      ],
+      "vocab_note": "六根與六塵，十二處之簡稱",
+      "source": "gap_2026-06-25",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "根塵識"
+      ],
+      "sample_context": "…緣於五蘊執取我我所故，則有能見所見乃至能知所知（名色緣六入也）；緣能所知見故，有根塵識三和合轉（六入緣觸）；緣三和合則有順違而生苦樂憂喜（觸緣受也）；故六入識心趨六…"
     },
     {
       "matched": "生苦",
@@ -3502,7 +3548,9 @@
       "domain": "教理",
       "subdomain": "唯識學",
       "is_standard": true,
-      "variants_of_standard": [],
+      "variants_of_standard": [
+        "唯心論"
+      ],
       "vocab_note": "",
       "source": "v3_draft",
       "in_heading": false,
@@ -4615,6 +4663,23 @@
       "sample_context": "…食人壑鄰之事，唯善無惡不違正義，救存援溺當賦同舟。是故沙門既悟我我所空，尤當持諸幻有乃至血肉骨髓，作法施財施無畏施，供養國家，利濟社會。奮大勇猛，運常精進，國群有益…"
     },
     {
+      "matched": "法施",
+      "standard": "法施",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "菩薩行",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "法施"
+      ],
+      "sample_context": "…惡不違正義，救存援溺當賦同舟。是故沙門既悟我我所空，尤當持諸幻有乃至血肉骨髓，作法施財施無畏施，供養國家，利濟社會。奮大勇猛，運常精進，國群有益罔不趨興，先之勞之，…"
+    },
+    {
       "matched": "供養",
       "standard": "供養",
       "occurrences": 1,
@@ -4910,12 +4975,12 @@
       "matched_via": [
         "宗要"
       ],
-      "sample_context": "…附註）本論為普陀關中最早之作，四年秋季即印行流通。亦名佛乘導言或佛學導言，為佛乘宗要論所本。              "
+      "sample_context": "…附註）本論為普陀關中最早之作，四年秋季即印行流通。亦名佛乘導言或佛學導言，為佛乘宗要論所本。               "
     }
   ],
   "domain_summary": {
     "domains": {
-      "教理": 203,
+      "教理": 206,
       "行持": 49,
       "制度": 12,
       "历史": 11,
@@ -4923,20 +4988,20 @@
       "义理维度": 3
     },
     "subdomains": {
-      "基礎教義": 141,
+      "基礎教義": 142,
       "修行次第": 27,
       "唯識學": 16,
-      "大乘通義": 13,
+      "大乘通義": 14,
       "僧制": 8,
       "菩薩行": 8,
       "人物": 8,
       "宗派": 6,
       "戒律行持": 6,
+      "佛法體系": 5,
       "中觀學": 5,
       "禪觀": 5,
       "論典": 4,
       "如來藏思想": 4,
-      "佛法體系": 4,
       "經典": 4,
       "義理體系": 3,
       "判教框架": 3,
