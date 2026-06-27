@@ -21,29 +21,26 @@ TEI_NS = 'http://www.tei-c.org/ns/1.0'
 from _utils import chinese_to_int, normalize_byline, split_month_season, build_suffix
 
 
-def extract_article_byline(xml_path, byte_start, byte_end):
-    """Extract byline from the head area of an article using byte range.
+def extract_article_byline(raw, byte_start, byte_end):
+    """Extract byline from the head area of an article using a byte range.
 
-    Reads up to 5000 bytes from byte_start, searches for <byline> and
-    <note> elements containing 見海刊.
+    Operates on the already-read `raw` buffer (bytes) so the file is not
+    re-opened per article. Reads up to 5000 bytes from byte_start.
     """
-    with open(xml_path, 'rb') as f:
-        f.seek(byte_start)
-        max_read = min(5000, byte_end - byte_start)
-        chunk = f.read(max_read)
+    chunk = raw[byte_start:byte_start + min(5000, byte_end - byte_start)]
     text = chunk.decode('utf-8', errors='replace')
 
     # Primary: <byline> element
     byline_m = re.findall(r'<byline[^>]*>(.*?)</byline>', text, re.DOTALL)
     if byline_m:
-        raw = re.sub(r'<[^>]+>', '', byline_m[0]).strip()
-        return normalize_byline(raw)
+        raw_byline = re.sub(r'<[^>]+>', '', byline_m[0]).strip()
+        return normalize_byline(raw_byline)
 
     return ''
 
 
-def scan_byte_offsets(xml_path):
-    """Scan raw file to find byte positions of each article's inner cb:div.
+def scan_byte_offsets(raw):
+    """Scan a raw file buffer to find byte positions of each article's inner cb:div.
 
     Each article lives in an inner <cb:div> that directly contains a
     level-2 <cb:mulu>. We locate the mulu tag, then search backward for
@@ -51,20 +48,26 @@ def scan_byte_offsets(xml_path):
 
     Returns list of {byte_start, byte_end} per article, in file order.
     """
-    raw = Path(xml_path).read_bytes()
-
     # Find all <cb:mulu level="2" positions
     mulu_positions = []
     for m in re.finditer(rb'<cb:mulu[^>]*level="2"[^>]*>', raw):
         mulu_positions.append(m.start())
 
-    # For each mulu, find the parent <cb:div opening
+    # For each mulu, find the parent <cb:div opening.
+    # Search backward in a generous window; widen if not found so a long
+    # gap between <cb:div ...> and its <cb:mulu level="2"> can't silently
+    # degrade div_start to the mulu position itself (pitfall #2).
     div_starts = []
     for pos in mulu_positions:
-        # Search backward up to 200 bytes for <cb:div
-        search_start = max(0, pos - 200)
-        before = raw[search_start:pos]
-        last_div = before.rfind(b'<cb:div')
+        window = 2000
+        last_div = -1
+        while True:
+            search_start = max(0, pos - window)
+            before = raw[search_start:pos]
+            last_div = before.rfind(b'<cb:div')
+            if last_div != -1 or search_start == 0:
+                break
+            window *= 2
         div_start = search_start + last_div if last_div != -1 else pos
         div_starts.append(div_start)
 
@@ -139,11 +142,24 @@ def extract_catalog(xml_paths):
             'lb_count': len(tei_lbs),
         }
 
+        # Read the file once; reuse the buffer for byte scan + byline (pitfall #10)
+        raw = Path(xml_path).read_bytes()
+
         # Scan byte offsets for this file
-        byte_ranges = scan_byte_offsets(xml_path)
+        byte_ranges = scan_byte_offsets(raw)
 
         # Parse XML mulu entries
         mulu_elems = root.findall(f'.//{{{CBETA_NS}}}mulu')
+
+        # Alignment check: regex-located byte ranges must match the number of
+        # level-2 mulu entries ET parses, or byte_ranges[article_count] would
+        # IndexError / silently mis-offset every following article (pitfall #2).
+        level2_count = sum(1 for m in mulu_elems if int(m.get('level', '0')) == 2)
+        if level2_count != len(byte_ranges):
+            raise RuntimeError(
+                f'{cbeta_id}.xml: level-2 mulu 数 ({level2_count}) 与字节扫描定位的'
+                f'文章数 ({len(byte_ranges)}) 不一致 — 两套解析已漂移，无法安全对齐。'
+            )
 
         article_count = 0  # per-file article index for byte ranges
         for m in mulu_elems:
@@ -156,7 +172,7 @@ def extract_catalog(xml_paths):
                 current_section = text
             elif level == 2:
                 br = byte_ranges[article_count]
-                byline = extract_article_byline(xml_path, br['byte_start'], br['byte_end'])
+                byline = extract_article_byline(raw, br['byte_start'], br['byte_end'])
                 entries.append({
                     '子目': current_section,
                     '篇名': text,
@@ -284,6 +300,8 @@ def main():
     if args.prefix is None:
         basename = out_dir.name
         args.prefix = f'_{basename}_編目錄'
+    else:
+        basename = out_dir.name
 
     md_path = out_dir / f'{args.prefix}.md'
     json_path = out_dir / f'{args.prefix}.json'
@@ -305,7 +323,10 @@ def main():
     print(f'   {len(entries)} 篇文章, {len(set(e["子目"] for e in entries))} 個子目')
     for fm in file_map:
         print(f'   📄 {fm["file"]}: tei:lb {fm["lb_start"]} → {fm["lb_end"]} ({fm["lb_count"]} 行)')
-    print(f'   📏 byte offsets: 第1篇 {entries[0]["byte_start"]} → 末篇 {entries[-1]["byte_end"]}')
+    if entries:
+        print(f'   📏 byte offsets: 第1篇 {entries[0]["byte_start"]} → 末篇 {entries[-1]["byte_end"]}')
+    else:
+        print('   ⚠️  未找到任何 level-2 篇目（編目錄為空）')
 
 
 if __name__ == '__main__':

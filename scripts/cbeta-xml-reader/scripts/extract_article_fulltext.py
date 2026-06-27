@@ -20,7 +20,6 @@ Usage:
 import argparse
 import json
 import re
-import hashlib
 import xml.etree.ElementTree as ET
 from pathlib import Path
 import os
@@ -28,7 +27,8 @@ import os
 CBETA_NS = 'http://www.cbeta.org/ns/1.0'
 TEI_NS = 'http://www.tei-c.org/ns/1.0'
 
-from _utils import chinese_to_int, normalize_byline, split_month_season, build_suffix
+from _utils import (chinese_to_int, normalize_byline, split_month_season,
+                    build_suffix, parse_byline_fields)
 
 # Workspace-relative figures base directory; relative path computed dynamically in main()
 FIGURES_BASE_DIR = '_research/figures/TX'
@@ -90,20 +90,6 @@ def normalize_heading(heading):
         heading
     )
     return heading
-
-def make_anchor_id(heading_text):
-    """Generate stable, Obsidian-compatible anchor ID from heading text via MD5 hash.
-
-    Uses {#h-xxxxxx} custom anchor syntax that Obsidian natively supports.
-    This bypasses auto-generation issues with fullwidth spaces (U+3000).
-    """
-    import hashlib
-    # Clean: remove U+3000 and non-CJK/non-alnum for consistent hashing
-    clean = heading_text.replace('\u3000', '')
-    clean = ''.join(ch for ch in clean
-                    if _is_cjk(ch) or (ch.isascii() and (ch.isalpha() or ch.isdigit())))
-    hash_hex = hashlib.md5(clean.encode('utf-8')).hexdigest()[:6]
-    return f'h-{hash_hex}'
 # ── XML helpers ───────────────────────────────────────────────────────
 
 def parse_article_chunk(xml_path, byte_start, byte_end):
@@ -120,11 +106,15 @@ def parse_article_chunk(xml_path, byte_start, byte_end):
 
 def get_heading_text(div):
     """Return (heading_text, note_anchor_id_or_None)."""
-    head = div.find(f"{{{TEI_NS}}}head") or div.find("head")
+    head = div.find(f"{{{TEI_NS}}}head")
+    if head is None:
+        head = div.find("head")
     note_anchor = None
     if head is not None:
         # Check for nkr_note_orig anchor inside head
-        anchor = head.find(f"{{{TEI_NS}}}anchor") or head.find("anchor")
+        anchor = head.find(f"{{{TEI_NS}}}anchor")
+        if anchor is None:
+            anchor = head.find("anchor")
         if anchor is not None:
             aid = anchor.get("{http://www.w3.org/XML/1998/namespace}id") or anchor.get("xml:id", "")
             if aid.startswith("nkr_note_orig_"):
@@ -176,7 +166,7 @@ def should_skip_div(mulu_text):
             return True
     return False
 
-def render_paragraph(p_elem, notes_map=None, heading_anchor=None, note_backrefs=None):
+def render_paragraph(p_elem, notes_map=None):
     """Render <p> to text, notes → （...）, lb/pb discarded, note anchors → [N]."""
     parts = []
     is_pre = p_elem.get(f'{{{CBETA_NS}}}type') == 'pre'
@@ -242,7 +232,7 @@ def render_paragraph(p_elem, notes_map=None, heading_anchor=None, note_backrefs=
 def _is_tei_tag(tag, name):
     return tag == f'{{{TEI_NS}}}{name}' or tag == name
 
-def extract_paragraphs(div, notes_map=None, heading_anchor=None, note_backrefs=None):
+def extract_paragraphs(div, notes_map=None):
     out = []
     for child in div:
         local_tag = child.tag.split('}')[-1] if '}' in child.tag else child.tag
@@ -271,7 +261,9 @@ def extract_paragraphs(div, notes_map=None, heading_anchor=None, note_backrefs=N
                     aid = anchor_elem.get("{http://www.w3.org/XML/1998/namespace}id") or anchor_elem.get("xml:id", "")
                     if aid and aid in notes_map:
                         own_text += f'[{notes_map[aid]}]'
-            inline_note = child.find(f'{{{TEI_NS}}}note') or child.find('note')
+            inline_note = child.find(f'{{{TEI_NS}}}note')
+            if inline_note is None:
+                inline_note = child.find('note')
             if inline_note is not None and inline_note.get('place') == 'inline':
                 nt = ''.join(inline_note.itertext())
                 nt = ''.join(nt.split())  # compress same as own_text
@@ -288,7 +280,7 @@ def extract_paragraphs(div, notes_map=None, heading_anchor=None, note_backrefs=N
             elif own_text:
                 out.append(own_text)
         elif _is_tei_tag(child.tag, 'p'):
-            text = render_paragraph(child, notes_map, heading_anchor, note_backrefs)
+            text = render_paragraph(child, notes_map)
             if text.strip():
                 out.append(text)
     return out
@@ -312,45 +304,67 @@ def normalize_blank_lines(lines):
 
 # ── Back-note extraction ─────────────────────────────────────────────
 
+# Per-file cache of {anchor_id: (note_n, raw_body)} parsed from <back>.
+# Keyed by absolute file path. The full file is read + regex-scanned only
+# once per file instead of once per article (batch mode previously paid
+# O(N × file size) re-reading the same ~900KB file for every article).
+_BACK_NOTE_CACHE = {}
+
+def _get_back_note_map(full_xml_path):
+    """Return {anchor_id: (note_n, raw_body)} for a file's <back> notes.
+
+    Reads the whole file and scans <back> exactly once per file, caching
+    the result. <back> is unique per CBETA TX file, so the cache is safe.
+    """
+    key = os.path.abspath(str(full_xml_path))
+    cached = _BACK_NOTE_CACHE.get(key)
+    if cached is not None:
+        return cached
+
+    with open(full_xml_path, 'r', encoding='utf-8') as f:
+        full_text = f.read()
+
+    note_map = {}
+    back_match = re.search(r'<back>.*?</back>', full_text, re.DOTALL)
+    if back_match:
+        note_pattern = re.compile(
+            r'<note n="(\d+)"[^>]*target="#(nkr_note_orig_\d+)"[^>]*>(.*?)</note>',
+            re.DOTALL
+        )
+        for m in note_pattern.finditer(back_match.group()):
+            note_map[m.group(2)] = (int(m.group(1)), m.group(3))
+
+    _BACK_NOTE_CACHE[key] = note_map
+    return note_map
+
+
 def extract_article_notes(full_xml_path, article_byte_start, article_byte_end):
     """Find <note> elements in <back> that target anchors inside the article.
 
-    Returns list of (note_n, anchor_id, note_text) sorted by anchor position.
+    Returns (notes, anchor_ids) where notes is a list of (label, body)
+    matching anchor order in the article.
     """
-    import re as _re
     with open(full_xml_path, 'rb') as f:
         f.seek(article_byte_start)
         article_chunk = f.read(article_byte_end - article_byte_start).decode('utf-8', errors='replace')
 
     # Collect all nkr_note_orig_* anchor IDs from the article, in order
-    anchor_ids = _re.findall(r'anchor xml:id="(nkr_note_orig_\d+)"', article_chunk)
+    anchor_ids = re.findall(r'anchor xml:id="(nkr_note_orig_\d+)"', article_chunk)
     if not anchor_ids:
         return [], []
 
-    # Read the <back> section from the full file
-    with open(full_xml_path, 'r', encoding='utf-8') as f:
-        full_text = f.read()
-
-    back_match = _re.search(r'<back>.*?</back>', full_text, _re.DOTALL)
-    if not back_match:
+    # Look up the per-file <back> note map (cached across articles)
+    note_map = _get_back_note_map(full_xml_path)
+    if not note_map:
         return [], []
-
-    back_text = back_match.group()
-    notes = []
-    note_pattern = _re.compile(
-        r'<note n="(\d+)"[^>]*target="#(nkr_note_orig_\d+)"[^>]*>(.*?)</note>',
-        _re.DOTALL
-    )
-    note_map = {}
-    for m in note_pattern.finditer(back_text):
-        note_map[m.group(2)] = (int(m.group(1)), m.group(3))
 
     # Build ordered list matching anchor order in article
     CHINESE_NUMERALS = ['一', '二', '三', '四', '五', '六', '七', '八', '九', '十']
+    notes = []
     for idx, aid in enumerate(anchor_ids):
         if aid in note_map:
             note_n, raw_body = note_map[aid]
-            body = _re.sub(r'<[^>]+>', '', raw_body).strip()
+            body = re.sub(r'<[^>]+>', '', raw_body).strip()
             num_label = CHINESE_NUMERALS[idx] if idx < len(CHINESE_NUMERALS) else str(idx + 1)
             notes.append((f'注{num_label}', body))
 
@@ -376,7 +390,9 @@ def find_appendix_info(article_div):
         if not mulu_text.startswith('附'):
             continue
         # Found an appendix div — prefer <head> text, fall back to mulu
-        head = child.find(f'{{{TEI_NS}}}head') or child.find('head')
+        head = child.find(f'{{{TEI_NS}}}head')
+        if head is None:
+            head = child.find('head')
         title = ''.join(head.itertext()).strip() if head is not None else mulu_text
         # Replace full-width space (U+3000) between 附 and title with ：
         title = re.sub(r"^附[：\u3000]*(?=[一-鿿])", "附：", title)
@@ -443,7 +459,7 @@ def _normalize_appendix_date_location(raw):
 
 # ── Tree walker ───────────────────────────────────────────────────────
 
-def walk_div_tree(div, toc_entries, body_lines, notes_map=None, note_backrefs=None, level_offset=0):
+def walk_div_tree(div, toc_entries, body_lines, notes_map=None, level_offset=0):
     mulu_text = get_mulu_text(div)
     mulu_lv = get_mulu_level(div)
     heading, note_anchor = get_heading_text(div)
@@ -453,7 +469,7 @@ def walk_div_tree(div, toc_entries, body_lines, notes_map=None, note_backrefs=No
 
     if not heading:
         div_type = div.get('type', '')
-        for para in extract_paragraphs(div, notes_map, None, note_backrefs):
+        for para in extract_paragraphs(div, notes_map):
             if div_type == 'orig':
                 body_lines.append(f'> **{para}**')
             else:
@@ -461,7 +477,7 @@ def walk_div_tree(div, toc_entries, body_lines, notes_map=None, note_backrefs=No
             body_lines.append('')
         for child in div:
             if child.tag == f'{{{CBETA_NS}}}div':
-                walk_div_tree(child, toc_entries, body_lines, notes_map, note_backrefs, level_offset)
+                walk_div_tree(child, toc_entries, body_lines, notes_map, level_offset)
         return
 
     if should_skip_div(mulu_text):
@@ -470,7 +486,7 @@ def walk_div_tree(div, toc_entries, body_lines, notes_map=None, note_backrefs=No
     if mulu_lv == 1:
         for child in div:
             if child.tag == f'{{{CBETA_NS}}}div':
-                walk_div_tree(child, toc_entries, body_lines, notes_map, note_backrefs, level_offset)
+                walk_div_tree(child, toc_entries, body_lines, notes_map, level_offset)
         return
 
     # No anchors — pure plain text output
@@ -511,7 +527,7 @@ def walk_div_tree(div, toc_entries, body_lines, notes_map=None, note_backrefs=No
     else:
         body_lines.append('')
    # Body paragraphs — flush-left, no indent
-    for para in extract_paragraphs(div, notes_map, None, note_backrefs):
+    for para in extract_paragraphs(div, notes_map):
         body_lines.append(para)
         body_lines.append('')
 
@@ -522,7 +538,7 @@ def walk_div_tree(div, toc_entries, body_lines, notes_map=None, note_backrefs=No
     # Recurse
     for child in div:
         if child.tag == f'{{{CBETA_NS}}}div':
-            walk_div_tree(child, toc_entries, body_lines, notes_map, note_backrefs, recurse_offset)
+            walk_div_tree(child, toc_entries, body_lines, notes_map, recurse_offset)
 
 
 def extract_publication_notes(div):
@@ -535,7 +551,9 @@ def extract_publication_notes(div):
     for child in div:
         local_tag = child.tag.split('}')[-1] if '}' in child.tag else child.tag
         if local_tag == 'byline':
-            inline_note = child.find(f'{{{TEI_NS}}}note') or child.find('note')
+            inline_note = child.find(f'{{{TEI_NS}}}note')
+            if inline_note is None:
+                inline_note = child.find('note')
             if inline_note is not None and inline_note.get('place') == 'inline':
                 nt = ''.join(inline_note.itertext()).strip()
                 nt = ''.join(nt.split())  # compress whitespace
@@ -774,19 +792,17 @@ def extract_article(xml_path, byte_start, byte_end, toc_only=False):
     toc_entries = []
     body_lines = []
 
-    note_backrefs = {}
-
     has_child_div = False
     for child in article_div:
         if child.tag == f'{{{CBETA_NS}}}div':
             has_child_div = True
-            walk_div_tree(child, toc_entries, body_lines, notes_map, note_backrefs, level_offset=-1)
+            walk_div_tree(child, toc_entries, body_lines, notes_map, level_offset=-1)
 
     # Fallback: articles with no nested cb:div (e.g. charts, simple single-block articles)
     # have <p> / <figure> / <byline> as direct children of the article div
     if not has_child_div:
         body_lines.append('')
-        for para in extract_paragraphs(article_div, notes_map, None, note_backrefs):
+        for para in extract_paragraphs(article_div, notes_map):
             body_lines.append(para)
             body_lines.append('')
 
@@ -950,7 +966,7 @@ def regenerate_catalog_md(json_path):
 
     idx = 1
     for zm in zi_mu_order:
-        arts = zi_mu_map[zm]
+        arts = zi_mu_map.get(zm, [])
         md_lines.append(f'    - {idx}. {zm}')
         idx += 1
         for art in arts:
@@ -972,7 +988,7 @@ def regenerate_catalog_md(json_path):
     ])
     total = 0
     for zm in zi_mu_order:
-        count = len(zi_mu_map[zm])
+        count = len(zi_mu_map.get(zm, []))
         total += count
         md_lines.append(f'| {zm} | {count} |')
     md_lines.append(f'| **合計** | **{total}** |')
@@ -1042,77 +1058,6 @@ def update_catalog_with_word_count(json_path, article_name, word_count, skip_md=
 
 
 
-def parse_byline_fields(byline):
-    """Parse 題注 into structured fields: date (YYYY-MM), location, context.
-
-    Input: 題注 like '（1930 年 1 月，在閩南佛學院編述）' or '（1935 年 11 月，在中國佛學會鎮江分會講）'
-    Returns: dict with date, location, context
-    """
-    result = {'date': '', 'location': '', 'context': ''}
-    if not byline:
-        return result
-
-    # Strip outer （）
-    inner = byline.strip('（ ）()')
-
-    # Extract year: YYYY 年
-    m_yr = re.match(r'(\d+)\s*年', inner)
-    if m_yr:
-        year = m_yr.group(1)
-        rest = inner[m_yr.end():].strip()
-        # Extract month
-        m_mon = re.match(r'(\d+)\s*月', rest)
-        if m_mon:
-            result['date'] = f"{year}-{int(m_mon.group(1)):02d}"
-            rest = rest[m_mon.end():].strip()
-        else:
-            # Check for season
-            season_map = {'春': '03', '夏': '06', '秋': '09', '冬': '12'}
-            if rest and rest[0] in season_map:
-                result['date'] = f"{year}-{season_map[rest[0]]}"
-                rest = rest[1:].strip()
-            else:
-                result['date'] = f"{year}-01"
-
-        # Strip leading ，or comma
-        rest = re.sub(r'^[，,]\s*', '', rest)
-    else:
-        rest = inner
-
-    # Extract location: 在… / 於… / 作於…
-    m_loc = re.match(r'在(.+?)([編講作記述說]+)$', rest)
-    if m_loc:
-        result['location'] = m_loc.group(1).strip()
-        result['context'] = m_loc.group(2).strip()
-    elif rest:
-        m_loc2 = re.match(r'作於(.+)', rest)
-        if m_loc2:
-            result['location'] = m_loc2.group(1).strip()
-            result['context'] = '作'
-        elif rest.endswith('講'):
-            result['context'] = '講'
-            result['location'] = rest[:-1].strip()
-        elif rest.endswith('作'):
-            result['context'] = '作'
-            result['location'] = rest[:-1].strip()
-        elif rest.endswith('編述'):
-            result['context'] = '編述'
-            result['location'] = rest[:-2].strip()
-        elif rest.endswith('編'):
-            result['context'] = '編'
-            result['location'] = rest[:-1].strip()
-        elif rest.endswith('記'):
-            result['context'] = '記'
-            result['location'] = rest[:-1].strip()
-        elif rest.endswith('說'):
-            result['context'] = '說'
-            result['location'] = rest[:-1].strip()
-        else:
-            result['location'] = rest
-
-    return result
-
-
 def build_frontmatter(entry, book_name, book_number, publication_notes=None):
     """Build YAML frontmatter string from catalog entry.
 
@@ -1135,10 +1080,8 @@ def build_frontmatter(entry, book_name, book_number, publication_notes=None):
     yaml_lines.append(f"sequence: {entry.get('編號', 0)}")
     wc = entry.get('字数') or 0
     yaml_lines.append(f"word_count: {wc // 1000}")
-    if fields['date'] and '-' not in fields['date']:
-        yaml_lines.append(f'date: "{fields["date"]}"')
-    else:
-        yaml_lines.append(f"date: {fields['date']}")
+    # parse_byline_fields always yields YYYY-MM (or ''), so no bare-year quoting needed
+    yaml_lines.append(f"date: {fields['date']}")
     if publication_notes:
         def _yq(s):
             if '\n' in s or '"' in s or ':' in s and s[0] != ' ':
@@ -1217,10 +1160,10 @@ def main():
         # Build XML path cache (walk once)
         data_dir = Path(args.data_dir)
         xml_path_cache = {}
-        for root_dir, _, files in Path(data_dir).walk():
+        for root_dir, _, files in os.walk(data_dir):
             for f in files:
                 if f.endswith('.xml'):
-                    xml_path_cache[f] = root_dir / f
+                    xml_path_cache[f] = Path(root_dir) / f
 
         total = len(articles)
         success = 0
@@ -1354,10 +1297,10 @@ def main():
 
     data_dir = Path(args.data_dir)
     xml_path = None
-    for root_dir, _, files in Path(data_dir).walk():
+    for root_dir, _, files in os.walk(data_dir):
         for f in files:
             if f == xml_file:
-                xml_path = root_dir / f
+                xml_path = Path(root_dir) / f
                 break
         if xml_path:
             break
@@ -1366,7 +1309,16 @@ def main():
         print(f'❌ XML file "{xml_file}" not found under {data_dir}')
         return 1
 
-    result = extract_article(str(xml_path), byte_start, byte_end, toc_only=args.toc_only)
+    # Single-article mode: wrap extraction so a malformed byte range or a
+    # missing level-2 div surfaces a readable error instead of a raw
+    # traceback (batch mode already does this per-article; pitfall #4/#20).
+    try:
+        result = extract_article(str(xml_path), byte_start, byte_end, toc_only=args.toc_only)
+    except Exception as e:
+        article_label = args.article if args.catalog else xml_file
+        print(f'❌ 「{article_label}」提取失敗 '
+              f'(byte {byte_start}–{byte_end}): {e}')
+        return 1
     if args.toc_only:
         out_dir.mkdir(parents=True, exist_ok=True)
         article_slug = result["article_name"]
