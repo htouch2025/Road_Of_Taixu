@@ -893,7 +893,7 @@ def extract_article(xml_path, byte_start, byte_end, toc_only=False):
         cjk_count += count_chinese_chars(line)
 
 
-   # Ensure exactly 3 blank lines between TOC and body.
+    # Ensure exactly 3 blank lines between TOC and body.
     # Find ## 目錄, then locate the last TOC entry and first body line structurally.
     toc_heading_idx = None
     for j, line in enumerate(md_lines):
