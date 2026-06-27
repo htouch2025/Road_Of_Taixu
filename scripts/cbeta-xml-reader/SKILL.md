@@ -240,7 +240,7 @@ Full catalog with 四藏分类 in `references/taixu_catalog.md`.
 **⚠️ 提取後須做兩項人工複核：**（1）檢查是否有帶「（附）」前綴的 level-2 條目需合併入前一篇；（2）確認編內連續編號正確（跨子目不重置，从 1 递增至编末）。
 詳見 Known Pitfalls 第 12、13 條。
 
-使用 `scripts/extract_book_catalog.py`（路径相对于 skill 目录，即 `~/.codex/skills/cbeta-xml-reader/scripts/`），仅提取 level 1（子目类别）和 level 2（篇名）。
+使用 `scripts/extract_book_catalog.py`（路径相对于 skill 目录，即 `scripts/cbeta-xml-reader/scripts/`），仅提取 level 1（子目类别）和 level 2（篇名）。
 脚本自动为每篇文章扫描原始文件字节偏移量，构建增强 JSON（含链表 + byte_start/byte_end）。
 
 ```
@@ -265,8 +265,7 @@ python scripts/extract_book_catalog.py \
 4. 过滤掉纲要类节点（label 为「綱要」「目次」「科分」等纯结构预览条目）；如有「前言」则保留。
 5. Apply the shift rule to assign semantic labels (部/章/节/小节)。
 6. 递归构建树形结构（从 level 2 向下）。
-7. Output two files to auto-derived path: `_research/{编dir}/{子目编号}_{子目名}/{文章编号}_{篇名}_目錄樹.md` + `_目錄.json`（从 `_編目錄.json` 查子目与编号，自动填入现有文件夹框架）。See §4 below.
-7. Output two files to auto-derived path: `_research/{编dir}/{子目编号}_{子目名}/{文章编号}_{篇名}_目錄樹.md` + `_目錄.json`（从 `_編目錄.json` 查子目与编号，自动填入现有文件夹框架）。See §3 below.
+7. Output two files to auto-derived path: `_research/{编dir}/{子目编号}_{子目名}/{文章编号}_{篇名}_目錄樹.md` + `_目錄.json`（从 `_編目錄.json` 查子目与编号，自动填入现有文件夹框架）。细节见下一节「双文件输出模式」。
 
 ### 3. 双文件输出模式
 
@@ -427,7 +426,7 @@ themes:
 - `word_count` 为字数 // 1000 的整数值
 - frontmatter 与正文之间保留一个空行
 
-**⚠️ 已有文章的迁移：** 使用新增的迁移脚本 `add_frontmatter_to_existing.py`（见 §8）。
+**⚠️ 已有文章的迁移：** 使用迁移脚本 `add_frontmatter_to_existing.py`（详见下文「文章元数据迁移脚本」一节）。
 
 ## Known Pitfalls
 

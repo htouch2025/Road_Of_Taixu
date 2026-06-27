@@ -132,3 +132,65 @@ def normalize_byline(raw):
 
     # Fallback: just wrap
     return f'（{raw}）'
+
+
+def parse_byline_fields(byline):
+    """Parse 題注 into structured fields: date (YYYY-MM), location, context.
+
+    Shared by extract_article_fulltext.py and add_frontmatter_to_existing.py
+    so that frontmatter `date` formatting is identical across the extraction
+    pipeline and the migration tool (no month → 'YYYY-01', not bare 'YYYY').
+
+    Input: 題注 like '（1930 年 1 月，在閩南佛學院編述）'.
+    Returns: dict with date, location, context.
+    """
+    result = {'date': '', 'location': '', 'context': ''}
+    if not byline:
+        return result
+
+    # Strip outer （）
+    inner = byline.strip('（ ）()')
+
+    # Extract year: YYYY 年
+    m_yr = re.match(r'(\d+)\s*年', inner)
+    if m_yr:
+        year = m_yr.group(1)
+        rest = inner[m_yr.end():].strip()
+        # Extract month
+        m_mon = re.match(r'(\d+)\s*月', rest)
+        if m_mon:
+            result['date'] = f"{year}-{int(m_mon.group(1)):02d}"
+            rest = rest[m_mon.end():].strip()
+        else:
+            # Check for season
+            season_map = {'春': '03', '夏': '06', '秋': '09', '冬': '12'}
+            if rest and rest[0] in season_map:
+                result['date'] = f"{year}-{season_map[rest[0]]}"
+                rest = rest[1:].strip()
+            else:
+                result['date'] = f"{year}-01"
+        # Strip leading ，or comma
+        rest = re.sub(r'^[，,]\s*', '', rest)
+    else:
+        rest = inner
+
+    # Extract location: 在… / 於… / 作於…
+    m_loc = re.match(r'在(.+?)([編講作記述說]+)$', rest)
+    if m_loc:
+        result['location'] = m_loc.group(1).strip()
+        result['context'] = m_loc.group(2).strip()
+    elif rest:
+        m_loc2 = re.match(r'作於(.+)', rest)
+        if m_loc2:
+            result['location'] = m_loc2.group(1).strip()
+            result['context'] = '作'
+        else:
+            for suffix in ['編述', '編', '講', '作', '記', '說']:
+                if rest.endswith(suffix):
+                    result['context'] = suffix
+                    result['location'] = rest[:-len(suffix)].strip()
+                    break
+            else:
+                result['location'] = rest
+
+    return result
