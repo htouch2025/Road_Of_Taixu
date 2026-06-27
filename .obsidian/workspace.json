@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tmp/abstract/05_佛陀学纲_内容摘要.md",
-                "mode": "source",
+                "file": "scripts/keyword-extractor/requirements.md",
+                "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "05_佛陀学纲_内容摘要"
+              "title": "requirements"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_research/01_佛法總學/_01_佛法總學_仪表盘.md",
+                "file": "scripts/keyword-extractor/requirements.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "_01_佛法總學_仪表盘 的反向链接列表"
+              "title": "requirements 的反向链接列表"
             }
           },
           {
@@ -175,7 +175,8 @@
               "title": "Claudian"
             }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -196,8 +197,17 @@
   },
   "active": "1f2eb703c640b975",
   "lastOpenFiles": [
-    "tmp/abstract/Opus_优化提示词.md",
+    "tmp/abstract/Gemini_优化提示词.md",
+    "tmp/Gemini_优化提示词.md",
+    "scripts/keyword-extractor/SKILL.md",
+    "scripts/keyword-extractor/requirements.md",
+    "scripts/keyword-extractor/references/_keyword_method.md",
+    "_research/01_佛法總學/_01_佛法總學_仪表盘.md",
+    "scripts/keyword-extractor/candidates/_research_01_佛法總學_02_判攝_18_萬有皆因緣所生_candidates.json",
+    "scripts/keyword-extractor/candidates/_research_01_佛法總學_02_判攝_17_諸法眾緣生唯識現_candidates.json",
+    "scripts/keyword-extractor/candidates/_research_01_佛法總學_02_判攝_16_性釋_candidates.json",
     "tmp/abstract/05_佛陀学纲_内容摘要.md",
+    "tmp/abstract/Opus_优化提示词.md",
     "_research/01_佛法總學/01_概論/Opus_优化提示词.md",
     "_research/01_佛法總學/01_概論/02_佛理要略.md",
     "_research/01_佛法總學/01_概論/05_佛陀學綱.md",
@@ -216,22 +226,13 @@
     "tmp/abstract/Gemini.md",
     "_research/01_佛法總學/_01_佛法總學_編目錄.md",
     "_research/04_大乘通學/_04_大乘通學_仪表盘.md",
-    "tmp/abstract/DeepSeek.md",
-    "tmp/abstract/ChatGPT.md",
     "tmp/abstract",
     "未命名",
-    "scripts/keyword-extractor/prompts/_keyword_prompt_v2.md",
     "tmp",
-    "scripts/keyword-extractor/SKILL.md",
-    "_research/03_三乘共學/_03_三乘共學_仪表盘.md",
-    "_research/02_五乘共學/_02_五乘共學_仪表盘.md",
     "scripts/keyword-extractor/candidates/_research_01_佛法總學_02_判攝_15_律禪密淨四行論_candidates.json",
     "scripts/keyword-extractor/candidates/_research_01_佛法總學_02_判攝_14_佛法悟入漸次_candidates.json",
     "scripts/keyword-extractor/candidates/_research_01_佛法總學_02_判攝_13_佛法一味論之十宗片面觀_candidates.json",
     "scripts/keyword-extractor/candidates/_research_01_佛法總學_02_判攝_12_佛法大系_candidates.json",
-    "scripts/keyword-extractor/candidates/_research_01_佛法總學_02_判攝_11_佛法之分宗判教_candidates.json",
-    "scripts/keyword-extractor/candidates/_research_01_佛法總學_02_判攝_10_佛學大系_candidates.json",
-    "scripts/keyword-extractor/candidates/_research_01_佛法總學_01_概論_05_佛陀學綱_candidates.json",
     "_research/太虚大师中文论文/mineru_output/法尊法师研究-方兰/auto/images/ffb4d0bff17f05ba7a6159ada4c3b91158ff11814830b71a2213b81251410266.jpg",
     "_research/太虚大师中文论文/mineru_output/法尊法师研究-方兰/auto/images/cab27ab50147a331cf1a3c09459de54aba975ce99e028ef3bbdef8986f1d02c5.jpg",
     "_research/太虚大师中文论文/mineru_output/法尊法师研究-方兰/auto/images/c0d5d7fd65cd9dee4ed075c494b580eff9f84958865733f49bfc616a4758101c.jpg",

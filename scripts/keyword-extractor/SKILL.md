@@ -3,7 +3,7 @@ name: keyword-extractor
 description: "太虚大师全书要义提取流水线。Use when Codex needs to: (1) extract concepts from a single article (Phase A programmatic matching + Phase B LLM annotation), (2) apply four-dimensional annotations (domains, functions, bearings, concepts) to article frontmatter, (3) update or query the standard vocabulary, (4) record and review gap terms for vocabulary expansion. This skill consolidates all concept extraction work — method, scripts, vocabulary, prompts, logs, candidates, and documentation — into a single self-contained folder."
 metadata:
   version: "0.2.0"
-  last_updated: "2026-06-24"
+  last_updated: "2026-06-27"
   status: active
   task_type: open-ended
 ---
@@ -42,117 +42,7 @@ python3 scripts/extract_keywords.py \
 
 ---
 
-## 一、全程叙事：我们怎么走到今天的
-
-### 1.1 需求定义（2026-06-22）
-
-见 [requirements.md](requirements.md)。核心需求摘要：
-
-- 为全书每篇文章自动生成 `keywords` 字段，写入 YAML frontmatter
-- 关键词分两类：**文中词**（文章实际讨论的术语）+ **义理维度词**（概括性判断如 `判教`、`通論`）
-- 扁平列表，不嵌套，不做章节级
-- 双轨标注：`標準詞（原文詞）` — 标准词来自标准术语表
-- 数量对数式缩放：≤5K 字 5-8 个，5K–15K 字 8-12 个，15K–30K 字 10-15 个，30K+ 字 12-18 个
-- 先建标准术语表（阶段一），再写提取脚本（阶段二）
-
-### 1.2 标准术语表的建造（2026-06-22 至 2026-06-24）
-
-这是整个工程的地基。设计原则：术语表不从外部灌输，而是从全书实际内容中归纳生长。
-
-详见 [references/keyword_vocabulary_task.md](references/keyword_vocabulary_task.md)。
-
-#### 四个建造阶段
-
-| 阶段 | 输出 | 大小 | 方法 |
-|:--:|------|:--:|------|
-| **种子 + 全量匹配** | `keyword_vocabulary.json` (v1) | 146KB | DILA 佛学词典（丁福保、南山律學、翻譯名義大集、Soothill-Hodous）提取头术语做种子 → 在全书 1,358 篇文章中做字符串匹配 → CBETA API 查全藏频次做通用词过滤 |
-| **LLM 策展** | `keyword_vocabulary_v2_draft.json` | 146KB | 按编分批送入 LLM 审阅 → 归并异名确立标准形式 → 分配 domain/subdomain 分类 |
-| **义理维度词补充** | `keyword_vocabulary_v3_draft.json` | 194KB | 从 54 篇太虚研究论文中提取义理维度术语（判教、通論、入門、人間佛教等）→ 并入词表 |
-| **手动缺口填补 → v4** | `keyword_vocabulary_v4.json` | 284KB | 首轮验证（佛學概論、佛理要略）发现缺失 → 补入三法印、一實相印、佛學、結集、因緣生、諸法無我、向上增進心、出離流轉心、普度成佛心等 → 添加 variant 映射和标题命中加权 |
-
-#### v4 词表结构
-
-每条术语的结构：
-```json
-{
-  "standard": "唯識",
-  "variants": ["法相唯識", "瑜伽行派"],
-  "domain": "教理",
-  "subdomain": "大乘有宗",
-  "source": "batch_01,v3_draft",
-  "note": ""
-}
-```
-
-当前词表：1,391 条术语（v4.2），涵盖 8 个 domain（教理/行持/历史/制度/社会文化/义理维度/方法論/社会），73 个子域。
-
-### 1.3 提取方法的演进
-
-#### 方法 0：直接 LLM 提取（first_pass，已废弃）
-
-简单粗暴——每篇文章全文发给 LLM，LLM 直接返回关键词列表。
-
-**问题**：不同文章之间术语不一致（同一概念不同文章用了不同的词）；LLM 对术语的颗粒度判断漂移；无法区分核心讨论和顺带提及。
-
-**遗留物**：`_research/_first_pass_input.json`（2.2MB）、`_research/_batch_*.json`
-
-#### 方法 1：Phase A/B 流水线（当前基础框架）
-
-```
-Phase A (程序化)            Phase B (LLM 精判)
-┌─────────────────┐        ┌─────────────────────┐
-│ 标准术语表匹配    │  →    │ LLM 读全文 + 候选集    │
-│ → 候选 JSON      │        │ → 筛选/补充/双轨标注   │
-│ (零成本，~400条)  │        │ → 写入 frontmatter    │
-└─────────────────┘        └─────────────────────┘
-```
-
-Phase A 由 `extract_keywords.py` 完成：
-- 加载标准术语表 → 建立 variant→entry 映射
-- 按 CJK 字数排序逐条匹配文章正文
-- 去重 + 标注 domain/subdomain + 统计频次 + 标题命中加权
-- 输出候选 JSON（含 domain 分布摘要和高频术语列表）
-
-Phase B 由 Codex（LLM）完成：
-- 读取文章全文 + 候选 JSON 摘要
-- 按候选排序逐条审阅：核心讨论 → 提名；顺带提及 → 跳过；字面误中 → 跳过
-- 补充自由关键词（≤5 个/篇）
-- 双轨标注：标准词与原文一致 → 直接写；不一致 → `標準詞（原文詞）`
-
-#### 方法 2（v2，当前）：四维标注
-
-在 Phase A/B 基础上，将 Phase B 的输出从单一关键词列表扩展为四个维度。详见 [references/_keyword_method.md](references/_keyword_method.md)。
-
-| 维度 | 字段 | 数量 | 说明 |
-|------|------|:--:|------|
-| 论域 | `domains` | 1-3 | 文章所属佛学领域（如 基礎教義、唯識學、僧制） |
-| 论用 | `functions` | 1-3 | 写作意图（如 入门导引、体系建构、批判辨析） |
-| 旨归 | `bearings` | 1-3 | 终极关怀（如 解脱道、菩薩道、人间佛教） |
-| 要义 | `concepts` | 5-10 | 文章重点展开的具体术语 |
-
-**演进说明**：原始需求（[requirements.md](requirements.md) §二）规定文中词与义理维度词合并在单一字段中。v2 将义理维度词拆分为 `domains` / `functions` / `bearings` 三个独立维度，第四维回归为纯粹的要义（现称「要义」`concepts`）。这不是需求偏离，而是对「义理维度词」概念的深化——原始需求中「义理维度词」的定义（判教、通論、入門等）正好对应了 v2 的三个判断性维度。拆分后的好处：①标注更结构化，避免扁平列表里术语和判断混杂；②每个维度的值域可以独立标准化（参见 §1.4 值域标准化成果）；③未来可以按维度独立检索和统计。
-
-
-Phase B prompt 模板：[prompts/_keyword_prompt_v2.md](prompts/_keyword_prompt_v2.md)
-
-### 1.4 交叉验证（2026-06-24）
-
-详见 [references/_keyword_v2_validation_manual.md](references/_keyword_v2_validation_manual.md) 和 [references/_keyword_v2_validation_report.md](references/_keyword_v2_validation_report.md)。
-
-**验证范围**：7 篇文章 × 7 编 × 5 文体 × 5 论域（从 1.2K 超短讲演到 54K 超长制度论）。
-
-**结论**：v2 方法在通论、经解、学论、律释文体上表现优良；座谈体和超短文略有挑战但可接受；制度论超长文通过 TOC + 候选摘要方式可行。
-
-**值域标准化成果**：
-- 论用：9 个标准标签，无需合并
-- 旨归：7 个标准标签（`菩萨道` → `菩薩道` 简繁已统一）
-- 已回写至 [prompts/_keyword_prompt_v2.md](prompts/_keyword_prompt_v2.md)
-
-**缺口日志**：15 个术语表外概念已记录于 [logs/_keyword_gap_log.jsonl](logs/_keyword_gap_log.jsonl)
-
----
-
-## 二、当前方法（v2）详细流程
+## 一、当前方法（v2）详细流程
 
 ### Phase A：程序化粗筛
 
@@ -250,7 +140,7 @@ bearings:
 
 ---
 
-## 三、文件清单
+## 二、文件清单
 
 ```
 scripts/keyword-extractor/
@@ -275,26 +165,7 @@ scripts/keyword-extractor/
     ├── keyword_vocabulary_task.md              ← 术语表建造任务设计
 ```
 
-### 不在 skill 文件夹内的遗留文件
-
-这些文件保留在项目各处，不再使用但保留为历史记录：
-
-| 位置 | 文件 | 说明 |
-|------|------|------|
-| `scripts/` | `build_phaseA_output.py` 等 12 个 | 早期批量处理脚本 |
-| `_research/` | `keyword_vocabulary.json` (v1) | 历史版本 |
-| `_research/` | `keyword_vocabulary_v2_draft.json` | 历史版本 |
-| `_research/` | `keyword_vocabulary_v3_draft.json` | 历史版本 |
-| `_research/` | `_batch_*.json`, `_first_pass_*.json` | 中间批量数据 |
-| `_research/` | `_phase2_batch/`, `_phase3_batch/` | 批量处理产物 |
-| `_research/` | `keyword_vocabulary_v4_readable.md` | v4 可读版本 |
-| `_research/` | `keyword_vocabulary_status.md` | 状态跟踪 |
-| `_research/` | `keyword_vocabulary.md` | 术语表说明 |
-| `_research/` | `keyword_vocabulary_v3_draft_revision.md` | v3 修订记录 |
-
----
-
-## 四、如何更新
+## 三、如何更新
 
 ### 自动化缺口审查（推荐）
 
@@ -354,7 +225,7 @@ Codex 将自动执行 Phase A（`--article`）→ 读全文 + 候选 JSON → Ph
 - `修行次第` 在论域和论用两维度下均可能出现（属合理现象，已在 prompt 中说明）
 - `functions` 和 `bearings` 的标准标签列表集中在 [vocabulary/labels.json](vocabulary/labels.json) 中维护，`--build-prompt` 和 `--apply` 均从此文件读取，无需手动同步。
 
-## 五、缺口审查自动化设计
+## 四、缺口审查自动化设计
 
 ### 脚本入口
 
@@ -378,4 +249,4 @@ Codex 将自动执行 Phase A（`--article`）→ 读全文 + 候选 JSON → Ph
 
 ---
 
-*最后更新：2026-06-25*
+*最后更新：2026-06-27*

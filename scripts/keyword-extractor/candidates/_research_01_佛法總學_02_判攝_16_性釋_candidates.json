@@ -1,0 +1,1454 @@
+{
+  "summary": {
+    "total_candidates": 79,
+    "unique_standards": 79,
+    "single_occurrence_ratio": "44/79",
+    "high_frequency_terms": [
+      "諸法"
+    ],
+    "heading_weighted": true,
+    "heading_weight": 3
+  },
+  "article": {
+    "path": "/Users/xin/Documents/Road_Of_Taixu/_research/01_佛法總學/02_判攝/16_性釋.md",
+    "title": "性釋",
+    "cjk_chars": 1629,
+    "recommended_count": "5-8",
+    "编": "第一编 佛法總學",
+    "编_number": "1",
+    "category": "判攝"
+  },
+  "vocab_source": "/Users/xin/Documents/Road_Of_Taixu/scripts/keyword-extractor/vocabulary/keyword_vocabulary_v4.json",
+  "match_stats": {
+    "raw_hits": 84,
+    "after_dedup": 79
+  },
+  "candidates": [
+    {
+      "matched": "諸法",
+      "standard": "諸法",
+      "occurrences": 12,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "諸法"
+      ],
+      "sample_context": "…凡言性，復須遍一切法無所偏缺，此遮各有體用義相不得言性也。  持此三義，以衡法界諸法而觀世間及聖教等所言之性，今試約為述之：一者、指「諸法離言自性」（亦曰諸法離名種…"
+    },
+    {
+      "matched": "自性",
+      "standard": "自性",
+      "occurrences": 7,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "有無自性",
+        "諸法離言自性",
+        "離言自性"
+      ],
+      "vocab_note": "太虚在判攝中反覆辨析的核心概念",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "自性",
+        "諸法離言自性"
+      ],
+      "sample_context": "…也。  持此三義，以衡法界諸法而觀世間及聖教等所言之性，今試約為述之：一者、指「諸法離言自性」（亦曰諸法離名種分別之自相，亦曰勝義勝義）以為性，此即強名一真法界，又…"
+    },
+    {
+      "matched": "佛性",
+      "standard": "佛性",
+      "occurrences": 7,
+      "domain": "教理",
+      "subdomain": "如來藏思想",
+      "is_standard": true,
+      "variants_of_standard": [
+        "覺性"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "佛性",
+        "覺性"
+      ],
+      "sample_context": "…以為性，此即覺體。在莊子名靈臺，後人或名靈覺，亦名靈知；在佛法，如云一切有情皆有佛性者，即說凡屬有情皆有心靈知覺。雖其覺有分量不同，不可言無，若無覺則不可言心，亦不…"
+    },
+    {
+      "matched": "無漏",
+      "standard": "無漏",
+      "occurrences": 7,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無漏"
+      ],
+      "sample_context": "…名一切種；以種為諸現行法各各之自因，故多說為諸法所由生之本性。七者、或指親能生起無漏佛智之無漏種以為性，依此說為佛性，故說佛性三無二有。涅槃經等說一切皆有佛性，指一…"
+    },
+    {
+      "matched": "我法",
+      "standard": "我法",
+      "occurrences": 6,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "我法"
+      ],
+      "sample_context": "…名一真法界，又名非安立諦，所謂言語道斷心行處滅也。二者、或指諸法空理以為性，此即我法二空所顯之真如理，真如理與諸法不一不異。若說定一，則無為與有為應無分別，若說定異…"
+    },
+    {
+      "matched": "有情",
+      "standard": "有情",
+      "occurrences": 6,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "有情"
+      ],
+      "sample_context": "…所之自性以為性，此即覺體。在莊子名靈臺，後人或名靈覺，亦名靈知；在佛法，如云一切有情皆有佛性者，即說凡屬有情皆有心靈知覺。雖其覺有分量不同，不可言無，若無覺則不可言…"
+    },
+    {
+      "matched": "安立",
+      "standard": "安立",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "安立"
+      ],
+      "sample_context": "…自性」（亦曰諸法離名種分別之自相，亦曰勝義勝義）以為性，此即強名一真法界，又名非安立諦，所謂言語道斷心行處滅也。二者、或指諸法空理以為性，此即我法二空所顯之真如理，…"
+    },
+    {
+      "matched": "無為",
+      "standard": "無為",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無為"
+      ],
+      "sample_context": "…或指諸法空理以為性，此即我法二空所顯之真如理，真如理與諸法不一不異。若說定一，則無為與有為應無分別，若說定異，則應諸法之理性而別有一物曰真如。然即諸法本來空寂之性名…"
+    },
+    {
+      "matched": "三自性",
+      "standard": "三自性",
+      "occurrences": 5,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [
+        "遍計所執性"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "三自性"
+      ],
+      "sample_context": "…亦即諸經所說之三無性。三者、或指諸法不增益不損減之如實相以為性，此即唯識等所說之三自性，謂一切法遍計所執自性，從本以來乃至究竟是虛妄；一切法依他起自性，從本以來乃至…"
+    },
+    {
+      "matched": "法界",
+      "standard": "法界",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "一真法界",
+        "中實法界",
+        "法界圓明",
+        "法界無障礙"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "一真法界",
+        "法界"
+      ],
+      "sample_context": "…。謂凡言性，復須遍一切法無所偏缺，此遮各有體用義相不得言性也。  持此三義，以衡法界諸法而觀世間及聖教等所言之性，今試約為述之：一者、指「諸法離言自性」（亦曰諸法離…"
+    },
+    {
+      "matched": "真如",
+      "standard": "真如",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "一心真如",
+        "真如理"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "真如",
+        "真如理"
+      ],
+      "sample_context": "…名非安立諦，所謂言語道斷心行處滅也。二者、或指諸法空理以為性，此即我法二空所顯之真如理，真如理與諸法不一不異。若說定一，則無為與有為應無分別，若說定異，則應諸法之理…"
+    },
+    {
+      "matched": "遍計所執",
+      "standard": "遍計所執",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [
+        "遍計"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "遍計",
+        "遍計所執"
+      ],
+      "sample_context": "…無性。三者、或指諸法不增益不損減之如實相以為性，此即唯識等所說之三自性，謂一切法遍計所執自性，從本以來乃至究竟是虛妄；一切法依他起自性，從本以來乃至究竟是如幻；一切…"
+    },
+    {
+      "matched": "實相",
+      "standard": "實相",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "實相"
+      ],
+      "sample_context": "…幻；一切法圓成實自性，從本以來乃至究竟是真實。此三自性，不增不減，法爾如是。如其實相而為施設，故名實相。以上三種言性，皆是無為，實即一法，惟隨方便施設而異。以第一非…"
+    },
+    {
+      "matched": "二執",
+      "standard": "二執",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "二執"
+      ],
+      "sample_context": "…或指心之覺體而言。此言佛性即無漏種，亦名二空智種，謂有此智種，方能起二空智斷我法二執，圓滿清淨無漏成大菩提。八者、或指異生之分別二執所具生之二障種子以為性，此即二十…"
+    },
+    {
+      "matched": "自相",
+      "standard": "自相",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "自相"
+      ],
+      "sample_context": "…間及聖教等所言之性，今試約為述之：一者、指「諸法離言自性」（亦曰諸法離名種分別之自相，亦曰勝義勝義）以為性，此即強名一真法界，又名非安立諦，所謂言語道斷心行處滅也。…"
+    },
+    {
+      "matched": "有為",
+      "standard": "有為",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "有為"
+      ],
+      "sample_context": "…法空理以為性，此即我法二空所顯之真如理，真如理與諸法不一不異。若說定一，則無為與有為應無分別，若說定異，則應諸法之理性而別有一物曰真如。然即諸法本來空寂之性名曰真如…"
+    },
+    {
+      "matched": "唯識",
+      "standard": "唯識",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "大乘有宗",
+      "is_standard": true,
+      "variants_of_standard": [
+        "法相唯識",
+        "唯識現",
+        "諸法唯識現",
+        "一切法唯識現"
+      ],
+      "vocab_note": "",
+      "source": "batch_01",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "唯識"
+      ],
+      "sample_context": "…性名曰真如，亦即諸經所說之三無性。三者、或指諸法不增益不損減之如實相以為性，此即唯識等所說之三自性，謂一切法遍計所執自性，從本以來乃至究竟是虛妄；一切法依他起自性，…"
+    },
+    {
+      "matched": "如幻",
+      "standard": "如幻",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "如幻"
+      ],
+      "sample_context": "…一切法遍計所執自性，從本以來乃至究竟是虛妄；一切法依他起自性，從本以來乃至究竟是如幻；一切法圓成實自性，從本以來乃至究竟是真實。此三自性，不增不減，法爾如是。如其實…"
+    },
+    {
+      "matched": "施設",
+      "standard": "施設",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "施設"
+      ],
+      "sample_context": "…法圓成實自性，從本以來乃至究竟是真實。此三自性，不增不減，法爾如是。如其實相而為施設，故名實相。以上三種言性，皆是無為，實即一法，惟隨方便施設而異。以第一非安立，二…"
+    },
+    {
+      "matched": "現行",
+      "standard": "現行",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "現行"
+      ],
+      "sample_context": "…有情受生先至，死時後去，即八識規矩頌所云：「去後來先作主公」者是也。六者、或指諸現行法親能生之種子因以為性，此即第八識所藏無始以來親生諸法一一自果之功能差別。名一切…"
+    },
+    {
+      "matched": "種子",
+      "standard": "種子",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [
+        "業種"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "種子"
+      ],
+      "sample_context": "…死時後去，即八識規矩頌所云：「去後來先作主公」者是也。六者、或指諸現行法親能生之種子因以為性，此即第八識所藏無始以來親生諸法一一自果之功能差別。名一切種；以種為諸現…"
+    },
+    {
+      "matched": "異生",
+      "standard": "異生",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "凡夫之專業術語，常在異類流轉生死之有情，依人我執而假立異生性，與聖者相對",
+      "source": "phase2_fulltext,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "異生"
+      ],
+      "sample_context": "…名二空智種，謂有此智種，方能起二空智斷我法二執，圓滿清淨無漏成大菩提。八者、或指異生之分別二執所具生之二障種子以為性，此即二十四種不相應行中之異生性，與佛種性聖種性…"
+    },
+    {
+      "matched": "緣生",
+      "standard": "緣起",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": false,
+      "variants_of_standard": [
+        "緣生"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "緣生"
+      ],
+      "sample_context": "…分，即指此類與不類之分理曰性。十者、指所謬計妄執之一個實在質體以為性，蓋一切法皆緣生自性空，無實在之體質，而異生從依他起上起遍計執，執為有固定實在之體質。簡單言之，…"
+    },
+    {
+      "matched": "有漏",
+      "standard": "有漏",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "有漏"
+      ],
+      "sample_context": "…為；其十則雙非有無為。前三及第七唯屬無漏；但第三依三自性分，亦可依他一分及遍計屬有漏。第五第八第十唯有漏，餘通有漏無漏。前二全真，三則通真幻妄，四至九皆幻，十則全妄…"
+    },
+    {
+      "matched": "世間",
+      "standard": "世間",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "世間"
+      ],
+      "sample_context": "…復須遍一切法無所偏缺，此遮各有體用義相不得言性也。  持此三義，以衡法界諸法而觀世間及聖教等所言之性，今試約為述之：一者、指「諸法離言自性」（亦曰諸法離名種分別之自…"
+    },
+    {
+      "matched": "勝義",
+      "standard": "勝義",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "勝義"
+      ],
+      "sample_context": "…所言之性，今試約為述之：一者、指「諸法離言自性」（亦曰諸法離名種分別之自相，亦曰勝義勝義）以為性，此即強名一真法界，又名非安立諦，所謂言語道斷心行處滅也。二者、或指…"
+    },
+    {
+      "matched": "無性",
+      "standard": "無性",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無性"
+      ],
+      "sample_context": "…，則應諸法之理性而別有一物曰真如。然即諸法本來空寂之性名曰真如，亦即諸經所說之三無性。三者、或指諸法不增益不損減之如實相以為性，此即唯識等所說之三自性，謂一切法遍計…"
+    },
+    {
+      "matched": "方便",
+      "standard": "方便",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "善巧方便",
+        "方便善巧"
+      ],
+      "vocab_note": "3篇高频缺口词（佛法導言×2 + 佛乘宗要論），upāya/skillful means",
+      "source": "gap_review_2026-06-25",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "方便"
+      ],
+      "sample_context": "…減，法爾如是。如其實相而為施設，故名實相。以上三種言性，皆是無為，實即一法，惟隨方便施設而異。以第一非安立，二三皆屬安立。二就遮詮安立名法空，即三論宗之所明；三就表…"
+    },
+    {
+      "matched": "心心",
+      "standard": "心心",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "心心"
+      ],
+      "sample_context": "…二就遮詮安立名法空，即三論宗之所明；三就表詮安立名實相，即唯識宗之所明。四者、指心心所之自性以為性，此即覺體。在莊子名靈臺，後人或名靈覺，亦名靈知；在佛法，如云一切…"
+    },
+    {
+      "matched": "八識",
+      "standard": "八識",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [
+        "八識二無我",
+        "八識心王"
+      ],
+      "vocab_note": "含阿賴耶識、末那識等",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "八識"
+      ],
+      "sample_context": "…期生中之總報體，即第八果相之真異熟識。是一報之主體，於有情受生先至，死時後去，即八識規矩頌所云：「去後來先作主公」者是也。六者、或指諸現行法親能生之種子因以為性，此…"
+    },
+    {
+      "matched": "二障",
+      "standard": "二障",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "二障"
+      ],
+      "sample_context": "…，方能起二空智斷我法二執，圓滿清淨無漏成大菩提。八者、或指異生之分別二執所具生之二障種子以為性，此即二十四種不相應行中之異生性，與佛種性聖種性相違者。然論指分別所起…"
+    },
+    {
+      "matched": "種性",
+      "standard": "種性",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "種性"
+      ],
+      "sample_context": "…、或指異生之分別二執所具生之二障種子以為性，此即二十四種不相應行中之異生性，與佛種性聖種性相違者。然論指分別所起之二障現行分位言，故屬假法；今指其種子言，故亦屬實，…"
+    },
+    {
+      "matched": "無實",
+      "standard": "無實",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無實"
+      ],
+      "sample_context": "…與不類之分理曰性。十者、指所謬計妄執之一個實在質體以為性，蓋一切法皆緣生自性空，無實在之體質，而異生從依他起上起遍計執，執為有固定實在之體質。簡單言之，即我法二執所…"
+    },
+    {
+      "matched": "實我",
+      "standard": "實我",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "實我"
+      ],
+      "sample_context": "…此所執我法性。然皆於依他上不了而起，或依心體、或依報體、或依內種、或依類分、執為實我法之本體，故不能通達三自性三無性，遣二執而證真法界。  如是已分別所言之性竟，今…"
+    },
+    {
+      "matched": "通達",
+      "standard": "通達",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "通達"
+      ],
+      "sample_context": "…依他上不了而起，或依心體、或依報體、或依內種、或依類分、執為實我法之本體，故不能通達三自性三無性，遣二執而證真法界。  如是已分別所言之性竟，今更總辯：如前說一至三…"
+    },
+    {
+      "matched": "性相",
+      "standard": "性相",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "性相"
+      ],
+      "sample_context": "# 性釋  中國自古言性，如：孔子曰性相近，孟子曰性善，荀子曰性惡，楊子曰性善惡混，乃至漆雕開、世碩、公孫丑、王充、言善…"
+    },
+    {
+      "matched": "定性",
+      "standard": "定性",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "定性"
+      ],
+      "sample_context": "…、言善惡以人殊、上中下三品，皆為性上之差別義，而於性之本義尚未談及。今此論性當先定性之為義，即必如何乃謂之性，非此即不得謂之性。此義有三：一者、本現成義。謂凡言性，…"
+    },
+    {
+      "matched": "變壞",
+      "standard": "變壞",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "變壞"
+      ],
+      "sample_context": "…者、本現成義。謂凡言性，必是從本以來現成如此，此簡由積集後起不得言性也。二者、不變壞義。謂凡言性，又必常住不變永存不壞，此遮隨緣改轉有變有壞者不得言性也。三者、遍一…"
+    },
+    {
+      "matched": "常住",
+      "standard": "常住",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "常住"
+      ],
+      "sample_context": "…，必是從本以來現成如此，此簡由積集後起不得言性也。二者、不變壞義。謂凡言性，又必常住不變永存不壞，此遮隨緣改轉有變有壞者不得言性也。三者、遍一切義。謂凡言性，復須遍…"
+    },
+    {
+      "matched": "隨緣",
+      "standard": "隨緣",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "隨緣"
+      ],
+      "sample_context": "…，此簡由積集後起不得言性也。二者、不變壞義。謂凡言性，又必常住不變永存不壞，此遮隨緣改轉有變有壞者不得言性也。三者、遍一切義。謂凡言性，復須遍一切法無所偏缺，此遮各…"
+    },
+    {
+      "matched": "有體",
+      "standard": "有體",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "有體"
+      ],
+      "sample_context": "…改轉有變有壞者不得言性也。三者、遍一切義。謂凡言性，復須遍一切法無所偏缺，此遮各有體用義相不得言性也。  持此三義，以衡法界諸法而觀世間及聖教等所言之性，今試約為述…"
+    },
+    {
+      "matched": "空理",
+      "standard": "空理",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "中觀學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "空理"
+      ],
+      "sample_context": "…）以為性，此即強名一真法界，又名非安立諦，所謂言語道斷心行處滅也。二者、或指諸法空理以為性，此即我法二空所顯之真如理，真如理與諸法不一不異。若說定一，則無為與有為應…"
+    },
+    {
+      "matched": "空寂",
+      "standard": "空寂",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "中觀學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "空寂"
+      ],
+      "sample_context": "…一，則無為與有為應無分別，若說定異，則應諸法之理性而別有一物曰真如。然即諸法本來空寂之性名曰真如，亦即諸經所說之三無性。三者、或指諸法不增益不損減之如實相以為性，此…"
+    },
+    {
+      "matched": "如實",
+      "standard": "如實",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "如實"
+      ],
+      "sample_context": "…然即諸法本來空寂之性名曰真如，亦即諸經所說之三無性。三者、或指諸法不增益不損減之如實相以為性，此即唯識等所說之三自性，謂一切法遍計所執自性，從本以來乃至究竟是虛妄；…"
+    },
+    {
+      "matched": "虛妄",
+      "standard": "虛妄",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "虛妄"
+      ],
+      "sample_context": "…之如實相以為性，此即唯識等所說之三自性，謂一切法遍計所執自性，從本以來乃至究竟是虛妄；一切法依他起自性，從本以來乃至究竟是如幻；一切法圓成實自性，從本以來乃至究竟是…"
+    },
+    {
+      "matched": "圓成",
+      "standard": "圓成實性",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": false,
+      "variants_of_standard": [
+        "圓成"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "圓成"
+      ],
+      "sample_context": "…執自性，從本以來乃至究竟是虛妄；一切法依他起自性，從本以來乃至究竟是如幻；一切法圓成實自性，從本以來乃至究竟是真實。此三自性，不增不減，法爾如是。如其實相而為施設，…"
+    },
+    {
+      "matched": "不增不減",
+      "standard": "不增不減",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "中觀學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "不增不減"
+      ],
+      "sample_context": "…性，從本以來乃至究竟是如幻；一切法圓成實自性，從本以來乃至究竟是真實。此三自性，不增不減，法爾如是。如其實相而為施設，故名實相。以上三種言性，皆是無為，實即一法，惟…"
+    },
+    {
+      "matched": "法爾",
+      "standard": "法爾",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "法爾"
+      ],
+      "sample_context": "…來乃至究竟是如幻；一切法圓成實自性，從本以來乃至究竟是真實。此三自性，不增不減，法爾如是。如其實相而為施設，故名實相。以上三種言性，皆是無為，實即一法，惟隨方便施設…"
+    },
+    {
+      "matched": "三論宗",
+      "standard": "三論宗",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "宗派",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "三論宗"
+      ],
+      "sample_context": "…，實即一法，惟隨方便施設而異。以第一非安立，二三皆屬安立。二就遮詮安立名法空，即三論宗之所明；三就表詮安立名實相，即唯識宗之所明。四者、指心心所之自性以為性，此即覺…"
+    },
+    {
+      "matched": "唯識宗",
+      "standard": "唯識宗",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "宗派",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "唯識宗"
+      ],
+      "sample_context": "…非安立，二三皆屬安立。二就遮詮安立名法空，即三論宗之所明；三就表詮安立名實相，即唯識宗之所明。四者、指心心所之自性以為性，此即覺體。在莊子名靈臺，後人或名靈覺，亦名…"
+    },
+    {
+      "matched": "佛法",
+      "standard": "佛法",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "佛法體系",
+      "is_standard": true,
+      "variants_of_standard": [
+        "佛法",
+        "佛陀教法"
+      ],
+      "vocab_note": "基礎術語，初始詞表遺漏，手動補入",
+      "source": "gap_review_manual",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "佛法"
+      ],
+      "sample_context": "…。四者、指心心所之自性以為性，此即覺體。在莊子名靈臺，後人或名靈覺，亦名靈知；在佛法，如云一切有情皆有佛性者，即說凡屬有情皆有心靈知覺。雖其覺有分量不同，不可言無，…"
+    },
+    {
+      "matched": "心靈",
+      "standard": "心靈",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "心靈"
+      ],
+      "sample_context": "…名靈臺，後人或名靈覺，亦名靈知；在佛法，如云一切有情皆有佛性者，即說凡屬有情皆有心靈知覺。雖其覺有分量不同，不可言無，若無覺則不可言心，亦不名有情。如言火定有熱性，…"
+    },
+    {
+      "matched": "果相",
+      "standard": "果相",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "果相"
+      ],
+      "sample_context": "…性，亦復如是。五者、指各各有情之自體以為性，此即一切有情一期生中之總報體，即第八果相之真異熟識。是一報之主體，於有情受生先至，死時後去，即八識規矩頌所云：「去後來先…"
+    },
+    {
+      "matched": "異熟識",
+      "standard": "異熟識",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [
+        "異熟果識",
+        "第八異熟識"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "異熟識"
+      ],
+      "sample_context": "…如是。五者、指各各有情之自體以為性，此即一切有情一期生中之總報體，即第八果相之真異熟識。是一報之主體，於有情受生先至，死時後去，即八識規矩頌所云：「去後來先作主公」…"
+    },
+    {
+      "matched": "所藏",
+      "standard": "所藏",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "所藏"
+      ],
+      "sample_context": "…云：「去後來先作主公」者是也。六者、或指諸現行法親能生之種子因以為性，此即第八識所藏無始以來親生諸法一一自果之功能差別。名一切種；以種為諸現行法各各之自因，故多說為…"
+    },
+    {
+      "matched": "無始",
+      "standard": "無始",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無始"
+      ],
+      "sample_context": "…「去後來先作主公」者是也。六者、或指諸現行法親能生之種子因以為性，此即第八識所藏無始以來親生諸法一一自果之功能差別。名一切種；以種為諸現行法各各之自因，故多說為諸法…"
+    },
+    {
+      "matched": "本性",
+      "standard": "本性",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "本性"
+      ],
+      "sample_context": "…諸法一一自果之功能差別。名一切種；以種為諸現行法各各之自因，故多說為諸法所由生之本性。七者、或指親能生起無漏佛智之無漏種以為性，依此說為佛性，故說佛性三無二有。涅槃…"
+    },
+    {
+      "matched": "佛智",
+      "standard": "佛慧",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": false,
+      "variants_of_standard": [
+        "佛智"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "佛智"
+      ],
+      "sample_context": "…切種；以種為諸現行法各各之自因，故多說為諸法所由生之本性。七者、或指親能生起無漏佛智之無漏種以為性，依此說為佛性，故說佛性三無二有。涅槃經等說一切皆有佛性，指一真法…"
+    },
+    {
+      "matched": "涅槃經",
+      "standard": "涅槃經",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "經典",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "涅槃經"
+      ],
+      "sample_context": "…本性。七者、或指親能生起無漏佛智之無漏種以為性，依此說為佛性，故說佛性三無二有。涅槃經等說一切皆有佛性，指一真法界言，或指心之覺體而言。此言佛性即無漏種，亦名二空智…"
+    },
+    {
+      "matched": "清淨",
+      "standard": "清淨",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "清淨"
+      ],
+      "sample_context": "…體而言。此言佛性即無漏種，亦名二空智種，謂有此智種，方能起二空智斷我法二執，圓滿清淨無漏成大菩提。八者、或指異生之分別二執所具生之二障種子以為性，此即二十四種不相應…"
+    },
+    {
+      "matched": "菩提",
+      "standard": "菩提",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "無上菩提"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "菩提"
+      ],
+      "sample_context": "…佛性即無漏種，亦名二空智種，謂有此智種，方能起二空智斷我法二執，圓滿清淨無漏成大菩提。八者、或指異生之分別二執所具生之二障種子以為性，此即二十四種不相應行中之異生性…"
+    },
+    {
+      "matched": "不相應行",
+      "standard": "不相應行",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "不相應行"
+      ],
+      "sample_context": "…滿清淨無漏成大菩提。八者、或指異生之分別二執所具生之二障種子以為性，此即二十四種不相應行中之異生性，與佛種性聖種性相違者。然論指分別所起之二障現行分位言，故屬假法；…"
+    },
+    {
+      "matched": "異生性",
+      "standard": "異生性",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "異生性"
+      ],
+      "sample_context": "…大菩提。八者、或指異生之分別二執所具生之二障種子以為性，此即二十四種不相應行中之異生性，與佛種性聖種性相違者。然論指分別所起之二障現行分位言，故屬假法；今指其種子言…"
+    },
+    {
+      "matched": "空無",
+      "standard": "空無",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "中觀學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "空無"
+      ],
+      "sample_context": "…之二障現行分位言，故屬假法；今指其種子言，故亦屬實，如以無漏種為聖性佛性。若得二空無分別智現前時，即能斷除。九者、指諸法相似不相似之差別分位以為性，此即通俗所云類性…"
+    },
+    {
+      "matched": "勝論",
+      "standard": "勝論",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "論典",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "勝論"
+      ],
+      "sample_context": "…別智現前時，即能斷除。九者、指諸法相似不相似之差別分位以為性，此即通俗所云類性，勝論所謂同異性，小乘薩婆多部所謂同分，大乘百法明門所謂眾同分之分位假法。如人與人有其…"
+    },
+    {
+      "matched": "小乘",
+      "standard": "小乘",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "二乘",
+        "小乘法"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "小乘"
+      ],
+      "sample_context": "…斷除。九者、指諸法相似不相似之差別分位以為性，此即通俗所云類性，勝論所謂同異性，小乘薩婆多部所謂同分，大乘百法明門所謂眾同分之分位假法。如人與人有其相似同類分，天與…"
+    },
+    {
+      "matched": "大乘",
+      "standard": "大乘",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "大乘不共法",
+        "大乘法",
+        "大乘特法"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "大乘"
+      ],
+      "sample_context": "…不相似之差別分位以為性，此即通俗所云類性，勝論所謂同異性，小乘薩婆多部所謂同分，大乘百法明門所謂眾同分之分位假法。如人與人有其相似同類分，天與天亦有其相似之同類分，…"
+    },
+    {
+      "matched": "百法",
+      "standard": "百法",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "百法"
+      ],
+      "sample_context": "…似之差別分位以為性，此即通俗所云類性，勝論所謂同異性，小乘薩婆多部所謂同分，大乘百法明門所謂眾同分之分位假法。如人與人有其相似同類分，天與天亦有其相似之同類分，獸與…"
+    },
+    {
+      "matched": "眾同分",
+      "standard": "眾同分",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "眾同分"
+      ],
+      "sample_context": "…以為性，此即通俗所云類性，勝論所謂同異性，小乘薩婆多部所謂同分，大乘百法明門所謂眾同分之分位假法。如人與人有其相似同類分，天與天亦有其相似之同類分，獸與獸亦復如是。…"
+    },
+    {
+      "matched": "妄執",
+      "standard": "妄執",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "妄執"
+      ],
+      "sample_context": "…又人與天與畜等相望，復各有其不同類之分，即指此類與不類之分理曰性。十者、指所謬計妄執之一個實在質體以為性，蓋一切法皆緣生自性空，無實在之體質，而異生從依他起上起遍計…"
+    },
+    {
+      "matched": "自性空",
+      "standard": "空性",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "中觀學",
+      "is_standard": false,
+      "variants_of_standard": [
+        "一切法自性空",
+        "本性空寂",
+        "空",
+        "自性空",
+        "諸法畢竟空"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "自性空"
+      ],
+      "sample_context": "…即指此類與不類之分理曰性。十者、指所謬計妄執之一個實在質體以為性，蓋一切法皆緣生自性空，無實在之體質，而異生從依他起上起遍計執，執為有固定實在之體質。簡單言之，即我…"
+    },
+    {
+      "matched": "心心所法",
+      "standard": "色心二法",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": false,
+      "variants_of_standard": [
+        "不相應行法",
+        "心心所法"
+      ],
+      "vocab_note": "五位百法之基本分類",
+      "source": "batch_01",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "心心所法"
+      ],
+      "sample_context": "…上起遍計執，執為有固定實在之體質。簡單言之，即我法二執所執之我法實質性。蓋能執是心心所法，所計似我法相乃心心所所變之相分。如病目者見空中有華，本不了無華，執實有華，…"
+    },
+    {
+      "matched": "所變",
+      "standard": "所變",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "所變"
+      ],
+      "sample_context": "…質。簡單言之，即我法二執所執之我法實質性。蓋能執是心心所法，所計似我法相乃心心所所變之相分。如病目者見空中有華，本不了無華，執實有華，了華本空華即無實。目惟有病，雖…"
+    },
+    {
+      "matched": "相分",
+      "standard": "相分",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "相分"
+      ],
+      "sample_context": "…單言之，即我法二執所執之我法實質性。蓋能執是心心所法，所計似我法相乃心心所所變之相分。如病目者見空中有華，本不了無華，執實有華，了華本空華即無實。目惟有病，雖了是病…"
+    },
+    {
+      "matched": "中有",
+      "standard": "中有",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "中有"
+      ],
+      "sample_context": "…所執之我法實質性。蓋能執是心心所法，所計似我法相乃心心所所變之相分。如病目者見空中有華，本不了無華，執實有華，了華本空華即無實。目惟有病，雖了是病，而病猶有，一切異…"
+    },
+    {
+      "matched": "實有",
+      "standard": "實有",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "實有"
+      ],
+      "sample_context": "…執是心心所法，所計似我法相乃心心所所變之相分。如病目者見空中有華，本不了無華，執實有華，了華本空華即無實。目惟有病，雖了是病，而病猶有，一切異生之所言性，不出此所執…"
+    },
+    {
+      "matched": "依報",
+      "standard": "依報",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "有情共業所感之器世間為依報，各別業力所感之根身為正報",
+      "source": "phase2_fulltext,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "依報"
+      ],
+      "sample_context": "…而病猶有，一切異生之所言性，不出此所執我法性。然皆於依他上不了而起，或依心體、或依報體、或依內種、或依類分、執為實我法之本體，故不能通達三自性三無性，遣二執而證真法…"
+    },
+    {
+      "matched": "有法",
+      "standard": "有法",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "有法"
+      ],
+      "sample_context": "…漏。前二全真，三則通真幻妄，四至九皆幻，十則全妄。一至八皆實，九十皆假。一至九皆有法，十屬無法。如是種種觀察，可知世間聖教之談性差別。在通達諸法離言自相者，其談性皆…"
+    },
+    {
+      "matched": "法性",
+      "standard": "法性",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "法性"
+      ],
+      "sample_context": "…無自性，此緣生如幻無自性之諸法自相，終非比智假詮能及，則所談性總不離遍計所執實我法性而已！  嚴核於必如何乃謂之性之三義，則十中唯第一第二足當之耳。故唯識性亦指此二…"
+    }
+  ],
+  "domain_summary": {
+    "domains": {
+      "教理": 79
+    },
+    "subdomains": {
+      "基礎教義": 47,
+      "唯識學": 17,
+      "中觀學": 5,
+      "大乘通義": 3,
+      "宗派": 2,
+      "如來藏思想": 1,
+      "大乘有宗": 1,
+      "佛法體系": 1,
+      "經典": 1,
+      "論典": 1
+    }
+  }
+}

@@ -1,0 +1,1206 @@
+{
+  "summary": {
+    "total_candidates": 64,
+    "unique_standards": 64,
+    "single_occurrence_ratio": "44/64",
+    "high_frequency_terms": [
+      "萬法",
+      "因果"
+    ],
+    "heading_weighted": true,
+    "heading_weight": 3
+  },
+  "article": {
+    "path": "/Users/xin/Documents/Road_Of_Taixu/_research/01_佛法總學/02_判攝/18_萬有皆因緣所生.md",
+    "title": "萬有皆因緣所生",
+    "cjk_chars": 3716,
+    "recommended_count": "5-8",
+    "编": "第一编 佛法總學",
+    "编_number": "1",
+    "category": "判攝"
+  },
+  "vocab_source": "/Users/xin/Documents/Road_Of_Taixu/scripts/keyword-extractor/vocabulary/keyword_vocabulary_v4.json",
+  "match_stats": {
+    "raw_hits": 66,
+    "after_dedup": 64
+  },
+  "candidates": [
+    {
+      "matched": "萬法",
+      "standard": "萬法",
+      "occurrences": 11,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "萬法"
+      ],
+      "sample_context": "…。  ### 　　丙　空與唯識等亦附加義  其次，以為佛教說一切皆空、三界唯心、萬法唯識等等，即誤解佛法是偏向空寂偏重精神的宗教，與現代科學的物質文明相背馳。其實佛…"
+    },
+    {
+      "matched": "因果",
+      "standard": "因果",
+      "occurrences": 11,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "因果"
+      ],
+      "sample_context": "…已熏成之習氣不失，等到後時遇到機緣仍可發現。此即所謂熏成種子復起現行之一例。由此因果果因相續，例如外國輸入一種胡桃種子到中國來，栽種生果，果種相續到今。但如有同樣而…"
+    },
+    {
+      "matched": "因緣生法",
+      "standard": "因緣生法",
+      "occurrences": 9,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "因緣所生法",
+        "諸法眾緣生",
+        "萬有皆因緣所生",
+        "因緣生果"
+      ],
+      "vocab_note": "亦含緣起義，太虚常以「因緣生法」為五乘共法之總綱",
+      "source": "batch_01",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "因緣所生法",
+        "因緣生法",
+        "萬有皆因緣所生"
+      ],
+      "sample_context": "…性的說明，須在講到相當的地方乃適用的一種術語；講唯識也是如此。此種術語，只是佛說因緣所生法上的附加義。扼要的說來，佛教唯講萬有（萬法）皆因緣所生，這才是佛教的真正本…"
+    },
+    {
+      "matched": "唯識",
+      "standard": "唯識",
+      "occurrences": 6,
+      "domain": "教理",
+      "subdomain": "大乘有宗",
+      "is_standard": true,
+      "variants_of_standard": [
+        "法相唯識",
+        "唯識現",
+        "諸法唯識現",
+        "一切法唯識現"
+      ],
+      "vocab_note": "",
+      "source": "batch_01",
+      "in_heading": true,
+      "_heading_hits": 2,
+      "matched_via": [
+        "唯識"
+      ],
+      "sample_context": "… ### 　　丙　空與唯識等亦附加義  其次，以為佛教說一切皆空、三界唯心、萬法唯識等等，即誤解佛法是偏向空寂偏重精神的宗教，與現代科學的物質文明相背馳。其實佛教說…"
+    },
+    {
+      "matched": "因緣",
+      "standard": "因緣",
+      "occurrences": 6,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "因緣"
+      ],
+      "sample_context": "…如此。此種術語，只是佛說因緣所生法上的附加義。扼要的說來，佛教唯講萬有（萬法）皆因緣所生，這才是佛教的真正本旨。  ## 二　析名  佛經所用名詞，往往精深細微，一…"
+    },
+    {
+      "matched": "佛法",
+      "standard": "佛法",
+      "occurrences": 8,
+      "domain": "教理",
+      "subdomain": "佛法體系",
+      "is_standard": true,
+      "variants_of_standard": [
+        "佛法",
+        "佛陀教法"
+      ],
+      "vocab_note": "基礎術語，初始詞表遺漏，手動補入",
+      "source": "gap_review_manual",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "佛法"
+      ],
+      "sample_context": "…之佛教歷史已在二千三百多年以上。所以現在中國，從通都大邑到窮鄉僻壤，均散布有信崇佛法之徒眾，及有很多代表佛教的寺庵僧尼。佛教在中國曾有過極昌明的時代，而對中國固有的…"
+    },
+    {
+      "matched": "種子",
+      "standard": "種子",
+      "occurrences": 6,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [
+        "業種"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "種子"
+      ],
+      "sample_context": "…二字說之。因者、為構成一切事事物物即萬有的主要因素，所謂質的方面的東西。譬如花的種子一樣。緣者、乃事事物物的條件湊集助成主因的東西。譬如只有花的種子是不能生出花來的…"
+    },
+    {
+      "matched": "正信",
+      "standard": "正信",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "正信"
+      ],
+      "sample_context": "…打倒堅執上帝或電子等的一元論者的深固的迷信等，而成立事皆可驗理無不通的因緣生法之正信。  ### 　　丙　信行因果得圓成  此正常的因果論即佛學的本質，推廣應用，能…"
+    },
+    {
+      "matched": "佛學",
+      "standard": "佛學",
+      "occurrences": 4,
+      "domain": "教理",
+      "subdomain": "佛法體系",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "全書根本概念，太虚自稱「佛學」而非「佛教學」",
+      "source": "manual_gap",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "佛學"
+      ],
+      "sample_context": "…之貢獻與影響都甚大，至唐宋已經發揮到了水乳交融的程度；近今研究中國文化者皆離不了佛學的因素。  ### 　　甲　習俗的迷信非佛教  自清季廢科舉興學校維新變法以來，…"
+    },
+    {
+      "matched": "因緣生",
+      "standard": "因緣生",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "因緣生"
+      ],
+      "sample_context": "…體存在。推廣言之，即所謂一切法自性皆空。法性空慧宗備明此義。  ### 　　丙　因緣生存之主伴攝入同異與圓中  須因緣齊備以生存的萬有萬法，每以一法為有力能持之主，…"
+    },
+    {
+      "matched": "圓中",
+      "standard": "中道",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "中觀學",
+      "is_standard": false,
+      "variants_of_standard": [
+        "不常不斷中道",
+        "不苦不樂中道",
+        "圓中"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "圓中"
+      ],
+      "sample_context": "…一切法自性皆空。法性空慧宗備明此義。  ### 　　丙　因緣生存之主伴攝入同異與圓中  須因緣齊備以生存的萬有萬法，每以一法為有力能持之主，則其餘諸法皆為無力相資之…"
+    },
+    {
+      "matched": "信行",
+      "standard": "信行",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "信行"
+      ],
+      "sample_context": "…論者的深固的迷信等，而成立事皆可驗理無不通的因緣生法之正信。  ### 　　丙　信行因果得圓成  此正常的因果論即佛學的本質，推廣應用，能令現世一切合理的科學哲學或…"
+    },
+    {
+      "matched": "圓成",
+      "standard": "圓成實性",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": false,
+      "variants_of_standard": [
+        "圓成"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": true,
+      "_heading_hits": 1,
+      "matched_via": [
+        "圓成"
+      ],
+      "sample_context": "…的迷信等，而成立事皆可驗理無不通的因緣生法之正信。  ### 　　丙　信行因果得圓成  此正常的因果論即佛學的本質，推廣應用，能令現世一切合理的科學哲學或政治學說社…"
+    },
+    {
+      "matched": "佛經",
+      "standard": "佛經",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "經典",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "佛經"
+      ],
+      "sample_context": "…來，佛教唯講萬有（萬法）皆因緣所生，這才是佛教的真正本旨。  ## 二　析名  佛經所用名詞，往往精深細微，一般人甚不易解。所以今講「萬有皆因緣所生」，不能不略說本…"
+    },
+    {
+      "matched": "世間",
+      "standard": "世間",
+      "occurrences": 3,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "世間"
+      ],
+      "sample_context": "…教理，也是中國佛學的特色，應當促起世人注意的地方。  ## 四　破邪  不過，在世間一般的學說或宗教裏，也多有講因果道理的，初看好像與佛學上講的因果論頗為相像，但是…"
+    },
+    {
+      "matched": "非人",
+      "standard": "非人",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "非人"
+      ],
+      "sample_context": "…　乙　佛教的消極非本質  古今一般人士看見各地寺僧遁在山林，往往即據之以為佛教是非人生的，乃是山林隱遁的，與社會人生不相關聯的，是所謂出世逃世的消極佛教。因此即以為…"
+    },
+    {
+      "matched": "有為",
+      "standard": "有為",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "有為"
+      ],
+      "sample_context": "…是山林隱遁的，與社會人生不相關聯的，是所謂出世逃世的消極佛教。因此即以為佛教對於有為的青年人，及對社會國家負責任的人皆不宜接近，尤其不必去研究；但為一班退休的老年人…"
+    },
+    {
+      "matched": "五乘",
+      "standard": "五乘",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "判教框架",
+      "is_standard": true,
+      "variants_of_standard": [
+        "聲聞乘"
+      ],
+      "vocab_note": "太虚基本判教框架",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "五乘"
+      ],
+      "sample_context": "…女的崇信物。因此，乃欲舉佛教而摧毀消滅之。其實，這也非佛教的本質。佛教教理上所謂五乘——人、天、聲聞、緣覺、菩薩及佛者，此中第一步就是教人在世做人，然後才能談到超人…"
+    },
+    {
+      "matched": "修行",
+      "standard": "修行",
+      "occurrences": 2,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "修行"
+      ],
+      "sample_context": "…西藏等處，即是用佛教學理為治國及待人接物的處世學問。而佛教在中國專被用來做出世的修行者，這是因為中國已有儒教學說治國經世的緣故。如此說來，佛教之退處山林，也完全是中…"
+    },
+    {
+      "matched": "三有",
+      "standard": "三有",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "三有"
+      ],
+      "sample_context": "…種宗派立名一切有，是專門講一切皆有的，即所謂萬法皆有。但以有遮空，其義已狹。或說三有，所謂欲有、色有、無色有，三有或析為九有、二十五有，此與吾國通常以宇宙內外事事物…"
+    },
+    {
+      "matched": "四緣",
+      "standard": "四緣",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "一切有為法生起之四種條件：因緣、增上緣、所緣緣、等無間緣，因緣為親因（種子），餘三為緣",
+      "source": "phase2_fulltext,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "四緣"
+      ],
+      "sample_context": "…」一名。  ### 　　乙　因與緣  這在佛經中分得甚為精細，有所謂六因、十因、四緣、二十四緣者。現在限於時間不能一一說明，但就因緣二字說之。因者、為構成一切事事物…"
+    },
+    {
+      "matched": "相續",
+      "standard": "相續",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "相續"
+      ],
+      "sample_context": "…起現行之一例。由此因果果因相續，例如外國輸入一種胡桃種子到中國來，栽種生果，果種相續到今。但如有同樣而較優良之新種輸入，或遇天災等大逆緣，則亦有斷滅的時候；所謂適者…"
+    },
+    {
+      "matched": "諸法",
+      "standard": "諸法",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "諸法"
+      ],
+      "sample_context": "…主伴攝入同異與圓中  須因緣齊備以生存的萬有萬法，每以一法為有力能持之主，則其餘諸法皆為無力相資之伴，要得主伴關係（主因助緣）全備方能完成其生存。此說在中國自創的華…"
+    },
+    {
+      "matched": "十方",
+      "standard": "十方",
+      "occurrences": 2,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "十方"
+      ],
+      "sample_context": "…緣生法確為普遍的真理，舉國家民族為主，則遍攝遍入一切以為伴，歷之三世無不通，行之十方無不準，民族國家乃能真成其至上。而軍事勝利之第一，亦得成真實無謬；思想能力不期其…"
+    },
+    {
+      "matched": "阿育王",
+      "standard": "阿育王",
+      "occurrences": 1,
+      "domain": "历史",
+      "subdomain": "人物",
+      "is_standard": true,
+      "variants_of_standard": [
+        "阿育"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "阿育王"
+      ],
+      "sample_context": "…）  ## 一　引言  佛教之來中國，已有一千九百餘年；尤其是雲南的佛教，是印度阿育王時代已傳入，故雲南之佛教歷史已在二千三百多年以上。所以現在中國，從通都大邑到窮…"
+    },
+    {
+      "matched": "僧尼",
+      "standard": "僧尼",
+      "occurrences": 1,
+      "domain": "制度",
+      "subdomain": "僧制",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "僧尼"
+      ],
+      "sample_context": "…以現在中國，從通都大邑到窮鄉僻壤，均散布有信崇佛法之徒眾，及有很多代表佛教的寺庵僧尼。佛教在中國曾有過極昌明的時代，而對中國固有的文化之貢獻與影響都甚大，至唐宋已經…"
+    },
+    {
+      "matched": "學人",
+      "standard": "學人",
+      "occurrences": 1,
+      "domain": "制度",
+      "subdomain": "僧教育",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "學人"
+      ],
+      "sample_context": "…。  ### 　　甲　習俗的迷信非佛教  自清季廢科舉興學校維新變法以來，一般新學人士即詆訾佛法為迷信，使佛教於無形中受了莫大的打擊，大有使佛教的學說被推出於中國知…"
+    },
+    {
+      "matched": "鬼神",
+      "standard": "鬼神",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "鬼神"
+      ],
+      "sample_context": "…事物，與佛教本身全不相涉，殆若風馬牛之不相及。一般認為迷信的，不外各地方所崇拜的鬼神偶像，及化燒紙錢等等風俗習慣，皆誤為佛教所造成，其實這在佛教原有的教理和制度上並…"
+    },
+    {
+      "matched": "神道",
+      "standard": "神道",
+      "occurrences": 1,
+      "domain": "社会文化",
+      "subdomain": "佛教與文化",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "神道"
+      ],
+      "sample_context": "…其實這在佛教原有的教理和制度上並沒有提倡過。此種俗習之起源，多由於中國古來的所謂神道設教思想之遺傳。因為佛教在別的國度裏流傳時並不如此，並沒有像在中國的許多不經的俗…"
+    },
+    {
+      "matched": "聲聞",
+      "standard": "聲聞",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "聲聞"
+      ],
+      "sample_context": "…，乃欲舉佛教而摧毀消滅之。其實，這也非佛教的本質。佛教教理上所謂五乘——人、天、聲聞、緣覺、菩薩及佛者，此中第一步就是教人在世做人，然後才能談到超人的天及出世的聲聞…"
+    },
+    {
+      "matched": "緣覺",
+      "standard": "緣覺",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "緣覺"
+      ],
+      "sample_context": "…舉佛教而摧毀消滅之。其實，這也非佛教的本質。佛教教理上所謂五乘——人、天、聲聞、緣覺、菩薩及佛者，此中第一步就是教人在世做人，然後才能談到超人的天及出世的聲聞緣覺菩…"
+    },
+    {
+      "matched": "菩薩",
+      "standard": "菩薩",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "菩薩"
+      ],
+      "sample_context": "…而摧毀消滅之。其實，這也非佛教的本質。佛教教理上所謂五乘——人、天、聲聞、緣覺、菩薩及佛者，此中第一步就是教人在世做人，然後才能談到超人的天及出世的聲聞緣覺菩薩等四…"
+    },
+    {
+      "matched": "超人",
+      "standard": "超人生",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "菩萨行",
+      "is_standard": false,
+      "variants_of_standard": [
+        "超人",
+        "超超人",
+        "超超人生"
+      ],
+      "vocab_note": "太虚人生佛学的修行阶位框架：人生→超人生→超超人生→佛。以人生为起点，经超人、超超人而达究竟佛果，体现即人而佛的次第发展观。",
+      "source": "phase2_fulltext",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "超人"
+      ],
+      "sample_context": "…五乘——人、天、聲聞、緣覺、菩薩及佛者，此中第一步就是教人在世做人，然後才能談到超人的天及出世的聲聞緣覺菩薩等四乘，故學佛以做人為基礎。其餘四乘也不盡出世，出世只是…"
+    },
+    {
+      "matched": "聲聞緣覺菩薩",
+      "standard": "三乘",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "大乘通義",
+      "is_standard": false,
+      "variants_of_standard": [
+        "出世三乘",
+        "聲聞緣覺菩薩"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "聲聞緣覺菩薩"
+      ],
+      "sample_context": "…聲聞、緣覺、菩薩及佛者，此中第一步就是教人在世做人，然後才能談到超人的天及出世的聲聞緣覺菩薩等四乘，故學佛以做人為基礎。其餘四乘也不盡出世，出世只是修學佛法的一種過…"
+    },
+    {
+      "matched": "修學",
+      "standard": "修學",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "修行次第",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "修學"
+      ],
+      "sample_context": "…的天及出世的聲聞緣覺菩薩等四乘，故學佛以做人為基礎。其餘四乘也不盡出世，出世只是修學佛法的一種過程。乘、即是車的意思。五乘、是說由這五種不同力量的人，依這五層的車路…"
+    },
+    {
+      "matched": "三界",
+      "standard": "三界",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "九地",
+        "欲界色界無色界"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "三界"
+      ],
+      "sample_context": "…可以研究的。  ### 　　丙　空與唯識等亦附加義  其次，以為佛教說一切皆空、三界唯心、萬法唯識等等，即誤解佛法是偏向空寂偏重精神的宗教，與現代科學的物質文明相背…"
+    },
+    {
+      "matched": "唯心",
+      "standard": "唯心",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [
+        "唯心論"
+      ],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "唯心"
+      ],
+      "sample_context": "…研究的。  ### 　　丙　空與唯識等亦附加義  其次，以為佛教說一切皆空、三界唯心、萬法唯識等等，即誤解佛法是偏向空寂偏重精神的宗教，與現代科學的物質文明相背馳。…"
+    },
+    {
+      "matched": "空寂",
+      "standard": "空寂",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "中觀學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "空寂"
+      ],
+      "sample_context": "…等亦附加義  其次，以為佛教說一切皆空、三界唯心、萬法唯識等等，即誤解佛法是偏向空寂偏重精神的宗教，與現代科學的物質文明相背馳。其實佛教說一切皆空，有時也說非空，也…"
+    },
+    {
+      "matched": "有相",
+      "standard": "有相",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "有相"
+      ],
+      "sample_context": "…欲有、色有、無色有，三有或析為九有、二十五有，此與吾國通常以宇宙內外事事物物名萬有相同。此取通俗易知，故用「萬有」一名。  ### 　　乙　因與緣  這在佛經中分得…"
+    },
+    {
+      "matched": "四相",
+      "standard": "四相",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "四相"
+      ],
+      "sample_context": "…衰滅。  ### 　　丙　生  生，是對住、異、滅而言的。佛法中常講此生住異滅的四相：生是說事物的初生，住是已生後的存在，異是存在中的變易，滅是變壞到消滅。此生字是…"
+    },
+    {
+      "matched": "變壞",
+      "standard": "變壞",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "變壞"
+      ],
+      "sample_context": "…常講此生住異滅的四相：生是說事物的初生，住是已生後的存在，異是存在中的變易，滅是變壞到消滅。此生字是狹義的。又或有單用生滅二字者，生字對滅字而言，此生字可包括住異在…"
+    },
+    {
+      "matched": "生滅",
+      "standard": "生滅",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "生滅"
+      ],
+      "sample_context": "…，住是已生後的存在，異是存在中的變易，滅是變壞到消滅。此生字是狹義的。又或有單用生滅二字者，生字對滅字而言，此生字可包括住異在中，是廣義的。今言萬有皆生於因緣的生字…"
+    },
+    {
+      "matched": "寺院",
+      "standard": "寺院",
+      "occurrences": 1,
+      "domain": "制度",
+      "subdomain": "寺院管理",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "寺院"
+      ],
+      "sample_context": "…因以引起各別的成果，所謂種瓜得瓜，種豆得豆。先因後果，因引果生，果又熏成因種。如寺院中之燒香，由香的燃燒以熏留香氣。曾現的心境，留在心中，雖經多時而此已熏成之習氣不…"
+    },
+    {
+      "matched": "習氣",
+      "standard": "習氣",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "習氣"
+      ],
+      "sample_context": "…如寺院中之燒香，由香的燃燒以熏留香氣。曾現的心境，留在心中，雖經多時而此已熏成之習氣不失，等到後時遇到機緣仍可發現。此即所謂熏成種子復起現行之一例。由此因果果因相續…"
+    },
+    {
+      "matched": "機緣",
+      "standard": "機緣",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "機緣"
+      ],
+      "sample_context": "…燃燒以熏留香氣。曾現的心境，留在心中，雖經多時而此已熏成之習氣不失，等到後時遇到機緣仍可發現。此即所謂熏成種子復起現行之一例。由此因果果因相續，例如外國輸入一種胡桃…"
+    },
+    {
+      "matched": "現行",
+      "standard": "現行",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "唯識學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "現行"
+      ],
+      "sample_context": "…中，雖經多時而此已熏成之習氣不失，等到後時遇到機緣仍可發現。此即所謂熏成種子復起現行之一例。由此因果果因相續，例如外國輸入一種胡桃種子到中國來，栽種生果，果種相續到…"
+    },
+    {
+      "matched": "因相",
+      "standard": "因相",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "因相"
+      ],
+      "sample_context": "…之習氣不失，等到後時遇到機緣仍可發現。此即所謂熏成種子復起現行之一例。由此因果果因相續，例如外國輸入一種胡桃種子到中國來，栽種生果，果種相續到今。但如有同樣而較優良…"
+    },
+    {
+      "matched": "法相唯識宗",
+      "standard": "法相唯識宗",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "判教框架",
+      "is_standard": true,
+      "variants_of_standard": [
+        "法相唯識系"
+      ],
+      "vocab_note": "太虚三宗判教之二",
+      "source": "batch_01",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "法相唯識宗"
+      ],
+      "sample_context": "…良之新種輸入，或遇天災等大逆緣，則亦有斷滅的時候；所謂適者生存，或歸淘汰。佛教的法相唯識宗，是專為闡明這種因果相續的道理而發展成的。由種子依持說到藏識，以成立萬法唯…"
+    },
+    {
+      "matched": "眾生",
+      "standard": "眾生",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "眾生"
+      ],
+      "sample_context": "…，是專為闡明這種因果相續的道理而發展成的。由種子依持說到藏識，以成立萬法唯識，使眾生循之修行，漸去凡劣而臻至善淨佛聖；明有善因必可成善果。  ### 　　乙　眾緣合…"
+    },
+    {
+      "matched": "善果",
+      "standard": "善果",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "善果"
+      ],
+      "sample_context": "…說到藏識，以成立萬法唯識，使眾生循之修行，漸去凡劣而臻至善淨佛聖；明有善因必可成善果。  ### 　　乙　眾緣合成之違順消長泛要與皆空  從眾緣合成以觀萬事萬物，遇…"
+    },
+    {
+      "matched": "自性",
+      "standard": "自性",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [
+        "有無自性",
+        "諸法離言自性",
+        "離言自性"
+      ],
+      "vocab_note": "太虚在判攝中反覆辨析的核心概念",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "自性"
+      ],
+      "sample_context": "…眾緣合成中毫無固定物體的說明，言其沒有固定獨立的實體存在。推廣言之，即所謂一切法自性皆空。法性空慧宗備明此義。  ### 　　丙　因緣生存之主伴攝入同異與圓中  須…"
+    },
+    {
+      "matched": "法性空慧宗",
+      "standard": "法性空慧",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "判教框架",
+      "is_standard": false,
+      "variants_of_standard": [
+        "法性空慧宗"
+      ],
+      "vocab_note": "太虚三宗判教之一",
+      "source": "batch_01",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "法性空慧宗"
+      ],
+      "sample_context": "…毫無固定物體的說明，言其沒有固定獨立的實體存在。推廣言之，即所謂一切法自性皆空。法性空慧宗備明此義。  ### 　　丙　因緣生存之主伴攝入同異與圓中  須因緣齊備以…"
+    },
+    {
+      "matched": "華嚴宗",
+      "standard": "華嚴宗",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "宗派",
+      "is_standard": true,
+      "variants_of_standard": [
+        "賢首",
+        "賢首宗",
+        "賢首教"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "華嚴宗"
+      ],
+      "sample_context": "…法皆為無力相資之伴，要得主伴關係（主因助緣）全備方能完成其生存。此說在中國自創的華嚴宗、天台宗及禪、淨宗特詳講之。所謂一法攝盡一切法；舉宇宙間所有諸法，法法皆可為主…"
+    },
+    {
+      "matched": "天台宗",
+      "standard": "天台宗",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "宗派",
+      "is_standard": true,
+      "variants_of_standard": [
+        "台教",
+        "天台",
+        "天台學",
+        "天台教"
+      ],
+      "vocab_note": "",
+      "source": "batch_01,v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "天台宗"
+      ],
+      "sample_context": "…力相資之伴，要得主伴關係（主因助緣）全備方能完成其生存。此說在中國自創的華嚴宗、天台宗及禪、淨宗特詳講之。所謂一法攝盡一切法；舉宇宙間所有諸法，法法皆可為主，而又皆…"
+    },
+    {
+      "matched": "中國佛學",
+      "standard": "中國佛學",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "判教框架",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "太虚以此概念统摄中国佛教的独特思想传统，核心命题为「中国佛学特质在禅」。区别于印度、西藏、日本、南洋等地域佛教形态，是一种以历史文化为脉络的判教方式。",
+      "source": "phase2_fulltext",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "中國佛學"
+      ],
+      "sample_context": "…異，纖毫不混。現在須要就此特別講明者，這是佛教中明因緣生法最圓滿中正的教理，也是中國佛學的特色，應當促起世人注意的地方。  ## 四　破邪  不過，在世間一般的學說…"
+    },
+    {
+      "matched": "無生",
+      "standard": "無生",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "無生"
+      ],
+      "sample_context": "…有一刱造主宰者為「因」，以使之生，以使之滅；但彼主宰者之自身，則並不要「因」，亦無生滅：此種所說「因」甚不平等。萬有要因、彼也要因，彼不要因、萬有也不要因，故其所說…"
+    },
+    {
+      "matched": "虛空",
+      "standard": "虛空",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "虛空"
+      ],
+      "sample_context": "…可通。其他與此相類似的哲學上科學上，或偏執物質，或偏執精神以為因的很多很多，如說虛空一元、電子一元等。此等說法，用佛理觀之，皆講不通。此種不平等的因果論法，正是一般…"
+    },
+    {
+      "matched": "理觀",
+      "standard": "理觀",
+      "occurrences": 1,
+      "domain": "行持",
+      "subdomain": "禪觀",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "理觀"
+      ],
+      "sample_context": "…或偏執物質，或偏執精神以為因的很多很多，如說虛空一元、電子一元等。此等說法，用佛理觀之，皆講不通。此種不平等的因果論法，正是一般人誤認佛教與摧殘佛教的根源所在，世人…"
+    },
+    {
+      "matched": "有宗",
+      "standard": "瑜伽行派",
+      "occurrences": 1,
+      "domain": "历史",
+      "subdomain": "大乘宗派",
+      "is_standard": false,
+      "variants_of_standard": [
+        "有宗",
+        "瑜伽行",
+        "傳世親學"
+      ],
+      "vocab_note": "印度大乘二大系之一",
+      "source": "batch_01",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "有宗"
+      ],
+      "sample_context": "…祟，亦應鄭重的予以打倒。  ### 　　丙　偏因或緣  說偏因者，如佛教中的一切有宗，及世間哲學的命定論者、目的論者，皆過於偏執因而落於有邊了；或偏執緣的，如哲學的…"
+    },
+    {
+      "matched": "有邊",
+      "standard": "有邊",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "有邊"
+      ],
+      "sample_context": "…說偏因者，如佛教中的一切有宗，及世間哲學的命定論者、目的論者，皆過於偏執因而落於有邊了；或偏執緣的，如哲學的偶然論者、機械論者，及佛教中一切空宗，則又過於偏執緣而落…"
+    },
+    {
+      "matched": "空宗",
+      "standard": "空宗",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "中觀學",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "空宗"
+      ],
+      "sample_context": "…，皆過於偏執因而落於有邊了；或偏執緣的，如哲學的偶然論者、機械論者，及佛教中一切空宗，則又過於偏執緣而落於空邊了。都急須加以糾正，使之消歸因緣生法的中和實相。  #…"
+    },
+    {
+      "matched": "實相",
+      "standard": "實相",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "實相"
+      ],
+      "sample_context": "…教中一切空宗，則又過於偏執緣而落於空邊了。都急須加以糾正，使之消歸因緣生法的中和實相。  ## 五　結論  復次，由上斥除不平等的一因，及無因、偶然，並糾正偏因或偏…"
+    },
+    {
+      "matched": "三世",
+      "standard": "三世",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "三世"
+      ],
+      "sample_context": "…若能正信此所說因緣生法確為普遍的真理，舉國家民族為主，則遍攝遍入一切以為伴，歷之三世無不通，行之十方無不準，民族國家乃能真成其至上。而軍事勝利之第一，亦得成真實無謬…"
+    },
+    {
+      "matched": "大慧",
+      "standard": "大慧",
+      "occurrences": 1,
+      "domain": "教理",
+      "subdomain": "基礎教義",
+      "is_standard": true,
+      "variants_of_standard": [],
+      "vocab_note": "",
+      "source": "v3_draft",
+      "in_heading": false,
+      "_heading_hits": 0,
+      "matched_via": [
+        "大慧"
+      ],
+      "sample_context": "…若能定志於此豎窮三際橫遍十方的因緣生法真理，必能建成萬古不朽之功業。  （月滄、大慧合記）（見海刊二十卷第六期）  "
+    }
+  ],
+  "domain_summary": {
+    "domains": {
+      "教理": 53,
+      "行持": 5,
+      "制度": 3,
+      "历史": 2,
+      "社会文化": 1
+    },
+    "subdomains": {
+      "基礎教義": 31,
+      "唯識學": 5,
+      "判教框架": 4,
+      "大乘通義": 4,
+      "中觀學": 3,
+      "修行次第": 3,
+      "佛法體系": 2,
+      "宗派": 2,
+      "大乘有宗": 1,
+      "經典": 1,
+      "人物": 1,
+      "僧制": 1,
+      "僧教育": 1,
+      "佛教與文化": 1,
+      "菩萨行": 1,
+      "寺院管理": 1,
+      "禪觀": 1,
+      "大乘宗派": 1
+    }
+  }
+}

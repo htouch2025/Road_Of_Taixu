@@ -1,0 +1,23 @@
+{
+  "id": "conv-1782515086141-c911xz2ga",
+  "providerId": "claude",
+  "title": "nihao",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1782515086142,
+  "updatedAt": 1782515797079,
+  "lastResponseAt": 1782515787877,
+  "sessionId": "9c8dc949-50f1-418e-9239-d3639940ce6c",
+  "providerState": {
+    "providerSessionId": "9c8dc949-50f1-418e-9239-d3639940ce6c"
+  },
+  "currentNote": "tmp/abstract/05_佛陀学纲_内容摘要.md",
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 0,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextWindow": 200000,
+    "contextTokens": 0,
+    "percentage": 0
+  }
+}
