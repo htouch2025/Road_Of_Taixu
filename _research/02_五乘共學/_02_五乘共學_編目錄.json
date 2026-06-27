@@ -61,7 +61,7 @@
       "prev": null,
       "next": "佛說善生經講錄",
       "prev_index": null,
-      "next_index": 1,
+      "next_index": 58,
       "字数": 10246
     },
     {
@@ -77,8 +77,8 @@
       "byte_size": 103818,
       "prev": "佛說十善業道經講要",
       "next": "構成佛教之要素",
-      "prev_index": 0,
-      "next_index": 2,
+      "prev_index": 1,
+      "next_index": 129,
       "字数": 16724
     },
     {
@@ -94,8 +94,8 @@
       "byte_size": 6075,
       "prev": "佛說善生經講錄",
       "next": "生命之研究",
-      "prev_index": 1,
-      "next_index": 3,
+      "prev_index": 58,
+      "next_index": 130,
       "字数": 1207
     },
     {
@@ -111,8 +111,8 @@
       "byte_size": 7835,
       "prev": "構成佛教之要素",
       "next": "生命之起源",
-      "prev_index": 2,
-      "next_index": 5,
+      "prev_index": 129,
+      "next_index": 132,
       "備註": "含附錄：（附）答生命研究之疑問",
       "字数": 873
     },
@@ -130,7 +130,7 @@
       "prev": "生命之研究",
       "next": "三世因果",
       "prev_index": 130,
-      "next_index": 6,
+      "next_index": 142,
       "字数": 3993
     },
     {
@@ -146,9 +146,8 @@
       "byte_size": 6544,
       "prev": "生命之起源",
       "next": "救世覺人之佛法",
-      "prev_index": 5,
-      "next_index": 7,
-      "字数": 1405
+      "prev_index": 132,
+      "next_index": 143
     },
     {
       "編號": 7,
@@ -163,9 +162,8 @@
       "byte_size": 14507,
       "prev": "三世因果",
       "next": "佛教人乘正法論",
-      "prev_index": 6,
-      "next_index": 8,
-      "字数": 2243
+      "prev_index": 142,
+      "next_index": 154
     },
     {
       "編號": 8,
@@ -180,9 +178,8 @@
       "byte_size": 44838,
       "prev": "救世覺人之佛法",
       "next": "人生進善之階段",
-      "prev_index": 7,
-      "next_index": 9,
-      "字数": 5884
+      "prev_index": 143,
+      "next_index": 171
     },
     {
       "編號": 9,
@@ -197,9 +194,8 @@
       "byte_size": 10113,
       "prev": "佛教人乘正法論",
       "next": "佛學之人生道德",
-      "prev_index": 8,
-      "next_index": 10,
-      "字数": 1852
+      "prev_index": 154,
+      "next_index": 180
     },
     {
       "編號": 10,
@@ -214,9 +210,8 @@
       "byte_size": 13963,
       "prev": "人生進善之階段",
       "next": "八正道與改善人群生活",
-      "prev_index": 9,
-      "next_index": 11,
-      "字数": 2357
+      "prev_index": 171,
+      "next_index": 192
     },
     {
       "編號": 11,
@@ -231,9 +226,8 @@
       "byte_size": 7888,
       "prev": "佛學之人生道德",
       "next": "學佛先從做人起",
-      "prev_index": 10,
-      "next_index": 12,
-      "字数": 1248
+      "prev_index": 180,
+      "next_index": 202
     },
     {
       "編號": 12,
@@ -248,9 +242,8 @@
       "byte_size": 9941,
       "prev": "八正道與改善人群生活",
       "next": "佛法原理與做人",
-      "prev_index": 11,
-      "next_index": 13,
-      "字数": 2036
+      "prev_index": 192,
+      "next_index": 203
     },
     {
       "編號": 13,
@@ -265,9 +258,8 @@
       "byte_size": 8762,
       "prev": "學佛先從做人起",
       "next": "真佛教徒——即俗即真的大乘行者",
-      "prev_index": 12,
-      "next_index": 14,
-      "字数": 1837
+      "prev_index": 202,
+      "next_index": 204
     },
     {
       "編號": 14,
@@ -282,9 +274,8 @@
       "byte_size": 14089,
       "prev": "佛法原理與做人",
       "next": "生活與生死",
-      "prev_index": 13,
-      "next_index": 15,
-      "字数": 3015
+      "prev_index": 203,
+      "next_index": 205
     },
     {
       "編號": 15,
@@ -299,9 +290,8 @@
       "byte_size": 10090,
       "prev": "真佛教徒——即俗即真的大乘行者",
       "next": "人生",
-      "prev_index": 14,
-      "next_index": 16,
-      "字数": 2181
+      "prev_index": 204,
+      "next_index": 206
     },
     {
       "編號": 16,
@@ -316,9 +306,8 @@
       "byte_size": 8698,
       "prev": "生活與生死",
       "next": "人生佛學的說明",
-      "prev_index": 15,
-      "next_index": 17,
-      "字数": 1524
+      "prev_index": 205,
+      "next_index": 207
     },
     {
       "編號": 17,
@@ -333,9 +322,8 @@
       "byte_size": 19735,
       "prev": "人生",
       "next": "人生佛教開題",
-      "prev_index": 16,
-      "next_index": 18,
-      "字数": 3668
+      "prev_index": 206,
+      "next_index": 221
     },
     {
       "編號": 18,
@@ -350,9 +338,8 @@
       "byte_size": 9527,
       "prev": "人生佛學的說明",
       "next": "人生佛教與層創進化論",
-      "prev_index": 17,
-      "next_index": 19,
-      "字数": 1932
+      "prev_index": 207,
+      "next_index": 225
     },
     {
       "編號": 19,
@@ -367,9 +354,8 @@
       "byte_size": 16430,
       "prev": "人生佛教開題",
       "next": "人生佛教之目的",
-      "prev_index": 18,
-      "next_index": 20,
-      "字数": 2847
+      "prev_index": 221,
+      "next_index": 236
     },
     {
       "編號": 20,
@@ -384,9 +370,8 @@
       "byte_size": 5328,
       "prev": "人生佛教與層創進化論",
       "next": "人生的佛教",
-      "prev_index": 19,
-      "next_index": 21,
-      "字数": 893
+      "prev_index": 225,
+      "next_index": 237
     },
     {
       "編號": 21,
@@ -401,9 +386,8 @@
       "byte_size": 7104,
       "prev": "人生佛教之目的",
       "next": "學佛之簡明標準",
-      "prev_index": 20,
-      "next_index": 22,
-      "字数": 1387
+      "prev_index": 236,
+      "next_index": 238
     },
     {
       "編號": 22,
@@ -418,9 +402,8 @@
       "byte_size": 5462,
       "prev": "人生的佛教",
       "next": null,
-      "prev_index": 21,
-      "next_index": null,
-      "字数": 1056
+      "prev_index": 237,
+      "next_index": null
     }
   ]
 }
