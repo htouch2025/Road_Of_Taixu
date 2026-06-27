@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "scripts/keyword-extractor/requirements.md",
+                "file": "tmp/CC 审查 xml skill 结果.md",
                 "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "requirements"
+              "title": "CC 审查 xml skill 结果"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "scripts/keyword-extractor/requirements.md",
+                "file": "tmp/CC 审查 xml skill 结果.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "requirements 的反向链接列表"
+              "title": "CC 审查 xml skill 结果 的反向链接列表"
             }
           },
           {
@@ -197,10 +197,12 @@
   },
   "active": "1f2eb703c640b975",
   "lastOpenFiles": [
+    "tmp/未命名.md",
+    "tmp/CC 审查 xml skill 结果.md",
+    "scripts/keyword-extractor/requirements.md",
     "tmp/abstract/Gemini_优化提示词.md",
     "tmp/Gemini_优化提示词.md",
     "scripts/keyword-extractor/SKILL.md",
-    "scripts/keyword-extractor/requirements.md",
     "scripts/keyword-extractor/references/_keyword_method.md",
     "_research/01_佛法總學/_01_佛法總學_仪表盘.md",
     "scripts/keyword-extractor/candidates/_research_01_佛法總學_02_判攝_18_萬有皆因緣所生_candidates.json",
@@ -224,8 +226,6 @@
     "tmp/abstract/04_佛乘宗要論_ChatGPT.md",
     "_research/01_佛法總學/01_概論/04_佛乘宗要論.md",
     "tmp/abstract/Gemini.md",
-    "_research/01_佛法總學/_01_佛法總學_編目錄.md",
-    "_research/04_大乘通學/_04_大乘通學_仪表盘.md",
     "tmp/abstract",
     "未命名",
     "tmp",
