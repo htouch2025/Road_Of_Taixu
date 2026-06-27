@@ -5,3 +5,7 @@ __pycache__/
 *.tmp
 .codex/
 output/
+.venv/
+.git/
+.claude/
+.claudian/
