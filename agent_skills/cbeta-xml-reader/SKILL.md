@@ -2,7 +2,7 @@
 name: cbeta-xml-reader
 description: "Read CBETA TEI P5 XML files for the 太虚大师全书 (Collected Works of Master Taixu). Use when Codex needs to: (1) read or navigate CBETA XML source texts from local _data/cbeta/TX/ files, (2) extract article catalogs and document hierarchy (编/篇/部/章/节/小节) from CBETA structured data, (3) interpret cb:mulu level attributes and disambiguate semantic levels like 章 vs 节 vs 部, (4) cross-reference CBETA content against the paper edition table of contents, (5) process legacy DOC/HTML editions and compare them with the authoritative CBETA TEI version."
 metadata:
-  version: "0.16.0"
+  version: "0.17.0"
   last_updated: "2026-06-28"
   status: active
   task_type: open-ended
@@ -347,6 +347,27 @@ python scripts/extract_book_catalog.py \
 
 **MD 输出：** 题注放在篇名之下、目录树之前，单独一行。格式如 `（1932 年 12 月，在閩南佛學院講）`。
 **JSON 输出：** 放在 `題注` 字段中，无则为空字符串。
+
+
+### 4b. 批量刊载信息扫描（extract_publication_info.py）
+
+`extract_publication_info.py` 批量扫描全部 20 编的 `_編目錄.json`，对每篇文章按字节偏移读取 XML 片段，从**四个位置**提取文末信息：
+
+| 位置 | 标签 | 说明 |
+|------|------|------|
+| byline | `<byline cb:type="other">`, `cb:type="author"`, `cb:type="editor"` | 讲演时间地点、记録者、刊载出处、作者署名 |
+| inline_note | `<note place="inline">`（仅 byline 内部） | 刊载来源（如「見海刊X卷Y期」） |
+| 附註段落 | `<p>` 含 `（附註）` 且与刊载相关 | 出处说明、版本变更 |
+| foot_note | `<note place="foot text" type="orig">` | 长篇编辑注中的刊载/版次信息 |
+
+每条信息自动分类为：`刊载出处`、`讲演信息`、`记録者`、`作者署名`、`出处说明`、`印行信息`、`综合`、`其他`。
+
+```bash
+python3 agent_skills/cbeta-xml-reader/scripts/extract_publication_info.py
+# 输出：_research/太虚大师全书刊载信息全录_v2.md
+```
+
+输出格式：按 20 编分组，每篇文章列出所有文末信息，标注类型标签和来源位置。
 
 
 ### 5. 全文输出（extract_article_fulltext.py）
@@ -723,8 +744,9 @@ elif own_text:
 - `scripts/extract_book_catalog.py` — 提取编级篇名目录 (level 1-2)，含字节偏移扫描与增强 JSON 输出
 - `scripts/extract_mulu.py` — 提取单篇文章的完整 `<cb:mulu>` 层级结构
 - `scripts/extract_article_fulltext.py` — 提取单篇文章完整全文 Markdown（纯文本，无 Obsidian 特有语法），含目录树、正文、字数统计、篇末注释及篇末附注
-- `scripts/_utils.py` — 共享工具函数：`chinese_to_int`、`normalize_byline`、`split_month_season`、`build_suffix`
+- `scripts/_utils.py` — 共享工具函数：`chinese_to_int`、`normalize_byline`、`split_month_season`、`build_suffix`、`parse_byline_fields`，以及刊载信息提取函数：`classify_byline_content`、`is_publication_related`、`extract_all_byline_info`、`extract_inline_notes`、`extract_fuzhu_paragraphs`、`extract_back_notes_for_article`
 - `scripts/add_frontmatter_to_existing.py` — 为已提取的旧文章补加 YAML frontmatter，并重命名文件前缀为编内全局序号
+- `scripts/extract_publication_info.py` — 批量扫描全部 20 编目录，提取所有文章的文末信息（byline、inline note、附註段落、篇末注），生成 `_research/太虚大师全书刊载信息全录_v2.md`，每条信息标注类型（刊载出处/讲演信息/记録者/作者署名/出处说明/印行信息）和来源位置
 **⚠️ CX 限制：Python 环境可用但受限。** 在 Codex 沙箱中以下能力受影响：
 - `pip install` 可能因网络限制失败，优先使用本地已安装的库（xml.etree.ElementTree、json、re 均为标准库无需安装）
 - 大批量文件 I/O 应在项目工作区 `_data/cbeta/TX/` 和 `_research/` 内完成
