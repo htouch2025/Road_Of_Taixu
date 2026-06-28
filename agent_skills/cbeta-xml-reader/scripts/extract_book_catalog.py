@@ -191,6 +191,38 @@ def extract_catalog(xml_paths):
     return entries, file_map
 
 
+def merge_appendix_articles(entries):
+    """将帶「（附）」前綴的附錄文章合併入前一篇文章。
+
+    Per Known Pitfall #13, CBETA sometimes marks appendix articles as
+    independent level-2 entries with a （附） prefix. These should be
+    merged into the preceding article per the paper edition.
+
+    Modifies entries in place. Returns the number of merged articles.
+    """
+    merged = 0
+    i = 0
+    while i < len(entries):
+        e = entries[i]
+        if e['篇名'].startswith('（附）') and i > 0:
+            prev = entries[i - 1]
+            # Extend preceding article's byte_end to cover the appendix
+            prev['byte_end'] = e['byte_end']
+            # Add 備註 field
+            if '備註' not in prev:
+                prev['備註'] = ''
+            if prev['備註']:
+                prev['備註'] += '；'
+            prev['備註'] += f'含附錄：{e["篇名"]}'
+            # Remove appendix entry
+            entries.pop(i)
+            merged += 1
+            # Don't increment i — the next entry now occupies index i
+        else:
+            i += 1
+    return merged
+
+
 def build_md(entries, book_name):
     """Build Markdown catalog in - nested-list format with 编内连续编号."""
     # Build section → article list (preserve order)
@@ -248,6 +280,7 @@ def build_json(entries, book_name, book_num, file_map):
             'byte_start': e['byte_start'],
             'byte_end': e['byte_end'],
             'byte_size': e['byte_end'] - e['byte_start'],
+            '備註': e.get('備註', ''),
             'prev': entries[i - 1]['篇名'] if i > 0 else None,
             'next': entries[i + 1]['篇名'] if i < len(entries) - 1 else None,
             'prev_index': i - 1 if i > 0 else None,
@@ -290,6 +323,11 @@ def main():
         args.out_dir = f'_research/{args.book_num:02d}_{bian_suffix}'
 
     entries, file_map = extract_catalog(args.xml_files)
+
+    # Auto-merge （附） prefixed appendix articles into preceding article (Pitfall #13)
+    merged_count = merge_appendix_articles(entries)
+    if merged_count > 0:
+        print(f'   🔗 已自動合併 {merged_count} 篇附錄文章至前一篇文章')
 
     md_text = build_md(entries, args.book)
     json_data = build_json(entries, args.book, args.book_num, file_map)

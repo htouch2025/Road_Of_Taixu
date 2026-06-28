@@ -232,57 +232,71 @@ def render_paragraph(p_elem, notes_map=None):
 def _is_tei_tag(tag, name):
     return tag == f'{{{TEI_NS}}}{name}' or tag == name
 
+def _render_body_child(child, notes_map=None):
+    """Render a single non-div body child element (<p>, <byline>, <note>).
+
+    Returns a list of 0-1 text lines (empty list if child should be skipped).
+    Extracted from extract_paragraphs() so walk_div_tree() can call it per-child
+    in XML document order.
+    """
+    local_tag = child.tag.split('}')[-1] if '}' in child.tag else child.tag
+    # Skip bylines that are 题下注释 (——...—— format, date/location)
+    # already extracted by get_byline_text() and placed after the article title.
+    # Do NOT use cb:type="other" for this — CBETA uses it on both
+    # 题下注释 AND 记录者 bylines (pitfall #22).
+    if local_tag == 'byline':
+        raw = ''.join(child.itertext()).strip()
+        if raw.startswith('——') and raw.endswith('——'):
+            return []
+    if local_tag in ('byline', 'note'):
+        # byline/note as direct children of a div (sibling of <p>)
+        # Use itertext() to capture text across <lb/> breaks (pitfall #16)
+        own_text = ''.join(child.itertext())
+        own_text = ''.join(own_text.split())  # compress whitespace
+        # Check for nkr_note_orig_* anchors inside byline/note elements.
+        # itertext() skips anchor elements (they have no text), so we
+        # must explicitly collect footnote number(s) and append them.
+        if notes_map:
+            for anchor_elem in child.iter(f'{{{TEI_NS}}}anchor'):
+                aid = anchor_elem.get("{http://www.w3.org/XML/1998/namespace}id") or anchor_elem.get("xml:id", "")
+                if aid and aid in notes_map:
+                    own_text += f'[{notes_map[aid]}]'
+            for anchor_elem in child.findall('.//anchor'):
+                aid = anchor_elem.get("{http://www.w3.org/XML/1998/namespace}id") or anchor_elem.get("xml:id", "")
+                if aid and aid in notes_map:
+                    own_text += f'[{notes_map[aid]}]'
+        inline_note = child.find(f'{{{TEI_NS}}}note')
+        if inline_note is None:
+            inline_note = child.find('note')
+        if inline_note is not None and inline_note.get('place') == 'inline':
+            nt = ''.join(inline_note.itertext())
+            nt = ''.join(nt.split())  # compress same as own_text
+            # Remove note text from own_text (it's caught by itertext above)
+            if nt:
+                own_text = own_text.replace(nt, '').rstrip()
+                own_text = ''.join(own_text.split())
+            if own_text and nt:
+                return [f'{own_text}（{nt}）']
+            elif nt:
+                return [f'（{nt}）']
+            elif own_text:
+                return [own_text]
+            return []
+        elif own_text:
+            return [own_text]
+        return []
+    elif _is_tei_tag(child.tag, 'p'):
+        text = render_paragraph(child, notes_map)
+        if text.strip():
+            return [text]
+    return []
+
+
 def extract_paragraphs(div, notes_map=None):
+    """Extract all non-div body children from a div."""
     out = []
     for child in div:
-        local_tag = child.tag.split('}')[-1] if '}' in child.tag else child.tag
-        # Skip bylines that are 题下注释 (——...—— format, date/location)
-        # already extracted by get_byline_text() and placed after the article title.
-        # Do NOT use cb:type="other" for this — CBETA uses it on both
-        # 题下注释 AND 记录者 bylines (pitfall #22).
-        if local_tag == 'byline':
-            raw = ''.join(child.itertext()).strip()
-            if raw.startswith('——') and raw.endswith('——'):
-                continue
-        if local_tag in ('byline', 'note'):
-            # byline/note as direct children of a div (sibling of <p>)
-            # Use itertext() to capture text across <lb/> breaks (pitfall #16)
-            own_text = ''.join(child.itertext())
-            own_text = ''.join(own_text.split())  # compress whitespace
-            # Check for nkr_note_orig_* anchors inside byline/note elements.
-            # itertext() skips anchor elements (they have no text), so we
-            # must explicitly collect footnote number(s) and append them.
-            if notes_map:
-                for anchor_elem in child.iter(f'{{{TEI_NS}}}anchor'):
-                    aid = anchor_elem.get("{http://www.w3.org/XML/1998/namespace}id") or anchor_elem.get("xml:id", "")
-                    if aid and aid in notes_map:
-                        own_text += f'[{notes_map[aid]}]'
-                for anchor_elem in child.findall('.//anchor'):
-                    aid = anchor_elem.get("{http://www.w3.org/XML/1998/namespace}id") or anchor_elem.get("xml:id", "")
-                    if aid and aid in notes_map:
-                        own_text += f'[{notes_map[aid]}]'
-            inline_note = child.find(f'{{{TEI_NS}}}note')
-            if inline_note is None:
-                inline_note = child.find('note')
-            if inline_note is not None and inline_note.get('place') == 'inline':
-                nt = ''.join(inline_note.itertext())
-                nt = ''.join(nt.split())  # compress same as own_text
-                # Remove note text from own_text (it's caught by itertext above)
-                if nt:
-                    own_text = own_text.replace(nt, '').rstrip()
-                    own_text = ''.join(own_text.split())
-                if own_text and nt:
-                    out.append(f'{own_text}（{nt}）')
-                elif nt:
-                    out.append(f'（{nt}）')
-                elif own_text:
-                    out.append(own_text)
-            elif own_text:
-                out.append(own_text)
-        elif _is_tei_tag(child.tag, 'p'):
-            text = render_paragraph(child, notes_map)
-            if text.strip():
-                out.append(text)
+        out.extend(_render_body_child(child, notes_map))
     return out
 
 
@@ -469,15 +483,17 @@ def walk_div_tree(div, toc_entries, body_lines, notes_map=None, level_offset=0):
 
     if not heading:
         div_type = div.get('type', '')
-        for para in extract_paragraphs(div, notes_map):
-            if div_type == 'orig':
-                body_lines.append(f'> **{para}**')
-            else:
-                body_lines.append(para)
-            body_lines.append('')
+        # Process children in XML document order (same as headed-div branch)
         for child in div:
             if child.tag == f'{{{CBETA_NS}}}div':
                 walk_div_tree(child, toc_entries, body_lines, notes_map, level_offset)
+            else:
+                for para in _render_body_child(child, notes_map):
+                    if div_type == 'orig':
+                        body_lines.append(f'> **{para}**')
+                    else:
+                        body_lines.append(para)
+                    body_lines.append('')
         return
 
     if should_skip_div(mulu_text):
@@ -530,18 +546,19 @@ def walk_div_tree(div, toc_entries, body_lines, notes_map=None, level_offset=0):
     if appendix_subtitle:
         recurse_offset = -(mulu_lv - 1)
 
-    # Recurse into child divs first, so their body content comes before
-    # trailing byline/note extracted from this div (those are siblings of
-    # child <cb:div> in the last section, see pitfall #17/#22).
+    # Process direct children in XML document order.
+    # <cb:div> children are recursed into; <p>/<byline>/<note> children
+    # are rendered inline at their natural position.  Previously the two
+    # were processed in separate passes (all divs first, then all paras),
+    # which buried leading <p> text behind trailing byline/note from the
+    # last child div (pitfall #17/#22/#尾注错位).
     for child in div:
         if child.tag == f'{{{CBETA_NS}}}div':
             walk_div_tree(child, toc_entries, body_lines, notes_map, recurse_offset)
-
-   # Body paragraphs — flush-left, no indent
-   # Extracted AFTER child divs so trailing byline/note lands at the end
-    for para in extract_paragraphs(div, notes_map):
-        body_lines.append(para)
-        body_lines.append('')
+        else:
+            for para in _render_body_child(child, notes_map):
+                body_lines.append(para)
+                body_lines.append('')
 
 
 def extract_publication_notes(div):

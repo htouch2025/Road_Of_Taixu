@@ -2,8 +2,8 @@
 name: cbeta-xml-reader
 description: "Read CBETA TEI P5 XML files for the 太虚大师全书 (Collected Works of Master Taixu). Use when Codex needs to: (1) read or navigate CBETA XML source texts from local _data/cbeta/TX/ files, (2) extract article catalogs and document hierarchy (编/篇/部/章/节/小节) from CBETA structured data, (3) interpret cb:mulu level attributes and disambiguate semantic levels like 章 vs 节 vs 部, (4) cross-reference CBETA content against the paper edition table of contents, (5) process legacy DOC/HTML editions and compare them with the authoritative CBETA TEI version."
 metadata:
-  version: "0.15.0"
-  last_updated: "2026-06-21"
+  version: "0.16.0"
+  last_updated: "2026-06-28"
   status: active
   task_type: open-ended
 ---
@@ -93,6 +93,7 @@ all_text = ''.join(el.itertext())  # 纯文本全文
 | `next` | string/null | 后一篇文章名（链表后继，末篇为 null） |
 | `prev_index` | int/null | 前一篇文章的 mulu_index |
 | `next_index` | int/null | 后一篇文章的 mulu_index |
+| `備註` | string | （可选）特殊处理说明，如「含附錄：（附）…」 |
 
 > **字节偏移计算方式**：`scan_byte_offsets()` 通过深度追踪（`find_div_end`）正确定位每个 `<cb:div>` 的闭合标签，而非简单取下一个 div 的起始位置。提取后自动校验相邻文章 byte 范围，发现越界（overshoot）或异常大间距（>500 bytes）时输出警告。
 
@@ -237,8 +238,7 @@ Full catalog with 四藏分类 in `references/taixu_catalog.md`.
 
 ### 1. 提取整编篇名目录（编级 catalog）
 
-**⚠️ 提取後須做兩項人工複核：**（1）檢查是否有帶「（附）」前綴的 level-2 條目需合併入前一篇；（2）確認編內連續編號正確（跨子目不重置，从 1 递增至编末）。
-詳見 Known Pitfalls 第 12、13 條。
+**⚠️ 提取後僅須做一項人工複核：** 確認編內連續編號正確（跨子目不重置，从 1 递增至编末）。帶「（附）」前綴的附錄文章已由指令碼自動合併（詳見 Known Pitfalls 第 13 條）。
 
 使用 `scripts/extract_book_catalog.py`（路径相对于 skill 目录，即 `scripts/cbeta-xml-reader/scripts/`），仅提取 level 1（子目类别）和 level 2（篇名）。
 脚本自动为每篇文章扫描原始文件字节偏移量，构建增强 JSON（含链表 + byte_start/byte_end）。
@@ -448,17 +448,11 @@ themes:
    ```
 11. **ElementTree 无 parent 指针** — Python 标准库 `xml.etree.ElementTree` 不支持 `lxml` 的 `iterancestors()`。需手动构建 `parent_map = {child: parent for parent in root.iter() for child in parent}`。见实现备忘 A。
 12. **卷 div ≠ 文章 div** — 从 `<cb:mulu level="2">` 向上爬两级 div 得到的是整卷的容器 div（如 TX01n0001 全文），非单篇文章专属容器。不得对该 div 直接提取，而应以相邻 level=2 条目为边界切分。见实现备忘 B。
-13. **CBETA 附錄文章誤列為獨立篇目** — 某些帶「（附）」前綴的 level-2 條目（如「（附）答生命研究之疑問」）是前一篇文章的附錄，CBETA 標為獨立 level-2，但依紙質版不應獨立成篇。特徵：
-   - 篇名以「（附）」開頭
-   - 緊跟前一篇之後，其間無 level-1（子目分隔）
-   - 紙質版目錄中附屬於前一篇
-
-   處理方式：
-   - 將附錄合併入前一篇：前一篇的 `byte_end` 延伸到附錄的 `byte_end`
-   - 從 `篇目鏈表` 中移除附錄條目，重連鏈表
+13. **CBETA 附錄文章誤列為獨立篇目（已自動化）** — 某些帶「（附）」前綴的 level-2 條目（如「（附）答生命研究之疑問」）是前一篇文章的附錄，CBETA 標為獨立 level-2，但依紙質版不應獨立成篇。`extract_book_catalog.py` 中的 `merge_appendix_articles()` 現已自動處理：
+   - 偵測 `篇名.startswith('（附）')` 的條目
+   - 將其合併入前一篇：前一篇的 `byte_end` 延伸到附錄的 `byte_end`
+   - 從 `篇目鏈表` 中移除附錄條目，後續文章自動重新編號
    - 在前一篇的 `備註` 字段標註「含附錄：（附）…」
-   - 更新對應子目的 `篇名` 列表和 `篇數`
-   - 後續文章 `編號` 重新編排
 14. **子目內篇號應獨立編號** — 每個子目下的文章編號從 1 起編，而非跨子目連續編號。例如：
 15. **orig/commentary div 正文提取** — 部分文章（如《般若波羅密多心經講義》）的释经段落将正文存放在 `type="orig"` 和 `type="commentary"` 的 `<cb:div>` 子节点中，而这些 div 自身**没有** `<cb:mulu>` 或 `<head>` 标记作为标题。`extract_article_fulltext.py` 的 `walk_div_tree()` 原来遇到无标题的 div 就直接 `return`，导致整个释经部分只剩标题列表、没有任何正文。
     - **根因：** 标题 div（`type="other"`，含 `<cb:mulu>` + `<head>`）与正文 div（`type="orig"`/`type="commentary"`）是**同一个父 div 下的兄弟节点**关系。标题 div 本身不含 `<p>` 段落，正文全在兄弟 div 中。
