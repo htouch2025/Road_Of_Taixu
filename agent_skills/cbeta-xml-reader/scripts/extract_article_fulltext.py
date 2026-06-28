@@ -526,19 +526,22 @@ def walk_div_tree(div, toc_entries, body_lines, notes_map=None, level_offset=0):
         body_lines.append('')
     else:
         body_lines.append('')
-   # Body paragraphs — flush-left, no indent
-    for para in extract_paragraphs(div, notes_map):
-        body_lines.append(para)
-        body_lines.append('')
-
     recurse_offset = level_offset
     if appendix_subtitle:
         recurse_offset = -(mulu_lv - 1)
 
-    # Recurse
+    # Recurse into child divs first, so their body content comes before
+    # trailing byline/note extracted from this div (those are siblings of
+    # child <cb:div> in the last section, see pitfall #17/#22).
     for child in div:
         if child.tag == f'{{{CBETA_NS}}}div':
             walk_div_tree(child, toc_entries, body_lines, notes_map, recurse_offset)
+
+   # Body paragraphs — flush-left, no indent
+   # Extracted AFTER child divs so trailing byline/note lands at the end
+    for para in extract_paragraphs(div, notes_map):
+        body_lines.append(para)
+        body_lines.append('')
 
 
 def extract_publication_notes(div):

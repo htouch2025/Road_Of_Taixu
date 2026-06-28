@@ -19,7 +19,7 @@ metadata:
 ## 快速上手
 
 ```bash
-# 从 skill 根目录运行（scripts/keyword-extractor/）
+# 从 skill 根目录运行（agent_skills/keyword-extractor/）
 
 # Phase A：生成候选 JSON
 python3 scripts/extract_keywords.py \
