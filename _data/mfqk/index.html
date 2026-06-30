@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>民国佛教期刊 — 查询阅览</title>
+<script src="sql-wasm.js"></script>
+<style>
+:root {
+  --bg: #faf9f6;
+  --surface: #fff;
+  --border: #e0dcd0;
+  --text: #3b372f;
+  --text-secondary: #8c8579;
+  --accent: #8b5e3c;
+  --accent-light: #f3ede5;
+  --radius: 6px;
+  --shadow: 0 1px 3px rgba(0,0,0,.06);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, "Noto Sans SC", "PingFang SC", sans-serif;
+  background: var(--bg); color: var(--text); line-height: 1.6;
+  min-height: 100vh; display: flex; flex-direction: column;
+}
+/* Header */
+header {
+  background: var(--surface); border-bottom: 1px solid var(--border);
+  padding: 0 24px; display: flex; align-items: center; gap: 32px;
+  height: 56px; flex-shrink: 0;
+}
+header h1 { font-size: 16px; font-weight: 600; white-space: nowrap; }
+nav { display: flex; gap: 4px; height: 100%; }
+nav button {
+  background: none; border: none; padding: 0 16px; font-size: 14px;
+  color: var(--text-secondary); cursor: pointer; border-bottom: 2px solid transparent;
+  transition: all .15s; font-family: inherit;
+}
+nav button:hover { color: var(--text); background: var(--accent-light); }
+nav button.active { color: var(--accent); border-bottom-color: var(--accent); font-weight: 600; }
+#dbStatus { margin-left: auto; font-size: 12px; color: var(--text-secondary); display: flex; align-items: center; gap: 6px; }
+#dbStatus .dot { width: 8px; height: 8px; border-radius: 50%; background: #ccc; }
+#dbStatus .dot.ready { background: #7ba669; }
+#dbStatus .dot.loading { background: #d4a745; animation: pulse .8s infinite; }
+@keyframes pulse { 50% { opacity: .4; } }
+
+/* Main */
+main { flex: 1; display: flex; overflow: hidden; }
+
+/* Panels */
+.panel { background: var(--surface); overflow-y: auto; }
+.panel-left { width: 240px; border-right: 1px solid var(--border); flex-shrink: 0; }
+.panel-mid { width: 280px; border-right: 1px solid var(--border); flex-shrink: 0; }
+.panel-right { flex: 1; }
+
+.panel-header {
+  padding: 12px 16px; font-size: 13px; font-weight: 600; color: var(--text-secondary);
+  border-bottom: 1px solid var(--border); position: sticky; top: 0; background: var(--surface);
+  z-index: 1; display: flex; align-items: center; gap: 8px;
+}
+.panel-header .count { font-weight: 400; color: var(--text-secondary); font-size: 12px; }
+
+/* List items */
+.list-item {
+  padding: 8px 16px; font-size: 13px; cursor: pointer; border-bottom: 1px solid #f5f3ef;
+  transition: background .1s;
+}
+.list-item:hover { background: var(--accent-light); }
+.list-item.selected { background: var(--accent-light); color: var(--accent); font-weight: 500; }
+.list-item .sub { font-size: 11px; color: var(--text-secondary); margin-top: 2px; }
+
+/* Search */
+.search-box {
+  padding: 12px 16px; border-bottom: 1px solid var(--border);
+}
+.search-box input {
+  width: 100%; padding: 8px 12px; border: 1px solid var(--border); border-radius: var(--radius);
+  font-size: 13px; font-family: inherit; background: var(--bg);
+}
+.search-box input:focus { outline: none; border-color: var(--accent); }
+.search-box select {
+  width: 100%; margin-top: 8px; padding: 6px 8px; border: 1px solid var(--border);
+  border-radius: var(--radius); font-size: 12px; font-family: inherit; background: var(--bg);
+}
+
+/* Paper list item */
+.paper-item { padding: 10px 16px; border-bottom: 1px solid #f5f3ef; cursor: pointer; }
+.paper-item:hover { background: var(--accent-light); }
+.paper-item .title { font-size: 14px; font-weight: 500; }
+.paper-item .meta { font-size: 12px; color: var(--text-secondary); margin-top: 4px; display: flex; gap: 12px; flex-wrap: wrap; }
+.paper-item .author { color: var(--accent); }
+.paper-item .pages { font-family: "SF Mono", monospace; font-size: 11px; }
+
+/* Detail view */
+.detail { padding: 24px 32px; max-width: 780px; }
+.detail h2 { font-size: 20px; margin-bottom: 16px; line-height: 1.4; }
+.detail table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.detail table td { padding: 6px 12px; border-bottom: 1px solid #f5f3ef; vertical-align: top; }
+.detail table td:first-child { width: 90px; color: var(--text-secondary); white-space: nowrap; }
+.detail table td a { color: var(--accent); cursor: pointer; text-decoration: none; }
+.detail table td a:hover { text-decoration: underline; }
+
+/* SQL console */
+.sql-console { padding: 16px 24px; display: flex; flex-direction: column; gap: 12px; height: 100%; }
+.sql-console textarea {
+  width: 100%; height: 80px; font-family: "SF Mono", monospace; font-size: 13px;
+  padding: 10px; border: 1px solid var(--border); border-radius: var(--radius);
+  resize: vertical; background: var(--bg);
+}
+.sql-console textarea:focus { outline: none; border-color: var(--accent); }
+.sql-console .sql-actions { display: flex; gap: 8px; align-items: center; }
+.sql-console button, .preset-btn {
+  padding: 6px 14px; border: 1px solid var(--border); border-radius: var(--radius);
+  background: var(--surface); font-size: 12px; cursor: pointer; font-family: inherit;
+}
+.sql-console button:hover, .preset-btn:hover { background: var(--accent-light); }
+.sql-console button.primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+.sql-result { flex: 1; overflow: auto; font-size: 12px; }
+.sql-result table { width: 100%; border-collapse: collapse; }
+.sql-result th {
+  position: sticky; top: 0; background: var(--bg); padding: 6px 10px;
+  text-align: left; font-size: 11px; color: var(--text-secondary); border-bottom: 2px solid var(--border);
+}
+.sql-result td { padding: 4px 10px; border-bottom: 1px solid #f5f3ef; max-width: 300px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.sql-error { color: #c44; font-size: 12px; padding: 8px; }
+
+/* Loading & empty */
+.loading, .empty {
+  padding: 40px 16px; text-align: center; color: var(--text-secondary); font-size: 13px;
+}
+.spinner { display: inline-block; width: 20px; height: 20px; border: 2px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin .6s linear infinite; margin-bottom: 8px; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* Loading overlay */
+#loadOverlay {
+  position: fixed; inset: 0; background: var(--bg); display: flex;
+  flex-direction: column; align-items: center; justify-content: center; gap: 16px;
+  z-index: 100;
+}
+#loadOverlay .progress-bar {
+  width: 280px; height: 6px; background: var(--border); border-radius: 3px; overflow: hidden;
+}
+#loadOverlay .progress-fill { height: 100%; background: var(--accent); width: 0%; transition: width .3s; }
+#loadOverlay .progress-text { font-size: 13px; color: var(--text-secondary); }
+
+/* Responsive */
+@media (max-width: 900px) {
+  .panel-left { width: 180px; }
+  .panel-mid { width: 220px; }
+}
+@media (max-width: 640px) {
+  main { flex-direction: column; }
+  .panel-left, .panel-mid { width: 100%; max-height: 200px; border-right: none; border-bottom: 1px solid var(--border); }
+}
+</style>
+</head>
+<body>
+
+<!-- Loading overlay -->
+<div id="loadOverlay">
+  <div class="spinner" id="loadSpinner"></div>
+  <div class="progress-text" id="loadMsg">正在加载数据库…</div>
+  <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+  <div class="progress-text" id="progressText"></div>
+  <div id="loadFallback" style="display:none;text-align:center">
+    <p style="margin-bottom:12px;color:var(--text)">浏览器无法直接读取本地文件（file:// 安全限制）</p>
+    <p style="font-size:13px;margin-bottom:8px">方案一：</p>
+    <code style="background:var(--accent-light);padding:4px 10px;border-radius:4px;font-size:12px">python3 serve.py</code>
+    <p style="font-size:12px;color:var(--text-secondary);margin:4px 0 16px">然后访问 http://localhost:8765/index.html</p>
+    <p style="font-size:13px;margin-bottom:8px">方案二：</p>
+    <label id="filePickerBtn" style="display:inline-block;padding:8px 20px;background:var(--accent);color:#fff;border-radius:var(--radius);cursor:pointer;font-size:13px">
+      选择 mfqk.db 文件
+    </label>
+    <input type="file" id="filePicker" style="display:none" accept=".db">
+  </div>
+</div>
+
+<!-- Header -->
+<header>
+  <h1>📰 民国佛教期刊</h1>
+  <nav id="tabs">
+    <button data-tab="journals" class="active">期刊浏览</button>
+    <button data-tab="classes">分类目录</button>
+    <button data-tab="search">搜索</button>
+    <button data-tab="sql">SQL查询</button>
+  </nav>
+  <div id="dbStatus"><span class="dot"></span> 等待加载</div>
+</header>
+
+<!-- Tab: Journals -->
+<main id="tab-journals" style="display:flex">
+  <div class="panel panel-left" id="journalList">
+    <div class="panel-header">期刊 <span class="count" id="journalCount"></span></div>
+  </div>
+  <div class="panel panel-mid" id="issueList">
+    <div class="panel-header">卷期</div>
+  </div>
+  <div class="panel panel-right" id="paperList">
+    <div class="panel-header">文章</div>
+  </div>
+</main>
+
+<!-- Tab: Classes -->
+<main id="tab-classes" style="display:none">
+  <div class="panel panel-left" id="superClassList">
+    <div class="panel-header">大类 <span class="count" id="superClassCount"></span></div>
+  </div>
+  <div class="panel panel-mid" id="classList">
+    <div class="panel-header">子分类</div>
+  </div>
+  <div class="panel panel-right" id="classPaperList">
+    <div class="panel-header">文章</div>
+  </div>
+</main>
+
+<!-- Tab: Search -->
+<main id="tab-search" style="display:none">
+  <div class="panel panel-left" style="width:300px">
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="输入搜索关键词…" autofocus>
+      <select id="searchType">
+        <option value="title">按标题搜索</option>
+        <option value="author">按作者搜索</option>
+        <option value="mid">按卷影编号 (mid)</option>
+      </select>
+    </div>
+    <div id="searchInfo" class="empty" style="display:none"></div>
+  </div>
+  <div class="panel panel-right" id="searchResults">
+    <div class="panel-header">搜索结果</div>
+  </div>
+</main>
+
+<!-- Tab: SQL -->
+<main id="tab-sql" style="display:none">
+  <div class="sql-console">
+    <div style="display:flex;gap:6px;flex-wrap:wrap;" id="presetBtns"></div>
+    <textarea id="sqlInput" placeholder="SELECT ... FROM paper LIMIT 10;"></textarea>
+    <div class="sql-actions">
+      <button class="primary" id="sqlRun">运行</button>
+      <span style="font-size:11px;color:var(--text-secondary)" id="sqlInfo"></span>
+    </div>
+    <div class="sql-result" id="sqlResult"></div>
+  </div>
+</main>
+
+<script>
+// ─── Database Manager ──────────────────────────────────
+const DBManager = {
+  db: null,
+  _ready: false,
+  _SQL: null,
+
+  /** Ensure sql.js is initialized once, with explicit WASM URL */
+  async _initSQL() {
+    if (this._SQL) return this._SQL;
+    // Local WASM file (same directory as this HTML)
+    this._SQL = await initSqlJs({
+      locateFile: file => file
+    });
+    return this._SQL;
+  },
+
+  async init() {
+    document.querySelector('#dbStatus').innerHTML = '<span class="dot loading"></span> 加载中…';
+    const overlay = document.getElementById('loadOverlay');
+    const progFill = document.getElementById('progressFill');
+    const progText = document.getElementById('progressText');
+    const loadSpinner = document.getElementById('loadSpinner');
+    const loadMsg = document.getElementById('loadMsg');
+    const loadFallback = document.getElementById('loadFallback');
+
+    try {
+      // Init sql.js first (load WASM from CDN)
+      loadMsg.textContent = '正在加载 sql.js 引擎…';
+      const SQL = await this._initSQL();
+      loadMsg.textContent = '正在加载数据库…';
+
+      // Try IndexedDB cache first
+      const cached = await this._loadFromCache();
+      if (cached) {
+        this.db = new SQL.Database(new Uint8Array(cached));
+        this._ready = true;
+        overlay.style.display = 'none';
+        document.querySelector('#dbStatus').innerHTML = '<span class="dot ready"></span> 就绪 (缓存)';
+        return;
+      }
+
+      // Try fetch — works under http://, fails under file://
+      let buffer;
+      try {
+        const resp = await fetch('mfqk.db');
+        if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+        const total = parseInt(resp.headers.get('content-length') || '37400000');
+        const chunks = [];
+        let loaded = 0;
+        const reader = resp.body.getReader();
+        while (true) {
+          const { done, value } = await reader.read();
+          if (done) break;
+          chunks.push(value);
+          loaded += value.length;
+          const pct = Math.round(loaded / total * 100);
+          progFill.style.width = pct + '%';
+          progText.textContent = pct + '%';
+        }
+        const arr = new Uint8Array(loaded);
+        let pos = 0;
+        for (const c of chunks) { arr.set(c, pos); pos += c.length; }
+        buffer = arr.buffer;
+      } catch (fetchErr) {
+        // file:// blocked — show fallback UI with file picker
+        console.log('Fetch blocked, file picker fallback:', fetchErr.message);
+        loadSpinner.style.display = 'none';
+        progFill.parentElement.style.display = 'none';
+        progText.style.display = 'none';
+        loadMsg.textContent = '双击打开不支持自动加载，请选择数据库文件';
+        loadFallback.style.display = 'block';
+
+        buffer = await new Promise((resolve, reject) => {
+          const picker = document.getElementById('filePicker');
+          const btn = document.getElementById('filePickerBtn');
+
+          const cleanup = () => {
+            btn.onclick = null;
+            picker.onchange = null;
+          };
+
+          btn.onclick = () => {
+            loadMsg.textContent = '正在选择文件…';
+            picker.click();
+          };
+
+          picker.onchange = () => {
+            const file = picker.files[0];
+            if (!file) { loadMsg.textContent = '未选择文件，请重试'; return; }
+            loadMsg.textContent = `正在读取 ${file.name} (${(file.size/1024/1024).toFixed(1)} MB)…`;
+            file.arrayBuffer().then(buf => {
+              cleanup();
+              resolve(buf);
+            }).catch(err => {
+              cleanup();
+              reject(err);
+            });
+          };
+        });
+      }
+
+      await this._saveToCache(buffer);
+      this.db = new SQL.Database(new Uint8Array(buffer));
+      this._ready = true;
+      overlay.style.display = 'none';
+      document.querySelector('#dbStatus').innerHTML = '<span class="dot ready"></span> 就绪';
+    } catch (err) {
+      console.error('DB init error:', err);
+      document.querySelector('#dbStatus').innerHTML = '<span class="dot"></span> 加载失败';
+      loadSpinner.style.display = 'none';
+      progFill.parentElement.style.display = 'none';
+      progText.style.display = 'none';
+      loadMsg.innerHTML = `加载失败: <span style="color:#c44">${err.message.replace(/&/g,'&amp;').replace(/</g,'&lt;')}</span>`;
+      loadFallback.style.display = 'block';
+    }
+  },
+
+  _cacheKey() { return 'mfqk_db_v2'; },
+
+  async _loadFromCache() {
+    return new Promise((resolve) => {
+      const req = indexedDB.open('mfqk_viewer', 1);
+      req.onupgradeneeded = () => req.result.createObjectStore('data');
+      req.onsuccess = () => {
+        const tx = req.result.transaction('data', 'readonly');
+        const get = tx.objectStore('data').get(this._cacheKey());
+        get.onsuccess = () => resolve(get.result);
+        get.onerror = () => resolve(null);
+      };
+      req.onerror = () => resolve(null);
+    });
+  },
+
+  async _saveToCache(buffer) {
+    return new Promise((resolve) => {
+      const req = indexedDB.open('mfqk_viewer', 1);
+      req.onupgradeneeded = () => req.result.createObjectStore('data');
+      req.onsuccess = () => {
+        const tx = req.result.transaction('data', 'readwrite');
+        tx.objectStore('data').put(buffer, this._cacheKey());
+        tx.oncomplete = () => resolve();
+        tx.onerror = () => resolve();
+      };
+      req.onerror = () => resolve();
+    });
+  },
+
+  query(sql, params = []) {
+    if (!this.db) throw new Error('DB not ready');
+    const stmt = this.db.prepare(sql);
+    if (params.length) stmt.bind(params);
+    const rows = [];
+    while (stmt.step()) rows.push(stmt.getAsObject());
+    stmt.free();
+    return rows;
+  },
+
+  isReady() { return this._ready; }
+};
+
+// ─── App ────────────────────────────────────────────────
+const App = {
+  currentTab: 'journals',
+  selectedJournal: null,
+  selectedIssue: null,
+  selectedSuperClass: null,
+  selectedClass: null,
+  selectedPaper: null,
+
+  init() {
+    document.querySelectorAll('nav button').forEach(btn => {
+      btn.addEventListener('click', () => this.switchTab(btn.dataset.tab));
+    });
+    document.getElementById('searchInput').addEventListener('input', () => this.doSearch());
+    document.getElementById('searchType').addEventListener('change', () => this.doSearch());
+    document.getElementById('sqlRun').addEventListener('click', () => this.runSQL());
+    document.getElementById('sqlInput').addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) this.runSQL();
+    });
+
+    this.setupPresetSQL();
+    if (DBManager.isReady()) this.loadJournals();
+  },
+
+  switchTab(tab) {
+    this.currentTab = tab;
+    document.querySelectorAll('nav button').forEach(b => b.classList.toggle('active', b.dataset.tab === tab));
+    document.querySelectorAll('main').forEach(m => m.style.display = 'none');
+    const main = document.getElementById('tab-' + tab);
+    if (main) main.style.display = 'flex';
+    if (tab === 'journals' && !document.getElementById('journalList').querySelector('.list-item')) this.loadJournals();
+    if (tab === 'classes' && !document.getElementById('superClassList').querySelector('.list-item')) this.loadSuperClasses();
+    if (tab === 'sql') this.setupPresetSQL();
+  },
+
+  // ── Journal Browse ─────────────────────────────
+  loadJournals() {
+    this.selectedJournal = null;
+    this.selectedIssue = null;
+    const journals = DBManager.query(
+      'SELECT j.*, (SELECT COUNT(*) FROM publicCode pc WHERE pc.jNum=j.jNum) as issueCount FROM journal j ORDER BY j.jNum'
+    );
+    const el = document.getElementById('journalList');
+    document.getElementById('journalCount').textContent = `(${journals.length})`;
+    el.innerHTML = '<div class="panel-header">期刊 <span class="count">(' + journals.length + ')</span></div>';
+    journals.forEach(j => {
+      const div = document.createElement('div');
+      div.className = 'list-item';
+      div.innerHTML = `${j.journalName}<div class="sub">${j.issueCount} 期</div>`;
+      div.addEventListener('click', () => this.selectJournal(j.jNum, div));
+      el.appendChild(div);
+    });
+    document.getElementById('issueList').innerHTML = '<div class="panel-header">卷期</div><div class="empty">← 选择期刊</div>';
+    document.getElementById('paperList').innerHTML = '<div class="panel-header">文章</div><div class="empty">← 选择期刊卷期</div>';
+  },
+
+  selectJournal(jNum, el) {
+    document.querySelectorAll('#journalList .list-item').forEach(i => i.classList.remove('selected'));
+    el.classList.add('selected');
+    this.selectedJournal = jNum;
+    this.selectedIssue = null;
+
+    const issues = DBManager.query(
+      'SELECT pc.*, j.journalName FROM publicCode pc JOIN journal j ON pc.jNum=j.jNum WHERE pc.jNum=? ORDER BY pc.pNum',
+      [jNum]
+    );
+    const el2 = document.getElementById('issueList');
+    el2.innerHTML = '<div class="panel-header">卷期 <span class="count">(' + issues.length + ')</span></div>';
+    if (!issues.length) {
+      el2.innerHTML += '<div class="empty">无卷期数据</div>';
+      return;
+    }
+    issues.forEach(iss => {
+      const div = document.createElement('div');
+      div.className = 'list-item';
+      const vol = iss.vol > 0 ? `第${iss.vol}卷` : '卷号不详';
+      const no = iss.noFrom === iss.noTo ? `第${iss.noFrom}期` : `第${iss.noFrom}-${iss.noTo}期`;
+      const date = iss.publicDate && iss.publicDate !== '0000-00-00' ? iss.publicDate : '';
+      div.innerHTML = `${vol} ${no}<div class="sub">${date} · ID: ${iss.pNum}</div>`;
+      div.addEventListener('click', () => this.selectIssue(iss.pNum, div));
+      el2.appendChild(div);
+    });
+    document.getElementById('paperList').innerHTML = '<div class="panel-header">文章</div><div class="empty">← 选择卷期</div>';
+  },
+
+  selectIssue(pNum, el) {
+    document.querySelectorAll('#issueList .list-item').forEach(i => i.classList.remove('selected'));
+    el.classList.add('selected');
+    this.selectedIssue = pNum;
+
+    const papers = DBManager.query(
+      `SELECT p.*, GROUP_CONCAT(a.name || ' (' || a.type || ')', '；') as allAuthors,
+              j.journalName
+       FROM paper p
+       LEFT JOIN publicCode pc ON p.pNum=pc.pNum
+       LEFT JOIN journal j ON pc.jNum=j.jNum
+       LEFT JOIN authorPaper ap ON p.pid=ap.pid
+       LEFT JOIN author a ON ap.aid=a.aid
+       WHERE p.pNum=?
+       GROUP BY p.pid ORDER BY p.pid LIMIT 500`,
+      [pNum]
+    );
+    this.renderPaperList('paperList', papers, '文章');
+  },
+
+  // ── Class Browse ──────────────────────────────
+  loadSuperClasses() {
+    const supers = DBManager.query('SELECT sc.*, (SELECT COUNT(*) FROM class c WHERE c.superClassNum=sc.superClassNum) as cc FROM superClass sc ORDER BY sc.superClassNum');
+    const el = document.getElementById('superClassList');
+    document.getElementById('superClassCount').textContent = `(${supers.length})`;
+    el.innerHTML = '<div class="panel-header">大类 <span class="count">(' + supers.length + ')</span></div>';
+    supers.forEach(sc => {
+      const div = document.createElement('div');
+      div.className = 'list-item';
+      div.innerHTML = `${sc.superClassName}<div class="sub">${sc.cc} 个子分类</div>`;
+      div.addEventListener('click', () => this.selectSuperClass(sc.superClassNum, div));
+      el.appendChild(div);
+    });
+    document.getElementById('classList').innerHTML = '<div class="panel-header">子分类</div><div class="empty">← 选择大类</div>';
+    document.getElementById('classPaperList').innerHTML = '<div class="panel-header">文章</div><div class="empty">← 选择分类</div>';
+  },
+
+  selectSuperClass(superClassNum, el) {
+    document.querySelectorAll('#superClassList .list-item').forEach(i => i.classList.remove('selected'));
+    el.classList.add('selected');
+    this.selectedSuperClass = superClassNum;
+    this.selectedClass = null;
+
+    const classes = DBManager.query(
+      `SELECT c.*, (SELECT COUNT(*) FROM paper p WHERE p.classNum=c.classNum) as paperCount
+       FROM class c WHERE c.superClassNum=? ORDER BY c.classNum`,
+      [superClassNum]
+    );
+    const el2 = document.getElementById('classList');
+    el2.innerHTML = '<div class="panel-header">子分类 <span class="count">(' + classes.length + ')</span></div>';
+    classes.forEach(cls => {
+      const div = document.createElement('div');
+      div.className = 'list-item';
+      div.innerHTML = `${cls.className}<div class="sub">${cls.paperCount} 篇文章</div>`;
+      div.addEventListener('click', () => this.selectClass(cls.classNum, div));
+      el2.appendChild(div);
+    });
+    document.getElementById('classPaperList').innerHTML = '<div class="panel-header">文章</div><div class="empty">← 选择分类</div>';
+  },
+
+  selectClass(classNum, el) {
+    document.querySelectorAll('#classList .list-item').forEach(i => i.classList.remove('selected'));
+    el.classList.add('selected');
+    this.selectedClass = classNum;
+    const papers = DBManager.query(
+      `SELECT p.*, GROUP_CONCAT(a.name || ' (' || a.type || ')', '；') as allAuthors,
+              j.journalName, c.className
+       FROM paper p
+       JOIN class c ON p.classNum=c.classNum
+       LEFT JOIN publicCode pc ON p.pNum=pc.pNum
+       LEFT JOIN journal j ON pc.jNum=j.jNum
+       LEFT JOIN authorPaper ap ON p.pid=ap.pid
+       LEFT JOIN author a ON ap.aid=a.aid
+       WHERE p.classNum=?
+       GROUP BY p.pid ORDER BY p.pid LIMIT 500`,
+      [classNum]
+    );
+    this.renderPaperList('classPaperList', papers, '文章');
+  },
+
+  // ── Search ────────────────────────────────────
+  _searchTimer: null,
+  doSearch() {
+    clearTimeout(this._searchTimer);
+    this._searchTimer = setTimeout(() => this._executeSearch(), 300);
+  },
+
+  _executeSearch() {
+    const q = document.getElementById('searchInput').value.trim();
+    const type = document.getElementById('searchType').value;
+    const info = document.getElementById('searchInfo');
+    const results = document.getElementById('searchResults');
+
+    if (!q) { info.style.display = 'block'; info.textContent = '输入关键词开始搜索'; results.innerHTML = '<div class="panel-header">搜索结果</div>'; return; }
+    if (q.length < (type === 'mid' ? 4 : 1)) return;
+
+    let papers;
+    if (type === 'title') {
+      papers = DBManager.query(
+        `SELECT p.*, GROUP_CONCAT(a.name || ' (' || a.type || ')', '；') as allAuthors, j.journalName
+         FROM paper p LEFT JOIN publicCode pc ON p.pNum=pc.pNum LEFT JOIN journal j ON pc.jNum=j.jNum
+         LEFT JOIN authorPaper ap ON p.pid=ap.pid LEFT JOIN author a ON ap.aid=a.aid
+         WHERE p.title LIKE ? GROUP BY p.pid ORDER BY p.pid LIMIT 300`,
+        [`%${q}%`]
+      );
+    } else if (type === 'author') {
+      papers = DBManager.query(
+        `SELECT p.*, GROUP_CONCAT(a2.name || ' (' || a2.type || ')', '；') as allAuthors, j.journalName
+         FROM author a JOIN authorPaper ap ON a.aid=ap.aid JOIN paper p ON ap.pid=p.pid
+         LEFT JOIN publicCode pc ON p.pNum=pc.pNum LEFT JOIN journal j ON pc.jNum=j.jNum
+         LEFT JOIN authorPaper ap2 ON p.pid=ap2.pid LEFT JOIN author a2 ON ap2.aid=a2.aid
+         WHERE a.name LIKE ? GROUP BY p.pid ORDER BY p.pid LIMIT 300`,
+        [`%${q}%`]
+      );
+    } else if (type === 'mid') {
+      papers = DBManager.query(
+        `SELECT p.*, GROUP_CONCAT(a.name || ' (' || a.type || ')', '；') as allAuthors, j.journalName
+         FROM paper p LEFT JOIN publicCode pc ON p.pNum=pc.pNum LEFT JOIN journal j ON pc.jNum=j.jNum
+         LEFT JOIN authorPaper ap ON p.pid=ap.pid LEFT JOIN author a ON ap.aid=a.aid
+         WHERE p.mid LIKE ? GROUP BY p.pid ORDER BY p.pid LIMIT 100`,
+        [`%${q}%`]
+      );
+    }
+    info.style.display = 'block';
+    info.textContent = papers ? `找到 ${papers.length} 条结果` : '无结果';
+    this.renderPaperList('searchResults', papers || [], '搜索结果');
+  },
+
+  // ── Paper List Renderer ───────────────────────
+  renderPaperList(containerId, papers, header) {
+    const el = document.getElementById(containerId);
+    el.innerHTML = `<div class="panel-header">${header} <span class="count">(${papers.length})</span></div>`;
+    if (!papers.length) { el.innerHTML += '<div class="empty">无文章</div>'; return; }
+    papers.forEach(p => {
+      const div = document.createElement('div');
+      div.className = 'paper-item';
+      const pages = p.journalPb_From || p.journalPb_to
+        ? `页${p.journalPb_From}-${p.journalPb_to}` : '';
+      div.innerHTML = `
+        <div class="title">${this.esc(p.title)}</div>
+        <div class="meta">
+          ${p.allAuthors ? `<span class="author">${this.esc(p.allAuthors)}</span>` : ''}
+          ${p.journalName ? `<span>${this.esc(p.journalName)}</span>` : ''}
+          ${pages ? `<span class="pages">${pages}</span>` : ''}
+          <span class="pages">mid:${this.esc(p.mid)}</span>
+        </div>`;
+      div.addEventListener('click', () => this.showPaperDetail(p.pid));
+      el.appendChild(div);
+    });
+  },
+
+  // ── Paper Detail ──────────────────────────────
+  showPaperDetail(pid) {
+    const papers = DBManager.query(
+      `SELECT p.*, j.journalName, c.className, sc.superClassName,
+              pc.vol, pc.noFrom, pc.noTo, pc.publicDate
+       FROM paper p
+       LEFT JOIN publicCode pc ON p.pNum=pc.pNum
+       LEFT JOIN journal j ON pc.jNum=j.jNum
+       LEFT JOIN class c ON p.classNum=c.classNum
+       LEFT JOIN superClass sc ON c.superClassNum=sc.superClassNum
+       WHERE p.pid=?`,
+      [pid]
+    );
+    if (!papers.length) return;
+    const p = papers[0];
+
+    // Get authors with aliases
+    const authorRows = DBManager.query(
+      `SELECT a.*, ap.role FROM author a JOIN authorPaper ap ON a.aid=ap.aid WHERE ap.pid=?`,
+      [pid]
+    );
+    const authorNums = [...new Set(authorRows.map(a => a.authorNum))];
+    const allAuthors = authorNums.map(an => {
+      const names = authorRows.filter(a => a.authorNum === an);
+      const normal = names.find(n => n.type === 'normalName');
+      const aliases = names.filter(n => n.type !== 'normalName').map(n => n.name + (n.type === 'faming' ? '(法名)' : n.type === 'bieming' ? '(别名)' : n.type === 'yuanming' ? '(原名)' : ''));
+      return normal ? `${normal.name}${aliases.length ? ' [' + aliases.join(', ') + ']' : ''}` : names[0]?.name || '';
+    });
+
+    const pages = p.journalPb_From && p.journalPb_to
+      ? `第${p.journalPb_From}-${p.journalPb_to}页` :
+      p.journalPb_From ? `第${p.journalPb_From}页` : '不详';
+    const collPages = p.collectionPb_From && p.collectionPb_to
+      ? `第${p.collectionPb_From}-${p.collectionPb_to}页` : '';
+    const vol = p.vol > 0 ? `第${p.vol}卷` : '';
+    const no = p.noFrom === p.noTo ? `第${p.noFrom}期` : `第${p.noFrom}-${p.noTo}期`;
+
+    // Show in search results panel or detail panel
+    const el = this.currentTab === 'search'
+      ? document.getElementById('searchResults')
+      : document.getElementById('paperList');
+
+    el.innerHTML = `
+      <div class="panel-header">文章详情 <span style="font-weight:400;font-size:12px;margin-left:8px;cursor:pointer;color:var(--accent)" onclick="App.goBack()">← 返回列表</span></div>
+      <div class="detail">
+        <h2>${this.esc(p.title)}</h2>
+        <table>
+          <tr><td>作者</td><td>${allAuthors.length ? allAuthors.map(a => `<a onclick="App.searchAuthor('${this.esc(a, true)}')">${this.esc(a)}</a>`).join('；') : '不详'}</td></tr>
+          <tr><td>期刊</td><td>${this.esc(p.journalName || '')} ${vol} ${no}</td></tr>
+          <tr><td>出版日期</td><td>${p.publicDate && p.publicDate !== '0000-00-00' ? p.publicDate : '不详'}</td></tr>
+          <tr><td>页码</td><td>${pages}${collPages ? '（合集' + collPages + '）' : ''}</td></tr>
+          <tr><td>分类</td><td>${this.esc(p.superClassName || '')} → ${this.esc(p.className || '')}</td></tr>
+          <tr><td>卷影编号</td><td><code>${this.esc(p.mid)}</code></td></tr>
+          ${p.note ? `<tr><td>备注</td><td>${this.esc(p.note)}</td></tr>` : ''}
+        </table>
+      </div>`;
+
+    this.selectedPaper = pid;
+  },
+
+  goBack() {
+    if (this.currentTab === 'search') this._executeSearch();
+    else if (this.selectedIssue) this.selectIssue(this.selectedIssue, document.querySelector('#issueList .list-item.selected'));
+  },
+
+  searchAuthor(name) {
+    this.switchTab('search');
+    document.getElementById('searchType').value = 'author';
+    document.getElementById('searchInput').value = name;
+    this._executeSearch();
+  },
+
+  // ── SQL Console ───────────────────────────────
+  setupPresetSQL() {
+    const presets = [
+      ['文章总数', 'SELECT COUNT(*) as total FROM paper'],
+      ['各期刊文章数', 'SELECT j.journalName, COUNT(*) as cnt FROM paper p JOIN publicCode pc ON p.pNum=pc.pNum JOIN journal j ON pc.jNum=j.jNum GROUP BY j.jNum ORDER BY cnt DESC LIMIT 20'],
+      ['各分类文章数', 'SELECT sc.superClassName, c.className, COUNT(*) as cnt FROM paper p JOIN class c ON p.classNum=c.classNum JOIN superClass sc ON c.superClassNum=sc.superClassNum GROUP BY c.classNum ORDER BY cnt DESC LIMIT 20'],
+      ['作者文章排行', 'SELECT a.name, COUNT(*) as cnt FROM author a JOIN authorPaper ap ON a.aid=ap.aid WHERE a.type=\'normalName\' GROUP BY a.aid ORDER BY cnt DESC LIMIT 20'],
+      ['搜索太虚', "SELECT p.title, a.name, j.journalName FROM paper p JOIN authorPaper ap ON p.pid=ap.pid JOIN author a ON ap.aid=a.aid LEFT JOIN publicCode pc ON p.pNum=pc.pNum LEFT JOIN journal j ON pc.jNum=j.jNum WHERE a.name LIKE '%太虚%' LIMIT 50"],
+    ];
+    const el = document.getElementById('presetBtns');
+    el.innerHTML = presets.map(([label, sql]) =>
+      `<button class="preset-btn" onclick="document.getElementById('sqlInput').value=\`${sql.replace(/`/g,'\\`')}\`">${label}</button>`
+    ).join('');
+  },
+
+  runSQL() {
+    const sql = document.getElementById('sqlInput').value.trim();
+    const resultEl = document.getElementById('sqlResult');
+    const infoEl = document.getElementById('sqlInfo');
+    if (!sql) return;
+
+    try {
+      const start = performance.now();
+      const rows = DBManager.query(sql);
+      const elapsed = (performance.now() - start).toFixed(0);
+      infoEl.textContent = `${rows.length} 行 · ${elapsed}ms`;
+
+      if (!rows.length) {
+        resultEl.innerHTML = '<div class="empty">查询无结果</div>';
+        return;
+      }
+      const cols = Object.keys(rows[0]);
+      let html = '<table><thead><tr>' + cols.map(c => `<th>${c}</th>`).join('') + '</tr></thead><tbody>';
+      html += rows.map(r => '<tr>' + cols.map(c => `<td>${this.esc(String(r[c] ?? ''))}</td>`).join('') + '</tr>').join('');
+      html += '</tbody></table>';
+      resultEl.innerHTML = html;
+    } catch (err) {
+      infoEl.textContent = '错误';
+      resultEl.innerHTML = `<div class="sql-error">${this.esc(err.message)}</div>`;
+    }
+  },
+
+  // ── Util ──────────────────────────────────────
+  esc(s, forAttr) {
+    if (s == null) return '';
+    s = String(s);
+    if (forAttr) return s.replace(/'/g, "\\'").replace(/"/g, '&quot;');
+    return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+};
+
+// ─── Bootstrap ──────────────────────────────────────────
+(async () => {
+  await DBManager.init();
+  App.init();
+})();
+</script>
+
+</body>
+</html>
