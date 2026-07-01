@@ -1,0 +1,2590 @@
+{
+  "_meta": {
+    "title": "太虚大师全书 刊物卷期对照表",
+    "description": "太虚大师全书刊载信息全录v2中出现的所有刊物的卷号/期号与公历年月对照表。用于将刊载出处中的卷期引用解析为具体日期。",
+    "status": "初稿",
+    "created": "2026-06-28",
+    "last_updated": "2026-06-28",
+    "total_publications": 58,
+    "sources": [
+      "海潮音卷期对照表（原始）",
+      "法鼓山DILA民国佛教期刊文献集成数据库",
+      "中国国家图书馆民国期刊数据库",
+      "全国报刊索引(CNBKSY)",
+      "百度百科/搜狗百科相关条目",
+      "释东初《中国佛教近代史》",
+      "黄夏年《民国佛教期刊文献集成》正编及补编",
+      "黄夏年《稀见民国佛教文献汇编（报纸）》"
+    ],
+    "notes": [
+      "本表为初稿，部分刊物的卷期映射尚待进一步查证，标记为低置信度",
+      "抗战期间(1937-1945)多数刊物出版不稳定，期数可能与理论值不符",
+      "海潮音卷号公式「卷N = 1919+N」仅适用于大陆时期(卷1-30)"
+    ]
+  },
+  "publications": {
+    "海潮音": {
+      "category": "卷期制期刊",
+      "aliases": [
+        "海刊",
+        "海潮音月刊",
+        "海",
+        "人海灯"
+      ],
+      "ref_count": 979,
+      "date_range": {
+        "start": "1920-03",
+        "end": "1949-04"
+      },
+      "publisher": "海潮音月刊社",
+      "founder": "太虚",
+      "place": "杭州（创刊）→ 多地迁移 → 重庆（抗战）→ 台北（1949起）",
+      "period": "月刊",
+      "volume_formula": "卷N ≈ 公元1919+N年",
+      "volume_to_year": {
+        "1": 1920,
+        "2": 1921,
+        "3": 1922,
+        "4": 1923,
+        "5": 1924,
+        "6": 1925,
+        "7": 1926,
+        "8": 1927,
+        "9": 1928,
+        "10": 1929,
+        "11": 1930,
+        "12": 1931,
+        "13": 1932,
+        "14": 1933,
+        "15": 1934,
+        "16": 1935,
+        "17": 1936,
+        "18": 1937,
+        "19": 1938,
+        "20": 1939,
+        "21": 1940,
+        "22": 1941,
+        "23": 1942,
+        "24": 1943,
+        "25": 1944,
+        "26": 1945,
+        "27": 1946,
+        "28": 1947,
+        "29": 1948,
+        "30": 1949
+      },
+      "issue_to_month": "期M ≈ M月（常有合刊，抗战期间不稳定）",
+      "volume_issue_pattern": "X卷Y期 / X卷Y号 / X年第Y期 / X年Y期",
+      "confidence": "高",
+      "verification_sources": [
+        {
+          "name": "法鼓山DILA数据库",
+          "url": "http://buddhistinformatics.dila.edu.tw/minguofojiaoqikan/"
+        },
+        {
+          "name": "上海古籍出版社影印本(2003)",
+          "url": null
+        },
+        {
+          "name": "百度百科",
+          "url": "https://baike.baidu.com/"
+        }
+      ],
+      "notes": "1928-1931年间曾改名《人海灯》。1928年(卷9)曾一度宣布停刊。1949年卷30第5期起迁台北。中国大陆时期共30卷352期。"
+    },
+    "正信": {
+      "category": "卷期制期刊",
+      "aliases": [
+        "正信周刊",
+        "正信半月刊",
+        "正信月刊",
+        "正信週刊",
+        "正信抗战半月刊"
+      ],
+      "ref_count": 54,
+      "date_range": {
+        "start": "1932",
+        "end": "1949-04"
+      },
+      "publisher": "汉口佛教正信会",
+      "place": "汉口",
+      "period": "周刊/半月刊（多次变更）",
+      "volume_to_year": {
+        "1": 1932,
+        "2": 1932,
+        "3": 1933,
+        "4": 1933,
+        "5": 1934,
+        "6": 1934,
+        "7": 1935,
+        "8": 1935,
+        "9": 1936,
+        "10": 1937,
+        "11": 1938,
+        "12": 1946
+      },
+      "history": [
+        {
+          "period": "1932-1936",
+          "name": "正信半月刊→周刊",
+          "volumes": "1-9"
+        },
+        {
+          "period": "1937-1938",
+          "name": "新编号起(第10卷?)",
+          "volumes": "重启编号"
+        },
+        {
+          "period": "1938-1946",
+          "name": "正信抗战半月刊",
+          "volumes": "期号制1-?"
+        },
+        {
+          "period": "1946.3-1949.4",
+          "name": "正信（复刊）月刊",
+          "volumes": "12卷起"
+        }
+      ],
+      "reference_pattern_v2": "正信X卷Y期 / 正信周刊X卷Y期",
+      "confidence": "中",
+      "verification_sources": [
+        {
+          "name": "法鼓山DILA数据库",
+          "url": "http://buddhistinformatics.dila.edu.tw/minguofojiaoqikan/"
+        },
+        {
+          "name": "上海社科院图书馆",
+          "url": "http://opac-lib.sass.org.cn/"
+        }
+      ],
+      "notes": "刊名和刊期变化频繁。卷号系统复杂，v2中引用的卷1-12可能跨越不同时期，需结合具体上下文判断。1936年vol.9为周刊。1938年武汉沦陷后停刊，1946年复刊。"
+    },
+    "觉社丛书": {
+      "category": "期号制刊物",
+      "aliases": [
+        "覺社叢書",
+        "覺書",
+        "覺刊",
+        "觉书",
+        "觉刊",
+        "觉社丛书"
+      ],
+      "ref_count": 28,
+      "date_range": {
+        "start": "1918-10",
+        "end": "1919-10"
+      },
+      "publisher": "中华书局（印刷发行）",
+      "founder": "太虚",
+      "place": "上海",
+      "period": "季刊",
+      "issues": {
+        "1": "1918-10-10",
+        "2": "1919-01",
+        "3": "1919-04",
+        "4": "1919-07",
+        "5": "1919-10"
+      },
+      "confidence": "高",
+      "verification_sources": [
+        {
+          "name": "法鼓山DILA数据库(MFQ 6-7)",
+          "url": "http://buddhistinformatics.dila.edu.tw/minguofojiaoqikan/"
+        },
+        {
+          "name": "百度百科·海潮音",
+          "url": "https://baike.baidu.com/item/%E6%B5%B7%E6%BD%AE%E9%9F%B3/3881752"
+        }
+      ],
+      "notes": "海潮音的前身。1919年12月觉社解散，1920年1月改名《海潮音》月刊。"
+    },
+    "佛教月报": {
+      "category": "期号制刊物",
+      "aliases": [
+        "佛教月報"
+      ],
+      "ref_count": 27,
+      "date_range": {
+        "start": "1913-04",
+        "end": "1913"
+      },
+      "publisher": "中华佛教总会",
+      "editor": "太虚（总编辑）",
+      "place": "上海平桥路清凉寺",
+      "period": "月刊",
+      "issues": {
+        "1": "1913-04（或5月佛诞日）",
+        "2": "1913",
+        "3": "1913",
+        "4": "1913（停刊）"
+      },
+      "confidence": "高",
+      "verification_sources": [
+        {
+          "name": "百度百科·佛教月报",
+          "url": "https://baike.baidu.com/item/%E4%BD%9B%E6%95%99%E6%9C%88%E6%8A%A5/23159129"
+        },
+        {
+          "name": "太虚《佛化旬报绪言》",
+          "url": null
+        },
+        {
+          "name": "黄夏年《稀见民国佛教文献汇编》",
+          "url": null
+        }
+      ],
+      "notes": "仅出4期即因经费困难停刊。是中国最早期的佛教月刊之一。太虚在此刊发表《无神论》等阐述佛教改革主张的文章。"
+    },
+    "觉群周报": {
+      "category": "卷期制期刊",
+      "aliases": [
+        "覺群週報",
+        "覺群周報",
+        "覺群",
+        "觉群"
+      ],
+      "ref_count": 24,
+      "date_range": {
+        "start": "1946-07-15",
+        "end": "1947-12"
+      },
+      "publisher": "觉群社",
+      "founder": "太虚（社长）",
+      "editor": "福善（后月耀）",
+      "place": "上海玉佛寺",
+      "period": "周刊",
+      "volume_to_year": {
+        "1": 1946,
+        "2": 1947
+      },
+      "issue_range": {
+        "1": {
+          "start": 1,
+          "end": 30,
+          "year": 1946,
+          "note": "第1期1946-07-15创刊，每周一出刊"
+        },
+        "2": {
+          "start": 1,
+          "end": 27,
+          "year": 1947,
+          "note": "至1947年12月停刊，共57期"
+        }
+      },
+      "confidence": "高",
+      "verification_sources": [
+        {
+          "name": "法鼓山DILA数据库(MFQ 101, 203)",
+          "url": "http://buddhistinformatics.dila.edu.tw/minguofojiaoqikan/"
+        },
+        {
+          "name": "国家图书馆·民国期刊库",
+          "url": "http://read.nlc.cn/allSearch/searchList?searchType=35&showType=1"
+        }
+      ],
+      "notes": "太虚创刊以阐扬「问政不干治」主张。1947年3月福善法师圆寂（第34-35期为追悼专号），月耀接编。"
+    },
+    "世界佛教居士林林刊": {
+      "category": "期号制刊物",
+      "aliases": [
+        "居士林林刊",
+        "林刊",
+        "上海居士林林刊"
+      ],
+      "ref_count": 22,
+      "date_range": {
+        "start": "1923-02",
+        "end": "1937"
+      },
+      "publisher": "上海世界佛教居士林",
+      "place": "上海",
+      "period": "季刊→不定期",
+      "issue_to_year": {
+        "1": 1923,
+        "2": 1923,
+        "3": 1923,
+        "4": 1923,
+        "5": 1923,
+        "6": 1923,
+        "7": 1925,
+        "8": 1925,
+        "9": 1925,
+        "10": 1925,
+        "11": 1926,
+        "12": 1926,
+        "13": 1926,
+        "14": 1926,
+        "15": 1926,
+        "16": 1926,
+        "17": 1927,
+        "18": 1927,
+        "20": 1928,
+        "21": 1928,
+        "22": 1929,
+        "23": 1929,
+        "24": 1930,
+        "25": 1930,
+        "26": 1930,
+        "27": 1931,
+        "28": 1931,
+        "29": 1931,
+        "30": 1931,
+        "31": 1931,
+        "32": 1932,
+        "33": 1932,
+        "34": 1933,
+        "35": 1933,
+        "36": 1933,
+        "37": 1934,
+        "38": 1934,
+        "39": 1935,
+        "41": 1936,
+        "42": 1936,
+        "43": 1937
+      },
+      "confidence": "中",
+      "verification_sources": [
+        {
+          "name": "国家图书馆·民国期刊库",
+          "url": "http://read.nlc.cn/allSearch/searchList?searchType=35&showType=1"
+        },
+        {
+          "name": "法鼓山DILA数据库",
+          "url": "http://buddhistinformatics.dila.edu.tw/minguofojiaoqikan/"
+        },
+        {
+          "name": "孔夫子旧书网",
+          "url": "https://www.kongfz.com/"
+        }
+      ],
+      "notes": "共43期。第19期存疑，第40期或不存在。不定期出刊，每年期数不等。1937年抗战爆发后停刊。参与编辑者包括太虚、范古农、余了翁、丁福保等。"
+    },
+    "佛教日报": {
+      "category": "日期嵌入型",
+      "aliases": [
+        "佛教日報"
+      ],
+      "ref_count": 15,
+      "date_range": {
+        "start": "1935-04",
+        "end": "1937"
+      },
+      "publisher": "佛教日报社",
+      "founder": "太虚（社长）",
+      "place": "上海",
+      "period": "日报",
+      "date_format_in_reference": "民国YY年M月（D日）",
+      "confidence": "中",
+      "verification_sources": [
+        {
+          "name": "黄夏年《稀见民国佛教文献汇编（报纸）》",
+          "url": null
+        }
+      ],
+      "notes": "日期直接嵌入引用文本中，无需卷期对照。如「见二十五年七月佛教日报」→ 1936年7月。"
+    },
+    "佛化新闻": {
+      "category": "日期嵌入型",
+      "aliases": [
+        "佛化新聞",
+        "佛化新闻报",
+        "佛教新闻"
+      ],
+      "ref_count": 4,
+      "date_range": {
+        "start": "1937-06",
+        "end": "1942-10"
+      },
+      "publisher": "佛化新闻社",
+      "editor": "许止烦",
+      "place": "重庆→成都",
+      "period": "周刊",
+      "date_format_in_reference": "民国YY年M月D日",
+      "confidence": "中",
+      "verification_sources": [
+        {
+          "name": "法鼓山DILA数据库(MFQ)",
+          "url": "http://buddhistinformatics.dila.edu.tw/minguofojiaoqikan/"
+        },
+        {
+          "name": "黄夏年《稀见民国佛教文献汇编（报纸）》",
+          "url": null
+        }
+      ],
+      "notes": "日期直接嵌入引用文本中。如「见三十年十月二日佛化新闻」→ 1941年10月2日。太虚题写报名。1939年因日机轰炸停刊数月，后迁成都复刊。1942年10月因经费不足停刊。v2中出现的「佛教新闻」可能即指此刊。",
+      "v2_locations": [
+        {
+          "article": "致蔣主席書",
+          "编": "第九编 制議",
+          "子目": "救治",
+          "type": "刊载出处",
+          "raw_text": "（見佛化新聞三三年三月）"
+        },
+        {
+          "article": "去私戒懶為公服勞",
+          "编": "第十编 學行",
+          "子目": "僧眾學行",
+          "type": "综合",
+          "raw_text": "六月十八日（正果記） （見三一．七．三〇佛化新聞）"
+        },
+        {
+          "article": "電賀蔣主席",
+          "编": "第十七编 酬對",
+          "子目": "函電",
+          "type": "刊载出处",
+          "raw_text": "（見三十二年十一月四日 佛化新聞）"
+        },
+        {
+          "article": "中國佛教會臨時辦事處整理委員會預備處結束通告",
+          "编": "第十九编 文叢",
+          "子目": "文叢——緣起、宣言、啟事",
+          "type": "刊载出处",
+          "raw_text": "（見三十年十一月二十日佛化新聞）"
+        }
+      ]
+    },
+    "现代僧伽": {
+      "category": "卷期制期刊",
+      "aliases": [
+        "現代僧伽"
+      ],
+      "ref_count": 3,
+      "date_range": {
+        "start": "1928-03",
+        "end": "1931"
+      },
+      "publisher": "现代僧伽社",
+      "founder": "太虚（发行人）",
+      "editor": "大醒、芝峰",
+      "place": "厦门闽南佛学院",
+      "period": "半月刊→月刊",
+      "volume_to_year": {
+        "1": 1928,
+        "2": 1929,
+        "3": 1930,
+        "4": 1931
+      },
+      "confidence": "高",
+      "verification_sources": [
+        {
+          "name": "法鼓山DILA数据库(MFQ 68-69)",
+          "url": "http://buddhistinformatics.dila.edu.tw/minguofojiaoqikan/"
+        },
+        {
+          "name": "国家图书馆(MFQ 139)",
+          "url": "http://read.nlc.cn/"
+        }
+      ],
+      "notes": "1932年第5卷起改名《现代佛教》。1928年3月创刊，初为期号制后改为卷期制。以批评佛门时弊著称，言辞锋利。",
+      "v2_locations": [
+        {
+          "article": "恭告全國僧界文",
+          "编": "第九编 制議",
+          "子目": "僧教會",
+          "type": "刊载出处",
+          "raw_text": "（見現代僧伽一卷十一期）"
+        },
+        {
+          "article": "去除稚僧的幾種錯誤",
+          "编": "第九编 制議",
+          "子目": "救治",
+          "type": "刊载出处",
+          "raw_text": "（見現代僧伽一卷第四期）"
+        },
+        {
+          "article": "中國現時學僧應取之態度",
+          "编": "第十编 學行",
+          "子目": "僧眾學行",
+          "type": "综合",
+          "raw_text": "十八年十二月（默如、岫廬記）（見現代僧伽二 卷九期）"
+        }
+      ]
+    },
+    "现代佛教": {
+      "category": "卷期制期刊",
+      "aliases": [
+        "現代佛教"
+      ],
+      "ref_count": 1,
+      "date_range": {
+        "start": "1932",
+        "end": "1935"
+      },
+      "publisher": "现代佛教社",
+      "editor": "大醒、芝峰",
+      "place": "厦门→汕头",
+      "period": "月刊→周刊",
+      "volume_to_year": {
+        "5": 1932,
+        "6": 1933
+      },
+      "confidence": "中",
+      "verification_sources": [
+        {
+          "name": "法鼓山DILA数据库",
+          "url": "http://buddhistinformatics.dila.edu.tw/minguofojiaoqikan/"
+        },
+        {
+          "name": "国家图书馆·民国期刊库",
+          "url": "http://read.nlc.cn/allSearch/searchList?searchType=35&showType=1"
+        }
+      ],
+      "notes": "《现代僧伽》的延续，从第5卷起改名。第6卷(1933)起迁汕头改为周刊。",
+      "v2_locations": [
+        {
+          "article": "現代佛教週刊之路向",
+          "编": "第十九编 文叢",
+          "子目": "雜文",
+          "type": "刊载出处",
+          "raw_text": "（見現代佛教 六卷一期）"
+        }
+      ]
+    },
+    "觉音": {
+      "category": "期号制刊物",
+      "aliases": [
+        "覺音",
+        "华南觉音",
+        "華南覺音"
+      ],
+      "ref_count": 4,
+      "date_range": {
+        "start": "1938",
+        "end": "1941"
+      },
+      "publisher": "觉音社",
+      "editor": "竺摩法师",
+      "place": "广东→香港→澳门",
+      "period": "月刊",
+      "issues": {
+        "1": "1938",
+        "2": "1938-10-01",
+        "3": "1938-11-01",
+        "4": "1938-12-01",
+        "5": "1939-01-01",
+        "6": "1939-02-01",
+        "8": "1939-04-15",
+        "9": "1939",
+        "13": "1940-03（迁澳门）",
+        "18": "1940-11-08",
+        "32": "1941（停刊）"
+      },
+      "confidence": "中",
+      "verification_sources": [
+        {
+          "name": "法鼓山DILA数据库(MFQ 90-92)",
+          "url": "http://buddhistinformatics.dila.edu.tw/minguofojiaoqikan/"
+        },
+        {
+          "name": "澳门记忆数据库",
+          "url": "https://www.macaumemory.mo/"
+        }
+      ],
+      "notes": "初名《华南觉音》，第13期起迁澳门改名《觉音》。共32期。竺摩积劳成疾后停刊。抗战期间与《海潮音》《狮子吼》《佛学半月刊》并列为中国佛教文化四大阵地。",
+      "v2_locations": [
+        {
+          "article": "我的宗教經驗",
+          "编": "第十三编 真现实論宗用論",
+          "子目": "宗教",
+          "type": "出处说明",
+          "raw_text": "（附註）覺音作「習禪心要」，正信作「大師之自證境界」，今改題。"
+        },
+        {
+          "article": "與陳靜濤居士書（三十通）",
+          "编": "第十七编 酬對",
+          "子目": "函電",
+          "type": "刊载出处",
+          "raw_text": "（見華南覺音第九期）"
+        },
+        {
+          "article": "復香港女眾書（二通）",
+          "编": "第十七编 酬對",
+          "子目": "函電",
+          "type": "刊载出处",
+          "raw_text": "（見覺音卅至卅二期合刊）"
+        },
+        {
+          "article": "由青年路向問到佛教革興",
+          "编": "第十七编 酬對",
+          "子目": "其他",
+          "type": "综合",
+          "raw_text": "（妙欽、達居、白慧、松慧記）（見覺音 第十七期）"
+        },
+        {
+          "article": "己卯日記",
+          "编": "第十九编 文叢",
+          "子目": "日記",
+          "type": "刊载出处",
+          "raw_text": "（見覺音十、十一、十二、十四 、十六各期）"
+        }
+      ]
+    },
+    "觉有情": {
+      "category": "期号制刊物",
+      "aliases": [
+        "覺有情",
+        "觉有情半月刊"
+      ],
+      "ref_count": 1,
+      "date_range": {
+        "start": "1939",
+        "end": "1950s"
+      },
+      "publisher": "觉有情半月刊社",
+      "place": "上海",
+      "period": "半月刊",
+      "known_issues": {
+        "3": "1939-11-01",
+        "8": "1940-01-16",
+        "14": "1940-04-16",
+        "18": "1940-06-16",
+        "30": "1940-12-16（印光大师纪念专刊）",
+        "50-51合刊": "1941-11-01",
+        "74-77合刊": "1942-11-01"
+      },
+      "confidence": "中",
+      "verification_sources": [
+        {
+          "name": "法鼓山DILA数据库(MFQB 61)",
+          "url": "http://buddhistinformatics.dila.edu.tw/minguofojiaoqikan/"
+        },
+        {
+          "name": "国家图书馆·民国期刊库",
+          "url": "http://read.nlc.cn/allSearch/searchList?searchType=35&showType=1"
+        }
+      ],
+      "notes": "半月刊，持续出版至1950年代。1940年第30期为印光大师纪念专刊。",
+      "v2_locations": [
+        {
+          "article": "致蘇慧純居士書",
+          "编": "第十七编 酬對",
+          "子目": "函電",
+          "type": "刊载出处",
+          "raw_text": "（見覺有情八卷六號）"
+        }
+      ]
+    },
+    "汉藏教理院年刊": {
+      "category": "期号制刊物",
+      "aliases": [
+        "漢藏教理院年刊",
+        "汉藏教理院开学纪念特刊",
+        "漢藏教理院開學紀念特刊"
+      ],
+      "ref_count": 3,
+      "date_range": {
+        "start": "1932-12",
+        "end": "1934-03"
+      },
+      "publisher": "汉藏教理院",
+      "founder": "太虚",
+      "place": "重庆北碚缙云山",
+      "period": "不定期",
+      "issues": {
+        "开学纪念特刊": "1932-12",
+        "1": "1934-03",
+        "2": "1943"
+      },
+      "confidence": "中",
+      "verification_sources": [
+        {
+          "name": "国家图书馆·民国期刊库",
+          "url": "http://read.nlc.cn/allSearch/searchList?searchType=35&showType=1"
+        },
+        {
+          "name": "《世界宗教研究》2014年第5期",
+          "url": null
+        }
+      ],
+      "notes": "汉藏教理院成立于1932年8月，开学纪念特刊同年12月印行。年刊第1期1934年3月印行，太虚题写刊名并撰发刊词。后续年刊于1943年出版。",
+      "v2_locations": [
+        {
+          "article": "致漢院員生書",
+          "编": "第十七编 酬對",
+          "子目": "函電",
+          "type": "刊载出处",
+          "raw_text": "（見漢藏教理院年刊）"
+        },
+        {
+          "article": "致滿智書（四通）",
+          "编": "第十七编 酬對",
+          "子目": "函電",
+          "type": "刊载出处",
+          "raw_text": "（並見漢藏教理院年刊）"
+        },
+        {
+          "article": "致遍能常恩書（三通）",
+          "编": "第十七编 酬對",
+          "子目": "函電",
+          "type": "刊载出处",
+          "raw_text": "（見漢藏教理院年刊）"
+        }
+      ]
+    },
+    "佛化策进会会刊": {
+      "category": "期号制刊物",
+      "aliases": [
+        "佛化策進會會刊"
+      ],
+      "ref_count": 2,
+      "date_range": {
+        "start": "1926",
+        "end": "1927"
+      },
+      "publisher": "佛化策进会出版组",
+      "place": "厦门",
+      "period": "不定期",
+      "issues": {
+        "1": "1926末或1927初（推定）",
+        "2": "1927-02-25"
+      },
+      "confidence": "低",
+      "verification_sources": [
+        {
+          "name": "国家图书馆·民国期刊库",
+          "url": "http://read.nlc.cn/allSearch/searchList?searchType=35&showType=1"
+        },
+        {
+          "name": "法鼓山DILA数据库(MFQ 26)",
+          "url": "http://buddhistinformatics.dila.edu.tw/minguofojiaoqikan/"
+        }
+      ],
+      "notes": "太虚为名誉会长。第一辑出版日期待确认。与闽南佛学院、厦门南普陀关系密切。",
+      "v2_locations": [
+        {
+          "article": "大乘佛法的真義",
+          "编": "第四编 大乘通學",
+          "子目": "義繹",
+          "type": "综合",
+          "raw_text": "（一澄記）見佛化策進會會刊二輯"
+        },
+        {
+          "article": "大乘佛法的真義",
+          "编": "第四编 大乘通學",
+          "子目": "義繹",
+          "type": "刊载出处",
+          "raw_text": "見佛化策進會會刊二輯"
+        }
+      ]
+    },
+    "廬山學": {
+      "category": "单行本",
+      "aliases": [
+        "庐山学",
+        "庐山讲演集",
+        "庐山演说集"
+      ],
+      "ref_count": 7,
+      "date_range": {
+        "start": "1926-05",
+        "end": "1926-05"
+      },
+      "publisher": "上海泰东图书局",
+      "author": "太虚",
+      "confidence": "高",
+      "verification_sources": [
+        {
+          "name": "国家图书馆·民国期刊库",
+          "url": "http://read.nlc.cn/allSearch/searchList?searchType=35&showType=1"
+        },
+        {
+          "name": "九江学院研究",
+          "url": null
+        }
+      ],
+      "notes": "这是一本书，不是期刊。1926年5月出版，379页，收录太虚1923-1925年在庐山及各地的佛学演讲共56篇。是太虚在庐山暑期讲演会的成果结集。",
+      "v2_locations": [
+        {
+          "article": "陰蘊之研究",
+          "编": "第六编 法相唯識學",
+          "子目": "義繹",
+          "type": "综合",
+          "raw_text": "（法芳記）見廬山學三之十一"
+        },
+        {
+          "article": "陰蘊之研究",
+          "编": "第六编 法相唯識學",
+          "子目": "義繹",
+          "type": "刊载出处",
+          "raw_text": "見廬山學三之十一"
+        },
+        {
+          "article": "講學與修行",
+          "编": "第七编 法界圓覺學",
+          "子目": "義繹",
+          "type": "出处说明",
+          "raw_text": "（附註）廬山學作『悟理與修行』，今依林刊原題。"
+        },
+        {
+          "article": "寧波佛教會之成立",
+          "编": "第九编 制議",
+          "子目": "僧教會",
+          "type": "刊载出处",
+          "raw_text": "（見廬山學）"
+        },
+        {
+          "article": "學佛者應知行之要事",
+          "编": "第十编 學行",
+          "子目": "通論",
+          "type": "出处说明",
+          "raw_text": "（附註）廬山學題作「對學人訓詞」，今仍原題。"
+        },
+        {
+          "article": "佛法與孔子之道",
+          "编": "第十三编 真现实論宗用論",
+          "子目": "國學",
+          "type": "综合",
+          "raw_text": "（王錫九記）（見廬山學）"
+        },
+        {
+          "article": "佛法與孔子之道",
+          "编": "第十三编 真现实論宗用論",
+          "子目": "國學",
+          "type": "出处说明",
+          "raw_text": "（附註）廬山學作「太原洗心總社之演講」，今據海刊改。"
+        }
+      ]
+    },
+    "中流": {
+      "category": "卷期制期刊",
+      "aliases": [
+        "中流月刊"
+      ],
+      "ref_count": 2,
+      "date_range": {
+        "start": "1940",
+        "end": "1949"
+      },
+      "publisher": "焦山佛学院·中流月刊社",
+      "editor": "东初、茗山",
+      "place": "江苏镇江焦山",
+      "period": "月刊",
+      "volume_to_year": {
+        "1": 1940,
+        "2": 1941,
+        "3": 1942,
+        "4": 1944,
+        "5": 1946,
+        "6": 1948
+      },
+      "confidence": "低",
+      "verification_sources": [
+        {
+          "name": "法鼓山DILA数据库(MFQ 98)",
+          "url": "http://buddhistinformatics.dila.edu.tw/minguofojiaoqikan/"
+        },
+        {
+          "name": "释东初《中国佛教近代史》",
+          "url": null
+        }
+      ],
+      "notes": "太虚门下弟子东初、茗山主编，以「做太虚大师振兴佛教之后盾」为宗旨。至1949年约出至3卷10期停刊。",
+      "v2_locations": [
+        {
+          "article": "人生的佛教",
+          "编": "第二编 五乘共學",
+          "子目": "義繹",
+          "type": "综合",
+          "raw_text": "（覺先茗山記）見中流四卷七八期"
+        },
+        {
+          "article": "人生的佛教",
+          "编": "第二编 五乘共學",
+          "子目": "義繹",
+          "type": "刊载出处",
+          "raw_text": "見中流四卷七八期"
+        }
+      ]
+    },
+    "军事与政治": {
+      "category": "卷期制期刊",
+      "aliases": [
+        "軍事與政治"
+      ],
+      "ref_count": 2,
+      "date_range": {
+        "start": "1940",
+        "end": "1945"
+      },
+      "publisher": "军事委员会政治部",
+      "place": "重庆",
+      "period": "月刊",
+      "volume_to_year": {
+        "1": 1940,
+        "2": 1941,
+        "3": 1942,
+        "4": 1943,
+        "5": 1944,
+        "6": 1944,
+        "7": 1945,
+        "8": 1945
+      },
+      "confidence": "低",
+      "verification_sources": [
+        {
+          "name": "国家图书馆·民国期刊目录",
+          "url": "http://read.nlc.cn/allSearch/searchList?searchType=35&showType=1"
+        }
+      ],
+      "notes": "战时官方刊物，非佛教期刊。太虚偶有文章刊载于此。",
+      "v2_locations": [
+        {
+          "article": "人生佛教與層創進化論",
+          "编": "第二编 五乘共學",
+          "子目": "義繹",
+          "type": "综合",
+          "raw_text": "（附註）「人生佛教之層系」；後轉載於軍事與政治八卷九期，改題今名。"
+        },
+        {
+          "article": "人性可善可惡",
+          "编": "第十三编 真现实論宗用論",
+          "子目": "道德",
+          "type": "综合",
+          "raw_text": "（陳際湜記）（見軍事與政治八卷九期）"
+        }
+      ]
+    },
+    "文化先锋": {
+      "category": "卷期制期刊",
+      "aliases": [
+        "文化先鋒"
+      ],
+      "ref_count": 2,
+      "date_range": {
+        "start": "1942-09",
+        "end": "1948"
+      },
+      "publisher": "中央文化运动委员会文化先锋社",
+      "editor": "李辰冬",
+      "place": "重庆→南京",
+      "period": "半月刊→旬刊→半月刊",
+      "volume_to_year": {
+        "1": 1942,
+        "2": 1943,
+        "3": 1944,
+        "4": 1944,
+        "5": 1945,
+        "6": 1946,
+        "7": 1947,
+        "8": 1947,
+        "9": 1948
+      },
+      "confidence": "中",
+      "verification_sources": [
+        {
+          "name": "国家图书馆·民国期刊库",
+          "url": "http://read.nlc.cn/allSearch/searchList?searchType=35&showType=1"
+        },
+        {
+          "name": "孔夫子旧书网",
+          "url": "https://www.kongfz.com/"
+        },
+        {
+          "name": "各图书馆馆藏目录",
+          "url": "http://read.nlc.cn/"
+        }
+      ],
+      "notes": "国民党宣传部门刊物。第2卷(1943)改为旬刊。第6卷(1946)迁南京恢复半月刊。",
+      "v2_locations": [
+        {
+          "article": "中國應努力世界新文化",
+          "编": "第十三编 真现实論宗用論",
+          "子目": "文化",
+          "type": "刊载出处",
+          "raw_text": "（見文化先鋒六卷十 五期）"
+        },
+        {
+          "article": "答李守中問（二則）",
+          "编": "第十七编 酬對",
+          "子目": "答問",
+          "type": "刊载出处",
+          "raw_text": "（見文化先鋒二卷八期）"
+        }
+      ]
+    },
+    "时代精神": {
+      "category": "卷期制期刊",
+      "aliases": [
+        "時代精神"
+      ],
+      "ref_count": 2,
+      "date_range": {
+        "start": "1939-08",
+        "end": "1946-03"
+      },
+      "publisher": "时代精神月刊社/独立出版社",
+      "editor": "周宪文",
+      "place": "重庆",
+      "period": "月刊",
+      "volume_to_year": {
+        "1": 1939,
+        "2": 1940,
+        "3": 1940,
+        "4": 1941,
+        "5": 1941,
+        "6": 1942,
+        "7": 1942,
+        "8": 1943,
+        "9": 1943,
+        "10": 1944,
+        "11": 1944,
+        "12": 1945,
+        "13": 1945
+      },
+      "confidence": "中",
+      "verification_sources": [
+        {
+          "name": "百度百科",
+          "url": "https://baike.baidu.com/"
+        },
+        {
+          "name": "中国大百科全书",
+          "url": "https://www.zgbk.com/"
+        },
+        {
+          "name": "国家图书馆·民国期刊库",
+          "url": "http://read.nlc.cn/allSearch/searchList?searchType=35&showType=1"
+        }
+      ],
+      "notes": "抗战时期综合性政治月刊。每卷6期。1946年3月第13卷第4/6期终刊。",
+      "v2_locations": [
+        {
+          "article": "人群政制與佛教僧制",
+          "编": "第十三编 真现实論宗用論",
+          "子目": "社會",
+          "type": "刊载出处",
+          "raw_text": "（見時代精神九卷二期三期）"
+        },
+        {
+          "article": "論復性書院講錄",
+          "编": "第十六编 書評",
+          "子目": "世論",
+          "type": "刊载出处",
+          "raw_text": "（見時代精神五卷二 期）"
+        }
+      ]
+    },
+    "东方文化": {
+      "category": "卷期制期刊",
+      "aliases": [
+        "東方文化"
+      ],
+      "ref_count": 2,
+      "date_range": {
+        "start": "1942",
+        "end": "1945"
+      },
+      "publisher": "东方文化月刊社",
+      "place": "重庆",
+      "period": "月刊",
+      "confidence": "低",
+      "notes": "抗战时期重庆出版的综合性文化期刊。待进一步查证。",
+      "verification_sources": [
+        {
+          "name": "全国报刊索引(CNBKSY)",
+          "url": "https://www.cnbksy.com/"
+        },
+        {
+          "name": "国家图书馆·民国期刊目录",
+          "url": "http://read.nlc.cn/allSearch/searchList?searchType=35&showType=1"
+        }
+      ],
+      "v2_locations": [
+        {
+          "article": "唯生哲學",
+          "编": "第十三编 真现实論宗用論",
+          "子目": "哲學",
+          "type": "讲演信息",
+          "raw_text": "——二十三年九月在武昌東方文化研究院講——"
+        },
+        {
+          "article": "致孫總司令書",
+          "编": "第十七编 酬對",
+          "子目": "函電",
+          "type": "刊载出处",
+          "raw_text": "（見東方文化）"
+        },
+        {
+          "article": "人與傍生之取捨",
+          "编": "第十九编 文叢",
+          "子目": "雜文",
+          "type": "刊载出处",
+          "raw_text": "（見東方文化）"
+        }
+      ]
+    },
+    "宇宙风": {
+      "category": "卷期制期刊",
+      "aliases": [
+        "宇宙風"
+      ],
+      "ref_count": 2,
+      "date_range": {
+        "start": "1935",
+        "end": "1947"
+      },
+      "publisher": "宇宙风社",
+      "editor": "林语堂（创办人）",
+      "place": "上海→广州→重庆→桂林",
+      "period": "半月刊→月刊",
+      "confidence": "低",
+      "notes": "著名文学刊物，林语堂创办。抗战期间迁重庆出版。太虚偶有文章刊载于此。",
+      "verification_sources": [
+        {
+          "name": "百度百科·宇宙风",
+          "url": "https://baike.baidu.com/item/%E5%AE%87%E5%AE%99%E9%A3%8E"
+        },
+        {
+          "name": "林语堂传记资料",
+          "url": null
+        }
+      ],
+      "v2_locations": [
+        {
+          "article": "人物誌憶十三則",
+          "编": "第十九编 文叢",
+          "子目": "隨筆",
+          "type": "其他",
+          "raw_text": "（以上三則，見宇宙風一百三 十三期）"
+        },
+        {
+          "article": "人物誌憶十三則",
+          "编": "第十九编 文叢",
+          "子目": "隨筆",
+          "type": "其他",
+          "raw_text": "（以上二則見宇宙風一百三 十五、六期）"
+        },
+        {
+          "article": "人物誌憶十三則",
+          "编": "第十九编 文叢",
+          "子目": "隨筆",
+          "type": "刊载出处",
+          "raw_text": "（見宇宙風一百三十七期）"
+        },
+        {
+          "article": "人物誌憶十三則",
+          "编": "第十九编 文叢",
+          "子目": "隨筆",
+          "type": "其他",
+          "raw_text": "（以上見宇宙風一 百三十九期）"
+        },
+        {
+          "article": "人物誌憶十三則",
+          "编": "第十九编 文叢",
+          "子目": "隨筆",
+          "type": "记録者",
+          "raw_text": "（以上見宇宙風一百四十一期）"
+        },
+        {
+          "article": "文藝的時代風氣",
+          "编": "第十九编 文叢",
+          "子目": "隨筆",
+          "type": "刊载出处",
+          "raw_text": "（見宇宙風一四一期）"
+        }
+      ]
+    },
+    "文史杂志": {
+      "category": "卷期制期刊",
+      "aliases": [
+        "文史雜誌"
+      ],
+      "ref_count": 1,
+      "date_range": {
+        "start": "1941",
+        "end": "1948"
+      },
+      "publisher": "文史杂志社",
+      "place": "重庆→南京",
+      "period": "半月刊",
+      "confidence": "低",
+      "notes": "顾颉刚主编。学术性期刊。",
+      "verification_sources": [
+        {
+          "name": "百度百科·文史杂志",
+          "url": "https://baike.baidu.com/item/%E6%96%87%E5%8F%B2%E6%9D%82%E5%BF%97"
+        },
+        {
+          "name": "国家图书馆·民国期刊库",
+          "url": "http://read.nlc.cn/allSearch/searchList?searchType=35&showType=1"
+        }
+      ],
+      "v2_locations": [
+        {
+          "article": "中國佛學",
+          "编": "第一编 佛法總學",
+          "子目": "源流",
+          "type": "出处说明",
+          "raw_text": "本章曾改題「中國淨土宗之演變」，載文史雜誌第四卷第九期。"
+        }
+      ]
+    },
+    "文艺先锋": {
+      "category": "卷期制期刊",
+      "aliases": [
+        "文藝先鋒"
+      ],
+      "ref_count": 1,
+      "date_range": {
+        "start": "1942",
+        "end": "1948"
+      },
+      "publisher": "文艺先锋社",
+      "place": "重庆→南京",
+      "period": "月刊",
+      "confidence": "低",
+      "notes": "与文化先锋为姐妹刊物，张道藩创办。",
+      "verification_sources": [
+        {
+          "name": "百度百科·文艺先锋",
+          "url": "https://baike.baidu.com/item/%E6%96%87%E8%89%BA%E5%85%88%E9%94%8B"
+        },
+        {
+          "name": "国家图书馆·民国期刊库",
+          "url": "http://read.nlc.cn/allSearch/searchList?searchType=35&showType=1"
+        }
+      ],
+      "v2_locations": [
+        {
+          "article": "對於文藝政策之管見",
+          "编": "第十三编 真现实論宗用論",
+          "子目": "文藝",
+          "type": "刊载出处",
+          "raw_text": "（見文藝先鋒 二卷四期）"
+        }
+      ]
+    },
+    "新中华": {
+      "category": "卷期制期刊",
+      "aliases": [
+        "新中華"
+      ],
+      "ref_count": 1,
+      "date_range": {
+        "start": "1933",
+        "end": "1949"
+      },
+      "publisher": "中华书局",
+      "place": "上海",
+      "period": "半月刊",
+      "confidence": "低",
+      "notes": "中华书局出版的综合性期刊。",
+      "verification_sources": [
+        {
+          "name": "百度百科·新中华",
+          "url": "https://baike.baidu.com/item/%E6%96%B0%E4%B8%AD%E5%8D%8E"
+        },
+        {
+          "name": "中华书局出版史料",
+          "url": null
+        }
+      ],
+      "v2_locations": [
+        {
+          "article": "六",
+          "编": "第十五编 時論",
+          "子目": "聯合國戰勝後之平和世界",
+          "type": "刊载出处",
+          "raw_text": "（見新中華復 刊號第一卷八期）"
+        }
+      ]
+    },
+    "读书通讯": {
+      "category": "卷期制期刊",
+      "aliases": [
+        "讀書通訊"
+      ],
+      "ref_count": 1,
+      "date_range": {
+        "start": "1940",
+        "end": "1948"
+      },
+      "place": "重庆",
+      "period": "半月刊",
+      "confidence": "低",
+      "notes": "抗战时期重庆出版的书评类期刊。",
+      "verification_sources": [
+        {
+          "name": "国家图书馆·民国期刊目录",
+          "url": "http://read.nlc.cn/allSearch/searchList?searchType=35&showType=1"
+        }
+      ],
+      "v2_locations": [
+        {
+          "article": "讀不同的邏輯與文化並論中國理學",
+          "编": "第十六编 書評",
+          "子目": "世論",
+          "type": "刊载出处",
+          "raw_text": "（見讀書通訊四十四期 ）"
+        }
+      ]
+    },
+    "民族正气": {
+      "category": "卷期制期刊",
+      "aliases": [
+        "民族正氣"
+      ],
+      "ref_count": 1,
+      "date_range": {
+        "start": "1942",
+        "end": "1945"
+      },
+      "place": "重庆",
+      "period": "月刊",
+      "confidence": "低",
+      "notes": "抗战时期重庆出版的刊物。待进一步查证。",
+      "verification_sources": [
+        {
+          "name": "国家图书馆·民国期刊目录",
+          "url": "http://read.nlc.cn/allSearch/searchList?searchType=35&showType=1"
+        }
+      ],
+      "v2_locations": [
+        {
+          "article": "關於近人辨證法的討論",
+          "编": "第十三编 真现实論宗用論",
+          "子目": "哲學",
+          "type": "刊载出处",
+          "raw_text": "（見民族正氣二三期）"
+        }
+      ]
+    },
+    "黄钟": {
+      "category": "卷期制期刊",
+      "aliases": [
+        "黃鐘"
+      ],
+      "ref_count": 1,
+      "date_range": {
+        "start": "1932",
+        "end": "1937"
+      },
+      "place": "杭州",
+      "period": "周刊",
+      "confidence": "低",
+      "notes": "1930年代杭州出版的文学刊物。",
+      "verification_sources": [
+        {
+          "name": "国家图书馆·民国期刊目录",
+          "url": "http://read.nlc.cn/allSearch/searchList?searchType=35&showType=1"
+        }
+      ],
+      "v2_locations": [
+        {
+          "article": "宣布退出中國佛教會通告",
+          "编": "第十九编 文叢",
+          "子目": "文叢——緣起、宣言、啟事",
+          "type": "刊载出处",
+          "raw_text": "（見黃鐘第一期）"
+        }
+      ]
+    },
+    "道学论衡": {
+      "category": "单行本",
+      "aliases": [
+        "道學論衡"
+      ],
+      "ref_count": 5,
+      "date_range": {
+        "start": "1917",
+        "end": "1918"
+      },
+      "publisher": "中华书局",
+      "author": "太虚",
+      "confidence": "中",
+      "notes": "太虚早期著作。《觉社丛书》首期曾先行刊行此书的节选。",
+      "verification_sources": [
+        {
+          "name": "百度百科",
+          "url": "https://baike.baidu.com/"
+        },
+        {
+          "name": "太虚自述",
+          "url": null
+        },
+        {
+          "name": "《觉社丛书》首期刊行记录",
+          "url": null
+        }
+      ],
+      "v2_locations": [
+        {
+          "article": "破神執論",
+          "编": "第十三编 真现实論宗用論",
+          "子目": "宗教",
+          "type": "刊载出处",
+          "raw_text": "（見道學論衡）"
+        },
+        {
+          "article": "論哲學",
+          "编": "第十三编 真现实論宗用論",
+          "子目": "哲學",
+          "type": "刊载出处",
+          "raw_text": "（見道學論衡）"
+        },
+        {
+          "article": "論天演宗",
+          "编": "第十三编 真现实論宗用論",
+          "子目": "科學",
+          "type": "刊载出处",
+          "raw_text": "（見道學論衡）"
+        },
+        {
+          "article": "教育新見",
+          "编": "第十三编 真现实論宗用論",
+          "子目": "教育",
+          "type": "刊载出处",
+          "raw_text": "（見道學論衡）"
+        },
+        {
+          "article": "論嚴譯",
+          "编": "第十六编 書評",
+          "子目": "世論",
+          "type": "刊载出处",
+          "raw_text": "（見道學論衡）"
+        }
+      ]
+    },
+    "中国佛学旬刊": {
+      "category": "期号制刊物",
+      "aliases": [
+        "中國佛學旬刊"
+      ],
+      "ref_count": 1,
+      "date_range": {
+        "start": "1928",
+        "end": "1928"
+      },
+      "publisher": "太虚主编",
+      "place": "待查",
+      "period": "旬刊",
+      "confidence": "低",
+      "notes": "仅出一期。太虚创办的短暂刊物。",
+      "verification_sources": [
+        {
+          "name": "释东初《中国佛教近代史》",
+          "url": null
+        }
+      ],
+      "v2_locations": [
+        {
+          "article": "中山之社會革命與佛陀之宇宙革命",
+          "编": "第十三编 真现实論宗用論",
+          "子目": "社會",
+          "type": "刊载出处",
+          "raw_text": "（見中國佛學旬刊第七期）"
+        }
+      ]
+    },
+    "净土宗月刊": {
+      "category": "期号制刊物",
+      "aliases": [
+        "淨土宗月刊"
+      ],
+      "ref_count": 1,
+      "date_range": {
+        "start": "1934",
+        "end": "1937"
+      },
+      "place": "武汉",
+      "period": "月刊",
+      "confidence": "低",
+      "notes": "1930年代净土宗专刊。",
+      "verification_sources": [
+        {
+          "name": "法鼓山DILA数据库",
+          "url": "http://buddhistinformatics.dila.edu.tw/minguofojiaoqikan/"
+        },
+        {
+          "name": "民国佛教期刊文献集成",
+          "url": null
+        }
+      ],
+      "v2_locations": [
+        {
+          "article": "吉堂禪師傳",
+          "编": "第十九编 文叢",
+          "子目": "史傳",
+          "type": "刊载出处",
+          "raw_text": "（見淨土宗月刊第三期）"
+        }
+      ]
+    },
+    "佛学半月刊": {
+      "category": "期号制刊物",
+      "aliases": [
+        "佛學半月刊"
+      ],
+      "ref_count": 1,
+      "date_range": {
+        "start": "1930",
+        "end": "1944"
+      },
+      "publisher": "上海佛学书局",
+      "place": "上海",
+      "period": "半月刊",
+      "confidence": "低",
+      "notes": "上海佛学书局出版。1930年创刊。v2中引用第49期。",
+      "verification_sources": [
+        {
+          "name": "法鼓山DILA数据库",
+          "url": "http://buddhistinformatics.dila.edu.tw/minguofojiaoqikan/"
+        },
+        {
+          "name": "上海佛学书局出版史料",
+          "url": null
+        }
+      ],
+      "v2_locations": [
+        {
+          "article": "萬定禪師壽言",
+          "编": "第十九编 文叢",
+          "子目": "壽言、悼詞",
+          "type": "刊载出处",
+          "raw_text": "（見佛學半月刊第四十九期）"
+        }
+      ]
+    },
+    "佛学月报": {
+      "category": "期号制刊物",
+      "aliases": [
+        "佛學月報"
+      ],
+      "ref_count": 2,
+      "date_range": {
+        "start": "1920s",
+        "end": "1930s"
+      },
+      "confidence": "低",
+      "notes": "待进一步查证。可能与上海佛学书局有关。",
+      "verification_sources": [
+        {
+          "name": "待进一步查证",
+          "url": null
+        }
+      ],
+      "v2_locations": [
+        {
+          "article": "宇宙真相",
+          "编": "第十三编 真现实論宗用論",
+          "子目": "哲學",
+          "type": "刊载出处",
+          "raw_text": "（見佛學月報三期）"
+        },
+        {
+          "article": "幻住室隨筆十六則",
+          "编": "第十九编 文叢",
+          "子目": "隨筆",
+          "type": "刊载出处",
+          "raw_text": "（以上見佛學月報第一期）"
+        }
+      ]
+    },
+    "佛学日报": {
+      "category": "日期嵌入型",
+      "aliases": [
+        "佛學日報"
+      ],
+      "ref_count": 1,
+      "date_range": {
+        "start": "1935",
+        "end": "1937"
+      },
+      "confidence": "低",
+      "notes": "日期直接嵌入引用中。待进一步查证。可能即《佛教日报》。",
+      "verification_sources": [
+        {
+          "name": "黄夏年《稀见民国佛教文献汇编》",
+          "url": null
+        },
+        {
+          "name": "待确认",
+          "url": null
+        }
+      ],
+      "v2_locations": [
+        {
+          "article": "無神論",
+          "编": "第十三编 真现实論宗用論",
+          "子目": "宗教",
+          "type": "刊载出处",
+          "raw_text": "（見佛學日報二期）"
+        }
+      ]
+    },
+    "华南觉音": {
+      "category": "期号制刊物",
+      "aliases": [],
+      "ref_count": 1,
+      "date_range": {
+        "start": "1938",
+        "end": "1939"
+      },
+      "place": "广东→香港",
+      "period": "月刊",
+      "confidence": "中",
+      "notes": "《觉音》的前身。第1-9期用此名，第10期起改名《觉音》。见觉音条目。",
+      "verification_sources": [
+        {
+          "name": "法鼓山DILA数据库(MFQ 90-92)",
+          "url": "http://buddhistinformatics.dila.edu.tw/minguofojiaoqikan/"
+        },
+        {
+          "name": "澳门记忆数据库（同《觉音》）",
+          "url": null
+        }
+      ],
+      "v2_locations": []
+    },
+    "东方杂志": {
+      "category": "卷期制期刊",
+      "aliases": [
+        "東方雜誌"
+      ],
+      "ref_count": 0,
+      "date_range": {
+        "start": "1904",
+        "end": "1948"
+      },
+      "publisher": "商务印书馆",
+      "place": "上海→重庆→上海",
+      "period": "半月刊→月刊",
+      "confidence": "低",
+      "notes": "民国时期最重要的大型综合性杂志之一，商务印书馆出版。v2中仅间接触及。",
+      "verification_sources": [
+        {
+          "name": "百度百科·东方杂志",
+          "url": "https://baike.baidu.com/item/%E4%B8%9C%E6%96%B9%E6%9D%82%E5%BF%97"
+        },
+        {
+          "name": "商务印书馆史料",
+          "url": null
+        }
+      ]
+    },
+    "大公报": {
+      "category": "报纸",
+      "aliases": [
+        "大公報"
+      ],
+      "ref_count": 1,
+      "date_range": {
+        "start": "1902",
+        "end": "1949后"
+      },
+      "place": "天津→汉口→重庆→香港",
+      "period": "日报",
+      "confidence": "高",
+      "notes": "报纸。引用中的日期直接给出（如「三二、九、一九」），无需卷期对照。",
+      "verification_sources": [
+        {
+          "name": "百度百科·大公报",
+          "url": "https://baike.baidu.com/item/%E5%A4%A7%E5%85%AC%E6%8A%A5"
+        },
+        {
+          "name": "《中国新闻事业史》",
+          "url": null
+        }
+      ],
+      "v2_locations": [
+        {
+          "article": "精誠團結與佛教之調整",
+          "编": "第九编 制議",
+          "子目": "救治",
+          "type": "刊载出处",
+          "raw_text": "（見二十九年大公報七七特刊）"
+        }
+      ]
+    },
+    "中央日报": {
+      "category": "报纸",
+      "aliases": [
+        "中央日報"
+      ],
+      "ref_count": 1,
+      "date_range": {
+        "start": "1928",
+        "end": "1949后"
+      },
+      "place": "南京→重庆→南京",
+      "period": "日报",
+      "confidence": "高",
+      "notes": "国民党机关报。引用中的日期通常直接给出。",
+      "verification_sources": [
+        {
+          "name": "百度百科·中央日报",
+          "url": "https://baike.baidu.com/item/%E4%B8%AD%E5%A4%AE%E6%97%A5%E6%8A%A5"
+        },
+        {
+          "name": "《中国新闻事业史》",
+          "url": null
+        }
+      ],
+      "v2_locations": [
+        {
+          "article": "書太虛大師遺墨後",
+          "编": "第十九编 文叢",
+          "子目": "序跋、外序",
+          "type": "刊载出处",
+          "raw_text": "（見 中央日報泱泱欄）"
+        }
+      ]
+    },
+    "益世报": {
+      "category": "报纸",
+      "aliases": [
+        "益世報"
+      ],
+      "ref_count": 1,
+      "date_range": {
+        "start": "1915",
+        "end": "1949"
+      },
+      "place": "天津→重庆",
+      "period": "日报",
+      "confidence": "高",
+      "notes": "天主教背景的大型日报。引用中的日期通常直接给出。",
+      "verification_sources": [
+        {
+          "name": "百度百科·益世报",
+          "url": "https://baike.baidu.com/item/%E7%9B%8A%E4%B8%96%E6%8A%A5"
+        },
+        {
+          "name": "《中国新闻事业史》",
+          "url": null
+        }
+      ],
+      "v2_locations": [
+        {
+          "article": "中國宗教徒聯誼會贊辭",
+          "编": "第十三编 真现实論宗用論",
+          "子目": "宗教",
+          "type": "刊载出处",
+          "raw_text": "（見益世報三十四年五月二十二 日）"
+        }
+      ]
+    },
+    "朝日新闻": {
+      "category": "报纸",
+      "aliases": [
+        "朝日新聞"
+      ],
+      "ref_count": 1,
+      "date_range": {
+        "start": "1879",
+        "end": "至今"
+      },
+      "place": "日本",
+      "period": "日报",
+      "confidence": "高",
+      "notes": "日本报纸。太虚访问日本时可能有相关报道。",
+      "verification_sources": [
+        {
+          "name": "百度百科·朝日新闻",
+          "url": "https://baike.baidu.com/item/%E6%9C%9D%E6%97%A5%E6%96%B0%E9%97%BB"
+        }
+      ],
+      "v2_locations": [
+        {
+          "article": "金山教授之說與感想",
+          "编": "第七编 法界圓覺學",
+          "子目": "義繹",
+          "type": "刊载出处",
+          "raw_text": "見朝日新聞記者記，湯清良譯"
+        }
+      ]
+    },
+    "新国民日报": {
+      "category": "报纸",
+      "aliases": [
+        "新國民日報"
+      ],
+      "ref_count": 1,
+      "date_range": {
+        "start": "1919",
+        "end": "1940s"
+      },
+      "place": "新加坡",
+      "period": "日报",
+      "confidence": "低",
+      "notes": "新加坡华文报纸。太虚1939年访问东南亚时应有所报道。",
+      "verification_sources": [
+        {
+          "name": "《新加坡华文报刊史》",
+          "url": null
+        },
+        {
+          "name": "《东南亚华文报刊》",
+          "url": null
+        }
+      ],
+      "v2_locations": [
+        {
+          "article": "維摩經意大綱",
+          "编": "第七编 法界圓覺學",
+          "子目": "教釋",
+          "type": "刊载出处",
+          "raw_text": "海刊七卷第十期錄星洲新國民日報"
+        }
+      ]
+    },
+    "演说集": {
+      "category": "单行本",
+      "aliases": [
+        "演說集"
+      ],
+      "ref_count": 4,
+      "date_range": {
+        "start": "1920s",
+        "end": "1930s"
+      },
+      "confidence": "低",
+      "notes": "太虚讲演集的通称。可能是某种特定出版的讲演集，也可能泛指。待进一步确认。",
+      "verification_sources": [
+        {
+          "name": "太虚全书正文（CBETA TEI XML）",
+          "url": null
+        }
+      ],
+      "v2_locations": [
+        {
+          "article": "佛法之真精神",
+          "编": "第四编 大乘通學",
+          "子目": "義繹",
+          "type": "综合",
+          "raw_text": "（樓維 克記）見演說集下"
+        },
+        {
+          "article": "佛法之真精神",
+          "编": "第四编 大乘通學",
+          "子目": "義繹",
+          "type": "刊载出处",
+          "raw_text": "見演說集下"
+        },
+        {
+          "article": "佛法之真精神",
+          "编": "第四编 大乘通學",
+          "子目": "義繹",
+          "type": "综合",
+          "raw_text": "（附註）見西來講演集，題名「在廿四、八、九、三軍軍長聯合歡迎會演說」。今依 演說集改。演說集誤作「無我與大悲」記，今依西來講演集改正。"
+        },
+        {
+          "article": "建設適應時代之中國佛教",
+          "编": "第十编 學行",
+          "子目": "通論",
+          "type": "出处说明",
+          "raw_text": "（附註）西來講演集原題「在四川省佛教會」：演說集作「佛教會為今時之必要 和責任」，今改題。"
+        },
+        {
+          "article": "改善人心的大乘漸教",
+          "编": "第十编 學行",
+          "子目": "通論",
+          "type": "出处说明",
+          "raw_text": "（附註）西來講演集原題「在嘉定佛學社演說」，演說集作「改善人心之佛學」， 今改題。"
+        },
+        {
+          "article": "學僧修學綱宗",
+          "编": "第十编 學行",
+          "子目": "僧眾學行",
+          "type": "出处说明",
+          "raw_text": "（附註）演說集原題「閩南佛學院學僧修學綱宗」；學僧之路作「現代學僧修學的綱 宗」，今改略。"
+        },
+        {
+          "article": "愛之崇拜",
+          "编": "第十三编 真现实論宗用論",
+          "子目": "宗教",
+          "type": "出处说明",
+          "raw_text": "（附注）原題「愛之研究」，今依演說集改。"
+        },
+        {
+          "article": "法與佛學",
+          "编": "第十三编 真现实論宗用論",
+          "子目": "社會",
+          "type": "综合",
+          "raw_text": "（周文瀾 記）（見演說集）"
+        }
+      ]
+    },
+    "西来讲演集": {
+      "category": "单行本",
+      "aliases": [
+        "西來講演集"
+      ],
+      "ref_count": 8,
+      "date_range": {
+        "start": "1928",
+        "end": "1929"
+      },
+      "confidence": "中",
+      "notes": "太虚1928-1929年欧美弘法讲演集。收录其访问法国、英国、德国、美国等地的演讲。",
+      "verification_sources": [
+        {
+          "name": "印顺《太虚大师年谱》",
+          "url": null
+        },
+        {
+          "name": "太虚全书正文（CBETA TEI XML）",
+          "url": null
+        }
+      ],
+      "v2_locations": [
+        {
+          "article": "佛法之真精神",
+          "编": "第四编 大乘通學",
+          "子目": "義繹",
+          "type": "综合",
+          "raw_text": "（附註）見西來講演集，題名「在廿四、八、九、三軍軍長聯合歡迎會演說」。今依 演說集改。演說集誤作「無我與大悲」記，今依西來講演集改正。"
+        },
+        {
+          "article": "建設適應時代之中國佛教",
+          "编": "第十编 學行",
+          "子目": "通論",
+          "type": "综合",
+          "raw_text": "（克全記） （見西來講演集）"
+        },
+        {
+          "article": "建設適應時代之中國佛教",
+          "编": "第十编 學行",
+          "子目": "通論",
+          "type": "出处说明",
+          "raw_text": "（附註）西來講演集原題「在四川省佛教會」：演說集作「佛教會為今時之必要 和責任」，今改題。"
+        },
+        {
+          "article": "改善人心的大乘漸教",
+          "编": "第十编 學行",
+          "子目": "通論",
+          "type": "综合",
+          "raw_text": "（克全記）（見西來講演集）"
+        },
+        {
+          "article": "改善人心的大乘漸教",
+          "编": "第十编 學行",
+          "子目": "通論",
+          "type": "出处说明",
+          "raw_text": "（附註）西來講演集原題「在嘉定佛學社演說」，演說集作「改善人心之佛學」， 今改題。"
+        },
+        {
+          "article": "峨山僧自治蒭議",
+          "编": "第十编 學行",
+          "子目": "僧眾學行",
+          "type": "综合",
+          "raw_text": "（克全記）（見西來講演集）"
+        },
+        {
+          "article": "佛學的現實論",
+          "编": "第十三编 真现实論宗用論",
+          "子目": "哲學",
+          "type": "综合",
+          "raw_text": "（袁輔臣、王天中合記）（見西來講演集）"
+        },
+        {
+          "article": "大乘漸教與進化論",
+          "编": "第十三编 真现实論宗用論",
+          "子目": "科學",
+          "type": "综合",
+          "raw_text": "（ 濮冠雲記）（見西來講演集）"
+        }
+      ]
+    },
+    "访问日记": {
+      "category": "单行本",
+      "aliases": [
+        "訪問日記"
+      ],
+      "ref_count": 4,
+      "date_range": {
+        "start": "1928",
+        "end": "1929"
+      },
+      "author": "太虚",
+      "confidence": "中",
+      "notes": "太虚1928-1929年访问欧美各国的日记。",
+      "verification_sources": [
+        {
+          "name": "印顺《太虚大师年谱》",
+          "url": null
+        },
+        {
+          "name": "太虚全集·访问日记卷（CBETA TEI XML）",
+          "url": null
+        }
+      ],
+      "v2_locations": [
+        {
+          "article": "八正道與改善人群生活",
+          "编": "第二编 五乘共學",
+          "子目": "義繹",
+          "type": "综合",
+          "raw_text": "（葦 舫記）見訪問日記"
+        },
+        {
+          "article": "八正道與改善人群生活",
+          "编": "第二编 五乘共學",
+          "子目": "義繹",
+          "type": "刊载出处",
+          "raw_text": "見訪問日記"
+        },
+        {
+          "article": "菩薩行與新生活運動",
+          "编": "第十三编 真现实論宗用論",
+          "子目": "道德",
+          "type": "综合",
+          "raw_text": "（葦舫記）（見訪問日記）"
+        },
+        {
+          "article": "王朔生居士寫華嚴經序",
+          "编": "第十九编 文叢",
+          "子目": "序跋、外序",
+          "type": "综合",
+          "raw_text": "（出訪問日記）"
+        }
+      ]
+    },
+    "太虚丛书": {
+      "category": "单行本/丛书",
+      "aliases": [
+        "太虛叢書"
+      ],
+      "ref_count": 2,
+      "date_range": {
+        "start": "1931",
+        "end": "1940s"
+      },
+      "publisher": "中华书局/佛学书局",
+      "confidence": "低",
+      "notes": "太虚著作的丛书系列。",
+      "verification_sources": [
+        {
+          "name": "太虚全书正文（CBETA TEI XML）",
+          "url": null
+        },
+        {
+          "name": "中华书局出版目录",
+          "url": null
+        }
+      ],
+      "v2_locations": [
+        {
+          "article": "生命之研究",
+          "编": "第二编 五乘共學",
+          "子目": "義繹",
+          "type": "出处说明",
+          "raw_text": "（附註）太虛叢書「哲學」改題「生命」，今依海刊原題。"
+        },
+        {
+          "article": "人生佛學的說明",
+          "编": "第二编 五乘共學",
+          "子目": "義繹",
+          "type": "刊载出处",
+          "raw_text": "見太虛叢書哲學"
+        }
+      ]
+    },
+    "人生佛教": {
+      "category": "单行本",
+      "aliases": [],
+      "ref_count": 1,
+      "date_range": {
+        "start": "1945",
+        "end": "1945"
+      },
+      "author": "太虚",
+      "confidence": "中",
+      "notes": "太虚晚年重要著作，系统阐述人生佛教/人间佛教理论。",
+      "verification_sources": [
+        {
+          "name": "太虚《人生佛教》自序",
+          "url": null
+        },
+        {
+          "name": "百度百科·人生佛教",
+          "url": "https://baike.baidu.com/item/%E4%BA%BA%E7%94%9F%E4%BD%9B%E6%95%99"
+        }
+      ],
+      "v2_locations": [
+        {
+          "article": "人生佛教與層創進化論",
+          "编": "第二编 五乘共學",
+          "子目": "義繹",
+          "type": "综合",
+          "raw_text": "（附註）「人生佛教之層系」；後轉載於軍事與政治八卷九期，改題今名。"
+        },
+        {
+          "article": "人生佛教之目的",
+          "编": "第二编 五乘共學",
+          "子目": "義繹",
+          "type": "刊载出处",
+          "raw_text": "錄自人生佛教第一章四節"
+        }
+      ]
+    },
+    "学僧之路": {
+      "category": "单行本",
+      "aliases": [
+        "學僧之路"
+      ],
+      "ref_count": 3,
+      "date_range": {
+        "start": "1930s",
+        "end": "1940s"
+      },
+      "confidence": "低",
+      "notes": "与汉藏教理院或闽南佛学院学僧教育相关的出版物。",
+      "verification_sources": [
+        {
+          "name": "太虚全书正文（CBETA TEI XML）",
+          "url": null
+        }
+      ],
+      "v2_locations": [
+        {
+          "article": "建立中國現代佛教住持僧大綱",
+          "编": "第九编 制議",
+          "子目": "僧制",
+          "type": "刊载出处",
+          "raw_text": "（見學僧之路）"
+        },
+        {
+          "article": "學僧修學綱宗",
+          "编": "第十编 學行",
+          "子目": "僧眾學行",
+          "type": "出处说明",
+          "raw_text": "（附註）演說集原題「閩南佛學院學僧修學綱宗」；學僧之路作「現代學僧修學的綱 宗」，今改略。"
+        },
+        {
+          "article": "現代學僧畢業後的出路",
+          "编": "第十编 學行",
+          "子目": "僧眾學行",
+          "type": "出处说明",
+          "raw_text": "（附註）原題「在北平彌勒院佛教學校之講詞」，今依學僧之路改題。"
+        }
+      ]
+    },
+    "弥陀净土法门集": {
+      "category": "单行本",
+      "aliases": [
+        "彌陀淨土法門集"
+      ],
+      "ref_count": 3,
+      "date_range": {
+        "start": "1930s",
+        "end": "1940s"
+      },
+      "confidence": "低",
+      "notes": "太虚关于净土法门的文集。",
+      "verification_sources": [
+        {
+          "name": "太虚全书正文（CBETA TEI XML）",
+          "url": null
+        }
+      ],
+      "v2_locations": [
+        {
+          "article": "念佛往生的原理",
+          "编": "第七编 法界圓覺學",
+          "子目": "義繹",
+          "type": "综合",
+          "raw_text": "（胡繼歐記）見彌陀淨土法門集"
+        },
+        {
+          "article": "念佛往生的原理",
+          "编": "第七编 法界圓覺學",
+          "子目": "義繹",
+          "type": "刊载出处",
+          "raw_text": "見彌陀淨土法門集"
+        },
+        {
+          "article": "佛七開示錄",
+          "编": "第十九编 文叢",
+          "子目": "法示",
+          "type": "综合",
+          "raw_text": "（黃清渠記）（見彌陀淨土法門集）"
+        }
+      ]
+    },
+    "昧庵诗录": {
+      "category": "单行本",
+      "aliases": [
+        "昧盦詩錄",
+        "昧庵诗录"
+      ],
+      "ref_count": 4,
+      "date_range": {
+        "start": "1920s",
+        "end": "1930s"
+      },
+      "author": "太虚",
+      "confidence": "中",
+      "notes": "太虚的诗集。",
+      "verification_sources": [
+        {
+          "name": "太虚全书·诗存自序（CBETA TEI XML）",
+          "url": null
+        }
+      ],
+      "v2_locations": [
+        {
+          "article": "昧盦詩錄跋",
+          "编": "第十九编 文叢",
+          "子目": "序跋、外序",
+          "type": "刊载出处",
+          "raw_text": "（見昧盦詩錄）"
+        },
+        {
+          "article": "書鏡月夢——書曰巫山恨吾謂名鏡月夢佳",
+          "编": "第十九编 文叢",
+          "子目": "序跋、外序",
+          "type": "刊载出处",
+          "raw_text": "（見昧盦詩錄）"
+        },
+        {
+          "article": "書魂游記",
+          "编": "第十九编 文叢",
+          "子目": "序跋、外序",
+          "type": "刊载出处",
+          "raw_text": "（見昧盦詩錄）"
+        },
+        {
+          "article": "昧盦詩錄序（七篇）",
+          "编": "第十九编 文叢",
+          "子目": "序跋、外序",
+          "type": "刊载出处",
+          "raw_text": "（見昧盦詩錄）"
+        }
+      ]
+    },
+    "慈航画报": {
+      "category": "报纸/画报",
+      "aliases": [
+        "慈航畫報"
+      ],
+      "ref_count": 1,
+      "date_range": {
+        "start": "1930s",
+        "end": "1940s"
+      },
+      "confidence": "低",
+      "notes": "待进一步查证。",
+      "verification_sources": [
+        {
+          "name": "待进一步查证",
+          "url": null
+        }
+      ],
+      "v2_locations": [
+        {
+          "article": "釋慈航救國方案序",
+          "编": "第十九编 文叢",
+          "子目": "序跋、外序",
+          "type": "刊载出处",
+          "raw_text": "（見慈航畫報第 三十一期）"
+        }
+      ]
+    },
+    "佛学书局": {
+      "category": "出版机构",
+      "aliases": [
+        "佛學書局"
+      ],
+      "ref_count": 9,
+      "date_range": {
+        "start": "1929",
+        "end": "1949后"
+      },
+      "place": "上海",
+      "confidence": "高",
+      "notes": "出版社，非刊物。引用中出现时通常表示单行本由该局印行。成立于1929年。",
+      "verification_sources": [
+        {
+          "name": "上海佛学书局史料",
+          "url": null
+        },
+        {
+          "name": "黄夏年《民国佛教期刊文献集成》",
+          "url": null
+        }
+      ],
+      "v2_locations": [
+        {
+          "article": "佛乘宗要論",
+          "编": "第一编 佛法總學",
+          "子目": "概論",
+          "type": "综合",
+          "raw_text": "本論初版，廣東佛學社印行。二十二年，佛學書局再版，重加治正。三十四年，三加治正，由漢藏教理院刊行。今依漢院本，偶有一二簡潤處，不復備出。"
+        },
+        {
+          "article": "大乘宗地圖釋",
+          "编": "第四编 大乘通學",
+          "子目": "義繹",
+          "type": "综合",
+          "raw_text": "（法舫記）上海佛學書局印行"
+        },
+        {
+          "article": "大乘宗地圖釋",
+          "编": "第四编 大乘通學",
+          "子目": "義繹",
+          "type": "印行信息",
+          "raw_text": "上海佛學書局印行"
+        },
+        {
+          "article": "金剛般若波羅蜜經義脈",
+          "编": "第五编 法性空慧學",
+          "子目": "教釋",
+          "type": "综合",
+          "raw_text": "（薰琴記）佛學書局再版印行"
+        },
+        {
+          "article": "金剛般若波羅蜜經義脈",
+          "编": "第五编 法性空慧學",
+          "子目": "教釋",
+          "type": "综合",
+          "raw_text": "佛學書局再版印行"
+        },
+        {
+          "article": "藥師琉璃光如來本願功德經講記",
+          "编": "第七编 法界圓覺學",
+          "子目": "教釋",
+          "type": "综合",
+          "raw_text": "（竺摩記）佛學書局流通本"
+        },
+        {
+          "article": "藥師琉璃光如來本願功德經講記",
+          "编": "第七编 法界圓覺學",
+          "子目": "教釋",
+          "type": "印行信息",
+          "raw_text": "佛學書局流通本"
+        },
+        {
+          "article": "往生安樂土法門略說",
+          "编": "第七编 法界圓覺學",
+          "子目": "義繹",
+          "type": "印行信息",
+          "raw_text": "上海佛學書局流通本"
+        },
+        {
+          "article": "重示",
+          "编": "第八编 律釋",
+          "子目": "優婆塞戒經講錄",
+          "type": "综合",
+          "raw_text": "（羅曜青記）（佛學書局流通本）"
+        },
+        {
+          "article": "五　由本人發大悲願施捨為始",
+          "编": "第十四编 支論",
+          "子目": "建設人間淨土論",
+          "type": "记録者",
+          "raw_text": "（佛學書局流通）"
+        }
+      ]
+    },
+    "世界书局": {
+      "category": "出版机构",
+      "aliases": [
+        "世界書局"
+      ],
+      "ref_count": 1,
+      "date_range": {
+        "start": "1917",
+        "end": "1949后"
+      },
+      "place": "上海",
+      "confidence": "高",
+      "notes": "民国时期大型出版机构。太虚的《佛学ABC》等著作由该局出版。",
+      "verification_sources": [
+        {
+          "name": "百度百科·世界书局",
+          "url": "https://baike.baidu.com/item/%E4%B8%96%E7%95%8C%E4%B9%A6%E5%B1%80"
+        },
+        {
+          "name": "《上海出版志》",
+          "url": null
+        }
+      ],
+      "v2_locations": [
+        {
+          "article": "佛學概論",
+          "编": "第一编 佛法總學",
+          "子目": "概論",
+          "type": "印行信息",
+          "raw_text": "本論略本，民國十五年八月，在北平佛學研究會講，羅庸及黃中疆、駱德先筆記，當由佛學研究會印行流通。十九年，增入學史及結論部分，改名佛學ABC，交世界書局發行。三十一年，重加治定，復佛學概論之名，是為廣本，漢藏教理院刊行，即今本所依。"
+        }
+      ]
+    },
+    "大东书局": {
+      "category": "出版机构",
+      "aliases": [
+        "大東書局"
+      ],
+      "ref_count": 1,
+      "date_range": {
+        "start": "1916",
+        "end": "1949后"
+      },
+      "place": "上海",
+      "confidence": "高",
+      "notes": "民国时期出版机构。",
+      "verification_sources": [
+        {
+          "name": "百度百科·大东书局",
+          "url": "https://baike.baidu.com/item/%E5%A4%A7%E4%B8%9C%E4%B9%A6%E5%B1%80"
+        },
+        {
+          "name": "《上海出版志》",
+          "url": null
+        }
+      ],
+      "v2_locations": [
+        {
+          "article": "寰游記",
+          "编": "第十九编 文叢",
+          "子目": "遊記",
+          "type": "出处说明",
+          "raw_text": "（附註）「太虛大師寰游記」，大東書局出版。其「佛學」、「雜觀」、「詩錄」、 「投贈集」四章，已分別編入他處；此惟「緣起」「游記」二章。今分為八 章，簡名曰寰游記。"
+        }
+      ]
+    },
+    "中华书局": {
+      "category": "出版机构",
+      "aliases": [
+        "中華書局"
+      ],
+      "ref_count": 1,
+      "date_range": {
+        "start": "1912",
+        "end": "1949后"
+      },
+      "place": "上海",
+      "confidence": "高",
+      "notes": "民国时期最大出版机构之一。印刷发行《觉社丛书》等。",
+      "verification_sources": [
+        {
+          "name": "百度百科·中华书局",
+          "url": "https://baike.baidu.com/item/%E4%B8%AD%E5%8D%8E%E4%B9%A6%E5%B1%80"
+        },
+        {
+          "name": "《上海出版志》",
+          "url": null
+        }
+      ],
+      "v2_locations": [
+        {
+          "article": "第五節　能知所知之關係",
+          "编": "第十一编 真现实論宗依論",
+          "子目": "第五章　能知所知之決擇",
+          "type": "印行信息",
+          "raw_text": "（二十九年秋中華書局單行本）"
+        }
+      ]
+    },
+    "光華書局": {
+      "category": "出版机构",
+      "aliases": [
+        "光华书局"
+      ],
+      "ref_count": 0,
+      "date_range": {
+        "start": "1920s",
+        "end": "1930s"
+      },
+      "place": "上海",
+      "confidence": "低",
+      "notes": "曾出版太虚《大乘宗地引论》等。v2中间接触及。",
+      "verification_sources": [
+        {
+          "name": "太虚全书正文（CBETA TEI XML）",
+          "url": null
+        }
+      ]
+    },
+    "太虚大师纪念集": {
+      "category": "单行本",
+      "aliases": [],
+      "ref_count": 0,
+      "date_range": {
+        "start": "1947",
+        "end": "1947"
+      },
+      "confidence": "低",
+      "notes": "太虚圆寂后编纂的纪念文集。v2中间接触及。",
+      "verification_sources": [
+        {
+          "name": "国家图书馆·民国期刊库",
+          "url": "http://read.nlc.cn/allSearch/searchList?searchType=35&showType=1"
+        }
+      ]
+    },
+    "淡遠樓存牋甲集": {
+      "category": "单行本",
+      "aliases": [],
+      "ref_count": 0,
+      "date_range": {
+        "start": "1930s",
+        "end": "1940s"
+      },
+      "confidence": "低",
+      "notes": "书信集。待进一步查证。v2中间接触及。",
+      "verification_sources": [
+        {
+          "name": "太虚全书正文（CBETA TEI XML）",
+          "url": null
+        }
+      ]
+    },
+    "南普陀寺誌": {
+      "category": "单行本",
+      "aliases": [],
+      "ref_count": 0,
+      "date_range": {
+        "start": "1930s",
+        "end": "1930s"
+      },
+      "publisher": "厦门南普陀寺",
+      "confidence": "低",
+      "notes": "寺志。待进一步查证。v2中间接触及。",
+      "verification_sources": [
+        {
+          "name": "太虚全书正文（CBETA TEI XML）",
+          "url": null
+        }
+      ]
+    },
+    "文鈔": {
+      "category": "单行本",
+      "aliases": [
+        "文钞"
+      ],
+      "ref_count": 0,
+      "date_range": {
+        "start": "1920s",
+        "end": "1940s"
+      },
+      "confidence": "低",
+      "notes": "《太虚大师文钞》，太虚文集汇编，多次出版。v2中多次出现「今依文鈔改題」。",
+      "verification_sources": [
+        {
+          "name": "太虚全书正文（CBETA TEI XML）",
+          "url": null
+        }
+      ]
+    }
+  },
+  "heuristics": {
+    "volume_issue_date_resolution": {
+      "海潮音": "卷N → 公元1919+N年；期M → 大约M月（抗战期间可能有偏差）",
+      "通用公式": "对于已知创刊年的刊物，若每年一卷，则卷N = 创刊年 + N - 1",
+      "合刊处理": "合刊取第一个期号的月份",
+      "中国数码": "一=1, 二=2,... 十=10, 廿=20, 卅=30"
+    },
+    "reference_patterns": {
+      "见海刊X卷Y期": "海潮音 卷X → 1919+X年, 期Y → Y月",
+      "见X卷Y期（缺刊名）": "通常指海潮音，但需结合上下文确认",
+      "见X年Y月Z日XX报": "日期直接嵌入，无需对照表",
+      "XX記 见海刊...": "先提取记録者信息，再解析刊载出处"
+    },
+    "special_cases": {
+      "海X年Y期": "海潮音早期也曾用年号制（如「第八年第六期」= 卷8 = 1927年？需确认）",
+      "缺刊名的卷期引用": "v2中少数条目仅写「见十一卷五期」未注刊物名，大概率仍是海潮音",
+      "海": "海潮音的最简缩写（如「海二十七卷八期」）"
+    }
+  }
+}
