@@ -135,16 +135,19 @@ def normalize_byline(raw):
 
 
 def parse_byline_fields(byline):
-    """Parse 題注 into structured fields: date (YYYY-MM), location, context.
+    """Parse 題注 into structured fields: create_y, create_m, create_d, location, context.
 
-    Shared by extract_article_fulltext.py and add_frontmatter_to_existing.py
-    so that frontmatter `date` formatting is identical across the extraction
-    pipeline and the migration tool (no month → 'YYYY-01', not bare 'YYYY').
+    Shared by extract_article_fulltext.py and add_frontmatter_to_existing.py.
 
     Input: 題注 like '（1930 年 1 月，在閩南佛學院編述）'.
-    Returns: dict with date, location, context.
+    Returns: dict with create_y, create_m, create_d, location, context.
+      - create_y: 4-digit year string, or '' if not found
+      - create_m: 2-digit month string, or '' if not found (season → month: 春→03 etc.)
+      - create_d: 2-digit day string, or '' if not found (rare in byline text)
+      - Missing components are left empty (no default filling).
     """
-    result = {'date': '', 'location': '', 'context': ''}
+    result = {'create_y': '', 'create_m': '', 'create_d': '',
+              'location': '', 'context': ''}
     if not byline:
         return result
 
@@ -154,21 +157,28 @@ def parse_byline_fields(byline):
     # Extract year: YYYY 年
     m_yr = re.match(r'(\d+)\s*年', inner)
     if m_yr:
-        year = m_yr.group(1)
+        result['create_y'] = m_yr.group(1)
         rest = inner[m_yr.end():].strip()
-        # Extract month
-        m_mon = re.match(r'(\d+)\s*月', rest)
+
+        # Extract month: D 月 or DD 月
+        m_mon = re.match(r'(\d{1,2})\s*月', rest)
         if m_mon:
-            result['date'] = f"{year}-{int(m_mon.group(1)):02d}"
+            result['create_m'] = f"{int(m_mon.group(1)):02d}"
             rest = rest[m_mon.end():].strip()
+
+            # Extract day: D 日 or DD 日 (rare in byline, but parse if present)
+            m_day = re.match(r'(\d{1,2})\s*日', rest)
+            if m_day:
+                result['create_d'] = f"{int(m_day.group(1)):02d}"
+                rest = rest[m_day.end():].strip()
         else:
             # Check for season
             season_map = {'春': '03', '夏': '06', '秋': '09', '冬': '12'}
             if rest and rest[0] in season_map:
-                result['date'] = f"{year}-{season_map[rest[0]]}"
+                result['create_m'] = season_map[rest[0]]
                 rest = rest[1:].strip()
-            else:
-                result['date'] = f"{year}-01"
+            # No default month — leave create_m empty if not explicitly present
+
         # Strip leading ，or comma
         rest = re.sub(r'^[，,]\s*', '', rest)
     else:
@@ -194,6 +204,15 @@ def parse_byline_fields(byline):
                 result['location'] = rest
 
     return result
+
+
+def parse_byline_date_parts(byline):
+    """Convenience wrapper: return (create_y, create_m, create_d) tuple from byline.
+
+    Returns ('', '', '') if no date found.
+    """
+    fields = parse_byline_fields(byline)
+    return fields['create_y'], fields['create_m'], fields['create_d']
 
 
 # ── Publication info extraction utilities ─────────────────────────────

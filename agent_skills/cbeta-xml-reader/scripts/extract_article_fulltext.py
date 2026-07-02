@@ -592,20 +592,44 @@ def extract_publication_notes(div):
 
 
 def render_frontmatter(title, publication_notes):
-    """Render YAML frontmatter block for the output Markdown file.
+    """Render YAML frontmatter block for direct (no-catalog) extraction mode.
 
-    Always includes a 'title' field. The 'publication' field is a single string
-    of original publication note texts and is omitted when empty.
+    Always includes a 'title' field. Publication info is resolved via lookup table.
     """
     def yaml_quote(s):
         return '"' + s.replace('\\', '\\\\').replace('"', '\\"') + '"'
 
     lines = ['---', f'title: {yaml_quote(title)}']
+
+    unmatched_note = None
     if publication_notes:
-        pub_str = '；'.join(publication_notes)
-        lines.append(f'publication: {yaml_quote(pub_str)}')
+        try:
+            from publication_lookup import resolve_publication_date
+        except ImportError:
+            resolve_publication_date = None
+
+        pub_text = publication_notes[0]
+        pub_result = None
+        if resolve_publication_date:
+            pub_result = resolve_publication_date(pub_text)
+
+        if pub_result and pub_result.get('publication'):
+            lines.append(f'publication: {pub_result["publication"]}')
+            lines.append(f"publish_y: {pub_result['publish_y']}")
+            lines.append(f"publish_m: {pub_result['publish_m']}")
+            lines.append(f"publish_d: {pub_result['publish_d']}")
+            if pub_result.get('unmatched'):
+                unmatched_note = (
+                    f'> **原文刊載資訊**：{pub_text}。'
+                    f'未在「刊載信息卷期對照表」中找到對應項。'
+                )
+
+    lines.append('concepts:')
+    lines.append('domains:')
+    lines.append('functions:')
+    lines.append('bearings:')
     lines.append('---')
-    return '\n'.join(lines)
+    return '\n'.join(lines), unmatched_note
 
 
 # ── Main extract ──────────────────────────────────────────────────────
@@ -1087,12 +1111,17 @@ def build_frontmatter(entry, book_name, book_number, publication_notes=None):
         book_number: int like 1
         publication_notes: list of str or None, publication/source notes from byline
 
-    Returns: YAML frontmatter string including --- delimiters and trailing newline.
+    Returns:
+        (frontmatter_string, unmatched_note) where:
+          frontmatter_string: YAML including --- delimiters and trailing newline
+          unmatched_note: str or None — note to append when publication lookup fails
     """
+    from _utils import parse_byline_fields
+
     byline = entry.get('題注', '')
     fields = parse_byline_fields(byline)
 
-    # Build YAML lines
+    # ── Build YAML lines ──
     yaml_lines = ['---']
     yaml_lines.append(f"book: {book_name}")
     yaml_lines.append(f"book_number: {book_number}")
@@ -1100,21 +1129,53 @@ def build_frontmatter(entry, book_name, book_number, publication_notes=None):
     yaml_lines.append(f"sequence: {entry.get('編號', 0)}")
     wc = entry.get('字数') or 0
     yaml_lines.append(f"word_count: {wc // 1000}")
-    # parse_byline_fields always yields YYYY-MM (or ''), so no bare-year quoting needed
-    yaml_lines.append(f"date: {fields['date']}")
-    if publication_notes:
-        def _yq(s):
-            if '\n' in s or '"' in s or ':' in s and s[0] != ' ':
-                return '"' + s.replace('\\', '\\\\').replace('"', '\\"') + '"'
-            return s
-        pub_str = '；'.join(publication_notes)
-        yaml_lines.append(f'publication: {_yq(pub_str)}')
+
+    # Location
     yaml_lines.append(f"location: {fields['location']}")
-    yaml_lines.append('keywords:')
-    yaml_lines.append('themes:')
+
+    # Creation date: create_y, create_m, create_d
+    yaml_lines.append(f"create_y: {fields['create_y']}")
+    yaml_lines.append(f"create_m: {fields['create_m']}")
+    yaml_lines.append(f"create_d: {fields['create_d']}")
+
+    # Publication info: resolve via lookup table
+    unmatched_note = None
+    if publication_notes:
+        try:
+            from publication_lookup import resolve_publication_date
+        except ImportError:
+            resolve_publication_date = None
+
+        pub_text = publication_notes[0]  # use first publication note
+        pub_result = None
+        if resolve_publication_date:
+            pub_result = resolve_publication_date(pub_text)
+
+        if pub_result and pub_result.get('publication'):
+            yaml_lines.append(f"publication: {pub_result['publication']}")
+            yaml_lines.append(f"publish_y: {pub_result['publish_y']}")
+            yaml_lines.append(f"publish_m: {pub_result['publish_m']}")
+            yaml_lines.append(f"publish_d: {pub_result['publish_d']}")
+            if pub_result.get('unmatched'):
+                # Found publication name but lookup failed → add note
+                unmatched_note = (
+                    f'> **原文刊載資訊**：{pub_text}。'
+                    f'未在「刊載信息卷期對照表」中找到對應項。'
+                )
+        elif pub_text:
+            # Couldn't parse at all — still try to extract a publication name
+            yaml_lines.append(f"publication: {pub_text}")
+            yaml_lines.append('publish_y:')
+            yaml_lines.append('publish_m:')
+            yaml_lines.append('publish_d:')
+
+    yaml_lines.append('concepts:')
+    yaml_lines.append('domains:')
+    yaml_lines.append('functions:')
+    yaml_lines.append('bearings:')
     yaml_lines.append('---')
     yaml_lines.append('')  # blank line between frontmatter and body
-    return '\n'.join(yaml_lines)
+    return '\n'.join(yaml_lines), unmatched_note
 
 
 
@@ -1251,8 +1312,11 @@ def main():
                 out_dir.mkdir(parents=True, exist_ok=True)
                 out_path = out_dir / f'{zi_mu_num:02d}_{result["article_name"]}.md'
                 entry['字数'] = result['word_count']
-                fm = build_frontmatter(entry, catalog.get('编', ''), catalog.get('编序号', 0), result.get('publication_notes'))
-                out_path.write_text(fm + result['markdown'], encoding='utf-8')
+                fm, unmatched = build_frontmatter(entry, catalog.get('编', ''), catalog.get('编序号', 0), result.get('publication_notes'))
+                body = result['markdown']
+                if unmatched:
+                    body += '\n\n' + unmatched + '\n'
+                out_path.write_text(fm + body, encoding='utf-8')
 
                 if result.get("appendixes"):
                     update_catalog_with_appendixes(
@@ -1389,10 +1453,18 @@ def main():
         if args.catalog:
             entry['字数'] = result['word_count']
         publication_notes = result.get('publication_notes', [])
-        fm = build_frontmatter(entry, catalog.get('编', ''), catalog.get('编序号', 0), publication_notes) if args.catalog else ''
-        if not args.catalog and publication_notes:
-            fm = render_frontmatter(result['article_name'], publication_notes) + '\n'
-        out_path.write_text(fm + result['markdown'], encoding='utf-8')
+        unmatched = None
+        if args.catalog:
+            fm, unmatched = build_frontmatter(entry, catalog.get('编', ''), catalog.get('编序号', 0), publication_notes)
+        else:
+            fm = ''
+            if publication_notes:
+                fm, unmatched = render_frontmatter(result['article_name'], publication_notes)
+                fm += '\n'
+        body = result['markdown']
+        if unmatched:
+            body += '\n\n' + unmatched + '\n'
+        out_path.write_text(fm + body, encoding='utf-8')
 
         # Update catalog with appendix info if found
         if args.catalog and result.get("appendixes"):

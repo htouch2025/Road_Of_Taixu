@@ -416,12 +416,19 @@ book: 第一编 佛法總學
 book_number: 1
 category: 判攝
 sequence: 22
-publication: 原見海潮音月刊十八卷十一期
 word_count: 4
-date: 1937-08
+create_y: 1932
+create_m: 12
+create_d:
+publication: 海潮音
+publish_y: 1937
+publish_m: 11
+publish_d: 15
 location: 世界佛學苑研究部
-keywords:
-themes:
+concepts:
+domains:
+functions:
+bearings:
 ---
 ```
 
@@ -434,20 +441,27 @@ themes:
 | `category` | 编目录 JSON 条目 `子目` | 所属子目类别 |
 | `sequence` | 编目录 JSON 条目 `編號` | 编内全局序号（跨子目连续） |
 | `word_count` | 编目录 JSON 条目 `字数` | 千字整数（CJK 字符数 // 1000） |
-| `publication` | XML `<byline><note place="inline">` | 刊载/印行信息，单值字符串；多条时用「；」连接（可选，无刊载信息时不出现） |
-| `date` | 编目录 JSON 条目 `題注` 解析 | YYYY-MM 格式，无月份则为 YYYY |
+| `create_y` | 编目录 JSON 条目 `題注` 解析 | 创作年（公历四位数字），无则留空 |
+| `create_m` | 编目录 JSON 条目 `題注` 解析 | 创作月（公历两位数字），季节→月份（春→03 等），无则留空 |
+| `create_d` | 编目录 JSON 条目 `題注` 解析 | 创作日（公历两位数字），无则留空 |
+| `publication` | XML 文末刊载信息 + 刊载信息卷期对照表 | 规范化刊物名（如 `海潮音`）；非期刊则为出版机构名。查表失败时存入能识别的刊名。无刊载信息时不出现 |
+| `publish_y` | 刊载信息卷期对照表查得 | 出版年（公历四位数字），无则留空 |
+| `publish_m` | 刊载信息卷期对照表查得 | 出版月（公历两位数字），无则留空 |
+| `publish_d` | 刊载信息卷期对照表查得 | 出版日（公历两位数字），无则留空 |
 | `location` | 编目录 JSON 条目 `題注` 解析 | 讲说/编述地点 |
-| `keywords` | 手工填写 | 关键字，预留空值 |
-| `themes` | 手工填写 | 核心思想，预留空值 |
+| `concepts` | 手工填写 | 核心概念，预留空值 |
+| `domains` | 手工填写 | 所属领域，预留空值 |
+| `functions` | 手工填写 | 功能分类，预留空值 |
+| `bearings` | 手工填写 | 方位/面向，预留空值 |
 
 **生成规则：**
-- `build_frontmatter()` 函数从 catalog JSON 条目读取 `編號`、`子目`、`題注`、`字数`，调用 `parse_byline_fields()` 解析題注中的年代/地点/场合
-- 年代格式化为 YYYY-MM（有月份）或 YYYY（无月份）
-- `publication` 字段为单值字符串，来自 CBETA XML 原文中 `<byline>` 元素内的 `<note place="inline">` 文本，保持原貌不分类；多条刊载来源时以「；」连接；正文尾注中亦保留同样信息
+- `build_frontmatter()` 函数从 catalog JSON 条目读取 `編號`、`子目`、`題注`、`字数`，调用 `parse_byline_fields()` 解析題注中的年/月/日/地点/场合
+- `create_y`/`create_m`/`create_d`：有则填入，无则留空（不默认填充月份）
+- `publication` + `publish_y/m/d`：从 XML 文末 byline/note 提取刊载信息，调用 `publication_lookup.py` 在 `_data/刊载信息卷期对照表.md` 中查表。查表成功则填入规范化刊名和出版日期；查表失败则在正文末尾添加 `> **原文刊載資訊**：…。未在「刊載信息卷期對照表」中找到對應項。`
 - `word_count` 为字数 // 1000 的整数值
 - frontmatter 与正文之间保留一个空行
 
-**⚠️ 已有文章的迁移：** 使用迁移脚本 `add_frontmatter_to_existing.py`（详见下文「文章元数据迁移脚本」一节）。
+**⚠️ 已有文章的迁移：** 使用迁移脚本 `add_frontmatter_to_existing.py`（详见下文「文章元数据迁移脚本」一节）。注意：迁移脚本仅能从 catalog JSON 填充 `create_y/m/d`，无法填充 `publication`/`publish_*` 字段（需要 XML 原文）。
 
 ## Known Pitfalls
 
@@ -640,7 +654,7 @@ article_entries = all_mulu[art_start:art_end]
 
 ````
 ```dataview
-TABLE word_count AS "千字", date AS "年代", location AS "地点", category AS "子目"
+TABLE word_count AS "千字", choice(create_m, create_y + "-" + create_m, create_y) AS "年代", location AS "地点", publication AS "刊载"
 FROM "_research/01_佛法總學"
 WHERE book AND sequence
 SORT sequence ASC
@@ -650,7 +664,7 @@ SORT sequence ASC
 **说明：**
 - 无需手工维护——文章提取后 frontmatter 自动写入，仪表盘自动更新
 - 可按 `category` 列筛选特定子目，也可按 `word_count` 排序找长文/短文
-- `keywords` 和 `themes` 列可在需要时加入 TABLE
+- `concepts`、`domains`、`functions`、`bearings` 列可在需要时加入 TABLE
 - 未来可添加 `WHERE category = "判攝"` 等过滤条件做子目专属视图
 
 ### 9. 文章元数据迁移脚本

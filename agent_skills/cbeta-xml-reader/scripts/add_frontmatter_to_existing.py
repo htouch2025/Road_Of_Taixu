@@ -18,7 +18,12 @@ from _utils import parse_byline_fields
 
 
 def build_frontmatter(entry, book_name, book_number):
-    """Build YAML frontmatter string from catalog entry."""
+    """Build YAML frontmatter string from catalog entry.
+
+    Note: publication/publish_* fields are NOT populated by this migration
+    script (requires XML access). They are only set during fresh extraction
+    via extract_article_fulltext.py.
+    """
     byline = entry.get('題注', '')
     fields = parse_byline_fields(byline)
 
@@ -29,10 +34,14 @@ def build_frontmatter(entry, book_name, book_number):
     yaml_lines.append(f"sequence: {entry.get('編號', 0)}")
     wc = entry.get('字数') or 0
     yaml_lines.append(f"word_count: {wc // 1000}")
-    yaml_lines.append(f"date: {fields['date']}")
     yaml_lines.append(f"location: {fields['location']}")
-    yaml_lines.append('keywords:')
-    yaml_lines.append('themes:')
+    yaml_lines.append(f"create_y: {fields['create_y']}")
+    yaml_lines.append(f"create_m: {fields['create_m']}")
+    yaml_lines.append(f"create_d: {fields['create_d']}")
+    yaml_lines.append('concepts:')
+    yaml_lines.append('domains:')
+    yaml_lines.append('functions:')
+    yaml_lines.append('bearings:')
     yaml_lines.append('---')
     yaml_lines.append('')
     return '\n'.join(yaml_lines)

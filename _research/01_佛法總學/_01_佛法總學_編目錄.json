@@ -82,6 +82,7 @@
       "byte_start": 3652,
       "byte_end": 122848,
       "byte_size": 119196,
+      "備註": "",
       "prev": null,
       "next": "佛理要略",
       "prev_index": null,
@@ -99,6 +100,7 @@
       "byte_start": 122954,
       "byte_end": 152533,
       "byte_size": 29579,
+      "備註": "",
       "prev": "佛學概論",
       "next": "佛法導言",
       "prev_index": 0,
@@ -116,6 +118,7 @@
       "byte_start": 152639,
       "byte_end": 187934,
       "byte_size": 35295,
+      "備註": "",
       "prev": "佛理要略",
       "next": "佛乘宗要論",
       "prev_index": 1,
@@ -133,6 +136,7 @@
       "byte_start": 188040,
       "byte_end": 395185,
       "byte_size": 207145,
+      "備註": "",
       "prev": "佛法導言",
       "next": "佛陀學綱",
       "prev_index": 2,
@@ -150,6 +154,7 @@
       "byte_start": 395291,
       "byte_end": 443764,
       "byte_size": 48473,
+      "備註": "",
       "prev": "佛乘宗要論",
       "next": "甚麼是佛學",
       "prev_index": 3,
@@ -167,11 +172,11 @@
       "byte_start": 443870,
       "byte_end": 462306,
       "byte_size": 18436,
+      "備註": "",
       "prev": "佛陀學綱",
       "next": "佛學講要",
       "prev_index": 4,
-      "next_index": 6,
-      "字数": 2553
+      "next_index": 6
     },
     {
       "編號": 7,
@@ -184,11 +189,11 @@
       "byte_start": 462412,
       "byte_end": 494217,
       "byte_size": 31805,
+      "備註": "",
       "prev": "甚麼是佛學",
       "next": "佛法僧義廣論",
       "prev_index": 5,
-      "next_index": 7,
-      "字数": 5500
+      "next_index": 7
     },
     {
       "編號": 8,
@@ -201,11 +206,11 @@
       "byte_start": 494323,
       "byte_end": 544563,
       "byte_size": 50240,
+      "備註": "",
       "prev": "佛學講要",
       "next": "佛藏擇法眼圖",
       "prev_index": 6,
-      "next_index": 8,
-      "字数": 9864
+      "next_index": 8
     },
     {
       "編號": 9,
@@ -218,11 +223,11 @@
       "byte_start": 544748,
       "byte_end": 545721,
       "byte_size": 973,
+      "備註": "",
       "prev": "佛法僧義廣論",
       "next": "佛學大系",
       "prev_index": 7,
-      "next_index": 9,
-      "字数": 97
+      "next_index": 9
     },
     {
       "編號": 10,
@@ -235,11 +240,11 @@
       "byte_start": 545828,
       "byte_end": 561494,
       "byte_size": 15666,
+      "備註": "",
       "prev": "佛藏擇法眼圖",
       "next": "佛法之分宗判教",
       "prev_index": 8,
-      "next_index": 10,
-      "字数": 2041
+      "next_index": 10
     },
     {
       "編號": 11,
@@ -252,11 +257,11 @@
       "byte_start": 561601,
       "byte_end": 571281,
       "byte_size": 9680,
+      "備註": "",
       "prev": "佛學大系",
       "next": "佛法大系",
       "prev_index": 9,
-      "next_index": 11,
-      "字数": 1533
+      "next_index": 11
     },
     {
       "編號": 12,
@@ -269,11 +274,11 @@
       "byte_start": 571388,
       "byte_end": 583589,
       "byte_size": 12201,
+      "備註": "",
       "prev": "佛法之分宗判教",
       "next": "佛法一味論之十宗片面觀",
       "prev_index": 10,
-      "next_index": 12,
-      "字数": 2257
+      "next_index": 12
     },
     {
       "編號": 13,
@@ -286,11 +291,11 @@
       "byte_start": 583696,
       "byte_end": 587478,
       "byte_size": 3782,
+      "備註": "",
       "prev": "佛法大系",
       "next": "佛法悟入漸次",
       "prev_index": 11,
-      "next_index": 13,
-      "字数": 722
+      "next_index": 13
     },
     {
       "編號": 14,
@@ -303,11 +308,11 @@
       "byte_start": 587585,
       "byte_end": 604622,
       "byte_size": 17037,
+      "備註": "",
       "prev": "佛法一味論之十宗片面觀",
       "next": "律禪密淨四行論",
       "prev_index": 12,
-      "next_index": 14,
-      "字数": 3203
+      "next_index": 14
     },
     {
       "編號": 15,
@@ -320,11 +325,11 @@
       "byte_start": 604729,
       "byte_end": 627078,
       "byte_size": 22349,
+      "備註": "",
       "prev": "佛法悟入漸次",
       "next": "性釋",
       "prev_index": 13,
-      "next_index": 15,
-      "字数": 3812
+      "next_index": 15
     },
     {
       "編號": 16,
@@ -337,11 +342,11 @@
       "byte_start": 627185,
       "byte_end": 634734,
       "byte_size": 7549,
+      "備註": "",
       "prev": "律禪密淨四行論",
       "next": "諸法眾緣生唯識現",
       "prev_index": 14,
-      "next_index": 16,
-      "字数": 1629
+      "next_index": 16
     },
     {
       "編號": 17,
@@ -354,11 +359,11 @@
       "byte_start": 634841,
       "byte_end": 654512,
       "byte_size": 19671,
+      "備註": "",
       "prev": "性釋",
       "next": "萬有皆因緣所生",
       "prev_index": 15,
-      "next_index": 17,
-      "字数": 2577
+      "next_index": 17
     },
     {
       "編號": 18,
@@ -371,11 +376,11 @@
       "byte_start": 654619,
       "byte_end": 677266,
       "byte_size": 22647,
+      "備註": "",
       "prev": "諸法眾緣生唯識現",
       "next": "諸法有無自性問題",
       "prev_index": 16,
-      "next_index": 18,
-      "字数": 3716
+      "next_index": 18
     },
     {
       "編號": 19,
@@ -388,11 +393,11 @@
       "byte_start": 677373,
       "byte_end": 709390,
       "byte_size": 32017,
+      "備註": "",
       "prev": "萬有皆因緣所生",
       "next": "漢藏教理融會談",
       "prev_index": 17,
-      "next_index": 19,
-      "字数": 6322
+      "next_index": 19
     },
     {
       "編號": 20,
@@ -405,11 +410,11 @@
       "byte_start": 709497,
       "byte_end": 755248,
       "byte_size": 45751,
+      "備註": "",
       "prev": "諸法有無自性問題",
       "next": "幾點佛法的要義",
       "prev_index": 18,
-      "next_index": 20,
-      "字数": 8643
+      "next_index": 20
     },
     {
       "編號": 21,
@@ -422,11 +427,11 @@
       "byte_start": 755355,
       "byte_end": 763306,
       "byte_size": 7951,
+      "備註": "",
       "prev": "漢藏教理融會談",
       "next": "新與融貫",
       "prev_index": 19,
-      "next_index": 21,
-      "字数": 1615
+      "next_index": 21
     },
     {
       "編號": 22,
@@ -439,11 +444,11 @@
       "byte_start": 763413,
       "byte_end": 787687,
       "byte_size": 24274,
+      "備註": "",
       "prev": "幾點佛法的要義",
       "next": "佛教的教史教法和今後的建設",
       "prev_index": 20,
-      "next_index": 22,
-      "字数": 4269
+      "next_index": 22
     },
     {
       "編號": 23,
@@ -456,11 +461,11 @@
       "byte_start": 787794,
       "byte_end": 838765,
       "byte_size": 50971,
+      "備註": "",
       "prev": "新與融貫",
       "next": "世界佛學苑之佛法系統觀",
       "prev_index": 21,
-      "next_index": 23,
-      "字数": 4785
+      "next_index": 23
     },
     {
       "編號": 24,
@@ -473,11 +478,11 @@
       "byte_start": 838872,
       "byte_end": 859873,
       "byte_size": 21001,
+      "備註": "",
       "prev": "佛教的教史教法和今後的建設",
       "next": "世苑圖書館館員之修學方針",
       "prev_index": 22,
-      "next_index": 24,
-      "字数": 3247
+      "next_index": 24
     },
     {
       "編號": 25,
@@ -490,11 +495,11 @@
       "byte_start": 859980,
       "byte_end": 880573,
       "byte_size": 20593,
+      "備註": "",
       "prev": "世界佛學苑之佛法系統觀",
       "next": "我怎樣判攝一切佛法",
       "prev_index": 23,
-      "next_index": 25,
-      "字数": 3649
+      "next_index": 25
     },
     {
       "編號": 26,
@@ -507,11 +512,11 @@
       "byte_start": 880680,
       "byte_end": 918175,
       "byte_size": 37495,
+      "備註": "",
       "prev": "世苑圖書館館員之修學方針",
       "next": "中國佛學",
       "prev_index": 24,
-      "next_index": 26,
-      "字数": 7143
+      "next_index": 26
     },
     {
       "編號": 27,
@@ -524,11 +529,11 @@
       "byte_start": 3612,
       "byte_end": 403708,
       "byte_size": 400096,
+      "備註": "",
       "prev": "我怎樣判攝一切佛法",
       "next": "佛教各宗派源流",
       "prev_index": 25,
-      "next_index": 27,
-      "字数": 73050
+      "next_index": 27
     },
     {
       "編號": 28,
@@ -541,11 +546,11 @@
       "byte_start": 403815,
       "byte_end": 596338,
       "byte_size": 192523,
+      "備註": "",
       "prev": "中國佛學",
       "next": "會昌以前中華佛教之三大系",
       "prev_index": 26,
-      "next_index": 28,
-      "字数": 29796
+      "next_index": 28
     },
     {
       "編號": 29,
@@ -558,11 +563,11 @@
       "byte_start": 596445,
       "byte_end": 605977,
       "byte_size": 9532,
+      "備註": "",
       "prev": "佛教各宗派源流",
       "next": "論中國佛教史",
       "prev_index": 27,
-      "next_index": 29,
-      "字数": 1337
+      "next_index": 29
     },
     {
       "編號": 30,
@@ -575,11 +580,11 @@
       "byte_start": 606084,
       "byte_end": 617193,
       "byte_size": 11109,
+      "備註": "",
       "prev": "會昌以前中華佛教之三大系",
       "next": "中國之佛教",
       "prev_index": 28,
-      "next_index": 30,
-      "字数": 1979
+      "next_index": 30
     },
     {
       "編號": 31,
@@ -592,11 +597,11 @@
       "byte_start": 617300,
       "byte_end": 640823,
       "byte_size": 23523,
+      "備註": "",
       "prev": "論中國佛教史",
       "next": "佛教史略",
       "prev_index": 29,
-      "next_index": 31,
-      "字数": 4031
+      "next_index": 31
     },
     {
       "編號": 32,
@@ -609,11 +614,11 @@
       "byte_start": 640930,
       "byte_end": 681499,
       "byte_size": 40569,
+      "備註": "",
       "prev": "中國之佛教",
       "next": "亞歐美佛教之鳥瞰",
       "prev_index": 30,
-      "next_index": 32,
-      "字数": 7091
+      "next_index": 32
     },
     {
       "編號": 33,
@@ -626,11 +631,11 @@
       "byte_start": 681606,
       "byte_end": 696193,
       "byte_size": 14587,
+      "備註": "",
       "prev": "佛教史略",
       "next": "佛學源流及其新運動",
       "prev_index": 31,
-      "next_index": 33,
-      "字数": 2696
+      "next_index": 33
     },
     {
       "編號": 34,
@@ -643,11 +648,11 @@
       "byte_start": 696300,
       "byte_end": 718546,
       "byte_size": 22246,
+      "備註": "",
       "prev": "亞歐美佛教之鳥瞰",
       "next": null,
       "prev_index": 32,
-      "next_index": null,
-      "字数": 4354
+      "next_index": null
     }
   ]
 }
