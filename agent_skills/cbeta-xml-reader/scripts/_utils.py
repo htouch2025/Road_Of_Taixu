@@ -14,12 +14,27 @@ CHINESE_NUM = {
 }
 
 def chinese_to_int(s):
-    """Convert Chinese numeral to int (e.g. 十九→19, 二十六→26, 十→10)."""
+    """Convert Chinese numeral to int (e.g. 十九→19, 卅二→32, 廿→20)."""
     s = s.strip()
     if not s:
         return None
     if s.isdigit():
         return int(s)
+    # Handle 廿 (20) and 卅 (30) prefixes
+    if s.startswith('廿'):
+        base = 20
+        s = s[1:]
+        if s:
+            n = chinese_to_int(s)
+            return base + n if (n is not None and 1 <= n <= 9) else None
+        return base
+    if s.startswith('卅'):
+        base = 30
+        s = s[1:]
+        if s:
+            n = chinese_to_int(s)
+            return base + n if (n is not None and 1 <= n <= 9) else None
+        return base
     total = 0
     section = 0
     for c in s:
@@ -67,6 +82,9 @@ def build_suffix(month, rest):
     """Build suffix string; season (1-char, e.g. 春) gets no leading space."""
     if month and rest:
         sep = '' if len(month) == 1 else ' '
+        # If rest starts with a day number, no comma between month and day
+        if rest and rest[0].isdigit():
+            return f'{sep}{month} {rest}'
         return f'{sep}{month}，{rest}'
     elif month:
         sep = '' if len(month) == 1 else ' '
@@ -74,6 +92,36 @@ def build_suffix(month, rest):
     elif rest:
         return f'，{rest}'
     return ''
+
+
+def _normalize_cjk_day(rest):
+    """Convert leading CJK day number + 日 to Arabic in rest string.
+
+    E.g. '廿七日，在...' → '27 日，在...'
+         '十三日在...' → '13 日，在...'
+         '初五日在...' → '5 日，在...'
+         '三日，在...' → '3 日，在...'
+    """
+    # Match CJK day number followed by 日
+    m = re.match(r'([廿卅一二三四五六七八九十]+)日', rest)
+    if m:
+        day_num = chinese_to_int(m.group(1))
+        if day_num is not None and 1 <= day_num <= 31:
+            after = rest[m.end():]
+            # Ensure comma between day and subsequent location text
+            if after and not after.startswith('，') and not after.startswith(','):
+                after = '，' + after
+            return f'{day_num} 日{after}'
+    # Also handle 初X日 pattern
+    m = re.match(r'初([一二三四五六七八九十])日', rest)
+    if m:
+        day_num = chinese_to_int(m.group(1))
+        if day_num is not None:
+            after = rest[m.end():]
+            if after and not after.startswith('，') and not after.startswith(','):
+                after = '，' + after
+            return f'{day_num} 日{after}'
+    return rest
 
 
 def normalize_byline(raw):
@@ -107,6 +155,7 @@ def normalize_byline(raw):
         if yr is not None:
             rest = m.group(2).strip()
             month, rest = split_month_season(rest)
+            rest = _normalize_cjk_day(rest)
             suffix = build_suffix(month, rest)
             return f'（{1908 + yr} 年{suffix}）'
 
@@ -117,6 +166,7 @@ def normalize_byline(raw):
         if yr is not None:
             rest = m.group(2).strip()
             month, rest = split_month_season(rest)
+            rest = _normalize_cjk_day(rest)
             suffix = build_suffix(month, rest)
             return f'（{1911 + yr} 年{suffix}）'
 
@@ -127,6 +177,7 @@ def normalize_byline(raw):
         if yr is not None and 1 <= yr <= 99:
             rest = m.group(2).strip()
             month, rest = split_month_season(rest)
+            rest = _normalize_cjk_day(rest)
             suffix = build_suffix(month, rest)
             return f'（{1911 + yr} 年{suffix}）'
 
@@ -142,12 +193,13 @@ def parse_byline_fields(byline):
     Input: 題注 like '（1930 年 1 月，在閩南佛學院編述）'.
     Returns: dict with create_y, create_m, create_d, location, context.
       - create_y: 4-digit year string, or '' if not found
-      - create_m: 2-digit month string, or '' if not found (season → month: 春→03 etc.)
+      - create_m: 2-digit month string, or '' if not found (season is NOT converted to month)
       - create_d: 2-digit day string, or '' if not found (rare in byline text)
       - Missing components are left empty (no default filling).
     """
     result = {'create_y': '', 'create_m': '', 'create_d': '',
               'location': '', 'context': ''}
+    season_found = ''
     if not byline:
         return result
 
@@ -172,10 +224,10 @@ def parse_byline_fields(byline):
                 result['create_d'] = f"{int(m_day.group(1)):02d}"
                 rest = rest[m_day.end():].strip()
         else:
-            # Check for season
-            season_map = {'春': '03', '夏': '06', '秋': '09', '冬': '12'}
+            # Check for season — save it to prepend to location, don't map to a month
+            season_map = {'春', '夏', '秋', '冬'}
             if rest and rest[0] in season_map:
-                result['create_m'] = season_map[rest[0]]
+                season_found = rest[0]
                 rest = rest[1:].strip()
             # No default month — leave create_m empty if not explicitly present
 
@@ -202,6 +254,14 @@ def parse_byline_fields(byline):
                     break
             else:
                 result['location'] = rest
+
+    # If a season was found in the date, prepend it to the location
+    # e.g. "1916年春，在普陀山講" → create_y="1916", location="春，普陀山"
+    if season_found:
+        if result['location']:
+            result['location'] = f'{season_found}，{result["location"]}'
+        else:
+            result['location'] = season_found
 
     return result
 

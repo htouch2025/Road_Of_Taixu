@@ -34,6 +34,15 @@ ALIASES = {
     '正信周刊': '正信',
     '正信半月刊': '正信',
     '正信月刊': '正信',
+    # 中流
+    '中流': '中流',
+    '中流月刊': '中流',
+    # 佛化策進會會刊
+    '佛化策進會會刊': '佛化策進會會刊',
+    '佛化策進會': '佛化策進會會刊',
+    # 文史雜誌
+    '文史雜誌': '文史雜誌',
+    '文史杂志': '文史雜誌',
     # 觉群 variants
     '覺群': '覺群週報',
     '覺群報': '覺群週報',
@@ -124,6 +133,14 @@ IMPRINTS = {
     '廈門慈宗學會', '武昌正信印務館', '漢口印行', '佛學院',
 }
 
+# Publications that are daily newspapers and use date-based (民國紀年)
+# references instead of volume/issue numbers.
+DAILY_PUBLICATIONS = {
+    '佛教日報',
+    '佛化新聞',
+    '大公報',
+}
+
 
 def normalize_publication_name(raw):
     """Normalize a raw publication name to its canonical form.
@@ -149,7 +166,10 @@ _LOOKUP = {}
 
 
 def _parse_date(date_str):
-    """Parse a date string like '1920.03.10' or '1920-03-10' into (y, m, d)."""
+    """Parse a date string like '1920.03.10', '1920-03-10', or '1918.10'.
+
+    Returns (y, m, d) tuple of strings. Day may be '' for partial dates.
+    """
     date_str = date_str.strip()
     # Try YYYY.MM.DD
     m = re.match(r'(\d{4})\.(\d{2})\.(\d{2})', date_str)
@@ -159,6 +179,14 @@ def _parse_date(date_str):
     m = re.match(r'(\d{4})-(\d{2})-(\d{2})', date_str)
     if m:
         return m.group(1), m.group(2), m.group(3)
+    # Try YYYY.MM (no day)
+    m = re.match(r'(\d{4})\.(\d{2})$', date_str)
+    if m:
+        return m.group(1), m.group(2), ''
+    # Try YYYY-MM (no day)
+    m = re.match(r'(\d{4})-(\d{2})$', date_str)
+    if m:
+        return m.group(1), m.group(2), ''
     return None
 
 
@@ -182,17 +210,19 @@ def _parse_vol_issue_cell(cell_text):
     text = re.sub(r'[（(][^)）]*[)）]', '', text).strip()
 
     # Try cross-volume range: X卷Y期至X卷Y期 → take first vol/issue
-    m = re.match(r'([一二三四五六七八九十\d]+)卷(\d+)期至', text)
+    m = re.match(r'([一二三四五六七八九十\d]+)卷([一二三四五六七八九十\d]+)[期号號輯]至', text)
     if m:
         vol = _chinese_num_to_int(m.group(1))
         if vol is None:
             vol = int(m.group(1))
-        issue = int(m.group(2))
+        issue = _chinese_num_to_int(m.group(2))
+        if issue is None:
+            issue = int(m.group(2))
         return (vol, issue)
 
     # Extract volume
     vol = None
-    m_vol = re.match(r'([一二三四五六七八九十\d]+)卷', text)
+    m_vol = re.match(r'([一二三四五六七八九十\d]+)\s*卷', text)
     if m_vol:
         vol = _chinese_num_to_int(m_vol.group(1))
         if vol is None:
@@ -204,17 +234,17 @@ def _parse_vol_issue_cell(cell_text):
     else:
         rest = text
 
-    # Issue pattern: number followed by 期/号
+    # Issue pattern: number (Arabic or Chinese) followed by 期/号/號
     # For ranges like '4-5期' or '11-12期', take the first number
-    m_issue = re.search(r'(\d+)(?:[-‐-―](\d+))?期', rest)
+    _issue_num = r'([一二三四五六七八九十\d]+)'
+    _issue_suffix = r'\s*[期号號輯]'
+    _dash = r'[-‐-―–—]'  # includes hyphen, figure-dash, en-dash, em-dash
+    m_issue = re.search(_issue_num + r'(?:' + _dash + _issue_num + r')?' + _issue_suffix, rest)
     if m_issue:
-        issue = int(m_issue.group(1))
+        issue = _chinese_num_to_int(m_issue.group(1))
+        if issue is None:
+            issue = int(m_issue.group(1))
         return (vol, issue)
-
-    # Bare number + 期 (no vol)
-    m_issue2 = re.match(r'(\d+)期', rest)
-    if m_issue2:
-        return (vol, int(m_issue2.group(1)))
 
     return (vol, None)
 
@@ -238,6 +268,125 @@ def _chinese_num_to_int(s):
             return None
     total += section
     return total if total > 0 else None
+
+
+def _parse_chinese_date_num(s):
+    """Parse a Chinese numeral using date-shorthand convention.
+
+    In date shorthand (especially 民國紀年), multi-digit numbers without 十
+    are written digit-by-digit: '一八' = 18, '二四' = 24. When '十' is
+    present, standard Chinese numeral parsing applies.
+
+    Also handles 廿 (20+) and 卅 (30+) prefixes.
+
+    Examples:
+        '七'       -> 7       (single digit)
+        '十'       -> 10      (exactly ten)
+        '十二'     -> 12      (standard, has 十)
+        '一八'     -> 18      (digit-by-digit, no 十)
+        '二四'     -> 24      (digit-by-digit)
+        '二九'     -> 29      (digit-by-digit)
+        '廿五'     -> 25      (廿 prefix = 20)
+        '二十五'   -> 25      (standard, has 十)
+
+    Returns int or None if unparseable.
+    """
+    s = s.strip()
+    if not s:
+        return None
+    if s.isdigit():
+        return int(s)
+
+    # Handle 廿 prefix (20+)
+    if s.startswith('廿'):
+        base = 20
+        s = s[1:]
+    elif s.startswith('卅'):
+        base = 30
+        s = s[1:]
+    else:
+        base = 0
+
+    if base > 0 and s:
+        rest = _parse_chinese_date_num(s)
+        if rest is not None:
+            return base + rest
+        return None
+    if base > 0 and not s:
+        return base
+
+    # If contains 十, delegate to standard Chinese number parser
+    if '十' in s:
+        return _chinese_num_to_int(s)
+
+    # Digit-by-digit convention: each character = one decimal place
+    digit_map = {
+        '〇': 0, '零': 0,
+        '一': 1, '二': 2, '三': 3, '四': 4, '五': 5,
+        '六': 6, '七': 7, '八': 8, '九': 9, '十': 10,
+    }
+    result = 0
+    for c in s:
+        if c not in digit_map:
+            return None
+        result = result * 10 + digit_map[c]
+    return result
+
+
+def _extract_minguo_date(text):
+    """Extract a 民國紀年 date from text and convert to Gregorian (y, m, d).
+
+    Handles two main formats:
+
+    Full format with 年月日 (day range → take first day):
+      二十四年七月十至十三日  ->  ('1935', '07', '10')
+
+    Shorthand with separators (，、。, etc.):
+      二四，七，一八。         ->  ('1935', '07', '18')
+      廿五、九、廿一日         ->  ('1936', '09', '21')
+      二十五、十、十、         ->  ('1936', '10', '10')
+      二五，三，一八，九        ->  ('1936', '03', '18')  [九 is trailing]
+
+    Returns (year, month, day) tuple of zero-padded strings, or None.
+    Gregorian year = 1911 + Minguo year.
+    """
+    if not text:
+        return None
+
+    _NUM_CH = r'[一二三四五六七八九十廿卅〇零]+'
+
+    # --- Full format: YY年MM月DD日 (with optional day range) ---
+    m_full = re.search(
+        r'(' + _NUM_CH + r')年\s*(' + _NUM_CH + r')月\s*'
+        r'(' + _NUM_CH + r')(?:至' + _NUM_CH + r')?日',
+        text,
+    )
+    if m_full:
+        yy = _parse_chinese_date_num(m_full.group(1))
+        mm = _parse_chinese_date_num(m_full.group(2))
+        dd = _parse_chinese_date_num(m_full.group(3))
+        if all(v is not None for v in (yy, mm, dd)):
+            if 1 <= yy <= 99 and 1 <= mm <= 12 and 1 <= dd <= 31:
+                return (str(1911 + yy), str(mm).zfill(2), str(dd).zfill(2))
+
+    # --- Shorthand: YY, MM, DD with separators ---
+    _SEP = r'[，、。,．\s]+'
+
+    m_short = re.search(
+        r'(?<![年])(' + _NUM_CH + r')' + _SEP
+        + r'(' + _NUM_CH + r')' + _SEP
+        + r'(' + _NUM_CH + r')(?:日)?',
+        text,
+    )
+    if m_short:
+        yy = _parse_chinese_date_num(m_short.group(1))
+        mm = _parse_chinese_date_num(m_short.group(2))
+        dd = _parse_chinese_date_num(m_short.group(3))
+        if all(v is not None for v in (yy, mm, dd)):
+            if 1 <= yy <= 99 and 1 <= mm <= 12 and 1 <= dd <= 31:
+                return (str(1911 + yy), str(mm).zfill(2), str(dd).zfill(2))
+
+    return None
 
 
 def _build_lookup():
@@ -266,6 +415,8 @@ def _build_lookup():
         pub_name = re.sub(r'[（(]\d+次引用[)）]$', '', pub_name).strip()
         # Strip alternate name after ／ (e.g. 覺群週報／覺群報 → 覺群週報)
         pub_name = re.sub(r'／.+$', '', pub_name).strip()
+        # Strip parenthetical notes like （中流月刊）, （月刊）, etc.
+        pub_name = re.sub(r'[（(][^)）]+[)）]$', '', pub_name).strip()
         # Strip empty parentheses like （）
         pub_name = re.sub(r'[（(]\s*[)）]$', '', pub_name).strip()
 
@@ -317,7 +468,7 @@ def _build_lookup():
             date_cell = None
             vol_cell = None
             for cell in cells:
-                if re.search(r'\d{4}[\.\-]\d{2}[\.\-]\d{2}', cell):
+                if re.search(r'\d{4}[\.\-]\d{2}(?:[\.\-]\d{2})?', cell):
                     date_cell = cell
                 elif re.search(r'卷|期', cell):
                     vol_cell = cell
@@ -325,7 +476,7 @@ def _build_lookup():
             if date_cell is None:
                 # Try cells that look like dates with extra text
                 for cell in cells:
-                    m = re.search(r'(\d{4}[\.\-]\d{2}[\.\-]\d{2})', cell)
+                    m = re.search(r'(\d{4}[\.\-]\d{2}(?:[\.\-]\d{2})?)', cell)
                     if m:
                         date_cell = m.group(1)
                         break
@@ -401,6 +552,36 @@ def lookup_date(pub_name, vol, issue):
 
 
 # ── Volume/issue text parser ────────────────────────────────────────────
+
+def _parse_issue_numbers(text):
+    """Parse an issue number string into a list of issue integers.
+
+    Handles:
+      '7'       → [7]       (single Arabic)
+      '11'      → [11]      (multi-digit Arabic)
+      '十一'    → [11]      (standard Chinese, has 十)
+      '七八'    → [7, 8]    (consecutive digits, no 十 → multiple issues)
+      '一二'    → [1, 2]    (consecutive digits, no 十 → multiple issues)
+      '十二'    → [12]      (has 十, single issue)
+    """
+    text = text.strip()
+    if not text:
+        return []
+    if text.isdigit():
+        return [int(text)]
+    # If contains 十, parse as standard Chinese numeral
+    if '十' in text:
+        n = _chinese_num_to_int(text)
+        return [n] if n is not None else []
+    # Consecutive single CJK digits → multiple issues
+    digit_map = {'一': 1, '二': 2, '三': 3, '四': 4, '五': 5,
+                 '六': 6, '七': 7, '八': 8, '九': 9}
+    issues = []
+    for c in text:
+        if c in digit_map:
+            issues.append(digit_map[c])
+    return issues if issues else []
+
 
 def parse_volume_issue(text):
     """Parse a publication reference text to extract (pub_name, vol, issue_list).
@@ -478,7 +659,9 @@ def parse_volume_issue(text):
             vol = _chinese_num_to_int(m_range.group(1))
             if vol is None:
                 vol = int(m_range.group(1))
-            issues = [int(m_range.group(2))]
+            issues = _parse_issue_numbers(m_range.group(2))
+            if not issues:
+                issues = [int(m_range.group(2))]
             return (found_pub, vol, issues)
 
         # Pattern: X卷Y期
@@ -487,38 +670,37 @@ def parse_volume_issue(text):
             r'([一二三四五六七八九十\d]+)卷\s*'
             r'(?:第\s*)?'
             r'([一二三四五六七八九十\d]+)'
-            r'(?:[及和至、,\-/‐-―]?'
+            r'(?:[及和至、,\-/‐-―–—]?'
             r'(?:第\s*)?'
             r'([一二三四五六七八九十\d]+))?'
-            r'\s*[期号號]',
+            r'\s*[期号號輯]',
             rest
         )
         if m_vi:
             vol = _chinese_num_to_int(m_vi.group(1))
             if vol is None:
                 vol = int(m_vi.group(1))
-            i1 = _chinese_num_to_int(m_vi.group(2))
-            if i1 is None:
-                i1 = int(m_vi.group(2))
-            issues = [i1]
+            issues = _parse_issue_numbers(m_vi.group(2))
+            if not issues:
+                # Fallback: try direct int conversion
+                try:
+                    issues = [int(m_vi.group(2))]
+                except ValueError:
+                    return (found_pub, vol, None)
             # Second issue in range (e.g. 九卷第九及十期)
             if m_vi.group(3):
-                i2 = _chinese_num_to_int(m_vi.group(3))
-                if i2 is None:
-                    i2 = int(m_vi.group(3))
-                issues.append(i2)
+                issues.extend(_parse_issue_numbers(m_vi.group(3)))
             return (found_pub, vol, issues)
 
         # Pattern: 仅期号, e.g. 第一期, 第X期
         m_issue = re.search(
-            r'(?:第\s*)?([一二三四五六七八九十\d]+)\s*[期号號]',
+            r'(?:第\s*)?([一二三四五六七八九十\d]+)\s*[期号號輯]',
             rest
         )
         if m_issue:
-            i1 = _chinese_num_to_int(m_issue.group(1))
-            if i1 is None:
-                i1 = int(m_issue.group(1))
-            return (found_pub, None, [i1])
+            issues = _parse_issue_numbers(m_issue.group(1))
+            if issues:
+                return (found_pub, None, issues)
 
         # Pattern: X卷 without 期 (rare)
         m_vol = re.search(
@@ -531,7 +713,12 @@ def parse_volume_issue(text):
                 vol = int(m_vol.group(1))
             return (found_pub, vol, None)
 
-        # Found publication name but no volume/issue → still return pub name
+        # Found publication name but no volume/issue.
+        # If the text contains imprint markers (印行, 單行本, etc.), this is
+        # a standalone print, not a periodical reference — let the fallback handle it.
+        _imprint_markers = ['印行', '印本', '流通本', '單行本', '出版', '發行']
+        if any(m in text for m in _imprint_markers):
+            return None
         return (found_pub, None, None)
 
     # ── Fallback: try to match imprint patterns ──
@@ -585,6 +772,17 @@ def resolve_publication_date(pub_text):
 
     # If no volume/issue info, we can still set publication name
     if issues is None or len(issues) == 0:
+        # For daily publications, try to extract date directly from
+        # the reference text (民國紀年 → Gregorian conversion).
+        if pub_name in DAILY_PUBLICATIONS:
+            date = _extract_minguo_date(pub_text)
+            if date is not None:
+                return {
+                    'publication': pub_name,
+                    'publish_y': date[0],
+                    'publish_m': date[1],
+                    'publish_d': date[2],
+                }
         return {
             'publication': pub_name,
             'publish_y': '',

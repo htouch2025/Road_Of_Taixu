@@ -20,6 +20,8 @@ Usage:
 import argparse
 import json
 import re
+import subprocess
+import sys
 import xml.etree.ElementTree as ET
 from pathlib import Path
 import os
@@ -161,10 +163,68 @@ def get_byline_text(div):
     return ''
 
 def should_skip_div(mulu_text):
-    for kw in ['目次', '綱要', '目錄', '目録', '科分']:
-        if kw in mulu_text:
-            return True
-    return False
+    """Skip TOC/outline divs. Use exact match — body headings may contain
+    these keywords as substrings (e.g.「一　全部教史的綱要」)."""
+    skip_set = {'目次', '綱要', '目錄', '目録', '科分'}
+    return mulu_text.strip() in skip_set
+
+def extract_toc_items_from_gangyao(article_div):
+    """Extract flat list of TOC item texts from the 綱要 (outline) section.
+
+    CBETA XML often has a 綱要 div containing <item> elements that form
+    the article's table of contents.  These item texts are sometimes more
+    accurate than the body <head> elements (e.g. correct numbering, no
+    missing particles, correct word order).  This function extracts them
+    as a flat list in document order for cross-referencing during heading
+    generation.
+
+    Returns empty list if no 綱要 section is found.
+    """
+    items = []
+
+    def _walk_list(elem):
+        for child in elem:
+            local_tag = child.tag.split('}')[-1] if '}' in child.tag else child.tag
+            if local_tag == 'item':
+                # Get text from the <item> element — includes text nodes
+                # before any nested <list> children
+                text_parts = [child.text or '']
+                nested_list = None
+                for sub in child:
+                    subtag = sub.tag.split('}')[-1] if '}' in sub.tag else sub.tag
+                    if subtag == 'list':
+                        nested_list = sub
+                    elif sub.tail:
+                        text_parts.append(sub.tail)
+                text = ''.join(text_parts).strip()
+                if text:
+                    items.append(text)
+                if nested_list is not None:
+                    _walk_list(nested_list)
+            elif local_tag == 'list':
+                _walk_list(child)
+
+    # Find the 綱要 div among article_div's descendants
+    for div in article_div.iter(f'{{{CBETA_NS}}}div'):
+        mulu = div.find(f'{{{CBETA_NS}}}mulu')
+        if mulu is not None and ''.join(mulu.itertext()).strip() == '綱要':
+            for child in div:
+                local_tag = child.tag.split('}')[-1] if '}' in child.tag else child.tag
+                if local_tag == 'list':
+                    _walk_list(child)
+            break
+
+    return items
+
+
+def _core_text_similarity(a, b):
+    """Return Jaccard-like similarity of character sets (0.0–1.0)."""
+    if not a and not b:
+        return 1.0
+    if not a or not b:
+        return 0.0
+    sa, sb = set(a), set(b)
+    return len(sa & sb) / len(sa | sb)
 
 def render_paragraph(p_elem, notes_map=None):
     """Render <p> to text, notes → （...）, lb/pb discarded, note anchors → [N]."""
@@ -214,6 +274,29 @@ def render_paragraph(p_elem, notes_map=None):
                     parts.append('**' + ''.join(child.itertext()).strip() + '**')
                 else:
                     parts.append(''.join(child.itertext()))
+            elif tag == 'list':
+                # Render <list> inside <p>: extract each <item>'s <p> text
+                for item in child:
+                    item_tag = item.tag.split('}')[-1] if '}' in item.tag else item.tag
+                    if item_tag != 'item':
+                        continue
+                    p = item.find(f'{{{TEI_NS}}}p')
+                    if p is None:
+                        p = item.find('p')
+                    if p is not None:
+                        parts.append(''.join(p.itertext()))
+                    # Recurse into nested <list> inside <item>
+                    for nested in item:
+                        nested_tag = nested.tag.split('}')[-1] if '}' in nested.tag else nested.tag
+                        if nested_tag == 'list':
+                            parts.append(''.join(nested.itertext()))
+            elif tag == 'item':
+                # Bare <item> (outside <list>) — extract <p> text
+                p = child.find(f'{{{TEI_NS}}}p')
+                if p is None:
+                    p = child.find('p')
+                if p is not None:
+                    parts.append(''.join(p.itertext()))
             else:
                 parts.append(''.join(child.itertext()))
             if child.tail and is_pre:
@@ -250,46 +333,103 @@ def _render_body_child(child, notes_map=None):
             return []
     if local_tag in ('byline', 'note'):
         # byline/note as direct children of a div (sibling of <p>)
-        # Use itertext() to capture text across <lb/> breaks (pitfall #16)
-        own_text = ''.join(child.itertext())
-        own_text = ''.join(own_text.split())  # compress whitespace
-        # Check for nkr_note_orig_* anchors inside byline/note elements.
-        # itertext() skips anchor elements (they have no text), so we
-        # must explicitly collect footnote number(s) and append them.
-        if notes_map:
-            for anchor_elem in child.iter(f'{{{TEI_NS}}}anchor'):
-                aid = anchor_elem.get("{http://www.w3.org/XML/1998/namespace}id") or anchor_elem.get("xml:id", "")
-                if aid and aid in notes_map:
-                    own_text += f'[{notes_map[aid]}]'
-            for anchor_elem in child.findall('.//anchor'):
-                aid = anchor_elem.get("{http://www.w3.org/XML/1998/namespace}id") or anchor_elem.get("xml:id", "")
-                if aid and aid in notes_map:
-                    own_text += f'[{notes_map[aid]}]'
-        inline_note = child.find(f'{{{TEI_NS}}}note')
-        if inline_note is None:
-            inline_note = child.find('note')
-        if inline_note is not None and inline_note.get('place') == 'inline':
-            nt = ''.join(inline_note.itertext())
-            nt = ''.join(nt.split())  # compress same as own_text
-            # Remove note text from own_text (it's caught by itertext above)
-            if nt:
-                own_text = own_text.replace(nt, '').rstrip()
-                own_text = ''.join(own_text.split())
-            if own_text and nt:
-                return [f'{own_text}（{nt}）']
-            elif nt:
-                return [f'（{nt}）']
-            elif own_text:
-                return [own_text]
-            return []
-        elif own_text:
-            return [own_text]
-        return []
+        # Walk children in XML document order to preserve anchor positions
+        # relative to inline notes (pitfall #16, #22).
+        parts = []
+        text_buf = [child.text or '']
+
+        for sub in child:
+            sub_tag = sub.tag.split('}')[-1] if '}' in sub.tag else sub.tag
+
+            if sub_tag == 'lb':
+                text_buf.append(sub.tail or '')
+            elif sub_tag == 'note' and sub.get('place') == 'inline':
+                # Flush text before the note
+                acc = ''.join(text_buf)
+                acc = ''.join(acc.split())
+                if acc:
+                    parts.append(acc)
+                text_buf = ['']
+                # Add note text wrapped in （）
+                nt = ''.join(sub.itertext())
+                nt = ''.join(nt.split())
+                if nt:
+                    parts.append(f'（{nt}）')
+                text_buf.append(sub.tail or '')
+            elif sub_tag == 'anchor':
+                # Flush text before the anchor
+                acc = ''.join(text_buf)
+                acc = ''.join(acc.split())
+                if acc:
+                    parts.append(acc)
+                text_buf = ['']
+                # Add footnote marker
+                aid = sub.get("{http://www.w3.org/XML/1998/namespace}id") or sub.get("xml:id", "")
+                if aid and notes_map and aid in notes_map:
+                    parts.append(f'[{notes_map[aid]}]')
+                text_buf.append(sub.tail or '')
+            else:
+                text_buf.append(sub.tail or '')
+
+        # Flush remaining text
+        acc = ''.join(text_buf)
+        acc = ''.join(acc.split())
+        if acc:
+            parts.append(acc)
+
+        result = ''.join(parts)
+        return [result] if result else []
     elif _is_tei_tag(child.tag, 'p'):
         text = render_paragraph(child, notes_map)
         if text.strip():
             return [text]
+    elif _is_tei_tag(child.tag, 'list'):
+        # Render <list> items — each <item> contains a <p>, may contain nested <list>
+        result_lines = []
+        _render_list_items(child, notes_map, result_lines)
+        return result_lines
     return []
+
+
+def _render_list_items(list_elem, notes_map, result_lines, indent=0):
+    """Recursively render <list> items, including nested lists."""
+    prefix = "    " * indent + "- "
+    for item in list_elem:
+        item_tag = item.tag.split('}')[-1] if '}' in item.tag else item.tag
+        if item_tag != 'item':
+            continue
+        # Extract <p> text from item
+        p = item.find(f'{{{TEI_NS}}}p')
+        if p is None:
+            p = item.find('p')
+        if p is not None:
+            text = render_paragraph(p, notes_map)
+            if text.strip():
+                result_lines.append(f"{prefix}{text}")
+        else:
+            # No <p> wrapper — extract text directly from <item>
+            # (pitfall #28: many list items have text directly in <item>,
+            #  not wrapped in <p>. Previously these were silently dropped.)
+            parts = [item.text or '']
+            for child in item:
+                child_tag = child.tag.split('}')[-1] if '}' in child.tag else child.tag
+                if child_tag == 'list':
+                    continue  # nested list, handled by recursion below
+                if child_tag == 'note':
+                    nt = ''.join(child.itertext()).strip()
+                    if nt:
+                        parts.append(f'（{nt}）')
+                if child.tail:
+                    parts.append(child.tail)
+            text = ''.join(parts).strip()
+            text = ''.join(text.split())
+            if text:
+                result_lines.append(f"{prefix}{text}")
+        # Recurse into nested <list> inside <item>
+        for child in item:
+            child_tag = child.tag.split('}')[-1] if '}' in child.tag else child.tag
+            if child_tag == 'list':
+                _render_list_items(child, notes_map, result_lines, indent + 1)
 
 
 def extract_paragraphs(div, notes_map=None):
@@ -325,7 +465,7 @@ def normalize_blank_lines(lines):
 _BACK_NOTE_CACHE = {}
 
 def _get_back_note_map(full_xml_path):
-    """Return {anchor_id: (note_n, raw_body)} for a file's <back> notes.
+    """Return {anchor_id: raw_body} for a file's <back> notes.
 
     Reads the whole file and scans <back> exactly once per file, caching
     the result. <back> is unique per CBETA TX file, so the cache is safe.
@@ -342,11 +482,11 @@ def _get_back_note_map(full_xml_path):
     back_match = re.search(r'<back>.*?</back>', full_text, re.DOTALL)
     if back_match:
         note_pattern = re.compile(
-            r'<note n="(\d+)"[^>]*target="#(nkr_note_orig_\d+)"[^>]*>(.*?)</note>',
+            r'<note\s[^>]*?target="#(nkr_note_orig_[^"]+)"[^>]*>(.*?)</note>',
             re.DOTALL
         )
         for m in note_pattern.finditer(back_match.group()):
-            note_map[m.group(2)] = (int(m.group(1)), m.group(3))
+            note_map[m.group(1)] = m.group(2)
 
     _BACK_NOTE_CACHE[key] = note_map
     return note_map
@@ -363,7 +503,7 @@ def extract_article_notes(full_xml_path, article_byte_start, article_byte_end):
         article_chunk = f.read(article_byte_end - article_byte_start).decode('utf-8', errors='replace')
 
     # Collect all nkr_note_orig_* anchor IDs from the article, in order
-    anchor_ids = re.findall(r'anchor xml:id="(nkr_note_orig_\d+)"', article_chunk)
+    anchor_ids = re.findall(r'anchor xml:id="(nkr_note_orig_[^"]+)"', article_chunk)
     if not anchor_ids:
         return [], []
 
@@ -377,7 +517,7 @@ def extract_article_notes(full_xml_path, article_byte_start, article_byte_end):
     notes = []
     for idx, aid in enumerate(anchor_ids):
         if aid in note_map:
-            note_n, raw_body = note_map[aid]
+            raw_body = note_map[aid]
             body = re.sub(r'<[^>]+>', '', raw_body).strip()
             num_label = CHINESE_NUMERALS[idx] if idx < len(CHINESE_NUMERALS) else str(idx + 1)
             notes.append((f'注{num_label}', body))
@@ -473,7 +613,8 @@ def _normalize_appendix_date_location(raw):
 
 # ── Tree walker ───────────────────────────────────────────────────────
 
-def walk_div_tree(div, toc_entries, body_lines, notes_map=None, level_offset=0):
+def walk_div_tree(div, toc_entries, body_lines, notes_map=None, level_offset=0,
+                  toc_items=None, toc_pos=None):
     mulu_text = get_mulu_text(div)
     mulu_lv = get_mulu_level(div)
     heading, note_anchor = get_heading_text(div)
@@ -486,7 +627,7 @@ def walk_div_tree(div, toc_entries, body_lines, notes_map=None, level_offset=0):
         # Process children in XML document order (same as headed-div branch)
         for child in div:
             if child.tag == f'{{{CBETA_NS}}}div':
-                walk_div_tree(child, toc_entries, body_lines, notes_map, level_offset)
+                walk_div_tree(child, toc_entries, body_lines, notes_map, level_offset, toc_items, toc_pos)
             else:
                 for para in _render_body_child(child, notes_map):
                     if div_type == 'orig':
@@ -502,8 +643,38 @@ def walk_div_tree(div, toc_entries, body_lines, notes_map=None, level_offset=0):
     if mulu_lv == 1:
         for child in div:
             if child.tag == f'{{{CBETA_NS}}}div':
-                walk_div_tree(child, toc_entries, body_lines, notes_map, level_offset)
+                walk_div_tree(child, toc_entries, body_lines, notes_map, level_offset, toc_items, toc_pos)
         return
+
+    # Cross-reference with TOC items from 綱要 section for data-quality warnings.
+    # CBETA XML occasionally has inconsistencies between 綱要 <item> texts and
+    # body <head> texts (missing particles, wrong numbering, reversed word order).
+    # When the two differ but share substantial character overlap, the 綱要 item
+    # is usually more accurate.  We emit a warning so the human can verify
+    # against the printed edition.
+    if toc_items is not None and toc_pos is not None and toc_pos[0] < len(toc_items):
+        ref_item = toc_items[toc_pos[0]]
+        # Normalize both for comparison (collapse whitespace)
+        h_norm = re.sub(r'\s+', '', heading)  # e.g. 四　現今佛教在世界上三個中心
+        r_norm = re.sub(r'\s+', '', ref_item)  # e.g. 四　現今佛教在世界上的三個中心
+        # Check if this heading likely has a corresponding TOC item.
+        # Headings without numbering (e.g.「前言」) often have no纲目 entry
+        # and should not consume a TOC position.
+        has_num = bool(re.match(r'^[一二三四五六七八九十百千万０１２３４５６７８９\d甲乙丙丁戊己庚辛壬癸]+', heading))
+        if has_num:
+            if h_norm != r_norm:
+                # Strip numbering prefix for core-text comparison
+                h_core = re.sub(r'^[一二三四五六七八九十百千万０１２３４５６７８９\d甲乙丙丁戊己庚辛壬癸]+[\s　]*', '', heading)
+                r_core = re.sub(r'^[一二三四五六七八九十百千万０１２３４５６７８９\d甲乙丙丁戊己庚辛壬癸]+[\s　]*', '', ref_item)
+                # Warn when body heading differs from TOC item — the two sources
+                # disagree and the human should verify against the printed edition.
+                # We do NOT auto-correct because neither source is consistently
+                # more reliable (see Issue 6: TOC item has extra 法 → wrong).
+                if h_core == r_core or _core_text_similarity(h_core, r_core) > 0.4:
+                    print(f'⚠ 纲目/正文标题不一致，请用纸质书校对:'
+                          f' 纲目="{ref_item}" vs 正文标题="{heading}"',
+                          file=__import__('sys').stderr)
+            toc_pos[0] += 1
 
     # No anchors — pure plain text output
 
@@ -554,7 +725,7 @@ def walk_div_tree(div, toc_entries, body_lines, notes_map=None, level_offset=0):
     # last child div (pitfall #17/#22/#尾注错位).
     for child in div:
         if child.tag == f'{{{CBETA_NS}}}div':
-            walk_div_tree(child, toc_entries, body_lines, notes_map, recurse_offset)
+            walk_div_tree(child, toc_entries, body_lines, notes_map, recurse_offset, toc_items, toc_pos)
         else:
             for para in _render_body_child(child, notes_map):
                 body_lines.append(para)
@@ -609,9 +780,14 @@ def render_frontmatter(title, publication_notes):
             resolve_publication_date = None
 
         pub_text = publication_notes[0]
+        # Strip common prefixes before lookup / fallback
+        _clean = re.sub(r'^[原并並散]?[見见]', '', pub_text).strip()
+        _clean = re.sub(r'^[錄录]自?', '', _clean).strip()
         pub_result = None
         if resolve_publication_date:
             pub_result = resolve_publication_date(pub_text)
+            if (pub_result is None or not pub_result.get('publication')) and _clean != pub_text:
+                pub_result = resolve_publication_date(_clean)
 
         if pub_result and pub_result.get('publication'):
             lines.append(f'publication: {pub_result["publication"]}')
@@ -623,6 +799,11 @@ def render_frontmatter(title, publication_notes):
                     f'> **原文刊載資訊**：{pub_text}。'
                     f'未在「刊載信息卷期對照表」中找到對應項。'
                 )
+        elif _clean:
+            lines.append(f'publication: {_clean}')
+            lines.append('publish_y:')
+            lines.append('publish_m:')
+            lines.append('publish_d:')
 
     lines.append('concepts:')
     lines.append('domains:')
@@ -797,11 +978,17 @@ def extract_article(xml_path, byte_start, byte_end, toc_only=False):
     root = parse_article_chunk(str(xml_path), byte_start, byte_end)
 
     article_div = None
+    sibling_appendix_divs = []  # level-2 appendix divs that are siblings (not children) of article_div
     for div in root:
         if div.tag == f'{{{CBETA_NS}}}div':
             if get_mulu_level(div) == 2:
-                article_div = div
-                break
+                if article_div is None:
+                    article_div = div
+                else:
+                    # Sibling level-2 div — check if it's an appendix (（附）prefix)
+                    mulu_text = get_mulu_text(div)
+                    if mulu_text.startswith('（附）'):
+                        sibling_appendix_divs.append(div)
 
     if article_div is None:
         raise RuntimeError('Could not find article-level (level 2) cb:div')
@@ -833,6 +1020,10 @@ def extract_article(xml_path, byte_start, byte_end, toc_only=False):
     for idx, aid in enumerate(note_anchor_order):
         notes_map[aid] = idx + 1
 
+    # Extract TOC items from 綱要 section for cross-reference during heading generation
+    toc_items = extract_toc_items_from_gangyao(article_div)
+    toc_pos = [0]  # mutable position counter for walk_div_tree
+
     toc_entries = []
     body_lines = []
 
@@ -840,7 +1031,8 @@ def extract_article(xml_path, byte_start, byte_end, toc_only=False):
     for child in article_div:
         if child.tag == f'{{{CBETA_NS}}}div':
             has_child_div = True
-            walk_div_tree(child, toc_entries, body_lines, notes_map, level_offset=-1)
+            walk_div_tree(child, toc_entries, body_lines, notes_map, level_offset=-1,
+                          toc_items=toc_items, toc_pos=toc_pos)
 
     # Fallback: articles with no nested cb:div (e.g. charts, simple single-block articles)
     # have <p> / <figure> / <byline> as direct children of the article div
@@ -856,6 +1048,36 @@ def extract_article(xml_path, byte_start, byte_end, toc_only=False):
     # Collect publication notes from <byline><note place="inline">
     pub_notes = extract_publication_notes(article_div)
 
+    # Process sibling appendix divs (separate level-2 cb:div at root level after the main article)
+    for sib_div in sibling_appendix_divs:
+        # Build appendix header and insert into body_lines before the appendix body
+        mulu_text = get_mulu_text(sib_div)
+        head = sib_div.find(f'{{{TEI_NS}}}head')
+        if head is None:
+            head = sib_div.find('head')
+        app_title = ''.join(head.itertext()).strip() if head is not None else mulu_text
+        app_title = re.sub(r'^[（(]附[）)]\s*', '附：', app_title)
+        app_dl = _extract_appendix_date_location(sib_div)
+        body_lines.append('')
+        body_lines.append('### 附：')
+        body_lines.append(f'# {app_title[2:]}' if app_title.startswith('附：') else f'### {app_title}')
+        if app_dl:
+            body_lines.append(app_dl)
+        body_lines.append('')
+        # Extract paragraphs from the sibling appendix div
+        sib_has_child = False
+        for child in sib_div:
+            if child.tag == f'{{{CBETA_NS}}}div':
+                sib_has_child = True
+                walk_div_tree(child, toc_entries, body_lines, notes_map, level_offset=-1,
+                              toc_items=toc_items, toc_pos=toc_pos)
+        if not sib_has_child:
+            for para in extract_paragraphs(sib_div, notes_map):
+                body_lines.append(para)
+                body_lines.append('')
+        # Also collect pub notes from sibling appendix
+        pub_notes.extend(extract_publication_notes(sib_div))
+
     title_note = ''
     if title_note_anchor and title_note_anchor in notes_map:
         n = notes_map[title_note_anchor]
@@ -865,7 +1087,7 @@ def extract_article(xml_path, byte_start, byte_end, toc_only=False):
     if byline:
         md_lines.append(byline)
 
-    # Appendix headers — shown right after the main title / byline
+    # Appendix headers for child appendixes (inside article_div) — shown right after title/byline
     appendixes = find_appendix_info(article_div)
     if appendixes:
         for app in appendixes:
@@ -1147,9 +1369,16 @@ def build_frontmatter(entry, book_name, book_number, publication_notes=None):
             resolve_publication_date = None
 
         pub_text = publication_notes[0]  # use first publication note
+        # Strip common prefixes (見/录自 etc.) that parse_volume_issue also strips,
+        # so the fallback path doesn't leak them into the publication field.
+        _clean = re.sub(r'^[原并並散]?[見见]', '', pub_text).strip()
+        _clean = re.sub(r'^[錄录]自?', '', _clean).strip()
         pub_result = None
         if resolve_publication_date:
             pub_result = resolve_publication_date(pub_text)
+            # If the cleaned text differs and lookup failed, also try with cleaned
+            if (pub_result is None or not pub_result.get('publication')) and _clean != pub_text:
+                pub_result = resolve_publication_date(_clean)
 
         if pub_result and pub_result.get('publication'):
             yaml_lines.append(f"publication: {pub_result['publication']}")
@@ -1162,9 +1391,9 @@ def build_frontmatter(entry, book_name, book_number, publication_notes=None):
                     f'> **原文刊載資訊**：{pub_text}。'
                     f'未在「刊載信息卷期對照表」中找到對應項。'
                 )
-        elif pub_text:
-            # Couldn't parse at all — still try to extract a publication name
-            yaml_lines.append(f"publication: {pub_text}")
+        elif _clean:
+            # Couldn't parse at all — use cleaned text as publication name
+            yaml_lines.append(f"publication: {_clean}")
             yaml_lines.append('publish_y:')
             yaml_lines.append('publish_m:')
             yaml_lines.append('publish_d:')
@@ -1180,6 +1409,99 @@ def build_frontmatter(entry, book_name, book_number, publication_notes=None):
 
 
 # ── CLI ───────────────────────────────────────────────────────────────
+
+def _update_report_title(report_path, title_range):
+    """更新校对报告的主标题，加入文章范围信息。"""
+    report = Path(report_path)
+    if not report.exists():
+        return
+    text = report.read_text(encoding='utf-8')
+    new_title = f'# CBETA HTML ↔ 本地 MD 校对报告（{title_range}）\n'
+    text = re.sub(r'^# .*校对报告.*\n', new_title, text)
+    report.write_text(text, encoding='utf-8')
+
+
+def run_verification(book_num, article_names=None, html_dir=None, output=None):
+    """提取後自動與 CBETA HTML 對比校對。
+
+    Args:
+        book_num: 編號 (int)
+        article_names: 文章名列表 (list[str] or None，None 表示全編校對)
+        html_dir: HTML 目錄路徑 (str or None，None 表示自動檢測)
+        output: 輸出報告路徑 (str or None)
+
+    Returns:
+        (error_count, warning_count) tuple，或 None（跳過校對時）
+    """
+    verify_script = Path(__file__).parent / 'verify_against_cbeta_html.py'
+    if not verify_script.exists():
+        print('  ⚠️  校對腳本不存在，跳過驗證', file=sys.stderr)
+        return None
+
+    # 檢查 HTML 目錄是否存在
+    if html_dir:
+        html_path = Path(html_dir)
+    else:
+        html_path = Path('_data/TX_HTML')
+    if not html_path.is_dir():
+        print(f'  ⚠️  HTML 目錄不存在 ({html_path})，跳過校對', file=sys.stderr)
+        return None
+
+    cmd = ['python3', str(verify_script), '--book', str(book_num),
+           '--html-dir', str(html_path)]
+    if article_names:
+        for name in article_names:
+            cmd.extend(['--article', name])
+    if output:
+        cmd.extend(['--output', str(output)])
+
+    result = subprocess.run(cmd, capture_output=True, text=True)
+
+    # 解析 stderr
+    for line in result.stderr.split('\n'):
+        if line.strip():
+            print(f'  {line.strip()}', file=sys.stderr)
+
+    stdout = result.stdout
+
+    # 從報告文件解析統計（--output 時準確），否則從 stdout 解析
+    errors, warnings = 0, 0
+    if output and Path(output).exists():
+        report_text = Path(output).read_text(encoding='utf-8')
+        err_match = re.search(r'🔴 错误.*?\|\s*(\d+)\s*\|', report_text)
+        warn_match = re.search(r'🟡 警告.*?\|\s*(\d+)\s*\|', report_text)
+        if err_match:
+            errors = int(err_match.group(1))
+        if warn_match:
+            warnings = int(warn_match.group(1))
+    else:
+        err_match = re.search(r'🔴 错误.*?(\d+)', stdout)
+        warn_match = re.search(r'🟡 警告.*?(\d+)', stdout)
+        if err_match:
+            errors = int(err_match.group(1))
+        if warn_match:
+            warnings = int(warn_match.group(1))
+
+    # 簡要輸出
+    if errors == 0 and warnings == 0:
+        print('  ✅ 校對通過，無差異')
+    else:
+        parts = []
+        if errors:
+            parts.append(f'🔴 {errors} 錯誤')
+        if warnings:
+            parts.append(f'🟡 {warnings} 警告')
+        print(f'  ⚠️  校對發現：{", ".join(parts)}')
+        if output:
+            print(f'  📄 報告 → {output}')
+        else:
+            # 無報告文件時，從 stdout 打印具體問題
+            for line in stdout.split('\n'):
+                if line.startswith('- **') or line.startswith('  -'):
+                    print(f'  {line}')
+
+    return errors, warnings
+
 
 def main():
     global FIGURES_REL_PATH
@@ -1202,6 +1524,10 @@ def main():
                         help='Starting 編號 (1-based, inclusive, for --batch)')
     parser.add_argument('--to', type=int, dest='to_article',
                         help='Ending 編號 (1-based, inclusive, for --batch)')
+    parser.add_argument('--verify', action='store_true',
+                        help='提取後自動與 CBETA HTML 對比校對')
+    parser.add_argument('--html-dir', type=str,
+                        help='CBETA HTML 目錄路徑（用於 --verify；默認自動檢測 _data/TX_HTML/）')
     args = parser.parse_args()
 
     if args.batch:
@@ -1248,6 +1574,7 @@ def main():
 
         total = len(articles)
         success = 0
+        success_articles = []
         first_error = True
         for i, entry in enumerate(articles):
             xml_file = entry['file']
@@ -1308,6 +1635,7 @@ def main():
                     encoding='utf-8'
                 )
                 print(f'✅ [{i+1}/{total}] {article_slug} (目錄樹)')
+                success_articles.append(article_slug)
             else:
                 out_dir.mkdir(parents=True, exist_ok=True)
                 out_path = out_dir / f'{zi_mu_num:02d}_{result["article_name"]}.md'
@@ -1328,12 +1656,35 @@ def main():
 
                 wc_qian = result['word_count'] // 1000
                 print(f'✅ [{i+1}/{total}] {result["article_name"]}（{wc_qian} 千字）')
+                success_articles.append(result["article_name"])
 
             success += 1
             first_error = True  # reset for next article
 
         if success > 0:
             regenerate_catalog_md(args.catalog)
+
+        # ── 批量提取後自動校對（僅本次批次）──
+        if args.verify and success > 0:
+            book_num = catalog.get('编序号', 1)
+            first_no = articles[0]['編號']
+            last_no = articles[-1]['編號']
+            if first_no == last_no:
+                report_slug = f'{first_no:02d}'
+                title_range = f'第{first_no}篇「{articles[0]["篇名"]}」'
+            else:
+                report_slug = f'{first_no:02d}-{last_no:02d}'
+                title_range = f'第{first_no}–{last_no}篇'
+            base = Path(args.catalog).stem.replace('_編目錄', '')
+            report_path = Path(args.catalog).parent / f'{base}_校对报告_{report_slug}.md'
+            print(f'\n📋 正在校對 CBETA HTML（{len(success_articles)} 篇：{title_range}）…')
+            errors, warnings = run_verification(book_num, article_names=success_articles,
+                           html_dir=args.html_dir, output=str(report_path))
+            if errors == 0 and warnings == 0:
+                if report_path.exists():
+                    report_path.unlink()
+            else:
+                _update_report_title(report_path, title_range)
 
         if success == total:
             print(f'\n🎉 全部完成：{success}/{total} 篇')
@@ -1484,6 +1835,23 @@ def main():
         print(f'   {wc_qian} 千字')
         if result['byline']:
             print(f'   {result["byline"]}')
+
+        # ── 單篇提取後自動校對 ──
+        if args.verify and args.catalog:
+            book_num = catalog.get('编序号', 1)
+            entry = next((e for e in catalog['篇目鏈表'] if e['篇名'] == result['article_name']), None)
+            art_no = entry['編號'] if entry else 0
+            title_range = f'第{art_no}篇「{result["article_name"]}」'
+            base = Path(args.catalog).stem.replace('_編目錄', '')
+            report_path = Path(args.catalog).parent / f'{base}_校对报告_{art_no:02d}.md'
+            print(f'  📋 校對 CBETA HTML …')
+            errors, warnings = run_verification(book_num, article_names=[result["article_name"]],
+                           html_dir=args.html_dir, output=str(report_path))
+            if errors == 0 and warnings == 0:
+                if report_path.exists():
+                    report_path.unlink()
+            else:
+                _update_report_title(report_path, title_range)
 
 if __name__ == '__main__':
     main()

@@ -2,8 +2,8 @@
 name: cbeta-xml-reader
 description: "Read CBETA TEI P5 XML files for the 太虚大师全书 (Collected Works of Master Taixu). Use when Codex needs to: (1) read or navigate CBETA XML source texts from local _data/cbeta/TX/ files, (2) extract article catalogs and document hierarchy (编/篇/部/章/节/小节) from CBETA structured data, (3) interpret cb:mulu level attributes and disambiguate semantic levels like 章 vs 节 vs 部, (4) cross-reference CBETA content against the paper edition table of contents, (5) process legacy DOC/HTML editions and compare them with the authoritative CBETA TEI version."
 metadata:
-  version: "0.17.0"
-  last_updated: "2026-06-28"
+  version: "0.18.0"
+  last_updated: "2026-07-03"
   status: active
   task_type: open-ended
 ---
@@ -217,18 +217,6 @@ Full catalog with 四藏分类 in `references/taixu_catalog.md`.
 
 ## 核心工作流
 
-### 进度状态
-
-| 编 | 名称 | 状态 | 文章数 |
-|----|------|------|--------|
-| 第一编 | 佛法總學 | ✅ 已完成 | 34 |
-| 第二编 | 五乘共學 | ✅ 已完成 | 22 |
-| 第三编 | 三乘共學 | ⏳ 待提取 | — |
-| 第四编 | 大乘通學 | ✅ 已完成 | 21 |
-| 第五编 | 法性空慧學 | ✅ 已完成 | 16 |
-| 第十八编 | 講演 | ✅ 已完成 | 30 |
-| 第六编/第七编/第九至二十编 | — | ⏳ 待提取 | — |
-
 **⛔ 实验阶段说明：本项目处于研究性、实验性阶段。** 各编目录下的文件提取不完备是正常现象——文件可能已被提取后测试完删除、或尚未提取。**提取不完整不构成 skill 健康问题**，健康检查应关注：脚本可运行性、文档内部一致性、代码与文档是否同步、数据文件完整性（XML 是否就位、catalog JSON 结构是否正确），而非文章 MD 的提取覆盖率。
 
 **原则：所有 CBETA 文件读取均在本地 `_data/cbeta/TX/` 目录完成。**
@@ -403,6 +391,27 @@ python3 agent_skills/cbeta-xml-reader/scripts/extract_publication_info.py
 
 **输出格式**：纯文本 Markdown，无任何 Obsidian 特有语法（无 `[[...]]` 链接、无 `^` 块锚点、无 `{#...}` 自定义锚点）。在不同 Markdown 渲染器中表现一致，不依赖特定编辑器的扩展语法。
 
+**提取後自動校對（`--verify`）**：提取完成後可自動與 CBETA Online 匯出的 HTML 文件進行結構對比校對。
+
+```bash
+# 單篇提取 + 校對
+python3 extract_article_fulltext.py \
+  --catalog _research/01_佛法總學/_01_佛法總學_編目錄.json \
+  --article "佛學概論" --data-dir _data/cbeta/TX --verify
+
+# 批量提取 + 全編校對（提取完成後自動生成校對報告）
+python3 extract_article_fulltext.py --batch \
+  --catalog _research/01_佛法總學/_01_佛法總學_編目錄.json \
+  --子目 概論 --from 1 --to 8 --data-dir _data/cbeta/TX --verify
+```
+
+校對邏輯：
+- **單篇模式**：提取後立即對比該篇文章的 CBETA HTML 與本地 MD，結果直接輸出到終端
+- **批量模式**：全部提取完成後，逐篇對比並生成校對報告 `_{編名}_校对报告.md` 到編目錄同級目錄
+- 比對內容：標題層級、列表項完整性、行內註釋、圖片、段落文本量
+- HTML 目錄通過 `--html-dir` 指定（默認 `_data/TX_HTML/`），HTML 文件不存在時自動跳過校對
+- 內部還有一層綱目交叉校驗：提取時自動比對 CBETA XML 中「綱要」`<item>` 與正文 `<head>` 的文本差異，不一致時輸出 `⚠` 警告提醒人工核對紙質書
+
 
 ### 5a. YAML Frontmatter（文章元数据）
 
@@ -442,13 +451,13 @@ bearings:
 | `sequence` | 编目录 JSON 条目 `編號` | 编内全局序号（跨子目连续） |
 | `word_count` | 编目录 JSON 条目 `字数` | 千字整数（CJK 字符数 // 1000） |
 | `create_y` | 编目录 JSON 条目 `題注` 解析 | 创作年（公历四位数字），无则留空 |
-| `create_m` | 编目录 JSON 条目 `題注` 解析 | 创作月（公历两位数字），季节→月份（春→03 等），无则留空 |
+| `create_m` | 编目录 JSON 条目 `題注` 解析 | 创作月（公历两位数字），季节不转换为月份，无则留空 |
 | `create_d` | 编目录 JSON 条目 `題注` 解析 | 创作日（公历两位数字），无则留空 |
 | `publication` | XML 文末刊载信息 + 刊载信息卷期对照表 | 规范化刊物名（如 `海潮音`）；非期刊则为出版机构名。查表失败时存入能识别的刊名。无刊载信息时不出现 |
 | `publish_y` | 刊载信息卷期对照表查得 | 出版年（公历四位数字），无则留空 |
 | `publish_m` | 刊载信息卷期对照表查得 | 出版月（公历两位数字），无则留空 |
 | `publish_d` | 刊载信息卷期对照表查得 | 出版日（公历两位数字），无则留空 |
-| `location` | 编目录 JSON 条目 `題注` 解析 | 讲说/编述地点 |
+| `location` | 编目录 JSON 条目 `題注` 解析 | 讲说/编述地点；若題注含季节（春/夏/秋/冬），季节前置到地点前（如「春，普陀山」） |
 | `concepts` | 手工填写 | 核心概念，预留空值 |
 | `domains` | 手工填写 | 所属领域，预留空值 |
 | `functions` | 手工填写 | 功能分类，预留空值 |
@@ -456,7 +465,7 @@ bearings:
 
 **生成规则：**
 - `build_frontmatter()` 函数从 catalog JSON 条目读取 `編號`、`子目`、`題注`、`字数`，调用 `parse_byline_fields()` 解析題注中的年/月/日/地点/场合
-- `create_y`/`create_m`/`create_d`：有则填入，无则留空（不默认填充月份）
+- `create_y`/`create_m`/`create_d`：有则填入，无则留空（不默认填充月份；季节不转换为月份）
 - `publication` + `publish_y/m/d`：从 XML 文末 byline/note 提取刊载信息，调用 `publication_lookup.py` 在 `_data/刊载信息卷期对照表.md` 中查表。查表成功则填入规范化刊名和出版日期；查表失败则在正文末尾添加 `> **原文刊載資訊**：…。未在「刊載信息卷期對照表」中找到對應項。`
 - `word_count` 为字数 // 1000 的整数值
 - frontmatter 与正文之间保留一个空行
@@ -757,7 +766,8 @@ elif own_text:
 
 - `scripts/extract_book_catalog.py` — 提取编级篇名目录 (level 1-2)，含字节偏移扫描与增强 JSON 输出
 - `scripts/extract_mulu.py` — 提取单篇文章的完整 `<cb:mulu>` 层级结构
-- `scripts/extract_article_fulltext.py` — 提取单篇文章完整全文 Markdown（纯文本，无 Obsidian 特有语法），含目录树、正文、字数统计、篇末注释及篇末附注
+- `scripts/extract_article_fulltext.py` — 提取单篇文章完整全文 Markdown（纯文本，无 Obsidian 特有语法），含目录树、正文、字数统计、篇末注释及篇末附注。支持 `--verify` 提取後自動與 CBETA HTML 校對
+- `scripts/verify_against_cbeta_html.py` — CBETA HTML ↔ 本地 MD 結構校對腳本。對比標題層級、列表項、行內註釋、圖片、段落文本量，輸出 Markdown 校對報告
 - `scripts/_utils.py` — 共享工具函数：`chinese_to_int`、`normalize_byline`、`split_month_season`、`build_suffix`、`parse_byline_fields`，以及刊载信息提取函数：`classify_byline_content`、`is_publication_related`、`extract_all_byline_info`、`extract_inline_notes`、`extract_fuzhu_paragraphs`、`extract_back_notes_for_article`
 - `scripts/add_frontmatter_to_existing.py` — 为已提取的旧文章补加 YAML frontmatter，并重命名文件前缀为编内全局序号
 - `scripts/extract_publication_info.py` — 批量扫描全部 20 编目录，提取所有文章的文末信息（byline、inline note、附註段落、篇末注），生成 `_research/太虚大师全书刊载信息全录_v2.md`，每条信息标注类型（刊载出处/讲演信息/记録者/作者署名/出处说明/印行信息）和来源位置
