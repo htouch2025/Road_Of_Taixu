@@ -6,10 +6,11 @@ Single-pass streaming parser — processes structure+data as they appear.
 
 import sqlite3
 import os
+from pathlib import Path
 from xml.etree.ElementTree import iterparse
 
 SRC = '/Users/xin/Downloads/mfqk.xml'
-DST = '/Users/xin/Documents/Road_Of_Taixu/_data/mfqk/mfqk.db'
+DST = str(Path(__file__).resolve().parent / 'mfqk.db')
 
 
 def mysql2sqlite(mysql_type):

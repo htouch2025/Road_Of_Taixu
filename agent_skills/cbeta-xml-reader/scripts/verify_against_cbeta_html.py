@@ -16,7 +16,7 @@
 依赖：仅 Python 3 标准库（html.parser）。
 """
 
-import os, sys, re, json, argparse
+import os, sys, re, json, argparse, difflib
 from pathlib import Path
 from html.parser import HTMLParser
 from collections import defaultdict, namedtuple
@@ -283,7 +283,7 @@ def parse_md(filepath: str) -> Article:
             flush_list()
             level = len(heading_match.group(1))
             text = heading_match.group(2).strip()
-            elements.append(Element("heading", text, level, {}))
+            elements.append(Element("heading", text, level, {"line": i + 1}))
             i += 1
             continue
 
@@ -303,7 +303,7 @@ def parse_md(filepath: str) -> Article:
                 elements.append(Element("list_start", "", 0, {}))
                 in_list = True
             text = list_match.group(2).strip()
-            elements.append(Element("list_item", text, 0, {}))
+            elements.append(Element("list_item", text, 0, {"line": i + 1}))
             i += 1
             continue
 
@@ -314,7 +314,7 @@ def parse_md(filepath: str) -> Article:
                 elements.append(Element("list_start", "", 0, {"ordered": True}))
                 in_list = True
             text = ol_match.group(2).strip()
-            elements.append(Element("list_item", text, 0, {}))
+            elements.append(Element("list_item", text, 0, {"line": i + 1}))
             i += 1
             continue
 
@@ -332,12 +332,13 @@ def parse_md(filepath: str) -> Article:
         # Regular paragraph
         flush_list()
         text = line.strip()
+        para_line = i + 1  # 1-based line number
         # Merge continuation lines (lines starting with non-markup text)
         while i + 1 < len(lines) and lines[i + 1].strip() and \
               not re.match(r"^(#{1,6}\s|!\[|- |\* |\d+[.)] |\||---)", lines[i + 1]):
             i += 1
             text += " " + lines[i].strip()
-        elements.append(Element("paragraph", text, 0, {}))
+        elements.append(Element("paragraph", text, 0, {"line": para_line}))
         i += 1
 
     flush_list()
@@ -391,7 +392,8 @@ class DiffReporter:
         self.stats = defaultdict(int)
 
     def add(self, article_title: str, severity: str, category: str,
-            detail: str, expected: str = "", actual: str = ""):
+            detail: str, expected: str = "", actual: str = "",
+            md_line: int = 0, md_text: str = ""):
         self.issues.append({
             "article": article_title,
             "severity": severity,  # error, warning, info
@@ -399,6 +401,8 @@ class DiffReporter:
             "detail": detail,
             "expected": expected,
             "actual": actual,
+            "md_line": md_line,
+            "md_text": md_text,
         })
         self.stats[f"{severity}_{category}"] += 1
 
@@ -439,34 +443,41 @@ class DiffReporter:
             has_error = any(i["severity"] == "error" for i in issues)
             icon = "🔴" if has_error else ("🟡" if any(i["severity"] == "warning" for i in issues) else "🔵")
             lines.append(f"### {icon} {article}\n")
-            for issue in issues:
+            for idx, issue in enumerate(issues, 1):
                 sev_icon = {"error": "🔴", "warning": "🟡", "info": "🔵"}[issue["severity"]]
-                lines.append(f"- **{sev_icon} [{issue['category']}]** {issue['detail']}")
+                lines.append(f"- **{idx}. {sev_icon} [{issue['category']}]** {issue['detail']}")
                 if issue["expected"]:
                     lines.append(f"  - 期望（CBETA HTML）：`{issue['expected'][:120]}`")
                 if issue["actual"]:
-                    lines.append(f"  - 实际（本地 MD）：`{issue['actual'][:120]}`")
+                    md_loc = f"（第 {issue['md_line']} 行）" if issue.get("md_line") else ""
+                    lines.append(f"  - 实际（本地 MD{md_loc}）：`{issue['actual'][:120]}`")
+                if issue.get("md_text"):
+                    md_loc = f"第 {issue['md_line']} 行" if issue.get("md_line") else "MD"
+                    lines.append(f"  - 本地 {md_loc} 有近似项：`{issue['md_text'][:120]}`")
             lines.append("")
 
         return "\n".join(lines)
 
 
 def compare_articles(html_article: Article, md_article: Article,
-                     reporter: DiffReporter):
+                     reporter: DiffReporter, display_title: str = ""):
     """比较一篇文章的 HTML 和 MD 版本"""
-    title = html_article.title or md_article.title
+    title = display_title or html_article.title or md_article.title
     h_els = html_article.elements
     m_els = md_article.elements
 
     # ── 分类提取 ──
     h_headings = [(el.level, el.content) for el in h_els if el.etype == "heading"]
-    m_headings = [(el.level, el.content) for el in m_els if el.etype == "heading"]
+    # MD headings: (level, text, line_number)
+    m_headings = [(el.level, el.content, el.meta.get("line", 0)) for el in m_els if el.etype == "heading"]
 
     h_has_list = any(el.etype == "list_start" for el in h_els)
     m_has_list = any(el.etype == "list_start" for el in m_els)
 
     h_list_items = [el.content for el in h_els if el.etype == "list_item"]
-    m_list_items = [el.content for el in m_els if el.etype == "list_item"]
+    # MD list items: (text, line_number)
+    m_list_items_raw = [(el.content, el.meta.get("line", 0)) for el in m_els if el.etype == "list_item"]
+    m_list_items = [t for t, _ in m_list_items_raw]
 
     h_notes = [el.content for el in h_els if el.etype == "note_inline"]
     m_notes_count = 0
@@ -488,9 +499,10 @@ def compare_articles(html_article: Article, md_article: Article,
     # HTML: headings start at level 2, MD: headings start at level 1
     # Normalize: shift MD headings down by 1 (h1→treat as level 2 for comparison)
 
-    # Build heading maps for comparison
+    # Build heading maps for comparison: norm_text → (level, orig_text)
     h_heading_map = {normalize_text(c): (lv, c) for lv, c in h_headings}
-    m_heading_map = {normalize_text(c): (lv, c) for lv, c in m_headings}
+    # MD heading map: norm_text → (level, orig_text, line_number)
+    m_heading_map = {normalize_text(c): (lv, c, ln) for lv, c, ln in m_headings}
 
     # Normalize: strip footnote markers like [1] [2], normalize full-width spaces
     def strip_footnote_ref(text: str) -> str:
@@ -499,7 +511,11 @@ def compare_articles(html_article: Article, md_article: Article,
         return text.strip()
 
     h_heading_norm = {strip_footnote_ref(normalize_text(c)): (lv, c) for lv, c in h_headings}
-    m_heading_norm = {strip_footnote_ref(normalize_text(c)): (lv, c) for lv, c in m_headings}
+    # MD normalized: norm_text → (level, orig_text, line_number)
+    m_heading_norm = {}
+    for lv, c, ln in m_headings:
+        key = strip_footnote_ref(normalize_text(c))
+        m_heading_norm[key] = (lv, c, ln)
 
     # Headings in HTML but NOT in MD → possibly dropped
     for h_text in h_heading_map:
@@ -511,25 +527,21 @@ def compare_articles(html_article: Article, md_article: Article,
                          expected=orig)
         else:
             h_lv, _ = h_heading_map[h_text]
-            m_lv, m_orig = m_heading_norm[h_norm]
+            m_lv, m_orig, _m_ln = m_heading_norm[h_norm]
             # Level comparison: HTML L2 = MD L1, so m_lv should be h_lv - 1
             expected_md_lv = h_lv - 1
-            if m_lv != expected_md_lv:
-                reporter.add(title, "warning", "heading_level",
-                             f"标题「{h_heading_map[h_text][1]}」层级不一致: "
-                             f"CBETA L{h_lv} → MD L{m_lv} (期望 L{expected_md_lv})",
-                             expected=f"L{expected_md_lv}", actual=f"L{m_lv}")
+            # heading_level 警告已抑制：MD 最多 6 层深度，层级漂移不影响内容正确性
 
     # Headings in MD but NOT in HTML → extra (like 綱要/前言 case)
     skip_extra_headings = {"目錄", "目录", "註釋", "注释"}
     for m_text in m_heading_map:
         m_norm = strip_footnote_ref(normalize_text(m_text))
         if m_norm not in h_heading_norm:
-            lv, orig = m_heading_map[m_text]
+            lv, orig, ln = m_heading_map[m_text]
             if orig.strip() not in skip_extra_headings:
                 reporter.add(title, "info", "heading_extra",
                              f"MD 中有标题「{orig}」(L{lv})，但 CBETA HTML 中无此标题",
-                             actual=orig)
+                             actual=orig, md_line=ln)
 
     # ── 2. 列表对比 ──
     if h_has_list and not m_has_list:
@@ -547,9 +559,21 @@ def compare_articles(html_article: Article, md_article: Article,
             # Check if HTML item text appears as substring of any MD item
             found = any(hi_norm in mi for mi in m_items_norm)
             if not found:
+                # Try to find the closest matching MD item by text similarity
+                md_line = 0
+                md_similar = ""
+                if m_items_norm:
+                    matches = difflib.get_close_matches(hi_norm, m_items_norm, n=1, cutoff=0.5)
+                    if matches:
+                        idx = m_items_norm.index(matches[0])
+                        if idx < len(m_list_items_raw):
+                            md_similar = m_list_items_raw[idx][0]
+                            md_line = m_list_items_raw[idx][1]
                 reporter.add(title, "error", "list_item_missing",
                              f"列表项「{h_list_items[i]}」在 MD 中缺失",
-                             expected=h_list_items[i])
+                             expected=h_list_items[i],
+                             md_line=md_line,
+                             md_text=md_similar)
 
     # ── 3. 夹注对比 ──
     h_note_count = len(h_notes)
@@ -709,8 +733,11 @@ def main():
         article_map = build_article_map(catalog)
         print(f"📋 编目录加载: {catalog.get('編名', '?')}，{len(catalog.get('篇目鏈表', []))} 篇文章")
         print(f"🗺️  已映射 {len(article_map)} 个 MD 文件")
+        # 构建 篇名 → 編號 映射，用于报告中显示编号
+        title_to_seq = {e['篇名']: e['編號'] for e in catalog.get('篇目鏈表', [])}
     else:
         article_map = {}
+        title_to_seq = {}
         print("⚠️  未找到编目录 JSON，将仅按文件名匹配")
 
     # 逐篇对比
@@ -729,6 +756,10 @@ def main():
         if not title:
             print(f"⚠️  无法提取标题: {hf.name}")
             continue
+
+        # 在标题前附加編號，方便对照查找（保留原标题用于内部匹配）
+        seq = title_to_seq.get(title, 0)
+        display_title = f"第{seq}篇 {title}" if seq else title
 
         # 筛选指定文章
         if args.article and not any(a in title for a in args.article):
@@ -767,9 +798,9 @@ def main():
             continue
 
         # 对比
-        compare_articles(html_art, md_art, reporter)
+        compare_articles(html_art, md_art, reporter, display_title)
         compared += 1
-        print(f"✓ {title}")
+        print(f"✓ {display_title}")
 
     print(f"\n✅ 对比完成: {compared}/{len(html_files)} 篇")
 

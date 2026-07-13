@@ -21,12 +21,17 @@ python3 agent_skills/cbeta-xml-reader/scripts/extract_book_catalog.py \
 # 单篇（--catalog 模式自动写入 YAML frontmatter + 回写字数到编目录）
 python3 agent_skills/cbeta-xml-reader/scripts/extract_article_fulltext.py \
   --catalog _research/01_佛法總學/_01_佛法總學_編目錄.json \
-  --article-index 0 --data-dir _data/cbeta/TX
+  --article "佛學概論" --data-dir _data/cbeta/TX
 
-# 批量（同一子目下连续多篇）
+# 批量（同一子目下：--from/--to 是子目內編號；不加 --子目 时是全局編號）
 python3 agent_skills/cbeta-xml-reader/scripts/extract_article_fulltext.py \
   --batch --catalog _research/01_佛法總學/_01_佛法總學_編目錄.json \
   --子目 概論 --from 1 --to 5 --data-dir _data/cbeta/TX
+
+# 批量（跨子目：不加 --子目，--from/--to 是全局編號，一次只生成一份校对报告）
+python3 agent_skills/cbeta-xml-reader/scripts/extract_article_fulltext.py \
+  --batch --catalog _research/02_五乘共學/_02_五乘共學_編目錄.json \
+  --from 1 --to 10 --data-dir _data/cbeta/TX
 ```
 
 ### 关键词提取

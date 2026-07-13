@@ -492,7 +492,7 @@ def review_gaps(apply_changes=False):
 
     # ── 2. 读取缺口日志 ──
     raw_entries = []
-    repo_prefix = "/Users/xin/Documents/Road_Of_Taixu/"
+    repo_prefix = str(Path(__file__).resolve().parents[3]) + '/'
     for line in open(str(DEFAULT_GAP_LOG), encoding="utf-8"):
         try:
             raw_entries.append(json.loads(line))

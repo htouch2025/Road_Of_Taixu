@@ -4,6 +4,7 @@
 import sqlite3
 import re
 import os
+from pathlib import Path
 from collections import defaultdict
 
 # ============================================================
@@ -728,7 +729,7 @@ def generate_markdown(all_refs, date_index, canonicals_with_data):
 # ============================================================
 
 def main():
-    base_dir = '/Users/xin/Documents/Road_Of_Taixu'
+    base_dir = str(Path(__file__).resolve().parents[1])
     v2_path = os.path.join(base_dir, '_research/太虚大师全书刊载信息全录_v2.md')
     db_path = os.path.join(base_dir, '_data/mfqk/mfqk.db')
     output_path = os.path.join(base_dir, '_data/mfqk/非海潮音刊物卷期对照表.md')

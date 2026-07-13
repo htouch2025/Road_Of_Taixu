@@ -472,6 +472,8 @@ def _build_lookup():
                     date_cell = cell
                 elif re.search(r'卷|期', cell):
                     vol_cell = cell
+                if date_cell and vol_cell:
+                    break  # stop before source-note column (which may also contain 卷/期) overwrites vol_cell
 
             if date_cell is None:
                 # Try cells that look like dates with extra text
@@ -668,10 +670,10 @@ def parse_volume_issue(text):
         # X can be Chinese numeral or Arabic
         m_vi = re.search(
             r'([一二三四五六七八九十\d]+)卷\s*'
-            r'(?:第\s*)?'
+            r'(?:[第等]\s*)?'
             r'([一二三四五六七八九十\d]+)'
             r'(?:[及和至、,\-/‐-―–—]?'
-            r'(?:第\s*)?'
+            r'(?:[第等]\s*)?'
             r'([一二三四五六七八九十\d]+))?'
             r'\s*[期号號輯]',
             rest

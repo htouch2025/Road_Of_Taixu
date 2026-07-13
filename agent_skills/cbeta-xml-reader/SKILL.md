@@ -567,6 +567,9 @@ python extract_article_fulltext.py \
     - **用户表达规范：** 「第X部分」=「第X个子目」= `子目` 列表中的第 X 项。`_編目錄.json` 中 `子目` 为 `["概論", "判攝", "源流"]`，故「第二部分」→ `判攝`。
     - **正确流程：** ①先解析「第X部分」→ 子目名；②在该子目的 `篇目鏈表` 条目中按 `子目內編號` 定位第 N–M 篇；③绝不将数字范围直接用于全局 `篇目鏈表` index，除非用户明确说「编级全局编号」。
     - **检查方法：** 映射完编号后，验证 `art["子目"]` 是否匹配目标子目名。若不匹配，说明编号映射错误。
+24. **`extract_article()` 跳过 article_div 的直接非 div 子元素** — 当文章有嵌套 `<cb:div>`（`has_child_div=True`）时，主循环仅处理 `<cb:div>` 子元素，跳过 `<p>`、`<figure>`、`<byline>` 等直接子元素。若导言段落 `<p>` 位于 article_div 开头、第一个子 `<cb:div>` 之前，整段导言被丢弃（如《行為主義之佛乘》开头约 600 字论述完全丢失）。
+    - **根因：** `extract_article()` 第 972–976 行循环中无 else 分支，而 `walk_div_tree()` 的同类循环（第 574–583 行）已有 else 调用 `_render_body_child()`。两处逻辑不一致。
+    - **修复：** 在 `extract_article()` 的子元素循环中加入 else 分支，调用 `_render_body_child()` 处理非 div 子元素。跳过 `——...——` 格式的题注 byline（已被 `get_byline_text()` 提取）。
 
 `extract_article_fulltext.py` 在提取正文后自动统计全文（不含 `## 目錄` 区块）的中文字符数。
 

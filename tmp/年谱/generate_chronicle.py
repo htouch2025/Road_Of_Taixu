@@ -10,11 +10,12 @@ import json
 import re
 import os
 from datetime import datetime
+from pathlib import Path
 from collections import OrderedDict
 
 CB_NS = 'http://www.cbeta.org/ns/1.0'
-DATA_DIR = '/Users/xin/Documents/Road_Of_Taixu/_data/cbeta/YS'
-OUT_DIR = '/Users/xin/Documents/Road_Of_Taixu/tmp/年谱'
+DATA_DIR = str(Path(__file__).resolve().parents[2] / '_data' / 'cbeta' / 'YS')
+OUT_DIR = str(Path(__file__).resolve().parent)
 
 # ─── helpers ───────────────────────────────────────────────────
 
