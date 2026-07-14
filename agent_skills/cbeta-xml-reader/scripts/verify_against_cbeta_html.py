@@ -719,7 +719,7 @@ def main():
 
     book_html_dir = book_dirs[0]  # 默认第一个
     for d in book_dirs:
-        if f"{args.book:02d}" in d.name or f"佛法" in d.name:
+        if d.name.startswith(f"{args.book:02d}_"):
             book_html_dir = d
             break
 
