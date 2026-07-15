@@ -2,8 +2,8 @@
 name: cbeta-xml-reader
 description: "Read CBETA TEI P5 XML files for the 太虚大师全书 (Collected Works of Master Taixu). Use when Codex needs to: (1) read or navigate CBETA XML source texts from local _data/cbeta/TX/ files, (2) extract article catalogs and document hierarchy (编/篇/部/章/节/小节) from CBETA structured data, (3) interpret cb:mulu level attributes and disambiguate semantic levels like 章 vs 节 vs 部, (4) cross-reference CBETA content against the paper edition table of contents, (5) process legacy DOC/HTML editions and compare them with the authoritative CBETA TEI version."
 metadata:
-  version: "0.18.0"
-  last_updated: "2026-07-03"
+  version: "0.19.0"
+  last_updated: "2026-07-15"
   status: active
   task_type: open-ended
 ---
@@ -408,7 +408,11 @@ python3 extract_article_fulltext.py --batch \
 校對邏輯：
 - **單篇模式**：提取後立即對比該篇文章的 CBETA HTML 與本地 MD，結果直接輸出到終端
 - **批量模式**：全部提取完成後，逐篇對比並生成校對報告 `_{編名}_校对报告.md` 到編目錄同級目錄
-- 比對內容：標題層級、列表項完整性、行內註釋、圖片、段落文本量
+- 比對內容：標題層級、列表項完整性、行內註釋、圖片、段落文本
+- **段落模糊對齊**：用內容相似度（非位置索引）配對 HTML 與 MD 段落，避免一處結構差異導致後續所有段落全線錯位
+- **字符級檢測**：逐段比對後輸出精確差異（刪除/插入/替換的具體文字 + 相似度百分比）；即使僅差 1 字也會以 info 級別報告
+- **全局逐字 diff**：將全文拼接後做字符級對比，報告確切的增刪字符數；自動扣除表格/代碼塊等結構性差異，僅暴露真正的文本缺漏
+- **交叉檢查**：HTML 中缺失的段落會在 MD 的列表項、標題等其他結構元素中搜索，避免因 HTML/XML 結構解析差異導致的誤報
 - HTML 目錄通過 `--html-dir` 指定（默認 `_data/TX_HTML/`），HTML 文件不存在時自動跳過校對
 - 內部還有一層綱目交叉校驗：提取時自動比對 CBETA XML 中「綱要」`<item>` 與正文 `<head>` 的文本差異，不一致時輸出 `⚠` 警告提醒人工核對紙質書
 
@@ -770,7 +774,7 @@ elif own_text:
 - `scripts/extract_book_catalog.py` — 提取编级篇名目录 (level 1-2)，含字节偏移扫描与增强 JSON 输出
 - `scripts/extract_mulu.py` — 提取单篇文章的完整 `<cb:mulu>` 层级结构
 - `scripts/extract_article_fulltext.py` — 提取单篇文章完整全文 Markdown（纯文本，无 Obsidian 特有语法），含目录树、正文、字数统计、篇末注释及篇末附注。支持 `--verify` 提取後自動與 CBETA HTML 校對
-- `scripts/verify_against_cbeta_html.py` — CBETA HTML ↔ 本地 MD 結構校對腳本。對比標題層級、列表項、行內註釋、圖片、段落文本量，輸出 Markdown 校對報告
+- `scripts/verify_against_cbeta_html.py` — CBETA HTML ↔ 本地 MD 結構 + 字符級校對腳本。對比標題層級、列表項、行內註釋、圖片；段落用模糊對齊（非位置索引）避免連鎖假陽性；逐段相似度 + 字符差異；全局逐字 diff 作安全網；自動交叉檢查 MD 其他結構元素（列表/標題/pre/byline）中的文本
 - `scripts/_utils.py` — 共享工具函数：`chinese_to_int`、`normalize_byline`、`split_month_season`、`build_suffix`、`parse_byline_fields`，以及刊载信息提取函数：`classify_byline_content`、`is_publication_related`、`extract_all_byline_info`、`extract_inline_notes`、`extract_fuzhu_paragraphs`、`extract_back_notes_for_article`
 - `scripts/add_frontmatter_to_existing.py` — 为已提取的旧文章补加 YAML frontmatter，并重命名文件前缀为编内全局序号
 - `scripts/extract_publication_info.py` — 批量扫描全部 20 编目录，提取所有文章的文末信息（byline、inline note、附註段落、篇末注），生成 `_research/太虚大师全书刊载信息全录_v2.md`，每条信息标注类型（刊载出处/讲演信息/记録者/作者署名/出处说明/印行信息）和来源位置

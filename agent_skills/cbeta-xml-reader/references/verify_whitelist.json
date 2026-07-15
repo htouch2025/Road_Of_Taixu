@@ -1,0 +1,34 @@
+{
+  "_description": "校对白名单：匹配的发现将被静默(silence)或降级为 info(downgrade)。规则按顺序匹配，命中即停止。",
+  "_usage": "新增规则：指定 match 条件（任意字段 + regex），action 为 silence 或 downgrade。reason 必填。",
+  "rules": [
+    {
+      "id": "footnote_marker_diverged",
+      "reason": "MD 提取脚本保留 CBETA 注释编号 [N]，CBETA HTML 解析器已通过 skip_note_anchor 过滤。脚注编号差异为预期行为，非文本错误。",
+      "match": {
+        "category": "paragraph_diverged",
+        "md_text": "MD\\s+增:\\s*「\\[\\d+\\]」"
+      },
+      "action": "silence"
+    },
+    {
+      "id": "global_diff_footnote_sized_inserts",
+      "reason": "全局 diff 中 1-3 字符的小插入：来自 CBETA 注释编号 [N]（每个 3 字符）或逐段归一化未覆盖的残留标记。大段插入（≥4 字符）不在此列，保留人工审查。",
+      "match": {
+        "category": "global_text_diff",
+        "detail": "實際文本差異約 [0-9] 字符",
+        "md_text": "處插入 \\d+ 字符"
+      },
+      "action": "silence"
+    },
+    {
+      "id": "heading_extra_toc",
+      "reason": "MD 中有目录/注释等非 CBETA 原文标题，已从 heading_extra 报告中排除（硬编码），此处作为兜底白名单。",
+      "match": {
+        "category": "heading_extra",
+        "detail": "(目錄|目录|註釋|注释)"
+      },
+      "action": "silence"
+    }
+  ]
+}

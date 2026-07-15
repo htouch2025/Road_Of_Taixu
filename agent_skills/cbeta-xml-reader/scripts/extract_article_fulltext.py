@@ -126,6 +126,11 @@ def get_heading_text(div):
             return atext, note_anchor
     mulu = div.find(f"{{{CBETA_NS}}}mulu")
     if mulu is not None:
+        # cb:mulu type="其他" marks auxiliary content (appendices, notes,
+        # comparison tables, etc.) — not part of the main section hierarchy.
+        # Don't use these as headings; treat the div as headless instead.
+        if mulu.get('type') == '其他':
+            return "", note_anchor
         return "".join(mulu.itertext()).strip(), note_anchor
     return "", note_anchor
 def get_mulu_text(div):
@@ -170,7 +175,7 @@ def should_skip_div(div):
     introductory prose (总说), not structural outlines, and are kept.
     """
     mulu_text = get_mulu_text(div)
-    skip_set = {'目次', '綱要', '目錄', '目録', '科分'}
+    skip_set = {'目次', '綱要', '目錄', '目録', '科分', '科文'}
     if mulu_text.strip() not in skip_set:
         return False
     # 綱要 is ambiguous: it can be a structural TOC or substantive content.
@@ -1075,6 +1080,12 @@ def extract_article(xml_path, byte_start, byte_end, toc_only=False):
     if toc_entries:
         md_lines.extend(['', '## 目錄', ''])
         md_lines.extend(toc_entries)
+    # Ensure blank line between metadata (byline/TOC) and body content.
+    # When the first body item has no heading (e.g. type="commentary" div),
+    # body_lines starts directly with paragraph text and without this blank
+    # the byline and body paragraph merge into one (pitfall verification).
+    if body_lines and (not md_lines or md_lines[-1] != ''):
+        md_lines.append('')
     md_lines.extend(body_lines)
 
     # Split trailing publication note （見...） from last paragraph
